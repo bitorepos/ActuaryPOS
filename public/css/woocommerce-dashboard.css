@@ -1,0 +1,576 @@
+/* ============================================================
+   WOOCOMMERCE MODULE - ENHANCED DASHBOARD STYLES
+   Consistent with BitorePOS main dashboard design system
+   ============================================================ */
+
+/* --- Dashboard Header --- */
+.woo-dashboard-header {
+    background: linear-gradient(135deg, #7b42c9 0%, #9b59b6 50%, #6c3483 100%);
+    border-radius: 14px;
+    padding: 22px 28px;
+    margin-bottom: 22px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.woo-dashboard-header::before {
+    content: '';
+    position: absolute;
+    top: -60%;
+    right: -15%;
+    width: 280px;
+    height: 280px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 50%;
+    pointer-events: none;
+}
+.woo-dashboard-header::after {
+    content: '';
+    position: absolute;
+    bottom: -40%;
+    left: -10%;
+    width: 200px;
+    height: 200px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 50%;
+    pointer-events: none;
+}
+.woo-dashboard-header .woo-header-left h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 4px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.woo-dashboard-header .woo-header-left h2 img {
+    height: 28px;
+    width: auto;
+    filter: brightness(0) invert(1);
+}
+.woo-dashboard-header .woo-header-subtitle {
+    font-size: 13px;
+    opacity: 0.85;
+    margin: 0;
+}
+.woo-dashboard-header .woo-header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.woo-dashboard-header .woo-header-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(255,255,255,0.18);
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    backdrop-filter: blur(4px);
+}
+.woo-dashboard-header .woo-header-badge i {
+    font-size: 14px;
+}
+.woo-header-actions .btn {
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 8px 16px;
+    border: 1px solid rgba(255,255,255,0.3);
+    color: #fff;
+    background: rgba(255,255,255,0.12);
+    transition: all 0.2s ease;
+}
+.woo-header-actions .btn:hover {
+    background: rgba(255,255,255,0.25);
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+/* --- Stats Cards Row --- */
+.woo-stats-row {
+    margin-bottom: 22px;
+}
+.woo-stat-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    border: 1px solid #f0f0f0;
+    transition: all 0.25s ease;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.woo-stat-card:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+}
+.woo-stat-card .stat-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+}
+.woo-stat-card .stat-icon.si-products {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+}
+.woo-stat-card .stat-icon.si-categories {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+    color: #fff;
+}
+.woo-stat-card .stat-icon.si-orders {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    color: #fff;
+}
+.woo-stat-card .stat-icon.si-customers {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #fff;
+}
+.woo-stat-card .stat-info h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    color: #32325d;
+    line-height: 1.1;
+}
+.woo-stat-card .stat-info p {
+    font-size: 11px;
+    color: #8898aa;
+    margin: 2px 0 0 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.woo-stat-card .stat-badge {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.woo-stat-card .stat-badge.badge-synced {
+    background: rgba(17,153,142,0.1);
+    color: #11998e;
+}
+.woo-stat-card .stat-badge.badge-pending {
+    background: rgba(247,151,30,0.1);
+    color: #f7971e;
+}
+.woo-stat-card .stat-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #f0f0f0;
+}
+.woo-stat-card .stat-progress-bar {
+    height: 100%;
+    border-radius: 0 0 12px 12px;
+    transition: width 0.8s ease;
+}
+.stat-progress-bar.sp-purple { background: linear-gradient(90deg, #667eea, #764ba2); }
+.stat-progress-bar.sp-green { background: linear-gradient(90deg, #11998e, #38ef7d); }
+.stat-progress-bar.sp-pink { background: linear-gradient(90deg, #f093fb, #f5576c); }
+.stat-progress-bar.sp-blue { background: linear-gradient(90deg, #4facfe, #00f2fe); }
+
+/* --- Sync Section Cards --- */
+.woo-sync-card {
+    background: #fff;
+    border-radius: 14px;
+    border: 1px solid #eef0f3;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+.woo-sync-card:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+.woo-sync-card .sync-card-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid #f0f2f5;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.woo-sync-card .sync-card-header .sync-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+.sync-icon.sci-categories {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+    color: #fff;
+}
+.sync-icon.sci-tax {
+    background: linear-gradient(135deg, #f7971e, #ffd200);
+    color: #fff;
+}
+.sync-icon.sci-products {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+}
+.sync-icon.sci-orders {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    color: #fff;
+}
+.woo-sync-card .sync-card-header h5 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #32325d;
+    margin: 0;
+}
+.woo-sync-card .sync-card-header .sync-last-time {
+    margin-left: auto;
+    font-size: 11px;
+    color: #8898aa;
+    font-weight: 500;
+}
+.woo-sync-card .sync-card-body {
+    padding: 18px 20px;
+}
+
+/* --- Sync Buttons --- */
+.woo-sync-btn {
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.25s ease;
+    border: none;
+    width: 100%;
+    justify-content: center;
+}
+.woo-sync-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+.woo-sync-btn:disabled {
+    opacity: 0.7;
+    transform: none !important;
+    box-shadow: none !important;
+}
+.woo-sync-btn.wsb-primary {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+}
+.woo-sync-btn.wsb-primary:hover { color: #fff; }
+.woo-sync-btn.wsb-success {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+    color: #fff;
+}
+.woo-sync-btn.wsb-success:hover { color: #fff; }
+.woo-sync-btn.wsb-warning {
+    background: linear-gradient(135deg, #f7971e, #ffd200);
+    color: #fff;
+}
+.woo-sync-btn.wsb-warning:hover { color: #fff; }
+.woo-sync-btn.wsb-info {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #fff;
+}
+.woo-sync-btn.wsb-info:hover { color: #fff; }
+.woo-sync-btn.wsb-pink {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    color: #fff;
+}
+.woo-sync-btn.wsb-pink:hover { color: #fff; }
+.woo-sync-btn.wsb-danger-outline {
+    background: transparent;
+    color: #f5576c;
+    border: 1px solid #f5576c;
+    padding: 6px 14px;
+    font-size: 12px;
+}
+.woo-sync-btn.wsb-danger-outline:hover {
+    background: #f5576c;
+    color: #fff;
+}
+
+/* --- Alert Cards --- */
+.woo-alert {
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+    border: none;
+}
+.woo-alert i {
+    font-size: 16px;
+    margin-top: 1px;
+    flex-shrink: 0;
+}
+.woo-alert.woo-alert-warning {
+    background: rgba(247,151,30,0.08);
+    color: #b36d00;
+    border-left: 3px solid #f7971e;
+}
+.woo-alert.woo-alert-danger {
+    background: rgba(245,87,108,0.08);
+    color: #c0392b;
+    border-left: 3px solid #f5576c;
+}
+.woo-alert.woo-alert-success {
+    background: rgba(17,153,142,0.08);
+    color: #0d6e65;
+    border-left: 3px solid #11998e;
+}
+
+/* --- Tax Mapping Table --- */
+.woo-tax-table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.woo-tax-table thead th {
+    background: #f8f9fb;
+    border: none;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #8898aa;
+    padding: 12px 16px;
+}
+.woo-tax-table tbody td {
+    padding: 10px 16px;
+    border-color: #f0f2f5;
+    vertical-align: middle;
+    font-size: 13px;
+}
+
+/* --- Recent Activity --- */
+.woo-activity-card {
+    background: #fff;
+    border-radius: 14px;
+    border: 1px solid #eef0f3;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+.woo-activity-card .activity-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.woo-activity-card .activity-header h5 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #32325d;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.woo-activity-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.woo-activity-list li {
+    padding: 12px 20px;
+    border-bottom: 1px solid #f5f6f8;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: background 0.15s;
+}
+.woo-activity-list li:last-child {
+    border-bottom: none;
+}
+.woo-activity-list li:hover {
+    background: #f9fafc;
+}
+.woo-activity-list .activity-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+.activity-dot.ad-green { background: #11998e; }
+.activity-dot.ad-purple { background: #764ba2; }
+.activity-dot.ad-pink { background: #f5576c; }
+.activity-dot.ad-blue { background: #4facfe; }
+.activity-dot.ad-orange { background: #f7971e; }
+.woo-activity-list .activity-text {
+    flex: 1;
+    font-size: 13px;
+    color: #525f7f;
+}
+.woo-activity-list .activity-text strong {
+    color: #32325d;
+}
+.woo-activity-list .activity-time {
+    font-size: 11px;
+    color: #adb5bd;
+    white-space: nowrap;
+}
+.woo-activity-empty {
+    padding: 30px 20px;
+    text-align: center;
+    color: #adb5bd;
+}
+.woo-activity-empty i {
+    font-size: 32px;
+    margin-bottom: 8px;
+    display: block;
+    opacity: 0.5;
+}
+
+/* --- Connection Status Banner --- */
+.woo-connection-error {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+    border-radius: 12px;
+    padding: 16px 22px;
+    margin-bottom: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.woo-connection-error i {
+    font-size: 28px;
+    opacity: 0.9;
+}
+.woo-connection-error .conn-error-text h6 {
+    margin: 0 0 2px 0;
+    font-weight: 700;
+    font-size: 14px;
+}
+.woo-connection-error .conn-error-text p {
+    margin: 0;
+    font-size: 12px;
+    opacity: 0.85;
+}
+.woo-connection-error .btn {
+    margin-left: auto;
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.woo-connection-error .btn:hover {
+    background: rgba(255,255,255,0.35);
+    color: #fff;
+}
+
+/* --- Sync Time Labels --- */
+.woo-sync-time {
+    font-size: 11px;
+    color: #8898aa;
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.woo-sync-time i {
+    font-size: 12px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 991px) {
+    .woo-dashboard-header {
+        padding: 18px 20px;
+    }
+    .woo-dashboard-header .woo-header-left h2 {
+        font-size: 18px;
+    }
+    .woo-header-actions {
+        margin-top: 12px;
+    }
+}
+@media (max-width: 767px) {
+    .woo-stat-card {
+        padding: 14px 16px;
+    }
+    .woo-stat-card .stat-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
+    }
+    .woo-stat-card .stat-info h3 {
+        font-size: 20px;
+    }
+    .woo-sync-btn {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+}
+
+/* --- Dark Theme Support --- */
+[data-bs-theme="dark"] .woo-stat-card,
+[data-bs-theme="dark"] .woo-sync-card,
+[data-bs-theme="dark"] .woo-activity-card {
+    background: #1e293b;
+    border-color: #334155;
+}
+[data-bs-theme="dark"] .woo-stat-card .stat-info h3,
+[data-bs-theme="dark"] .woo-sync-card .sync-card-header h5,
+[data-bs-theme="dark"] .woo-activity-card .activity-header h5 {
+    color: #e2e8f0;
+}
+[data-bs-theme="dark"] .woo-stat-card .stat-info p,
+[data-bs-theme="dark"] .woo-sync-card .sync-card-header .sync-last-time,
+[data-bs-theme="dark"] .woo-activity-list .activity-time {
+    color: #94a3b8;
+}
+[data-bs-theme="dark"] .woo-tax-table thead th {
+    background: #1e293b;
+    color: #94a3b8;
+}
+[data-bs-theme="dark"] .woo-activity-list li:hover {
+    background: #263348;
+}
+[data-bs-theme="dark"] .woo-sync-card .sync-card-header,
+[data-bs-theme="dark"] .woo-sync-card .sync-card-body,
+[data-bs-theme="dark"] .woo-activity-card .activity-header {
+    border-color: #334155;
+}
+[data-bs-theme="dark"] .woo-stat-card .stat-progress {
+    background: #334155;
+}
+
+/* --- Fade-in animation --- */
+@keyframes wooFadeInUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.woo-animate {
+    animation: wooFadeInUp 0.4s ease forwards;
+}
+.woo-animate-delay-1 { animation-delay: 0.05s; opacity: 0; }
+.woo-animate-delay-2 { animation-delay: 0.1s; opacity: 0; }
+.woo-animate-delay-3 { animation-delay: 0.15s; opacity: 0; }
+.woo-animate-delay-4 { animation-delay: 0.2s; opacity: 0; }
+.woo-animate-delay-5 { animation-delay: 0.25s; opacity: 0; }
+.woo-animate-delay-6 { animation-delay: 0.3s; opacity: 0; }

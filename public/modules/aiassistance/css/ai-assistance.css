@@ -1,0 +1,29 @@
+/* AI Assistance Module - Global Styles */
+
+/* Sidebar AI Badge */
+.ai-sidebar-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    font-weight: 800;
+    color: #fff;
+    background: linear-gradient(135deg, #4F46E5, #7C3AED);
+    padding: 1px 6px;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+    margin-left: 6px;
+    vertical-align: middle;
+    animation: ai-sidebar-glow 3s ease-in-out infinite;
+    line-height: 1.4;
+}
+
+@keyframes ai-sidebar-glow {
+    0%, 100% { box-shadow: 0 0 4px rgba(79, 70, 229, 0.3); }
+    50% { box-shadow: 0 0 10px rgba(79, 70, 229, 0.6); }
+}
+
+/* Dark mode support for sidebar badge */
+html.dark-theme .ai-sidebar-badge {
+    box-shadow: 0 0 8px rgba(124, 58, 237, 0.4);
+}

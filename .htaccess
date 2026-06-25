@@ -1,0 +1,11 @@
+RewriteEngine On
+
+    RewriteCond %{HTTP_HOST} !^(localhost|127\.0\.0\.1)$ [NC]
+    RewriteCond %{HTTPS} !on
+    RewriteRule ^.*$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Public docs: allow images, route pages through Laravel
+RewriteRule ^docs/images/(.*)$ public/docs/images/$1 [L]
+RewriteRule ^docs(/.*)?$ public/index.php [L]
+
+RewriteRule ^(.*)$ public/$1 [L]

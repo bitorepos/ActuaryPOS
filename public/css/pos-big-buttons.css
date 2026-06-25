@@ -1,0 +1,671 @@
+/*
+ * Big Buttons POS Kiosk — UK 15" touchscreen optimised
+ *
+ * Active when Settings > Business Settings > POS > POS Screen Interface
+ * is set to "Big Buttons" (pos_settings.hide_product_suggestion = 3).
+ *
+ * Every selector is scoped under `.pos-interface-big-buttons` so the
+ * Simple, Suggestion and Quick Buttons interfaces remain untouched.
+ *
+ * The kiosk is a single-viewport CSS Grid (no scrolling at the page
+ * level) tuned for 1366×768 / 1440×900 touchscreens but responsive
+ * down to small tablets.
+ */
+
+/* ===== Lock the page to a single viewport ===== */
+html body.pos-interface-big-buttons-body {
+    overflow: hidden;
+}
+.pos-interface-big-buttons {
+    background: #e9eef3;
+    min-height: calc(100vh - 60px);
+}
+.pos-interface-big-buttons .pos-content-wrapper,
+.pos-interface-big-buttons .content-wrapper {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Hide elements not used by the kiosk */
+.pos-interface-big-buttons .pos-create-page > .row.pos-create-layout > .col-md-12 > .row.pos-create-main-row > .col {
+    padding: 0 !important;
+}
+.pos-interface-big-buttons .box.pos-create-main-box {
+    margin: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+.pos-interface-big-buttons .box-body { padding: 0 !important; }
+
+/* Hide the original pos_form layout once its pieces have been moved into
+ * the kiosk shell. The form wrapper itself stays in the DOM (we keep
+ * hidden inputs intact); only its visible row collapses. */
+.pos-interface-big-buttons .pos-create-layout {
+    display: none !important;
+}
+
+/* Hide unused toolbar bits inside pos_form once cart is moved */
+.pos-interface-big-buttons #pos-cancel,
+.pos-interface-big-buttons #pos-finalize,
+.pos-interface-big-buttons .pos-express-finalize,
+.pos-interface-big-buttons .pos-form-actions,
+.pos-interface-big-buttons .pos_form_actions,
+.pos-interface-big-buttons .pos-suggestion-block {
+    position: absolute !important;
+    left: -10000px !important;
+    top: -10000px !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    pointer-events: auto;
+}
+
+/* ===== KIOSK SHELL (CSS GRID) =====
+ * 1366×768 / 1440×900 layout:
+ *
+ *   +-------------------- header (56px) --------------------+
+ *   |                                                       |
+ *   |  cats area      |  cart area                          |
+ *   |                 +-------------------------------------+
+ *   |                 |  totals strip (52px)                |
+ *   |                 +-------------------------------------+
+ *   |  numpad area    |  action area (tender + PAY/CARD)    |
+ *   +-------------------- footer (62px) --------------------+
+ *
+ * Columns: 60% / 40%.
+ */
+.pos-interface-big-buttons .bb-shell {
+    display: grid;
+    grid-template-columns: minmax(0, 60fr) minmax(0, 40fr);
+    grid-template-rows: 56px minmax(0, 1fr) 52px minmax(220px, auto) 64px;
+    grid-template-areas:
+        "header header"
+        "cats   cart"
+        "cats   totals"
+        "numpad action"
+        "footer footer";
+    gap: 6px;
+    padding: 6px;
+    width: 100%;
+    height: calc(100vh - 60px);
+    box-sizing: border-box;
+    background: #e9eef3;
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+}
+
+.pos-interface-big-buttons .bb-header   { grid-area: header; }
+.pos-interface-big-buttons .bb-cats-area  { grid-area: cats; }
+.pos-interface-big-buttons .bb-cart-area  { grid-area: cart; }
+.pos-interface-big-buttons .bb-totals-area{ grid-area: totals; }
+.pos-interface-big-buttons .bb-numpad-area{ grid-area: numpad; }
+.pos-interface-big-buttons .bb-action-area{ grid-area: action; }
+.pos-interface-big-buttons .bb-footer-bar { grid-area: footer; }
+
+/* ===== HEADER ===== */
+.pos-interface-big-buttons .bb-header {
+    display: grid;
+    grid-template-columns: minmax(180px, 1fr) minmax(420px, 2fr) minmax(200px, 1fr);
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(180deg, #243b53 0%, #1a2b3d 100%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+.pos-interface-big-buttons .bb-header-left  { display: flex; align-items: center; gap: 10px; }
+.pos-interface-big-buttons .bb-header-center{ display: grid; grid-template-columns: auto 1fr auto; gap: 6px; align-items: center; }
+.pos-interface-big-buttons .bb-header-right { display: flex; align-items: center; gap: 8px; justify-content: flex-end; }
+.pos-interface-big-buttons .bb-greet  { font-size: 13px; }
+.pos-interface-big-buttons .bb-greet strong { font-size: 15px; }
+.pos-interface-big-buttons .bb-loc    { font-size: 12px; padding: 2px 8px; background: rgba(255,255,255,0.12); border-radius: 12px; }
+.pos-interface-big-buttons .bb-clock  { font-size: 18px; font-weight: 700; letter-spacing: 1px; padding: 2px 10px; background: rgba(0,0,0,0.25); border-radius: 4px; }
+
+.pos-interface-big-buttons .bb-home-btn,
+.pos-interface-big-buttons .bb-clear-btn {
+    background: #e8a002; color: #1f1f1f; border: 0; font-weight: 700;
+    height: 40px; padding: 0 14px; border-radius: 4px; white-space: nowrap;
+}
+.pos-interface-big-buttons .bb-clear-btn { background: #d0d0d0; }
+
+.pos-interface-big-buttons .bb-search-slot {
+    background: #fff8c4; border-radius: 4px; padding: 2px 6px;
+    min-height: 40px; display: flex; align-items: center;
+}
+.pos-interface-big-buttons .bb-search-slot .form-group,
+.pos-interface-big-buttons .bb-search-slot .input-group { width: 100%; margin: 0; }
+.pos-interface-big-buttons .bb-search-slot input.form-control { height: 36px; font-size: 16px; background: transparent; border: 0; box-shadow: none; }
+.pos-interface-big-buttons .bb-slot-placeholder { color: #888; padding: 0 8px; font-style: italic; }
+
+.pos-interface-big-buttons .bb-customer-slot { min-width: 180px; flex: 1 1 auto; }
+.pos-interface-big-buttons .bb-customer-slot .form-group { margin: 0; }
+.pos-interface-big-buttons .bb-customer-slot label { display: none; }
+.pos-interface-big-buttons .bb-customer-slot .select2-container { width: 100% !important; }
+.pos-interface-big-buttons .bb-customer-slot .select2-selection { height: 36px !important; }
+.pos-interface-big-buttons .bb-customer-slot .select2-selection__rendered { line-height: 34px !important; }
+.pos-interface-big-buttons .bb-customer-slot .select2-selection__arrow { height: 34px !important; }
+
+/* ===== CATEGORIES AREA =====
+ * Two stacked rows:
+ *   - bb-products-pane : products of the selected category (flex 1).
+ *   - bb-cats-row      : horizontal categories strip with Prev / Next
+ *                        navigation on either side.
+ */
+.pos-interface-big-buttons .bb-cats-area {
+    background: #fff;
+    border: 1px solid #c4cfd9;
+    border-radius: 4px;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 6px;
+}
+
+/* ----- Products pane (top) ----- */
+.pos-interface-big-buttons .bb-products-pane {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: auto;
+    background: #f8f9fb;
+    border: 1px dashed #c4cfd9;
+    border-radius: 4px;
+    padding: 6px;
+    position: relative;
+}
+.pos-interface-big-buttons .bb-products-empty {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    color: #6c757d;
+    font-size: 14px;
+    text-align: center;
+}
+.pos-interface-big-buttons .bb-products-empty i { font-size: 36px; opacity: 0.6; }
+.pos-interface-big-buttons #product_list_body {
+    margin: 0 !important;
+    /* Override the global app.css rule that forces a permanent scrollbar
+       (max-height: 485px; overflow-y: scroll). The outer .bb-products-pane
+       is the only scroller in kiosk mode. */
+    max-height: none !important;
+    overflow: visible !important;
+}
+.pos-interface-big-buttons #product_list_body .product_list {
+    padding: 4px !important;
+    /* Force 6 product tiles per row in kiosk mode (overrides col-md-4). */
+    flex: 0 0 16.6666% !important;
+    max-width: 16.6666% !important;
+    width: 16.6666% !important;
+}
+.pos-interface-big-buttons #product_list_body .product_box {
+    border: 1.5px solid #1f1f1f !important;
+    border-radius: 4px;
+    background: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    min-height: 130px;
+    display: flex;
+    flex-direction: column;
+}
+.pos-interface-big-buttons #product_list_body .product_box:hover { background: #fff5b1; }
+.pos-interface-big-buttons #product_list_body .image-container {
+    flex: 1 1 auto;
+    min-height: 90px;
+    max-height: 140px;
+    /* Fallback placeholder behind the inline background-image so tiles
+       never look empty even when a product has no uploaded image. */
+    background-color: #f4f6f8 !important;
+    background-image: url('/img/default.png');
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    /* contain = auto-fit large images inside the tile without cropping or
+       stretching the product button. */
+    background-size: contain !important;
+}
+/* Any <img> rendered inside the tile (some product partials use <img>
+   instead of a background) is also auto-fitted to the button. */
+.pos-interface-big-buttons #product_list_body .image-container img,
+.pos-interface-big-buttons #product_list_body .product_box img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+    display: block;
+    margin: 0 auto;
+}
+.pos-interface-big-buttons #product_list_body .text_div {
+    padding: 4px 6px;
+    background: #f4f6f8;
+    text-align: center;
+    border-top: 1px solid #1f1f1f;
+}
+.pos-interface-big-buttons #product_list_body .text_div small {
+    font-size: 12px; font-weight: 600; color: #1a2b3d;
+}
+
+/* ----- Categories strip (bottom) ----- */
+.pos-interface-big-buttons .bb-cats-row {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: stretch;
+    gap: 6px;
+    height: 78px;
+    min-height: 78px;
+}
+.pos-interface-big-buttons .bb-cats-nav {
+    flex: 0 0 36px;
+    width: 36px;
+    background: #1f6f8b;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pos-interface-big-buttons .bb-cats-nav:hover { background: #185971; color: #fff; }
+
+.pos-interface-big-buttons .bb-cats-scroll {
+    flex: 1 1 auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    border-top: 1px solid #e1e6ec;
+    border-bottom: 1px solid #e1e6ec;
+}
+.pos-interface-big-buttons .bb-cats-scroll::-webkit-scrollbar { height: 6px; }
+.pos-interface-big-buttons .bb-cats-scroll::-webkit-scrollbar-thumb { background: #c4cfd9; border-radius: 3px; }
+
+.pos-interface-big-buttons .bb-cats-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 6px;
+    padding: 4px 2px;
+    height: 100%;
+}
+.pos-interface-big-buttons .bb-empty-cats {
+    padding: 20px; text-align: center; color: #888; align-self: center;
+}
+
+.pos-interface-big-buttons .bb-category-tile {
+    flex: 0 0 88px;
+    width: 88px;
+    background: linear-gradient(180deg, #ffffff 0%, #f3f5f7 100%);
+    border: 1.5px solid #1f1f1f;
+    border-radius: 4px;
+    color: #1f1f1f;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 1.05;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.1s ease;
+}
+.pos-interface-big-buttons .bb-category-tile:hover  { background: #fff5b1; }
+.pos-interface-big-buttons .bb-category-tile.active { background: #ffd400; border-color: #b08900; }
+.pos-interface-big-buttons .bb-category-thumb {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #5a6b7c;
+    margin-bottom: 2px;
+}
+.pos-interface-big-buttons .bb-category-name {
+    width: 100%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+}
+
+/* ===== CART ===== */
+.pos-interface-big-buttons .bb-cart-area {
+    background: #fff;
+    border: 1px solid #c4cfd9;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.pos-interface-big-buttons .bb-cart-head {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 6px 10px; background: #1f6f8b; color: #fff;
+    font-size: 14px; font-weight: 700;
+}
+.pos-interface-big-buttons .bb-mini-btn.bb-cancel-sale {
+    background: #c0392b; color: #fff; border: 1px solid #922b21;
+    height: 28px; padding: 0 10px; font-size: 12px; font-weight: 700; border-radius: 3px;
+}
+.pos-interface-big-buttons .bb-mini-btn.bb-cancel-sale:hover { background: #a83225; }
+.pos-interface-big-buttons .bb-cart-slot {
+    flex: 1 1 auto; overflow: auto; padding: 0;
+}
+.pos-interface-big-buttons .bb-cart-slot .table-responsive,
+.pos-interface-big-buttons .bb-cart-slot .pos_product_div,
+.pos-interface-big-buttons .bb-cart-slot .bb-cart-table-wrap {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+}
+.pos-interface-big-buttons .bb-cart-slot #pos_table,
+.pos-interface-big-buttons .bb-cart-slot #pos_table thead,
+.pos-interface-big-buttons .bb-cart-slot #pos_table tbody {
+    display: revert !important;
+    visibility: visible !important;
+}
+/* Override the inline `table-layout:fixed; width:100%; z-index:1000` and
+ * `position:sticky` declared on the original pos_form table/thead so the
+ * kiosk slot can render the table normally. */
+.pos-interface-big-buttons .bb-cart-slot #pos_table {
+    table-layout: auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    border-collapse: collapse !important;
+    background: #fff !important;
+}
+.pos-interface-big-buttons .bb-cart-slot #pos_table > thead {
+    position: static !important;
+    top: auto !important;
+    z-index: auto !important;
+}
+.pos-interface-big-buttons .bb-cart-slot #pos_table > thead > tr > th {
+    background: #1f6f8b !important;
+    color: #fff !important;
+    border-color: #155367 !important;
+    text-align: center;
+    white-space: nowrap;
+}
+.pos-interface-big-buttons .bb-cart-slot #pos_table > tbody > tr > td {
+    background: #fff !important;
+}
+.pos-interface-big-buttons #pos_table { margin: 0 !important; table-layout: auto !important; width: 100% !important; }
+.pos-interface-big-buttons #pos_table thead th { background: #1f6f8b; color: #fff; font-size: 12px; padding: 6px 4px; border-color: #155367 !important; }
+.pos-interface-big-buttons #pos_table tbody td { font-size: 13px; padding: 6px 4px; vertical-align: middle; }
+/* Kiosk cart: only show row#, product, qty, unit price, subtotal, remove.
+ * Hide every other auxiliary column (sr/imei, foc, service staff, discount,
+ * price-after-disc, tax, inclusive tax) so the narrow pane stays readable. */
+.pos-interface-big-buttons #pos_table thead th:nth-child(3),
+.pos-interface-big-buttons #pos_table tbody td:nth-child(3),
+.pos-interface-big-buttons #pos_table thead th.pos_discount_th,
+.pos-interface-big-buttons #pos_table tbody td.pos_discount_td,
+.pos-interface-big-buttons #pos_table thead th#pos_discount_heading,
+.pos-interface-big-buttons #pos_table thead th#approval_pos_discount_heading,
+.pos-interface-big-buttons #pos_table thead th#pos_tax_heading,
+.pos-interface-big-buttons #pos_table thead th.hide,
+.pos-interface-big-buttons #pos_table tbody td.hide { display: none !important; }
+
+/* Aggressive class-based column hiding: hide the cart cells regardless of
+ * pos_settings. The kiosk only shows: # | Product | Qty | Unit Price |
+ * Subtotal | Remove. Discount, Price-After-Disc, Tax, Price-Inc-Tax,
+ * FOC and Service-Staff columns are hidden in tbody by targeting the td
+ * that contains the well-known input/span class. */
+.pos-interface-big-buttons #pos_table tbody td:has(.row_discount_amount),
+.pos-interface-big-buttons #pos_table tbody td:has(.pos_unit_price_after_discount),
+.pos-interface-big-buttons #pos_table tbody td:has(.sell_line_tax_id),
+.pos-interface-big-buttons #pos_table tbody td:has(.pos_unit_price_inc_tax),
+.pos-interface-big-buttons #pos_table tbody td:has(.order_line_service_staff),
+.pos-interface-big-buttons #pos_table tbody td:has(.profit_margin_text),
+.pos-interface-big-buttons #pos_table tbody td:has(.last_purchase_price) { display: none !important; }
+/* And matching thead cells where unique IDs/classes apply. */
+.pos-interface-big-buttons #pos_table thead th.foc_th,
+.pos-interface-big-buttons #pos_table thead th.service_staff_th { display: none !important; }
+
+/* QUANTITY cell: force the +/- buttons and sub-unit select to be visible
+ * (the row template uses `d-none d-md-inline-block` which Bootstrap hides
+ * because the cart pane is narrower than the md breakpoint).
+ * Make the qty input + buttons big & touchscreen-friendly. */
+.pos-interface-big-buttons #pos_table tbody td .multi-input.input-number {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    gap: 2px !important;
+}
+.pos-interface-big-buttons #pos_table tbody td .quantity-down,
+.pos-interface-big-buttons #pos_table tbody td .quantity-up {
+    display: none !important;
+}
+.pos-interface-big-buttons #pos_table tbody td .pos_quantity,
+.pos-interface-big-buttons #pos_table tbody td .pos_unit_price,
+.pos-interface-big-buttons #pos_table tbody td .pos_line_total {
+    flex: 1 1 auto !important;
+    min-width: 60px !important;
+    width: 100% !important;
+    height: 34px !important;
+    text-align: center !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    padding: 2px 4px !important;
+    border: 1px solid #c4cfd9 !important;
+    background: #fff !important;
+    color: #1f6f8b !important;
+    border-radius: 4px !important;
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+.pos-interface-big-buttons #pos_table tbody td .pos_quantity {
+    background: #fffce8 !important; /* slight yellow so qty input pops */
+    color: #2c3e50 !important;
+}
+.pos-interface-big-buttons #pos_table tbody td .sub_unit {
+    flex: 0 0 auto !important;
+    min-width: 48px !important;
+    height: 32px !important;
+    font-size: 12px !important;
+}
+/* Show subtotal value even when the hidden input is rendered (when user
+ * can't edit subtotal). The .pos_line_total_text span carries the value. */
+.pos-interface-big-buttons #pos_table tbody td .pos_line_total_text {
+    display: inline-block !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #2c3e50 !important;
+}
+/* Empty-state inside the cart pane. JS toggles the .bb-cart-empty class on
+ * the slot when #pos_table tbody has no rows. */
+.pos-interface-big-buttons .bb-cart-slot { position: relative; }
+.pos-interface-big-buttons .bb-cart-debug { display: none !important; }
+
+/* ===== TOTALS STRIP =====
+ * The original .pos_form_totals has multiple rows. We force it to a single
+ * compact row: Subtotal | VAT | Discount | Total. */
+.pos-interface-big-buttons .bb-totals-area {
+    background: #fff;
+    border: 1px solid #c4cfd9;
+    border-radius: 4px;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.pos-interface-big-buttons .bb-totals-slot { width: 100%; }
+.pos-interface-big-buttons .bb-totals-slot .pos_form_totals { margin: 0; }
+.pos-interface-big-buttons .bb-totals-slot table {
+    width: 100%; margin: 0; border: 0; background: transparent;
+}
+.pos-interface-big-buttons .bb-totals-slot table tbody tr td {
+    border: 0 !important; padding: 2px 6px !important; font-size: 13px;
+}
+.pos-interface-big-buttons .bb-totals-slot .price_total,
+.pos-interface-big-buttons .bb-totals-slot #total_payable,
+.pos-interface-big-buttons .bb-totals-slot .total_tax,
+.pos-interface-big-buttons .bb-totals-slot .total_discounts,
+.pos-interface-big-buttons .bb-totals-slot .total_quantity {
+    font-weight: 800; font-size: 15px; color: #1a2b3d;
+}
+.pos-interface-big-buttons .bb-totals-slot .price_total { color: #c0392b; font-size: 18px; }
+
+/* ===== NUMPAD + DENOMINATIONS ===== */
+.pos-interface-big-buttons .bb-numpad-area {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 6px;
+    background: #fff;
+    border: 1px solid #c4cfd9;
+    border-radius: 4px;
+    padding: 6px;
+}
+.pos-interface-big-buttons .bb-numpad,
+.pos-interface-big-buttons .bb-denominations {
+    display: grid;
+    gap: 4px;
+}
+.pos-interface-big-buttons .bb-numpad      { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-auto-rows: minmax(0, 1fr); }
+.pos-interface-big-buttons .bb-denominations { grid-template-columns: 1fr 1fr; grid-auto-rows: minmax(0, 1fr); }
+
+.pos-interface-big-buttons .bb-numpad-btn,
+.pos-interface-big-buttons .bb-denom-btn,
+.pos-interface-big-buttons .bb-misc-btn,
+.pos-interface-big-buttons .bb-exact-btn,
+.pos-interface-big-buttons .bb-subtotal-btn {
+    min-height: 44px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 4px;
+    border: 1px solid #6c8fb5;
+    line-height: 1;
+}
+.pos-interface-big-buttons .bb-numpad-btn      { background: #cfe4ff; color: #0a2a4d; }
+.pos-interface-big-buttons .bb-numpad-btn:hover{ background: #a9cdff; }
+.pos-interface-big-buttons .bb-numpad-btn.bb-ce{ background: #e74c3c; color: #fff; border-color: #b03a2e; }
+.pos-interface-big-buttons .bb-denom-btn       { background: #d6e2f0; color: #0a2a4d; }
+.pos-interface-big-buttons .bb-denom-btn:hover { background: #b9cce0; }
+.pos-interface-big-buttons .bb-misc-btn        { background: #f1c4d3; color: #4d0a2a; border-color: #d199b0; font-size: 14px; }
+.pos-interface-big-buttons .bb-exact-btn,
+.pos-interface-big-buttons .bb-subtotal-btn    { background: #fff; color: #0a2a4d; border-color: #6c8fb5; }
+
+/* ===== ACTION AREA (tender + PAY/CARD/Voucher) ===== */
+.pos-interface-big-buttons .bb-action-area {
+    background: #fff;
+    border: 1px solid #c4cfd9;
+    border-radius: 4px;
+    padding: 6px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 6px;
+}
+.pos-interface-big-buttons .bb-tender-row {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 6px;
+}
+.pos-interface-big-buttons .bb-tender-field label {
+    display: block; font-size: 12px; font-weight: 600; margin-bottom: 2px; color: #1a2b3d;
+}
+.pos-interface-big-buttons .bb-tendered-input {
+    height: 40px; text-align: right; font-size: 18px; font-weight: 700;
+    background: #fffbe6; border: 1px solid #6c8fb5; padding: 4px 8px;
+}
+
+.pos-interface-big-buttons .bb-pay-row {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 6px;
+}
+.pos-interface-big-buttons .bb-action-btn {
+    min-height: 110px; font-size: 22px; font-weight: 800; border-radius: 4px;
+    color: #fff; border: 1px solid rgba(0,0,0,0.2);
+    text-transform: uppercase;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    line-height: 1.1;
+}
+.pos-interface-big-buttons .bb-action-btn small {
+    display: block; font-size: 11px; font-weight: 600; margin-top: 4px; opacity: 0.85; text-transform: none;
+}
+.pos-interface-big-buttons .bb-pay-btn       { background: linear-gradient(180deg, #d54a3c 0%, #a83225 100%); border-color: #922b21; }
+.pos-interface-big-buttons .bb-pay-btn:hover { background: #a83225; }
+.pos-interface-big-buttons .bb-card-btn      { background: linear-gradient(180deg, #2e95d3 0%, #1f6f8b 100%); border-color: #1f618d; }
+.pos-interface-big-buttons .bb-card-btn:hover{ background: #1f6f8b; }
+.pos-interface-big-buttons .bb-voucher-btn   { background: #d3d3d3; color: #555; border-color: #aaa; }
+
+/* ===== FOOTER UTILITY BAR ===== */
+.pos-interface-big-buttons .bb-footer-bar {
+    display: grid;
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+    gap: 4px;
+    padding: 6px;
+    background: #1a2b3d;
+    border-radius: 4px;
+}
+.pos-interface-big-buttons .bb-footer-btn {
+    min-height: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 3px;
+    color: #fff;
+    border: 0;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    text-align: center;
+    line-height: 1;
+    padding: 4px;
+}
+.pos-interface-big-buttons .bb-footer-btn i { font-size: 16px; }
+.pos-interface-big-buttons .bb-footer-btn span { display: inline-block; }
+.pos-interface-big-buttons .bb-footer-btn:hover { color: #fff; opacity: 0.92; }
+
+.pos-interface-big-buttons .bb-footer-exit       { background: #8e2a2a; }
+.pos-interface-big-buttons .bb-footer-logout     { background: #6c757d; }
+.pos-interface-big-buttons .bb-footer-setup      { background: #1f6f8b; }
+.pos-interface-big-buttons .bb-footer-sales      { background: #2980b9; }
+.pos-interface-big-buttons .bb-footer-opentill   { background: #5e7ec1; }
+.pos-interface-big-buttons .bb-footer-payouts    { background: #e8a002; color: #1f1f1f; }
+.pos-interface-big-buttons .bb-footer-minimize   { background: #6f42c1; }
+.pos-interface-big-buttons .bb-footer-lookup     { background: #845ec2; }
+.pos-interface-big-buttons .bb-footer-keyboard   { background: #2e8b4f; }
+
+/* ===== Responsive — sub-1366 / portrait tablet ===== */
+@media (max-width: 1199px) {
+    .pos-interface-big-buttons .bb-shell {
+        grid-template-rows: 56px minmax(0, 1fr) 48px minmax(200px, auto) 60px;
+    }
+    .pos-interface-big-buttons .bb-cats-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+    .pos-interface-big-buttons .bb-action-btn { min-height: 90px; font-size: 18px; }
+    .pos-interface-big-buttons .bb-numpad-btn,
+    .pos-interface-big-buttons .bb-denom-btn { min-height: 40px; font-size: 16px; }
+}
+@media (max-width: 991px) {
+    .pos-interface-big-buttons .bb-shell {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-areas:
+            "header"
+            "cats"
+            "cart"
+            "totals"
+            "numpad"
+            "action"
+            "footer";
+        height: auto;
+    }
+    html body.pos-interface-big-buttons-body { overflow: auto; }
+    .pos-interface-big-buttons .bb-cats-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .pos-interface-big-buttons .bb-footer-bar { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+}
+@media (max-width: 575px) {
+    .pos-interface-big-buttons .bb-cats-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .pos-interface-big-buttons .bb-footer-bar { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .pos-interface-big-buttons .bb-header { grid-template-columns: 1fr; }
+}

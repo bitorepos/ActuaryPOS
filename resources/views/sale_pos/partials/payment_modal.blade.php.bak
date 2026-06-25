@@ -1,0 +1,301 @@
+<div class="modal fade" tabindex="-1" role="dialog" id="modal_payment">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">@lang('lang_v1.payment')</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> 
+            </div>
+            <div class="modal-body pb-0 pt-0">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="box box-primary bg-light mb-5">
+                            <div class="box-body row">
+                                <div class="col-md-1" style="width: 10%">
+                                    <strong>
+                                        @lang('lang_v1.items'):
+                                    </strong>
+                                    <br />
+                                    <span class="lead text-bold total_quantity">0</span>
+                                </div>
+
+                                <div class="col-md-3" style="width: 22.5%">
+                                    {{-- <hr> --}}
+                                    <strong>
+                                        @lang('sale.total_payable'):
+                                    </strong>
+                                    <br />
+                                    <span class="lead text-bold total_payable_span">0</span>
+                                </div>
+
+                                <div class="col-md-3" style="width: 22.5%">
+                                    {{-- <hr> --}}
+                                    <strong>
+                                        @lang('lang_v1.total_paying'):
+                                    </strong>
+                                    <br />
+                                    <span class="lead text-bold total_paying">0</span>
+                                    <input type="hidden" id="total_paying_input">
+                                </div>
+
+                                <div class="col-md-2" style="width: 22.5%">
+                                    {{-- <hr> --}}
+                                    <strong>
+                                        @lang('lang_v1.change_return'):
+                                    </strong>
+                                    <br />
+                                    <span class="lead text-bold change_return_span">0</span>
+                                    <!-- <span class="lead text-bold total_quantity">0</span> -->
+                                    @if(!empty($change_return['id']))
+                                    <input type="hidden" name="change_return_id" value="{{$change_return['id']}}">
+                                    @endif
+                                </div>
+
+                                <div class="col-md-3 text-center" style="width: 22.5%">
+                                    {{-- <hr> --}}
+                                    <strong>
+                                        @lang('lang_v1.balance'):
+                                    </strong>
+                                    <br />
+                                    <span class="lead text-bold balance_due">0</span>
+                                    <input type="hidden" id="in_balance_due" value=0>
+                                </div>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-12">
+                        <strong>@lang('lang_v1.advance_balance'):</strong> <span id="advance_balance_text"></span>
+                        {!! Form::hidden('advance_balance', null, ['id' => 'advance_balance', 'data-error-msg' =>
+                        __('lang_v1.required_advance_balance_not_available')]); !!}
+                    </div>
+                    <div class="@if(empty($pos_settings['quick_cash_buttons'])) col-md-7 @else col-md-6 @endif pl-0 pr-0">
+                        <div class="row">
+                            <div id="payment_rows_div">
+                                @foreach($payment_lines as $payment_line)
+                                @if($payment_line['is_return'] == 1)
+                                @php
+                                $change_return = $payment_line;
+                                @endphp
+                                @continue
+                                @endif
+
+                                @include('sale_pos.partials.payment_row_form_modal', ['removable' => !$loop->first, 'row_index' => $loop->index, 'payment_line' => $payment_line])
+                                @endforeach
+                            </div>
+                            <input type="hidden" id="payment_row_index" value="{{count($payment_lines)}}">
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="row payment_row"
+                            id="change_return_payment_data">
+                            <div class="col-md-12">
+                                <div class="col-md-6 pr-5">
+                                    <div class="mb-3">
+                                        <button type="button" data-row-index="change_return" class="btn btn-default btn-block" readonly>@lang('lang_v1.change_return')</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 pl-5">
+                                    @php
+                                    $_payment_method = empty($change_return['method']) && array_key_exists('cash', $payment_types) ? 'cash' : $change_return['method'];
+                                    $_payment_types = $payment_types;
+                                    if(isset($_payment_types['advance'])) {
+                                        unset($_payment_types['advance']);
+                                    }
+                                    @endphp
+                                    <div class="input-group modal_change_return_payment_row" data-method="{{$_payment_method}}">
+                                        <span class="input-group-addon">
+                                            <i class="fas fa-money-bill-alt"></i>
+                                        </span>
+                                            {!! Form::text("change_return", $change_return['amount'], ['class' => 'form-control change_return input_number', 'readonly', 'id' => "change_return"]); !!}
+                                            {!! Form::hidden("payment[change_return][method]", $_payment_method, ['id' => 'pay_modal_change_return_method']); !!}
+                                            @if(!empty($accounts))
+                                                {!! Form::hidden("payment[change_return][account_id]", $change_return['account_id'], ['class' => 'form-control', 'id' => "account_id"]); !!}
+                                            @endif
+                                    </div>
+                                </div>
+                                        {{-- <div class="clearfix"></div> --}}
+                                        {{-- @include('sale_pos.partials.payment_type_details', ['payment_line' => $change_return, 'row_index' => 'change_return']) --}}
+                            </div>
+                        </div>
+                        @if(!empty($pos_settings['enable_sale_note']))
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    {!! Form::label('sale_note', __('sale.sell_note') . ':') !!}
+                                    {!! Form::textarea('sale_note', !empty($transaction)?
+                                    $transaction->additional_notes:null, ['class' => 'form-control', 'rows' => 3,
+                                    'placeholder' => __('sale.sell_note')]); !!}
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    {!! Form::label('staff_note', __('sale.staff_note') . ':') !!}
+                                    {!! Form::textarea('staff_note',
+                                    !empty($transaction)? $transaction->staff_note:null, ['class' => 'form-control',
+                                    'rows' => 3, 'placeholder' => __('sale.staff_note')]); !!}
+                                </div>
+                            </div>
+                        </div>
+                        @endif
+                    </div>
+                    <div class="@if(!empty($pos_settings['quick_cash_buttons'])) col-md-4 @else col-md-5 @endif pr-5">
+                        <div class="row">
+                            <div class="col-4 pl-0 pr-5 pb-5"><button type="button" class="btn btn-primary btn-block payment_cash_buttons" id="numpad_payable">Amount</button></div>
+                            <div class="col-4 pl-0 pr-5 pb-5"><button type="button" class="btn btn-primary btn-block payment_num_buttons" value="back"><i class="fas fa-arrow-left"></i><br>Back</button></div>
+                            <div class="col-4 pl-0 pr-5 pb-5"><button type="button" class="btn btn-primary btn-block payment_num_buttons" value="clear"><i class="fas fa-edit"></i><br>Clear</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 pl-0 pr-5 pb-5"><button type="button" class="btn btn-primary btn-block payment_num_buttons" value="7">7</button></div>
+                            <div class="col-4 pl-0 pr-5 pb-5"><button type="button" class="btn btn-primary btn-block payment_num_buttons" value="8">8</button></div>
+                            <div class="col-4 pl-0 pr-5 pb-5"><button type="button" class="btn btn-primary btn-block payment_num_buttons" value="9">9</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 pl-0 pr-5 pb-5"><button type="button" class="btn btn-primary btn-block payment_num_buttons" value="4">4</button></div>
+                            <div class="col-4 pl-0 pr-5 pb-5"><button type="button" class="btn btn-primary btn-block payment_num_buttons" value="5">5</button></div>
+                            <div class="col-4 pl-0 pr-5 pb-5"><button type="button" class="btn btn-primary btn-block payment_num_buttons" value="6">6</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 pl-0 pr-5 pb-5"><button type="button" class="btn btn-primary btn-block payment_num_buttons" value="1">1</button></div>
+                            <div class="col-4 pl-0 pr-5 pb-5"><button type="button" class="btn btn-primary btn-block payment_num_buttons" value="2">2</button></div>
+                            <div class="col-4 pl-0 pr-5 pb-5"><button type="button" class="btn btn-primary btn-block payment_num_buttons" value="3">3</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 pl-0 pr-5 pb-5"><button type="button" class="btn btn-primary btn-block payment_num_buttons" value="0">0</button></div>
+                            <div class="col-4 pl-0 pr-5 pb-5"><button type="button" class="btn btn-primary btn-block payment_num_buttons" value=".">.</button></div>
+                            <div class="col-4 pl-0 pr-5 pb-5"><button type="button" class="btn btn-primary btn-block payment_num_buttons" value="plus_minus">+/-</button></div>
+                        </div>
+
+                    </div>
+                    @if(!empty($pos_settings['quick_cash_buttons']))
+                    <div class="col-md-2 pl-10">
+                        @foreach(explode(',', $pos_settings['quick_cash_buttons']) as $cash_button)
+                        <div class="form-group pb-5 mb-0">
+                            <button type="button" class="btn btn-primary btn-lg btn-block payment_cash_buttons" value="{{$cash_button}}"> {{@num_format($cash_button)}}</button>
+                        </div>
+                        @endforeach
+                    </div>
+                    @endif
+                    {{-- <div class="col-md-2 me-2">
+                        <div class="mb-3">
+                            <button type="button" class="btn btn-primary btn-block btn-lg payment_num_buttons" value="7">7</button>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="mb-3">
+                            <button type="button" class="btn btn-primary btn-block btn-lg payment_num_buttons" value="7">7</button>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="mb-3">
+                            <button type="button" class="btn btn-primary btn-block btn-lg payment_num_buttons" value="7">7</button>
+                        </div>
+                    </div> --}}
+                </div>
+            </div>
+            <div class="modal-footer">
+				<input type="hidden" name="pos_takeway_kot" id="pos-takeway-kot" value="0">
+                <input type="hidden" id="multipay_modal_enter" value="{{ $pos_settings['multipay_modal_enter'] }}">
+                {!! Form::hidden('pos_save_and_print', 1, ['id' => 'pos_save_and_print']) !!}
+                <button type="submit" class="btn btn-primary big-button" id="pos-save">
+					@lang('sale.finalize_payment')
+                </button>
+                <button type="submit" class="btn btn-primary hidden big-button" id="pos-save-multipay" data-btn-value="save">
+					@lang('messages.save')
+                </button>
+                @if(empty($pos_settings['hide_pay_print_btn_multipay']))
+                    <button type="submit" class="btn btn-primary hidden big-button" id="pos-save-multipay" data-btn-value='save_n_print' data-save-and-print='true'>
+                        @lang('lang_v1.save_and_print')
+                    </button> 
+                @endif
+				<button type="button" class="btn btn-default big-button" data-bs-dismiss="modal">@lang('messages.close')</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Used for express checkout card transaction -->
+<div class="modal fade" tabindex="-1" role="dialog" id="card_details_modal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">@lang('lang_v1.card_transaction_details')</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                {!! Form::label("card_number", __('lang_v1.card_no')) !!}
+                                {!! Form::text("", null, ['class' => 'form-control', 'placeholder' =>
+                                __('lang_v1.card_no'), 'id' => "card_number", 'autofocus']); !!}
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                {!! Form::label("card_holder_name", __('lang_v1.card_holder_name')) !!}
+                                {!! Form::text("", null, ['class' => 'form-control', 'placeholder' =>
+                                __('lang_v1.card_holder_name'), 'id' => "card_holder_name"]); !!}
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                {!! Form::label("card_transaction_number",__('lang_v1.card_transaction_no')) !!}
+                                {!! Form::text("", null, ['class' => 'form-control', 'placeholder' =>
+                                __('lang_v1.card_transaction_no'), 'id' => "card_transaction_number"]); !!}
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                {!! Form::label("card_type", __('lang_v1.card_type')) !!}
+                                {!! Form::select("", ['visa' => 'Visa', 'master' => 'MasterCard'], 'visa',['class' =>
+                                'form-control select2', 'id' => "card_type" ]); !!}
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                {!! Form::label("card_month", __('lang_v1.month')) !!}
+                                {!! Form::text("", null, ['class' => 'form-control', 'placeholder' =>
+                                __('lang_v1.month'),
+                                'id' => "card_month" ]); !!}
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                {!! Form::label("card_year", __('lang_v1.year')) !!}
+                                {!! Form::text("", null, ['class' => 'form-control', 'placeholder' =>
+                                __('lang_v1.year'), 'id' => "card_year" ]); !!}
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                {!! Form::label("card_security",__('lang_v1.security_code')) !!}
+                                {!! Form::text("", null, ['class' => 'form-control', 'placeholder' =>
+                                __('lang_v1.security_code'), 'id' => "card_security"]); !!}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="pos-save-card" data-save-and-print='true'>@lang('lang_v1.save_and_print')</button>
+                <button type="button" class="btn btn-primary" id="pos-save-card">@lang('messages.save')</button>
+                
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+

@@ -1,0 +1,505 @@
+/* ═══════════════════════════════════════════════════════════
+   HRM DASHBOARD - MODERN PROFESSIONAL STYLES
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── Dashboard Header ─────────────────────────────────── */
+.hrm-dash-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 14px;
+    padding: 24px 28px;
+    margin-bottom: 24px;
+    color: #fff;
+    box-shadow: 0 4px 20px rgba(102, 126, 234, 0.35);
+}
+.hrm-greeting {
+    font-size: 1.55rem;
+    font-weight: 700;
+    margin: 0 0 4px 0;
+    color: #fff;
+}
+.hrm-greeting i {
+    margin-right: 6px;
+}
+.hrm-greeting-sub {
+    margin: 0;
+    font-size: 0.88rem;
+    opacity: 0.85;
+    color: #e0e0ff;
+}
+.hrm-header-actions .btn {
+    margin: 3px 4px;
+    border-radius: 8px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    background: rgba(255,255,255,0.95);
+    border: none;
+    color: #5e5e7d;
+    transition: all 0.2s;
+    padding: 6px 14px;
+}
+.hrm-header-actions .btn:hover {
+    background: #fff;
+    color: #667eea;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transform: translateY(-1px);
+}
+.hrm-header-actions .badge {
+    font-size: 10px;
+    border-radius: 50%;
+    padding: 3px 6px;
+    position: relative;
+    top: -1px;
+}
+
+/* ── KPI Cards Row ────────────────────────────────────── */
+.hrm-kpi-row {
+    margin-bottom: 20px;
+}
+.hrm-kpi-card {
+    border-radius: 14px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 16px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: none;
+}
+.hrm-kpi-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+.kpi-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-right: 16px;
+    flex-shrink: 0;
+}
+.kpi-info {
+    flex: 1;
+    min-width: 80px;
+}
+.kpi-info h3 {
+    font-size: 1.85rem;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1.1;
+}
+.kpi-info span {
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    opacity: 0.8;
+}
+.kpi-footer {
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(0,0,0,0.06);
+}
+.kpi-footer small {
+    font-size: 0.78rem;
+    opacity: 0.7;
+    font-weight: 500;
+}
+
+/* KPI Color Variants */
+.kpi-employees {
+    background: linear-gradient(135deg, #667eea22, #764ba222);
+    color: #4a4a7d;
+}
+.kpi-employees .kpi-icon { background: linear-gradient(135deg, #667eea, #764ba2); color: #fff; }
+
+.kpi-present {
+    background: linear-gradient(135deg, #11998e22, #38ef7d22);
+    color: #1a6b5f;
+}
+.kpi-present .kpi-icon { background: linear-gradient(135deg, #11998e, #38ef7d); color: #fff; }
+
+.kpi-leave {
+    background: linear-gradient(135deg, #f5af1922, #f1280022);
+    color: #8a5e0e;
+}
+.kpi-leave .kpi-icon { background: linear-gradient(135deg, #f5af19, #f09819); color: #fff; }
+
+.kpi-absent {
+    background: linear-gradient(135deg, #eb3349aa, #f4535033);
+    color: #8b2230;
+    background: linear-gradient(135deg, #ff616622, #ef5a6f22);
+}
+.kpi-absent .kpi-icon { background: linear-gradient(135deg, #eb3349, #f45c43); color: #fff; }
+
+/* ── Card System ──────────────────────────────────────── */
+.hrm-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    margin-bottom: 20px;
+    border: 1px solid rgba(0,0,0,0.04);
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+}
+.hrm-card:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.hrm-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border-bottom: 1px solid #f0f2f5;
+    background: #fafbfd;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.hrm-card-header h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin: 0;
+    color: #32325d;
+}
+.hrm-card-header h4 i {
+    margin-right: 8px;
+    font-size: 0.9rem;
+}
+.hrm-card-body {
+    padding: 16px 20px;
+}
+
+/* Scrollable card body */
+.hrm-card-scroll {
+    max-height: 360px;
+    overflow-y: auto;
+}
+.hrm-card-scroll-sm {
+    max-height: 220px;
+    overflow-y: auto;
+}
+.hrm-card-scroll::-webkit-scrollbar,
+.hrm-card-scroll-sm::-webkit-scrollbar {
+    width: 5px;
+}
+.hrm-card-scroll::-webkit-scrollbar-track,
+.hrm-card-scroll-sm::-webkit-scrollbar-track {
+    background: transparent;
+}
+.hrm-card-scroll::-webkit-scrollbar-thumb,
+.hrm-card-scroll-sm::-webkit-scrollbar-thumb {
+    background: #d0d5dd;
+    border-radius: 10px;
+}
+
+/* Alert variant */
+.hrm-card-alert {
+    border-left: 4px solid #f5576c;
+}
+
+/* ── Badges ───────────────────────────────────────────── */
+.hrm-badge {
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+.badge-info { background: #e8f4fd; color: #1a7fc4; }
+.badge-success { background: #e6f9ee; color: #1a8a4f; }
+.badge-danger { background: #fde8ea; color: #c0392b; }
+.badge-warning { background: #fef5e5; color: #b58105; }
+
+/* ── Section Titles ───────────────────────────────────── */
+.hrm-section-title {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #8898aa;
+    margin-bottom: 10px;
+}
+.hrm-section-title i {
+    margin-right: 5px;
+    font-size: 0.72rem;
+}
+
+/* ── List Items ───────────────────────────────────────── */
+.hrm-list-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #f5f6fa;
+}
+.hrm-list-item:last-child {
+    border-bottom: none;
+}
+.hrm-list-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+.hrm-list-content {
+    flex: 1;
+    min-width: 0;
+}
+.hrm-list-content strong {
+    font-size: 0.85rem;
+    color: #32325d;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Avatar color variants */
+.bg-warning-light { background: #fff8e5; color: #f5af19; }
+.bg-info-light { background: #e8f4fd; color: #4facfe; }
+.bg-success-light { background: #e6f9ee; color: #11998e; }
+.bg-danger-light { background: #fde8ea; color: #eb3349; }
+.bg-pink-light { background: #fce4f1; color: #e84393; }
+.bg-purple-light { background: #edebfa; color: #764ba2; }
+
+/* ── Stat Boxes ───────────────────────────────────────── */
+.hrm-stat-box {
+    padding: 12px 8px;
+}
+.hrm-stat-box h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 8px 0 4px 0;
+    color: #32325d;
+}
+.stat-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+/* ── Announcement Items ───────────────────────────────── */
+.hrm-announcement-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #f5f6fa;
+}
+.hrm-announcement-item:last-child {
+    border-bottom: none;
+}
+.announcement-title {
+    margin-bottom: 4px;
+}
+.announcement-title i { margin-right: 6px; }
+.announcement-title strong {
+    font-size: 0.88rem;
+    color: #32325d;
+}
+.announcement-desc {
+    font-size: 0.82rem;
+    color: #6c757d;
+    line-height: 1.5;
+}
+
+/* ── Tables ───────────────────────────────────────────── */
+.hrm-card .table {
+    font-size: 0.85rem;
+}
+.hrm-card .table thead th {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #8898aa;
+    border-top: none;
+    padding: 8px 12px;
+    background: #fafbfd;
+}
+.hrm-card .table td {
+    vertical-align: middle;
+    padding: 8px 12px;
+    border-color: #f0f2f5;
+}
+
+/* ── Chart Container ──────────────────────────────────── */
+#attendanceTrendChart {
+    min-height: 220px;
+}
+#departmentChart {
+    max-height: 280px;
+}
+
+/* ── Text Colors ──────────────────────────────────────── */
+.text-pink { color: #e84393 !important; }
+.text-purple { color: #764ba2 !important; }
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 768px) {
+    .hrm-dash-header {
+        padding: 18px 16px;
+        border-radius: 10px;
+    }
+    .hrm-greeting {
+        font-size: 1.2rem;
+    }
+    .hrm-header-actions {
+        margin-top: 12px;
+    }
+    .hrm-kpi-card {
+        padding: 14px;
+    }
+    .kpi-info h3 {
+        font-size: 1.5rem;
+    }
+    .kpi-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 18px;
+    }
+    .hrm-card-header {
+        padding: 12px 14px;
+    }
+    .hrm-card-body {
+        padding: 12px 14px;
+    }
+    .hrm-stat-box h3 {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 480px) {
+    .hrm-dash-header {
+        padding: 14px 12px;
+        border-radius: 8px;
+    }
+    .hrm-greeting {
+        font-size: 1.05rem;
+    }
+    .hrm-kpi-card .kpi-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        margin-right: 10px;
+    }
+}
+
+/* =============================================================
+   HRM DASHBOARD — DARK THEME / NIGHT MODE OVERRIDES
+   ============================================================= */
+html.dark-theme .hrm-kpi-card {
+    background: #202a40;
+    border-color: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+}
+html.dark-theme .hrm-kpi-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+html.dark-theme .kpi-info h3 {
+    color: #e4e5e6;
+}
+html.dark-theme .kpi-info span {
+    color: #8b95a5;
+}
+html.dark-theme .hrm-card {
+    background: #202a40;
+    border-color: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+}
+html.dark-theme .hrm-card:hover {
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+}
+html.dark-theme .hrm-card-header {
+    background: #1b2538;
+    border-bottom-color: rgba(255, 255, 255, 0.10);
+}
+html.dark-theme .hrm-card-header h6 {
+    color: #e4e5e6;
+}
+html.dark-theme .hrm-card-body {
+    color: #e4e5e6;
+}
+html.dark-theme .hrm-section-title {
+    color: #8b95a5;
+}
+html.dark-theme .hrm-list-item {
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+html.dark-theme .hrm-list-content strong {
+    color: #e4e5e6;
+}
+html.dark-theme .hrm-stat-box h3 {
+    color: #e4e5e6;
+}
+html.dark-theme .hrm-announcement-item {
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+html.dark-theme .announcement-title strong {
+    color: #e4e5e6;
+}
+html.dark-theme .announcement-desc {
+    color: #8b95a5;
+}
+html.dark-theme .hrm-card .table thead th {
+    background: #1b2538;
+    color: #8b95a5;
+    border-color: rgba(255, 255, 255, 0.08);
+}
+html.dark-theme .hrm-card .table td {
+    border-color: rgba(255, 255, 255, 0.08);
+    color: #e4e5e6;
+}
+html.dark-theme .hrm-header-actions .btn {
+    background: rgba(255, 255, 255, 0.10);
+    color: #e4e5e6;
+}
+html.dark-theme .hrm-header-actions .btn:hover {
+    background: rgba(255, 255, 255, 0.18);
+    color: #fff;
+}
+html.dark-theme .badge-info {
+    background: rgba(26, 127, 196, 0.18);
+    color: #6db3f2;
+}
+html.dark-theme .badge-success {
+    background: rgba(17, 153, 142, 0.18);
+    color: #38ef7d;
+}
+html.dark-theme .badge-danger {
+    background: rgba(192, 57, 43, 0.18);
+    color: #f5576c;
+}
+html.dark-theme .badge-warning {
+    background: rgba(181, 129, 5, 0.18);
+    color: #ffd23f;
+}
+html.dark-theme .bg-warning-light {
+    background: rgba(245, 175, 25, 0.12);
+}
+html.dark-theme .bg-info-light {
+    background: rgba(79, 172, 254, 0.12);
+}
+html.dark-theme .bg-success-light {
+    background: rgba(17, 153, 142, 0.12);
+}
+html.dark-theme .bg-danger-light {
+    background: rgba(235, 51, 73, 0.12);
+}
+html.dark-theme .bg-pink-light {
+    background: rgba(232, 67, 147, 0.12);
+}
+html.dark-theme .bg-purple-light {
+    background: rgba(118, 75, 162, 0.12);
+}

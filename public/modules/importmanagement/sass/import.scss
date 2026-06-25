@@ -1,0 +1,90 @@
+/* Import Management Module Styles */
+
+.import-status-badge {
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Timeline steps */
+.timeline-steps {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: relative;
+}
+
+.timeline-steps::before {
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: 5%;
+    right: 5%;
+    height: 3px;
+    background: #e0e0e0;
+    z-index: 0;
+}
+
+.timeline-steps .text-center {
+    position: relative;
+    z-index: 1;
+}
+
+/* Import form specific */
+#import_items_table .form-control.input-sm {
+    min-width: 80px;
+}
+
+#import_charges_table .form-control.input-sm {
+    min-width: 80px;
+}
+
+/* Compact charge currency select */
+#import_charges_table .charge_currency_select {
+    min-width: 100px;
+}
+
+/* Summary table styling */
+.import-summary-table td {
+    padding: 8px 15px;
+}
+
+.import-summary-table .total-row {
+    font-size: 16px;
+    border-top: 2px solid #333;
+}
+
+/* Info box number sizing for report page */
+#report_summary_cards .info-box-number {
+    font-size: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #import_items_table,
+    #import_charges_table {
+        font-size: 12px;
+    }
+
+    .timeline-steps {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .timeline-steps::before {
+        top: auto;
+        left: 15px;
+        right: auto;
+        width: 3px;
+        height: calc(100% - 40px);
+    }
+
+    .timeline-steps .text-center {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+}

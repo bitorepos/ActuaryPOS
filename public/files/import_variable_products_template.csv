@@ -1,0 +1,9 @@
+PRODUCT NAME,OTHER NAME,BRAND,GENDER,PROCUREMENT SOURCE,UNIT,CATEGORY,SUB CATEGORY,SKU,BARCODE TYPE,MANAGE STOCK (1=Yes 0=No),APPLICABLE TAX,SELLING PRICE TAX TYPE (inclusive or exclusive or none),VARIATION TEMPLATE,VARIATION VALUE,VARIATION SKU,PURCHASE PRICE (Exc. Tax),PURCHASE PRICE (Inc. Tax),PROFIT MARGIN %,SELLING PRICE,OPENING STOCK,OPENING STOCK LOCATION,IMAGE
+T-Shirt,Tee Shirt,Nike,Unisex,Local,Pcs,Clothing,Shirts,TS-001,C128,1,,exclusive,Size,Small,,90,100,25,,10,Main Store,
+,,,,,,,,,,,,,,Medium,,108,120,25,,20,,
+,,,,,,,,,,,,,,Large,,126,140,25,,30,,
+Polo Shirt,,Adidas,Men,Imported,Pcs,Clothing,Shirts,PS-001,C128,1,,exclusive,Size-Color,Small-Red,,200,220,25,,5,Main Store,
+,,,,,,,,,,,,,,Small-Blue,,200,220,25,,5,,
+,,,,,,,,,,,,,,Medium-Red,,220,242,25,,10,,
+,,,,,,,,,,,,,,Medium-Blue,,220,242,25,,10,,
+Cap,,Puma,,,Pcs,Accessories,,CAP-001,C128,1,,exclusive,Size,Free Size,,50,55,30,,15,Main Store,

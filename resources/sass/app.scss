@@ -1,0 +1,71 @@
+// Fonts — Raleway Google Font removed for offline/localhost performance
+// System fonts and locally bundled fonts are used instead
+// @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap 5
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@import "node_modules/icheck/skins/square/blue";
+
+@import "node_modules/ladda/dist/ladda-themeless.min";
+
+@import 'node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/brands';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/solid';
+
+@import "node_modules/jkanban/dist/jkanban.min";
+
+@import "node_modules/perfect-scrollbar/css/perfect-scrollbar";
+
+@import 'node_modules/patternlock/dist/patternlock.min';
+
+@import 'node_modules/@yaireo/tagify/dist/tagify';
+
+// Modal z-index fixes for Bootstrap 5 (raised above all app chrome/overlays)
+.modal,
+.modal.show {
+  z-index: 12000 !important;
+}
+
+// .modal-backdrop,
+// .modal-backdrop.show {
+//   z-index: 11990 !important;
+// }
+
+.modal-dialog,
+.modal.fade .modal-dialog,
+.modal.show .modal-dialog {
+  z-index: 12001 !important;
+}
+
+// Normalize sidebar link/icon colors (prevent mixed blue states)
+.main-sidebar .sidebar-menu>li>a,
+.main-sidebar .sidebar-menu>li>a>i,
+.main-sidebar .sidebar-menu .treeview-menu>li>a,
+.main-sidebar .sidebar-menu .treeview-menu>li>a>i {
+  color: #444 !important;
+}
+
+.opening-stock-quantity-input {
+  min-width: 70px;
+}
+
+.opening-stock-unit-label {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  background: #2b9bd8;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.modal-open .datepicker,
+.modal-open .datepicker-dropdown {
+  z-index: 2147483647 !important;
+}

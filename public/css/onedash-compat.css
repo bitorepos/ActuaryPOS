@@ -1,0 +1,1794 @@
+/*
+ * OneDash Compatibility Layer for BitorePOS
+ * Maps legacy AdminLTE / custom classes to OneDash Bootstrap 5 layout
+ * This file preserves backward compatibility so existing Blade views
+ * continue to work without refactoring every page.
+ */
+
+/* ===== Notification dropdown fixes ===== */
+.notifications-menu .dropdown-menu {
+    width: 340px !important;
+    overflow-x: hidden !important;
+}
+.notifications-menu .dropdown-menu > li.load_more_li {
+    display: block !important;
+    width: 100% !important;
+    padding: 6px 0 !important;
+    border-top: 1px solid #e5e7eb !important;
+    text-align: center !important;
+    background-color: #fff !important;
+    box-sizing: border-box !important;
+}
+.notifications-menu .dropdown-menu > li.load_more_li > a {
+    display: block !important;
+    float: none !important;
+    text-align: center !important;
+    color: #5e72e4 !important;
+    font-size: .78rem !important;
+    padding: 4px 10px !important;
+}
+
+/* ===== Legacy .box → Bootstrap 5 .card mapping ===== */
+.box {
+    position: relative;
+    border-radius: 10px;
+    background: #ffffff;
+    border: 0;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.box.box-solid {
+    border: 0;
+}
+
+.box.box-primary {
+    border-top: 3px solid var(--bs-primary, #3461ff);
+}
+
+.box.box-success {
+    border-top: 3px solid #15ca20;
+}
+
+.box.box-warning {
+    border-top: 3px solid #ffc107;
+}
+
+.box.box-danger {
+    border-top: 3px solid #fd3550;
+}
+
+.box.box-info {
+    border-top: 3px solid #0dcaf0;
+}
+
+.box .box-header {
+    color: var(--theme-primary-dark, #4c5258);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 10px 10px 0 0;
+}
+
+.box .box-header .box-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    display: inline-block;
+    line-height: 1;
+}
+
+.box .box-header .box-tools {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.box .box-body {
+    padding: 1.25rem;
+    border-radius: 0 0 10px 10px;
+}
+
+.box .box-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 0.75rem 1.25rem;
+    background-color: transparent;
+    border-radius: 0 0 10px 10px;
+}
+
+/* box-body used standalone (without parent .box wrapper) */
+.box-body {
+    padding: 1.25rem;
+}
+
+/* box-header used standalone */
+.box-header {
+    color: var(--theme-primary-dark, #4c5258);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.box-header.with-border {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.box-header .box-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    display: inline-block;
+    line-height: 1;
+}
+
+.box-header .box-tools {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* box-widget variant */
+.box.box-widget {
+    border: 0;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* box-profile variant */
+.box-profile {
+    padding: 1.25rem;
+    text-align: center;
+}
+
+/* collapsed-box toggling */
+.collapsed-box .box-body,
+.collapsed-box .box-footer {
+    display: none;
+}
+
+/* box-group (accordion) */
+.box-group .box {
+    margin-bottom: 0;
+    border-radius: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.box-group .box:first-child {
+    border-radius: 10px 10px 0 0;
+    border-top: 0;
+}
+
+.box-group .box:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+/* small-box (statistics boxes) */
+.small-box {
+    border-radius: 10px;
+    position: relative;
+    display: block;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    overflow: hidden;
+}
+
+.small-box>.inner {
+    padding: 1.25rem;
+}
+
+.small-box>.inner>h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.small-box>.inner>p {
+    font-size: 1rem;
+}
+
+.small-box>.icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 70px;
+    color: rgba(0, 0, 0, 0.15);
+}
+
+.small-box>.small-box-footer {
+    display: block;
+    text-align: center;
+    padding: 3px 0;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+.small-box>.small-box-footer:hover {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Legacy content-wrapper ===== */
+.content-wrapper {
+    margin-left: 260px;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    min-height: calc(100vh - 130px);
+    transition: all .2s;
+    overflow-x: hidden;
+}
+
+.toggled .content-wrapper {
+    margin-left: 70px;
+}
+
+.toggled .main-footer {
+    margin-left: 50px;
+}
+
+/* ===== Legacy content-header ===== */
+.content-header {
+    padding: 15px 15px 0 15px;
+}
+
+.content-header>h1 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--theme-primary-dark, #4c5258);
+    line-height: 1.4;
+}
+
+.content-header>h1>small {
+    font-size: 0.85rem;
+    color: #6c757d;
+    font-weight: 400;
+}
+
+.content-header-custom {
+    padding: 15px;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    background: #fff;
+    border-radius: 10px;
+    margin: 0 15px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.03);
+}
+
+/* ===== Breadcrumb ===== */
+.content-header .breadcrumb {
+    float: right;
+    background: transparent;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.85rem;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.content-header .breadcrumb>li+li:before {
+    content: '>';
+    padding: 0 5px;
+    color: #6c757d;
+}
+
+/* ===== Legacy .content section ===== */
+.content {
+    padding: 15px;
+    min-height: 250px;
+}
+
+/* ===== Legacy section header used in many views ===== */
+section.content-header {
+    padding: 15px 15px 0 15px;
+}
+
+section.content-header>h1 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--theme-primary-dark, #4c5258);
+}
+
+section.content {
+    padding: 0.5rem;
+    overflow-x: hidden;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* ===== OneDash page-breadcrumb mapping ===== */
+.page-breadcrumb {
+    padding: 10px 15px;
+}
+
+.breadcrumb-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--theme-primary-dark, #4c5258);
+    border-right: 1.5px solid #ccc;
+    padding-right: 15px;
+    margin-right: 15px;
+}
+
+/* ===== Legacy table theme ===== */
+.table-th-skin thead th {
+    background-color: var(--theme-primary-light, #f7f8fa);
+    color: var(--theme-primary-dark, #4c5258);
+    font-weight: 600;
+    border-bottom: 2px solid rgba(var(--bs-primary-rgb, 0, 0, 0), 0.15);
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+/* ===== Legacy btn-flat ===== */
+.btn-flat {
+    border-radius: 4px;
+}
+
+/* ===== Legacy .btn-modal ===== */
+/* No override needed - uses JS handlers */
+
+/* ===== Legacy .main-header mapping (non-POS) ===== */
+/* Now handled by .top-header in OneDash  */
+
+/* ===== Legacy .main-sidebar mapping ===== */
+/* Now handled by .sidebar-wrapper in OneDash */
+
+/* ===== Legacy .main-footer mapping ===== */
+.main-footer {
+    position: fixed !important;
+    left: 30px;
+    right: 0;
+    bottom: 0;
+    padding: 0.7rem 1rem;
+    color: #484444;
+    background-color: #f7f8fa;
+    border-top: 1px solid #e2e3e4;
+    text-align: center;
+    transition: all .2s;
+    z-index: 1000;
+}
+
+.toggled .main-footer {
+    left: 20px;
+}
+
+/* ===== Sidebar menu legacy class compat ===== */
+.sidebar-menu.tree {
+    list-style: none;
+    padding: 10px;
+    margin-top: 60px;
+}
+
+.sidebar-menu.tree li+li {
+    margin-top: 3px;
+}
+
+.sidebar-menu.tree li a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #5f5f5f;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    border-left: 4px solid transparent;
+    transition: all 0.2s ease-out;
+}
+
+.sidebar-menu.tree li a:hover,
+.sidebar-menu.tree li.active>a {
+    color: var(--bs-primary, #3461ff);
+    background-color: #fff;
+    border-left: 4px solid var(--bs-primary, #3461ff);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.08);
+}
+
+.sidebar-menu.tree li a .fa,
+.sidebar-menu.tree li a .fas,
+.sidebar-menu.tree li a .far,
+.sidebar-menu.tree li a .bi {
+    font-size: 16px;
+    width: 30px;
+    text-align: center;
+}
+
+.sidebar-menu.tree li a span {
+    margin-left: 5px;
+}
+
+.sidebar-menu.tree .treeview>a .float-end-container {
+    margin-left: auto;
+}
+
+.sidebar-menu.tree .treeview-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.sidebar-menu.tree .treeview.active>.treeview-menu {
+    display: block;
+}
+
+.sidebar-menu.tree .treeview-menu li a {
+    padding: 6px 15px 6px 45px;
+    font-size: 13px;
+    border-left: 0;
+}
+
+.sidebar-menu.tree .treeview-menu li a:hover {
+    border-left: 0;
+    color: var(--bs-primary, #3461ff);
+    background-color: rgba(var(--bs-primary-rgb, 52, 97, 255), 0.05);
+}
+
+.sidebar-menu.tree li.header {
+    color: #b0b0b0;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px 15px 5px;
+    letter-spacing: 0.5px;
+}
+
+/* ===== Sidebar collapsed / toggled state (desktop only) ===== */
+/* These rules must be desktop-only so mobile sidebar opens at full 260px width */
+@media screen and (min-width: 1025px) {
+    .toggled .sidebar-wrapper {
+        width: 70px;
+    }
+
+    .toggled .sidebar-wrapper .sidebar-header .logo-text,
+    .toggled .sidebar-wrapper .sidebar-header .toggle-icon {
+        display: none;
+    }
+
+    .toggled .sidebar-wrapper .sidebar-header {
+        width: 70px;
+        justify-content: center;
+    }
+
+    .toggled .sidebar-wrapper:not(:hover) .sidebar-menu.tree li a span,
+    .toggled .sidebar-wrapper:not(:hover) .sidebar-menu.tree li a .float-end-container,
+    .toggled .sidebar-wrapper:not(:hover) .sidebar-menu.tree .treeview-menu,
+    .toggled .sidebar-wrapper:not(:hover) .sidebar-menu.tree li.header {
+        display: none;
+    }
+
+    .toggled .sidebar-wrapper:not(:hover) .sidebar-menu.tree li a {
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .sidebar-hovered .sidebar-wrapper {
+        width: 260px;
+        z-index: 1050;
+    }
+
+    .sidebar-hovered .sidebar-wrapper .sidebar-header {
+        width: 260px;
+        z-index: 1051;
+    }
+
+    .sidebar-hovered .sidebar-wrapper .sidebar-header .logo-text,
+    .sidebar-hovered .sidebar-wrapper .sidebar-header .toggle-icon {
+        /* display: block; */
+    }
+
+    .toggled.sidebar-hovered .sidebar-wrapper .sidebar-header .logo-icon-div {
+        margin-left: 5px;
+    }
+}
+
+/* Removed duplicate .content-wrapper margin-top: 50px —
+   padding-top: 70px is already set above and accounts for the fixed header */
+
+/* ===== Nav-link fix for sidebar logo ===== */
+.sidebar-wrapper .logo.nav-link {
+    display: block;
+    text-align: center;
+    padding: 10px 5px;
+    color: var(--bs-primary, #3461ff);
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    border-bottom: 1px solid #e2e3e4;
+    margin-bottom: 5px;
+}
+
+/* ===== Scrolltop button ===== */
+.scrolltop {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    z-index: 999;
+}
+
+.scrolltop .scroll.icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bs-primary, #3461ff);
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Print-specific ===== */
+@media print {
+
+    .no-print,
+    .sidebar-wrapper,
+    .top-header,
+    .main-footer,
+    .scrolltop {
+        display: none !important;
+    }
+
+    .content-wrapper {
+        margin-left: 0 !important;
+        padding-top: 0 !important;
+    }
+}
+
+/* ===== POS lockscreen layout ===== */
+body.lockscreen .content-wrapper {
+    margin-left: 0;
+    padding-top: 0;
+}
+
+/* ===== Misc legacy helpers ===== */
+.m-8 {
+    margin: 8px;
+}
+
+.mr-5 {
+    margin-right: 5px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+/* ===== Override some OneDash page-content for non-POS ===== */
+.page-content {
+    margin-left: 260px;
+    padding: 70px 0 60px 0;
+    min-height: 100vh;
+    transition: all .2s;
+}
+
+.toggled .page-content {
+    margin-left: 70px;
+}
+
+/* ===== Info-box OneDash overrides ===== */
+.info-box {
+    border-radius: 10px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: 0;
+    overflow: hidden;
+}
+
+.info-box-new-style {
+    display: flex;
+    align-items: stretch;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    min-height: 90px;
+}
+
+.info-box-new-style .info-box-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.info-box-new-style .info-box-content {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+}
+
+.info-box-new-style .info-box-text {
+    font-size: 13px;
+    color: #6c757d;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.info-box-new-style .info-box-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--theme-primary-dark, #4c5258);
+}
+
+/* ===== Legacy bg color helpers ===== */
+.bg-aqua {
+    background-color: #00c0ef !important;
+    color: #fff;
+}
+
+.bg-green {
+    background-color: #15ca20 !important;
+    color: #fff;
+}
+
+.bg-yellow {
+    background-color: #ffc107 !important;
+    color: #fff;
+}
+
+.bg-red {
+    background-color: #fd3550 !important;
+    color: #fff;
+}
+
+.bg-olive {
+    background-color: #3d9970 !important;
+    color: #fff;
+}
+
+.bg-maroon {
+    background-color: #d81b60 !important;
+    color: #fff;
+}
+
+.bg-orange {
+    background-color: #ff851b !important;
+    color: #fff;
+}
+
+.bg-purple {
+    background-color: #605ca8 !important;
+    color: #fff;
+}
+
+/* ===== btn-app (demo shop buttons) ===== */
+.btn-app {
+    border-radius: 10px;
+    position: relative;
+    padding: 15px 5px;
+    margin: 0 0 10px 10px;
+    min-width: 80px;
+    height: 60px;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    background-color: #f7f8fa;
+    color: #444;
+}
+
+.btn-app>.fa,
+.btn-app>.fas,
+.btn-app>.far,
+.btn-app>.bi {
+    font-size: 20px;
+    display: block;
+}
+
+/* ===== Filters component ===== */
+.card.filter-card .card-header {
+    cursor: pointer;
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 1024px) {
+    .content-wrapper {
+        margin-left: 0;
+    }
+
+    .main-footer {
+        left: 0;
+        margin-left: 0;
+    }
+
+    .page-content {
+        margin-left: 0;
+    }
+
+    .toggled .content-wrapper,
+    .wrapper.toggled .content-wrapper {
+        margin-left: 0;
+    }
+
+    .toggled .main-footer,
+    .wrapper.toggled .main-footer {
+        left: 0;
+        margin-left: 0;
+    }
+
+    .content-header-custom {
+        margin: 0 5px;
+    }
+}
+
+/* ===== Dark theme overrides for legacy classes ===== */
+html.dark-theme .box,
+html.dark-theme .info-box,
+html.dark-theme .info-box-new-style {
+    background: #1e2029;
+    color: #e4e5e6;
+}
+
+html.dark-theme .box .box-header {
+    color: #e4e5e6;
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+html.dark-theme .box .box-footer {
+    border-top-color: rgba(255, 255, 255, 0.08);
+}
+
+html.dark-theme .content-header>h1,
+html.dark-theme section.content-header>h1 {
+    color: var(--bs-primary, #6db3f2);
+}
+
+html.dark-theme .content-header-custom {
+    background: #1e2029;
+    border-bottom-color: rgba(255, 255, 255, 0.05);
+}
+
+html.dark-theme .info-box-new-style .info-box-number {
+    color: #e4e5e6;
+}
+
+html.dark-theme .info-box-new-style .info-box-text {
+    color: #a0a4a8;
+}
+
+html.dark-theme .btn-app {
+    background-color: #1e2029;
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #e4e5e6;
+}
+
+html.dark-theme .small-box {
+    background: #1e2029;
+}
+
+html.dark-theme .table-th-skin thead th {
+    background-color: #272935;
+    color: #e4e5e6;
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+/* ===== Legacy label helpers ===== */
+.label-success {
+    background-color: #15ca20;
+}
+
+.label-warning {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.label-danger {
+    background-color: #fd3550;
+}
+
+.label-info {
+    background-color: #0dcaf0;
+}
+
+.label-primary {
+    background-color: var(--bs-primary, #3461ff);
+}
+
+.label-default {
+    background-color: #6c757d;
+}
+
+/* ===== Legacy panel → card mapping ===== */
+.panel {
+    border-radius: 10px;
+    background: #fff;
+    border: 0;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.panel-heading {
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 10px 10px 0 0;
+}
+
+.panel-body {
+    padding: 1.25rem;
+}
+
+.panel-footer {
+    padding: 0.75rem 1.25rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 0 0 10px 10px;
+}
+
+.panel-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.panel-default>.panel-heading {
+    background-color: #f7f8fa;
+}
+
+.panel-primary>.panel-heading {
+    background-color: var(--bs-primary, #3461ff);
+    color: #fff;
+}
+
+/* ===== Legacy form-group spacing ===== */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* ===== Legacy help-block ===== */
+.help-block {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #fd3550;
+    font-size: 0.85rem;
+}
+
+/* ===== Select2 OneDash fixes ===== */
+.select2-container--default .select2-selection--single {
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    height: 38px;
+    padding: 4px 8px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 36px;
+}
+
+/* ===== Legacy nav-tabs-custom ===== */
+.nav-tabs-custom {
+    margin-bottom: 1.5rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    overflow: hidden;
+}
+
+.nav-tabs-custom>.nav-tabs {
+    margin: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 0 0.5rem;
+}
+
+.nav-tabs-custom>.nav-tabs>li>a {
+    color: #4c5258;
+    border-radius: 0;
+    padding: 12px 20px;
+}
+
+.nav-tabs-custom>.nav-tabs>li.active>a,
+.nav-tabs-custom>.nav-tabs>li>a.active {
+    border-bottom: 2px solid var(--bs-primary, #3461ff);
+    color: var(--bs-primary, #3461ff);
+    font-weight: 600;
+}
+
+.nav-tabs-custom>.tab-content {
+    padding: 1.25rem;
+}
+
+/* ===== Legacy eq-height ===== */
+.eq-height-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.eq-height-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== Legacy pull-left / pull-right (BS3) → float ===== */
+.pull-left {
+    float: left !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+/* ===== Legacy btn-xs (removed in BS5) ===== */
+.btn-xs {
+    padding: 1px 5px;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+/* ===== Legacy col-md-offset-* (BS3) → offset-md-* ===== */
+.col-md-offset-1 {
+    margin-left: 8.3333%;
+}
+
+.col-md-offset-2 {
+    margin-left: 16.6667%;
+}
+
+.col-md-offset-3 {
+    margin-left: 25%;
+}
+
+.col-md-offset-4 {
+    margin-left: 33.3333%;
+}
+
+.col-md-offset-5 {
+    margin-left: 41.6667%;
+}
+
+.col-md-offset-6 {
+    margin-left: 50%;
+}
+
+.col-md-offset-7 {
+    margin-left: 58.3333%;
+}
+
+.col-md-offset-8 {
+    margin-left: 66.6667%;
+}
+
+.col-md-offset-9 {
+    margin-left: 75%;
+}
+
+.col-md-offset-10 {
+    margin-left: 83.3333%;
+}
+
+.col-md-offset-11 {
+    margin-left: 91.6667%;
+}
+
+/* ===== Legacy hidden-* responsive classes (BS3) ===== */
+/* hidden-xs: hide on extra-small (< 576px) only, visible above */
+@media (max-width: 575.98px) {
+    .hidden-xs {
+        display: none !important;
+    }
+}
+
+/* hidden-sm: hide on small (< 768px) only, visible above */
+@media (max-width: 767.98px) {
+    .hidden-sm {
+        display: none !important;
+    }
+}
+
+/* hidden-md: hide on medium (< 992px) only, visible above */
+@media (max-width: 991.98px) {
+    .hidden-md {
+        display: none !important;
+    }
+}
+
+/* ===== Legacy .img-rounded (BS3) ===== */
+.img-rounded {
+    border-radius: 6px;
+}
+
+/* ===== Legacy .sr-only alias ===== */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ===== Module Sub-Nav Theme Color Integration ===== */
+/* Make module nav bars (Truckmate, AiAssistance, etc.) respect user theme color */
+section.no-print>.navbar .navbar-nav .nav-link.active {
+    color: var(--bs-primary, #3461ff) !important;
+    font-weight: 700;
+    border-bottom: 2px solid var(--bs-primary, #3461ff);
+}
+
+section.no-print>.navbar .navbar-nav .nav-link:hover {
+    color: var(--bs-primary, #3461ff) !important;
+}
+
+section.no-print>.navbar .navbar-brand {
+    color: var(--bs-primary, #3461ff) !important;
+}
+
+section.no-print>.navbar .navbar-brand:hover {
+    color: var(--theme-primary-dark, #2850e0) !important;
+}
+
+/* ===== Mobile alignment fixes (≤576px) ===== */
+@media (max-width: 576px) {
+
+    /* Content header: stack title and action buttons vertically */
+    .content-header>h1,
+    section.content-header>h1 {
+        font-size: 1.1rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 6px;
+    }
+    .content-header>h1>.float-end,
+    section.content-header>h1>.float-end {
+        float: none !important;
+        display: flex;
+        gap: 4px;
+        width: 100%;
+        margin-top: 4px;
+    }
+    .content-header>h1>.float-end .btn,
+    section.content-header>h1>.float-end .btn {
+        font-size: 0.75rem;
+        padding: 4px 8px;
+    }
+
+    /* Reduce section padding */
+    .content-header,
+    section.content-header {
+        padding: 10px 10px 0 10px;
+    }
+    section.content,
+    .content {
+        padding: 8px;
+    }
+
+    /* Tighter card body */
+    .card .card-body {
+        padding: 0.75rem;
+    }
+
+    /* Prevent input-group overflow */
+    .product_form .input-group {
+        flex-wrap: nowrap;
+    }
+    .product_form .input-group .form-control,
+    .product_form .input-group .form-select,
+    .product_form .input-group .select2-container {
+        min-width: 0;
+    }
+
+    /* Select2 full-width constraint */
+    .select2-container {
+        max-width: 100% !important;
+    }
+
+    /* Footer action buttons: smaller on mobile */
+    #sell-footer-actions .btn {
+        padding: 6px 10px;
+        font-size: 12px;
+        min-width: auto;
+        height: 34px;
+    }
+    #sell-footer-actions .btn i {
+        margin-right: 4px;
+        font-size: 12px;
+    }
+
+    /* Product form footer buttons (before moved to footer) */
+    #product-footer-actions-template .d-flex {
+        gap: 4px !important;
+    }
+    #product-footer-actions-template .btn {
+        font-size: 0.75rem;
+        padding: 5px 8px;
+    }
+}
+
+/* =====================================================================
+   COMPREHENSIVE MOBILE / RESPONSIVE FIXES
+   (BS5 OneDash migration — fixes for all device sizes)
+   ===================================================================== */
+
+/* Override OneDash's white-space: nowrap on table-responsive which
+   forces tables to be excessively wide on mobile. Allow wrapping. */
+.table-responsive {
+    white-space: normal;
+}
+
+/* ===== Global overflow prevention ===== */
+html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+.content-wrapper,
+.page-content,
+section.content,
+.content {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* ===== Tablet (≤ 1024px) ===== */
+@media screen and (max-width: 1024px) {
+    .content-wrapper {
+        margin-left: 0;
+        padding-top: 65px;
+    }
+
+    .toggled .content-wrapper,
+    .wrapper.toggled .content-wrapper {
+        margin-left: 0;
+    }
+
+    .page-content {
+        margin-left: 0;
+    }
+
+    /* POS content wrapper on tablet */
+    .pos-content-wrapper {
+        height: calc(100vh - 65px);
+    }
+}
+
+/* ===== Small tablets and large phones (≤ 768px) ===== */
+@media screen and (max-width: 767.98px) {
+    .content-wrapper {
+        padding-top: 62px;
+        padding-bottom: 50px;
+    }
+
+    /* Reduce content padding */
+    .content,
+    section.content {
+        padding: 8px;
+    }
+
+    .content-header,
+    section.content-header {
+        padding: 10px 10px 0 10px;
+    }
+
+    /* Box and card compaction */
+    .box .box-body,
+    .card .card-body {
+        padding: 0.75rem;
+    }
+
+    .box .box-header {
+        padding: 0.75rem 1rem;
+    }
+
+    .box .box-footer,
+    .card .card-footer {
+        padding: 0.5rem 0.75rem;
+    }
+
+    /* Tables: allow horizontal scroll, reduce cell padding */
+    .table > thead > tr > th,
+    .table > tbody > tr > td {
+        padding: 0.4rem 0.5rem;
+        font-size: 0.82rem;
+    }
+
+    /* DataTable info/pagination stacking */
+    .dataTables_wrapper .dataTables_info,
+    .dataTables_wrapper .dataTables_paginate {
+        text-align: center;
+        float: none !important;
+        padding-top: 0.5rem;
+    }
+
+    .dataTables_wrapper .dataTables_length,
+    .dataTables_wrapper .dataTables_filter {
+        text-align: center;
+        float: none !important;
+    }
+
+    /* Modals: near full-width on mobile */
+    .modal-dialog {
+        margin: 0.5rem;
+        max-width: calc(100% - 1rem);
+    }
+
+    .modal-lg,
+    .modal-xl {
+        max-width: calc(100% - 1rem) !important;
+        width: auto !important;
+        margin-left: 0.5rem !important;
+        margin-right: 0.5rem !important;
+    }
+
+    .modal-header {
+        padding: 0.65rem 0.85rem;
+    }
+
+    .modal-body {
+        padding: 0.75rem;
+    }
+
+    .modal-footer {
+        padding: 0.5rem 0.75rem;
+    }
+
+    /* Info boxes: allow stacking */
+    .info-box-new-style {
+        padding: 0.75rem;
+    }
+
+    .info-box-new-style .info-box-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 22px;
+    }
+
+    .info-box-new-style .info-box-number {
+        font-size: 1.2rem;
+    }
+
+    /* Small-box stat cards */
+    .small-box > .inner > h3 {
+        font-size: 1.4rem;
+    }
+
+    .small-box > .inner > p {
+        font-size: 0.85rem;
+    }
+
+    /* Nav tabs: horizontal scroll if too many tabs */
+    .nav-tabs {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .nav-tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-tabs .nav-link {
+        white-space: nowrap;
+        padding: 0.5rem 0.75rem;
+        font-size: 0.85rem;
+    }
+
+    .nav-tabs-custom > .nav-tabs > li > a {
+        padding: 10px 14px;
+        font-size: 0.85rem;
+    }
+
+    /* Form adjustments */
+    .form-group label,
+    .form-label {
+        font-size: 0.85rem;
+    }
+
+    /* Select2 and input sizing */
+    .select2-container .select2-selection--single {
+        height: 36px !important;
+    }
+
+    .form-control,
+    .form-select {
+        font-size: 0.85rem;
+    }
+
+    /* Buttons in tight spaces */
+    .btn-group > .btn {
+        padding: 0.3rem 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    /* POS content wrapper */
+    .pos-content-wrapper {
+        height: calc(100vh - 60px);
+    }
+
+    /* Prevent fixed-width elements from overflowing */
+    img, video, iframe, embed, object {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Input groups: prevent overflow */
+    .input-group {
+        flex-wrap: nowrap;
+    }
+
+    .input-group .form-control,
+    .input-group .form-select,
+    .input-group .select2-container {
+        min-width: 0;
+    }
+}
+
+/* ===== Small phones (≤ 576px) ===== */
+@media screen and (max-width: 576px) {
+    .content-wrapper {
+        padding-top: 60px;
+        padding-bottom: 45px;
+    }
+
+    .content,
+    section.content {
+        padding: 5px;
+    }
+
+    /* Further tighten box/card */
+    .box .box-body,
+    .card .card-body {
+        padding: 0.5rem;
+    }
+
+    .box .box-header {
+        padding: 0.5rem 0.75rem;
+        flex-wrap: wrap;
+        gap: 0.35rem;
+    }
+
+    .box .box-header .box-title {
+        font-size: 0.9rem;
+    }
+
+    .box .box-header .box-tools {
+        gap: 0.25rem;
+    }
+
+    /* Tables: even tighter */
+    .table > thead > tr > th,
+    .table > tbody > tr > td {
+        padding: 0.3rem 0.35rem;
+        font-size: 0.78rem;
+    }
+
+    /* Columns should stack more aggressively */
+    .col-xs-6 {
+        width: 100% !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* Modals: full-width with minimal margin */
+    .modal-dialog {
+        margin: 0.25rem;
+        max-width: calc(100% - 0.5rem);
+    }
+
+    .modal-header .modal-title {
+        font-size: 0.9rem;
+    }
+
+    /* Button grid adjustments */
+    .btn-group .btn {
+        padding: 0.25rem 0.4rem;
+        font-size: 0.75rem;
+    }
+
+    /* Info-box on very small screens */
+    .info-box-new-style {
+        padding: 0.5rem;
+        min-height: auto;
+    }
+
+    .info-box-new-style .info-box-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .info-box-new-style .info-box-number {
+        font-size: 1rem;
+    }
+
+    .info-box-new-style .info-box-text {
+        font-size: 11px;
+    }
+
+    /* POS content wrapper */
+    .pos-content-wrapper {
+        height: calc(100vh - 55px);
+    }
+
+    /* Make form rows vertical on small phones */
+    .row > [class*="col-md-"],
+    .row > [class*="col-lg-"] {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    /* Select2 dropdown: smaller on mobile */
+    .select2-dropdown {
+        font-size: 0.85rem;
+    }
+
+    .select2-results__option {
+        padding: 6px 10px;
+    }
+}
+
+/* ===== Extra-small phones (≤ 375px) ===== */
+@media screen and (max-width: 375px) {
+    .content-wrapper {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    .content,
+    section.content {
+        padding: 3px;
+    }
+
+    .box .box-body,
+    .card .card-body {
+        padding: 0.35rem;
+    }
+
+    .table > thead > tr > th,
+    .table > tbody > tr > td {
+        padding: 0.2rem 0.25rem;
+        font-size: 0.75rem;
+    }
+
+    .modal-dialog {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .modal-content {
+        border-radius: 0;
+    }
+
+    .btn {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
+    }
+}
+
+/* =====================================================================
+   POS-SPECIFIC MOBILE RESPONSIVE FIXES
+   ===================================================================== */
+
+/* POS form columns: make fields stack on very small screens */
+@media screen and (max-width: 575.98px) {
+    /* Customer/search row in POS form */
+    .pos-create-page .col-sm-3,
+    .pos-create-page .col-sm-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    /* Full width search input */
+    .pos-create-page .col-sm-5,
+    .pos-create-page .col-sm-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* POS form totals section */
+    .pos_form_totals {
+        font-size: 0.82rem;
+    }
+
+    .pos_form_totals td {
+        padding: 0.2rem 0.3rem !important;
+    }
+
+    /* POS product grid: 3 cols maintaining but smaller */
+    .product_list .product_box {
+        padding: 2px;
+    }
+
+    .product_list .product_box .text-muted {
+        font-size: 10px;
+    }
+
+    /* POS quick menu sidebar */
+    .pos-quick-menu-sidebar {
+        padding-right: 5px !important;
+    }
+}
+
+/* POS payment modal improvements for mobile */
+@media screen and (max-width: 767.98px) {
+    /* Force payment modal to be near full-screen */
+    .payment_modal .modal-dialog,
+    #modal_payment .modal-dialog {
+        max-width: calc(100% - 0.5rem) !important;
+        margin: 0.25rem auto;
+    }
+
+    #modal_payment .modal-body {
+        padding: 0.5rem !important;
+    }
+
+    /* Stack payment form fields */
+    #modal_payment .col-md-7,
+    #modal_payment .col-md-5 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* Payment rows inner columns */
+    #modal_payment .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* =====================================================================
+   GENERAL VIEW MOBILE FIXES
+   ===================================================================== */
+
+/* Fix for the main-footer on mobile */
+@media screen and (max-width: 1024px) {
+    .main-footer {
+        position: relative !important;
+        left: 0 !important;
+        margin-left: 0 !important;
+        width: 100%;
+    }
+}
+
+/* Fix fixed footer stacking on mobile */
+@media screen and (max-width: 767.98px) {
+    .main-footer {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+
+    .main-footer .d-flex {
+        gap: 4px;
+    }
+}
+
+/* ===== DataTable mobile improvements ===== */
+@media screen and (max-width: 767.98px) {
+    /* Make DataTable controls stack properly */
+    .dataTables_wrapper .row:first-child {
+        flex-direction: column;
+    }
+
+    .dataTables_wrapper .row:first-child > div {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Compact DataTable bottom controls */
+    .dataTables_wrapper .row:last-child {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .dataTables_wrapper .row:last-child > div {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Reduce DataTable button sizes */
+    .dataTables_wrapper .dt-buttons .btn {
+        padding: 3px 8px;
+        font-size: 0.75rem;
+    }
+
+    /* Filter row compaction */
+    .dataTables_filter input {
+        width: 100% !important;
+        max-width: 100%;
+    }
+
+    .dataTables_length select {
+        padding: 2px 5px;
+    }
+}
+
+/* ===== Select2 mobile fixes ===== */
+@media screen and (max-width: 767.98px) {
+    .select2-container {
+        width: 100% !important;
+    }
+
+    .select2-dropdown {
+        max-width: calc(100vw - 20px);
+    }
+
+    .select2-results__option {
+        padding: 6px 10px;
+        font-size: 0.85rem;
+    }
+}
+
+/* ===== View modal full-screen on mobile ===== */
+@media screen and (max-width: 575.98px) {
+    .view_modal .modal-dialog {
+        margin: 0;
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .view_modal .modal-content {
+        border-radius: 0;
+        min-height: 100vh;
+    }
+}
+
+/* ===== Fix overflow on print section ===== */
+.print_section {
+    overflow-x: hidden;
+}
+
+/* ===== Fix for BS3's row negative margins causing horizontal scroll ===== */
+.row {
+    --bs-gutter-x: 1.5rem;
+}
+
+@media screen and (max-width: 576px) {
+    .row {
+        --bs-gutter-x: 0.75rem;
+    }
+}
+
+/* =====================================================================
+   FULL-WIDTH CONTENT FIX (global)
+   Eliminates blank gutter on the right side of pages on every screen
+   size — including extra-large LED / 1920px+ monitors. Forces the
+   main content wrapper to fill the viewport minus the sidebar width
+   and prevents any inherited max-width / margin-right from carving
+   out empty space on the right.
+   ===================================================================== */
+
+/* Desktop & large screens — sidebar is 260px wide */
+@media screen and (min-width: 1025px) {
+
+    .wrapper:not(.toggled) .content-wrapper,
+    .wrapper:not(.toggled) .page-content,
+    .wrapper:not(.toggled) > .content-wrapper,
+    body:not(.lockscreen) .wrapper:not(.toggled) .content-wrapper,
+    body:not(.lockscreen) .wrapper:not(.toggled) .page-content {
+        width: calc(100% - 260px) !important;
+        max-width: calc(100% - 260px) !important;
+        margin-right: 0 !important;
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+        box-sizing: border-box;
+    }
+
+    /* Collapsed sidebar (toggled) — sidebar shrinks to 70px */
+    .wrapper.toggled .content-wrapper,
+    .wrapper.toggled .page-content {
+        width: calc(100% - 70px) !important;
+        max-width: calc(100% - 70px) !important;
+        margin-right: 0 !important;
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+        box-sizing: border-box;
+    }
+
+    /* Inner content sections must always fill their parent */
+    .content-wrapper > section.content,
+    .content-wrapper > .content,
+    .page-content > section.content,
+    .page-content > .content,
+    section.content,
+    section.content-custom,
+    .content-custom {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        box-sizing: border-box;
+    }
+
+    /* Inner Bootstrap rows / fluid containers must fill the wrapper */
+    .content-wrapper .container-fluid,
+    .page-content .container-fluid,
+    .content-wrapper > .row,
+    .page-content > .row,
+    section.content > .row,
+    section.content-custom > .row,
+    section.content .row,
+    section.content-custom .row {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+/* Tablet & below — sidebar is hidden / off-canvas, content goes 100% */
+@media screen and (max-width: 1024px) {
+
+    .content-wrapper,
+    .page-content,
+    .wrapper .content-wrapper,
+    .wrapper .page-content,
+    .wrapper.toggled .content-wrapper,
+    .wrapper.toggled .page-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+        box-sizing: border-box;
+    }
+}
+
+/* Phone — tighter padding */
+@media screen and (max-width: 575.98px) {
+
+    .content-wrapper,
+    .page-content {
+        padding-right: 0.5rem !important;
+        padding-left: 0.5rem !important;
+    }
+}
+
+/* POS layout (lockscreen) — full viewport width, no sidebar offset */
+body.lockscreen .pos-content-wrapper,
+body.lockscreen .content-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Belt-and-braces: kill any stray right margin/padding on rows
+   inside the dashboard that might create the right-side gutter. */
+.content-wrapper .dashboard-header,
+.content-wrapper .dashboard-section,
+.content-wrapper .dashboard-section-body,
+.page-content .dashboard-header,
+.page-content .dashboard-section,
+.page-content .dashboard-section-body {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+}
