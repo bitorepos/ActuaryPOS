@@ -1,5 +1,5 @@
-APP_NAME="ActuaryPOS - Offline Deployment"
-APP_TITLE="ActuaryPOS - Offline Deployment"
+APP_NAME="RetailMan ERP - Offline Deployment"
+APP_TITLE="RetailMan ERP - Offline Deployment"
 APP_ENV="live"
 APP_KEY="base64:W8UqtE9LHZW+gRag78o4BCbN1M0w4HdaIFdLqHJ/9PA="
 APP_DEBUG="false"

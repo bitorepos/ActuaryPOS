@@ -78,7 +78,7 @@ return [
     'hide_recent_trans' => 'Geen recente transacties weergeven',
     'pos_settings' => 'POS-instellingen',
     'disable_discount' => 'Korting uitschakelen',
-    'disable_order_tax' => 'Schakel orderbelasting uit',
+    'disable_invoice_tax' => 'Schakel orderbelasting uit',
     'customer_groups' => 'Klantengroepen',
     'customer_group' => 'Klantengroep',
     'all_your_customer_groups' => 'Alle klantengroepen',

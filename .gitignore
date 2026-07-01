@@ -7,7 +7,6 @@
 /.idea
 /.vscode
 /.vagrant
-/client-license.txt
 Homestead.json
 Homestead.yaml
 npm-debug.log

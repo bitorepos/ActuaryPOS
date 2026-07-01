@@ -78,7 +78,7 @@ return [
     'hide_recent_trans' => 'Neueste Transaktionen nicht anzeigen',
     'pos_settings' => 'POS-Einstellungen',
     'disable_discount' => 'Rabatt deaktivieren',
-    'disable_order_tax' => 'Bestellsteuer deaktivieren',
+    'disable_invoice_tax' => 'Bestellsteuer deaktivieren',
     'customer_groups' => 'Kundengruppen',
     'customer_group' => 'Kundengruppe',
     'all_your_customer_groups' => 'Alle Kundengruppen',

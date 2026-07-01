@@ -78,7 +78,7 @@ return [
     'hide_recent_trans' => 'Không hiển thị các giao dịch gần đây',
     'pos_settings' => 'Cài đặt POS',
     'disable_discount' => 'Vô hiệu hóa giảm giá',
-    'disable_order_tax' => 'Vô hiệu hóa thuế đơn hàng',
+    'disable_invoice_tax' => 'Vô hiệu hóa thuế đơn hàng',
     'customer_groups' => 'Nhóm khách hàng',
     'customer_group' => 'Nhóm khách hàng',
     'all_your_customer_groups' => 'Tất cả các nhóm khách hàng',

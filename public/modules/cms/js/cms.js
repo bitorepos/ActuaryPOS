@@ -1,3 +1,34 @@
+/* Reveal CMS content that uses the v3 animation classes. */
+(function() {
+    var revealElements = document.querySelectorAll(".reveal");
+
+    if (!revealElements.length) {
+        return;
+    }
+
+    if (!("IntersectionObserver" in window)) {
+        revealElements.forEach(function(element) {
+            element.classList.add("revealed");
+        });
+        return;
+    }
+
+    var revealObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("revealed");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        rootMargin: "0px 0px -10% 0px",
+        threshold: 0.05
+    });
+
+    revealElements.forEach(function(element) {
+        revealObserver.observe(element);
+    });
+})();
 
 /* Hero Menu & Dropdown's JavaScript */
 var showDropdown = function(e) {
@@ -120,13 +151,15 @@ window.onscroll = function(e) {
     }
 };
 
+var industrySlider = document.querySelector("#unique-id-2");
+if (industrySlider && typeof Splide !== "undefined") {
     new Splide("#unique-id-2", {
       type: "loop",
       perPage: 3,
       focus: "center",
       start: 1,
       direction: "ttb",
-      height: document.querySelector("#unique-id-2").getBoundingClientRect().height + "px",
+      height: industrySlider.getBoundingClientRect().height + "px",
       breakpoints: {
         800: {
           perPage: 2.5,
@@ -141,3 +174,4 @@ window.onscroll = function(e) {
       },
       pagination: !1
     }).mount();
+}

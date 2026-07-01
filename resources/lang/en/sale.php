@@ -55,7 +55,7 @@ return [
     'price_exc_tax' => 'Exc. tax',
     'tax' => 'Tax',
     'edit_discount' => 'Edit Discount',
-    'edit_order_tax' => 'Edit Order Tax',
+    'edit_order_tax' => 'Edit Invocie Tax',
     'edit_products_tax' => 'Edit Products Tax',
     'discount_type' => 'Discount Type',
     'discount_amount' => 'Discount Amount',

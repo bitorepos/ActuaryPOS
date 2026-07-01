@@ -78,7 +78,7 @@ return [
     'hide_recent_trans' => 'हाल के लेनदेन न दिखाएं',
     'pos_settings' => 'पीओएस सेटिंग्स',
     'disable_discount' => 'छूट अक्षम करें',
-    'disable_order_tax' => 'ऑर्डर कर अक्षम करें',
+    'disable_invoice_tax' => 'ऑर्डर कर अक्षम करें',
     'customer_groups' => 'ग्राहक समूह',
     'customer_group' => 'ग्राहक समूह',
     'all_your_customer_groups' => 'सभी ग्राहक समूह',

@@ -78,7 +78,7 @@ return [
     'hide_recent_trans' => 'Don\'t show recent transactions',
     'pos_settings' => 'POS settings',
     'disable_discount' => 'Disable Discount',
-    'disable_order_tax' => 'Disable order tax',
+    'disable_invoice_tax' => 'Disable Invoice tax',
     'customer_groups' => 'Customer Groups',
     'customer_group' => 'Customer Group',
     'all_your_customer_groups' => 'All Customer Groups',

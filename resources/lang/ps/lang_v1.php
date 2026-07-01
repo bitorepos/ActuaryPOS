@@ -78,7 +78,7 @@ return [
     'hide_recent_trans' => 'وروستي لیږدونه مه ښکاره کوئ',
     'pos_settings' => 'POS ترتیبونه',
     'disable_discount' => 'رعایت غیر فعالول',
-    'disable_order_tax' => 'د امر مالیه غیر فعالول',
+    'disable_invoice_tax' => 'د امر مالیه غیر فعالول',
     'customer_groups' => 'د ګیراک ډلې',
     'customer_group' => 'د ګیراک ډله',
     'all_your_customer_groups' => 'د ګیراک ټوله ډلې',

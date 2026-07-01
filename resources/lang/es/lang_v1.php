@@ -78,7 +78,7 @@ return [
     'hide_recent_trans' => 'No mostrar transacciones recientes',
     'pos_settings' => 'Configuración de POS',
     'disable_discount' => 'Deshabilitar Descuento', /* modified */
-    'disable_order_tax' => 'Deshabilitar Impuesto', /* modified */
+    'disable_invoice_tax' => 'Deshabilitar Impuesto', /* modified */
     'customer_groups' => 'Grupos de clientes',
     'customer_group' => 'Grupo de clientes',
     'all_your_customer_groups' => 'Todos los grupos de clientes',

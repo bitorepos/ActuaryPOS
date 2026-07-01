@@ -63,7 +63,7 @@ return [
 
     'sale_discount' => "Set 'Default Sale Discount' for all sales in Business Settings. Click on the edit icon below to add/update discount.",
 
-    'sale_tax' => "Set 'Default Sale Tax' for all sales in Business Settings. Click on the edit icon below to add/update Order Tax.",
+    'sale_tax' => "Set 'Default Sale Tax' for all sales in Business Settings. Click on the edit icon below to add/update Invocie Tax.",
 
     'default_profit_percent' => "Default profit margin of a product. <br><small class='text-secondary'>Used to calculate selling price based on purchase price entered.<br/> You can modify this value for indivisual products while adding</small>",
 

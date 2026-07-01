@@ -78,7 +78,7 @@ return [
     'hide_recent_trans' => 'ບໍ່ສະແດງທຸລະກຳຫຼ້າສຸດ',
     'pos_settings' => 'ການຕັ້ງຄ່າ POS',
     'disable_discount' => 'ປິດການໃຊ້ງານສ່ວນຫຼຸດ',
-    'disable_order_tax' => 'ປິດການໃຊ້ງານພາສີການສັງຊື້',
+    'disable_invoice_tax' => 'ປິດການໃຊ້ງານພາສີການສັງຊື້',
     'customer_groups' => 'ກຸ່ມລູກຄ້າ',
     'customer_group' => 'ກຸ່ມລູກຄ້າ',
     'all_your_customer_groups' => 'ກຸ່ມລູກຄ້າທັງໝົດ',

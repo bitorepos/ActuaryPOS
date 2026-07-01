@@ -231,6 +231,53 @@ $(document).on('submit', 'form#project_form', function(e){
     });
 });
 
+$(document).on('submit', 'form#project_location_form', function(e) {
+    e.preventDefault();
+
+    var $form = $(this);
+    if (typeof $.fn.validate === 'function') {
+        $form.validate();
+        if (!$form.valid()) {
+            return false;
+        }
+    }
+
+    var ladda = null;
+    var button = $form.find('.ladda-button').get(0);
+    if (typeof Ladda !== 'undefined' && button) {
+        ladda = Ladda.create(button);
+        ladda.start();
+    }
+
+    $.ajax({
+        method: $form.attr('method'),
+        dataType: 'json',
+        url: $form.attr('action'),
+        data: $form.serialize(),
+        success: function(result) {
+            if (result.success) {
+                toastr.success(result.msg);
+            } else {
+                toastr.error(result.msg);
+            }
+        },
+        error: function(xhr) {
+            if (xhr.status === 422 && xhr.responseJSON && xhr.responseJSON.errors) {
+                $.each(xhr.responseJSON.errors, function(field, messages) {
+                    toastr.error(messages[0]);
+                });
+            } else {
+                toastr.error(LANG.something_went_wrong || 'Something went wrong');
+            }
+        },
+        complete: function() {
+            if (ladda) {
+                ladda.stop();
+            }
+        }
+    });
+});
+
 //project delete
 $(document).on('click', '.delete_a_project', function(e) {
     e.preventDefault();

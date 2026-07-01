@@ -78,7 +78,7 @@ return [
     'hide_recent_trans' => 'Jangan tampilkan transaksi terkini',
     'pos_settings' => 'Pengaturan POS',
     'disable_discount' => 'Nonaktifkan Diskon',
-    'disable_order_tax' => 'Nonaktifkan pajak pesanan',
+    'disable_invoice_tax' => 'Nonaktifkan pajak pesanan',
     'customer_groups' => 'Grup Pelanggan',
     'customer_group' => 'Grup Pelanggan',
     'all_your_customer_groups' => 'Semua Grup Pelanggan',

@@ -78,7 +78,7 @@ return [
     'hide_recent_trans' => 'Son işlemleri gösterme',
     'pos_settings' => 'POS ayarları',
     'disable_discount' => 'İndirimi Devre Dışı Bırak',
-    'disable_order_tax' => 'Sipariş vergisini devre dışı bırak',
+    'disable_invoice_tax' => 'Sipariş vergisini devre dışı bırak',
     'customer_groups' => 'Müşteri Grupları',
     'customer_group' => 'Müşteri Grubu',
     'all_your_customer_groups' => 'Tüm Müşteri Grupları',

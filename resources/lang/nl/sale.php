@@ -27,7 +27,7 @@
      'price_inc_tax' => 'Prijs incl. BTW',
      'tax' => 'Tax',
      'edit_discount' => 'Korting bewerken',
-     'edit_order_tax' => 'Edit Order Tax',
+     'edit_order_tax' => 'Edit Invocie Tax',
      'discount_type' => 'Kortingstype',
      'discount_amount' => 'Korting hoeveelheid',
      'no_recent_transactions' => 'Geen recente transacties',

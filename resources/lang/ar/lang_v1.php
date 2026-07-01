@@ -78,7 +78,7 @@ return [
     'hide_recent_trans' => 'لا تظهر المعاملات الأخيرة',
     'pos_settings' => 'إعدادات نقطة البيع',
     'disable_discount' => 'تعطيل الخصم',
-    'disable_order_tax' => 'تعطيل ضريبة الطلب',
+    'disable_invoice_tax' => 'تعطيل ضريبة الطلب',
     'customer_groups' => 'مجموعات العملاء',
     'customer_group' => 'مجموعة العملاء',
     'all_your_customer_groups' => 'جميع مجموعات العملاء',

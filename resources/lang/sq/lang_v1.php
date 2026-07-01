@@ -78,7 +78,7 @@ return [
     'hide_recent_trans' => 'Mos tregoni transaksione të kohëve të fundit',
     'pos_settings' => 'Cilësimet POS',
     'disable_discount' => 'Çaktivizo zbritje',
-    'disable_order_tax' => 'Çaktivizo taksën e porosisë',
+    'disable_invoice_tax' => 'Çaktivizo taksën e porosisë',
     'customer_groups' => 'Grupet e Konsumatorëve',
     'customer_group' => 'Grupi i Konsumatorëve',
     'all_your_customer_groups' => 'Të gjitha grupet e konsumatorëve',
