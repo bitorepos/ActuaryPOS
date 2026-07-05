@@ -1956,6 +1956,11 @@ return [
     'send_sms_whatsapp_notification' => 'Send sms/whatsapp notification',
     'enable_customer_note' => 'Enable Customer Note',
     'enable_sales_order' => 'Enable Sales Order',
+    'enable_back_order' => 'Enable Back Order',
+    'back_order' => 'Back Order',
+    'back_order_no' => 'Back Order No.',
+    'back_order_help_text' => 'Shows a Back Order number field on sell and purchase create/edit pages.',
+    'back_order_autogenerate_help' => 'Leave empty to autogenerate using the Back Order prefix.',
     'enable_quotations' => 'Enable Quotations',
     'sales_order' => 'Sales Order',
     'sale_order_no_prefix' => 'Sales Order No.',
@@ -2129,6 +2134,9 @@ return [
     'add_purchase_payment' => 'Add purchase payment',
     'edit_purchase_payment' => 'Edit purchase payment',
     'delete_purchase_payment' => 'Delete purchase payment',
+    'add_expense_payment' => 'Add expense payment',
+    'edit_expense_payment' => 'Edit expense payment',
+    'delete_expense_payment' => 'Delete expense payment',
 
     'add_purchase_returns_payment' => 'Add purchase return payment',
     'edit_purchase_returns_payment' => 'Edit purchase Return payment',
@@ -2937,6 +2945,14 @@ return [
     // Bookings Report
     'bookings_report' => 'Bookings Report',
     'bookings_report.view' => 'View Bookings Report',
+    'contact_opening_balance_report' => 'Contact\'s Opening Balance Report',
+    'contact_advance_deposit_report' => 'Contact\'s Advance Deposit Report',
+    'advance_deposit_type' => 'Advance Deposit Type',
+    'deposit_amount' => 'Deposit Amount',
+    'adjusted_amount' => 'Adjusted Amount',
+    'advance_deposit_balance' => 'Advance Deposit Balance',
+    'amount_paid' => 'Amount Paid',
+    'records' => 'records',
 
     // Summary Income Report
     'sales_summary' => 'Sales Summary',
