@@ -1,0 +1,5 @@
+*
+!.gitignore
+!events.php
+!packages.php
+!services.php

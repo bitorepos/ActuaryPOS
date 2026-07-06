@@ -19,7 +19,7 @@ npm-debug.log
 /public/uploads/temp
 /public/uploads/quick_menu
 /public/uploads/[0-9]*/
-/client-license.txt
+client-license.txt
 .scribe
 .sguard
 .env
