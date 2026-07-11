@@ -5174,43 +5174,51 @@ html.dark-theme [class^="ledger-row-"] td a {
    Ledger Discount – Edit Modal z-index (stacked above .view_modal)
    ======================================================================== */
 #edit_ledger_discount_modal.show,
-#edit_ledger_discount2_modal.show {
+#edit_ledger_discount2_modal.show,
+#edit_ledger_discount3_modal.show {
     z-index: 1090 !important;
 }
 #edit_ledger_discount_modal.show ~ .modal-backdrop,
-#edit_ledger_discount2_modal.show ~ .modal-backdrop {
+#edit_ledger_discount2_modal.show ~ .modal-backdrop,
+#edit_ledger_discount3_modal.show ~ .modal-backdrop {
     z-index: 1085 !important;
 }
 
 /* Dark mode for ledger discount edit modal */
 html.dark-theme #edit_ledger_discount_modal .modal-content,
-html.dark-theme #edit_ledger_discount2_modal .modal-content {
+html.dark-theme #edit_ledger_discount2_modal .modal-content,
+html.dark-theme #edit_ledger_discount3_modal .modal-content {
     background-color: #202a40 !important;
     color: #e4e5e6 !important;
     border-color: rgba(255,255,255,0.12) !important;
 }
 html.dark-theme #edit_ledger_discount_modal .modal-header,
-html.dark-theme #edit_ledger_discount2_modal .modal-header {
+html.dark-theme #edit_ledger_discount2_modal .modal-header,
+html.dark-theme #edit_ledger_discount3_modal .modal-header {
     background-color: #1a2232 !important;
     border-bottom-color: rgba(255,255,255,0.12) !important;
 }
 html.dark-theme #edit_ledger_discount_modal .modal-header .modal-title,
-html.dark-theme #edit_ledger_discount2_modal .modal-header .modal-title {
+html.dark-theme #edit_ledger_discount2_modal .modal-header .modal-title,
+html.dark-theme #edit_ledger_discount3_modal .modal-header .modal-title {
     color: #e4e5e6 !important;
 }
 html.dark-theme #edit_ledger_discount_modal .modal-footer,
-html.dark-theme #edit_ledger_discount2_modal .modal-footer {
+html.dark-theme #edit_ledger_discount2_modal .modal-footer,
+html.dark-theme #edit_ledger_discount3_modal .modal-footer {
     background-color: #1a2232 !important;
     border-top-color: rgba(255,255,255,0.12) !important;
 }
 html.dark-theme #edit_ledger_discount_modal .form-control,
-html.dark-theme #edit_ledger_discount2_modal .form-control {
+html.dark-theme #edit_ledger_discount2_modal .form-control,
+html.dark-theme #edit_ledger_discount3_modal .form-control {
     background-color: #1a2232 !important;
     color: #e4e5e6 !important;
     border-color: rgba(255,255,255,0.2) !important;
 }
 html.dark-theme #edit_ledger_discount_modal label,
-html.dark-theme #edit_ledger_discount2_modal label {
+html.dark-theme #edit_ledger_discount2_modal label,
+html.dark-theme #edit_ledger_discount3_modal label {
     color: #e4e5e6 !important;
 }
 

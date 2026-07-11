@@ -4,6 +4,10 @@ RewriteEngine On
     RewriteCond %{HTTPS} !on
     RewriteRule ^.*$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# Keep browser-facing URLs clean when Laravel or old cached pages point to /public.
+RewriteCond %{THE_REQUEST} \s/+(.*/)?public/([^\s?]*) [NC]
+RewriteRule ^public/(.*)$ $1 [L,R=301,NE]
+
 # Public docs: allow images, route pages through Laravel
 RewriteRule ^docs/images/(.*)$ public/docs/images/$1 [L]
 RewriteRule ^docs(/.*)?$ public/index.php [L]

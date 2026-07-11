@@ -41,6 +41,13 @@
   z-index: 12001 !important;
 }
 
+@media (min-width: 992px) {
+  #todays_profit_modal .todays-profit-modal-dialog {
+    width: 1300px !important;
+    max-width: calc(100% - 40px);
+  }
+}
+
 // Normalize sidebar link/icon colors (prevent mixed blue states)
 .main-sidebar .sidebar-menu>li>a,
 .main-sidebar .sidebar-menu>li>a>i,

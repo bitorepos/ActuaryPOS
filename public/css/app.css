@@ -3377,6 +3377,13 @@ table.table-text-center th {
   z-index: auto;
 }
 
+@media (min-width: 992px) {
+  #todays_profit_modal .todays-profit-modal-dialog {
+    width: 1300px !important;
+    max-width: calc(100% - 40px);
+  }
+}
+
 /* Nested modals (modal opened from another modal) */
 .modal~.modal {
   z-index: 1090 !important;
@@ -3442,7 +3449,8 @@ html.dark-theme body.lockscreen > .wrapper {
 /* Ledger discount edit modals — may open on top of .view_modal which
    comes later in DOM, so the sibling selector doesn't cover them.   */
 #edit_ledger_discount_modal.show,
-#edit_ledger_discount2_modal.show {
+#edit_ledger_discount2_modal.show,
+#edit_ledger_discount3_modal.show {
   z-index: 1090 !important;
 }
 

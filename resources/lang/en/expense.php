@@ -19,6 +19,8 @@ return [
     'expense_category' => 'Expense Category',
     'category_name' => 'Category name',
     'category_code' => 'Category code',
+    'budget' => 'Budget',
+    'remaining' => 'Remaining',
     'added_success' => 'Expense category added successfully',
     'updated_success' => 'Expense category updated successfully',
     'deleted_success' => 'Expense category deleted successfully',

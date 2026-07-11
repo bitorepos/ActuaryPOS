@@ -27,6 +27,7 @@ return [
 
     'user.view' => 'View user',
     'user.create' => 'Add user',
+    'user.create_employee' => 'Add employee',
     'user.update' => 'Edit user',
     'user.delete' => 'Delete user',
 

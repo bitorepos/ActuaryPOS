@@ -99,6 +99,7 @@ return [
     'enable_sub_category' => 'Enable Sub-Categories',
     'enable_sub2_category' => 'Enable Sub2-Categories',
     'enable_price_tax' => 'Enable Price & Tax info',
+    'enable_product_tax' => 'Enable product tax fields',
     'enable_discount' => 'Enable Discount Promo',
     'enable_purchase_status' => 'Enable Purchase Status',
     'tooltip_enable_purchase_status' => 'On disable all purchases will be marked as <i>Item Received</i>',
@@ -589,8 +590,8 @@ return [
     'takeaway_label' => 'Takeaway',
     'tooltip_checkout_takeaway' => 'Checkout using multiple payment methods',
     'tooltip_express_checkout_card' => 'Express checkout using card',
-    'tooltip_checkout_takeway'=> 'Express Checkout using Cash, with KOT printing',
-    'tooltip_checkout_takeway_credit'=> 'Express Checkout as Credit Sale, with KOT printing', 
+    'tooltip_checkout_takeway' => 'Express Checkout using Cash, with KOT printing',
+    'tooltip_checkout_takeway_credit' => 'Express Checkout as Credit Sale, with KOT printing',
     'card_transaction_details' => 'Card transaction details',
     'client_tax_label' => 'Client tax number label',
     'cat_code_label' => 'Category or HSN code label',
@@ -646,7 +647,7 @@ return [
     'completed' => 'Completed',
     'pending' => 'Pending',
     'failed' => 'Failed',
-    
+
     // Google Drive Connect Guide
     'google_drive_connect_guide' => 'Google Drive Connect Settings - User Guide',
     'how_to_connect_google_drive' => 'How to Connect Google Drive',
@@ -660,7 +661,7 @@ return [
     'gdrive_step4_desc' => 'Review the requested permissions and click "Allow" to authorize the application to access your Google Drive.',
     'gdrive_step5_title' => 'Confirmation',
     'gdrive_step5_desc' => 'You will be redirected back to the application. Your connected account email and profile picture will be displayed.',
-    
+
     // Required Permissions
     'required_permissions' => 'Required Permissions',
     'gdrive_permissions_intro' => 'When connecting Google Drive, the following permissions are requested:',
@@ -673,7 +674,7 @@ return [
     'gdrive_perm_profile' => 'Basic Profile',
     'gdrive_perm_profile_desc' => 'Used to display your name and profile picture for account verification.',
     'gdrive_permissions_note' => 'These permissions are limited to files created by this application. We cannot access your other Google Drive files.',
-    
+
     // Verify Connected Account
     'verify_connected_account' => 'Verify Connected Account',
     'gdrive_verify_intro' => 'After connecting, verify your account by checking:',
@@ -682,7 +683,7 @@ return [
     'gdrive_verify_date' => 'The connection date is displayed',
     'gdrive_verify_folder' => 'A "BitorePOS Backups" folder is created in your Google Drive',
     'gdrive_verify_test' => 'Use the "Test Connection" button to verify the connection is working properly.',
-    
+
     // Troubleshooting
     'troubleshooting' => 'Troubleshooting',
     'issue' => 'Issue',
@@ -2516,7 +2517,7 @@ return [
     'total_invoice_tax' => 'Total Invoice Tax',
     'total_item_tax' => 'Total Item Tax',
     'make_pay_term_readonly' => 'Make Pay Term Readonly',
-    'hide_sr_number'=> 'Hide Sr. Number',
+    'hide_sr_number' => 'Hide Sr. Number',
     'stock_adjustment_quantity_tooltip' => 'Positive Quantity Means Stock Inward, Negative Quantity Means Stock Outward',
     'stock_transfer_status_readonly' => 'Status Readonly',
     'stock_transfer_default_status' => 'Defualt Status',
@@ -2721,7 +2722,7 @@ return [
     'combo_items_report.view' => 'View Combo Items Report',
     'total_invoice_discount_field_readonly' => 'Inv. Discount Percentage Fields Readonly',
     'is_default' => 'Is Default',
-    'total_type_of_services' => 'Total Type of Services', 
+    'total_type_of_services' => 'Total Type of Services',
     'tos_collected' => 'Type of Service Collected',
     'types_of_service_amount' => 'Type of Service Amount',
     'service_amount' => 'Service Amount',
@@ -2745,7 +2746,7 @@ return [
     'enable_cash_register_sync_with_workstations' => 'Enable Cash Register Sync with Workstations',
     'alternate_sku_label' => 'Alternate SKU Label',
     'show_alternate_sku' => 'Show Alternate SKU',
-    'show_last_customer_sold_price_search' => 'Show Last Customer Sold Price in Search',  
+    'show_last_customer_sold_price_search' => 'Show Last Customer Sold Price in Search',
     'template_file' => 'Template File',
     'invoice_total' => 'Invoice Total',
     'current_stock' => 'Current Stock',
@@ -2923,7 +2924,11 @@ return [
     'total_sales' => 'Total Sales',
     'total_transactions' => 'Total Transactions',
     'discount_to_sales_ratio' => 'Discount to Sales Ratio',
+    'stock_level' => 'Stock Level',
     'load_products' => 'Load Products',
+    'stock_level_products_loaded' => 'Stock level products loaded successfully',
+    'no_stock_level_products_to_load' => 'No supplier products have reached low stock level for the selected location',
+    'select_supplier_location_and_stock_level' => 'Please select location, supplier and stock level',
     'load_invoice_products' => 'Load products from invoice to POS',
     'invoice_products_loaded' => 'Products loaded from invoice successfully',
     'no_products_found' => 'No products found in this invoice',
@@ -2996,4 +3001,6 @@ return [
     'width' => 'Width',
     'height' => 'Height',
     'controller_options' => 'Controller Options',
+
+    'request_received_reindex_shortly' => 'Request Received - Reindex will begin shortly'
 ];
