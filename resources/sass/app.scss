@@ -24,21 +24,42 @@
 
 @import 'node_modules/@yaireo/tagify/dist/tagify';
 
-// Modal z-index fixes for Bootstrap 5 (raised above all app chrome/overlays)
+// Modal z-index fixes for Bootstrap 5 (raised above POS chrome/overlays)
 .modal,
 .modal.show {
   z-index: 12000 !important;
 }
 
-// .modal-backdrop,
-// .modal-backdrop.show {
-//   z-index: 11990 !important;
-// }
+.modal-backdrop,
+.modal-backdrop.show {
+  z-index: 11990 !important;
+}
+
+.modal~.modal,
+.modal.modal-stacked,
+.modal.modal-stacked.show {
+  z-index: 12010 !important;
+}
+
+.modal-backdrop~.modal-backdrop {
+  z-index: 12005 !important;
+}
 
 .modal-dialog,
 .modal.fade .modal-dialog,
 .modal.show .modal-dialog {
   z-index: 12001 !important;
+}
+
+.modal-open .select2-container--open .select2-dropdown,
+.modal .bootstrap-datetimepicker-widget,
+.modal .datepicker-dropdown,
+.modal .daterangepicker {
+  z-index: 12020 !important;
+}
+
+.swal-overlay {
+  z-index: 12100 !important;
 }
 
 @media (min-width: 992px) {

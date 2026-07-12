@@ -3365,16 +3365,18 @@ table.table-text-center th {
 /* --- Modals --- */
 .modal,
 .modal.show {
-  z-index: 1080 !important;
+  z-index: 12000 !important;
 }
 
 .modal-backdrop,
 .modal-backdrop.show {
-  z-index: 1075 !important;
+  z-index: 11990 !important;
 }
 
-.modal-dialog {
-  z-index: auto;
+.modal-dialog,
+.modal.fade .modal-dialog,
+.modal.show .modal-dialog {
+  z-index: 12001 !important;
 }
 
 @media (min-width: 992px) {
@@ -3386,16 +3388,16 @@ table.table-text-center th {
 
 /* Nested modals (modal opened from another modal) */
 .modal~.modal {
-  z-index: 1090 !important;
+  z-index: 12010 !important;
 }
 
 .modal.modal-stacked,
 .modal.modal-stacked.show {
-  z-index: 1090 !important;
+  z-index: 12010 !important;
 }
 
 .modal-backdrop~.modal-backdrop {
-  z-index: 1085 !important;
+  z-index: 12005 !important;
 }
 
 /* When modal is open, ensure sidebar & header stay behind.
@@ -3451,7 +3453,7 @@ html.dark-theme body.lockscreen > .wrapper {
 #edit_ledger_discount_modal.show,
 #edit_ledger_discount2_modal.show,
 #edit_ledger_discount3_modal.show {
-  z-index: 1090 !important;
+  z-index: 12010 !important;
 }
 
 /* --- Select2 --- */
@@ -3468,19 +3470,19 @@ html.dark-theme body.lockscreen > .wrapper {
 
 /* Select2 dropdown appended to body while a modal is open */
 .modal-open .select2-container--open .select2-dropdown {
-  z-index: 1085 !important;
+  z-index: 12020 !important;
 }
 
 /* --- Datepickers inside modals --- */
 .modal .bootstrap-datetimepicker-widget,
 .modal .datepicker-dropdown,
 .modal .daterangepicker {
-  z-index: 1085 !important;
+  z-index: 12020 !important;
 }
 
 /* --- SweetAlert (must be above modals) --- */
 .swal-overlay {
-  z-index: 1100 !important;
+  z-index: 12100 !important;
 }
 
 /* --- Loader overlays --- */
