@@ -355,6 +355,30 @@ html body.pos-interface-big-buttons-body {
     /* contain = auto-fit large images inside the tile without cropping or
        stretching the product button. */
     background-size: contain !important;
+    position: relative;
+}
+
+.pos-interface-big-buttons #product_list_body .bb-product-stock-badge {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    z-index: 1;
+    display: inline-flex !important;
+    align-items: center;
+    max-width: calc(100% - 10px);
+    min-height: 20px;
+    padding: 2px 7px;
+    border: 1px solid #2e7d32;
+    border-radius: 3px;
+    background: rgba(232, 255, 236, 0.96);
+    color: #174f20;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.15;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: 0 1px 2px rgba(15, 35, 50, 0.18);
 }
 
 /* Any <img> rendered inside the tile (some product partials use <img>
@@ -879,12 +903,17 @@ html body.pos-interface-big-buttons-body {
 }
 
 .pos-interface-big-buttons .bb-pay-row {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
     gap: 6px;
+    min-width: 0;
 }
 
 .pos-interface-big-buttons .bb-action-btn {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 0;
     min-height: 110px;
     font-size: 22px;
     font-weight: 800;
@@ -926,10 +955,52 @@ html body.pos-interface-big-buttons-body {
     background: #1f6f8b;
 }
 
+.pos-interface-big-buttons .bb-cash-btn {
+    background: linear-gradient(180deg, #8fe89a 0%, #52c96b 100%);
+    border-color: #35a84d;
+    color: #123d1d;
+}
+
+.pos-interface-big-buttons .bb-cash-btn:hover {
+    background: #66d978;
+    color: #123d1d;
+}
+
 .pos-interface-big-buttons .bb-voucher-btn {
     background: #d3d3d3;
     color: #555;
     border-color: #aaa;
+}
+
+.pos-interface-big-buttons #modal_payment .bb-payment-validation-alert {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 0 0 12px;
+    padding: 10px 12px;
+    border: 1px solid #d6453d;
+    border-left: 5px solid #c0392b;
+    border-radius: 4px;
+    background: #fff3f2;
+    color: #7f1d1d;
+    font-size: 14px;
+    line-height: 1.35;
+}
+
+.pos-interface-big-buttons #modal_payment .bb-payment-validation-alert i {
+    flex: 0 0 auto;
+    margin-top: 2px;
+    color: #c0392b;
+    font-size: 18px;
+}
+
+.pos-interface-big-buttons #modal_payment .bb-payment-validation-copy {
+    min-width: 0;
+}
+
+.pos-interface-big-buttons #modal_payment .bb-payment-validation-copy strong,
+.pos-interface-big-buttons #modal_payment .bb-payment-validation-copy span {
+    display: block;
 }
 
 /* ===== FOOTER UTILITY BAR ===== */

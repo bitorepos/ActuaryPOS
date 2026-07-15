@@ -1435,6 +1435,17 @@ html.dark-theme .pos-create-page .pos_product_div2 > .table-responsive #pos_tabl
     max-width: 70px;
 }
 
+/* Purchase quantity and scheme quantity unit selects stay compact in slim rows */
+#purchase_entry_table > tbody > tr > td .multi-input.input-number > select.sub_unit.inline-select,
+#purchase_entry_table > tbody > tr > td .multi-input.input-number > select.foc_sub_unit.inline-select {
+    flex: 0 0 58px;
+    width: 58px !important;
+    min-width: 58px !important;
+    max-width: 58px !important;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+}
+
 /* ===== Purchase Return table (from invoice) - right-align & auto layout ===== */
 #purchase_return_table {
     table-layout: auto !important;

@@ -22,6 +22,7 @@ return [
     'view' => 'View',
     'delete' => 'Delete',
     'restore' => 'Restore',
+    'reset' => 'Reset',
     'close' => 'Close',
     'something_went_wrong' => 'Something went wrong, please try again later',
     'required' => 'This field is required',
