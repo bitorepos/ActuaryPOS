@@ -1,107 +1,26 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
-TzCUP9PsaA+FDA7D0fUk7+iBBW==
+<div class="table-responsive">
+<table class="table table-condensed no-border">
+	<?php if(!empty($tax_details['tax_details'])): ?>
+		<?php $__currentLoopData = $tax_details['tax_details']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $tax_rate): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+		 <tr>
+		 	<th <?php if($tax_rate['is_tax_group']): ?> rowspan="2" <?php endif; ?>><?php echo e($tax_rate['tax_name'], false); ?></th>
+		 	<td><span class="display_currency" data-currency_symbol="true"><?php echo e($tax_rate['tax_amount'], false); ?></span></td>
+		 </tr>
+		 <?php if($tax_rate['is_tax_group']): ?>
+		 	<tr>
+		 		<td class="text-muted" style="padding-top: 0;">
+		 			<?php $__currentLoopData = $tax_rate['group_tax_details']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $group_tax): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+		 				<small><?php echo e($group_tax['name'], false); ?></small> - <small><span class="display_currency" data-currency_symbol="true"><?php echo e($group_tax['calculated_tax'], false); ?></span></small><br>
+		 			<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+		 		</td>
+		 	</tr>
+		<?php endif; ?>
+		 	
+		<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+	<?php endif; ?>
+	<tr>
+		<th><?php echo app('translator')->get('sale.total'); ?></th>
+		<th><span class="display_currency" data-currency_symbol="true"><?php echo e($tax_details['total_tax'], false); ?></span></th>
+	</tr>
+</table>
+</div>

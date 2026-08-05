@@ -1,42 +1,22 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-HR+cPoS1v98qwzobRRPniIXqpUNIr3IPl5spvYpxX1yWf4EoeAPxCEsqTKeqauuPAoxIVnTQYMNj
-xT5TgPbLLcwhpFbF8QtYsIu75wfVU4PJs+0hkMnhe9dvIH18qiS9HeWgOLnpMZDsw7MrNrDlEcbV
-zCoPCtVAWh+sAmfKjXiCY0wFwcezVtuzy/sP/1EfNupaorEqHS/ygFcDn6MwTB2mr0STJcmbGuW4
-AoxQssLk5EU1qMv0huIHf49TSe79m65VEavlUwzGyoR7vqihhi2lanN9uKWZnFXng5AfwrhQHGlI
-lcLaY2o2mDU3YYQ/03eOHG478USdD/2ToC6/6Xo2CUxlWuCPIiscOVexb92WHqiETdQHxTCxlatm
-UevB5pNUlb42V2WXZDqCwEQ6fnmgJwGebt1/4k/YNI1CULK574cu3pw87T1H/56NSEUJGF/rl/Mh
-Nj8pZzQQYVTJWzC6QsmJaG3iaAFo4axjkg7ud5qIfzdfSJgQx+ARCm5KgksJVOy048OwZFC7mBjf
-aG8+HIzyPsUBfQyIFnSCP0IHqUXyJMPb76v2i8St8fk7ANoHat9gR/ZDxieJWwmiPictBEuZsmg4
-YtuJ6BXpEoFl4OVv5LjSY9YWQBQ94xTiBbj1lMr/PtBKxICffw+DUX7k3FmbOo+l4VHAgmDXTkJB
-FsPKhLp6Mlg1sSOKof0SVJcZD4Dje2qiIOfH7arBKtKbWYNP2MPVqBUKyuI9UPhFUP8EhpByKpqS
-Otww1zD5BmfTj8c3TVvfCxmM//+pl99VbR/Xw8sVVMnwhVj5166tSu3hU+wfcX8JjwjXBGZwpPzW
-VRBpysOuppdCukkhHdUDuEdeVJXimb5wGBQOEc5wL6TJBZbFnnJapVtf1ijJxm43oWCBD5bpw23k
-aiUFQaY+VYqVa1L3nOf3+KFIDExVYtXG5eJfm4O6rr9gdKItbugByQp/5S+hvrg8FqQJvyPt19Vy
-OK0vvU5xlWOQfAinbqIvnLgVdU5HYxkNo0DoemNAKb7hzRkzE9UsI6zA8X5VAVCzVuKQcolwVr71
-5+YuKM29fGXrBDanwmNYQfvpE06WRCY35xAXsloi4iV0/wEU13y/u9KUw9CEZ4B/UxdCxUZ2ah4j
-Re1yieKI+8LxQV0Qvg583fbK18y2EGswgykA5ONkUDeTQmtWkYi7YwZd5BGJUvMmQ8JKGxL1fMLL
-JHoqXPu2S1+2uv/VEUNCkuyYbx+Lb4clCNSvySwjK2V2UARndbmRTfwZNHCvtRgh8tgL5URTbhRd
-2hOWh53AKLDP5CcXKxwJZhoPWcfurxDdjgxO5H5HBK/icy1M8vPpkt37K8HQNkpSRNfO+1kmMTTL
-e+b8xVvI2BVOErAharUQqPwuAMDTJET4yM65abaVPPnFI9Xy4wpTn1WNaEqFpACkKnH2T8qS3yzZ
-Ob7RxzqDxr2RkF77uq7mRcVCGKsIV+PmZ5DRNTS7ydfByz9+B9hD/MF0fff1xZJEuESD7pebjCmm
-+i7B6hGBCbyzkrMSbC+2Nxlrgx1XT3UZ0UAeLGcz/yH9pSfnRQBrwu4G5tq7yArA7B7BABVeV/wR
-1Ue7IEMDf0b6dkmAEj9IK0MQntZusxsFiHRCtnpCZzQ4HIuVOHaJfcxeQFcp9+OmdIHHiWxu6Mc9
-bhm25XWSB0IInopXtSox2PVztkQzmDp2XMxVPiA+/ncygkG35T7JAIOMSQg0Qu84nl0OlW2PQPVI
-0ZFq7eOKffoRjhQEAm/xqQvAgEbvGRhe059moRA9b3d2Fdh7at5VhxeFrDtrcgEmJQucGqjB/ose
-4IjBvDbynjAZwnPGG70SlM7N9iCepBfYd7Umdu7ZgNzyQzPGWBwXxl+6oJrE3WveNdTtuXvKb43o
-zTqsxzwjZJbrI4lNHbaeoaCZx23IqyHkt39R90YukKizVxcXzm2++whP3D/ew3zdziGwojBo6g60
-bLwQclUTJ16fkkbq4C0abJBvl+vJVzyPAqyR4aE2UikOJPXKzmdgho4TjA56l7iIrOCJ1i4oIto/
-eiKHIEx7f7D1we0Jd7RQ8W86CTSKQlSMXsGN4ePLUDvIYA1ceM2mITr4HHMMmqUwskPanmcquqW3
-ou/qaWvYi9Fvc8azww3JMdsI7B1mIZqeLKJ/sKO2FRbuj7a/QfHYxGRygy3pAhptXnACiLyJGEiG
-A73v7PjZTjWcNyzHLlWcXt3gbzIFzklV2+2np0ko3ih/zt+0fYzw7yDY6WU9S3GnotjO2QYNTXxZ
-TN8VQJkJo/U3sOf3+s3hnAyw6vcgWRZ6AuGTjdCe7SWTc9bEdsBFAIrNEV8WK374qrdbxZ5c84DR
-LRA0TMHA4VI1QYQF7j6sYQ1gFhYEhs8osfPvnrQOK3IMC6u8Jt5kZAv3/ENY7aSV/TlUwanNIlmc
-erKtWLNxhjKVrHoAYE/N4u+KL6eQpRhctQdJIPeLY00VWWPLgljq8ne/7fQMHtPG5MUPMAzKIFzF
-iLN7EitpiWTt1L+ckr36Lei49krtcLEaW1K+ZWkYB8U57kTFX7q7TpwiX2Ecc4z1Rw4MMqES/VMr
-iSV7CMi835XZUZrUOq6dgdtRruaJ4bpt+VoGbWMHjYiZpDfak4fx4rb6wVlCoJsyoyA4MaPiu6d+
-bhoxTozfvXgMW2MJkKtQ4HjWZ2U6tp9qol1JlPPBOQjYU6zTKrscEhUO5F/SHJE4ka8tSNwoKWrS
-vf4AfW9HkDddgR7B/WKK355MkdqSVEhUPRBr+s7E6b4gjW05hTUAB82stbhYXyLu/2+727yXaKmv
-LeHhH5rpKw6VO2dp2mv+99BncK2Dcak1+NDbH2oBRXVT6i7KsZWO2k/VrfXIOKcuket/3RYAUbHD
-XSsaz+x3zO4qTjPL4Hj4b8PNWnIEwr0nPGMKC86QHeWfTeDPi3GBeH+jtsu=
+<div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            
+            <h4 class="modal-title text-center" id="modalTitle"><?php echo e($product->name, false); ?></h4>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-sm-12">
+                    <?php echo $product->product_description; ?>
+
+                </div>
+                
+                
+            </div>
+        </div>
+        <div class="modal-footer">
+            
+            <button type="button" class="btn btn-default no-print" data-bs-dismiss="modal"><?php echo app('translator')->get('messages.close'); ?></button>
+        </div>
+    </div>
+</div>

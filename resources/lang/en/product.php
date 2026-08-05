@@ -53,6 +53,7 @@ return [
     'selling_price_tax_type' => 'Selling Price Tax Type',
     'inclusive' => 'Inclusive',
     'exclusive' => 'Exclusive',
+    'inclusive_on' => 'Inclusive on',
     'edit_product' => 'Edit Product',
     'default_purchase_price' => 'Default Purchase Price',
     'purchase_price' => 'Purchase Price',

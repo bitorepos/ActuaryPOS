@@ -873,6 +873,7 @@ input[type=number]::-webkit-outer-spin-button {
   text-overflow: ellipsis;
   color: #fff;
   flex: 0 0 auto;
+  height: 73px;
   min-height: 55px;
 }
 
@@ -1110,6 +1111,7 @@ html.semi-dark .pos-create-page.pos-interface-simple .simple-summary-grand .summ
   .pos-create-page.pos-interface-simple .btn-simple {
     padding: 4px 7px;
     gap: 2px;
+    height: 32px;
     min-height: 32px;
     font-size: 11px;
     border-radius: 5px;
@@ -1160,6 +1162,7 @@ html.semi-dark .pos-create-page.pos-interface-simple .simple-summary-grand .summ
   .pos-create-page.pos-interface-simple .btn-simple {
     padding: 3px 5px;
     min-width: 28px;
+    height: 28px;
     min-height: 28px;
     border-radius: 4px;
   }
@@ -1672,6 +1675,7 @@ html.semi-dark .pos-create-page.pos-has-slide-menu .pos-header-dropdown {
   text-overflow: ellipsis;
   color: #fff;
   flex: 0 0 auto;
+  height: 73px;
   min-height: 55px;
 }
 
@@ -1913,6 +1917,7 @@ html.semi-dark .pos-create-page.pos-interface-suggestion .suggestion-summary-gra
   .pos-create-page.pos-interface-suggestion .btn-suggestion {
     padding: 4px 7px;
     gap: 2px;
+    height: 32px;
     min-height: 32px;
     font-size: 11px;
     border-radius: 5px;
@@ -1963,6 +1968,7 @@ html.semi-dark .pos-create-page.pos-interface-suggestion .suggestion-summary-gra
   .pos-create-page.pos-interface-suggestion .btn-suggestion {
     padding: 3px 5px;
     min-width: 28px;
+    height: 28px;
     min-height: 28px;
     border-radius: 4px;
   }
@@ -2087,6 +2093,7 @@ html.semi-dark .pos-create-page.pos-interface-suggestion .suggestion-summary-gra
   text-overflow: ellipsis;
   color: #fff;
   flex: 1 1 calc(50% - 4px);
+  height: 73px;
   min-height: 55px;
 }
 
@@ -2437,6 +2444,7 @@ html.semi-dark .pos-create-page.pos-interface-quick .quick_menu .nav-tabs {
     flex: 0 0 auto;
     padding: 4px 7px;
     gap: 2px;
+    height: 32px;
     min-height: 32px;
     font-size: 11px;
     border-radius: 5px;
@@ -2517,6 +2525,7 @@ html.semi-dark .pos-create-page.pos-interface-quick .quick_menu .nav-tabs {
   .pos-create-page.pos-interface-quick .btn-qm {
     padding: 3px 5px;
     min-width: 28px;
+    height: 28px;
     min-height: 28px;
     border-radius: 4px;
   }
@@ -4464,11 +4473,32 @@ a {
   min-width: 80px;
   font-weight: 600;
   font-size: 0.82rem;
+  color: #fff;
+  background-color: #2f9fda;
+  border-color: #2f9fda;
   white-space: normal;
   word-break: break-word;
   line-height: 1.15;
-  text-align: left;
-  padding: 0.15rem 0.5rem;
+  text-align: center;
+  padding: 0.3rem 0.5rem;
+  min-height: 47px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+}
+
+.payment-row-modal-form .pay_modal_payment_type_btn:hover,
+.payment-row-modal-form .pay_modal_payment_type_btn:focus {
+  color: #fff;
+  background-color: #2388bf;
+  border-color: #2388bf;
+}
+
+.payment-row-modal-form .pay_modal_payment_type_btn:active {
+  color: #fff;
+  transform: translateY(1px);
 }
 
 .payment-row-modal-form .input-group {

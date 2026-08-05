@@ -1,44 +1,20 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
+<div class="modal fade" id="add_token_no_modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" data-backdrop="static" data-keyboard="false" data-bs-backdrop="static" data-bs-keyboard="false">
+<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">
+					<?php if(!empty($pos_settings['prompt_token_label'])): ?> <?php echo e($pos_settings['prompt_token_label'], false); ?> <?php else: ?> <?php echo e('Token No', false); ?> <?php endif; ?> 
+				</h4>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-12">
+				        <div class="mb-3">
+							<input type="text" name="modal_token_no_input" class="form-control" id='modal_token_no_input'>
+						</div>
+				    </div>
+				</div>
+			</div>
+		</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div>

@@ -1,166 +1,342 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
-/0==
+<style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #1a1a1a;
+        background: #525659;
+    }
+
+    /* ===== Toolbar ===== */
+    .cr-toolbar {
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        height: 48px;
+        background: #323639;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 0 14px;
+        z-index: 1000;
+        box-shadow: 0 1px 6px rgba(0,0,0,.4);
+        color: #fff;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    .cr-toolbar .cr-title {
+        font-size: 13px;
+        font-weight: 700;
+        margin-right: auto;
+        white-space: nowrap;
+        letter-spacing: .02em;
+    }
+    .cr-group {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding: 0 8px;
+        border-left: 1px solid #50545a;
+        height: 30px;
+    }
+    .cr-group:first-of-type { border-left: 0; }
+    .cr-btn {
+        background: #4a4f54;
+        color: #fff;
+        border: 0;
+        border-radius: 4px;
+        padding: 6px 10px;
+        font-size: 12px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        white-space: nowrap;
+        transition: background .15s;
+        text-decoration: none;
+    }
+    .cr-btn:hover { background: #5d636a; color: #fff; }
+    .cr-btn.primary { background: #1a73e8; }
+    .cr-btn.primary:hover { background: #2b7de9; }
+    .cr-btn.success { background: #188038; }
+    .cr-btn.success:hover { background: #1e9e45; }
+    .cr-btn.danger { background: #b3261e; }
+    .cr-btn.danger:hover { background: #c5362d; }
+    .cr-iconbtn {
+        width: 30px;
+        height: 30px;
+        justify-content: center;
+        padding: 0;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .cr-zoom-label, .cr-page-label {
+        font-size: 12px;
+        min-width: 54px;
+        text-align: center;
+        font-variant-numeric: tabular-nums;
+    }
+    .cr-page-input {
+        width: 42px;
+        text-align: center;
+        border: 0;
+        border-radius: 3px;
+        padding: 4px 2px;
+        font-size: 12px;
+    }
+
+    /* ===== Stage ===== */
+    .cr-stage {
+        margin-top: 48px;
+        padding: 24px 0 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+    }
+
+    /* ===== A4 Sheet ===== */
+    .cr-sheet {
+        background: #fff;
+        width: <?php echo e($sheet_width, false); ?>;
+        min-height: <?php echo e($sheet_min_height, false); ?>;
+        padding: 12mm 10mm;
+        box-shadow: 0 2px 10px rgba(0,0,0,.45);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ===== Brand Header ===== */
+    .cr-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-bottom: 2.5px solid #1a1a1a;
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+    }
+    .cr-head-left { display: flex; align-items: center; gap: 12px; }
+    .cr-logo { max-height: 56px; max-width: 150px; object-fit: contain; }
+    .cr-biz-name { font-size: 17pt; font-weight: 800; line-height: 1.1; }
+    .cr-biz-loc { font-size: 9.5pt; color: #444; margin-top: 2px; }
+    .cr-head-right { text-align: right; }
+    .cr-report-title {
+        font-size: 15pt;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+    }
+    .cr-report-sub { font-size: 9pt; color: #444; margin-top: 3px; }
+
+    /* ===== Filters strip ===== */
+    .cr-filters {
+        font-size: 8.5pt;
+        color: #333;
+        margin-bottom: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px 16px;
+    }
+    .cr-filters .f-item b { color: #000; }
+
+    /* ===== Section title (category / group) ===== */
+    .cr-group-title {
+        font-size: 11pt;
+        font-weight: 800;
+        background: #1a1a1a;
+        color: #fff;
+        padding: 5px 8px;
+        margin: 10px 0 0;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    .cr-subgroup-title {
+        font-size: 9.5pt;
+        font-weight: 700;
+        color: #333;
+        padding: 6px 2px 3px;
+    }
+
+    /* ===== Table ===== */
+    .cr-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 8.3pt;
+    }
+    .cr-table thead th {
+        background: #1a1a1a;
+        color: #fff;
+        font-size: 7.6pt;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .02em;
+        padding: 5px 5px;
+        border: 1px solid #1a1a1a;
+        text-align: left;
+        white-space: nowrap;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    .cr-table thead th.r { text-align: right; }
+    .cr-table thead th.c { text-align: center; }
+    .cr-table tbody td {
+        padding: 4px 5px;
+        border: 1px solid #d2d2d2;
+        vertical-align: top;
+    }
+    .cr-table tbody td.r { text-align: right; white-space: nowrap; }
+    .cr-table tbody td.c { text-align: center; }
+    .cr-table tbody tr:nth-child(even) td {
+        background: #f4f4f4;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    .cr-prod-name { font-weight: 600; }
+    .cr-sub { color: #666; font-size: 7.4pt; }
+    .cr-table tfoot td {
+        padding: 6px 5px;
+        border-top: 2px solid #1a1a1a;
+        font-weight: 800;
+        font-size: 8.5pt;
+        background: #eaeaea;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    .cr-table tfoot td.r { text-align: right; white-space: nowrap; }
+    .cr-qty-chip {
+        display: inline-block;
+        margin: 1px 4px 1px 0;
+        white-space: nowrap;
+    }
+
+    /* ===== Grand total sheet ===== */
+    .cr-grand {
+        margin-top: 8px;
+        border: 2px solid #1a1a1a;
+        padding: 10px 12px;
+        background: #f4f8ff;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    .cr-grand h3 {
+        font-size: 12pt;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: .04em;
+    }
+    .cr-grand-row {
+        display: flex;
+        justify-content: space-between;
+        font-size: 10pt;
+        padding: 3px 0;
+        border-bottom: 1px dashed #bbb;
+    }
+    .cr-grand-row:last-child { border-bottom: 0; }
+    .cr-grand-row b { font-weight: 800; }
+
+    /* ===== Sheet footer ===== */
+    .cr-foot {
+        margin-top: auto;
+        padding-top: 8px;
+        border-top: 1px solid #ccc;
+        display: flex;
+        justify-content: space-between;
+        font-size: 8pt;
+        color: #555;
+    }
+    .cr-empty {
+        text-align: center;
+        padding: 40px 0;
+        font-size: 12pt;
+        color: #888;
+    }
+
+    /* ===== DomPDF export ===== */
+    <?php if(! empty($is_pdf)): ?>
+    @page { size: <?php echo e($page_size, false); ?>; margin: 0; }
+    html,
+    body {
+        background: #fff !important;
+        margin: 0;
+    }
+    .cr-stage {
+        display: block;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .cr-sheet {
+        box-shadow: none;
+        display: block;
+        margin: 0;
+        min-height: auto;
+        padding: 9mm 10mm;
+        page-break-after: always;
+        width: auto;
+    }
+    .cr-sheet:last-child {
+        page-break-after: auto;
+    }
+    .cr-head {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    }
+    .cr-head-left {
+        display: table-cell;
+        vertical-align: top;
+        width: 42%;
+    }
+    .cr-head-left > div {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .cr-logo {
+        margin-right: 8px;
+        vertical-align: middle;
+    }
+    .cr-head-right {
+        display: table-cell;
+        overflow-wrap: break-word;
+        text-align: right;
+        vertical-align: top;
+        width: 58%;
+    }
+    .cr-report-title {
+        font-size: 13pt;
+        letter-spacing: .02em;
+    }
+    .cr-report-sub {
+        font-size: 8pt;
+    }
+    .cr-foot {
+        display: block;
+        margin-top: 8px;
+        width: 100%;
+    }
+    .cr-foot span:first-child {
+        display: inline-block;
+        width: 60%;
+    }
+    .cr-foot span:last-child {
+        display: inline-block;
+        text-align: right;
+        width: 38%;
+    }
+    <?php endif; ?>
+
+    /* ===== Print ===== */
+    @media print {
+        @page { size: <?php echo e($page_size, false); ?>; margin: 8mm; }
+        html, body { background: #fff !important; }
+        .cr-toolbar { display: none !important; }
+        .cr-stage { margin: 0; padding: 0; gap: 0; }
+        .cr-sheet {
+            width: auto;
+            min-height: auto;
+            box-shadow: none;
+            padding: 0;
+            page-break-after: always;
+        }
+        .cr-sheet:last-child { page-break-after: auto; }
+    }
+</style>

@@ -1,58 +1,42 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
+<script type="text/javascript">
+    if (typeof window.getAdminReportDateRangeSettings !== 'function') {
+        window.getAdminReportDateRangeSettings = function(defaultSelector) {
+            var reportDateRangeSettings = $.extend({}, dateRangeSettings);
+            var dateRangeDefault = $(defaultSelector || '#reports_filter_date_range').val();
+
+            if (dateRangeDefault == 'today') {
+                reportDateRangeSettings.startDate = moment();
+                reportDateRangeSettings.endDate = moment();
+            } else if (dateRangeDefault == 'yesterday') {
+                reportDateRangeSettings.startDate = moment().subtract(1, 'days');
+                reportDateRangeSettings.endDate = moment().subtract(1, 'days');
+            } else if (dateRangeDefault == 'last_seven_days') {
+                reportDateRangeSettings.startDate = moment().subtract(6, 'day');
+                reportDateRangeSettings.endDate = moment();
+            } else if (dateRangeDefault == 'last_thirty_days') {
+                reportDateRangeSettings.startDate = moment().subtract(29, 'day');
+                reportDateRangeSettings.endDate = moment();
+            } else if (dateRangeDefault == 'this_month') {
+                reportDateRangeSettings.startDate = moment().startOf('month');
+                reportDateRangeSettings.endDate = moment();
+            } else if (dateRangeDefault == 'last_month') {
+                reportDateRangeSettings.startDate = moment().subtract(1, 'month').startOf('month');
+                reportDateRangeSettings.endDate = moment().subtract(1, 'month').endOf('month');
+            } else if (dateRangeDefault == 'this_year') {
+                reportDateRangeSettings.startDate = moment().startOf('year');
+                reportDateRangeSettings.endDate = moment();
+            } else if (dateRangeDefault == 'last_year') {
+                reportDateRangeSettings.startDate = moment().subtract(1, 'year').startOf('year');
+                reportDateRangeSettings.endDate = moment().subtract(1, 'year').endOf('year');
+            } else if (dateRangeDefault == 'current_financial_year' && typeof financial_year !== 'undefined') {
+                reportDateRangeSettings.startDate = moment(financial_year.start);
+                reportDateRangeSettings.endDate = moment(financial_year.end);
+            } else if (dateRangeDefault == 'all_time') {
+                reportDateRangeSettings.startDate = moment(business_start_date);
+                reportDateRangeSettings.endDate = moment();
+            }
+
+            return reportDateRangeSettings;
+        };
+    }
+</script>

@@ -1,45 +1,7 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
-ousX93XudXhoHNJBbQj2z1uA
+<div class="row">
+    <div class="col-md-12">
+        <?php $__env->startComponent('components.widget', ['class' => 'box-primary'], ['title' => __('lang_v1.more_info')]); ?>
+            <?php echo $__env->make('user.form', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+        <?php echo $__env->renderComponent(); ?>
+    </div>
+</div>

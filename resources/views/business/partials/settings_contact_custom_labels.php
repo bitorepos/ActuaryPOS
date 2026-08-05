@@ -1,71 +1,25 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
-s3P1
+<div class="clearfix"></div>
+<hr>
+<div class="col-sm-12">
+    <h4><?php echo app('translator')->get('lang_v1.labels_for_contact_custom_fields'); ?>:</h4>
+</div>
+<?php for($i = 1; $i <= 10; $i++): ?>
+    <div class="col-sm-3">
+        <div class="form-group mb-3">
+            <?php
+                $field = 'custom_field_' . $i;
+                $label = $i <= 4
+                    ? __('lang_v1.contact_custom_field' . $i)
+                    : __('lang_v1.custom_field', ['number' => $i]);
+            ?>
+            <?php echo Form::label('contact_custom_field_' . $i . '_label', $label); ?>
+
+            <?php echo Form::text(
+                'custom_labels[contact][' . $field . ']',
+                !empty($custom_labels['contact'][$field]) ? $custom_labels['contact'][$field] : null,
+                ['class' => 'form-control', 'id' => 'contact_custom_field_' . $i . '_label']
+            ); ?>
+
+        </div>
+    </div>
+<?php endfor; ?>

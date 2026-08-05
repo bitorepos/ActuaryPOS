@@ -1,44 +1,18 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
+<?php
+	$is_mobile = isMobile();
+	$bg_colors = array('0079FF', '00DFA2', '4F709C', 'FF0060', 'E55807', 'F79327', 'B70404', 'DB005B', 'F266AB', 'A459D1');
+	
 ?>
-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
-9QGUH6+riVZ2OL8=
+<div class="col-md-12">
+		
+		<?php if(!$is_mobile): ?>
+			<button type="button" class="btn btn-danger disabled btn-lg col-md-12 pos_numpad_btn">
+				<span class="text total_payable_preview_span" style="margin-right:0px;"><?php echo app('translator')->get('sale.total_payable'); ?></span>
+				<span id="total_payable" class="number" style="font-size:40px">0</span>
+				<span class="number change_return_preview_span hide" style="font-size:40px">0</span>
+			</button>
+			<input type="hidden" name="final_total" id="final_total_input" value=0>
+		<?php endif; ?>
+		
+			
+</div>

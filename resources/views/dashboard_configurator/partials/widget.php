@@ -1,29 +1,6 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-HR+cPwQ2UUopQaB4vZRiprKLRVSrdqWFfMrflSOM50je7ojsz6je8LN+guJZMJZTTiPp0jpDIQwy
-vQH2fO/ApQNxWReUVj1Xu2HpTavh7vpLhiR/o7GRyxp+8NvjyffFbfYdN+C4pUE7i7JQ8nI+diyD
-yqkxEWUlvcbNlfsbUpzzT4ab3D2IpHgYlvOs1vffIo0EYc4Wsze+iNDt3U42wePwV/DBtibklJO4
-5LwzWyqsXg88qIKnL/guPTSUUZMevB4AHJQnBoe7p0kCguZq+W+/fD8w47wO+hewsG4DYm7JeRoL
-KTXgvNFoyp8x8h2lRTzVxZ+JWWntQ6siscBI7XodVeilp4TeA+Zqx2Z1FUX88YpRyeo+4xEXtW5z
-tcW7OrDoGb42V2WXZDqCwEQ6fnmgJwIecEZxC9AzWLABVBj5dXGORt+4PyQY9Gc+VaCnAxo38dMp
-f3zniEgo5+hW97wM4Xo4DkEbqbDW2TcqwTdTJidRyiA3GUyFGINPCCFo1Gqps6e4yOgOjBU4wW/Y
-Qy/RFog4FwSMY+9CKVZ2P6wzS7rs+GIs16L6Ich9AE90OCka+yHeRlnxj4g3kSYg5XPojHHdZq03
-Vtwj19fDEtvxeacksp8vTCK6BKOkilIZxnqfH8rt7tUtHgtrBPHXdhPUK2WJhcpfwHyWHJ/jzzZo
-pc0kdwmtIO90koVj2Dz1pABTXswCIhFT9M9Q2m8LSEIdx5ugWT3Wh21g5Oebkkt+C8fKektIbxSc
-csEKKXsdl1XolnhgFrGHau5wNTfVfBP+eJxrmknkxAMepiN6UBSA40gb4rpiXugFoEQY9Dk27uNY
-6pUUn6YS2XSV8n4L1zMAylzy88yOQIhvwXvMBRQ5uBwd7K3PqGEtE8UrKeMEFQ0JnyWhmYnod+5w
-H2zKZeB3U2cshPLYp5dgQEea8OwMXZO2uwvXsiDjTZJQwst2JVHKUcPrZD+yYKapTv7RIopzHX4B
-rXZHPE/UG1nEMzcNJ9xBctkal5nf6gH5oGFFHRsY4dNsYZwbxeyWheleBpuo9kBv28fhKTQWYGTe
-L5qROs6sIWZ9Tof/Csz34x53Rclw7XjuqKdKjkem3cim9/dxjcYviIA+W5O8keAIl2p/cj0M3EVv
-aIRieG11ZD6gzx/7tujv8G836n+tX9roijtk6L9QacWJA63/5YrT9xF8Fp1MPO5+h6lh9wUtrHh2
-vI99juASrOXElddrBUWnPq/qTQb8RxLxEtBLs+SGBZRoxBo2Fb5dD4HZbi6IzgvSZFCZsJ/VEKc/
-3CIITmizqTadmhDO/YU4WOilWqaeYV6GgzRKmbONc31Wm5z7k0UxWOWjsM+euGQUNRzN/pzuT4Iw
-mKT+vyE2C9X9CxZVeIn5rbnnKwjlaezHmd4d+ebKIHPVvAHlqRYnyiwGY0isAEp9exn+9nJQ48In
-hdyktXhzUIUj3R2T4hk0RGzvvTKVJCGliaNiiFSZ/XixpQqv+34gxxffjEHnLRDskkCP2Behhxbi
-2zwUbZdurZT01/zyafB2A3O1XEgd0vGItG2RVdZtv4JGBxsvPjpU43tHNOG04xzZnYHJLcpjgi+l
-w9HuVeIZLrECsoxxoEStdTzLYgUz67rvxBMCZT5xQMZlWyTKwtY6jeB4oIc/v1POVR7b8FYVVBLG
-MZ1jcszLRMk37wP5CFhSXnbTTo24jt6kUe2GVHzUMk2/unQoPtBa2PDthoH6p2i+Z85hEgbxwKg2
-w4BJxoEvJNIJD6ZkYvX9iIehJtMHubOK3+tiqZxdvo4M4HTZex4A0pHImyUWDvgootr/65b6KLsB
-9W9F2vPEVERg/927YK5l5GhSEpAN7gtCqhI1t1sY1parOvSu3/Gc1470/5BQcT+A+s5bg6eRf4jr
-ZMKI0eZoigPCg/CmNiswxGevfaFgnRHeC9A5
+<?php if(isset($available_widgets[$widget])): ?>
+	<div class="col-md-12 draggable" data-type="<?php echo e($widget, false); ?>">
+		<?php echo e($available_widgets[$widget]['title'], false); ?>
+
+	</div>
+<?php endif; ?>

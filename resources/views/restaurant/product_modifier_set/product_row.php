@@ -1,36 +1,5 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
+<tr>
+	<td><?php echo e($product->name, false); ?> (<?php echo e($product->sku, false); ?>)</td>
+	<input type="hidden" name="products[]" value="<?php echo e($product->id, false); ?>">
+	<td><button type="button" class="btn btn-danger btn-sm remove_modifier_product"><i class="fa fa-times"></i></button></td>
+</tr>

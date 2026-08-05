@@ -1,49 +1,16 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
+<div class="modal fade" id="mobile_product_suggestion_modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+	<!-- Edit Invocie Tax Modal -->
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content bg-gray">
+			<div class="modal-header">
+				<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			</div>
+			<div class="modal-body">
+				<?php echo $__env->make('sale_pos.partials.pos_sidebar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+			</div>
+			<div class="modal-footer">
+			    <button type="button" class="btn btn-default" data-bs-dismiss="modal"><?php echo app('translator')->get('messages.close'); ?></button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div>

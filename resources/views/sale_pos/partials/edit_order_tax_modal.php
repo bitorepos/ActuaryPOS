@@ -1,83 +1,33 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
-99kX
+<!-- Edit Invocie Tax Modal -->
+<div class="modal fade" tabindex="-1" role="dialog" id="posEditOrderTaxModal">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title"><?php echo app('translator')->get('sale.edit_order_tax'); ?></h4>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-6">
+				        <div class="mb-3">
+				            <?php echo Form::label('order_tax_modal', __('sale.order_tax') . ':*' ); ?>
+
+				            <div class="input-group">
+				                <span class="input-group-text">
+				                    <i class="fa fa-info"></i>
+				                </span>
+				                <?php echo Form::select('order_tax_modal', $taxes['tax_rates'], $selected_tax, ['placeholder' => __('messages.please_select'), 'class' => 'form-control'], $taxes['attributes']); ?>
+
+				            </div>
+				        </div>
+				    </div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" id="posEditOrderTaxModalUpdate"><?php echo app('translator')->get('messages.update'); ?></button>
+			    <button type="button" class="btn btn-default" data-bs-dismiss="modal"><?php echo app('translator')->get('messages.cancel'); ?></button>
+				
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

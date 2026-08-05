@@ -1,69 +1,68 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
+<script type="text/javascript">
+$(document).ready( function(){
+    //Date range as a button
+    $('#subscriptions_filter_date_range').daterangepicker(
+        dateRangeSettings,
+        function (start, end) {
+            $('#subscriptions_filter_date_range').val(start.format(moment_date_format) + ' ~ ' + end.format(moment_date_format));
+            subscriptions_table.ajax.reload();
+        }
+    );
+    
+    subscriptions_table = $('#subscriptions_table').DataTable({
+        processing: true,
+        serverSide: true,
+        aaSorting: [[0, 'desc']], 
+        "ajax": {
+            "url": "/sells/subscriptions",
+            "data": function ( d ) {
+                var start = $('#subscriptions_filter_date_range').data('daterangepicker').startDate.format('YYYY-MM-DD');
+                var end = $('#subscriptions_filter_date_range').data('daterangepicker').endDate.format('YYYY-MM-DD');
+                d.start_date = start;
+                d.end_date = end;
+                <?php if(!empty($contact_id)): ?>
+                    d.contact_id = <?php echo e($contact_id, false); ?>;
+                <?php endif; ?>
+            }
+        },
+        columnDefs: [ {
+            "targets": 9,
+            "orderable": false,
+            "searchable": false
+        } ],
+        columns: [
+            { data: 'transaction_date', name: 'transaction_date'  },
+            { data: 'subscription_no', name: 'subscription_no'},
+            { data: 'name', name: 'contacts.name'},
+            { data: 'business_location', name: 'bl.name'},
+            { data: 'recur_interval', name: 'recur_interval'},
+            { data: 'recur_repetitions', name: 'recur_repetitions'},
+            { data: 'subscription_invoices', searchable: false, orderable: false},
+            { data: 'last_generated', searchable: false, orderable: false},
+            { data: 'upcoming_invoice', searchable: false, orderable: false},
+            { data: 'action', name: 'action'}
+        ],
+        "fnDrawCallback": function (oSettings) {
+            __currency_convert_recursively($('#subscriptions_table'));
+        }
+    });
+});
+
+$(document).on( 'click', 'a.toggle_recurring_invoice', function(e){
+    e.preventDefault();
+    $.ajax({
+        method: "GET",
+        url: $(this).attr('href'),
+        dataType: "json",
+        success: function(data){
+            if(data.success == true){   
+                toastr.success(data.msg);
+                subscriptions_table.ajax.reload();
+            } else {
+                toastr.error(data.msg);
+            }
+        }
+    });
+});
+
+</script>

@@ -1,50 +1,7 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
-DNWuxRJY/hP8VMJQqb3BSizXGx7sX5jL
+<?php if($pos_settings['hide_product_suggestion'] == 0): ?>
+	<?php echo $__env->make('sale_pos.partials.product_list_box', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+<?php endif; ?>
+
+<?php if($pos_settings['hide_recent_trans'] == 0): ?>
+	<?php echo $__env->make('sale_pos.partials.recent_transactions_box', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+<?php endif; ?>

@@ -1,36 +1,21 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
-Y5i=
+<div class="modal fade" id="require_customer_modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+<div class="modal-dialog" role="document">
+	<div class="modal-content">
+		<div class="modal-header">
+			<h4 class="modal-title">
+				Select Customer
+			</h4>
+		</div>
+		<div class="modal-body">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="mb-3">
+						<?php echo Form::text('require_customer', null, ['class' => 'form-control mousetrap', 'id' => 'require_customer', 'autofocus'=> true, 'placeholder' => 'Enter Customer ID / Name', 'required']); ?>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div>

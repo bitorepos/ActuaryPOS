@@ -1,47 +1,14 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
+<!--Purchase related settings -->
+<div class="pos-tab-content">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="mb-3">
+                <?php echo Form::label('default_credit_limit',__('lang_v1.default_credit_limit') . ':'); ?>
+
+                <?php echo Form::text('common_settings[default_credit_limit]', $common_settings['default_credit_limit'] ?? '', ['class' => 'form-control input_number',
+                'placeholder' => __('lang_v1.default_credit_limit'), 'id' => 'default_credit_limit']); ?>
+
+            </div>
+        </div>
+    </div>
+</div>

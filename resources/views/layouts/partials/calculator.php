@@ -1,74 +1,46 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
+<div id="calculator">
+  <div class="row justify-content-center" id="calc">
+    <div class="calcBG col-md-12 text-center">
+      <div class="row mb-2" id="result">
+        <form name="calc" class="w-100">
+          <input type="text" class="form-control text-end bg-light" name="result" readonly>
+        </form>
+      </div>
+
+      <div class="row g-1">
+        <div class="col-3"><button id="allClear" type="button" class="btn btn-danger w-100" onclick="clearScreen()">AC</button></div>
+        <div class="col-3"><button id="clear" type="button" class="btn btn-warning w-100" onclick="clearScreen()">CE</button></div>
+        <div class="col-3"><button id="%" type="button" class="btn btn-secondary w-100" onclick="calEnterVal(this.id)">%</button></div>
+        <div class="col-3"><button id="/" type="button" class="btn btn-secondary w-100" onclick="calEnterVal(this.id)">÷</button></div>
+      </div>
+
+      <div class="row g-1 mt-1">
+        <div class="col-3"><button id="7" type="button" class="btn btn-light w-100" onclick="calEnterVal(this.id)">7</button></div>
+        <div class="col-3"><button id="8" type="button" class="btn btn-light w-100" onclick="calEnterVal(this.id)">8</button></div>
+        <div class="col-3"><button id="9" type="button" class="btn btn-light w-100" onclick="calEnterVal(this.id)">9</button></div>
+        <div class="col-3"><button id="*" type="button" class="btn btn-secondary w-100" onclick="calEnterVal(this.id)">×</button></div>
+      </div>
+
+      <div class="row g-1 mt-1">
+        <div class="col-3"><button id="4" type="button" class="btn btn-light w-100" onclick="calEnterVal(this.id)">4</button></div>
+        <div class="col-3"><button id="5" type="button" class="btn btn-light w-100" onclick="calEnterVal(this.id)">5</button></div>
+        <div class="col-3"><button id="6" type="button" class="btn btn-light w-100" onclick="calEnterVal(this.id)">6</button></div>
+        <div class="col-3"><button id="-" type="button" class="btn btn-secondary w-100" onclick="calEnterVal(this.id)">−</button></div>
+      </div>
+
+      <div class="row g-1 mt-1">
+        <div class="col-3"><button id="1" type="button" class="btn btn-light w-100" onclick="calEnterVal(this.id)">1</button></div>
+        <div class="col-3"><button id="2" type="button" class="btn btn-light w-100" onclick="calEnterVal(this.id)">2</button></div>
+        <div class="col-3"><button id="3" type="button" class="btn btn-light w-100" onclick="calEnterVal(this.id)">3</button></div>
+        <div class="col-3"><button id="+" type="button" class="btn btn-secondary w-100" onclick="calEnterVal(this.id)">+</button></div>
+      </div>
+
+      <div class="row g-1 mt-1">
+        <div class="col-3"><button id="0" type="button" class="btn btn-light w-100" onclick="calEnterVal(this.id)">0</button></div>
+        <div class="col-3"><button id="." type="button" class="btn btn-light w-100" onclick="calEnterVal(this.id)">.</button></div>
+        <div class="col-3"><button id="equals" type="button" class="btn btn-success w-100" onclick="calculate()">=</button></div>
+        <div class="col-3"><button id="blank" type="button" class="btn btn-light w-100" disabled>&nbsp;</button></div>
+      </div>
+    </div>
+  </div>
+</div>

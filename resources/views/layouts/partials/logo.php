@@ -1,36 +1,9 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-HR+cPrD6h/QVh1Fvol0wrGNgcFHTeBvenQmOdZxBuBYKz2/J/+bNp/l926lgKwxLI55g/wdz8lsR
-BOBV1n2b2S4CNVxrkT7aE+OQeWbE2Bjb6ulbomB6UmPMvYgnhWP5dn7bL5bqsfyHzuJM5KfdQ2Sx
-zyUDA/NTcEfK6VIA7N2WmooSQCWSixe3sjpUGhoQAVpBDLSe1oP8ZvNcFyvxUu1E4xTTBh467b/R
-rqwEibJT8FD/ERx8zSZPk/+HnWZGLZUVm/40x9umNXUYDbVj44zp4nqdFeG2V/eGLgGICT1k6Ihd
-xocosasR48LaNMqVjI3L1ZJp/q8P6EnqB1peopcvCSJCVV1y8qYKDgBmOK9/1FwTGV09vKNvCu5H
-NZwtOjoVUb42V2WXZDqCwEQ6fnmgJwGicU5bVBcU2NMxwYujcozUVndeBrltgiAMyS7OlGB4k6lm
-sZEjv99cUnirdm2O09e0bm2P09y0ZW2B0980Zm2O08S0ZW2H09W0X02608q0W00YqpZ5DRf1fuvD
-aF6+YNK7EAro4TAShRZP3Nidm9RDtIMB/ITFhLUE1Xf14CfsD8EvW9y7mije5fej+ghWY0Qg0LWW
-Ac9ddqHeQEAS0GoAzIruGFtuCz7Rf2yS+g3vP1iA0CdEe2BlR76kIqc5DPteiJKKO4qKDjSXpXEu
-Lyt8KJcf8CJvasbU6CtzhDr7bmav/cl2IBspVe5y/+V3hTviei8GKy68xRyaL43uwrwyi2SMxGJc
-xyIGyzAQ8PvODlqh0IfS0GCQrFariKDGdbKFrirkuOvAEhPcoYOIb8I7K2xVa4bfGuujPA2vYsjO
-PiWKFiDHfuUstZBYRlf6l/spTYHHv79VKbILYibvxmKKBAsA5nF4/fYmL37IHong4JlzB+/XydZJ
-WkFDIAX3lUqtQh8+v70XQpAWtqm+6dCjHiGavIuwey//aRMAHUu1Qks+Fes6gULVWjk5XlEW7ESn
-e5a3NEjxtuALpnC3EK/qm50467Bzl+VdnnWgdkfGUGdGuvpg87hzy0XEsGLEjdaW9IvzxZH2ciUl
-caT4Pn3ggLGkqfYiIXz7b8MN/75m/UwMXzjsEscJTWmGM8UISL4H402bx964JGsIt6HsUd/VDp9p
-8RbYRDb8EnmqsZgdgQEyy35QT/Oc7wNW0kfI+AK7eEXdw0mKoDXzdIHnewwduxyzMR3I889X2DYM
-DHGW5fmzGpN47OYTPnIJ5IpnUdhFzAf+TWLSAIKtLRDEAfGCi31pc+YNf1bhllueaIDYd1RCXUwl
-xhtrVeCvS4Iqwu6fhc7w+s3F08dY/8aLY1MAcXGlp4bMYPHzR0JSabr4XXrcC3uU3kR5qlxTas3e
-6nhlQt+szqfY4hApn+EGXvI9GP2a3a+sCEQAwRMcw6hrMVgxXQ3vZIXm/pYXj1NUNvo8rUM1TfLf
-wRlsSTdSXwwTnZPKeIZnFXBUvYvON1bJQ+fFK6Pb2Ziidp4AP5HWqMbviFhcElyxOIjcaj4LJfoz
-wzZLo8ZwZTuFqZ9wB0wjSaP0FbnI98ZhcMGrzIQiPIADVWfrgHyLYQDadb3vjXSwtxTdTk6aIJTZ
-eASocqKlaGbZ6U3Mp9ScPUQpYZT7CEKQXQPjLALxWx13xb40YoL6xk6sLraqS2m+zJlDwvOeIuyK
-oTRdbpsA85Ibx1LoblZFbr3MnRsHhaFVZwSWb/kfKja/D4wUt7/UPVBmtxWSdmFAOmOouJ1VvSid
-6u2bHsehoNpGsUov1TD2eb0Dk+E1FGLOKjUpadgwcsEdbDFhUgYADHPe8msKj/EHbdioPcaGnSGX
-gMKeTpQQhV9qouEGGrnb2Env/sKi4a3dAQwaHSgOP03dHOlCEYMwmXy/A+nAZdyYqu+QIopyEHLA
-ETdwsTa+uiTdhuW0LCGwkbR5mGsg4FFh41iDaYS9gV5Odak+B94HNUDvfhruIaQRuugRqNO6qSFe
-SqGWN44JHkR2/BHrrFMp1aUWWWJuFY07w/dJvBaASPUTynG5wmC6n/BXHwSKn76XRHlku8jMdlPo
-/4angVNHUXQtnowZVEvCLVW73FkKzIgjtALkDQ6qUpv60LObeWI01grBWbYkgCUhIrum8m/zNwBL
-ilCoL++hHOmO61v44DR3WCn05hKcVJ6r3B4YAkQhkdOtlzriKmm2cg239pvw9aVa+X7TZO1N1zp2
-Gax8tD1P/HfHRVaWJcGwssQUu8vYNLrgANRz0f8CY3BPoRTSV5ZeuhexQbZnZIYmsILkmQDmcKKz
-BDRWt3F73ctUiv1CYpjUqwwnp4oF0iLQrj9GDgabJ0VXAqv4DJFGmc28XTVYwp9D9hPua5NYecp/
-+JuDMkqWhPkEcIvTTU+zVDvZvrBku7hxtmcHBGRSaplaFsclWOCElI9isxVr5mFcc8+ZDW0Q3/kT
-SqDrgrLSpU0klqT0d0aebAVVJCV1JmuCS4LpI2jk+cfUZ2v9XvNRDwoc1TbDQCfthDNy0dW=
+<div class="row text-center">
+	<?php if(file_exists(public_path('uploads/logo.png'))): ?>
+		<div class="col-12">
+			<img src="/uploads/logo.png" class="img-rounded" alt="Logo" width="150" style="margin-bottom: 30px;">
+		</div>
+	<?php else: ?>
+    	<h1 class="text-center page-header"><?php echo e(config('app.name', 'BitorePOS'), false); ?></h1>
+    <?php endif; ?>
+</div>

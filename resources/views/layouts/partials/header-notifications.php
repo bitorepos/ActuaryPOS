@@ -1,58 +1,29 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
+<?php
+  $all_notifications = auth()->user()->notifications;
+  $unread_notifications = $all_notifications->where('read_at', null);
+  $total_unread = count($unread_notifications);
 ?>
-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
-B9Scv+fehLIiqa2ltXw9fTPPHgq=
+<!-- Notifications: style can be found in dropdown.less -->
+<li class="dropdown notifications-menu">
+  <a href="#" class="dropdown-toggle load_notifications" data-bs-toggle="dropdown" id="show_unread_notifications" data-loaded="false">
+    <i class="fas fa-bell fa-lg"></i>
+    <span class="label label-warning notifications_count"><?php if(!empty($total_unread)): ?><?php echo e($total_unread, false); ?><?php endif; ?></span>
+  </a>
+  <ul class="dropdown-menu">
+    <!-- <li class="header">You have 10 unread notifications</li> -->
+    <li>
+      <!-- inner menu: contains the actual data -->
+
+      <ul class="menu" id="notifications_list">
+      </ul>
+    </li>
+    
+    <?php if(count($all_notifications) > 10): ?>
+      <li class="footer load_more_li">
+        <a href="#" class="load_more_notifications"><?php echo app('translator')->get('lang_v1.load_more'); ?></a>
+      </li>
+    <?php endif; ?>
+  </ul>
+</li>
+
+<input type="hidden" id="notification_page" value="1">

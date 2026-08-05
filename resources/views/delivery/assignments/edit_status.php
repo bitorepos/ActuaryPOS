@@ -1,85 +1,37 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <?php echo Form::open([
+            'url'    => action([\App\Http\Controllers\DeliveryManagementController::class, 'assignmentUpdateStatus'], [$assignment->id]),
+            'method' => 'post',
+            'id'     => 'assignment_status_form',
+        ]); ?>
+
+        <div class="modal-header">
+            <h4 class="modal-title">Update Status — #<?php echo e($assignment->id, false); ?></h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+            <div class="mb-2">
+                <label>Status :*</label>
+                <?php echo Form::select('status', $statuses, $assignment->status, ['class' => 'form-select', 'required']); ?>
+
+            </div>
+            <div class="mb-2">
+                <label>Cancellation Reason (if cancelling)</label>
+                <?php echo Form::text('cancellation_reason', null, ['class' => 'form-control']); ?>
+
+            </div>
+            <div class="mb-2">
+                <label>Notes</label>
+                <?php echo Form::textarea('notes', null, ['class' => 'form-control', 'rows' => 2]); ?>
+
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Update</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        <?php echo Form::close(); ?>
+
+    </div>
+</div>

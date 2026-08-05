@@ -1,47 +1,16 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
+
+<div class="row" style="margin-bottom: 10px;">
+    <div class="col-md-12">
+        <button type="button" class="btn btn-primary float-end me-2 open-stock-value-report-print" id="openStockValueLocationsPrint" data-tab="locations">
+            <i class="fa fa-print"></i> <?php echo app('translator')->get('messages.print'); ?> A4
+        </button>
+        <a class="btn btn-success" id="exportSVLocationsExcel" href="#">
+            <i class="fa fa-download"></i> <?php echo app('translator')->get('lang_v1.export_to_excel'); ?>
+        </a>
+    </div>
+</div>
+<div id="stock_value_locations_content" style="overflow-x: auto;">
+    <div class="text-center py-4">
+        <p class="text-muted"><?php echo app('translator')->get('lang_v1.click_tab_to_load'); ?></p>
+    </div>
+</div>

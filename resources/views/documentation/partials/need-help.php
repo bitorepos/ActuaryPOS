@@ -1,53 +1,24 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
+
+<?php
+    $contactSlug = 'contact-superadmin';
+    $isOnContactPage = (!empty($activeSlug) && $activeSlug === $contactSlug);
+    $contactUrl = !empty($isPublic)
+        ? route('docs.public', $contactSlug)
+        : route('documentation.index', $contactSlug);
 ?>
-HR+cPr3ZlIGjGWOBX54e1vZI1ubD4yIkSM0/Rj4HUrG0uPywR5dUDD9QLrGCDrlrkx6geS8gIpQ6
-cBY7qckZAZA3A/NTxOcU7NsEp3/iDGz/LhQ2pVbnMqwTTxECUfuAUSUs8MBKwZyrgEzpuhUhvjhq
-nmNiMIox5TDs6LiNolPG58/1P30dd5i2jbMd4ceNpEDzQaFR0B/OWOu9oFx06aAQL/DF6h7CCPF9
-VYEGbEqtcXCSQDUnpvKNIADa29OC/kfb0ziVyCFTPnJOfhVPggPCgs7ssGkEZCwtukvK5F55tuZ8
-c+3DSD8jQhQEHaiV1UjivHZFZiTDHLAA2s9uJgti5R/U1a5X9K0/O1vJ2wYJI7/51keBgiW8AJQW
-RtB8Np3Di542V2WXZDqCwEQ6fnmgJwJQa/dxDcp8wiAafNWjcnaO2Z0Jx+TUnWgfNElm1x4hiqbz
-jFWVZlAkgBBlrCoUWBvwLrVlm5JnSoVYOP5Y8WJMqjIA14hEE55OZZfzPDE6jvoxwCnOa1p4/d/f
-+ll42UFb1KC0ZB+BAyfb0levcxVYhtsyPbw70f3MH3x7b0gbip7VuYPVc3GQdXutPXUcKredu8ZS
-RyQg8oIGNn/e+QSRpG/V5p8NugjjCfPkW+BFM9dfdDUHSQU2AwW4ctqXrhc5mzYrPeIrgxgWestM
-qHD0uy5k/JZGGTRb2RlcP/8Q6AdfeQ8T1x4lRT3trAztm7WNKwExM+RY7nxkU9iog9CZZ3kwG/iE
-W2AuT/yHJOafBbTEL7qVwucHlV9M8zmJ8jyUtIa3X+gsj6oV/u+BXRVDg7WdP3lDsamSaQUHrcpK
-R03O2H1QWKfW2bdLZQz0lhWKqHch8z8saVBSXNCnsC2QbE0etqJ5Fe7WDlOTxKYppOQC/YsnwQ3a
-KuPbGZRjbza+4DMTXiN6JYY0xwdrl3GNvOxMSK1AlwanbPwuJTDjZlpgyTlz87hUjZrcHFLlxa4k
-L/yzxv1d/V5Nv7/qysikuajQbsQaUlg6BfBrxZLZOk7t8MlU5B5zEsC0qJeLfyvrKtdA00QZnxA7
-0ywGYxnEJ9xAAXu9hM1h8QaZDF7iZrAVw7uJXQXHXarTUB4KqFLEvX0Yy/ps3pyxOmYBwMeOmdh8
-OVMdDr7tIrgklRVZu88PW0smADJBjNI8eRx6RNAXiCd1a1izm3bKKxW+Dxt5DC5UIHYViZN3t49V
-PMCf6HXuMSExxV+FK+EeLdoDce66uOzx8P3aery81C/kZqtB+ZQfiwF4k91nFLByf/TxPH4umx0a
-BDTRh8ohUZBO34kmO1dB6ptxzmL0fvIjoiwcAYWareoZLrIO0sk2bQu266wyn5rJEcP4afRglR17
-7UFARGzyD/tlJqv8gYbawDj71fpoFlP4dkVMXq9F+POr1OBR2oV3zdd0MIDozSc22yFEKRcYtgMB
-8/qiLPxQjXl8uw/Pj4G9+ZIk1Jgj4l+PNumdck3XkjS6JCiUuiBqLynHXq8TfN+zHhmv7tGIRbbC
-QlR5NG8wF+Xds7ZJL+Oa9P7eNzenpdM8fe+Ea13ti8Mlmu3BRn39aKImR+G0WdweWWycliCZjzxD
-wWv7qrGhLqeR+mNi4/xZN3JM9lKEZeOh6nwZhTSkqrCrqaQX+6g28792+MchLabL+h+Ap4XPDnTD
-lgqMhxnYWsG5lI8GlhdFodZvYzw33grIWKqp4JbHFtghtdgKNJdp/SJ93VkiEnJktt+S4xnC9jxb
-qoOr0Dl8dkfcqAWDTMeeg/8qei7ItyqhLUcVVui/tnn/svYgHSoEfwLjzwMTWOXOFRO9DYSQuKdX
-uASP/GL7QWM7uelbChCxJ+5xQ/DRkfdfC3qJ/66xBqPKdXevKY3noq/9j/4LKEKtO8cF2yYYPlse
-QTbFTw9s3U5+kXsC2qXki8o4BCRlHGtqDOAIqzBaIXstfYpZ24mDcjYM32EnrM4zmPULbmpdXsBZ
-MNJ4RWLW671RkCtq8MKaR3V6V/mj53ZmNd1TK+cibBqN99Cs0pxyOMocTTCu8bLhByS7BIRwHQyD
-nGIx8mcyaz34QCHx6Ndb474QLyG8+c7uKs+qATLx2Nbehe9HcuSQtKTBrCrhi4BpJXsXs+ehzkMw
-2BInx18rL7VCfGDqt+NDaFZZynAHBfEZ2JXE+dtpWyhGUli2J24cowVO9ydkAu3vskGocO6rfxAy
-GZD4hALlIl1V5ufmgMXVYBkUKsMD0nG/VbY4MVOfQLfrZvU1S8mPnAaAvcl0qXUocDy6H2ZvS2qC
-j79vsKTaEKECeKHIQgZHoZdzjWFHl/nix10rLX5dwHGrO4ImFqqpNDN4JTe/GJdQxvMGOY1RZkyw
-CYw+jQCpXl8aQu8K51lRpKl9JioAppW0K+QgDi4WFYK/rjbzMiE/JIh+vSeWuiZFzbC5ErXyWR55
-aRO0Ubz1P+f4/HKzEpfnM68sHEhbHq94daOWqQrVEolFTHiVvP2Gg6G0prEcX+mX7xIJ8QUVZ1rt
-zBv4Orx83zgdUtWj2fxr8QNXIUMuoS8gjlu/n1ybGhvghIIHb7KpX764Ji36D+KXS4f8MgGDvo0L
-9wApsoy1xtYoP1stckm24xJW00/I7F2rfZB71tjrTxxQxsq3yxRMCUohWquUJi8pTQ0H5Jf5iq1V
-dhYDQ6F6Rr6Tqy6TQlgtkP17vw6RtYLvxHabiH97pWYWrHXkzQUbQ//Xv36SzfXubpDvbPVAwuFu
-MQs1hdPNJRyM9PuSIqkiY8Pk1qKw/UuHNs+xr+Fzu997Xke9qAPgpCQfduaTFgej1DNdGBpzVg6X
-etekY45VvrWvv/SIFYKISchgaHzmiH1OZA+VdiLjh3MBRJ453m1jI/4v5YWNp7DWDsfyYVaIcdFq
-oj2tMBZVQicP7ctemM22WKH00j30tQ/YKDCcViZGN8/CYxvOYWlETz+l+qFBV2SNxPFwrIvYHM0F
-KjwDI2hKzkkiKxAAGztZ2Pbz8H9lTjQdYViGpbmTVymG5VSbrERzM/jpLzrPps0E2wJWkXi67x3a
-++duXBpPMwZhA+lTkT5tlwp6C5DJOLnO+aNNeWe17kGL0JhCdbb/kqArlBnZv8s3uB0TSD7Dqiyg
-KTjdDMtKgZHenvmpfgFQJZIq1CMj6qKSSQJTJuqT/W7MbWqfZuIbq+9i0Wt98e7y14zgzW18ToHe
-+yN22hVoEjHDDZSJoQ6ugbqmzT/H/82HXwdtL4JnhfN/yTPDFwZqIBcZ0b85AarZB3uIZX6ZHFwu
-GwDxpqFXJyfWdV8uG0//u3zMnfyewwO5kj6gWMV4fLYP7h/IDs9cOkzRciq4CJN0Qo5YkVLnUgdO
-9UIDTBVTwSCtGHz57SD7GtS4eKsOnNLZ9WURJeE6zipnrluXLf8ZhNb9wG6dHspiWC0s2Tkqhsf3
-aI9wPfHPsJ3FS3BTaaMbDtBA36hEZjt5zkYgHoaIdjkppk0JZlJ588dHhFLqaBcxluSez/uMFMMQ
-q0qgVxHFPzOxbL0hAJLWNUvcBGklAG2E6I5oisyYjznGCfcpKWUUlD/+wUjN71NHj6+ToEl6HPr+
-ZCaz3BNOOstxL4kSDg/iiBsa0fngokpHTxA9Wbm+q1LyWhzQ7bp1EWYMvIqz3ZCiXpOoOGJiA7wd
-+G2mb/SFHM43EUNPUoqtmZcuRFKGX4VP1r1yv+oKnDGbtTfR37vIqV1ktLkNPkFtmzW6xxrx/cSo
-gL5irWhIZkOdnzWP7wug1RhzFxMkmm+n7G12OCYiV2vux24TgqMjYAJDjNx+0JC=
+
+<?php if(!$isOnContactPage): ?>
+<div class="docs-need-help" id="docs-need-help">
+    <div class="docs-need-help-inner">
+        <i class="bi bi-question-circle"></i>
+        <div>
+            <strong>Need Help?</strong>
+            <p class="mb-0">
+                If something on your Dashboard doesn't look right, use the
+                <a href="<?php echo e($contactUrl, false); ?>" class="docs-need-help-link" data-slug="<?php echo e($contactSlug, false); ?>">Contact Superadmin</a>
+                tab in the Documentation section to get help from your system administrator.
+            </p>
+        </div>
+    </div>
+</div>
+<?php endif; ?>

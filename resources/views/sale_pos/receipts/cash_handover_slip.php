@@ -1,204 +1,254 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-HR+cPyt06cGdZFzpIv8JZqTALlebwufeNy7XYWE0OqsVPLdF7FsFgI0UEb21+ZrLIwuoTtasp1MX
-H6oorzWkYdoqNT+nRV5lycJWPmD65jTslolY2ZApqUkaRq4Kb1dW/HopgGm5kV8X33J1VSHIatPU
-Zmpnm6C2YWew2ZznQ07nc/fLJH+rqZWfyllYM7ArBDKHE7dskTKk69EIvwKT6fdR36dwCwgp5ZAs
-jUhAaW5y5SWbj5d+bBX7KmAfGNKQujceJJu732uG2wwooO5W+ghyZJPNI55JmVdB7woVafBPUsz1
-5/qOac2FNggQq1mSMhWALBi+W+S2XIJY0XbsHU66CKAdB0ZiQMW4NF5ESGLxVNPjWgmzMSQAjuKS
-wAbE5J3p/L42V2WXZDqCwEQ6fnmgJwHdZ/YU1t4UEZzFVL+z6mORKLBL9vUZlTeLNDTDaiRfWhHM
-QqGAMYQOEjzz1mf3uQPcYFTCqXNFHLugmvjR7k2k6PXQ3CnVCqCTaiMqDhsdXsyzfHwad3e6I1IN
-xJ9nK5sxgn5MaNOwRqNBhFFYL2FnEjeJGirI+Fjq8pvubBvCHGdgT4bDAtPsNW9b+m9iweCwIR1i
-Arua0wKhYSvYk/iKS45XgMS3n6ZxY+PClESJZRjsGJ66A10++qV6hNUmqpUKphAfSRezDwDGvq2z
-9QhK3K9bNdyGU9gx42RsNYFSS7LD97YEkNsgsUb0rlT/xmd2svsSUA/T5frAXKnLsaxzSv0n6XLh
-+4pYlnF4iaqU4Nt83I44RHXQQI8p/rETstYogKKTa8Uuy6+f5yJyOtkDEV8KiQR+QYpup/wnJMvF
-Q1omGrJO8XrTRc8fMR4mXNIqueS6YMBq5f0nrDptd6xau+OP815Pvm08nfDMXt2Pb4F6UjGFvtex
-A9gigKLGAwRfjnWbjohkRM2kZrjgcX7W5Uz75j5l52j3bddCV2M7XgSTe9wgjVMhpGzafv1hWPC4
-XG7GoqUWrMecmq+o401yD6qjueTdWa85EJB2ZYk8CNMU+sqE5M2bFdbJwwaN0SL0qMcJe091gI/c
-csJyGob1TiqsN7l2ds/7tX0GSMPyA/gu2b7gs6uXgpGeCiRv9rPrRWXoD9yehgkzZat/Ub879JPY
-9cHAaNvqdrieclJCtll67XfHcoS3ldOxDG5/ccQ64u2w+zG4ZVqsvPmaJCk/iu5VEffgVdR7z7p+
-//O5wLRzHt2yBORWZs/ewmtHbQSYExT1zWPi9SmuWxcQeUz3n7JVsz6p1cDBazy/mHFf/An/HCLG
-Yh0dt6unextQcWLT6ivvUorhIahkfkhmEDsOFqTf6uEoeSRhkRqdDuttVBrOa/4AG2ztJX13n0g5
-iSGPFgV3NNmx0u+CD/2ohkRI2uFkd8OA3gOSQ0qJjI3wb/5g3iuwvtOiAMnYdRazlWF1CvZEs1vI
-w5WhblYJNghFy86IU+FpuAnLpMlBUVyuuZyGpaMnmnGXGQRoxzh6XEcW/kFHJQns9DuT/QW9UAcE
-Rfo6VvlGvLPbNZlGRW2hdTtv36UPuWERTK+wi1CahsGeS+WNwMZYGcdIE9ogH6m9m2HUEfYe+vcQ
-a5t5b1L+OThV9k0crsMQ3FhyZWaDWsNWM7Zh3rRm8unpc1RoJPz92e5mfjH2A0FhmlhRhHRr8BwJ
-/xsfJruDCdRyXGoKM1zr6xw//18t04jDHR78ibHilD2ur/TuPsqaWgeYSuu8u7ZUfNFB7j6lFsMD
-QDROmqJjpXLVC2V4m5oLZZ5bJilZPX2EGcBlPOBY0ruJjf9OzlSY1hmLFxVdcRURFOKvwPhXyMm4
-RBBbfxixAvHQHsu0Kwzt3sQWsXUUvlrZpmPmskn9gftCVR+xO2yJdqc2INrDKW/1OjIcvMxcXQRf
-ZM6CnAXQ8KMnIcI15qtuK5gjQPF+nWDKY+EkyI6WGrWg60x0nKgVSszkxEKN32V/8oKfcCv1XnBI
-6k2baS9mPNANywHyQEvR51MMBNVNp448kdWUWXk+58GdjvjOu+s5QPHAtrd/0pyTpd45D9yYp0FE
-ItQ2ZCFIbrtUklhyr38jK/CQyjwtFf8J9AVGoVPFVGVnxoZJKfftiGFXKxLBlERYTLAC+GlNSDSA
-cSzo5NWscm/BkgMruogTTndLl+/irU7df1BxdWnRfeqlianrjKNBOgunNKIdHm7gohcM8hcyNHFg
-STsMunDVo+7tLzOTdoeqP+XNmE2zWLu/WlqheB0cDcK3zAVWhRflWJzvqF7xbPTMg7jKX+IGfeA1
-+rzIUKR94N+aaRvBhnnoT6Izudx1DcT7NDv5lqJLaXfzMg+yU0G2xYjYazTseWWlcPuWXXjchwdJ
-RMrQ2h6syg5mXk38t4DQ8C+pHIeIYT7X2c/SPvegd6e6fBKk7jk6gkD5V/zFhIzgdzOBHG/c/o8v
-ME2gh0Xrhxvq+Sxyy1uBU6B5AviXNWasW/NMCEZGMrOz+MxmytARvOnQNfJ5AC/7Pg2IjGi38luw
-DqvHX6BjLbak/ZRS8FR0fC75LNlarxtYKoKK29XCMYfYKUsQKY2+p5IB6g797OhBIuF4wZB8n+4P
-XM+S0vx/BtGaNqp1tpAlbw3XIhhXPqcNhmuFQ+4nkkwyvYTtZjcC2Z5mZbixIHF0BEU8j6mztHU+
-mD4M+9vDHME3/SNoVHsp/fW0pmqcE4+oydD3isSJtk2B9h1raJFf3NnIz+fTzSAhOrhKbCt/mFu+
-Ky+bWugR6LyWcB7HxIRHm8+tdPd2Tfkp0WNwLwzjnFQJ/xzH+XxPOVMVFZqrsOufGyVPgOU8gLZe
-n6tTUfv6aWoPZGx+WeBh+FGaIGQGuTlaTTaIOs7LfQ+ZBD3cPUd52m986Pm2p78aVVmzYUIkpx/A
-qRfL8ggMcsJT1Js8X3ikolWANShb806PEdU/vl63kEOHP7loP1zQxXzFUtk1f+SHdhbloce/9xDD
-Gr8e+PkR4xOJaeYqD8u7N6IXLJ9GML1JqKpeqSsT4lmpeRxFPBaq1nRIMy+72IF1FH8o6LhODYpd
-WryPaeqLPjwKHQ6yHTKbCm3prdYTJlsPBtQ7nU98c23+GKlpXI9lMOmS2pujnfbdB6NzrNLdHMrk
-DZu3phbCRkAwOHMpPi75srFjzy5/hs82IcvO2NyN2+4lqDhL0r7qWi9p2kAsdtONR8GYYVneSdy7
-ZJrPwLRQuqbUPk3cngCj/l3habMRWukAbDdFVb6f6QK/YUfTXtZBz7kLm8CKoqHMWhsCoWkFmKk2
-JO3GhJshhC9cw8/mw1n3SOguv/lqyk8wB6xzVIkTYB+PevNuBvKp4GhMoLG51fiMFTOQh4PSpBdt
-sizZ6X8QN6wzTzS3JQ5qK/6Jv42j8bh1wo8NyZ/t6bx6wZrKrz1tD06TXVsiEcZXCaBE/oSckmjV
-cc22eFELpmjZwU/u7iI6NQ1EN0+QtYRl6ra4PUc6UoZvTOYs76Mrn/+6LOV6k+nlB5RVzsb+sGMH
-zJNv6oF7PtQGEl5//7hzQEzYlIBM+NBVmM72tzsb5es5mOwDTrDbq44OLpjc5R6pECBPR/N+mJ6c
-Mc7OHp7KfBoVfYIOdJDk4GYEYsxrUqM6OEtuVb3VRmZ+VdTqwaJlQV0R7bMPlYBr57hf6hr/69qD
-xtMiLn7yZqpyTKLBJ9l+/QdcnajOxzKPbfzRovMC5g9vZCrcW9KAReGbghBQtibPNqM/IB/tFnEi
-fFTJCxcf/2Y337LDlWlyw8r4m8pq86L0EccFXE5/X+Pjlb3UTlKliuvQZan/ef+O4zP0zlosfaaC
-ZS/KcMBQfZ3HYZP5VgNYcw3f1PsLeyrSIkxW8Hn3Glv6YGaTEzLMuFexvFPdPBhSljr0vqhD4Mqt
-WzpDcGpWdjwiuorVdOz48mdX1SnsevCIdozv2FOsH3GYOVS2cL1n2XmnjTWiBRP8UsoHNXiosN+M
-NC8D/uIpFTp3xY6zNVZwIuNklAzNa3GfwuQ78Kp2v+bZPvFtf4Y93vCPJ2KxkAYRc2aV92gjVwfJ
-rVQ7H6PkEXW7GMj/PetbC5jpYgJbBwuV/eb8U3P9e8u21rE3X68pffXwDDkI62s6V848PsgPcipz
-4OBz91b0foeHyM/qakQFrWX8a8yeE10ZHREOe4jXe+UyZPSM6E6J3TzD8+7F0hj2f/17HuqCgKFr
-TksRHZyoYF5KPH4Vokn/Xq6ATBKHgcPmgwLrpY0Y9NptLgIPAFwQ25kUJoxvgY2nCa1quPuv1b6/
-XNg5H6/JdwzDS7tg+qm+h6ui09YCGWWfI1eqpZxTW1B44amkTOXseyV1HWOA9bKmj84fWuW+pJuJ
-g2pSdD5krD68RMSjoUCiQjrEOboCjG0FhN2+DI/+0pP2ajYZwAsJW198i0E25hAc3cTDRXX/GjNM
-Ya2c50MUwPT2rxjj6k83yaP4adZROzkLWHkPbq54/eo95K+qrJdLeGx8Sx/3kGP70Y6qwqjTEWOI
-O7Wiy+NjlmvMnY8HS9q8ggh8TlYjb7vabQTq8WLqtH+E9NbVIB2kW9IoFPYzVFLsBoqewXiMq4IA
-XSjlaa0HY6jnZACNVbp2d7sgyt0Ah2Z7SUJppSf+7XQaOh9cDUH0CU9IkzbOnOFLTFzpI/tBhTZs
-A8WbHIn9YBRo9RgjbA3XrnnwuT1d880Altty3zGAlBsMSJxr43Ob8lbDPYRCcdEZsQJo9U7wnhAW
-8NjmPEke461vJf7zG6brtOQtV/neg9gMFO1SUfmGcjXbgxN1veJuGAfOUV2+HPLg80wfQGLVUl2E
-eXdFqt+W+Mk+tAZnH8kF+Ckd122MpGP4kPDyxUamrX+spX8F0Wvp4FIYNUjpUgVKFL78QNwuwm4a
-28jx0boAYAxP51+uLUccVrJHQoC4rSW+vw3LgKd1GwQntM5n8Xzmc5vYPjRRAk+YeKYvrihBjep0
-nYogs/H1PjYv78Dt5a8acFqvW5Hs6EF+yCWBgvNNwBmXg2VMUKIy3+y4rKxOY9RnOruPzCGwKGpe
-ir4ZPGJx66eDFs59kmsYVGTjihmC+we14yhWqp1p4drXwGM6lWkauS3L1aoJuXQBoGjoGgx7WiTp
-XPE7w221v/JOLPzrwcWfpRSeaxIoLhR8GOPvlbrHWsfsXyEmG0LU8OtymCmUK1/1bBnwj6Gbz3KT
-ZNPkoIjcfS5hPTioah5aecmmEXXoUfX/cOgzWKHgV/U+Sjc1nQj+i0xKQY9Euqu+X8owXUcOHZtw
-jm61UMV2onMrkdBtWNCukjd6pSxrdEhu61AELsjk+lDjngCgLHMgjPGYr5XxgfIxi/hb2oqE1MHP
-0BwPgXyPlvuDMdRPYGokH08YSTScnCskurav4McgfM0iCuVouF375pBVY5zBo6+zPBT6XIBQz+uM
-L7hO5v8qcTmXMZOjY0otI+M6YssjJCoFDvnE1fs6Lfw4iNzntevA3hOCDh7CgT6sezqzNCbAwgaU
-XxV58WfKdSAlaXIzyDVHYysAoNG6vGVBvqAV/TZT1ZrjLZ45J06FMVYU4yS4AJhCEJ/YMmGwpwbR
-NL0fq0rCfT6dCGEUc4vwOED4lmH19pwgtq8BIb4xM7BAxygVXW8pgk9vTPyX6A0ob9DAewTUTMvP
-aBxGiblpYFf8e/36s2elGxzpRyjyV76AGiEGQjk70m/pEtQdVqleBm0n9eT7QGO+O4u4O3ue50hU
-hMutfzLGrg/W+wXcyILQaaWr3xf7Q6N1PFcOII+pyjZ7i4/GLfy3y2sttji2OYPimXcKuDcRpLf/
-xM6D4VWh8dQaFodXwfDRAwF3UW1rVD2gpNtM64t083t2vscfuhZ7ct5SYDPFdgZDXmQZA4/9xmyM
-tXfM6ZH+9G5oym7TFWJ5gjrIXxk7VyZk8ba+AMEcYUSqPnBTUkkCWByZG4D0bFTG01eIOalt1LiR
-ouDWWP668vENH9EEAwgYsNYjaMlARoGjEL+oOZGziO8X0aU18qMp3Q4BVZ9l+Q9gZkOgfKkfXXqC
-kRzBgoe0HqDgGBSGzIeadu1hiCHGjRdHRcRTVmE9bpWowXmzpsO3pmI/b/rr6Ef9DO5CTQHkcV/6
-wtU8wOSnz3Dn5hHI4UZgoZcAvps+kjTyWBS00+hE+E+G0O0O5A1lRbdXmOlrb8vlBirwozx0iKD0
-o2aLbsM37PqQfuLzrXCF4GUItzcdImgcBj3PNG1/6JWpr213sk5PIDuBQ3i2BkpvXRMBY7WaqRI0
-LskwY9qu5uScErzEVq6PBgzUFsi6oW1wmgZ28KASXEBujN2+Av0GjAqDh+sqA346XDFTY1tSelJ1
-pkLf1lKYjNDeJ4nWrZVgzsKQQ7tQxHnI5QTT7htJuZIUn4yzSWEY0qwneXItTzpq2Nf1UWtCo3j1
-mlzFPxkJLTtzzWz1ZeZDLk92wqrVpBN3beCgBgyowCJm2IYqq/4UMT7jh203r+4Xo7pzCB1LRQuz
-7/dYd+6JPExzYg8YOM4tBzYR0HGTPteg7oT+MCOp8mZLPOXlEfOwTriFWOMSmujR7qr7EQLPJRWe
-UObVN2/h7IE/fq5o/TuAv94V58c5bVQBwwK2tcgDUIjTiw6jc6gQRQ2N3aZ1pHYGZe8/EsaC8J/K
-4kPs8WiN4INJHIpX/3y6FrQ854MGqh+zZPr+xlq0l9fXfCVCown70NIcnqDH68fM7l2BwvQzE06q
-c0HM1FKBN0MMmYKBSGV0aA4340P0MmWx1/JygQ+heXERqdW8ikyTLHyc4GYOxLAysa+t0ZeQ+QZO
-DxFvlTA1KfcykQZf0SfjNkJDR/dxJAPY45Ewe0AWN4GYKMFCzBOHyIX2PvrD4rEFx4LuMOOa8W3b
-KDsNGYmKUHMQplFCs0DQ8Di8S3ZXMdE8B5GlFvDG8WjN1M450QoabRdozwr+9B8aNDkbhCfg30rS
-88tTbggVvuD1g1qrBScaebXFWHzhDVwGPWA0v52p5Ct4q/Ssp5JetSPObTYy+mItbJMG6FAU+4OD
-P29FBx3AEPYI65WndvcvwL0pYBiZOj9BrNqrtac81fj9WTl8hV46yYJmSloX8cPFKEyaqia9giFo
-LNHrx3DQOGVpQgxV8wyUVjoJoh//KrG54ctCIvZ8KW8GJGpo1XUbuFwz/ovtNVuK8/CBdkun3d6Z
-FOFKst+c4gWcwuCW5jiIhKiSg2HuZ8lcAjqqUsu4oElX9akhTkWoasryTGgoTbF8zoAaPYWq+4gm
-yU6CD8YQ5Hv8D+RS1tIuhpfPIigmpYYL5uzCeT8uEMlmIuKRQ2LwrqhI5pjtSHJXGYMGZqIJo10a
-u7ziEhIz466Ir4Zv9sMQSuzuZlc7zQeNakaY2LXObL59I+PeEjHrFwBkZ+sq4fmjMIxiAupN5DBs
-h3e1Yb8VG3iTd5UtnOw7e/DPU6NUJCK/cHFWdf+PsZ1TdaN3ItcVUSd3Ph2wWjvghxkXUW0WOX83
-k3aGrXBuvZfvNgPlF/y/3KtzHFv6lBJddraCpgtz7jJxDyxDPTSth0YCYTIj++ClNNMWpuT8MbJS
-gZTCqzU3LNVBY1Pdfc3hiuz5zPDX7ZzCGXDP1QWCfntD1gBqvUCvSvy5YGQX1lTf8E6QUJ/WwRhm
-JmmeW78mImmt/QI8qv18c7OZQJ6yKp7V8tQflSxeiznxMna08v3lx9E5KZvTR1Mmqedp1UNfWHQh
-hin/YmETZ+QsNWEBVL6P4sGru3h0NcTNuAqXl7c+Hr8naqaddqQOJGYIiHrvV+VD2uJ64+epddTJ
-kQdj9wxXs9b9xYzCBJzZyu4eDAe3kkI6D54qH7V8LNlg3azRD48xYUUO4CTrmdBKMkE+aspEudh7
-2L5+NuKm0U0xAQDsGaryqa/EGjfeMSvWvTqsfBdwBQMhVuAdcgq/blY43Al5q0ouyRRAAAOrUqyc
-qx0Q/iGsLd61Vw8kc/wA20ElDovY4NlniRdsn9/fCXJ/GAmiDuE2Pcp2gkwZlDQ7B1chlw8wd90s
-fdUmCoTI7IP0A5HV6Lzu9Li3nlV9jyHOKXXlXXLgb6YtIq3ztM2pXMg3Rcf2oOxdbpfFEk5Bpi6/
-UP/qnmd/UAI35GrCP51cvRG/Qbz1/pCONbLGuYJaaeCDB0i9+0qnWXixqU8YCGnOPJTP1pPaXD29
-6vcaDJ3uOcK9TF7SaDICDrMQOdGlz76oIo6xb4Z2Wn4KFaz1DkLZ2zaMMLTDnwBYIWm9WHweHw5b
-P63jEY36V0A5S+gjeNXtlB4FWC9wu8moTARlG827boyvy1tLTAvcwvV0lW5ngD5l6uPa3g+0TgVM
-FT3h7mrjZXGQG1mukNMTmoZsKA/ftSS5wvoMsqgzcbmKbtpg3D9MjOFs1ktCKjp0HRmApt21LgYI
-HH9GR65+N4+8M+CtRMmw4SzRhjVTY8ZHIv7cXA1MwzikxKO7HbiDm22wrIZOKAce3f7wmH07RDJa
-P2dK27Tn6PitYvu9H6hXWtj14XTz0Jkn1S/KixTlbiYY8aJ4UT4FpVOsL2+zksYlVIHrG+kBND8Z
-wBTtlv01hG6Y7F9aknXiAU+CGl3gaHlqRu5w4CCC0ynmfOWtdpg0mOY6djRSSZMAZ+w851yc3BP9
-Ze6dM2bYP+lNhfyzgIiPRLrl8NQEkRLxEsJoikVlkhfRazj5+7GqFifl9byKu9CShBv/9RFsC4hc
-m67fccBM0GTaxdC8YQtBass+8RagBcYLo73y/48XfgzzhCLY3UiJpnqOSdZvwNj86//fXDDunKSi
-rWjiLEPSz7CVmaHtbiwZcVi04XxMvzpJ7v/9yREF8Z1DOAQReXnY/rNPEPrV0U6LlRGKDuLbbfeI
-Lao9JTXz1fLPOzU6+uAq4P7GfUyjwIYMAWtlZBCz43I/B0w82ep7lcwkDByByrMrT6B9bwmg6rVD
-WtjJusYBMB8QNdnAvRkiCANcKqXQ13lVSV6r717X+r2iGl30Yecs/UeEzrZ7xa4JTeIsSnYByKsm
-NipesIh5Fj/sSUf4pbFCLx9e9OPh3OPnSmHZZbHBP1I9n8KKVWNGJaQ/IfxO7bnJYIPyUxjsTorx
-45V8SdXTZ2RvJ4jJ4RnfxBnhnvUBmwiqePqIetsRkJuvIXYR6wE5FWfVS68ZJ1tnc0jJ0S3E86NQ
-eGzC/ij/htE3usGIVYBaHVB8fFUctIRWG9vGSmLixYnJOL//w0b5L4lvtPSvWCQw4aL+9CcpMNDr
-HJM0h+XjbqBHjiBghybB2ajsvhMzqEBVtvWFOdetkrIJuqGZwMGzh0HUorAXHyOjN/2zDebVuQr+
-8kt0HJbRgwi0Wr5tolwLpJ7CM0Kz8X6k5O/tPCcpyUvxYsLAOWmkHz/Yi48NC2+tIrIktKso/Zlp
-rNPkGHeqqHRW9o7u1PN7FO9cgGedIz/ovjXWXSLuGDyZkyOQ/zo01NQLdaBIUWnmhZYWPGrqsRT1
-wYTLH66DRTlsMuVWgMHEshzfohK9o7GtWZK4lNpS+wcJ9ch93EpGd5dZ/laxq3Hhtac06b5bPx8u
-y3aV6EmKQePrkK0n0gQJgdrJ+d/AUN4WVo7K5FiDYvDbDeNZCsWpeqd31LHtARtoUQB2xjY84oIY
-1EK3AE4Cmq0urGUZjAR4NVlkH5XYYZcq83DaOBNQNMT9JMvnT7yZ7/DCAOaD9fcO6vaUJLku1Yhj
-4uzjkl5x4hppeGQRWtcTyTj9isYISB2TvqtD0OgAA7Y6aevujuIN0lzlL5197zv/ZdI5jLx0ry2A
-/G8fHDwyNCulCK9hWklKfdZ2Z/Yd3b0P9NyRsv5/b6svVXUtYgxqPjJ4AAw8wrWOxB7j0202hFQM
-JF+UbAj1+t9xrhFCWyqg1Gr7jT6VNvPKAscotRQ3gqRwwWC3MfaC/nn9pr/S9HSPOJ3ZRjlJdvpS
-lOcHLPDSjaDdsF3DCG6uN84PkeDfF/6NpX3wYAKUc+yVnBZBiyFMTJgq7/INbC9E8WZax8acpNh3
-7TIaVTP1WxqiDj64HNZuMD9pSTrj72Eq0hZBNsuBUbOKZgKNnK9OlOTCwGpDHzllc6DSoIlQKR41
-pkCD+lk3sYT8TCHyqumoe5rNBPIK6g7y4rPz4fzW+gEtnxKKT+OBSLgfNvsGCIw+1rkKeBC7Momz
-NItdgOBPMofijzXHfE4dL6XCQxrszD4beW6Jed7USO9rOZEusbobjmKCHjKifzWwgUnI0sIsiAl4
-MugLvAUBhwlSL7Z/+8nKJvNLhbBE4D/3OLitbl/EDVSP875BPzW2ocE9IgeHMifpXVFac7XiGEmK
-AOvGw0nNhDxerrVmhGnvxn3mQYsHI8arYDr/YEKqh7agnKAkMGwX4hbz47xhJ/UqEbN79Myzq1fu
-49V18PEpLKMRPbfOAZgDLPcuuEN8JvJM+ZigovVjH95BNBh0vtKz8PMRDB63xanbtWS3HSVLUiXU
-LSqwWdQPS19w5Jd/EpRF9H0WrMaskcvZ8CiC9SQkDh/pnHMdL/qu0DgXMLdBSfBoOnnaT4GCYYPx
-lRGnL8MC108Bpe74NUyPR9UhUNDwzXMtyvA6JBeV2+5rphjPfQS4824u1xwvRWdEQxd0arieb1jF
-/LQV1Lhf/JPKDdBP7N38AOE0KHotvmA2ueoHHqzOPB3mS8cCcvyFTphiSB+qzySH1fFz7sVOaHfv
-P1YJAS04qF4jjKCuZMfzfh5NIoq5fDCaItJ3PCUzOfuUAIzpDdgD7x+X66wZqecwwHfuW2IX9JKu
-wGvOw99hgIuDVd6mPgbVX2Nxq75jKgmgG/d4iJaWlTpXHhkUYgK2af7sjIKfGKw9tEqUZZO5fVt3
-S7uuRjgxyqWYj5XQPlbhLjw3U7n0/NVfxjqTUQMebDJ1d4Du9OI4RbWg9SxSrSFJeKgsv3SK7W/z
-S+Yg25r9YJ80YbfAcqYuJQe0//UPUWxtS6WK6os++NqjU1z/0M8Kaqe+7Itr3rxkoMPbZPfTsc5t
-CYid2PtCdGnK6mHt2hI5gMjEQmD+7T0xcEZNJAoiON8dM0KQIMHh/BgdeWETpIG7fqqfbXSaD0BK
-Tdo9XTRwY/8uKZSP6mjVAR/kxAte8NAlxzcSIj9mm1/+UOyl9sGHt0SpppfsXVgDHyWshoygaNsZ
-r/eCyFnVM88JDNCR/56cogRpxpFCU4HRHn8LHsYOcDbJBM79SGhDySndOX/ymG8cv0u11BrJYtI8
-Kpc1CaSdl0WdQ0xPLFiKgQW237fuhcIHnzsK8eR9Jh+mVOjMURthPw6r0/tyDhd9giG82bcl/D7m
-AAvVHRt7GKHGKSNcV6LhLkJHypMeAuqRD0tu3mtW13Gl1MCBXRnW2SVIUn/15AmdIyDMZBV8llCT
-E+sZIwaVCu2KNEzLLuGKWi0n9iB4pDP4oIWC6ugoLgK1/XvfeWRshJwZ3dQ7NUUO3EVMZp7L8pYE
-O/L41+cX8vkOhmj1l/TTrRDmn5wSZGyzwxF3XZ3a3aiELipVGjBuOET4860cRShkrD5QCxhM5avz
-MnepZg0QctVEco4Ovdd2laIQizRFQ+L7+ZaMPB7EpNBG7sSWx6GnjPHdsQ4nfX6tHHXMEJhPV/7t
-sy4mIXx5J2/WJz/U+fQ7U4F/snz7OEbRTZvPxehs+HIwJfPB/9PIvEbkTM1NgmG7tZVTsJLKAAnB
-+AiYK1cvONBb/FHPHoGQ0OCzDIOYAGOa6ih/dWT7hUbDTEuaUqyvuIwgJ3XOrn0Y4WFd02ObmhIE
-5nABh/6Na7J6tkSNJoc4ssJ1sCkEKwRHwrnA77lTGkLpUDJ2C6ALIXCsvTQjA1x/Rq0iq6J2JKeS
-I6MQJr2auoH8N9S7nfgBVd9uU78Zj1em0R9Q3PHppA+XzW2TbfMt6NLd715ysWPx4+svyqy2vM4E
-lufy8mYm+ZIJo2kzvomcEU8tx76WoW8Z/TqrvUOY3VDW1053h1+PqNOGasXK1i2bWjt+eaJ6aQyV
-rN4ZBLixATy/eoMunE9JGjNFEqI3N2cjlkaNpiK3rgNxvV/mo7cH34Hc5JTmJy997GUefEIW7WYv
-3k8JUCn76Os4VojILKQ4ncfksm6dDCzGs9R5StB5f0/o5BnwoybugTda+tWVSfQsDIPQ6yyP5AK8
-oqCYJFT45koWtSc6o3tv5sDyC1w6UUXMh19MtefAXD5iT8derrXrfc0bR0LWV2s6abmr5KqrrY9Z
-yt4nU2Kw8i37TlEqkuMqQWzYB0/L/ShrqV7c6zMlKlGfgr3vxBvAoGAY8AQT5qZ6O5lxoCHrHp5H
-PT5T3dkg17v+suezV/rVkXnh/FBtgFI+9PWiKcLThImOFQD51l/i5N1BDlxnhXC1eWVEez9E6rJ1
-5K33YuCqhleq2jcbK0Cvr4S7/FQUg5T80IPOA/wt/qtz6mwSIwVLEkuwtLtTuD4IhP43IsMWfto4
-wLlCV6HmBy8/s+1J8q0qNkJCB7v88vSssd3qdx4/815abKHoYYz8EQQSXCfl5m1TJ45/tdmwmCVc
-7X+9qgvy3yh1Kgvn9GtMslTxkKYbOWcSJtWKAbO/oTWOow7TEsgBpn2dLVtaLLUNjTzKC95lZ6Yu
-mGx7DqQHHVw7MXGON4gLrc7+MfmThutkRM7IhT0uCy0VIg544J2ch75tClIgy/ytHvt1OjmC4bo0
-rjXJkwNuK9b0gXpukPV28trMxONof7bxE8cvHBNT9ujP8zGX+vcdJP7/Ia/lzWipO8KwH0pyQN8T
-q4iOTtVBx+QE92+d9wM3NL/Z1DYVukUffQ0VPZW5jgJvUUprbgiAyEzSAeYXlWlClGfUQA+saQdt
-2a0eepgmMBt3u1H3ut1oHCqadVTGLhILsnn+FUiiSEVER4R2wqA9BO8RV2iHvUzi6KVLvnkqy4r6
-q9K5IMukOcfrWAf8LCu54hd0pdFAs+FYwfpOPg8aROCdj3rSALy5ysaUH8SqKNKfc7TruQvIgucY
-ehGfDYO3K7penohSk4pXADh1pS4jVvPNCBNslkdyreZ+iV5eVBSuRGq9teP2GIVMy94dZK8HzGgU
-IY/FsDRPtY2I6ePNehQSev7vlJgYDESNdyxzynNZ5WvJmx0fwrP+w8gSyNTcg4BPf+avb1Wum72A
-Tr62YsN6E3iG1RX7DtL1VCMXDSdN85RnnPa8IvgIq/lat01Hsq9/y08VXiXhuxs+TW8HtheZ3FEN
-TiU/C7upFW59Bu54Fti40WJtciGBADHt94JEQQgLMqc8FilkvIwYfwRklrhMYjoAtMbWuGx8YOg3
-0/PMJsRJEP66i0NHe42/K+Lef8x/JcR9u3D8nHxuAZqN9wa8HaJMXryRqzy+X4V8d/H07dL3EQB0
-+SuV6jyWUqebvt7MaNSv2V/RJR2wWp3rWE2H+eFaWqk8ZFF6sGmoCd79666e6Wfd9jJz728fzYt6
-mInl+0B4uHtCcAeEpyYc/5WZywDAo7VHTXu2MgVoXG72fXdyCSiknPRR20g1OAG7dXv4npfWS1+d
-+XvO6lKvODwaWupK7MhvFejnZFNzrhSdfALD6KfDAud4vnDI2Z8WVldQ4OnOMdY8tL5NVx0B4MIX
-d6zhaJYy19XrfvC5sOKzk77jsKxkViXrQ5zntenSZ3DWSBs40rw5qEo2A6iW7rSgXhDLAkf7KT3R
-ehiZ0wf9SacGM4Fljg3jjre7ifEunDDOxoMh8Fk+2NFKj6Rr+FjlMEhA5bS/SY9uVWDiUwg3hPb2
-odha4jzXPIIJqS4TKKgyqOnqOqy3+/X3fkVvojJBw/mwlx2qsS5VByMbIaGMI99oCKHFhB/37pTX
-AYScjdM9mkw+y/9X2xPxUSLfLgy5z1mcqxmKw0GlYL8viZ6HQKh55Y3yQIAu+vzj6Yy3BeKfVTF5
-UQ2mYNuJWLt1xi+9s4VSAQg9aqL211urH3ttJarXxSZBlh88Hrb1R9fLQLpuFwRsppf4t0PgFdOr
-SLygPGtZvVBjIhBoR0U3QFjUwHmAviv1CDdMh/ZZMjwPnzO2iML93TKnvsQsUNmofQvL+wK5rBKP
-VZqP8TCPz6sk/tY2G8y0KgLzPj1dtqVEIPYRprPjp0f6hJ3uBrJ7VIcQvqaCwbowCV5Z9zAvUbAU
-JF2+c+mYGHQqo1NTKR5NxrGmTHrdOLGRXpf7hAb91+RNpNLhrRGCpp4xI1lWmTJUm+hIbDh3a52T
-jfOANeKQk765xr7WZq1MrBQ65zfBv9migUbdRK1z7roEMSB8pDmUefc8+o0Cl5Dy2vzN8n9yhAJq
-XeyUPWVqwu6/eQsTCbwY56/n0APKckKVnRxlqDy0mLARA7EHjejaXPfNnb/CPCFUkJfq1+o5dpMe
-mPc7d0GPk24FzAZUbLRUTQDB8o37a3rsMZDPZI8E88GqJWrAiVWHj7kcoBiE4B0KZbeZ2EqfBY59
-NMjd9v/U4GD1D2hfZaI4lRqfv9PF9s05Y/urMmBG5Q52voPmhLHWyxQckXR7MQjWZfs/L5W/7Xoi
-2ZFYStUizDzC0wTk7xTPSdG+UivlmFqeHPFQHIjzm/RJ+lKYzBZWmp0gHrvMhr/ZgWiCWKcYscOS
-0087OsIycHK3+VCR+rhx8Pm3DR5EOphYW6WShHSSKVDuhAMnhGSkol9Z4wHHf2x27VQ7BJXDqsHW
-CcHGOrKzBFFO88EKQbAlEgrkUuYydOO/02q/8ORwbZZ2tWJTSvrc9dLPrR8wym0RnMH4KgfvVtlg
-Jwpv92JFY7op4GtawmyikIgOU40HawTkeIH1zVxYpN1VcIqUOUS+/sFVezvaGryJL6C25i6VMdyG
-BzCcURvTLqj+seM6W7CiH8cEN8Yr/Sax9xoEFo8HaEqDNMSVdcEDPg7xQgYBdxvQZUE3AvF3QIdw
-4WLE3gqDr0qLbqtTyRL0ImSxxF2A37Ty94CogHOIcS574v6mHO4XupDDvbhFuc9Gy2Kw2CyQyuVK
-oeXrBpfML7AJhip4HLEwASA0z/hh1gVH5mQuGVezO/OchwZjbyiWOEYe7GKsd5Up8SOTIIzIbhBT
-t5jQ4r+LD9jww6NgwEo6eAY9JH0zneAckW5eCnnUocmh0js3xFJ2hANYeO41vy+2OaHppUR2U/H6
-izrh0/9YmYFQ6Xu2MsMUWIHY7vnKrBO0OxYFnecJZ1pvXUx1uuNx0W9gotZiai3Ps/HXABzf9z+V
-PYbpMFXFXIukkqg0DijOzxSQbMM4UUPn7mQvgJYoG2m53SJdgVB46dqFkqcMsapzIy9/b/FXSrQl
-YawWpsAh1m==
+
+<!-- business information here -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="<?php echo e(asset('css/app.css?v='.$asset_v), false); ?>">
+        <title>Cash Handover Voucher</title>
+    </head>
+    <body>
+		<div class="receipt-print-root ticket">
+			<div class="text-box">
+				<!-- Logo -->
+				<p class="centered">
+					<!-- Header text -->
+					<?php if(!empty($receipt_details->header_text)): ?>
+						<span class="headings"><?php echo $receipt_details->header_text; ?></span>
+						<br/>
+					<?php endif; ?>
+
+					<?php if(!empty($receipt_details->display_name)): ?>
+						<span style="font-size:20px"><?php echo $receipt_details->display_name; ?></span>
+						<br>
+					<?php endif; ?>
+
+					<?php if(!empty($receipt_details->location_name)): ?>
+					<span><?php echo $receipt_details->location_name; ?></span>
+					<br>
+					<?php endif; ?>
+
+					<?php if(!empty($receipt_details->address)): ?>
+						<?php echo $receipt_details->address; ?>
+
+					<?php endif; ?>
+
+					<!-- Title of receipt -->
+					<?php if(!empty($receipt_details->invoice_heading)): ?>
+						<br><span class="sub-headings" style="font-size: 20px"><?php echo $receipt_details->invoice_heading; ?></span>
+					<?php endif; ?>
+
+					<!-- Title of receipt -->
+					<?php if(!empty($receipt_details->invoice_heading2)): ?>
+						<br><span class="sub-headings" style="font-size: 20px"><?php echo $receipt_details->invoice_heading2; ?></span>
+					<?php endif; ?>
+				</p>
+			</div>
+			
+			<div class="textbox-info border-top">
+				<p class="f-left"><strong><?php echo $receipt_details->date_label; ?></strong></p>
+				<p class="f-right">
+					<?php echo e($receipt_details->date, false); ?>
+
+				</p>
+			</div>
+			<div class="textbox-info">
+				<p class="f-left"><strong><?php echo $receipt_details->register_label; ?></strong></p>
+				<p class="f-right">
+					<?php echo e($receipt_details->register_name, false); ?>
+
+				</p>
+			</div>
+			<div class="textbox-info">
+				<p class="f-left"><strong><?php echo $receipt_details->user_label; ?></strong></p>
+				<p class="f-right">
+					<?php echo e($receipt_details->full_name, false); ?>
+
+				</p>
+			</div>
+			<br><br>
+			<div class="textbox-info border-top">
+				<p class="f-left amount-label"><?php echo $receipt_details->amount_label; ?></p>
+				<p class="f-right amount-heading"><?php echo e($receipt_details->amount, false); ?></p>
+			</div>
+
+			<div class="textbox-info">
+				<p class="f-left"><strong>In Words</strong></p>
+				<p class="f-right" style="font-style: 20px">
+					<?php echo e(ucwords($receipt_details->amount_in_words), false); ?>
+
+				</p>
+			</div>
+			<br><br><br><br>
+			<div class="textbox-info border-top">
+				<p class="centerd"><strong>Prepared By. Signature</strong></p>
+			</div>
+			<br><br><br>
+			<div class="textbox-info border-top">
+				<p class="centerd"><strong>Reciever's Signature</strong></p>
+			</div>
+        </div>
+		<p style="text-align: center; font-size:10px;"><?php echo env('BRANDING_TEXT'); ?></p>
+    </body>
+</html>
+
+<style type="text/css">
+.receipt-print-root .f-8 {
+	font-size: 8px !important;
+}
+.receipt-print-root {
+	color: #000000;
+	background-color: #fff;
+}
+@media print {
+	.receipt-print-root, .receipt-print-root *, .receipt-print-root :after, .receipt-print-root :before { color: #000 !important; background: #fff !important; text-shadow: none !important; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+	.receipt-print-root * {
+    	font-size: 12px;
+    	font-family: 'Times New Roman';
+    	word-break: break-word;
+	}
+	.receipt-print-root .f-8 {
+		font-size: 8px !important;
+	}
+	
+.receipt-print-root .headings{
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+.receipt-print-root .sub-headings{
+	font-size: 15px !important;
+	font-weight: 700 !important;
+}
+
+.receipt-print-root .amount-label{
+	font-size: 18px !important;
+	margin-top: 15px !important;
+	font-weight: 700 !important;
+}
+.receipt-print-root .amount-heading{
+	font-size: 25px !important;
+	font-weight: 700 !important;
+}
+
+.receipt-print-root .border-top{
+    border-top: 1px solid #242424;
+}
+.receipt-print-root .border-bottom{
+	border-bottom: 1px solid #242424;
+}
+
+.receipt-print-root .border-bottom-dotted{
+	border-bottom: 1px dotted darkgray;
+}
+
+.receipt-print-root td.serial_number, .receipt-print-root th.serial_number{
+	width: 5%;
+    max-width: 5%;
+}
+
+.receipt-print-root td.description,
+.receipt-print-root th.description {
+    width: 35%;
+    max-width: 35%;
+}
+
+.receipt-print-root td.quantity,
+.receipt-print-root th.quantity {
+    width: 15%;
+    max-width: 15%;
+    word-break: break-word;
+}
+.receipt-print-root td.unit_price, .receipt-print-root th.unit_price{
+	width: 25%;
+    max-width: 25%;
+    word-break: break-word;
+}
+
+.receipt-print-root td.price,
+.receipt-print-root th.price {
+    width: 20%;
+    max-width: 20%;
+    word-break: break-word;
+}
+
+.receipt-print-root .centered {
+    text-align: center;
+    align-content: center;
+}
+
+.receipt-print-root.ticket {
+    width: 100%;
+    max-width: 100%;
+}
+
+.receipt-print-root img {
+    max-width: inherit;
+    width: auto;
+}
+
+	.receipt-print-root .hidden-print,
+	.receipt-print-root .hidden-print * {
+        display: none !important;
+    }
+}
+.receipt-print-root .table-info {
+	width: 100%;
+}
+.receipt-print-root .table-info tr:first-child td, .receipt-print-root .table-info tr:first-child th {
+	padding-top: 8px;
+}
+.receipt-print-root .table-info th {
+	text-align: left;
+}
+.receipt-print-root .table-info td {
+	text-align: right;
+}
+.receipt-print-root .logo {
+	float: left;
+	width:35%;
+	padding: 10px;
+}
+
+.receipt-print-root .text-with-image {
+	float: left;
+	width:65%;
+}
+.receipt-print-root .text-box {
+	width: 100%;
+	height: auto;
+}
+
+.receipt-print-root .textbox-info {
+	clear: both;
+}
+.receipt-print-root .textbox-info p {
+	margin-bottom: 0px;
+	margin-top: 5px;
+}
+.receipt-print-root .h2{
+	font-size: 20px;
+}
+.receipt-print-root .flex-box {
+	display: flex;
+	width: 100%;
+}
+.receipt-print-root .flex-box p {
+	width: 50%;
+	margin-bottom: 0px;
+	white-space: nowrap;
+}
+
+.receipt-print-root .table-f-12 th, .receipt-print-root .table-f-12 td {
+	font-size: 12px;
+	word-break: break-word;
+}
+
+.receipt-print-root .bw {
+	word-break: break-word;
+}
+</style>

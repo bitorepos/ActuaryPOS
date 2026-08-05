@@ -1,52 +1,25 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
-Nm==
+<div class="modal fade" id="tc_modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title float-start">
+          <?php echo app('translator')->get('lang_v1.terms_conditions'); ?>
+        </h4> 
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+            <div class="col-md-12">
+              <?php if(!empty($system_settings['superadmin_register_tc'])): ?>
+                <?php echo $system_settings['superadmin_register_tc']; ?>
+
+              <?php endif; ?>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-bs-dismiss="modal"><?php echo app('translator')->get('messages.close'); ?></button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

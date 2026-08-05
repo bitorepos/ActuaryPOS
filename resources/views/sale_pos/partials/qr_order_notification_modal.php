@@ -1,43 +1,15 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
-XF5+gZEt6ta=
+<div class="modal fade d-print-none" tabindex="-1" role="dialog" id="qr_order_notification_modal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title"><i class="fas fa-bell text-warning"></i> <?php echo app('translator')->get('lang_v1.system_notification'); ?></h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="qr_order_notification_body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-bs-dismiss="modal"><?php echo app('translator')->get('messages.close'); ?></button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,118 +1,52 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-HR+cPsj4Ivjg6R3StuJUk7oNOyDuY9IW038eXoRjL2zXa406VbeeOvbOQA42Wi6sud8++lpzTJX0
-Qo+/Cqhki1RWdLozxaLehJf/JugX7md7RT+3GPtbYj+PmO+Vhr5kWwb6mF4rCeeeIEQNwyPReXhk
-1UTDFT3VHmx9TYDb21RWoFp2zRaztaC08G68b1oG1jDr+kzAiLRUo2xDedPwvDc/dxqNNKKGdsVl
-N1sY/6Vl66Ipk+MahNpm4pZQeieJJjZzxaDLfC4ucFCT5uerWvhAsACXSP7zA1e6qNgDfgcyj2ZW
-6yKVHE/BcG3I0IjyRBgyqapYpeR0B2G6Naq8jZAnCM35WuclKihpEOt0pkOK0z97nIM5qaddoYww
-t264YoCuQb42V2WXZDqCwEQ6fnmgJwI2cOJduvveYrTElkfT68aUGl/f5FLxkiQy/IKReO3cunlC
-Ga0WxUxUq0ZxfW8kIJKCMiIzb4Wu+/e+TdNgsSO7/yGcKOxAoGgX6Ruej4tHXgtR6FaCf/G9ZAHI
-6DFkaQ9E8bmT9rmeBi0zPr6Zc8LRWHv5ahzdrTqd9SZDQe5tBpwahJUoxXAAbvW0sU5vq8lmq9q3
-QPjVZ9r4NbLxJbkrtbJaN4f2kQKrv8AUkwAH7V1Ml2zgwdKLa21/ZcMxDB37nYtt4r1FN+DjGw+r
-pgHUV9+fWtWsCRCi5adXRE5H0fL3HNiWqygTWMLQJcSxxvHnXM+abJr3gREsXCe62hYFuHkCEWTR
-9s51e9xsdBXW1U9lO3cvT/bo0LttDt3C0E3DgIwX13RmGGcPOFMY3yxDGy1tkA1c/jZCay/uojLS
-HVnLwg6kHCaAc3l2MxcczIQfusOafWnJztQlIYbuRptqJ8y4vM0UGPNWe9tIJ+HeYr70G8zkEful
-y9cZg2ExUs6thHO4JgFMtwEu7IKilco0sNRb5R/UQbgE7MA9StQgiL8oMcVF0Nlgr6fcJa4+VAw5
-I1vGIatUJML6GNjLfB4ZnCU4LiKD6ndskAGLnA/QUJ04ZE67o7TfMBR0jF/kO9PRugS23Rqv8qvu
-Yv/VEVcu0cGPtwszzFnpHfmbT0NaZfnb66NjoSgXKyGGwnbTJqpiOGzCCZ//hy5QGH8Ab8RaxXOE
-9vrUlN7uTk3x1z1zWKbsD50Hc69xnoDo1nQgsFcNf8jWnmrMAAyRXKQ1duANUDK7LTeESP5G8wBI
-ksgE0tZ0spdmv7U0nkJqDGttwAxOJXpDpiCjnIUq1yjtf8yRY3SN/IHMx/Er1qeYDe3WT5urKUq8
-UEc75itYwdrBv42w1hiH33NHosKboWRCGMKiqDvcx/9vUmJ0PfAeFYFF7H4ewP88E02Z9Ll9fBiX
-lQI5XzpwiCLmAhe8fMjydm+X5QdGwBlwBxFZEECFPoIe4j2BMtS3dbsyytR7i1vjalfdbmyLK6tk
-ET3mNkiqLGu08NL4nTSqOFyUulqCCS2VfnylwiQiWR1NE6cvp+obR51NEB5K5iu9v/loflnMlqJ/
-oY3dNtf+bxaKGIvw3SMX36Bt7DdHHjDtQlyLP4PoXALSf8hto/nJTac7uXhb++F2H7nlyky61K43
-rKVtMAn5VhXkbz2DpQdrXeDpOGkyEy1uQSSSh708HcGLFhM7QxEzAUzoC0ogFIrLsUf3BSiS7fMs
-MLHKiMdVIwhkE2KenPNnB7El5sE5nbEpb/Xa9BXkW3KOEh7feZd1SO1t1kYhfRUC00xLgPQT4BtY
-+NkQOAw74b71oDS6O9zXvtNpFWbtCOXGZ+1lYyRj/ZancVUVE7DE+N3Fygjbo+u1E9QD1UhdzX2U
-dmchX4OY0hQyxKvjOpO/0URZZ/UhGX15X+3vzdF3kVzM0UXk4Jz2b/oCaty+JnEfjkX4kTTty7Hk
-xpdMNCBYC1WEznde1ssnXEFRi4CWUdif9DmDEon2r4XWGNZa3V7zasNrYJ2TJqWz1RTqJ0+ySRQU
-vlutM/R3BdjqaRnJm8xGK7rNCxiZ6imQlNahJ1g2xZz9t5wxrHBXx/7dSf/zMZwYjD09BWcZWT+q
-xuP4kUpPz1B+aUDeWGY5FqPpbuzWXMCtCoD0gLathbJJyx0pVMpc9e0KfZO69DzSd8izOTnRog4Q
-tXHoxzR4yZJwR9m5mFpgD7glxH5U3P1vqSXzwVusjAPKveUMKBS3DahUE2Gd2HIZwkTK4AaWoBv7
-56VlPxWwx5m4UNxCilztHnmui6nC+1Fk8IfjAMiBbV96Zk85Tsesx99veAV2k2Rh0lPCOpTifG63
-+P5YAQ1/3FtrmPwEEhJyTnkY7JkrwmFqDjsNd+twdwD4yXjJUWrDG8cMlSJOlaD2wjBpimEs+szZ
-UN8b++u9vwrJfdR+YLXZYQrkjNGZzKrimelx0TW8ZpXjngCoVZJ/CzCBeX4WhKg0PtzloYTJP7KL
-o1FyJ8wgFO2S2O82rda0aELLwCQxXIaTIDEpMF+GENOOFUU7IZejRqqNZPJ7Zbd1tpa9OV/fvW0D
-/NO9emHTOs2xCINYL4YjVfoh7yaFCzxOtaODrYC/jntK+lgJ9fuErD5wceRc0EGmMQ8HlCWKEdQN
-VNigUx7+jHbkatd7vszhS5VZH7uqNzTio5Kv2i0bBAKj/bhmmsqszK2WFv2Yn9yEkGC7hV3U44gz
-Iq4B/IIvOuxl0tfMWofPWyRxgbD8GzAwTeKGkI1ZDe7nyF+S/ui/mTha4RcCx5xWlAlDleFzL8zN
-XP54YCfDHU/Tz6ivPsZ4TD3Y66CwPu73a6ZDLJGfjxHfTRNDMLDi7YhEWCM8aGkSq46k+DJn6DGw
-EIc4bqJJ7NrXhTiiN/+A6wRIGcw7zuXqCQhkXRqspJtgZ77tKIlhSxaZtAM0eXX//piFGioj8jxv
-UdEi7z4Pv969LFjA4B4uKaIKJ04kTtCN6M++swnXVOG6FXxswDBHjLTtlEnIbsYbn9iiqoQ7jBiE
-N/2C7i1FVzInou4sGfuOrEQXfOvgQDIUZ+pLW5SdE8kN+U8IVv45QNsM+4v1m89i+lu3sLJYdOzN
-DdhZtoWNfEv2XIafo4tFMf/YksSAPSGYYZBTeyYmmZZwkLDECL2A4rVyfqAK3lxSYJLZ+XNBOvLV
-rAQUt71GXweUy+IzsUPICt9+Hr7ar/k/RQ5uTSUKr0dhO45vX63xbVhzBh+pf/2f4zP5bIs1eU9p
-V3vmHr+taXZcuyEE49vnOQFwIPgB7MEnaRAUPQGhLKAg+ebF0rd9evWD2YwAzMCvcvc6dluc3tqe
-HeqEFnF/Ydj1IH5p1xkEho8dCnVwle2VEMoSbZjEfXpze1ZvYNumfs1WXXshDQN8IkikntkDkLk3
-Ifwl58ukQhyS1qgmIr4hyTylh530TPOcGh+9Enc9V+yYmGoOexHwgbKaPPwZgjnK6P2lJL6QFtUL
-QxRAJEg8+gX4MOZVMUn4C83UJfnO14laNAoavTd0FURzgCzaULux5tF8bmd1NCp1RKDN25hUvnW7
-xLpoyxNFCRJ2nItbmKRCqeD1Fv5LL4CE8lvDWJ/6K2ur0F+vXqoWZPkR+gVTNllXpMRbmJ22z8KJ
-oOIojBXe7r1mK0qpE4KrEZ4EqyEm2xxNUR9rWWsyDixMwfKxzpNHMa+iU6QwZVmPDqtSVEaqIz11
-q+LlN/nrcE4hEBrkG39p/yKtDXNcETEd1brCjRqbYh4/bh8EebAIv2ca0TT+s11iCMzBljWkwAgR
-Efnp8UAhOHDno5HvEfbaKFYpeU7M0vHF4zO0yBTtqU93YGrt+VuEesf+xAC1q61XWVKA2fWuxnz8
-KsP7l5BsJEMpf6tE6A220fcyR6lgvAwnmAtru7adNbZcQkLslm4cIcRN5wteZojhLySIm2gAskz5
-EEAvfmHu8FwfNNWVrcFGEX4jHIRY/LkvhjVvxxVVyJCIn2dCjo/Xc3Wj52I0PwZINrfI5SYbqvPC
-HZNbml6lZMTmDHLDZwar1k4dfS+HRF3+c1Jj1k+eixKkfrUts+2rD/QNEoDibhYbeuBWpU2BxOY0
-W1J0Imy9a7mTaryvAZIXm8bPmqbF7ngPM4nWbPPKIx2NacL+BfOSA7qntUTqyNlcaRNf5TDkS9Kd
-xXGTk79oShytL5blkHGFE5C1RQzVee0W6lXIMXPmdpcT52srZJVn/G1DY0IbdYbTHepleVr7zolQ
-Qv+uTQ8W81LQvREisKDzw4ykUb5d7bxDfJ4A5as5ywf0qt36icqsOqBoeHt/Z/xhdnkBRvnpKxX2
-O7F0xvbgi8lHXTKeRaGoXl6tfNeDbU4EUeCnmGP7PNoUXhTQOOupVJJ7bgoX4wg6V8L1iiPIYjgs
-R5OMRsEe9pIq2UAu0Y8e92AN6hcwh6lSowW6RkUmk6UmzthbnqdgZPOK55k8y+TF3DLva4IBm4yK
-1ZAS18omJsBIC0xoQvgs847NsNorn4bpQxQooX5A5VYv143ZfzGr7FbsbTwRLqjL7FPNGtnZ7s03
-JlJCsBy8Z9KrHXbWCeifBH5ovvCDiaZMVrUht8bJv6AFV+AFKq9RnHSmz2I79/AoG0G4I6lNtri2
-CvORM/pxXH5EvXIwSEe/1QqDN11kYjsPGOytXMQUlikAQf0kttaCa78+nynAIM/XHpN+1jAiW7We
-tMp3da1ya/zIhDsWXY9Ww6stYk99ZgK4x/jovYgrf4rGmRnY/qVWoQJpBd9WVa2Ydre1rbrveyAB
-Y3jLEtEerCcHcSAevq7yK+cVZ6WNIn6WuRQbuyUPdueoMmrlDqnUModktOARpK7P2rAyZDU8tXFj
-1ZUU+FM/nOm+jHLz4qL8H0S758K73aRCwjRuY1ZadTaLZnrvzPSEw+bnmeqZl3IvOZ2vPPY986G4
-2tmnX26i38ABFYPitGrcKUX96G/5TqWHhNLoAiSB1mSKDT0MZivd2anuBszMhJSRxMDzn377kYLQ
-Fh2w4uZIg5ZIxetUHRmTKE55KdvCbx6PShQx7Q1sGhJkYQNvvi+AhfBocEwfkt/uZzR8vtOirZMr
-nEgocjY+bsROLEYyhKJl7Yg6aG720RzJa9flhrHvhCitxR6VT17Na0gAodP1mPsUKMvbiYug+DZH
-iQt3UjrKCL4TkSBcwET3Bi2+0W6C5VdV+QGDeZ172Re9Kt2nYqTYHiwkDC7uGCKTLJtq+BU9z5u5
-5MufQmjR50LWO6pzWgX+ti47Cp2TqK0wbTySH6U2kX/WuTrzC8KDK7LxkJSdHvYSax/j4VcLWVPl
-uV0kLRilL6ok/AKezGHkNPfkav3BKNSeoXWjH57Emc+UlfxjhwzUiJG3adJ5T53176DkvPpfsRso
-62erwhpbmXBJlQwWE05Zc01v9OrCwrhoThYa1vi3xkqdPZJy4wk9EF1UmhSwVqhV8YjnFb48ngoP
-4t2hQf4dvn+BfTn2Vuf2PQjs8XXlR6lBGCBQTQmwhwbFpuscUzL2XNCGDP9yejDFtPB/SjZ/bcmb
-8Z/DaoSxm0iQxzvd+4gzWC3gRqDHxHdc1+RX4M8qzhHhEu7QhivQi9lKxtE+38vYXmVlBEBPvl5l
-vY5oMvJasumPEoCqtY8D69s0h9sZnCSUJy6v+Ek8A2AfAXDtCagpmYrfcuuBzaSIhnJesqxjqmkt
-yNSw7l+v78MPwlLyGtcJg0UXual3vByemXsx+6z0+7pkVD6ou/uOGLP9uISSWgpgOOVumcNc0cOs
-2DpGIIKq8hrJHcUprv5wQ0KK41+w88KhV+i/Gy5jWqxjkEV7TD9D4dDJDKGACHszlbsA0Ogh4OxF
-WAex0nDTrk6DwrHtRPWNR454Mxc85qlfo6WDpfquMQIYldwGf1fEspzwnF82r0r899YVob+R6xES
-T2TgMNKM83iOqYrNZBA3bfh0XIwR5Rsmq3i1J/IDy0SU1zCwx0KNrUNhlgsKwAYdgRE7uDTU04WY
-YM20tV+y9S7/3PEMtfpJLMnY57LlM8W9sOMP3XIwGliWBCgw01Exmhi3bmU+txkBGc37+nBJpTzN
-9GdaLcMjcafdOWtTGkVyFLKA5p2oW5TKI4fUjwpBAWSEyzKntWTZRzh+DvNvhVwoH0m1fyeVk0DS
-sy96Cau1SNG3wWH+TjPYw4iIW86tzLQxv48wpGFcA20ZyuElmAQIS9GtKeba1mwZo1VJMhN2br/a
-4kM4rYzF8cJ5anbJMpQs/6qBG1vmEaagXMBndjrHIwLuUhIf/tmwjJe4XlooL97rc7VSp2LYl5Gu
-TzoKOeG5T+BDo5ahmSWqfroY/rSXhy7j7vNBVxxMvxQn7fABIGdKgoRZnDofeDsth2eVuah7byw5
-A73Z9t4kJCdYCtEQHZNDwB9fHq5HUeAVX+X9szDp50L3XxZJJD30T1N3ExUau/SPGzS8JFxc4gHU
-+JMs7bdSaI9e1i++y7O/bIPhOpdAAQ0a2SlII1pgxhJ7UmcPdZIu47gnX4Y+U8Og281e5gU1EWXc
-VOYkB2nDEVsHBSAmMy35ITp/SXOKeJBWuQ+TW6G6uTxZf57685mgdwbgfRhU/Q0FLtf44PDyH6HV
-Q/PI06CaGocsv946RkwVb3Sf25reb6q+vh9WrKkMBpixECO3EScjL2NjeI3mYh6E60jtCIUzBUF1
-ot2Rg6S6yOYyWgnLujy9fvlEQ6KY5ErTs+bYw5eHuGx5VWDExaKrv9waVCvWreMqX25gcPlFdv2k
-jd2LwP4QNps36aGEK5LucXtMShzF0lvDgeb7I5SQVmzchUejONjbhqHFv9g+f/WkvTJGZ+RDGmFR
-cPcAbBl+5xQfRp0mZCMNmcMyDt22T7Md6K/6oXlGmZZOLDV9q2ORtMaByLCnk+zRu7m8X9WHwyHI
-JWxKgKB7XKs6FkegF+V/TWhtW0OwcZGM/mYfS19obGMdQ5cbyVYb9vMWYSs3dyBV1ssyRnmjL74v
-AgabMxobIpFNLQTH2HOukZU36ae5EfogSZ0qKlsbEwJNJdlx3GuDWSx69o/JCVgU11ikjaLb3vUD
-lUdLvHQxrLvLHDUMscmiamqt/onQm/tm5xP/FjaXQiw2g78262Tqb5rGk62zLyExHhsXmt4+eGcl
-Ay52IyhPxjH5UK7BZ8u3uh1M1k+MMQBqYksHN4gYaNQQZnQdCXqXAN/fVAOm6MC4gNVaDG4j5CC9
-UrYxMYownBn2oy4XW9wlOzSOiuwSGY9YuCHm5YVOgawD5nd1kg/sLXeYGuvqNydvfuFgxhAOrpRK
-t40phJaGVN38qjKJ/kERrURfh/N6nZDNRKcxlgFXe2hrSUq6jKSHnlh+Sm25+iCWULvACAmMzHAE
-NVazyVq2m0HxzeUJWqViu3CWL8tOG5FpoPlht/cp98tRRXR6jhKkMO2SCDpNYo3/pC4FaWPN0A4c
-Uvgh5QAhyn0x2Lil3Kzyry4T9rEMcYS5an0N7HhSGaToAnb3joMLOJbucAJhiOlv3G7lwTk/Xvsq
-fzOIKu5lCgnac1DsjSwAWWbqwYBYKXBXiONincutspij3BhUsPdzAa7liYq9fPgYBszZoN4orydi
-gCgREFPCbDusjytKHRx5bccGaJ+00F6MJ4zyeJ58dDFUcEdKNsCoHMSKJNvd8AAc0mTDljo37DlW
-e9r8amMQ4A0dy6pkPwftBgqfI6HlrK4+88LnVGKFGARBwMkJ2eU+M7qfW6WBViXa5AgOgZDimuhX
-0vqC6H2d7t1lI+r9700TxaNWL/+Smlaw18RiKIK+yebQek9hFsXRJgcVUhMVsIrgjXN2E9pWe7sm
-DRdZf+/OTTPB9gomnqFrK1SpYqWOwMhHbmNEJ9n9uMhu1B446jFQwh0TXqZ05mxzrFIS4guwJqER
-FGsdbLmjgl7JWKfrOJx8Gk7HStnqYEUrFND5fLOQRHnhOQH0TNXcgCiqr2hxAl66CiaIrKHz73jl
-Ce1Et/ae54PX4VJa/PaThITQHaKGex8PVL9cZ12Y0PvdLSnMDRyIunamoADFu9Tz3rrnMRFxRcqs
-U1QRyOSeSRcYKr0WitzLKdIo8iMtdervP6nvbpy9SCdpDKCxJuQC5z3vftGTiazTW6nAscbdzzMC
-xeGKCcCrl8yryfAzFHpp6rOZxqPNkCwK9o3qhF1rMCvDT7kI2D0IJ6DHWkTqweWUKiJUv8UNz6lo
-LgJYQRZ7DyBE9yzixE4YyNX3g4aDoz9BgP5hrAGts3qJK4kBZikY1GsQKM6ZPae7CcaDQUCOG9Ys
-juW/mg6MdISIViji/AobedgY+t1wX2jfJqCJ3oAo+cZevr8b80qft3NqScQUx4xVEmTPZC8IfU4t
-w6wyqch2ifb0lfaSTUFUnXgHbveS2UM33FJHkVzSH/22amcp33kw8bmM0AGHxTjbhU9VHrDfxO30
-O8o0ztf3DaJWM0/k+fSHPcJfY0TuQ6/TbRUEJgNXjLpOxAzS3tAtabv2tnA5gU9EPSPNNbohw+TK
-iSXFtbtUs//nBPAN3lurzU/QaylNyw45yfTvvj9o4ww7wxF74me84+6C+63S94WAwBig1oNRW3ar
-Ynv2NRp0td+GZsWeWPrP4PKXPT+oRjwR92kPDj/mdANmAQZw6K1ioW41eUAdDVitrVnwg2IRp8K2
-brK0nieUjqAPT/ztaoHPs1LF3TQ3xrkwMP1bzaRTDsVcxJ7iNkGo/IO2kQvKjKqsMkgPHWqLIhAn
-915qlmZOVlXXWnFy74qtiZgcN1b5FW==
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Verify Your Email Address</title>
+</head>
+<body style="margin:0; padding:0; background:#f3f4f6; font-family:Arial, Helvetica, sans-serif; color:#111827;">
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:#f3f4f6; padding:32px 12px;">
+        <tr>
+            <td align="center">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width:560px; background:#ffffff; border-radius:12px; overflow:hidden;">
+                    <tr>
+                        <td align="center" style="padding:28px 24px; border-bottom:1px solid #e5e7eb;">
+                            <h1 style="margin:0; font-size:24px; line-height:1.3; color:#111827;"><?php echo e(config('app.name', 'BitorePOS'), false); ?></h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="padding:34px 34px 26px;">
+                            <div style="width:64px; height:64px; border-radius:50%; background:#dbeafe; color:#0ea5e9; line-height:64px; font-size:30px; margin:0 auto 24px;">&#9993;</div>
+                            <h2 style="margin:0 0 16px; font-size:22px; line-height:1.35; color:#111827;">Verify Your Email Address</h2>
+                            <p style="margin:0 0 24px; font-size:15px; line-height:1.7; color:#374151;">
+                                Welcome to <?php echo e(config('app.name', 'BitorePOS'), false); ?>! Please confirm your email address by clicking the button below.
+                            </p>
+                            <a href="<?php echo e($verificationUrl, false); ?>" style="display:inline-block; background:#2563eb; color:#ffffff; text-decoration:none; font-size:15px; font-weight:700; padding:14px 30px; border-radius:8px;">Confirm Email</a>
+                            <p style="margin:26px 0 0; font-size:13px; line-height:1.6; color:#64748b;">
+                                This link will expire in 24 hours. If you didn't create an account, you can safely ignore this email.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding:24px 34px; border-top:1px solid #e5e7eb;">
+                            <p style="margin:0 0 10px; font-size:12px; line-height:1.5; color:#94a3b8; text-align:center;">
+                                If the button doesn't work, copy and paste this link into your browser:
+                            </p>
+                            <p style="margin:0; font-size:12px; line-height:1.6; text-align:center; word-break:break-all;">
+                                <a href="<?php echo e($verificationUrl, false); ?>" style="color:#2563eb;"><?php echo e($verificationUrl, false); ?></a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="padding:22px 24px; background:#f8fafc; color:#94a3b8; font-size:12px; line-height:1.6;">
+                            &copy; <?php echo e(date('Y'), false); ?> <?php echo e(config('app.name', 'BitorePOS'), false); ?><br>
+                            Manage your fuel station efficiently
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

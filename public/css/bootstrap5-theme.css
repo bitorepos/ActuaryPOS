@@ -1431,7 +1431,9 @@ html.dark-theme .pos-create-page .pos_product_div2 > .table-responsive #pos_tabl
 }
 /* Slim mode: discount inputs should not over-expand */
 #purchase_entry_table > tbody > tr > td .multi-input .inline_discounts,
-#purchase_entry_table > tbody > tr > td .multi-input .inline_discounts2 {
+#purchase_entry_table > tbody > tr > td .multi-input .inline_total_discounts,
+#purchase_entry_table > tbody > tr > td .multi-input .inline_discounts2,
+#purchase_entry_table > tbody > tr > td .multi-input .inline_total_discounts2 {
     max-width: 70px;
 }
 

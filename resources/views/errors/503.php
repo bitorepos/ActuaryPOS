@@ -1,60 +1,41 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
+
+<?php $__env->startSection('title', config('app.name', 'BitorePOS')); ?>
+
+<?php $__env->startSection('content'); ?>
+    <style type="text/css">
+        .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                margin-top: 10%;
+            }
+        .title {
+                font-size: 84px;
+            }
+        .tagline {
+                font-size:25px;
+                font-weight: 300;
+                text-align: center;
+            }
+
+        @media only screen and (max-width: 600px) {
+            .title{
+                font-size: 38px;
+            }
+            .tagline {
+                font-size:18px;
+            }
+        }
+    </style>
+    <div class="title flex-center" style="font-weight: 600 !important;">
+        Upgrade in Progress...
+    </div>
+    <p class="tagline">
+        Please wait while we upgrade the site to new version.<br>
+        For Sales & Support Queries:<br>
+        Hafiz Asif<br>
+        +91000000000
+    </p>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.home', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>

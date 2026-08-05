@@ -1,35 +1,12 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
-2zIW+cHFXGzFC9aJ/s6sHOwyHTjunW==
+<?php $is_excel = true; ?>
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="27" style="font-size:14px; font-weight:bold;">Stock Value Report - Location Details</th>
+        </tr>
+        <tr><td colspan="27"></td></tr>
+    </thead>
+</table>
+
+<?php echo $__env->make('report.partials.stock_value_location_details_data', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>

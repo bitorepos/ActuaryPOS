@@ -1,81 +1,49 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
-f6NhjQ4=
+<!-- Numpad Modal -->
+<div class="modal fade" tabindex="-1" role="dialog" id="numpad_modal">
+	<div class="modal-dialog modal-sm" role="document" style="padding-top:10%">
+		<div class="modal-content">
+			
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-12 pr-5" style="padding-left: 11px;">
+						<div class="col-12">
+							<div class="mb-3">
+								<input class="form-control form-control-lg" data-rule-min-value="0" data-msg-min-value="Min Allowed is 0.00" name="numpad_input_value" type="text" value="0.00" id="numpad_input_value">
+							</div>
+						</div>
+
+						<div class="numpad-grid">
+                            <div class="row g-2 mb-2">
+                                <div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value="7">7</button></div>
+                                <div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value="8">8</button></div>
+                                <div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value="9">9</button></div>
+                            </div>
+                            <div class="row g-2 mb-2">
+                                <div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value="4">4</button></div>
+                                <div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value="5">5</button></div>
+                                <div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value="6">6</button></div>
+                            </div>
+                            <div class="row g-2 mb-2">
+                                <div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value="1">1</button></div>
+                                <div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value="2">2</button></div>
+                                <div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value="3">3</button></div>
+                            </div>
+                            <div class="row g-2">
+                                <div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value="0">0</button></div>
+                                <div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value=".">.</button></div>
+                                <div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value="plus_minus">+/-</button></div>
+                            </div>
+							<div class="row g-2 mt-2">
+								<div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value="apply"><i class="fas fa-check"></i><br>OK</button></div>
+								<div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value="back"><i class="fas fa-arrow-left"></i><br>Back</button></div>
+								<div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value="close"><i class="fas fa-times"></i><br>Close</button></div>
+							</div>
+                        </div>
+
+					</div>
+				</div>
+			</div>
+			
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

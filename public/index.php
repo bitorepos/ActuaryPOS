@@ -43,18 +43,7 @@ require __DIR__.'/../vendor/autoload.php';
 | to this client's browser, allowing them to enjoy our application.
 |
 */
-//FOR OFFLINE
-// $domain = $_SERVER['HTTP_HOST'];
-// $domain = str_replace('www.', '', $domain);
-// $envPath = __DIR__ . '/../subdomains/';
-// $envFile = $envPath . '.env.' . $domain;
-// if (file_exists($envFile)) {
-//   $envFile = '/subdomains/.env.' . $domain;
-// } else {
-// 	$envFile = '.env';
-// }
-
-// // Load the selected environment file
+// Load the selected environment file
 // $app = require_once __DIR__.'/../bootstrap/app.php';
 // $app->loadEnvironmentFrom($envFile);
 

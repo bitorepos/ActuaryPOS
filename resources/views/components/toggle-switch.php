@@ -1,33 +1,14 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
-gCcKCY0=
+<div class="col-2">
+  <label class="switch-light switch-candy" onclick="">
+      <input type="checkbox" name="<?php echo e($name, false); ?>" <?php if($checked): ?> checked <?php endif; ?>>
+      <span>
+          <span></span>
+          <span></span>
+          <a></a>
+      </span>
+  </label>
+</div>
+<div class="col-10">
+  <?php echo e($label, false); ?>
+
+</div>

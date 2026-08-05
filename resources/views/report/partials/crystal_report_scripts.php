@@ -1,68 +1,74 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
+
+<script>
+    (function () {
+        var zoom = 1;
+        var zoomLabel = document.getElementById('zoomLabel');
+        var pages = Array.prototype.slice.call(document.querySelectorAll('.cr-sheet'));
+        var totalPages = pages.length;
+        var pageInput = document.getElementById('pageInput');
+
+        function applyZoom() {
+            pages.forEach(function (p) { p.style.zoom = zoom; });
+            zoomLabel.textContent = Math.round(zoom * 100) + '%';
+        }
+        function setZoom(z) {
+            zoom = Math.min(2.5, Math.max(0.4, z));
+            applyZoom();
+        }
+
+        document.getElementById('zoomIn').addEventListener('click', function () { setZoom(zoom + 0.1); });
+        document.getElementById('zoomOut').addEventListener('click', function () { setZoom(zoom - 0.1); });
+        document.getElementById('zoomReset').addEventListener('click', function () { setZoom(1); });
+
+        function fitWidth() {
+            if (!pages.length) return;
+            var avail = window.innerWidth - 60;
+            var sheetW = pages[0].offsetWidth;
+            if (sheetW > avail) {
+                setZoom(avail / sheetW);
+            } else {
+                setZoom(1);
+            }
+        }
+
+        function goToPage(n) {
+            n = Math.min(totalPages, Math.max(1, n));
+            var target = document.getElementById('crPage' + n);
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                pageInput.value = n;
+            }
+        }
+        document.getElementById('prevPage').addEventListener('click', function () {
+            goToPage((parseInt(pageInput.value) || 1) - 1);
+        });
+        document.getElementById('nextPage').addEventListener('click', function () {
+            goToPage((parseInt(pageInput.value) || 1) + 1);
+        });
+        pageInput.addEventListener('change', function () {
+            goToPage(parseInt(pageInput.value) || 1);
+        });
+
+        var ticking = false;
+        window.addEventListener('scroll', function () {
+            if (ticking) return;
+            ticking = true;
+            window.requestAnimationFrame(function () {
+                var mid = window.scrollY + (window.innerHeight / 2);
+                var current = 1;
+                for (var i = 0; i < pages.length; i++) {
+                    if (pages[i].offsetTop <= mid) current = i + 1;
+                }
+                if (document.activeElement !== pageInput) {
+                    pageInput.value = current;
+                }
+                ticking = false;
+            });
+        });
+
+        document.getElementById('printBtn').addEventListener('click', function () { window.print(); });
+        document.getElementById('closeBtn').addEventListener('click', function () { window.close(); });
+
+        window.addEventListener('load', fitWidth);
+    })();
+</script>

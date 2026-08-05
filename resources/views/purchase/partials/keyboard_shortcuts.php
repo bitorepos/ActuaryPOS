@@ -1,95 +1,110 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
+<script type="text/javascript">
+	$(document).ready( function() {
+		//Shortcuts to go recent product quantity
+		<?php if(!empty($shortcuts["pos"]["recent_product_quantity"])): ?>
+			shortcut_length_prev = 0;
+			shortcut_position_now = null;
+
+			Mousetrap.bind('<?php echo e($shortcuts["pos"]["recent_product_quantity"], false); ?>', function(e, combo) {
+				
+				var length_now = $('table#purchase_entry_table tr').length;
+
+				if(length_now != shortcut_length_prev){
+					shortcut_length_prev = length_now;
+					shortcut_position_now = length_now;
+				} else {
+					shortcut_position_now = shortcut_position_now - 1;
+				}
+
+				var last_qty_field = $('table#purchase_entry_table tr').eq(shortcut_position_now - 1).contents().find('input.purchase_quantity');
+				if(last_qty_field.length >=1){
+					last_qty_field.focus().select();
+				} else {
+					shortcut_position_now = length_now + 1;
+					Mousetrap.trigger('<?php echo e($shortcuts["pos"]["recent_product_quantity"], false); ?>');
+				}
+			});
+
+			//On focus of quantity field go back to search when stop typing
+			// var timeout = null;
+			// $('table#purchase_entry_table').on('focus', 'input.purchase_quantity', function () {
+			//     var that = this;
+
+			//     $(this).on('keyup', function(e){
+
+			//     	if (timeout !== null) {
+			//         	clearTimeout(timeout);
+			//     	}
+
+			//     	var code = e.keyCode || e.which;
+			//     	if (code != '9') {
+   //  					timeout = setTimeout(function () {
+			//         		$('input#search_product').focus().select();
+			//     		}, 5000);
+   //  				}
+			//     });
+			// });
+		<?php endif; ?>
+
+		//shortcut to go to add new products
+		<?php if(!empty($shortcuts["pos"]["add_new_product"])): ?>
+			Mousetrap.bind('<?php echo e($shortcuts["pos"]["add_new_product"], false); ?>', function(e) {
+				$('input#search_product').focus().select();
+			});
+		<?php endif; ?>
+		
+		keyBindingEnabled = true;
+		//shortcut for product search screen
+		Mousetrap.bind('f10', function(e) {
+                e.preventDefault();
+                if (keyBindingEnabled) {
+                    keyBindingEnabled = false;
+                    $('button#open_products_search_modal').trigger('click');
+                    setTimeout(() => {
+                        keyBindingEnabled = true;
+                    }, 2000);
+                }
+		});
+	});
+	$(document).on('keydown', '#search_product', function(event) {
+		if (event.key === 'Tab') {
+			event.preventDefault();
+			if (typeof focus_last_purchase_product_quantity === 'function' && focus_last_purchase_product_quantity()) {
+				return;
+			}
+
+			let lastQuantityElement = $('tr.product_row').find('input.purchase_quantity').last();
+			if (lastQuantityElement.length) {
+				lastQuantityElement.trigger('click').focus().select();
+			}else{
+				if (typeof focus_purchase_product_search === 'function') {
+					focus_purchase_product_search();
+				} else {
+					$('#search_product').focus();
+				}
+			}
+		}
+	});
+	$(document).on('keydown', '.product_row input:last', function(event) {
+		if (event.key === 'Tab') {
+			event.preventDefault();
+			if (typeof focus_purchase_product_search === 'function') {
+				focus_purchase_product_search();
+			} else {
+				$('#search_product').focus();
+			}
+		}
+	});
+
+	$(document).on('keydown', '.product_row input[type=text]', function(event) {
+		if (event.key === 'Enter') {
+			event.preventDefault();
+			if (typeof focus_purchase_product_search === 'function') {
+				focus_purchase_product_search();
+			} else {
+				$('#search_product').focus();
+			}
+		}
+	});
+
+</script>

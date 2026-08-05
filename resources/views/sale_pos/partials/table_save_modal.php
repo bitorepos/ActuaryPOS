@@ -1,36 +1,27 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
-HxdGVWzAikUkalq13W==
+<div class="modal fade" id="table_save_modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+<div class="modal-dialog modal-sm" role="document" style="padding-top:10%">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title text-center">
+					 Table Name
+				</h4>
+			</div>
+			<div class="modal-body">
+				<div class="row" style="display: flex;align-items: center; justify-content:space-evenly">
+					<input type="hidden" id="qm_table_id" value=""> 
+					<div class="d-grid gap-2">
+						<button class="btn btn-lg btn-primary" style="padding:20px" id="pos-table-draft">
+							<i class="fas fa-save"></i><br>Save
+						</button>
+						<button class="btn btn-lg btn-warning" style="padding:20px" id="pos-table-draft" data-print_kot="true">
+							<i class="fas fa-print"></i><br> Print
+						</button>
+						<button class="btn btn-lg btn-danger" style="padding:20px" data-bs-dismiss="modal">
+							<i class="fas fa-window-close"></i><br> Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div>

@@ -1,44 +1,39 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
-E5dp+Udi2h0DDMhh8H/BQxJA8gkqqBRe
+<div class="row row_options collapse">
+	<div class="col-md-12 row_option cursor-pointer" data-ratio="12">
+		<div class="col-md-12 bg-primary">1</div>
+	</div>
+
+	<div class="col-md-12 row_option cursor-pointer" data-ratio="6-6">
+		<div class="col-md-6 bg-primary">1/2</div>
+		<div class="col-md-6 bg-primary">1/2</div>
+	</div>
+	<div class="col-md-12 row_option cursor-pointer" data-ratio="6-3-3">
+		<div class="col-md-6 bg-primary">1/2</div>
+		<div class="col-md-3 bg-primary">1/3</div>
+		<div class="col-md-3 bg-primary">1/3</div>
+	</div>
+	<div class="col-md-12 row_option cursor-pointer" data-ratio="3-3-6">
+		<div class="col-md-3 bg-primary">1/3</div>
+		<div class="col-md-3 bg-primary">1/3</div>
+		<div class="col-md-6 bg-primary">1/2</div>
+	</div>
+	<div class="col-md-12 row_option cursor-pointer" data-ratio="4-4-4">
+		<div class="col-md-4 bg-primary">1/3</div>
+		<div class="col-md-4 bg-primary">1/3</div>
+		<div class="col-md-4 bg-primary">1/3</div>
+	</div>
+	<div class="col-md-12 row_option cursor-pointer" data-ratio="3-3-3-3">
+		<div class="col-md-3 bg-primary">1/4</div>
+		<div class="col-md-3 bg-primary">1/4</div>
+		<div class="col-md-3 bg-primary">1/4</div>
+		<div class="col-md-3 bg-primary">1/4</div>
+	</div>
+	<div class="col-md-12 row_option cursor-pointer" data-ratio="3-9">
+		<div class="col-md-3 bg-primary">1/4</div>
+		<div class="col-md-9 bg-primary">3/4</div>
+	</div>
+	<div class="col-md-12 row_option cursor-pointer" data-ratio="9-3">
+		<div class="col-md-9 bg-primary">3/4</div>
+		<div class="col-md-3 bg-primary">1/4</div>
+	</div>
+</div>

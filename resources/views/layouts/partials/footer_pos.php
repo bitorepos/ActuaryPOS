@@ -1,43 +1,11 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
+<!-- Main Footer -->
+  <footer class="no-print text-center text-info">
+    <!-- To the right -->
+    <!-- <div class="float-end d-none d-sm-inline">
+      Anything you want
+    </div> -->
+    <!-- Default to the left -->
+    <small>
+    	<b><?php echo e(config('app.name', 'BitorePOS'), false); ?> - V<?php echo e(config('author.app_version'), false); ?> | Copyright &copy; <?php echo e(date('Y'), false); ?> All rights reserved.</b>
+    </small>
+</footer>

@@ -41,6 +41,77 @@
     justify-content: flex-end;
 }
 
+/* --- Module Dashboard Shortcuts --- */
+.module-dashboard-bar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: -6px 0 14px;
+}
+.module-dashboard-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    min-height: 34px;
+    padding: 8px 13px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.28);
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.2;
+    white-space: nowrap;
+    text-decoration: none !important;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.14);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+    transition: all 0.2s ease;
+}
+.module-dashboard-btn:nth-child(10n+1) {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+.module-dashboard-btn:nth-child(10n+2) {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+.module-dashboard-btn:nth-child(10n+3) {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+.module-dashboard-btn:nth-child(10n+4) {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+}
+.module-dashboard-btn:nth-child(10n+5) {
+    background: linear-gradient(135deg, #fa709a, #fee140);
+}
+.module-dashboard-btn:nth-child(10n+6) {
+    background: linear-gradient(135deg, #36d1dc, #5b86e5);
+}
+.module-dashboard-btn:nth-child(10n+7) {
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+}
+.module-dashboard-btn:nth-child(10n+8) {
+    background: linear-gradient(135deg, #4776e6, #8e54e9);
+}
+.module-dashboard-btn:nth-child(10n+9) {
+    background: linear-gradient(135deg, #00b09b, #96c93d);
+}
+.module-dashboard-btn:nth-child(10n) {
+    background: linear-gradient(135deg, #ec6f66, #f3a183);
+}
+.module-dashboard-btn i {
+    color: #fff;
+    font-size: 14px;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.14);
+}
+.module-dashboard-btn:hover,
+.module-dashboard-btn:focus {
+    border-color: rgba(255,255,255,0.55);
+    color: #fff;
+    filter: brightness(1.04) saturate(1.08);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+}
+
 /* --- Quick Actions --- */
 .quick-actions-bar {
     margin-bottom: 20px;

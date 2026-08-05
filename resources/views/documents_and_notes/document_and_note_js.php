@@ -1,29 +1,17 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
+<script type="text/javascript">
+	$(document).ready(function(){
+	    getDocAndNoteIndexPage();
+	    var docusNoteModal = $('.docus_note_modal');
+	    if (docusNoteModal.length && docusNoteModal.parent().get(0).tagName.toLowerCase() !== 'body') {
+	        docusNoteModal.appendTo('body');
+	    }
+	    setTimeout(() => {
+	        initializeDocumentAndNoteDataTable();
+	        // Refresh footer if Documents & Notes tab is active
+	        var activeTab = document.querySelector('.nav-tabs .nav-link.active');
+	        if (activeTab && activeTab.getAttribute('href') === '#documents_and_notes_tab' && typeof window.contactViewFooterSetTab === 'function') {
+	            window.contactViewFooterSetTab('documents_and_notes_tab');
+	        }
+	    }, 200);
+	});
+</script>

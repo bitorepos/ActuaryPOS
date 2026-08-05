@@ -52,9 +52,14 @@ return [
 
     'product.view' => 'View product',
     'product.view_stock_history' => 'View product history',
+    'product.view_stock_history.view_all_locations' => 'View product history for All Locations',
     'product.create' => 'Add product',
     'product.update' => 'Edit product',
     'product.delete' => 'Delete product',
+    'product_note.view' => 'View product note',
+    'product_note.create' => 'Add product note',
+    'product_note.update' => 'Edit product note',
+    'product_note.delete' => 'Delete product note',
 
     'product_search.show_selling_price' => 'Show Selling Price',
     'product_search.show_purchase_price' => 'Show Purchase Price',
@@ -90,10 +95,12 @@ return [
     'stock_adjustment.update' => 'Edit Stock Adjustment',
     'stock_adjustment.delete' => 'Delete Stock Adjustment',
 
-    'sell.view' => 'View POS sell',
+    'sell.view' => 'View All POS sell',
+    'sell.view_own' => 'View Own POS sell',
     'sell.create' => 'Add POS sell',
     'sell.update' => 'Edit POS sell',
     'sell.delete' => 'Delete POS sell',
+    'sell.change_location' => 'Change sell location',
 
     'payment_btn.hide_draft' => 'Hide Draft Button',
     'payment_btn.hide_quotation' => 'Hide Quotation Button',

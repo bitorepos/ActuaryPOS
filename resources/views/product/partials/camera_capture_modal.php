@@ -1,116 +1,49 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
-WAJ9XdeRvKsb4GNyNwB5drRx
+<!-- Camera Capture Modal -->
+<div class="modal fade" id="camera_capture_modal" tabindex="-1" aria-labelledby="camera_capture_modal_label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="camera_capture_modal_label">
+                    <i class="fas fa-camera"></i> <?php echo app('translator')->get('lang_v1.capture_product_image'); ?>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <div id="camera_container">
+                    <video id="camera_preview" autoplay playsinline class="w-100 rounded" style="max-height: 400px; object-fit: cover; display: none;"></video>
+                    <canvas id="camera_canvas" style="display: none;"></canvas>
+                    <div id="captured_image_container" style="display: none;">
+                        <img id="captured_image_preview" class="w-100 rounded" style="max-height: 400px; object-fit: contain;" alt="Captured">
+                    </div>
+                    <div id="camera_loading" class="py-5">
+                        <i class="fas fa-spinner fa-spin fa-2x"></i>
+                        <p class="mt-2 text-muted"><?php echo app('translator')->get('lang_v1.starting_camera'); ?>...</p>
+                    </div>
+                    <div id="camera_error" style="display: none;" class="py-5">
+                        <i class="fas fa-exclamation-triangle fa-2x text-warning"></i>
+                        <p class="mt-2 text-danger" id="camera_error_msg"></p>
+                    </div>
+                </div>
+                <div id="camera_switch_container" class="mt-2" style="display: none;">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" id="switch_camera_btn">
+                        <i class="fas fa-sync-alt"></i> <?php echo app('translator')->get('lang_v1.switch_camera'); ?>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-primary" id="capture_photo_btn" style="display: none;">
+                    <i class="fas fa-camera"></i> <?php echo app('translator')->get('lang_v1.take_photo'); ?>
+                </button>
+                <button type="button" class="btn btn-warning" id="retake_photo_btn" style="display: none;">
+                    <i class="fas fa-redo"></i> <?php echo app('translator')->get('lang_v1.retake'); ?>
+                </button>
+                <button type="button" class="btn btn-success" id="use_photo_btn" style="display: none;">
+                    <i class="fas fa-check"></i> <?php echo app('translator')->get('lang_v1.use_photo'); ?>
+                </button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    <i class="fas fa-times"></i> <?php echo app('translator')->get('messages.cancel'); ?>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

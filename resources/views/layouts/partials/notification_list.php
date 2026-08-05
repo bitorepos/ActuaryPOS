@@ -1,84 +1,34 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
+<?php if(!empty($notifications_data)): ?>
+  <?php $__currentLoopData = $notifications_data; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $notification_data): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+    <?php
+      $is_reindex_notification = ($notification_data['type'] ?? null) === \App\Notifications\ReindexProgressNotification::class;
+      $can_cancel_reindex = $is_reindex_notification && in_array($notification_data['status'] ?? null, ['pending', 'processing']);
+    ?>
+    <li class="<?php if(empty($notification_data['read_at'])): ?> unread <?php endif; ?> notification-li" style="border-bottom:1px solid #f0f0f0;">
+      <?php if($can_cancel_reindex): ?>
+        <div style="display:flex;align-items:flex-start;padding:10px 14px;color:inherit;width:100%;box-sizing:border-box;gap:10px;">
+          <i class="notif-icon <?php echo e($notification_data['icon_class'] ?? '', false); ?>" style="flex-shrink:0;float:none;margin-right:2px;"></i>
+          <div style="flex:1;min-width:0;">
+            <span class="notif-info" style="display:block;white-space:normal;word-break:break-word;"><?php echo $notification_data['msg'] ?? ''; ?></span>
+            <span class="time" style="margin-left:0;"><?php echo e($notification_data['created_at'], false); ?></span>
+          </div>
+          <button type="button" class="btn btn-xs btn-danger cancel_reindex_stock_quantity" style="flex-shrink:0;margin-top:2px;">Cancel <i class="hide fas fa-spinner fa-spin fa-fw"></i></button>
+        </div>
+      <?php else: ?>
+        <a href="<?php echo e($notification_data['link'] ?? '#', false); ?>"
+          <?php if(isset($notification_data['show_popup'])): ?> class="show-notification-in-popup" <?php endif; ?>
+          style="display:flex;align-items:flex-start;padding:10px 14px;text-decoration:none;color:inherit;width:100%;box-sizing:border-box;">
+          <i class="notif-icon <?php echo e($notification_data['icon_class'] ?? '', false); ?>" style="flex-shrink:0;float:none;margin-right:12px;"></i>
+          <div style="flex:1;min-width:0;">
+            <span class="notif-info" style="display:block;white-space:normal;word-break:break-word;"><?php echo $notification_data['msg'] ?? ''; ?></span>
+            <span class="time" style="margin-left:0;"><?php echo e($notification_data['created_at'], false); ?></span>
+          </div>
+        </a>
+      <?php endif; ?>
+    </li>
+  <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+<?php else: ?>
+  <li class="text-center no-notification notification-li" style="padding:16px;">
+    <?php echo app('translator')->get('lang_v1.no_notifications_found'); ?>
+  </li>
+<?php endif; ?>

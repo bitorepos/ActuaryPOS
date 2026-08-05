@@ -1,94 +1,32 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
-Z26tNQaKMCQy
+
+<?php $__env->startSection('title', 'Installation Complete'); ?>
+<?php $__env->startSection('subtitle', 'Step 3 of 3 · All done!'); ?>
+
+<?php $__env->startSection('content'); ?>
+<div class="install-card">
+    <div class="install-card-body text-center">
+        <?php echo $__env->make('install.partials.nav', ['active' => 'success'], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+
+        <div class="install-success-icon">
+            <i class="bi bi-check2"></i>
+        </div>
+
+        <h2 class="mb-2" style="font-weight:700;">You're all set!</h2>
+        <p class="text-muted mb-4">
+            <strong><?php echo e(config('app.name', 'POS'), false); ?></strong> has been installed successfully.<br>
+            All configuration details are saved in the <code>.env</code> file and can be updated at any time.
+        </p>
+
+        <div class="d-flex flex-wrap justify-content-center gap-2">
+            <a href="<?php echo e(registration_url(), false); ?>" class="btn btn-primary btn-lg">
+                <i class="bi bi-person-plus me-1"></i> Register Now
+            </a>
+            <a href="https://programmaticsurface.com/docs/getting-started/" target="_blank" rel="noopener" class="btn btn-default">
+                <i class="bi bi-journal-text me-1"></i> Read Documentation
+            </a>
+        </div>
+    </div>
+</div>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.install', ['no_header' => 1], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>

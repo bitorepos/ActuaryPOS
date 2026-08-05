@@ -1,83 +1,28 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
+<?php
+    $order = ['install' => 1, 'server' => 2, 'app_details' => 3, 'success' => 4];
+    $currentIdx = $order[$active ?? 'install'] ?? 1;
+    $steps = [
+        ['key' => 'install',     'num' => 1, 'label' => 'Instructions'],
+        ['key' => 'app_details', 'num' => 2, 'label' => 'Configuration'],
+        ['key' => 'success',     'num' => 3, 'label' => 'Finish'],
+    ];
 ?>
-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
+<ul class="install-stepper">
+    <?php $__currentLoopData = $steps; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $step): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+        <?php
+            $idx = $order[$step['key']];
+            $state = $idx < $currentIdx ? 'done' : ($idx == $currentIdx ? 'active' : '');
+        ?>
+        <li class="<?php echo e($state, false); ?>">
+            <span class="step-num">
+                <?php if($state === 'done'): ?>
+                    <i class="bi bi-check2"></i>
+                <?php else: ?>
+                    <?php echo e($step['num'], false); ?>
+
+                <?php endif; ?>
+            </span>
+            <span class="step-label"><?php echo e($step['label'], false); ?></span>
+        </li>
+    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+</ul>

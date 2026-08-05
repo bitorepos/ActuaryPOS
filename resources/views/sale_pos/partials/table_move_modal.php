@@ -1,63 +1,29 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
-Y8p7jctT2BO=
+<div class="modal-dialog modal-sm" role="document" style="padding-top:10%">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title text-center">
+					 Move Table Orders
+				</h4>
+			</div>
+			<div class="modal-body">
+					<div class="mb-3">
+						<label for="move_to_table">Move To:</label>
+						<select class="form-control" id="qm_move_to_table">
+							<?php $__currentLoopData = $tables; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $t): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+								<option value="<?php echo e($t->id, false); ?>"><?php echo e($t->name, false); ?></option>								
+							<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+						</select>
+					</div>
+					<button class="btn btn-lg btn-primary btn-block" id="move_table_orders_btn" style="padding:20px auto;" value="ready">
+						Move
+					</button>
+					<button class="btn btn-lg btn-warning btn-block" id="move_table_orders_btn" data-print='true' style="padding:20px auto;" value="ready">
+						Print
+					</button>
+					<button class="btn btn-lg bg-secondary btn-block" style="padding:20px auto;" data-bs-dismiss="modal">
+						Close
+					</button>
+	
+			</div>			
+		</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->

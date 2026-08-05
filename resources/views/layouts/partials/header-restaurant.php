@@ -1,40 +1,8 @@
-<?php //002cd
-if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
-?>
-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
+<?php $request = app('Illuminate\Http\Request'); ?>
+<div class="row no-print">
+  <div class="col-md-12">
+    <a href="<?php echo e(action([\App\Http\Controllers\HomeController::class, 'index']), false); ?>" title="<?php echo e(__('lang_v1.go_back'), false); ?>" data-bs-toggle="tooltip" data-placement="bottom" class="btn btn-info btn-flat d-none d-sm-inline btn-sm mt-2 me-3 float-end">
+        <strong><i class="fa fa-backward fa-lg"></i></strong>
+    </a>
+  </div>
+</div>
