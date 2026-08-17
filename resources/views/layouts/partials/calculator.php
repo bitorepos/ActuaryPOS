@@ -1,46 +1,74 @@
-<div id="calculator">
-  <div class="row justify-content-center" id="calc">
-    <div class="calcBG col-md-12 text-center">
-      <div class="row mb-2" id="result">
-        <form name="calc" class="w-100">
-          <input type="text" class="form-control text-end bg-light" name="result" readonly>
-        </form>
-      </div>
-
-      <div class="row g-1">
-        <div class="col-3"><button id="allClear" type="button" class="btn btn-danger w-100" onclick="clearScreen()">AC</button></div>
-        <div class="col-3"><button id="clear" type="button" class="btn btn-warning w-100" onclick="clearScreen()">CE</button></div>
-        <div class="col-3"><button id="%" type="button" class="btn btn-secondary w-100" onclick="calEnterVal(this.id)">%</button></div>
-        <div class="col-3"><button id="/" type="button" class="btn btn-secondary w-100" onclick="calEnterVal(this.id)">÷</button></div>
-      </div>
-
-      <div class="row g-1 mt-1">
-        <div class="col-3"><button id="7" type="button" class="btn btn-light w-100" onclick="calEnterVal(this.id)">7</button></div>
-        <div class="col-3"><button id="8" type="button" class="btn btn-light w-100" onclick="calEnterVal(this.id)">8</button></div>
-        <div class="col-3"><button id="9" type="button" class="btn btn-light w-100" onclick="calEnterVal(this.id)">9</button></div>
-        <div class="col-3"><button id="*" type="button" class="btn btn-secondary w-100" onclick="calEnterVal(this.id)">×</button></div>
-      </div>
-
-      <div class="row g-1 mt-1">
-        <div class="col-3"><button id="4" type="button" class="btn btn-light w-100" onclick="calEnterVal(this.id)">4</button></div>
-        <div class="col-3"><button id="5" type="button" class="btn btn-light w-100" onclick="calEnterVal(this.id)">5</button></div>
-        <div class="col-3"><button id="6" type="button" class="btn btn-light w-100" onclick="calEnterVal(this.id)">6</button></div>
-        <div class="col-3"><button id="-" type="button" class="btn btn-secondary w-100" onclick="calEnterVal(this.id)">−</button></div>
-      </div>
-
-      <div class="row g-1 mt-1">
-        <div class="col-3"><button id="1" type="button" class="btn btn-light w-100" onclick="calEnterVal(this.id)">1</button></div>
-        <div class="col-3"><button id="2" type="button" class="btn btn-light w-100" onclick="calEnterVal(this.id)">2</button></div>
-        <div class="col-3"><button id="3" type="button" class="btn btn-light w-100" onclick="calEnterVal(this.id)">3</button></div>
-        <div class="col-3"><button id="+" type="button" class="btn btn-secondary w-100" onclick="calEnterVal(this.id)">+</button></div>
-      </div>
-
-      <div class="row g-1 mt-1">
-        <div class="col-3"><button id="0" type="button" class="btn btn-light w-100" onclick="calEnterVal(this.id)">0</button></div>
-        <div class="col-3"><button id="." type="button" class="btn btn-light w-100" onclick="calEnterVal(this.id)">.</button></div>
-        <div class="col-3"><button id="equals" type="button" class="btn btn-success w-100" onclick="calculate()">=</button></div>
-        <div class="col-3"><button id="blank" type="button" class="btn btn-light w-100" disabled>&nbsp;</button></div>
-      </div>
-    </div>
-  </div>
-</div>
+<?php //002cd
+if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
+?>
+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

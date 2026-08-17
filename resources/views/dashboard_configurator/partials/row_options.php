@@ -1,39 +1,44 @@
-<div class="row row_options collapse">
-	<div class="col-md-12 row_option cursor-pointer" data-ratio="12">
-		<div class="col-md-12 bg-primary">1</div>
-	</div>
-
-	<div class="col-md-12 row_option cursor-pointer" data-ratio="6-6">
-		<div class="col-md-6 bg-primary">1/2</div>
-		<div class="col-md-6 bg-primary">1/2</div>
-	</div>
-	<div class="col-md-12 row_option cursor-pointer" data-ratio="6-3-3">
-		<div class="col-md-6 bg-primary">1/2</div>
-		<div class="col-md-3 bg-primary">1/3</div>
-		<div class="col-md-3 bg-primary">1/3</div>
-	</div>
-	<div class="col-md-12 row_option cursor-pointer" data-ratio="3-3-6">
-		<div class="col-md-3 bg-primary">1/3</div>
-		<div class="col-md-3 bg-primary">1/3</div>
-		<div class="col-md-6 bg-primary">1/2</div>
-	</div>
-	<div class="col-md-12 row_option cursor-pointer" data-ratio="4-4-4">
-		<div class="col-md-4 bg-primary">1/3</div>
-		<div class="col-md-4 bg-primary">1/3</div>
-		<div class="col-md-4 bg-primary">1/3</div>
-	</div>
-	<div class="col-md-12 row_option cursor-pointer" data-ratio="3-3-3-3">
-		<div class="col-md-3 bg-primary">1/4</div>
-		<div class="col-md-3 bg-primary">1/4</div>
-		<div class="col-md-3 bg-primary">1/4</div>
-		<div class="col-md-3 bg-primary">1/4</div>
-	</div>
-	<div class="col-md-12 row_option cursor-pointer" data-ratio="3-9">
-		<div class="col-md-3 bg-primary">1/4</div>
-		<div class="col-md-9 bg-primary">3/4</div>
-	</div>
-	<div class="col-md-12 row_option cursor-pointer" data-ratio="9-3">
-		<div class="col-md-9 bg-primary">3/4</div>
-		<div class="col-md-3 bg-primary">1/4</div>
-	</div>
-</div>
+<?php //002cd
+if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
+?>
+HR+cPmY9W6V0Ktb8CJuLHEDtIuYgagkTnenO+FzXskgP/pzr6sXwRD/T8CJUBn9fGrhNq3iKnn/5
+YWDmpQyaUTAxKwYqCdIUGO0v17at04kpOgcuIxh4NtOXXMpjQQftQ9cRszSO9/NqId6oJj1xy0Zf
+K1O+4Nu705EF4UUBggIonWrsVsMBl0kA92dXmtN3J51cLhhfXVddEpww8zodJ/ej9oKIsr+hz5e8
+5bWEXuUPW9Msn+BEgEfidqVqAoKa7CptPvUodsLXf9CrZivDGaekInwEckbWNAq6jtiVScDPkSlv
+3oU1X3vV8Nc0tMw2HhDqkH29SmNoyJlycITb7A92VqzyQYkuzxjGFkHTrqvIfbaRdx0Vue6D9IJi
+XHytRqzRAct3iTPKiU4QB/2x0Od79acIjg5BBi4tDaNa9+CeWv81KQ3Uex6W+xnNKWhMpoLnZdTq
+4Bnz6kQV1zvClixVDFK9RT8P+eMBWDg+5eV6hVhbHQ/1G4YTGoQ0xkR7eiYaVQY0jwNbgIea2erK
+ho41sPzIKe4UHAs3j1yOyL34XYsdLKErDOv6zNp1hbsGiEUTYUjG3fMSiBlFsZ31pPTmo8F6OIRV
+RytuVfh8NMjSLXm9G+JDqw91c2zNM9CLOBS5HChaI3T6RyaGZDOjmkwbTOxqG4vtmhyezvydYdHD
+o9djwsHtN24bIdhfuQWoZcUK0Ve0Cq32l74DXSrb9/glrt9i8HO5YKp2PwWjL91tngylzBqV9nOp
+J9MCWnCT75YKGFPbB7x/Vbt3Rw4h+ROgOAMRri2IxlhH82X1XIYpEFFv6vPToPwtlh3V5JJ7tKP2
+Lw1A45NCBMmAjGB6iSTaqbdsBSzstKrYKvvAVFwTQMk+OOmSXJr5dgTc+VeBjBQJ/pZblnHUB6pT
+kwUmu3HDUGe6iB+0wWwa9C84JpOSYTxIoXAG7oaI5Dh1jxLgp8QuA4FDUd41kTo4WgMcUDVSs17r
+GI809ZJoPbTpGNHMk/xYdLkj4cdqD0MZq88mO9DRcGXySkeVghJm3ceCn7cs1uI7gGsHfk4FwkDF
+bCQjd+xxmp54SRCNFhy2g8n4AR/SwyearEWK6alUWLcuPPogVlw6nd+LSKAkg3Xk3JU/f5zaZGx8
+LeKKnPS6Y3ZJCitYWxaasBSqn7nXyXC3RUum8onDoS4LUrQCG+A5CrKdC1DxhuMiozEa0JMHKHky
+zKXYgsx9ZTO0Nbl/UGJEUiju0qAHSTmu1MJJ0UryBDLqpt3OhSlM8COgYvaxoV5G7fckASHBOKMa
+yLSW2cowqhaj2mbTMvYG/yWBx3hwHJiOp7dZyt/4dVAkJ31je96wUgtFSaJFphwc+hj3GhD4mpsn
+CoTRLwjWVnK60bGn0u7STzgyPOqtqJ6vkWHe40SEWPoiukIvnTazyyQG0WTbsp86KScIyNXaVPWB
+XnyC4zEWrQ4kYwHi/asl3Jig/riRIVuly74aBqyeI0QjeDHbTKRAjd9mhEqlOM26Q7BIIrDE4GTt
+yxhtGiN1KgAxDzWN3AlS8dNRMFVSEsPfUAOj9yzqkYyDHaNo5au5btB1IoJfx51NGgSXSB7rIoFG
+3Qg1yNnkIV/G1LjvGTLsAWwodRK+1ZfGprlJSQXyGEh8J/9XheUsMwC1xTqtnua8o9tUeUXvkMDr
+pIwyWbqnivcO9P7iTp2rgAZK5UaIY2mQd1XTxzIgqWYW9843hbWvo7Bj8OKj397Yl8kjSa4vLWOR
+NbHkCNwEGDRenbzWGTHLoGs06RTt/O8fJeOLEZ7YL7P/4lLWlasQLTAD8emA5n7/HPbkXu9BJkxY
+9r64crQt3jEHEWeDmXwfZbaFFKw6WW1GrLhg3/cH1hnD3Nl6XmDteONLqEazqjiIbE0kOTvsFwWu
+BczyehjCpnVXmGQWMzZtckxmhjzcq5axltiPW8n/406p702wQcltPcrwdWl1s8qVLLPJcYZpAPTy
+TSL5RF1tycKvhCCPCn51NPeu0/J3P/oZwvOINdkOk1TbnP/noYXzvICb1yeHPdJW7/7GfEI0zw57
+XmeboVFEaXYN5rv6lELavH0sRf7Nh/D7/8odp/97hYrVMbl04hkxpDx4jWwi4vDCnDJPH8B9cnzx
+lqxaQXTqIbc0Fu5dpSnLZGlx2l/YYQhKq0x9Pwehxws02K9lKxrVBFNAE8yADFFm+UatJUHFh+0r
+H8leTjtKQZ4J5DcxP1XKQGg80IfEVidTpDem8O2gsac4CJSJJiyZMR4TxpLuCW9j+LmY52JNrY6e
+5fNAt3hsHt9M0ewu3RyR3Tkezet+RzqRJEdRQUZ5+KUk1DAvXwDd3FkH7PH7/9Uxxt+L3ugPXDUL
+64xyspq8H17DMtc/j8sMd5d2+NclkxUhGv5KvvAy1ynqaSCRApOglxP8/FFUWdQtPUtubEUzUmyp
+RYrWsD9phQF4oVTHha40VxZL5nYuMD2CpZ8UEfF+L1/ee0NdZ0Hhg+MS9f0GUV0DgYWDz+IeBNl7
+pFPQ62CVR9q/xAdT1DtjPo/ZE6BefA2LVCGgxdBEthY7zFZiL85lwLXUC14OKMeeSnO252FKYRcs
+YDhazCrUaRwrXvgLn3Zhs3zjptDxeVNEDXpBhGlTGOp//nqMRINJRFvo9QyZ1BodmgpLtpVliCLv
+4eI6NOS7mogaxAPvrPp+Hk1fPQH/WNc3lHFMtsW2h5P7JMKwSHSLutJOVPJclqyKZOX7LBJAu74N
+sG1S7Wz8rLL0d0rZIwX0vjQUArWh/r3gL0LUp0I00KfAUdQtFP07Q/mqgaywbnJWf8+FjrUcgzAc
+6L13+9DEx6ukkyEdEPoeOle/7LGYmIQR4JTv1Bl2OV5xYkQEUsYOA9wwX9vGS6se4pgn9TLQXbVU
+eraMvou/V05+7t79As3zYA1dmET8GelLbYedqGOLteSLvG13dYavZutGjVoLmLCjL6ncme5sCmsp
+8jTUah/8n8I80KhQq0yBnIVqTzmEucURKZL6ZqxNHL0w4uT5FVR9FeEaVW+O2WeYbYS8Twna9/tK
+JyIj2T3UW5ExQD3BfW==

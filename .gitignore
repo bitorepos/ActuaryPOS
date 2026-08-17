@@ -19,6 +19,9 @@ npm-debug.log
 /public/uploads/temp
 /public/uploads/quick_menu
 /public/uploads/[0-9]*/
+/public/uploads/*.*/
+uploads/*.*/
+
 client-license.txt
 .scribe
 .sguard
@@ -32,6 +35,8 @@ Dockerfile
 docker-compose.yml
 run_print_server.sh
 .DS_Store
+.DS_STORE
+
 .env.before_lerd
 .package-lock.json
 .package.json

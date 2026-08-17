@@ -31,5 +31,6 @@
     "Rental": true,
     "ImportManagement": true,
     "FijiFRCS": true,
-    "FuelStation": true
+    "FuelStation": true,
+    "Slaughterhouse": true
 }

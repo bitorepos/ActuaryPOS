@@ -1,42 +1,63 @@
-<script type="text/javascript">
-    if (typeof window.getAdminReportDateRangeSettings !== 'function') {
-        window.getAdminReportDateRangeSettings = function(defaultSelector) {
-            var reportDateRangeSettings = $.extend({}, dateRangeSettings);
-            var dateRangeDefault = $(defaultSelector || '#reports_filter_date_range').val();
-
-            if (dateRangeDefault == 'today') {
-                reportDateRangeSettings.startDate = moment();
-                reportDateRangeSettings.endDate = moment();
-            } else if (dateRangeDefault == 'yesterday') {
-                reportDateRangeSettings.startDate = moment().subtract(1, 'days');
-                reportDateRangeSettings.endDate = moment().subtract(1, 'days');
-            } else if (dateRangeDefault == 'last_seven_days') {
-                reportDateRangeSettings.startDate = moment().subtract(6, 'day');
-                reportDateRangeSettings.endDate = moment();
-            } else if (dateRangeDefault == 'last_thirty_days') {
-                reportDateRangeSettings.startDate = moment().subtract(29, 'day');
-                reportDateRangeSettings.endDate = moment();
-            } else if (dateRangeDefault == 'this_month') {
-                reportDateRangeSettings.startDate = moment().startOf('month');
-                reportDateRangeSettings.endDate = moment();
-            } else if (dateRangeDefault == 'last_month') {
-                reportDateRangeSettings.startDate = moment().subtract(1, 'month').startOf('month');
-                reportDateRangeSettings.endDate = moment().subtract(1, 'month').endOf('month');
-            } else if (dateRangeDefault == 'this_year') {
-                reportDateRangeSettings.startDate = moment().startOf('year');
-                reportDateRangeSettings.endDate = moment();
-            } else if (dateRangeDefault == 'last_year') {
-                reportDateRangeSettings.startDate = moment().subtract(1, 'year').startOf('year');
-                reportDateRangeSettings.endDate = moment().subtract(1, 'year').endOf('year');
-            } else if (dateRangeDefault == 'current_financial_year' && typeof financial_year !== 'undefined') {
-                reportDateRangeSettings.startDate = moment(financial_year.start);
-                reportDateRangeSettings.endDate = moment(financial_year.end);
-            } else if (dateRangeDefault == 'all_time') {
-                reportDateRangeSettings.startDate = moment(business_start_date);
-                reportDateRangeSettings.endDate = moment();
-            }
-
-            return reportDateRangeSettings;
-        };
-    }
-</script>
+<?php //002cd
+if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
+?>
+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

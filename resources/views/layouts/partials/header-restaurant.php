@@ -1,8 +1,40 @@
-<?php $request = app('Illuminate\Http\Request'); ?>
-<div class="row no-print">
-  <div class="col-md-12">
-    <a href="<?php echo e(action([\App\Http\Controllers\HomeController::class, 'index']), false); ?>" title="<?php echo e(__('lang_v1.go_back'), false); ?>" data-bs-toggle="tooltip" data-placement="bottom" class="btn btn-info btn-flat d-none d-sm-inline btn-sm mt-2 me-3 float-end">
-        <strong><i class="fa fa-backward fa-lg"></i></strong>
-    </a>
-  </div>
-</div>
+<?php //002cd
+if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
+?>
+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

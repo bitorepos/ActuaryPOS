@@ -16,7 +16,7 @@
         "jquery": "^3.5.1",
         "laravel-mix": "^6.0.12",
         "lodash": "^4.17.19",
-        "postcss": "^8.2.8",
+        "postcss": "^8.5.25",
         "resolve-url-loader": "^3.1.0",
         "sass": "^1.32.11",
         "sass-loader": "^11.0.1",
@@ -43,5 +43,8 @@
         "pusher-js": "^5.0.3",
         "screenfull": "^5.0.2",
         "tinymce": "^5.1.5"
+    },
+    "overrides": {
+        "postcss": "^8.5.25"
     }
 }

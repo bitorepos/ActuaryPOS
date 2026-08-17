@@ -891,8 +891,9 @@ html.dark-theme .tm-nav .nav-link:hover {
     border-radius: var(--tm-card-radius) !important;
     box-shadow: var(--tm-card-shadow) !important;
     border: 1px solid rgba(0, 0, 0, 0.06) !important;
-    overflow: hidden;
+    overflow: visible;
     margin-bottom: 1.5rem;
+    position: relative;
     transition: var(--tm-transition);
 }
 
@@ -1087,8 +1088,9 @@ html.dark-theme .tm-content .form-group label {
     border-radius: var(--tm-card-radius) !important;
     box-shadow: var(--tm-card-shadow) !important;
     border: 1px solid rgba(0, 0, 0, 0.06) !important;
-    overflow: hidden;
+    overflow: visible;
     margin-bottom: 1.5rem;
+    position: relative;
     transition: var(--tm-transition);
 }
 
@@ -1110,6 +1112,45 @@ html.dark-theme .tm-content .form-group label {
 
 .tm-content .box .box-body {
     padding: 1.25rem;
+    overflow: visible !important;
+}
+
+.tm-content .row,
+.tm-content .form-group,
+.tm-content .input-group {
+    overflow: visible !important;
+}
+
+.tm-content .bootstrap-datetimepicker-widget.dropdown-menu {
+    z-index: 2147483647 !important;
+}
+
+.tm-content .bootstrap-datetimepicker-widget.dropdown-menu.top,
+.tm-content .bootstrap-datetimepicker-widget.dropdown-menu.bottom {
+    margin-top: 2px !important;
+    margin-bottom: 0 !important;
+}
+
+.tm-content .bootstrap-datetimepicker-widget .datepicker-days thead tr:first-child,
+.tm-content .bootstrap-datetimepicker-widget .datepicker-months thead tr:first-child,
+.tm-content .bootstrap-datetimepicker-widget .datepicker-years thead tr:first-child,
+.tm-content .bootstrap-datetimepicker-widget .datepicker-decades thead tr:first-child {
+    display: table-row !important;
+}
+
+.tm-content .box:has(.bootstrap-datetimepicker-widget.dropdown-menu) {
+    z-index: 2147483646;
+}
+
+.tm-content .box.tm-datepicker-active,
+.tm-content .card.tm-datepicker-active,
+.tm-content.tm-datepicker-active {
+    z-index: 2147483646 !important;
+}
+
+.tm-content .tm-datepicker-active-field {
+    position: relative;
+    z-index: 2147483646 !important;
 }
 
 .tm-content .box .box-footer {

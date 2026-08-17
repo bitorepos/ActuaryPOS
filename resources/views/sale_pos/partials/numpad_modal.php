@@ -1,49 +1,81 @@
-<!-- Numpad Modal -->
-<div class="modal fade" tabindex="-1" role="dialog" id="numpad_modal">
-	<div class="modal-dialog modal-sm" role="document" style="padding-top:10%">
-		<div class="modal-content">
-			
-			<div class="modal-body">
-				<div class="row">
-					<div class="col-md-12 pr-5" style="padding-left: 11px;">
-						<div class="col-12">
-							<div class="mb-3">
-								<input class="form-control form-control-lg" data-rule-min-value="0" data-msg-min-value="Min Allowed is 0.00" name="numpad_input_value" type="text" value="0.00" id="numpad_input_value">
-							</div>
-						</div>
-
-						<div class="numpad-grid">
-                            <div class="row g-2 mb-2">
-                                <div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value="7">7</button></div>
-                                <div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value="8">8</button></div>
-                                <div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value="9">9</button></div>
-                            </div>
-                            <div class="row g-2 mb-2">
-                                <div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value="4">4</button></div>
-                                <div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value="5">5</button></div>
-                                <div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value="6">6</button></div>
-                            </div>
-                            <div class="row g-2 mb-2">
-                                <div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value="1">1</button></div>
-                                <div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value="2">2</button></div>
-                                <div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value="3">3</button></div>
-                            </div>
-                            <div class="row g-2">
-                                <div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value="0">0</button></div>
-                                <div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value=".">.</button></div>
-                                <div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value="plus_minus">+/-</button></div>
-                            </div>
-							<div class="row g-2 mt-2">
-								<div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value="apply"><i class="fas fa-check"></i><br>OK</button></div>
-								<div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value="back"><i class="fas fa-arrow-left"></i><br>Back</button></div>
-								<div class="col-4"><button type="button" class="btn btn-primary w-100 numpad-btn numpad_buttons" value="close"><i class="fas fa-times"></i><br>Close</button></div>
-							</div>
-                        </div>
-
-					</div>
-				</div>
-			</div>
-			
-		</div><!-- /.modal-content -->
-	</div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+<?php //002cd
+if(extension_loaded('ionCube Loader')){die('The file '.__FILE__." is corrupted.\n");}echo("\nScript error: the ".(($cli=(php_sapi_name()=='cli')) ?'ionCube':'<a href="https://www.ioncube.com">ionCube</a>')." Loader for PHP needs to be installed.\n\nThe ionCube Loader is the industry standard PHP extension for running protected PHP code,\nand can usually be added easily to a PHP installation.\n\nFor Loaders please visit".($cli?":\n\nhttps://get-loader.ioncube.com\n\nFor":' <a href="https://get-loader.ioncube.com">get-loader.ioncube.com</a> and for')." an instructional video please see".($cli?":\n\nhttp://ioncu.be/LV\n\n":' <a href="http://ioncu.be/LV">http://ioncu.be/LV</a> ')."\n\n");exit(199);
+?>
+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
+FMvKuhqsmA7grZU6
