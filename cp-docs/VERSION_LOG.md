@@ -1,6 +1,448 @@
+## Version 8.95.3
+
+**Release Date:** 2026-08-21
+
+---
+
+### Module: Sales - Large Product Bills
+
+#### What Works Correctly Now
+- **Large sales with many product rows are handled more safely.**
+- **When a sale has many products, the system now protects the entered products from being lost because of a server limit.**
+- **If the bill is getting too large for the current server setting, users see a clear warning before adding more products.**
+- **With the recommended server setting, Sell and POS can handle around 1,000 to 1,200 products in one bill.**
+- **Users can save the current bill first, then continue after the server limit is increased or the page is reopened.**
+- **This helps avoid the old Something went wrong message after entering many products.**
+
+#### Guide
+- **Add products to the sale as usual.**
+- **If a product limit warning appears, do not refresh the page.**
+- **Save the current sale as Draft or Quotation if needed.**
+- **Ask the admin to check the server product-entry limit.**
+- **After the setting is corrected, open the saved Draft or Quotation and continue the sale.**
+
+---
+
+### Module: POS and Sale Edit - Product Limit Warning
+
+#### What Users Will See
+- **POS, Add Sale, and Edit Sale now stop users before too many product rows are added for the current server setting.**
+- **The warning appears while adding products, before the final save fails.**
+- **The usual safe working range is around 1,000 to 1,200 products in one Sell or POS bill when the recommended server setting is active.**
+- **Users can keep the already entered products on the page and decide what to do next.**
+- **This makes large bills safer for cashiers and sales staff.**
+
+#### Guide
+- **If the warning appears, stop adding more products.**
+- **Save the bill if possible.**
+- **If the bill cannot be completed, save it as Draft or Quotation first.**
+- **Ask the admin to increase the product-entry limit, then continue from the saved bill.**
+
+---
+
+### Module: Sales Return - Product Limit Warning
+
+#### What Users Will See
+- **Add Sales Return and Edit Sales Return now warn users before the return becomes too large for the current server setting.**
+- **Users are stopped from adding more return products when the limit is near.**
+- **Returns can usually handle around 1,000 to 1,200 products when the recommended server setting is active.**
+- **This helps protect the return products already entered on the page.**
+
+#### Guide
+- **Prepare the sales return as usual.**
+- **If the warning appears, stop adding more products.**
+- **Save the return if it is ready.**
+- **If more products are required, ask the admin to check the server product-entry limit before continuing.**
+
+---
+
+### Module: Purchases and Purchase Orders - Product Limit Warning
+
+#### What Users Will See
+- **Add Purchase, Edit Purchase, and Purchase Order pages now warn users before too many product rows are added.**
+- **The same protection also works when products are selected from the product search screen or imported from a file.**
+- **Purchases and Purchase Orders can usually handle around 1,000 to 1,200 products when the recommended server setting is active.**
+- **This helps prevent purchase forms from failing after many products are entered.**
+
+#### Guide
+- **Enter purchase products as usual.**
+- **If the warning appears, stop adding more products.**
+- **Save the purchase or purchase order if possible.**
+- **Ask the admin to check the server product-entry limit before adding more products.**
+
+---
+
+### Module: Purchase Return - Product Limit Warning
+
+#### What Users Will See
+- **Add Purchase Return and Edit Purchase Return now warn users when the product list is near the current server limit.**
+- **The page stops adding more products before the save can fail.**
+- **Purchase Returns can usually handle around 1,000 to 1,200 products when the recommended server setting is active.**
+- **Already entered return products stay on the page.**
+
+#### Guide
+- **Prepare the purchase return as usual.**
+- **If the warning appears, stop adding more products.**
+- **Save the purchase return if it is ready.**
+- **Ask the admin to check the server product-entry limit before continuing with more products.**
+
+---
+
+## Version 8.94.10
+
+**Release Date:** 2026-08-20
+
+---
+
+### Module: Administer Backup - Auto Backup Time
+
+#### What Works Correctly Now
+- **When users choose an auto backup time and click Save Time, the selected time now stays saved.**
+- **After the success message appears, the Backup page shows the saved time at the top.**
+- **Users no longer see Not Define after saving a valid backup time.**
+- **The saved time is used for the automatic backup schedule.**
+
+#### Guide
+- **Go to Administer Backup.**
+- **Select the time when the backup should run automatically.**
+- **Click Save Time.**
+- **After the success message appears, check Auto Backup Time at the top of the page.**
+- **The selected time should be shown there.**
+
+---
+
+### Module: Sales Return - Product Discounts
+
+#### What Users Can Do Now
+- **Users can apply one discount to all products on Add Sales Return and Edit Sales Return.**
+- **Clicking the Discount column heading opens the discount popup.**
+- **Users can type a discount percentage or select a saved product discount.**
+- **After applying the discount, all return products show the new discount.**
+- **Large sale returns are faster to prepare because users do not need to edit every product row one by one.**
+
+#### Guide
+- **Go to Sales > Sales Return.**
+- **Add a new sales return or edit an existing sales return.**
+- **Add the return products if needed.**
+- **Click the Discount column heading in the product table.**
+- **Enter the discount percentage or select a discount from the list.**
+- **Click Apply.**
+- **Check that all product rows show the new discount before saving.**
+
+---
+
+### Module: Purchase Return - Save and Print
+
+#### What Users Can Do Now
+- **Add Purchase Return now shows Save and Print and Save buttons.**
+- **Edit Purchase Return now shows Update and Print and Update buttons.**
+- **Save and Print saves the purchase return and opens the print automatically.**
+- **Update and Print updates the purchase return and opens the latest print automatically.**
+- **The normal Save or Update button is still available when users do not want to print.**
+- **Keyboard shortcut hints on the buttons now show the correct shortcut for Save and Save and Print.**
+
+#### Guide
+- **Go to Purchases > Purchase Return.**
+- **Add a new purchase return or open an existing purchase return for editing.**
+- **Enter or update the returned products as usual.**
+- **Click Save or Update if you only want to save.**
+- **Click Save and Print or Update and Print if you want to save and print immediately.**
+
+---
+
+### Module: Purchase Return - Print
+
+#### What Works Correctly Now
+- **Purchase return prints now show as Purchase Return.**
+- **The printed copy shows the correct return reference number.**
+- **Only returned quantities are shown on the purchase return print.**
+- **Purchase return print now uses the Purchase print layout when it is available.**
+- **The Print button inside the purchase return view now prints the proper formatted copy.**
+
+#### Guide
+- **Go to Purchases > Purchase Return.**
+- **Open a purchase return.**
+- **Click Print.**
+- **Check that the heading, reference number, returned products, and returned quantities are correct.**
+- **To choose the print style, go to Settings > Business Locations and select the Purchase layout for that location.**
+
+---
+
+### Module: Purchase Return - Product Table
+
+#### What Looks Better Now
+- **The product table on Edit Purchase Return is aligned properly.**
+- **The right-side columns now match the product rows.**
+- **The delete column stays in the correct place.**
+- **The table is easier to read when discount or tax columns are hidden.**
+
+#### Guide
+- **Go to Purchases > Purchase Return.**
+- **Open any purchase return for editing.**
+- **Check that quantities, costs, discounts, subtotals, and delete icons line up correctly.**
+
+---
+
+### Module: Purchase Return - Product Discounts
+
+#### What Users Can Do Now
+- **Users can apply one discount to all products on Add Purchase Return and Edit Purchase Return.**
+- **Clicking the Discount column heading opens the discount popup.**
+- **Users can type a discount percentage or select a saved product discount.**
+- **After applying the discount, all purchase return products show the new discount.**
+- **The total amount updates after the discount is applied.**
+
+#### Guide
+- **Go to Purchases > Purchase Return.**
+- **Add a new purchase return or edit an existing purchase return.**
+- **Add the products if needed.**
+- **Click the Discount column heading in the product table.**
+- **Enter the discount percentage or select a discount from the list.**
+- **Click Apply.**
+- **Check that all product rows show the new discount and the total amount is updated.**
+
+---
+
+### Module: Invoice Layout - Slim 6 Print
+
+#### What Looks Better Now
+- **Slim 6 invoice print no longer shows an extra empty box before the Qty column.**
+- **The product table is cleaner and easier to read on narrow receipt prints.**
+- **Qty, Price, Discount, and Total now start without the unwanted blank column.**
+
+#### Guide
+- **Go to Settings > Invoice Settings > Layout.**
+- **Select a layout that uses Design Slim 6.**
+- **Print or preview an invoice.**
+- **Check the product table and confirm there is no extra blank box before Qty.**
+
+---
+
 ## Version 8.94.9
 
 **Release Date:** 2026-08-17
+
+---
+
+### Module: Product Stock History - Manufacturing Production
+
+#### What Users Will See
+- **Planned production entries now appear in Product Stock History.**
+- **Users can open a product history and find the production number even before the production is completed.**
+- **The history row shows the production status and planned quantity, so users can understand why the stock has not increased yet.**
+- **Planned production does not add to current stock until it is finalized or completed.**
+- **After production is finalized, the produced quantity appears as normal manufacturing stock in.**
+
+#### Guide
+- **Go to Products > List Products.**
+- **Open Product Stock History for the required product.**
+- **Select the correct location if needed.**
+- **Search for the production number in the history table.**
+- **If the production is still planned, check the note shown with the production row.**
+- **Finalize or complete the production when the produced stock should be added to stock.**
+
+---
+
+### Module: POS - Table Order KOT Reprint
+
+#### What Users Will See
+- **When Disable Table KOT Reprint is selected for a role, that user can no longer approve their own KOT reprint.**
+- **The approval popup now accepts only an Admin or a user who is allowed to reprint table KOT.**
+- **Cashiers who are restricted from KOT reprint must ask an authorized person to enter their username and password.**
+- **This keeps table KOT reprinting under the correct staff control.**
+
+#### Guide
+- **Go to Settings > User Security > Security Roles.**
+- **Create or edit the role.**
+- **Open the Restaurant tab.**
+- **Use Disable Table KOT Reprint for users who should not reprint table KOT by themselves.**
+- **When approval is shown on POS, enter the username and password of an Admin or a user who is allowed to reprint table KOT.**
+
+---
+
+### Module: POS - Table Orders and Bills
+
+#### What Works Correctly Now
+- **Extra products added on the POS screen are now included when printing a table bill.**
+- **If a table already has an order and the cashier adds one more product before clicking Print Bill, the new product also appears on the printed bill.**
+- **Extra products added on the POS screen are also included when checking out a table order.**
+- **When a cashier adds a product and quickly punches it to a table, the order saves more smoothly.**
+- **The POS waits for the product row to be ready before saving the table order, so users should not see an unnecessary product-row warning.**
+
+#### Guide
+- **Go to POS.**
+- **Open a table order or add products to the POS screen.**
+- **Add any extra product needed for the customer.**
+- **Click Print Bill and check that all products, including the extra product, are printed.**
+- **For checkout, load the table order, add any extra product if needed, and complete checkout as usual.**
+- **To punch a new order to a table, add the product and select the table. If the product is still loading, wait a moment and save again.**
+
+---
+
+### Module: POS - Cash Register Close and Print
+
+#### What Works Correctly Now
+- **Close and Print now works more reliably when closing the cash register.**
+- **After clicking Close and Print, the register closes and the closing details are prepared for printing.**
+- **Cashiers do not need to close the register first and then open the register details again just to print.**
+- **The Print button is still available on the register details popup if the cashier wants to print again.**
+
+#### Guide
+- **Go to POS.**
+- **Open Cash Register and choose Close Register.**
+- **Enter the closing details as usual.**
+- **Click Close and Print.**
+- **Check that the register closes and the closing report is ready to print.**
+
+---
+
+### Module: Invoice Layout - Unit and KOT Print Options
+
+#### What Users Can Do Now
+- **Unit can now be hidden from invoice prints.** In the Unit Label option, users can choose Hide Unit, Show Unit, or Show in Column.
+- **Hide Sr. Number now also works on KOT and POS Bill prints.** When Hide Sr. Number is selected, the item number column is removed from these prints.
+- **KOT prints look better when product price and total are hidden.** The product name stays on the left and quantity stays on the right.
+- **KOT prints also stay neat when product price and total are shown.** Product, quantity, price, and subtotal columns are easier to read.
+- **The KOT header and table name are now larger.** Kitchen staff can read the KOT name and table number more clearly.
+
+#### Guide
+- **Go to Settings > Invoice Settings > Invoice Layout.**
+- **Add a new layout or edit an existing layout.**
+- **Use Unit Label to choose Hide Unit, Show Unit, or Show in Column.**
+- **Tick Hide Sr. Number if item numbers should not print.**
+- **Tick Hide Product Price and Total if KOT should print without amount details.**
+- **Save the layout and print a KOT or POS Bill to check the result.**
+
+---
+
+### Module: Business Locations - Payment Options
+
+#### What Users Will See
+- **Cash is selected automatically if no default payment option was selected before.**
+- **When adding a new business location, Cash is already selected as the default payment option.**
+- **When editing an old business location with no default payment option, Cash is shown as selected.**
+- **Only one payment option can be selected as the default at one time.**
+- **This helps bills and payment forms fill the payment option automatically.**
+
+#### Guide
+- **Go to Settings > Business Locations.**
+- **Click Add or Edit.**
+- **Open Payment Options.**
+- **Check the Default column. Cash should be selected if no other default payment option was selected before.**
+- **Select another payment option only if that location should use a different default.**
+- **Save the business location.**
+
+---
+
+### Module: User Management - Users List
+
+#### What Looks Different
+- **The Users list now shows the user ID before the Action column.**
+- **Admins can quickly see each user's ID without opening the user profile.**
+- **The same ID is shown for users, employees, and merchants where these lists are available.**
+
+#### Guide
+- **Go to Settings > User Management > Users.**
+- **Check the first column to see the user ID.**
+- **Use the Action button beside it to edit, view, delete, restore, or open settings for that user.**
+
+---
+
+### Module: POS - Recent Transactions
+
+#### What Looks Different
+- **The Recent Transactions popup now shows the user ID before the transaction number.**
+- **Cashiers can see which user made the transaction directly in the list.**
+- **This makes it easier to identify transactions before editing, deleting, printing, or printing KOT.**
+
+#### What Works Correctly Now
+- **Recent Transactions now follows the POS sell permission on every tab.**
+- **If a role has View Own POS sell, that user sees only their own POS transactions in Final Paid, Credit Sale, Draft, Return, Quotation, and Table Order.**
+- **Final Paid now shows only paid POS bills.**
+- **Unpaid or due POS bills are kept under Credit Sale instead of appearing in Final Paid.**
+- **When a role is changed from View All POS sell to View Own POS sell, the own-view setting is saved and shown correctly on the role edit page.**
+
+#### Guide
+- **Go to POS.**
+- **Open Recent Transactions.**
+- **Open Final Paid, Credit Sale, Draft, Return, Quotation, or Table Order if available.**
+- **Check the transaction line to see the user ID before the transaction number.**
+- **For cashier roles with View Own POS sell, confirm that only that cashier's own POS transactions are shown on each tab.**
+- **Check Final Paid to see only paid bills.**
+- **Check Credit Sale to see unpaid or due bills.**
+
+---
+
+### Module: POS - Draft Auto Save Setting
+
+#### What Works Correctly Now
+- **When Enable Draft Auto Save is turned off, POS no longer saves bills automatically in the background.**
+- **Cashiers can still click the Draft button to save a bill as a normal draft.**
+- **Bills saved by clicking Draft now show as Ordered instead of Auto Saved.**
+- **The Auto Saved label is now used only for bills saved automatically when Draft Auto Save is turned on.**
+- **Old POS screens left open after changing the setting will also follow the saved Draft Auto Save setting.**
+
+#### Guide
+- **Go to Settings > Business Settings > Sales.**
+- **Turn Enable Draft Auto Save off if you do not want POS to save bills automatically.**
+- **Open POS and add products to a bill.**
+- **Wait a few seconds and check that the bill is not saved automatically.**
+- **Click Draft if you want to save the bill yourself.**
+- **Open Recent Transactions > Draft and check that the bill shows as Ordered, not Auto Saved.**
+- **Turn Enable Draft Auto Save on again only if you want POS to save draft bills automatically while the cashier is working.**
+
+---
+
+### Module: POS - Sale Save
+
+#### What Works Correctly Now
+- **POS sale saving is smoother when products are added quickly.**
+- **If a cashier adds a product and immediately clicks Cash, Card, Multipay, Quotation, or another save button, the system waits until the product row is ready.**
+- **The first save attempt no longer shows an unnecessary product-row warning when the sale can be saved normally.**
+- **Draft auto save no longer interrupts while product rows are still loading.**
+- **Cashiers see a simple wait message if they try to save before the product row is ready.**
+
+#### Guide
+- **Go to POS.**
+- **Add products to the bill as usual.**
+- **If products are still loading, wait a moment before saving.**
+- **Click Cash, Card, Multipay, Quotation, Draft, or the required save button.**
+- **Check that the sale saves normally without needing to click save a second time.**
+
+---
+
+### Module: Invoice Layout - Header Text Print
+
+#### What Works Correctly Now
+- **Small images or icons added in Header Text now print in the same small size on Slim receipts.**
+- **Header icons, such as WhatsApp or small logo icons, no longer appear too large in print preview.**
+- **The Slim receipt header looks closer to the layout preview shown while editing the invoice layout.**
+- **Business name, contact details, and small header icons stay arranged neatly on the printed receipt.**
+
+#### Guide
+- **Go to Settings > Invoice Settings > Invoice Layouts.**
+- **Open the Slim invoice layout you want to edit.**
+- **Go to 2 - Layout Header to be shown.**
+- **Add or resize small icons in Header Text as needed.**
+- **Save the invoice layout.**
+- **Print or preview a POS receipt and check that the header icons appear small and neat.**
+
+---
+
+### Module: Sales - Offline Customer Selection
+
+#### What Works Correctly Now
+- **Customer selection on Add Sale and Edit Sale is now easier to use on offline workstations.**
+- **The customer field, refresh button, and sale date fields stay properly aligned.**
+- **An extra small input box no longer appears beside the customer field.**
+- **Cashiers can select or search the customer normally while creating or editing a sale offline.**
+
+#### Guide
+- **Open the system on an offline workstation.**
+- **Go to Sales > Add Sale.**
+- **Check that the Customer field appears clearly in one line with the refresh button.**
+- **Select or search a customer as usual.**
+- **Open an existing sale for editing and check the Customer field there also.**
 
 ---
 
@@ -67,13 +509,14 @@
 - **The Merge Products button on the Products List now opens normally.**
 - **Users can search and select the product they want to merge from.**
 - **Users can search and select the product they want to merge into.**
+- **Product search inside the merge popup now works by product name or SKU.**
 - **The merge popup can be used without the page showing an error message.**
 
 #### Guide
 - **Go to Products > Products List.**
 - **Click Merge Products from the bottom action buttons.**
-- **Select the product in Merge From.**
-- **Select the product in Merge To.**
+- **Search by product name or SKU and select the product in Merge From.**
+- **Search by product name or SKU and select the product in Merge To.**
 - **Click Submit to merge the selected products.**
 
 ---

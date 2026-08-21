@@ -3,6 +3,7 @@
 namespace Tests\Unit;
 
 use App\Http\Controllers\SellPosController;
+use App\Http\Controllers\RoleController;
 use Illuminate\Http\Request;
 use PHPUnit\Framework\TestCase;
 use ReflectionClass;
@@ -361,5 +362,154 @@ class SellPosControllerTotalTest extends TestCase
         ];
 
         $this->assertTrue($method->invoke($controller, Request::create('/'), $input, $invoice_total));
+    }
+
+    public function testAutoDraftSaveIsBlockedWhenSettingIsDisabled(): void
+    {
+        $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();
+        $property = new \ReflectionProperty(SellPosController::class, 'businessUtil');
+        $property->setAccessible(true);
+        $property->setValue($controller, new class {
+            public function getDetails($business_id, $location_id = null)
+            {
+                return (object) ['common_settings' => ['enable_draft_auto_save' => 0]];
+            }
+        });
+
+        $method = new \ReflectionMethod(SellPosController::class, 'shouldBlockAutoDraftSave');
+        $method->setAccessible(true);
+
+        $request = Request::create('/', 'POST', [
+            'auto_draft_save' => 1,
+            'location_id' => 5,
+        ]);
+
+        $this->assertTrue($method->invoke($controller, $request, 1, ['location_id' => 5]));
+    }
+
+    public function testAutoDraftSaveIsAllowedWhenSettingIsEnabled(): void
+    {
+        $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();
+        $property = new \ReflectionProperty(SellPosController::class, 'businessUtil');
+        $property->setAccessible(true);
+        $property->setValue($controller, new class {
+            public function getDetails($business_id, $location_id = null)
+            {
+                return (object) ['common_settings' => ['enable_draft_auto_save' => 1]];
+            }
+        });
+
+        $method = new \ReflectionMethod(SellPosController::class, 'shouldBlockAutoDraftSave');
+        $method->setAccessible(true);
+
+        $request = Request::create('/', 'POST', [
+            'auto_draft_save' => 1,
+            'location_id' => 5,
+        ]);
+
+        $this->assertFalse($method->invoke($controller, $request, 1, ['location_id' => 5]));
+    }
+
+    public function testManualDraftSaveIsAllowedWhenAutoSaveSettingIsDisabled(): void
+    {
+        $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();
+        $property = new \ReflectionProperty(SellPosController::class, 'businessUtil');
+        $property->setAccessible(true);
+        $property->setValue($controller, new class {
+            public function getDetails($business_id, $location_id = null)
+            {
+                return (object) ['common_settings' => ['enable_draft_auto_save' => 0]];
+            }
+        });
+
+        $method = new \ReflectionMethod(SellPosController::class, 'shouldBlockAutoDraftSave');
+        $method->setAccessible(true);
+
+        $request = Request::create('/', 'POST', [
+            'auto_draft_save' => 1,
+            'manual_draft_save' => 1,
+            'location_id' => 5,
+        ]);
+
+        $this->assertFalse($method->invoke($controller, $request, 1, ['location_id' => 5]));
+    }
+
+    public function testManualDraftSaveUsesOrderedDraftStatus(): void
+    {
+        $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();
+        $method = new \ReflectionMethod(SellPosController::class, 'draftStatusForDraftSave');
+        $method->setAccessible(true);
+
+        $request = Request::create('/', 'POST', [
+            'manual_draft_save' => 1,
+        ]);
+
+        $this->assertSame('ordered', $method->invoke($controller, $request));
+    }
+
+    public function testBackgroundDraftAutoSaveUsesAutosavedDraftStatus(): void
+    {
+        $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();
+        $method = new \ReflectionMethod(SellPosController::class, 'draftStatusForDraftSave');
+        $method->setAccessible(true);
+
+        $request = Request::create('/', 'POST', [
+            'auto_draft_save' => 1,
+        ]);
+
+        $this->assertSame('autosaved', $method->invoke($controller, $request));
+    }
+
+    public function testManualDraftSaveMessageDoesNotSayAutosaved(): void
+    {
+        $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();
+        $method = new \ReflectionMethod(SellPosController::class, 'draftSaveMessage');
+        $method->setAccessible(true);
+
+        $request = Request::create('/', 'POST', [
+            'manual_draft_save' => 1,
+        ]);
+
+        $this->assertSame('Draft Saved Successfully', $method->invoke($controller, $request));
+    }
+
+    public function testBackgroundDraftAutoSaveMessageSaysAutosaved(): void
+    {
+        $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();
+        $method = new \ReflectionMethod(SellPosController::class, 'draftSaveMessage');
+        $method->setAccessible(true);
+
+        $request = Request::create('/', 'POST', [
+            'auto_draft_save' => 1,
+        ]);
+
+        $this->assertSame('Draft Autosaved Successfully', $method->invoke($controller, $request));
+    }
+
+    public function testOwnPosSellPermissionTakesPrecedenceForRecentTransactions(): void
+    {
+        $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();
+        $method = new \ReflectionMethod(SellPosController::class, 'canViewAllRecentPosTransactions');
+        $method->setAccessible(true);
+
+        $this->assertFalse($method->invoke($controller, false, true, true));
+        $this->assertTrue($method->invoke($controller, false, true, false));
+        $this->assertTrue($method->invoke($controller, true, true, true));
+    }
+
+    public function testPosOwnSelectionDoesNotGetAllPosSellFromDirectSellCompatibility(): void
+    {
+        $controller = (new ReflectionClass(RoleController::class))->newInstanceWithoutConstructor();
+        $method = new \ReflectionMethod(RoleController::class, 'normalizePermissionCompatibility');
+        $method->setAccessible(true);
+
+        $permissions = $method->invoke($controller, ['direct_sell.view', 'sell.view_own'], [
+            'pos_sell_view' => 'sell.view_own',
+            'sell_view' => 'direct_sell.view',
+        ]);
+
+        $this->assertContains('direct_sell.view', $permissions);
+        $this->assertContains('sell.view_own', $permissions);
+        $this->assertNotContains('sell.view', $permissions);
     }
 }
