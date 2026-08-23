@@ -1,3 +1,199 @@
+## Version 8.95.6
+
+**Release Date:** 2026-08-23
+
+---
+
+### Module: Home Dashboard
+
+#### What Users Will See
+- **The Home Dashboard now opens faster after login.**
+- **The main dashboard page becomes ready sooner, especially when the business has many sales.**
+- **Sales charts still appear on the dashboard, but they load after the main page is ready.**
+- **Users can continue using the dashboard cards, date filter, location filter, quick actions, and module buttons as usual.**
+
+#### Guide
+- **Go to Home / Dashboard.**
+- **Wait for the main dashboard to appear.**
+- **If the Sales Charts section is open, wait a moment for the charts to load.**
+- **If the Sales Charts section is closed, open it when you want to view the sales chart details.**
+
+---
+
+### Module: HRM - Attendance
+
+#### What Looks Better Now
+- **The Add Latest Attendance popup is easier to use.**
+- **The Clock In and Clock Out calendar now opens beside the field the user clicks.**
+- **The calendar no longer opens far away on the top-left side of the screen.**
+- **The Edit Attendance popup now stays clearly visible above the page background.**
+
+#### Guide
+- **Go to HRM / Essentials > Attendance.**
+- **Click Add Latest Attendance or open Edit for an attendance entry.**
+- **Click the Clock In or Clock Out field.**
+- **Select the date and time from the calendar beside the field.**
+- **Save or update the attendance entry as usual.**
+
+---
+
+### Module: Sidebar - Synchronization
+
+#### What Users Will See
+- **Synchronization now opens properly from the sidebar.**
+- **The Synchronization option appears in the normal sidebar menu position when it is available for the business.**
+- **Clicking Synchronization takes the user to the synchronization page instead of staying on the current page.**
+- **The sidebar keeps the normal menu items visible when offline mode is turned off.**
+
+#### Guide
+- **Open the left sidebar.**
+- **Click Synchronization.**
+- **The Synchronization page should open.**
+- **If offline mode is turned off, use the normal sidebar menus as usual.**
+
+---
+
+### Module: Synchronization Page
+
+#### What Users Can Do Now
+- **Users can switch between Upload Synchronization and Download Synchronization.**
+- **The selected tab opens correctly when clicked.**
+- **Users can view the last synchronization time for each section.**
+- **Users can run the required synchronization from the available Sync buttons.**
+
+#### Guide
+- **Go to Synchronization from the sidebar.**
+- **Click Upload Synchronization to send local work for synchronization.**
+- **Click Download Synchronization to bring updated information into the system.**
+- **Check the Last Sync time before running a sync.**
+- **Click the Sync button only for the section you want to update.**
+
+---
+
+### Module: Sidebar - Local System Menu
+
+#### What Works Correctly Now
+- **When offline mode is not active, the normal sidebar menus are shown again.**
+- **Menus such as Settings, Reports, Backup, and other allowed options appear according to the user's access.**
+- **Synchronization no longer causes other sidebar items to disappear.**
+- **The menu is easier to use on local shop systems.**
+
+#### Guide
+- **Use the sidebar as usual after logging in.**
+- **If a menu is still not visible, check that the logged-in user has permission for that menu.**
+- **After changing offline mode, refresh the page and open the sidebar again.**
+
+---
+
+## Version 8.95.5
+
+**Release Date:** 2026-08-22
+
+---
+
+### Module: Offline Sync - Workstation Page
+
+#### What Works Correctly Now
+- **The Offline Sync page now opens properly on workstation systems.**
+- **Upload Synchronization and Download Synchronization tabs can now be selected normally.**
+- **Last sync dates are shown more safely, even when some data has not been synced yet.**
+- **Users can sync business settings, locations, users, products, contacts, sales, and other available items from the same page.**
+
+#### Guide
+- **Go to Synchronization / Offline Sync on the workstation.**
+- **Use Upload Synchronization to send new workstation sales to the live system.**
+- **Use Download Synchronization to bring updated settings, products, contacts, and other data from the live system.**
+- **Click the required Sync button and wait for the success message.**
+
+---
+
+### Module: Transaction Backup - Offline Workstation
+
+#### What Users Can Do Now
+- **Transaction Backup settings can be synced to the workstation more easily.**
+- **The Transaction Backup page now has a Sync Settings option for workstation users.**
+- **When exporting transactions, users can see clearer progress while files are being saved.**
+- **The export process is more reliable for local workstation backup folders.**
+
+#### Guide
+- **Go to Transaction Backup on the workstation.**
+- **Click Sync Settings to receive the latest backup settings from the live system.**
+- **Check that the backup save location is correct.**
+- **Use Export Transactions when you need to create local transaction backup files.**
+- **Wait until the export progress is complete before closing the page.**
+
+---
+
+### Module: Attendance - Date and Time Picker
+
+#### What Looks Better Now
+- **The date and time picker on Attendance popups now appears in front of the popup.**
+- **Users can select Clock In and Clock Out times without the picker hiding behind the window.**
+- **Adding or editing attendance is easier on screens where the picker was previously difficult to see.**
+
+#### Guide
+- **Go to HRM / Essentials > Attendance.**
+- **Add or edit an attendance entry.**
+- **Click the Clock In or Clock Out date/time field.**
+- **Select the date and time from the picker and save the attendance.**
+
+---
+
+## Version 8.95.4
+
+**Release Date:** 2026-08-21
+
+---
+
+### Module: Cash Register - Closing Register
+
+#### What Works Correctly Now
+- **Closing a cash register is now safer and more reliable.**
+- **Users no longer get stuck if the register was already closed or cannot be found.**
+- **If no open register is available, the system shows a clear message and sends the user to open a register.**
+- **Closing and printing the register summary works more smoothly.**
+
+#### Guide
+- **Go to Cash Register.**
+- **Open Close Register for the active register.**
+- **Enter the closing amount and other closing details.**
+- **Click Close Register or Close and Print.**
+- **If the system says no open register is available, open a new register before continuing sales.**
+
+---
+
+### Module: Software Update
+
+#### What Users Can Do Now
+- **Software updates can now be completed more smoothly from the update screen.**
+- **A logged-in user can open the update page when the system says an update is required.**
+- **The update process can complete the needed update steps automatically.**
+- **Users see clearer messages when the system is already updated or when the update has finished.**
+
+#### Guide
+- **If the system asks for a software update, log in first.**
+- **Open the update page shown by the system.**
+- **Click the update button and wait until the success message appears.**
+- **After the update completes, return to Home / Dashboard and continue work.**
+
+---
+
+### Module: Offline Sync - Sale Payments
+
+#### What Works Correctly Now
+- **Updated sale payments on a workstation are now sent again during sales sync.**
+- **If a sale payment is added or changed after the sale was already synced, the next sync includes the payment update.**
+- **Payment status, such as Paid or Partial, stays more accurate between the workstation and live system.**
+- **This helps synced sales show the latest payment information on the live system.**
+
+#### Guide
+- **On the workstation, add or update payment for a sale as usual.**
+- **Go to Synchronization / Offline Sync.**
+- **Run Sales sync.**
+- **On the live system, open the sale and check that the payment and payment status are updated.**
+
+---
+
 ## Version 8.95.3
 
 **Release Date:** 2026-08-21
@@ -8,17 +204,17 @@
 
 #### What Works Correctly Now
 - **Large sales with many product rows are handled more safely.**
-- **When a sale has many products, the system now protects the entered products from being lost because of a server limit.**
-- **If the bill is getting too large for the current server setting, users see a clear warning before adding more products.**
-- **With the recommended server setting, Sell and POS can handle around 1,000 to 1,200 products in one bill.**
-- **Users can save the current bill first, then continue after the server limit is increased or the page is reopened.**
-- **This helps avoid the old Something went wrong message after entering many products.**
+- **When a sale has many products, the system now protects the entered products from being lost because of a product limit.**
+- **If the bill is getting too large for the current product limit, users see a clear warning before adding more products.**
+- **With the recommended product limit, Sell and POS can handle around 1,000 to 1,200 products in one bill.**
+- **Users can save the current bill first, then continue after the product limit is adjusted or the page is reopened.**
+- **This helps users finish large bills more safely.**
 
 #### Guide
 - **Add products to the sale as usual.**
 - **If a product limit warning appears, do not refresh the page.**
 - **Save the current sale as Draft or Quotation if needed.**
-- **Ask the admin to check the server product-entry limit.**
+- **Ask the admin to check the product-entry limit if more products are needed.**
 - **After the setting is corrected, open the saved Draft or Quotation and continue the sale.**
 
 ---
@@ -26,9 +222,9 @@
 ### Module: POS and Sale Edit - Product Limit Warning
 
 #### What Users Will See
-- **POS, Add Sale, and Edit Sale now stop users before too many product rows are added for the current server setting.**
+- **POS, Add Sale, and Edit Sale now stop users before too many product rows are added for the current product limit.**
 - **The warning appears while adding products, before the final save fails.**
-- **The usual safe working range is around 1,000 to 1,200 products in one Sell or POS bill when the recommended server setting is active.**
+- **The usual safe working range is around 1,000 to 1,200 products in one Sell or POS bill when the recommended product limit is active.**
 - **Users can keep the already entered products on the page and decide what to do next.**
 - **This makes large bills safer for cashiers and sales staff.**
 
@@ -43,16 +239,16 @@
 ### Module: Sales Return - Product Limit Warning
 
 #### What Users Will See
-- **Add Sales Return and Edit Sales Return now warn users before the return becomes too large for the current server setting.**
+- **Add Sales Return and Edit Sales Return now warn users before the return becomes too large for the current product limit.**
 - **Users are stopped from adding more return products when the limit is near.**
-- **Returns can usually handle around 1,000 to 1,200 products when the recommended server setting is active.**
+- **Returns can usually handle around 1,000 to 1,200 products when the recommended product limit is active.**
 - **This helps protect the return products already entered on the page.**
 
 #### Guide
 - **Prepare the sales return as usual.**
 - **If the warning appears, stop adding more products.**
 - **Save the return if it is ready.**
-- **If more products are required, ask the admin to check the server product-entry limit before continuing.**
+- **If more products are required, ask the admin to check the product-entry limit before continuing.**
 
 ---
 
@@ -61,30 +257,30 @@
 #### What Users Will See
 - **Add Purchase, Edit Purchase, and Purchase Order pages now warn users before too many product rows are added.**
 - **The same protection also works when products are selected from the product search screen or imported from a file.**
-- **Purchases and Purchase Orders can usually handle around 1,000 to 1,200 products when the recommended server setting is active.**
+- **Purchases and Purchase Orders can usually handle around 1,000 to 1,200 products when the recommended product limit is active.**
 - **This helps prevent purchase forms from failing after many products are entered.**
 
 #### Guide
 - **Enter purchase products as usual.**
 - **If the warning appears, stop adding more products.**
 - **Save the purchase or purchase order if possible.**
-- **Ask the admin to check the server product-entry limit before adding more products.**
+- **Ask the admin to check the product-entry limit before adding more products.**
 
 ---
 
 ### Module: Purchase Return - Product Limit Warning
 
 #### What Users Will See
-- **Add Purchase Return and Edit Purchase Return now warn users when the product list is near the current server limit.**
+- **Add Purchase Return and Edit Purchase Return now warn users when the product list is near the current product limit.**
 - **The page stops adding more products before the save can fail.**
-- **Purchase Returns can usually handle around 1,000 to 1,200 products when the recommended server setting is active.**
+- **Purchase Returns can usually handle around 1,000 to 1,200 products when the recommended product limit is active.**
 - **Already entered return products stay on the page.**
 
 #### Guide
 - **Prepare the purchase return as usual.**
 - **If the warning appears, stop adding more products.**
 - **Save the purchase return if it is ready.**
-- **Ask the admin to check the server product-entry limit before continuing with more products.**
+- **Ask the admin to check the product-entry limit before continuing with more products.**
 
 ---
 
@@ -510,7 +706,7 @@
 - **Users can search and select the product they want to merge from.**
 - **Users can search and select the product they want to merge into.**
 - **Product search inside the merge popup now works by product name or SKU.**
-- **The merge popup can be used without the page showing an error message.**
+- **The merge popup can be used normally without interruption.**
 
 #### Guide
 - **Go to Products > Products List.**
@@ -1028,7 +1224,7 @@
 ### Module: Backup - Auto Backup Time
 
 #### What Works Correctly Now
-- **Users can save the auto backup time from the Backup page without the page stopping with an error.**
+- **Users can save the auto backup time from the Backup page without interruption.**
 - **The selected backup time stays saved after updating.**
 - **The Backup page shows the saved auto backup time clearly.**
 
@@ -1563,7 +1759,7 @@
 
 #### What Works Better Now
 - **Large contact ledgers now open more reliably, especially Walk-In Customer ledgers with many sales and payments.**
-- **The Ledger tab now loads the statement in smaller pages instead of showing a red error message.**
+- **The Ledger tab now loads large statements in smaller pages so users can keep working smoothly.**
 - **Users can continue using Previous and Next to move through large ledger records.**
 - **Print, PDF, and Excel options are still available when a full ledger copy is needed.**
 
@@ -2484,7 +2680,7 @@
 - **The software update page handles pending update work more reliably.** Admins can use the normal update page even when several update steps are waiting.
 - **Admins are guided to the update page after login when an update is waiting.** This helps them finish the update before opening the dashboard.
 - **Admins can finish the waiting update work from the normal update page after uploading new files.**
-- **The system should open normally after the update finishes.** This helps avoid the error page that could appear before the update was completed.
+- **The system should open normally after the update finishes.** This helps users continue work without being stopped by the update screen.
 
 #### Guide
 - **After uploading new files, log in to the software.**
@@ -2522,7 +2718,7 @@
 ### Module: Backup - Google Drive
 
 #### What Works Correctly Now
-- **Create Backup now works from the Google Drive Backup page.** Users can create a new backup from **Backup > Google Drive** without seeing the Method Not Allowed error.
+- **Create Backup now works from the Google Drive Backup page.** Users can create a new backup from **Backup > Google Drive** without interruption.
 - **Backup creation now works from both backup pages.** Users can use either **Backup > Create New Backup** or **Backup > Google Drive > Create Backup**.
 
 #### Guide
@@ -2538,17 +2734,17 @@
 
 #### What Users Can Do Now
 - **Images can be linked to products by SKU.** If image names match product SKUs, users can link them to the correct products more quickly.
-- **Old single-image names can also be linked.** If the product SKU is `3265`, an image named `3265` can be linked as that product's main image.
-- **Numbered image names can be linked as main and gallery images.** If the product SKU is `3265`, `3265_1` can be linked as the main image and `3265_2` can be linked as a gallery image.
+- **Old single-image names can also be linked.** If the product SKU is 3265, an image named 3265 can be linked as that product's main image.
+- **Numbered image names can be linked as main and gallery images.** If the product SKU is 3265, 3265_1 can be linked as the main image and 3265_2 can be linked as a gallery image.
 - **Selected images can be linked to one SKU.** Users can select images, enter the product SKU, and link those images to that product.
 - **Main image and extra gallery images are handled more clearly.** The first image can become the main product image, and the next images can be added as gallery images.
 - **A result message is shown after linking.** Users can see how many images were linked, already linked, skipped, or not matched.
 
 #### Guide
 - **Go to Products > Image Gallery.**
-- **Use Link Images By SKU if image filenames already match product SKUs.** For example, use this when files are named like `3265`, `3265_1`, or `3265_2`.
-- **Use a plain SKU filename for one old image.** For example, `3265` can become the main image for product SKU `3265`.
-- **Use numbered SKU filenames for more than one image.** For example, `3265_1` can become the main image and `3265_2` can become a gallery image.
+- **Use Link Images By SKU if image filenames already match product SKUs.** For example, use this when files are named like 3265, 3265_1, or 3265_2.
+- **Use a plain SKU filename for one old image.** For example, 3265 can become the main image for product SKU 3265.
+- **Use numbered SKU filenames for more than one image.** For example, 3265_1 can become the main image and 3265_2 can become a gallery image.
 - **For selected images, tick the images you want to link.**
 - **Enter the product SKU in the SKU box.**
 - **Click Link To SKU.**
@@ -2759,7 +2955,7 @@
 ### Module: Products - Product Images
 
 #### What Users Can Do Now
-- **Product images are easier to organise.** When product images are added or updated, the image names can follow the product SKU, such as `3465_1`, `3465_2`, and `3465_3`.
+- **Product images are easier to organise.** When product images are added or updated, the image names can follow the product SKU, such as 3465_1, 3465_2, and 3465_3.
 - **A product can have one main image and extra gallery images.** The main image is used as the featured product image, and the extra images appear in the product gallery.
 - **Gallery images can be made the main image.** On the Edit Product page, users can click **Make featured** on a gallery image.
 - **Deleting a gallery image removes it properly.** If a user deletes a gallery image from the Product Image Gallery or from the Edit Product page, the image is removed from the product and from the image folder.
@@ -2828,7 +3024,7 @@
 #### What Users Can Do Now
 - **Shopify setup is easier to understand.** The Add Shopify Connection page now explains the connection in simple words, so users can see which option to use before connecting a store.
 - **Users can choose between Easy Connection and Manual Token Connection.** Easy Connection is for stores that can approve access through Shopify. Manual Token Connection is for users who already have manual connection details from Shopify.
-- **The connection page now shows simple step-by-step instructions.** Users can follow the guide on the page without needing separate technical notes.
+- **The connection page now shows simple step-by-step instructions.** Users can follow the guide on the page without needing separate extra notes.
 - **Helpful setup URLs are shown on the page.** Users can copy the App URL, Redirect URL, and Webhook URL when Shopify asks for them during setup.
 - **Manual token users can test the connection before saving.** This helps confirm that the store name and token are correct.
 - **Shopify Products, Orders, and Customers pages are now available from the Shopify menu.** Users can open these pages to review information imported from Shopify.
@@ -2844,7 +3040,7 @@
 - **Click Add Connection.**
 - **Read the Simple idea note at the top of the page.**
 - **Use Easy Connection if you want Shopify to ask for approval and return you back to the application automatically.**
-- **Enter your Shopify store address, such as `abc-fashion.myshopify.com`.**
+- **Enter your Shopify store address, such as abc-fashion.myshopify.com.**
 - **Click Start Easy Connection.**
 - **Approve the connection in Shopify when Shopify opens.**
 - **Use Manual Token Connection only if you already have the required manual connection details from Shopify.**
@@ -2999,7 +3195,7 @@
 #### What Users Can Do Now
 - **PCT/HSN Code can now be added to selected products from Stock Maintenance.** Users can select products from the Product list, open Stock Maintenance, choose Add PCT/HSN Code, enter the code, and apply it.
 - **Add PCT/HSN Code only fills products where the code is missing.** Products that already have a PCT/HSN Code are not changed.
-- **Products with PCT/HSN Code saved as 0 are treated as missing.** If a selected product only has `0` saved in PCT/HSN Code, Add PCT/HSN Code will replace it with the entered code.
+- **Products with PCT/HSN Code saved as 0 are treated as missing.** If a selected product only has 0 saved in PCT/HSN Code, Add PCT/HSN Code will replace it with the entered code.
 - **PCT/HSN Code can also be updated for all selected products.** Users can choose Update PCT/HSN Code when they want the entered code to replace the code on every selected product.
 - **Product list now shows PCT/HSN Code after Tax.** Users can quickly check each product's PCT/HSN Code directly from the Product list.
 
@@ -3076,7 +3272,7 @@
 - **Downloaded ledger PDFs are neater.** The ledger title, generated date, Total label, and total amounts are aligned to the right side for easier reading.
 - **The Hide Account Summary on Ledger checkbox is now available on the other ledger formats that show Account Summary.** Users can hide the Account Summary directly from the ledger screen.
 - **The Hide Account Summary checkbox follows the saved business setting by default.** If the business setting is already enabled, the checkbox is selected and the Account Summary is hidden when the ledger opens.
-- **Long invoice and payment numbers are easier to read.** Numbers such as `PI012026-000116` and `CP2026/0926` now split onto two lines in the Number column.
+- **Long invoice and payment numbers are easier to read.** Numbers such as PI012026-000116 and CP2026/0926 now split onto two lines in the Number column.
 - **Brought Forward is easier to read in narrow ledger columns.** It now appears on two lines where needed.
 - **Contact Ledger PDF now uses the page space better.** Ledger rows are less likely to move to the next page while empty space is still available.
 - **Portrait and Landscape ledger PDFs are cleaner.** Users can download the ledger PDF in either page direction with better row spacing.
@@ -4068,7 +4264,7 @@
 ### Module: Product SKU Scanning
 
 #### What Works Correctly Now
-- **Alphanumeric product SKUs can now be scanned correctly.** SKUs with letters and numbers, such as `FN368463427566`, are accepted in product search fields.
+- **Alphanumeric product SKUs can now be scanned correctly.** SKUs with letters and numbers, such as FN368463427566, are accepted in product search fields.
 - **Purchase product scanning now works correctly.** Users can scan this type of SKU on the Add Purchase screen.
 - **POS product scanning now works correctly in both product scan fields.** Users can scan the SKU in the SKU scan box or the normal product search box.
 - **The scanner no longer opens the wrong popup while scanning.** The full SKU stays in the search box and the product can be selected or added normally.
@@ -4122,7 +4318,7 @@
 - **Download the attendance import template.**
 - **Replace the example row with the real attendance details.**
 - **Enter the User ID in the first column.**
-- **Enter Clock-in Time and Clock-out Time in this format: `YYYY-MM-DD HH:MM:SS`.**
+- **Enter Clock-in Time and Clock-out Time in this format: YYYY-MM-DD HH:MM:SS.**
 - **Enter Shift only if that shift name already exists, otherwise leave it blank.**
 - **Upload the completed Excel file and click Submit.**
 
@@ -4805,13 +5001,13 @@
 ### Module: Documentation - Desktop App Guide
 
 #### What Users Can Do Now
-- **A new {application_name} Desktop App guide has been added to Documentation.**
+- **A new Desktop App guide has been added to Documentation.**
 - **Users can now read simple setup help for the desktop app, connection settings, printer selection, cash drawer setup, and local transaction export.**
 - **The guide uses the app name saved in Superadmin > Application Settings.** It does not list different desktop app brand names.
 
 #### Guide
 - **Go to Documentation.**
-- **Open the {application_name} Desktop App section.**
+- **Open the Desktop App section.**
 - **Read the setup steps for connection, printers, cash drawer, and local export.**
 
 ---
@@ -6460,7 +6656,7 @@
 #### What Users Can Do Now
 - **Transactions can now be exported by date range.** Users can choose a start and end date from the Transaction Backup page and export only the transactions from that period.
 - **The export uses the Local Transaction Export Path.** Users can check or enter the local folder path on the same page before exporting.
-- **The export works on localhost and with the {application_name} Desktop App.** On live/cloud, users can keep the desktop app open so the export files are saved on their computer.
+- **The export works on local shop systems and with the Desktop App.** On live/cloud systems, users can keep the Desktop App open so the export files are saved on their computer.
 - **Users can see a clear export message.** After export, the page shows how many transactions were exported or prepared for the desktop app.
 
 #### Guide
@@ -6469,8 +6665,8 @@
 - **Go to the Export Transactions With Date Range section at the bottom.**
 - **Select the date range you want to export.**
 - **Click Export Transactions.**
-- **On localhost, check the selected local export folder.**
-- **On live/cloud, keep the {application_name} Desktop App open and check the same local export folder on your computer.**
+- **On a local shop system, check the selected local export folder.**
+- **On live/cloud systems, keep the Desktop App open and check the same local export folder on your computer.**
 
 ---
 
@@ -7452,7 +7648,7 @@
 - **Go to Superadmin > Settings.**
 - **Open the Application Settings tab.**
 - **Tick Allow Registration if new businesses should be allowed to register.**
-- **In Registration URL, keep the default registration page or enter another link, such as `https://register.bitorepos.com/`.**
+- **In Registration URL, keep the default registration page or enter another link, such as https://register.bitorepos.com/.**
 - **Click Update Settings.**
 - **Now users who click Register Now will be sent to the saved registration link.**
 
@@ -9184,14 +9380,14 @@
 ### Module: Stock Transfer
 
 #### What Is Easier Now
-- **Editing a stock transfer now updates stock at both locations correctly.** When you save changes to a transfer, the system first cancels the previous stock movement at both the From and To locations, then re-applies the movement based on your updated products and quantities. Adding, removing, or changing the quantity of any item is reflected accurately at both ends - with no double-counting and no leftover stock.
-- **Destination cost is now worked out from the source location's real cost.** The purchase price recorded at the destination is calculated automatically from the oldest stock at the source location (using FIFO), instead of using the price typed in the form. This keeps your cost-of-goods and profit reports accurate after a transfer. If the source has no purchase history, the system uses the price you entered as a fallback.
-- **Edits to completed transfers now keep cost history clean.** The internal links between sold items and the source purchase lines they came from are properly rebuilt when you edit, so FIFO / LIFO / Average cost reports continue to match what was actually moved.
+- **Editing a stock transfer now updates stock at both locations correctly.** Adding, removing, or changing the quantity of any item is reflected accurately at both the From and To locations.
+- **Destination cost now follows the source location's stock cost more accurately.** This helps stock value and profit reports stay correct after a transfer.
+- **Edits to completed transfers now keep stock and cost history cleaner.** Reports continue to match the products and quantities that were actually moved.
 
 #### What Works Correctly Now
-- Fixed an issue where editing a stock transfer and adding or removing products could leave leftover (orphaned) records at the destination.
-- Fixed an issue where changing the quantity on an in-transit transfer and then completing it could move the wrong amount of stock.
-- Fixed a small warning message on the Stock Transfer Edit page when loading the "added by" user list.
+- **Editing a stock transfer and adding or removing products now leaves the destination stock clean and accurate.**
+- **Changing the quantity on an in-transit transfer now moves the correct amount of stock when the transfer is completed.**
+- **The Stock Transfer Edit page now opens the added-by user list more smoothly.**
 
 #### What Looks Different
 - On the Stock Transfer Edit page, the **Stock Type**, **Category**, and **Load Products** controls are no longer locked when a transfer is marked **Completed** - so you can revise them as part of an edit.
@@ -9201,8 +9397,8 @@
 ### Module: Stock Transfer - List
 
 #### What Works Correctly Now
-- Fixed an issue on the Stock Transfers list where the **Update Status** pop-up's dropdown options were appearing behind the pop-up. The status dropdown now opens correctly on top.
-- The **Edit** button on the Stock Transfers list now also appears for transfers in the **Completed** status. Previously it was hidden for completed transfers, even though the Edit page itself supported editing them.
+- **The Update Status popup is easier to use.** Its dropdown now opens clearly in front of the popup.
+- **The Edit button now also appears for completed stock transfers.** Users can open completed transfers for editing when their role allows it.
 
 ---
 

@@ -1,7 +1,3141 @@
 # What's New - User Guide
-**Updated:** 2026-07-23
+**Updated:** 2026-08-23
 
 This guide explains system changes in simple user language. It only includes what users can see, do, check, print, export, or manage in the system.
+
+---
+
+## Version 8.95.6 - 2026-08-23
+
+### Sidebar - Synchronization
+
+What users will see:
+- Synchronization now opens properly from the sidebar.
+- The Synchronization option appears in the normal sidebar menu position when it is available for the business.
+- Clicking Synchronization takes the user to the synchronization page instead of staying on the current page.
+- The sidebar keeps the normal menu items visible when offline mode is turned off.
+
+How to use or check it:
+- Open the left sidebar.
+- Click Synchronization.
+- The Synchronization page should open.
+- If offline mode is turned off, use the normal sidebar menus as usual.
+
+---
+
+### Synchronization Page
+
+What users can do now:
+- Users can switch between Upload Synchronization and Download Synchronization.
+- The selected tab opens correctly when clicked.
+- Users can view the last synchronization time for each section.
+- Users can run the required synchronization from the available Sync buttons.
+
+How to use or check it:
+- Go to Synchronization from the sidebar.
+- Click Upload Synchronization to send local work for synchronization.
+- Click Download Synchronization to bring updated information into the system.
+- Check the Last Sync time before running a sync.
+- Click the Sync button only for the section you want to update.
+
+---
+
+### Sidebar - Local System Menu
+
+What works correctly now:
+- When offline mode is not active, the normal sidebar menus are shown again.
+- Menus such as Settings, Reports, Backup, and other allowed options appear according to the user's access.
+- Synchronization no longer causes other sidebar items to disappear.
+- The menu is easier to use on localhost and local shop systems.
+
+How to use or check it:
+- Use the sidebar as usual after logging in.
+- If a menu is still not visible, check that the logged-in user has permission for that menu.
+- After changing offline mode, refresh the page and open the sidebar again.
+
+---
+
+## Version 8.95.3 - 2026-08-21
+
+### Sales - Large Product Bills
+
+What works correctly now:
+- Large sales with many product rows are handled more safely.
+- When a sale has many products, the system now protects the entered products from being lost because of a system limit.
+- If the bill is getting too large for the current system setting, users see a clear warning before adding more products.
+- With the recommended system setting, Sell and POS can handle around 1,000 to 1,200 products in one bill.
+- Users can save the current bill first, then continue after the system limit is increased or the page is reopened.
+- This helps avoid the old Something went wrong message after entering many products.
+
+How to use or check it:
+- Add products to the sale as usual.
+- If a product limit warning appears, do not refresh the page.
+- Save the current sale as Draft or Quotation if needed.
+- Ask the admin to check the product-entry limit if more products are needed.
+- After the setting is corrected, open the saved Draft or Quotation and continue the sale.
+
+---
+
+### POS and Sale Edit - Product Limit Warning
+
+What users will see:
+- POS, Add Sale, and Edit Sale now stop users before too many product rows are added for the current system setting.
+- The warning appears while adding products, before the final save fails.
+- The usual safe working range is around 1,000 to 1,200 products in one Sell or POS bill when the recommended system setting is active.
+- Users can keep the already entered products on the page and decide what to do next.
+- This makes large bills safer for cashiers and sales staff.
+
+How to use or check it:
+- If the warning appears, stop adding more products.
+- Save the bill if possible.
+- If the bill cannot be completed, save it as Draft or Quotation first.
+- Ask the admin to increase the product-entry limit if needed, then continue from the saved bill.
+
+---
+
+### Sales Return - Product Limit Warning
+
+What users will see:
+- Add Sales Return and Edit Sales Return now warn users before the return becomes too large for the current system setting.
+- Users are stopped from adding more return products when the limit is near.
+- Returns can usually handle around 1,000 to 1,200 products when the recommended system setting is active.
+- This helps protect the return products already entered on the page.
+
+How to use or check it:
+- Prepare the sales return as usual.
+- If the warning appears, stop adding more products.
+- Save the return if it is ready.
+- If more products are required, ask the admin to check the product-entry limit before continuing.
+
+---
+
+### Purchases and Purchase Orders - Product Limit Warning
+
+What users will see:
+- Add Purchase, Edit Purchase, and Purchase Order pages now warn users before too many product rows are added.
+- The same protection also works when products are selected from the product search screen or imported from a file.
+- Purchases and Purchase Orders can usually handle around 1,000 to 1,200 products when the recommended system setting is active.
+- This helps prevent purchase forms from failing after many products are entered.
+
+How to use or check it:
+- Enter purchase products as usual.
+- If the warning appears, stop adding more products.
+- Save the purchase or purchase order if possible.
+- Ask the admin to check the product-entry limit before adding more products.
+
+---
+
+### Purchase Return - Product Limit Warning
+
+What users will see:
+- Add Purchase Return and Edit Purchase Return now warn users when the product list is near the current system limit.
+- The page stops adding more products before the save can fail.
+- Purchase Returns can usually handle around 1,000 to 1,200 products when the recommended system setting is active.
+- Already entered return products stay on the page.
+
+How to use or check it:
+- Prepare the purchase return as usual.
+- If the warning appears, stop adding more products.
+- Save the purchase return if it is ready.
+- Ask the admin to check the product-entry limit before continuing with more products.
+
+---
+
+## Version 8.94.10 - 2026-08-20
+
+### Administer Backup - Auto Backup Time
+
+What works correctly now:
+- When users choose an auto backup time and click Save Time, the selected time now stays saved.
+- After the success message appears, the Backup page shows the saved time at the top.
+- Users no longer see Not Define after saving a valid backup time.
+- The saved time is used for the automatic backup schedule.
+
+How to use or check it:
+- Go to Administer Backup.
+- Select the time when the backup should run automatically.
+- Click Save Time.
+- After the success message appears, check Auto Backup Time at the top of the page.
+- The selected time should be shown there.
+
+---
+
+### Sales Return - Product Discounts
+
+What users can do now:
+- Users can apply one discount to all products on Add Sales Return and Edit Sales Return.
+- Clicking the Discount column heading opens the discount popup.
+- Users can type a discount percentage or select a saved product discount.
+- After applying the discount, all return products show the new discount.
+- Large sale returns are faster to prepare because users do not need to edit every product row one by one.
+
+How to use or check it:
+- Go to Sales > Sales Return.
+- Add a new sales return or edit an existing sales return.
+- Add the return products if needed.
+- Click the Discount column heading in the product table.
+- Enter the discount percentage or select a discount from the list.
+- Click Apply.
+- Check that all product rows show the new discount before saving.
+
+---
+
+### Purchase Return - Save and Print
+
+What users can do now:
+- Add Purchase Return now shows Save and Print and Save buttons.
+- Edit Purchase Return now shows Update and Print and Update buttons.
+- Save and Print saves the purchase return and opens the print automatically.
+- Update and Print updates the purchase return and opens the latest print automatically.
+- The normal Save or Update button is still available when users do not want to print.
+- Keyboard shortcut hints on the buttons now show the correct shortcut for Save and Save and Print.
+
+How to use or check it:
+- Go to Purchases > Purchase Return.
+- Add a new purchase return or open an existing purchase return for editing.
+- Enter or update the returned products as usual.
+- Click Save or Update if you only want to save.
+- Click Save and Print or Update and Print if you want to save and print immediately.
+
+---
+
+### Purchase Return - Print
+
+What works correctly now:
+- Purchase return prints now show as Purchase Return.
+- The printed copy shows the correct return reference number.
+- Only returned quantities are shown on the purchase return print.
+- Purchase return print now uses the Purchase print layout when it is available.
+- The Print button inside the purchase return view now prints the proper formatted copy.
+
+How to use or check it:
+- Go to Purchases > Purchase Return.
+- Open a purchase return.
+- Click Print.
+- Check that the heading, reference number, returned products, and returned quantities are correct.
+- To choose the print style, go to Settings > Business Locations and select the Purchase layout for that location.
+
+---
+
+### Purchase Return - Product Table
+
+What looks better now:
+- The product table on Edit Purchase Return is aligned properly.
+- The right-side columns now match the product rows.
+- The delete column stays in the correct place.
+- The table is easier to read when discount or tax columns are hidden.
+
+How to use or check it:
+- Go to Purchases > Purchase Return.
+- Open any purchase return for editing.
+- Check that quantities, costs, discounts, subtotals, and delete icons line up correctly.
+
+---
+
+### Purchase Return - Product Discounts
+
+What users can do now:
+- Users can apply one discount to all products on Add Purchase Return and Edit Purchase Return.
+- Clicking the Discount column heading opens the discount popup.
+- Users can type a discount percentage or select a saved product discount.
+- After applying the discount, all purchase return products show the new discount.
+- The total amount updates after the discount is applied.
+
+How to use or check it:
+- Go to Purchases > Purchase Return.
+- Add a new purchase return or edit an existing purchase return.
+- Add the products if needed.
+- Click the Discount column heading in the product table.
+- Enter the discount percentage or select a discount from the list.
+- Click Apply.
+- Check that all product rows show the new discount and the total amount is updated.
+
+---
+
+### Invoice Layout - Slim 6 Print
+
+What looks better now:
+- Slim 6 invoice print no longer shows an extra empty box before the Qty column.
+- The product table is cleaner and easier to read on narrow receipt prints.
+- Qty, Price, Discount, and Total now start without the unwanted blank column.
+
+How to use or check it:
+- Go to Settings > Invoice Settings > Layout.
+- Select a layout that uses Design Slim 6.
+- Print or preview an invoice.
+- Check the product table and confirm there is no extra blank box before Qty.
+
+---
+
+## Version 8.94.9 - 2026-08-17
+
+### Product Stock History - Manufacturing Production
+
+What users will see:
+- Planned production entries now appear in Product Stock History.
+- Users can open a product history and find the production number even before the production is completed.
+- The history row shows the production status and planned quantity, so users can understand why the stock has not increased yet.
+- Planned production does not add to current stock until it is finalized or completed.
+- After production is finalized, the produced quantity appears as normal manufacturing stock in.
+
+How to use or check it:
+- Go to Products > List Products.
+- Open Product Stock History for the required product.
+- Select the correct location if needed.
+- Search for the production number in the history table.
+- If the production is still planned, check the note shown with the production row.
+- Finalize or complete the production when the produced stock should be added to stock.
+
+---
+
+### POS - Table Order KOT Reprint
+
+What users will see:
+- When Disable Table KOT Reprint is selected for a role, that user can no longer approve their own KOT reprint.
+- The approval popup now accepts only an Admin or a user who is allowed to reprint table KOT.
+- Cashiers who are restricted from KOT reprint must ask an authorized person to enter their username and password.
+- This keeps table KOT reprinting under the correct staff control.
+
+How to use or check it:
+- Go to Settings > User Security > Security Roles.
+- Create or edit the role.
+- Open the Restaurant tab.
+- Use Disable Table KOT Reprint for users who should not reprint table KOT by themselves.
+- When approval is shown on POS, enter the username and password of an Admin or a user who is allowed to reprint table KOT.
+
+---
+
+### POS - Table Orders and Bills
+
+What works correctly now:
+- Extra products added on the POS screen are now included when printing a table bill.
+- If a table already has an order and the cashier adds one more product before clicking Print Bill, the new product also appears on the printed bill.
+- Extra products added on the POS screen are also included when checking out a table order.
+- When a cashier adds a product and quickly punches it to a table, the order saves more smoothly.
+- The POS waits for the product row to be ready before saving the table order, so users should not see an unnecessary product-row warning.
+
+How to use or check it:
+- Go to POS.
+- Open a table order or add products to the POS screen.
+- Add any extra product needed for the customer.
+- Click Print Bill and check that all products, including the extra product, are printed.
+- For checkout, load the table order, add any extra product if needed, and complete checkout as usual.
+- To punch a new order to a table, add the product and select the table. If the product is still loading, wait a moment and save again.
+
+---
+
+### POS - Cash Register Close and Print
+
+What works correctly now:
+- Close and Print now works more reliably when closing the cash register.
+- After clicking Close and Print, the register closes and the closing details are prepared for printing.
+- Cashiers do not need to close the register first and then open the register details again just to print.
+- The Print button is still available on the register details popup if the cashier wants to print again.
+
+How to use or check it:
+- Go to POS.
+- Open Cash Register and choose Close Register.
+- Enter the closing details as usual.
+- Click Close and Print.
+- Check that the register closes and the closing report is ready to print.
+
+---
+
+### Invoice Layout - Unit and KOT Print Options
+
+What users can do now:
+- Unit can now be hidden from invoice prints. In the Unit Label option, users can choose Hide Unit, Show Unit, or Show in Column.
+- Hide Sr. Number now also works on KOT and POS Bill prints. When Hide Sr. Number is selected, the item number column is removed from these prints.
+- KOT prints look better when product price and total are hidden. The product name stays on the left and quantity stays on the right.
+- KOT prints also stay neat when product price and total are shown. Product, quantity, price, and subtotal columns are easier to read.
+- The KOT header and table name are now larger. Kitchen staff can read the KOT name and table number more clearly.
+
+How to use or check it:
+- Go to Settings > Invoice Settings > Invoice Layout.
+- Add a new layout or edit an existing layout.
+- Use Unit Label to choose Hide Unit, Show Unit, or Show in Column.
+- Tick Hide Sr. Number if item numbers should not print.
+- Tick Hide Product Price and Total if KOT should print without amount details.
+- Save the layout and print a KOT or POS Bill to check the result.
+
+---
+
+### Business Locations - Payment Options
+
+What users will see:
+- Cash is selected automatically if no default payment option was selected before.
+- When adding a new business location, Cash is already selected as the default payment option.
+- When editing an old business location with no default payment option, Cash is shown as selected.
+- Only one payment option can be selected as the default at one time.
+- This helps bills and payment forms fill the payment option automatically.
+
+How to use or check it:
+- Go to Settings > Business Locations.
+- Click Add or Edit.
+- Open Payment Options.
+- Check the Default column. Cash should be selected if no other default payment option was selected before.
+- Select another payment option only if that location should use a different default.
+- Save the business location.
+
+---
+
+### User Management - Users List
+
+What looks different:
+- The Users list now shows the user ID before the Action column.
+- Admins can quickly see each user's ID without opening the user profile.
+- The same ID is shown for users, employees, and merchants where these lists are available.
+
+How to use or check it:
+- Go to Settings > User Management > Users.
+- Check the first column to see the user ID.
+- Use the Action button beside it to edit, view, delete, restore, or open settings for that user.
+
+---
+
+### POS - Recent Transactions
+
+What looks different:
+- The Recent Transactions popup now shows the user ID before the transaction number.
+- Cashiers can see which user made the transaction directly in the list.
+- This makes it easier to identify transactions before editing, deleting, printing, or printing KOT.
+
+What works correctly now:
+- Recent Transactions now follows the POS sell permission on every tab.
+- If a role has View Own POS sell, that user sees only their own POS transactions in Final Paid, Credit Sale, Draft, Return, Quotation, and Table Order.
+- Final Paid now shows only paid POS bills.
+- Unpaid or due POS bills are kept under Credit Sale instead of appearing in Final Paid.
+- When a role is changed from View All POS sell to View Own POS sell, the own-view setting is saved and shown correctly on the role edit page.
+
+How to use or check it:
+- Go to POS.
+- Open Recent Transactions.
+- Open Final Paid, Credit Sale, Draft, Return, Quotation, or Table Order if available.
+- Check the transaction line to see the user ID before the transaction number.
+- For cashier roles with View Own POS sell, confirm that only that cashier's own POS transactions are shown on each tab.
+- Check Final Paid to see only paid bills.
+- Check Credit Sale to see unpaid or due bills.
+
+---
+
+### POS - Draft Auto Save Setting
+
+What works correctly now:
+- When Enable Draft Auto Save is turned off, POS no longer saves bills automatically in the background.
+- Cashiers can still click the Draft button to save a bill as a normal draft.
+- Bills saved by clicking Draft now show as Ordered instead of Auto Saved.
+- The Auto Saved label is now used only for bills saved automatically when Draft Auto Save is turned on.
+- Old POS screens left open after changing the setting will also follow the saved Draft Auto Save setting.
+
+How to use or check it:
+- Go to Settings > Business Settings > Sales.
+- Turn Enable Draft Auto Save off if you do not want POS to save bills automatically.
+- Open POS and add products to a bill.
+- Wait a few seconds and check that the bill is not saved automatically.
+- Click Draft if you want to save the bill yourself.
+- Open Recent Transactions > Draft and check that the bill shows as Ordered, not Auto Saved.
+- Turn Enable Draft Auto Save on again only if you want POS to save draft bills automatically while the cashier is working.
+
+---
+
+### POS - Sale Save
+
+What works correctly now:
+- POS sale saving is smoother when products are added quickly.
+- If a cashier adds a product and immediately clicks Cash, Card, Multipay, Quotation, or another save button, the system waits until the product row is ready.
+- The first save attempt no longer shows an unnecessary product-row warning when the sale can be saved normally.
+- Draft auto save no longer interrupts while product rows are still loading.
+- Cashiers see a simple wait message if they try to save before the product row is ready.
+
+How to use or check it:
+- Go to POS.
+- Add products to the bill as usual.
+- If products are still loading, wait a moment before saving.
+- Click Cash, Card, Multipay, Quotation, Draft, or the required save button.
+- Check that the sale saves normally without needing to click save a second time.
+
+---
+
+### Invoice Layout - Header Text Print
+
+What works correctly now:
+- Small images or icons added in Header Text now print in the same small size on Slim receipts.
+- Header icons, such as WhatsApp or small logo icons, no longer appear too large in print preview.
+- The Slim receipt header looks closer to the layout preview shown while editing the invoice layout.
+- Business name, contact details, and small header icons stay arranged neatly on the printed receipt.
+
+How to use or check it:
+- Go to Settings > Invoice Settings > Invoice Layouts.
+- Open the Slim invoice layout you want to edit.
+- Go to 2 - Layout Header to be shown.
+- Add or resize small icons in Header Text as needed.
+- Save the invoice layout.
+- Print or preview a POS receipt and check that the header icons appear small and neat.
+
+---
+
+### Sales - Offline Customer Selection
+
+What works correctly now:
+- Customer selection on Add Sale and Edit Sale is now easier to use on offline workstations.
+- The customer field, refresh button, and sale date fields stay properly aligned.
+- An extra small input box no longer appears beside the customer field.
+- Cashiers can select or search the customer normally while creating or editing a sale offline.
+
+How to use or check it:
+- Open the system on an offline workstation.
+- Go to Sales > Add Sale.
+- Check that the Customer field appears clearly in one line with the refresh button.
+- Select or search a customer as usual.
+- Open an existing sale for editing and check the Customer field there also.
+
+---
+
+### Users & Roles - POS Buttons
+
+What works correctly now:
+- Subdomain users now see the correct POS footer buttons according to their own role.
+- Role settings from another customer or main domain no longer affect the POS buttons for the current customer.
+- If a role allows Cash, Card, Multipay, Draft, Quotation, or Credit Sale, those buttons can show normally on the POS screen.
+- Buttons that are intentionally hidden from the role, such as Suspend or Takeaway, remain hidden as expected.
+- After updating a customer subdomain, users can log in again and see the correct POS button access.
+
+How to use or check it:
+- Go to Settings > User Management > Roles.
+- Open the user role you want to check.
+- Go to the POS permissions section.
+- Review the Payment Buttons options.
+- Tick only the buttons you want to hide from that role.
+- Save the role.
+- Ask the user to refresh the POS screen or log in again.
+- Go to POS and check that the footer buttons match the saved role settings.
+
+---
+
+### Purchases - Edit Purchase
+
+What works correctly now:
+- Purchases with many products can now be updated more safely.
+- When a purchase has 40, 50, or more product rows, the system keeps all product rows during update.
+- Newly added products on a large purchase can be saved without the purchase dropping older products from the list.
+- If all product rows are not available during save, the purchase is not saved as incomplete.
+- Users will see a clear message and can refresh the page before trying again.
+
+How to use or check it:
+- Go to Purchases > Purchases List.
+- Open the purchase you want to edit.
+- Add or update products as needed.
+- Click Update or Update and Print.
+- After saving, open the purchase details and check that all products are still shown.
+- If a message says the purchase was not saved because product rows were missing, refresh the page and try again.
+
+---
+
+### Update - User Role Access
+
+What works correctly now:
+- After running the system update, user role access is checked and corrected automatically.
+- Admins no longer need to open and save a role just to refresh user permissions after an update.
+- Businesses on the main domain and customer subdomains can keep their own role access after update.
+- Sales and POS permissions stay aligned for users who are allowed to work on those screens.
+
+How to use or check it:
+- Login as Admin or Superadmin.
+- Go to the system update page.
+- Run the update as usual.
+- After the update finishes, ask users to refresh the page or log in again.
+- Check the user's screen, such as POS or Sales, to confirm the allowed buttons and actions are visible.
+
+---
+
+### Products - Merge Products
+
+What works correctly now:
+- The Merge Products button on the Products List now opens normally.
+- Users can search and select the product they want to merge from.
+- Users can search and select the product they want to merge into.
+- Product search inside the merge popup now works by product name or SKU.
+- The merge popup can be used without the page showing an error message.
+
+How to use or check it:
+- Go to Products > Products List.
+- Click Merge Products from the bottom action buttons.
+- Search by product name or SKU and select the product in Merge From.
+- Search by product name or SKU and select the product in Merge To.
+- Click Submit to merge the selected products.
+
+---
+
+### Sales - Unpaid Invoice Save
+
+What works correctly now:
+- Sales invoices can now be saved without taking payment when the customer is allowed to buy on credit.
+- If the payment amount is 0.00, the invoice is saved as unpaid instead of showing a payment missing message.
+- Customers with no credit limit can still have unpaid invoices saved normally.
+- The unpaid amount will remain visible as the customer's balance due.
+
+How to use or check it:
+- Go to Sales > Add Sale.
+- Select the customer.
+- Add the products to the invoice.
+- Keep the payment amount as 0.00 if the customer will pay later.
+- Click Save or Save and Print.
+- Open the invoice or customer ledger to check that the amount is shown as due.
+
+---
+
+## Version 8.94.8 - 2026-08-14
+
+### POS - Table Orders
+
+What works correctly now:
+- The Table Orders popup now shows the total number of selected orders in the footer.
+- The Table Orders popup now shows the total amount in the footer, so users can check it easily before checkout or bill print.
+- When a table has many orders, the POS now shows a clear processing message while loading the orders.
+- When users click Print Bill for a large table order, the screen now shows that the bill is being prepared.
+- When users click Checkout for a large table order, the screen now shows that checkout is being prepared.
+- When users click Cash to finalize a large table order, the screen now shows that the sale is being finalized.
+- Table order totals now stay consistent when opening the order, printing the bill, and checking out.
+- Repeated products in a large table order now load with the correct quantity and amount.
+- The system now avoids creating unpaid final bills if payment details are not received properly.
+- If payment information is missing, the user will see a message and the sale will not be finalized incomplete.
+
+How to use or check it:
+- Go to POS.
+- Open a table that has table orders.
+- Check the Table Orders popup footer for Orders and Total.
+- Select the required table order or bill.
+- Click Print Bill and wait while the processing message is shown.
+- Click Checkout and wait while the order is loaded on the POS screen.
+- Check that the POS total matches the table order bill total.
+- Click Cash to finalize the sale.
+- Wait for the processing message to finish before clicking another button.
+- After checkout, open Recent Transactions > Final Paid and confirm that only the completed paid bill is shown for that checkout.
+
+---
+
+### Sales - Drafts List
+
+What works correctly now:
+- The Drafts List now shows the Type of Services Value beside the Total Amount.
+- Users can now filter draft bills by table from the report filters.
+- The Drafts List now shows footer totals at the bottom for total items, total amount, and type of services value.
+- It is easier to review draft bills by table and quickly check the total value shown in the list.
+
+How to use or check it:
+- Go to Sales > Drafts List.
+- Use the Table filter if you want to see draft bills for one table only.
+- Check the Type of Services Value column beside Total Amount.
+- Check the bottom row of the table to see the totals for the visible draft bills.
+
+---
+
+### Reports - Purchase Payment Report
+
+What works correctly now:
+- Purchase Payment Report totals now match the supplier ledger more closely.
+- Supplier payments that include Ledger Discount 2 or Ledger Discount 3 now show the correct net payment amount.
+- The Summary tab now shows the correct number of payment transactions and payment amount for the selected supplier and date range.
+- The Supplier Summary tab now follows the same correct supplier payment totals.
+- The Detail tab footer now shows the payment count and total amount correctly.
+- The Detail tab footer totals now line up under the correct columns.
+- The payment count now appears under Payment No., and the amount total now appears under Amount.
+- The Detail tab now shows only one footer row, so the totals area is cleaner and easier to read.
+- Printed, PDF, and Excel copies of the Purchase Payment Report follow the same corrected totals.
+
+How to use or check it:
+- Go to Reports > Purchase Payment Report.
+- Select the required supplier.
+- Select the required date range.
+- Check the Summary tab for payment method totals.
+- Open the Detail tab and check that the footer shows the correct payment count and amount total.
+- Check that the footer values are shown under the correct columns.
+- Compare the report with the supplier ledger if needed. The totals should now match for supplier payments that include ledger discounts.
+
+---
+
+### Sales - Large Quotations and Drafts
+
+What works correctly now:
+- Sales quotations and drafts with many products now save more safely.
+- When a quotation or draft has 40 or more products, the system no longer saves only part of the product list silently.
+- If all product rows cannot be saved properly, the user will see a warning and the sale will not be saved incomplete.
+- Users can add many products on the Add Sale screen with more confidence.
+
+How to use or check it:
+- Go to Sales > Add Sale.
+- Add a large number of products, such as 40 or more items.
+- Save the sale as Draft or Quotation.
+- Open the saved Draft or Quotation again and check that all products are still listed.
+- If a warning appears, reload the page and save again so the sale is not saved with missing products.
+
+---
+
+### Sales - Quotations and Drafts
+
+What works correctly now:
+- Creating quotations and drafts from Add Sale is smoother when many products are added.
+- After adding 30 or more products, the screen should stay more responsive while the user continues adding items.
+- Users can continue product entry without the page slowing down badly because of draft saving in the background.
+- Draft and quotation saving still works, but it waits better while the user is busy adding products.
+
+How to use or check it:
+- Go to Sales > Add Sale.
+- Choose Draft or Quotation.
+- Add many products one after another.
+- Continue entering products normally.
+- Save the Draft or Quotation and check that the product list is complete.
+
+---
+
+### Sales and POS - POS Disabled Businesses
+
+What works correctly now:
+- If POS is turned off in Business Settings, users are no longer sent to the POS screen by mistake.
+- If POS is turned off, users are no longer sent to the Open Cash Register page while working on Add Sale.
+- Sales quotations and drafts can still be created from Add Sale when POS is turned off.
+- Cash Register opening is now kept for POS use only.
+- Add Sale continues to work separately from POS.
+
+How to use or check it:
+- Go to Settings > Business Settings > Modules.
+- Turn off POS Sale if the business does not use the POS screen.
+- Go to Sales > Add Sale.
+- Create a Draft or Quotation as usual.
+- Check that the system stays on the sales screen and does not ask to open a cash register.
+
+---
+
+### POS - Draft Bills
+
+What works correctly now:
+- Draft bills now use the current date and time when they are finalized.
+- Finalized draft bills now appear in today's Final Paid list and POS sales list.
+- After a draft bill is paid, it is removed from the Draft list and can be found under Final Paid.
+- Opening a draft bill from Recent Transactions > Draft now opens the bill normally.
+- Draft bills no longer stay hidden under the old draft date after payment.
+
+How to use or check it:
+- Go to POS and click Recent.
+- Open the Draft tab.
+- Select a draft bill and click Edit.
+- Check that the bill opens with the current date and time.
+- Take payment and save the bill.
+- Open Recent > Final Paid and check that the paid bill is shown there.
+- Check the POS sales list for the same bill under today's date.
+
+---
+
+### POS Menu - Load Products
+
+What works correctly now:
+- Load Products is now available in the POS Menu for all POS users.
+- If a user does not have Sale Return or Direct Return permission, they can still open Sale Return in the POS Menu and use Load Products.
+- Users without return permission will only see the invoice number field and Load Products option.
+- Sale Return and Direct Return options are still shown only to users who have those permissions.
+
+How to use or check it:
+- Go to User Management > Roles.
+- Create or edit a role.
+- Open the POS tab and check the Sale Return permissions.
+- If Sale Return and Direct Return permissions are not selected, save the role.
+- Login with that user and open POS.
+- Open the POS Menu and click Sale Return.
+- Enter the invoice number and click Load Products.
+
+---
+
+### Settings - Invoice / Receipt Design
+
+What users can do now:
+- A new Draft Ref No label setting has been added in the Invoice Header section.
+- A new Show Draft Ref No checkbox has been added.
+- When a draft bill is finalized, the receipt can show the old draft bill number as a reference number.
+- Users can choose the label name for this reference, such as Ref. or Draft Ref.
+- If the checkbox is turned off, the draft reference number is not printed on the receipt.
+
+How to use or check it:
+- Go to Settings > Invoice Settings.
+- Open the required invoice layout.
+- Go to section 3 - Invoice Header to be shown.
+- Enter the label you want for the draft reference number.
+- Tick Show Draft Ref No if you want finalized draft bills to print the old draft bill number.
+- Save the layout and print a finalized draft bill to check the receipt.
+
+---
+
+### Manufacturing - Production
+
+What works correctly now:
+- Production list category filters now show the correct products. When users select a Category and Sub Category, products saved under that Sub Category's Sub2 Category now appear correctly in the list.
+- Products no longer disappear when using the Sub Category filter. For example, a product under BAKERY > SWEETS SECTION > Barfi will still show when BAKERY and SWEETS SECTION are selected.
+
+How to use or check it:
+- Go to Manufacturing > Production.
+- Select a Category.
+- Select a Sub Category.
+- Leave Sub2 Category as All if you want to see all products under that Sub Category.
+- Check that products from the matching Sub2 Categories are also shown in the Production list.
+
+---
+
+### Reports - Daily Closing Report
+
+What works correctly now:
+- Daily Closing Report print preview now moves between pages properly.
+- Daily Closing Report pages now use the available page space better, so pages do not show large empty areas unnecessarily.
+- Daily Closing Report PDF export now follows the print preview more closely.
+- Stock value rows in the Daily Closing Report are arranged more evenly across pages.
+- The PDF export no longer creates almost empty pages when only a few rows are left for a location.
+
+How to use or check it:
+- Go to Reports > Admin Reports > Daily Closing Report.
+- Select the required date and filters.
+- Open the print preview.
+- Use the page buttons to move between pages.
+- Click PDF to export the report.
+- Check that the exported PDF pages are filled neatly and match the preview more closely.
+
+---
+
+### Contacts - Contact Ledger
+
+What works correctly now:
+- Contact Ledger PDF export now keeps the right-side amount columns properly aligned.
+- Debit, Credit, and Balance amounts now stay readable in the exported PDF.
+- The exported Contact Ledger PDF now looks closer to the browser preview.
+- Ledger rows and amount columns no longer squeeze or break badly on the right side of the PDF.
+
+How to use or check it:
+- Open a contact and go to the Ledger tab.
+- Choose the required date range and ledger format.
+- Open the print preview.
+- Click PDF to export the ledger.
+- Check that Debit, Credit, and Balance columns are aligned and easy to read.
+
+---
+
+### Contacts - Contact Ledger Format 2
+
+What works correctly now:
+- Ledger Format 2 is now easier to read in print preview and PDF.
+- The Date column now keeps the full date on one line and shows the time below it.
+- The Number column now shows the transaction name first and the transaction number below it.
+- Transaction numbers such as LID012026-000012 now stay together instead of breaking after the dash.
+- Long Ref. No. details now wrap neatly inside the Ref. No. column.
+- Comma-separated Ref. No. details now show a space after each comma.
+- Date, Number, Quantity, Amount, and Balance columns now use only the space they need.
+- Extra table space is now given to the Ref. No. column.
+- Ledger Format 2 now looks better in both browser print preview and downloaded PDF.
+
+How to use or check it:
+- Open a contact and go to the Ledger tab.
+- Choose Format 2.
+- Open the print preview in portrait if needed.
+- Check that Date, Number, and amount columns are compact and readable.
+- Check that long Ref. No. details use the extra space and wrap neatly.
+- Click PDF to download the ledger.
+- Check that the downloaded PDF keeps the same columns neat and aligned.
+
+---
+
+### Contacts - Contact Ledger Format 1
+
+What works correctly now:
+- Ledger Format 1 now gives more space to the Ref. No. column.
+- Long Ref. No. details now wrap neatly inside the Ref. No. column.
+- Comma-separated Ref. No. details now show a space after each comma.
+- Date, Number, Payment, and amount columns now stay compact and readable.
+- Ledger Format 1 print preview and PDF are easier to read when Ref. No. details are long.
+- Ledger Format 1 downloaded PDF now keeps the columns aligned like the preview.
+
+How to use or check it:
+- Open a contact and go to the Ledger tab.
+- Choose Format 1.
+- Open the print preview or download the PDF.
+- Check that the Ref. No. column has more room for long details.
+- Check that the other columns stay compact and aligned.
+
+---
+
+### Manufacturing - Demand Ingredient Report
+
+What users can do now:
+- Product-wise Summary now has a Status column before Demand Qty.
+- Users can click the status badge to change the status for that product row.
+- Available status options are Planned, In Progress, Quality Check, Completed, On Hold, and Cancelled.
+- Each user can keep their own status for this report, without changing anything on the Production page.
+- The selected status stays saved when the report is opened again.
+- The filter now clearly says Demand Order Status, so users can tell it is filtering demand orders.
+
+How to use or check it:
+- Go to Manufacturing > Reports > Demand Ingredient Report.
+- Generate the report with the required filters.
+- Use Demand Order Status if you want to show only demand orders with selected statuses.
+- Open the Product-wise Summary tab.
+- Click the status badge beside a product.
+- Select the required status from the dropdown.
+- Click Update Status.
+- Refresh or open the report again to confirm the selected status is still shown.
+
+What works correctly now:
+- Product-wise Summary now prints on an upright page and fits neatly.
+- Category-wise Summary is now easier to read in print preview and PDF.
+- All Ingredients Summary now fits more lines on each page.
+- All Ingredients Detail now keeps the full table inside the page more clearly.
+- Batch Ingredients Summary now prints on an upright page and fits neatly.
+- Report pages now show less empty space at the bottom.
+- Demand Ingredient Report tables are easier to read on screen.
+
+How to use or check it:
+- Go to Manufacturing > Reports > Demand Ingredient Report.
+- Select the required date range and demand orders.
+- Open Product-wise Summary and check that the page is filled neatly.
+- Open Category-wise Summary and check that the table is easier to read.
+- Open All Ingredients Summary and check that more lines fit on the page.
+- Open All Ingredients Detail and check that the full table stays inside the page.
+- Open Batch Ingredients Summary and check that the page is filled neatly.
+- Click the red PDF button to export the report.
+- Check the exported PDF to confirm the table is readable and the page does not have large empty areas.
+
+---
+
+### Contacts - Contact List
+
+What users can do now:
+- The contact list now shows Number of Transactions before Added On.
+- Users can quickly see how many ledger transactions exist for each supplier, customer, or combined contact.
+- Long contact list headings are easier to read because important headings now appear on two lines.
+- Headings such as Contact ID, Business Name, Tax number, Opening Balance, Advance Balance, Ledger Discount, Total Due, Return Due, Credit Limit, Customer Group, and Business Locations now take less width.
+
+How to use or check it:
+- Go to Contacts and open Suppliers, Customers, or Both.
+- Check the new Number of Transactions column before Added On.
+- Use this number to quickly identify contacts with more or fewer ledger transactions.
+- Read the two-line table headings to review balances, dues, business locations, and contact groups more comfortably.
+
+---
+
+### Manufacturing - Recipe and Production
+
+What users can do now:
+- The recipe Add Ingredients page now shows the product SKU beside the product name.
+- Users can quickly confirm the exact product before adding or editing recipe ingredients.
+- The "Allow edit on Production" option now appears only when "Disable editing ingredients quantity in production" is ticked in Manufacturing Settings.
+- When "Disable editing ingredients quantity in production" is unticked, ingredient quantities can be edited directly while adding or editing production.
+- When "Disable editing ingredients quantity in production" is ticked, each recipe can control production editing with "Allow edit on Production".
+- If "Allow edit on Production" is ticked for that recipe, production ingredient quantities can be changed.
+- If "Allow edit on Production" is unticked for that recipe, production ingredient quantities stay locked.
+
+How to use or check it:
+- Go to Manufacturing > Settings.
+- Tick "Disable editing ingredients quantity in production" if you want to control editing recipe by recipe.
+- Go to Manufacturing > Recipe and open Add Ingredients for a product.
+- Check the product SKU shown beside the product name.
+- Tick "Allow edit on Production" only for recipes where staff may change ingredient quantities during production.
+- Go to Manufacturing > Production > Add or edit a production entry.
+- Check that ingredient quantities are editable only for the recipes where editing is allowed.
+
+---
+
+### Reports - Daily Closing Report
+
+What users can do now:
+- Users can sort the Daily Closing Report tables by clicking any table heading.
+- Clicking a heading once sorts the table from smallest to largest or A to Z.
+- Clicking the same heading again sorts it the other way.
+- Users can sort purchase invoice details by Date, Ref No, Supplier, Type, Location, Payment Status, Total Amount, Paid, Payment Method, Due, and Others.
+- Users can sort product detail rows inside purchase invoices.
+- Users can sort stock value detail tables by any visible column.
+- Totals stay at the bottom while users sort the report.
+- Purchase invoice detail rows stay connected to their invoice when sorting.
+
+How to use or check it:
+- Go to Reports > Admin Reports > Daily Closing Report.
+- Wait for the Purchase Invoices Report - Detailed and Stock Value Report - Detailed sections to load.
+- Click any table heading to sort that table.
+- Click the same heading again to change the sorting direction.
+- Use this to quickly find the highest amount, lowest amount, earliest date, latest date, supplier name, product name, or location.
+- Change filters if needed, then sort the newly loaded tables again.
+
+---
+
+### Discounts - Date and Time Range
+
+What works correctly now:
+- Discounts now follow the selected time range correctly on POS and sales screens.
+- A discount set from 02:00 AM to 05:29 AM only works during that time.
+- The discount no longer applies at night or evening when the selected time range has already ended.
+- Date range and discount days still decide which dates the discount can be used.
+
+How to use or check it:
+- Go to Discounts.
+- Open the discount you want to check or edit.
+- Set the Start Date and Start Time.
+- Set the End Date and End Time.
+- For daily time offers, choose the start and end time when the discount should work each day.
+- Select the discount days that should be allowed.
+- Make sure Is active is ticked.
+- Save the discount.
+- Open POS or the sales screen during the selected time and check that the discount is applied.
+- Open POS or the sales screen outside the selected time and check that the discount is not applied.
+
+---
+
+## Version 8.94.7 - 2026-08-13
+
+### Products - Products List
+
+What works correctly now:
+- Products List now opens normally instead of staying stuck on Processing.
+- Products now appear in the list as expected.
+- Users can search products by name or SKU after the list opens.
+- Users can choose how many products to show on one page.
+- Export buttons and product action buttons can be used normally.
+- Bulk action buttons are easier to use because they stay visible under the product list.
+
+How to use or check it:
+- Go to Products > Products List.
+- Wait for the product list to load.
+- Use the Search box to find a product by name or SKU.
+- Use the Show entries dropdown if you want to see more or fewer products on one page.
+- Select products from the checkbox column if you want to use any bulk action button.
+- Use Bulk Edit, Add to location, Remove from location, Merge Products, Deactivate Selected, Reactivate Selected, Print Labels, or Stock Maintenance as needed.
+
+---
+
+### Users & Roles - Sales Permissions
+
+What works correctly now:
+- Non-admin users now see the correct Sales action options according to their role.
+- Users who are allowed to edit sales can see the Edit option again in Sales > Sales List.
+- Cashiers and staff only see the sales actions allowed for their role.
+- When an admin changes a role, the Sales options remain easier to review and manage.
+
+How to use or check it:
+- Go to Settings > User Management > Roles.
+- Open the role you want to check, such as Cashier.
+- Review the Sales and POS sale permissions for that role.
+- Tick the sales actions that this role should be allowed to use.
+- Save the role.
+- Ask the user to refresh the page or log in again.
+- Go to Sales > Sales List.
+- Open the Actions menu on a sale invoice and check that the allowed options, such as Edit, are visible.
+
+---
+
+### Purchases - Edit Purchase
+
+What works correctly now:
+- Users can update an existing purchase even when the supplier is already selected on the page.
+- The page no longer asks for Supplier again when the supplier name is already showing.
+- Old purchases with a selected supplier can be edited and updated more smoothly.
+- The selected supplier stays with the purchase during update.
+
+How to use or check it:
+- Go to Purchases > Purchases List.
+- Search the purchase transaction number, such as PI012026-000596.
+- Open Actions > Edit.
+- Check that the supplier name is already selected.
+- Make the required purchase changes.
+- Click Update or Update and print.
+- If a message appears, read it on the same page and complete only the missing information shown.
+
+---
+
+### Software Update
+
+What works correctly now:
+- Admins can open the Software Update page and use the I Understand, Update button normally.
+- The update can continue even if some new features were already added during an earlier update attempt.
+- The update flow is smoother for systems that already have Delivery Notes features available.
+- The update flow is smoother for systems that already have Slaughterhouse features available.
+- After the update finishes, users can continue using the software normally.
+
+How to use or check it:
+- Sign in with an Admin user.
+- Click the red UPDATE button if it appears, or open the Software Update page.
+- Read the warning on the update page.
+- Click I Understand, Update.
+- Wait until the update finishes.
+- After the update finishes, open the dashboard and check that the normal menus are available.
+
+---
+
+### Backup - Auto Backup Time
+
+What works correctly now:
+- Users can save the auto backup time from the Backup page without the page stopping with an error.
+- The selected backup time stays saved after updating.
+- The Backup page shows the saved auto backup time clearly.
+
+How to use or check it:
+- Go to Backup.
+- Choose the time when automatic backup should run.
+- Click Save.
+- Check that the selected time is shown on the Backup page.
+
+---
+
+### About Page
+
+What works correctly now:
+- The About page now opens normally.
+- The Last Updated date shows in a clear and readable format.
+- A wrong date setting no longer stops users from opening the software.
+
+How to use or check it:
+- Open the About page from the menu.
+- Check the Last Updated date shown on the page.
+- Use the Version History link if you want to read the recent changes.
+
+---
+
+## Version 8.93.12 - 2026-08-12
+
+### Sales - Add Sale from Quotation
+
+What works correctly now:
+- Products loaded from a quotation now keep the same quantity that was entered on the quotation.
+- If a quotation product has no stock available, the sale page shows a clear stock warning instead of silently changing the quantity.
+- The stock warning now points to the affected product row, so users can easily see which item needs attention.
+- If more than one quotation product has no stock, the sale page can show the warning for all affected products.
+
+How to use or check it:
+- Go to Sales > Add Sale.
+- Use Load Products from Quotation to select the quotation.
+- Check that the product quantities match the quotation.
+- If any product is not available in stock, review the warning shown beside that product.
+- Adjust the product or stock as needed before saving the sale invoice.
+
+---
+
+### Sales - Quotations List
+
+What works correctly now:
+- Completed quotation status can now be changed from the Quotations List.
+- Users can click the Completed status, open the status popup, and change it to Pending when needed.
+- The status popup opens clearly on the page and can be closed normally.
+- After updating the status, the Quotations List refreshes and shows the latest status.
+
+How to use or check it:
+- Go to Sales > Quotations List.
+- Find the quotation that shows Completed in the Status column.
+- Click Completed.
+- In the popup, choose Pending from the Status dropdown.
+- Click Update.
+- Check that the quotation now shows Pending in the list.
+
+---
+
+### Sales - Sale Invoice Edit
+
+What works correctly now:
+- Sale invoices made from the Add Sale screen now open on the normal Sale Edit page.
+- Sales no longer open on the POS edit page by mistake when the POS module is turned off.
+- The Sales List now keeps these invoices under the correct Sale screen workflow.
+- Older sale invoices can also be opened from Sales as expected.
+
+How to use or check it:
+- Go to Sales > Sales List.
+- Search the invoice number you want to edit.
+- Click Actions > Edit.
+- Check that the invoice opens on the normal Sale Edit page.
+- Edit and update the invoice as usual.
+
+---
+
+## Version 8.93.11 - 2026-08-11
+
+### Purchases - Add and Edit Purchase
+
+What works correctly now:
+- Purchase forms now show the exact missing-field message on the same page if something is incomplete.
+- The purchase page no longer clears all entered products when a save message appears.
+- Users can review the message, complete the missing information, and save again without starting the purchase from the beginning.
+- Products loaded from a quotation now stay in the purchase form after applying product discount.
+- Product discount applied from the discount column can be saved with the purchase normally.
+- Purchase total, net total, and payable amount are kept ready for saving after quotation products and discounts are added.
+- Editing an old purchase no longer asks for Supplier again when the supplier is already selected.
+
+How to use or check it:
+- Go to Purchases > Add Purchase.
+- Select the supplier and other required purchase details.
+- Use Load Products from Quotation if you want to bring quotation products into the purchase.
+- Click the Unit Discount column heading if you want to apply one discount to all products.
+- Enter the discount, such as 45%, and apply it.
+- Check that the product rows, net total, and total payable amount are showing.
+- Click Save or Save and print.
+- If a message appears, read it on the same page, complete the missing detail, and save again.
+- When editing an existing purchase, check the selected supplier and click Update as usual.
+
+---
+
+## Version 8.93.10 - 2026-08-11
+
+### Home Dashboard - Business Analytics
+
+What works correctly now:
+- Business Analytics on the Home Dashboard now loads properly.
+- Recent Transactions no longer stays stuck on Loading.
+- Dashboard charts and insight cards now continue showing even when product, customer, or location names use Urdu or other non-English text.
+- Users can review recent sales, purchases, payment method sales, hourly sales, top products, and business health from the dashboard as expected.
+
+How to use or check it:
+- Go to Home / Dashboard.
+- Open the Business Analytics & Insights section.
+- Check that Recent Transactions shows the latest activity instead of staying on Loading.
+- Check that the dashboard charts and Business Health card are visible.
+- Change the date or business location if needed and confirm the dashboard refreshes normally.
+
+---
+
+### Sales - Invoice Totals
+
+What works correctly now:
+- Final sale invoices no longer save with zero total when the bill has products and amount.
+- The Sales list can show the correct Total Amount and Sale Due again for affected invoices.
+- Sale Details now shows the correct Total Receivable and Total remaining for affected invoices.
+- Old affected invoices can be corrected so users do not see zero values for real sales.
+
+How to use or check it:
+- Go to Sales and search the invoice number.
+- Check that Total Amount and Sale Due show the real sale amount.
+- Open Sale Details and check that Total Receivable and Total remaining show the real sale amount.
+- If an old invoice still shows zero, ask admin or support to correct the old invoice totals and refresh the Sales list.
+
+---
+
+## Version 8.93.9 - 2026-08-11
+
+### POS - Draft Bills
+
+What works correctly now:
+- Draft bill print now shows the correct Total after bill discount on Slim receipt layouts.
+- When a draft bill has a bill discount, the printed draft no longer shows Total as zero by mistake.
+- Slim receipt designs now show the draft total more clearly after subtotal and discount.
+
+How to use or check it:
+- Go to POS and open a draft bill.
+- Apply the required bill discount.
+- Print or preview the draft bill.
+- Check that Subtotal, Discount, and Total show the correct amounts.
+
+---
+
+### POS - Auto Saved Drafts
+
+What works better now:
+- Empty auto-saved drafts with zero amount no longer appear in the Draft transactions list.
+- When a cashier updates an existing draft, the system keeps the same draft bill instead of showing extra empty draft bills.
+- The Draft transactions popup is cleaner because only useful draft bills are shown.
+
+How to use or check it:
+- Go to POS and open Recent Transactions.
+- Open the Draft tab.
+- Check that empty zero-value auto-saved drafts are not shown.
+- Open the correct draft bill and continue editing or updating it as usual.
+
+---
+
+### POS - Draft Bill Update
+
+What works correctly now:
+- Bill discount changes are now saved when updating an existing draft bill.
+- After updating a draft bill, the Draft transactions list shows the latest total.
+- The draft bill time is refreshed after update, so users can easily see the latest saved draft.
+- The same draft number is updated correctly instead of creating confusion with old values.
+
+How to use or check it:
+- Go to POS and open Recent Transactions.
+- Open the Draft tab and select the draft bill you want to edit.
+- Change the bill discount if needed.
+- Click Update.
+- Open the Draft tab again and check that the total and time show the latest saved bill.
+
+---
+
+## Version 8.93.8 - 2026-08-06
+
+### POS - Invoice Printing
+
+What works correctly now:
+- Classic sale invoices now print with the correct layout from the POS screen.
+- Invoice text and details stay arranged properly when printing after completing a POS sale.
+- Reprinted invoices and newly printed POS invoices now look consistent.
+- Slim receipt layouts now adjust better when printed on normal A4 paper.
+- Slim receipt text and tables no longer stay squeezed into a small strip when A4 paper is selected.
+
+How to use or check it:
+- Go to POS and create a sale.
+- Complete the sale and open the print preview.
+- Check that the Classic invoice layout appears properly before printing.
+- If using a Slim receipt layout with A4 paper, check that the receipt uses the page width properly before printing.
+
+---
+
+### Sales - Product Delete Confirmation
+
+What works better now:
+- Sale Create and Sale Edit now ask before removing a product from the bill.
+- The popup shows the product name, so users can confirm they are deleting the correct item.
+- If the user cancels the popup, the product stays on the bill.
+
+How to use or check it:
+- Go to Sales > Add Sale or open an existing sale for editing.
+- Click the cross button beside any product row.
+- Read the confirmation popup and choose OK only if you want to remove that product.
+
+---
+
+### Truckmate - Sidebar Menu
+
+What works correctly now:
+- Truckmate now shows again in the sidebar when the business has Truckmate access.
+- Users can open Truckmate pages from the sidebar as expected.
+
+How to use or check it:
+- Open the main dashboard.
+- Check the left sidebar menu.
+- Truckmate should be available for users who have Truckmate access.
+
+---
+
+### Truckmate - Date Calendars
+
+What works better now:
+- Truckmate date calendars now open in the correct place beside the selected date field.
+- The full calendar is now visible, including the month and year area at the top.
+- Users can select dates more easily on Job Sheet, Vehicle, Driver, and Invoice pages.
+- Start Date, End Date, Invoice Date, and vehicle/driver date fields no longer show a hidden or cut-off calendar.
+
+How to use or check it:
+- Open any Truckmate page that has a date field, such as Add Job Sheet, Edit Job Sheet, Add Vehicle, Edit Vehicle, Add Driver, Edit Driver, Add Invoice, or Edit Invoice.
+- Click the date field.
+- Use the calendar to choose the required date.
+- Use the month and year area at the top of the calendar when you need to move to another month.
+
+---
+
+### Truckmate - Job Sheets
+
+What looks better now:
+- The Job Sheets page has less empty space above the table.
+- The Add button, export buttons, search box, and table now appear closer together and are easier to use.
+- The Edit Status popup on Dashboard Jobs can now be closed normally.
+
+How to use or check it:
+- Go to Truckmate > Job Sheets to view the cleaner list page.
+- Go to Truckmate > Dashboard Jobs and open Edit Status.
+- Click Close or the cross button to close the popup.
+
+---
+
+### Truckmate - Settings
+
+What works correctly now:
+- The Add Status popup can now be closed normally from Truckmate Settings.
+- The Edit Status popup can also be closed normally.
+- Users no longer need to refresh the page to leave the status popup.
+
+How to use or check it:
+- Go to Truckmate > Settings.
+- Click Add Status or Edit on an existing status.
+- Click Close or the cross button to close the popup.
+
+---
+
+### Truckmate - Invoices
+
+What works better now:
+- The Add Invoice page now opens normally.
+- Add Invoice and Edit Invoice top details are now arranged neatly in one row where space is available.
+- Customer, Pay Term, Invoice Date, and Invoice Number are easier to read and fill in.
+- The invoice date calendar now opens fully, with the month and year area visible.
+
+How to use or check it:
+- Go to Truckmate > Add Invoice.
+- Fill in the top invoice details from left to right.
+- Click Invoice Date and select the required date from the full calendar.
+- For an existing invoice, open Edit Invoice and check the same improved layout.
+
+---
+
+### User Security - Users List
+
+What works better now:
+- When no user limit is set, the Users List no longer shows a fixed limit at the top.
+- This means the user count area stays simple when unlimited users are allowed.
+- The warning about maximum users no longer appears when there is no fixed user limit.
+
+How to use or check it:
+- Go to User Security > Users List.
+- Check the top of the users table.
+- If unlimited users are allowed, the list will not show a user limit count.
+- Click Add to create a new user as usual.
+
+---
+
+### Backup - Auto Backup Time
+
+What users can do now:
+- Backup page now clearly shows when auto backup time is not set. If no auto backup time is defined, users will see Not Define instead of a default time.
+- Users can now set the auto backup time directly from the Backup page.
+- After saving the time, the selected time appears on the Backup page as the current auto backup time.
+
+How to use or check it:
+- Go to Backup.
+- Check Auto Backup Time at the top of the page.
+- If it shows Not Define, choose the required time from the time field.
+- Click Save Time.
+- The saved time will be used for automatic backup.
+
+---
+
+### Backup - Google Drive Settings
+
+What works correctly now:
+- Google Drive setup details now stay open when an Admin clicks them.
+- Admins can now check or enter Google Drive details without the section closing immediately.
+- The Google Drive setup guide still opens normally on the same page.
+
+How to use or check it:
+- Go to Backup > Google Drive.
+- Click Google Drive setup details.
+- Check or enter the required Google Drive details.
+- Click Save if any changes are made.
+
+---
+
+### POS - Final Sale Total
+
+What works correctly now:
+- POS now keeps the final payable amount shown on the checkout screen when completing a sale.
+- Finalized sales no longer change to a different total when the cashier has already checked the bill amount.
+- Sales that include service charges or packing charges can be completed more smoothly.
+- If the bill total needs review, the cashier can still continue without unnecessary interruption.
+
+How to use or check it:
+- Open POS and create or edit a sale as usual.
+- Apply any discount, service, packing, shipping, reward, or round-off amount needed for the bill.
+- Check the final payable amount shown on the POS screen.
+- Complete the sale.
+- Open the invoice again and confirm that the saved total matches the POS checkout total.
+
+---
+
+### POS - Edit Sale Screen
+
+What works better now:
+- Existing product set rows load more reliably when opening a sale in edit mode.
+- Product set headers are added only after the edit page is ready, helping prevent display issues on slower page loads.
+- Discount fields now behave more reliably when editing a sale.
+
+How to use or check it:
+- Open POS or Sales and edit an existing sale.
+- If the sale contains product sets, check that the set header and its products appear correctly.
+- Update item discounts or quantities as needed.
+- Save the sale and confirm the edit screen responds normally.
+
+---
+
+## Version 8.93.7
+
+Release Date: 2026-08-03
+
+### Manufacturing - Recipe Production Editing
+
+What users can do now:
+- Recipes can now control whether ingredient quantities may be changed during production.
+- When the setting "Disable editing ingredients quantity in production" is turned off, a new "Allow edit on Production" option appears on the recipe Add Ingredients page.
+- Only recipes with "Allow edit on Production" selected will allow ingredient quantity changes while adding or editing production.
+- Recipes without this option selected will keep ingredient quantities locked during production.
+- If "Disable editing ingredients quantity in production" is turned on in Manufacturing Settings, ingredient quantities stay locked for all recipes.
+
+How to use or check it:
+- Go to Manufacturing > Settings.
+- Make sure "Disable editing ingredients quantity in production" is turned off if you want to allow editing for selected recipes.
+- Go to Manufacturing > Recipe.
+- Add a new recipe or edit an existing recipe.
+- Tick "Allow edit on Production" only for recipes where production staff are allowed to change ingredient quantities.
+- Save the recipe.
+- When adding or editing production for that recipe, ingredient quantities can be changed only if this option was selected.
+
+---
+
+### Invoice Layout - Add and Edit Page
+
+What looks better now:
+- Invoice Layout Add and Edit pages now show the same product detail options.
+- Options such as Show Product Note, Show Other Product Name, Show product description, and Show Discount in Percentage are now available while adding a new invoice layout.
+- Product detail options are now arranged in the same order on both Add and Edit pages, so users can find settings more easily.
+
+How to use or check it:
+- Go to Settings > Invoice Settings > Invoice Layout.
+- Click Add to create a new layout, or Edit to update an existing layout.
+- Open 4 - Product details to be shown.
+- Choose the product detail options you want to show on the invoice.
+- Save the invoice layout.
+
+---
+
+### HRM - Payroll Group Payment
+
+What looks better now:
+- The Paid On calendar is now fully visible while adding payroll group payments.
+- Users can pick the payroll payment date and time without the calendar being hidden behind the payment form.
+
+How to use or check it:
+- Go to HRM > Payroll.
+- Open a payroll group and click Add Payment.
+- Click the Paid On date field.
+- Select the required date and time from the calendar.
+- Complete the payment details and save.
+
+---
+
+### POS - Change Return and Customer Balance
+
+What works correctly now:
+- POS now handles extra paid amount as Change Return. If the customer pays more than the bill total, the extra amount is treated as change given back to the customer.
+- Customer Due no longer becomes negative because of extra POS payment. Walk-In Customer and other customers should not show a minus balance only because change return was missed.
+- Bills with extra payment now stay Paid instead of Overpaid when the extra amount is returned as change.
+- Previous POS bills that caused a negative customer balance have been corrected.
+
+How to use or check it:
+- Open POS and make a sale as usual.
+- Enter the amount received from the customer.
+- If the received amount is more than the bill total, check the Change Return amount.
+- Finalize the sale.
+- Open the customer on POS again and check that Customer Due does not show a minus amount because of that sale.
+
+---
+
+### POS - Footer Buttons
+
+What looks better now:
+- Credit Sale button is easier to read on the POS screen. The button now shows Credit on the first line and Sale on the second line.
+- Multiple Pay button is easier to read on the POS screen. The button now shows Multiple on the first line and Pay on the second line.
+- POS footer buttons now have the same height. The footer buttons look even and aligned across the bottom of the POS screen.
+
+How to use or check it:
+- Open the POS screen.
+- Check the footer buttons at the bottom of the screen.
+- Credit Sale should appear on two lines.
+- Multiple Pay should appear on two lines.
+- All footer buttons should appear with equal height.
+
+---
+
+### Business Settings - Drafts Date Range
+
+What works better now:
+- Drafts List now follows the date range selected in Business Settings.
+- Users can choose the starting date range for saved draft sales from Business Settings > Date Range.
+- When users open Drafts List, the date filter is already set to the saved option, such as Today, This Year, Current Financial Year, or All Time.
+- Users can still change the date range on the Drafts List whenever they need to check older or different draft bills.
+
+How to use or check it:
+- Go to Business Settings > Date Range.
+- Choose the required date range for Drafts.
+- Save the settings.
+- Open POS > Drafts List.
+- Check that the Date Range filter opens with the saved option already selected.
+- Change the Date Range on the Drafts List if you need to view another period.
+
+---
+
+### Products - Product List Search
+
+What works better now:
+- Product list search is clearer after searching. When users search for a product, the table moves back to the main product columns so SKU and product name are easy to see.
+- Products found from the F10 Product Search window are easier to check on the Products page.
+- Users can search with product words or SKU and review the matching product without needing to scroll the table sideways first.
+
+How to use or check it:
+- Go to Products.
+- Type the product name or SKU in the Search box, such as PEACH 200.
+- Check the SKU and Product columns on the left side of the table.
+- If you open Product Search with F10 and select a product, the Products page will also show the matching product more clearly.
+
+---
+
+### Products - Stock Quantity Checking
+
+What works correctly now:
+- Product stock quantity now stays consistent across the Products page. Users should see the same current stock when checking the Product list, Stock Quantity Report tab, F10 Product Search popup, and the Quantity button.
+- The Quantity button now matches the product stock shown in the product search and report views. This makes it easier to confirm available stock without confusion.
+- Location-wise stock is easier to trust. When a product has stock in more than one shop or branch, users can open the Quantity button and compare the quantity shown for each location.
+
+How to use or check it:
+- Go to Products.
+- Open the Stock Quantity Report tab and search the product SKU.
+- Press F10 and search the same SKU in the Product Search popup.
+- Select the product and click Quantity.
+- Compare the current stock shown in the report, product search popup, and Quantity window.
+
+---
+
+### Contacts - Large Contact Ledger
+
+What works better now:
+- Large contact ledgers now open more reliably, especially Walk-In Customer ledgers with many sales and payments.
+- The Ledger tab now loads the statement in smaller pages instead of showing a red error message.
+- Users can continue using Previous and Next to move through large ledger records.
+- Print, PDF, and Excel options are still available when a full ledger copy is needed.
+
+How to use or check it:
+- Open Contacts and select the customer or supplier.
+- Go to the Ledger tab.
+- Choose the required date range and ledger format.
+- If the ledger has many records, use Previous and Next to view the pages.
+- Use Print, Export to PDF, or Export to Excel when you need a full copy.
+
+---
+
+### Purchases - Tax Type Tooltip
+
+#### What Users Can See Now
+- Purchase Create and Purchase Edit now show the product Tax Type when the mouse is placed on the Tax column.
+- Users can check whether the selected product is Inclusive, Inclusive on Selling Price, Inclusive on the shown group price name, Exclusive, or None without leaving the purchase screen.
+- This helps users confirm the product tax style while entering or checking purchase lines.
+
+How to use or check it:
+- Open Purchase Create or Purchase Edit.
+- Add or review a product line.
+- Move the mouse over the Tax column for that product.
+- Check the shown Tax Type before saving if needed.
+
+---
+
+### Products - Tax Type on Product List
+
+What users can do now:
+- Product list now shows Tax Type after the Tax column. Users can quickly see whether a product is Inclusive, Inclusive on Selling Price, Inclusive on the shown group price name, Exclusive, or None.
+- Product filters now include Tax Type. Users can filter the Products page by the tax type they want to review.
+- The Tax Type filter also helps when checking product cards and stock report details from the Products page.
+- Stock Maintenance can now change product Tax Type in bulk.
+- If products are selected, users only choose To Tax Type and apply it to the selected products.
+- If no products are selected, users choose From Tax Type and To Tax Type, then all products with the From Tax Type are changed to the To Tax Type.
+
+How to use or check it:
+- Go to Products.
+- Check the Tax Type column after Tax to review each product's tax type.
+- Use the Tax Type filter if you want to see only products with one tax type.
+- To change selected products, tick the products, click Stock Maintenance, choose Tax Type Change, select To Tax Type, and click Apply.
+- To change all products of one tax type, do not tick any product, click Stock Maintenance, choose Tax Type Change, select From Tax Type and To Tax Type, and click Apply.
+- After applying, review the Tax Type column to confirm the products are updated.
+
+---
+
+### Products - Tax Type on Group Price
+
+What users can do now:
+- Products can now use tax inclusive on a group price such as MRP.
+- Product Create and Product Edit now show an Inclusive on MRP style tax option when an active selling price group named MRP exists.
+- This helps businesses calculate product tax from the selected group price instead of only purchase price or selling price.
+
+How to use or check it:
+- Go to Products > Add Product or Products > Edit Product.
+- Make sure a selling price group named MRP exists if you want this option to appear.
+- In Selling Price Tax Type, select Inclusive on MRP or the shown group price name.
+- Save the product.
+
+---
+
+### Purchases - MRP / Group Price Column
+
+What users can do now:
+- Purchase Create and Purchase Edit can now show an MRP or group price column.
+- Users can enter or update the MRP/group price directly while adding purchase products.
+- The purchase line keeps the entered group price, so the value stays available when editing the purchase later.
+- When the MRP price is entered, the product variation's MRP selling price group is also updated.
+- Purchase tax calculation now supports products whose tax type is Inclusive on MRP/group price.
+
+How to use or check it:
+- Create or keep an active selling price group named MRP.
+- Turn on Enable editing product price from purchase if the business uses purchase-based price editing.
+- Open Purchase Create or Purchase Edit.
+- Add a product and enter the required MRP/group price in the new column.
+- If the product tax type is Inclusive on MRP, check that tax is calculated from the MRP/group price.
+- Save the purchase.
+
+---
+
+### Purchases - Product Table Columns
+
+#### What Looks Clearer Now
+- Purchase, Purchase Order, and Purchase Return product tables now show long column names on clearer lines.
+- Labels such as Scheme Qty, Unit Discount, Total Discount, Total Discount 2, Discounted Cost, Cost Inc. Tax, and Lot Number are easier to read in narrow columns.
+- The MRP/group selling price column now appears after Pack Price on Purchase Create and Purchase Edit, so price columns follow a more natural order.
+
+How to use or check it:
+- Open Purchase Create, Purchase Edit, Purchase Order, or Purchase Return.
+- Check the product table header row.
+- Use the clearer column names to enter quantity, discounts, costs, pack price, MRP/group price, tax, and lot details as usual.
+
+---
+
+### Reports - Stock Reindex Notifications
+
+#### What Looks Clearer Now
+- Stock reindex completion notifications now show elapsed time when available.
+- Cancelled stock reindex notifications also show elapsed time when available.
+- The reindex notification keeps its original start time while progress updates continue.
+
+How to use or check it:
+- Start a stock quantity reindex from the related report screen.
+- Wait for the success or cancelled notification.
+- Check the message to see how long the reindex took.
+
+---
+
+### User Email Settings - SMTP Password
+
+What works better now:
+- User mail passwords are now kept more safely when saving email settings.
+- If the password field is left blank while updating email settings, the existing password is kept.
+- Existing saved mail passwords continue working until the user changes the password.
+
+How to use or check it:
+- Go to the user email settings screen.
+- Enter a mail password when setting SMTP for the first time or changing the password.
+- Leave the password blank when editing other email settings and keeping the same password.
+- Save the user settings.
+
+---
+
+### POS and Sales - Tax Inclusive Draft Bills
+
+What works correctly now:
+- Draft bills now keep the same tax style they were created with.
+- If a POS draft bill is created as tax inclusive, it opens again as tax inclusive when edited or finalized.
+- If a POS draft bill is created as tax exclusive, it opens again as tax exclusive when edited or finalized.
+- Updating a draft bill again no longer changes the bill total from inclusive to exclusive.
+- Draft bill totals now update immediately when product quantity is typed or changed with the plus and minus buttons.
+- Products can now be removed from an opened draft bill, and the bill total updates after removal.
+- After opening a draft bill, changing product quantity and clicking Update now saves the draft again.
+- After clicking Update on an opened draft bill, the draft closes and POS opens ready for a new sale.
+- When draft auto save is enabled, opened draft bills now continue saving changes automatically.
+- The bill amount shown before saving a draft and after reopening the draft now stays the same.
+- Drafts List now shows the correct bill amount instead of showing 0.00 for saved draft bills.
+- Sales edit pages now follow the saved bill tax style instead of changing because of current contact or business settings.
+
+How to use or check it:
+- Open POS and create the bill as usual.
+- Save the bill as Draft.
+- Open Recent Transactions and select the draft bill.
+- Check that the total amount is the same as when the draft was saved.
+- Change quantity by typing, or by using the plus and minus buttons, and check the total amount.
+- Remove a product if needed and check the total amount again.
+- If draft auto save is enabled, wait a few seconds after a change and the draft saves automatically.
+- Change a product quantity if needed, then click Update.
+- After the success message, POS opens again ready for a new sale.
+- Click Update if you need to save the draft again.
+- Open the draft again and confirm the amount still stays the same.
+- Open POS > Drafts List and check that the Total Amount column shows the saved bill amount.
+- Finalize the bill when ready.
+
+---
+
+### Purchases - Tax Inclusive Edit Pages
+
+What works correctly now:
+- Purchase and purchase return edit pages now keep the same tax style used when the transaction was created.
+- Tax inclusive purchase records open again as tax inclusive.
+- Tax exclusive purchase records open again as tax exclusive.
+- Purchase return amounts stay consistent when opening and saving the return again.
+
+How to use or check it:
+- Open an existing purchase or purchase return.
+- Check the tax inclusive option and product totals before saving.
+- Save or update the page.
+- Open the same record again and confirm the amount has not changed.
+
+---
+
+### Purchases - Scheme Quantity Tax
+
+What works correctly now:
+- Scheme Qty tax now follows the product's selling price when the product is set to Inclusive on Selling Price.
+- The tax amount for Scheme Qty now matches the same selling price tax rule used for normal purchase quantity.
+- If Purchase Qty is zero, the normal purchase tax amount shows zero instead of showing tax for one item.
+- Scheme Qty tax can still be calculated when Scheme Qty is entered, even if Purchase Qty is zero.
+
+How to use or check it:
+- Open Purchase Add or Purchase Edit.
+- Add a product that has tax selected and Selling Price Tax Type set to Inclusive on Selling Price.
+- Enter Scheme Qty and select the Scheme Qty tax if needed.
+- Check that the Scheme Qty tax is calculated from the selling price.
+- If Purchase Qty is zero, check that the normal purchase tax amount remains zero.
+
+---
+
+## Version 8.93.6 - 2026-08-01
+
+### Software Update
+
+What works better now:
+- Only Admin users can run the software update. Regular staff users cannot open or submit the update page.
+- Staff users can sign out from the update notice page. If a staff user sees the update required message, they can click Sign Out and let an Admin user log in.
+- The update button refreshes saved website files more reliably. When an Admin user clicks I Understand, Update, the browser is asked to clear old saved files for this website.
+- Users should see the latest screens after the update finishes. This helps avoid old page files staying in the browser after new files are uploaded.
+
+How to use or check it:
+- After uploading new files, log in as an Admin user.
+- Open the software update page.
+- Click I Understand, Update.
+- Wait until the update finishes.
+- Open the dashboard and check that the latest screen is showing.
+
+---
+
+### Products - Product Stock History
+
+#### What Looks Clearer Now
+- Product Stock History now shows Profit and Total Profit after Sell Total.
+- Profit is green when the sale makes profit and red when the sale makes loss.
+- Total Profit shows the running sale profit balance.
+- Purchase, Opening Stock, Stock Adjustment, and Stock Transfer rows do not show profit because these are stock movements, not completed sales profit.
+- Opening Stock now uses the product selling price from the product page, so Sell Price and Sell Total are easier to understand.
+- A help icon on Total Profit explains how the running total works.
+
+How to use or check it:
+- Open Products and go to Product Stock History.
+- Check the Profit column to see profit or loss for each sale.
+- Check Total Profit to see the running sale profit balance.
+- Use the help icon beside Total Profit if you need a quick reminder.
+
+---
+
+### Reports - Opening Stock Report
+
+What users can do now:
+- Opening Stock Report now has a Reindex Stock Quantities button inside Report Filters.
+- Users can reindex opening stock rows directly from the report.
+- The reindex works only on the rows currently shown in the report table.
+- Users can choose how many products to refresh at one time from Show entries.
+- Up to 500 products can be refreshed in one run, helping the report stay easier to use.
+- A progress bar shows the reindex progress while it is running.
+- After reindexing finishes, the report refreshes so users can check the updated values.
+
+How to use or check it:
+- Go to Reports > Stock Reports > Opening Stock Report.
+- Use Report Filters to select the required location, product, category, brand, or date range.
+- Use Show entries to choose how many rows to reindex in one run.
+- If the system is busy, choose a smaller number first.
+- Click Reindex Stock Quantities.
+- Wait until the progress bar finishes before changing filters or moving to another page.
+- To reindex more rows, go to the next page of the report and click Reindex Stock Quantities again.
+
+---
+
+### Purchases - Product Prices
+
+#### What Looks Clearer Now
+- Purchase Create and Purchase Edit pages can now show both Selling Price and Pack Price.
+- Selling Price shows the price of one single base unit, such as one PCS.
+- Pack Price shows the price of the selected pack or sub unit, such as 10 PCS.
+- Pack Price is shown only when Enable inline selling price and Enable Sub Units are both turned on.
+- If either setting is turned off, the Pack Price column stays hidden.
+
+How to use or check it:
+- Go to Business Settings and turn on Enable inline selling price.
+- Turn on Enable Sub Units if your products use packs, cartons, boxes, or other related units.
+- Open Purchase Create or Purchase Edit.
+- Add a product that has related sub units.
+- Select the required unit in the Qty column.
+- Check Selling Price for the single unit price and Pack Price for the selected pack price.
+
+---
+
+### Product Notes - Report Filter
+
+What users can do now:
+- Users can filter Product Notes by supplier.
+- The supplier filter uses the supplier selected on the product create or edit page.
+- This makes it easier to find notes for products from one supplier.
+
+How to use or check it:
+- Go to Products > Products Note.
+- Open the report filters.
+- Select the required supplier.
+- Click Apply Filters or wait for the list to refresh.
+- Use Reset to clear the supplier filter when needed.
+
+---
+
+### Security Roles - Product Note Access
+
+What users can do now:
+- Product Note access can now be controlled separately from product access.
+- Admins can allow a user to view, add, edit, or delete Product Notes.
+- Users only see and use Product Note options allowed by their role.
+
+How to use or check it:
+- Go to User Management > Roles.
+- Open Add Role or Edit Role.
+- Open the Product tab.
+- Find the Product Note section.
+- Tick View, Add, Edit, or Delete as needed for that role.
+- Save the role.
+
+---
+
+### POS - Product Notes
+
+What users can do now:
+- Cashiers can add a Product Note directly from the POS right-side menu.
+- The Add Product Note option appears after Sale Return.
+- Users can select a product, choose the note priority, write the note, and save it without leaving POS.
+
+How to use or check it:
+- Open POS.
+- Open the right-side POS Menu.
+- Click Add Product Note.
+- Select the product.
+- Choose the priority.
+- Write the note and click Save.
+
+---
+
+### POS - Bill Printing
+
+What works correctly now:
+- POS bill printing should no longer open a blank print preview after finalizing a sale.
+- The system now keeps the bill print data ready until the print window has finished loading.
+- Cashiers should be able to print the bill normally after finalizing a sale.
+
+How to use or check it:
+- Open POS and create a bill.
+- Finalize the bill with printing.
+- Wait for the print preview to load.
+- Check that the bill details are visible before clicking Print.
+
+---
+
+### POS - Multi Payment
+
+#### What Looks Clearer Now
+- Payment method buttons in the Multi Payment window now show with a clear blue color.
+- Cashiers can more easily see and tap payment options such as Cash, Card, bank, or wallet payments.
+
+How to use or check it:
+- Open POS.
+- Click Multi Pay.
+- Check the payment method buttons on the left side of each payment row.
+- Tap the required payment method button and enter the amount as usual.
+
+---
+
+### POS - Close Register
+
+What works correctly now:
+- Total Cash now shows the same amount in Close Register and Register Details.
+- Bank or other non-cash payments are no longer added into Total Cash.
+- Cashiers can now close the register with the correct cash balance after deducting cash expenses.
+- Close and Print now opens the closed register details and starts printing automatically.
+- This helps avoid missing register closing printouts during shift closing.
+
+How to use or check it:
+- Open POS.
+- Click Register Details to check Total Cash.
+- Click Close Register.
+- Check that Total Cash matches the cash balance shown in Register Details.
+- Use Close and Print when you need the closing printout immediately.
+- Wait for the print window to open before leaving the screen.
+- Count the cash in the drawer and close the register as usual.
+
+---
+
+### POS - Cash Register Details
+
+What works correctly now:
+- Net Difference now shows the correct sign when counted cash is short.
+- If the drawer has less cash than expected, the Net Difference now stays negative.
+- Cashiers can clearly see whether cash is short or extra after entering denominations.
+- Bank transfer amount now shows in Register Details even if the bank transfer slip count is left as 0.
+- Card slip amount also shows in Register Details even if the card slip count is left as 0.
+
+How to use or check it:
+- Open POS.
+- Close the register and enter the cash denominations.
+- Enter a bank transfer amount or card slip amount if needed.
+- The slip count can stay 0 if there is no slip to count.
+- Open Register Details after closing.
+- Check that the entered amount is visible in the details.
+- Check Cash Short or Cash Excess.
+- Net Difference will now show the same direction as the cash difference.
+
+---
+
+### POS - Combo Products
+
+What works correctly now:
+- Combo products can now be added on POS when Allow Sale if No Stock is turned on for the selected location.
+- Cashiers should no longer see a wrong Product out of stock message for combo items when the branch is allowed to sell without stock.
+- Combo items that have old or unavailable ingredients can still be added to the bill when the branch setting allows sale without stock.
+
+How to use or check it:
+- Go to Business Settings > Location Based Settings.
+- Select the required location.
+- Open the Sales tab.
+- Tick Allow Sale if No Stock.
+- Save the settings.
+- Open POS for that location and add the combo product to the bill.
+
+---
+
+### Business Settings - POS Product Search
+
+What works correctly now:
+- Disable product search on POS Screen now works separately for each location.
+- One branch can hide the POS product search box while another branch can keep it visible.
+- The saved setting is followed when users open the POS screen for that location.
+
+How to use or check it:
+- Go to Business Settings > Location Based Settings.
+- Select the required location.
+- Open the POS tab.
+- Tick Disable product search on POS Screen if that location should not show the product search box.
+- Untick it if that location should allow product search on POS.
+- Save the settings.
+- Open POS for that location and check that the product search box follows the selected setting.
+
+---
+
+### POS - Bill Save and Finalize
+
+What works correctly now:
+- POS bills with combo or package items can now be saved without the screen getting stuck.
+- Cashiers can save a large bill as Draft and continue it later.
+- Bills with many items, such as long customer orders, can be protected by saving them as Draft before final payment.
+- This helps avoid losing a punched bill when the cashier needs more time to complete payment.
+
+How to use or check it:
+- Open POS and add the customer items.
+- If the bill is not ready for payment, click Draft.
+- To continue the bill later, open Recent Transactions and select Draft.
+- Open the draft bill, check the items, and complete payment when ready.
+- If the bill is ready, use the normal payment option and save the invoice.
+
+---
+
+### POS - Two Decimal Currency Bills
+
+What works correctly now:
+- POS bills now save correctly when Currency Decimals is set to 2 in Business Settings.
+- Cashiers should no longer need to change Currency Decimals to 3 just to save a POS bill.
+- The payable total shown on POS now matches correctly with the saved invoice total when using two decimal places.
+- The invoice total mismatch warning no longer stops a cashier from saving a correct POS bill.
+
+How to use or check it:
+- Go to Business Settings > Business.
+- Set Currency Decimals to 2.
+- Save the settings.
+- Open POS and create the bill normally.
+- Check the Total Payable amount.
+- Enter the payment and save the invoice.
+- If the entered payment matches the payable amount, the bill should save normally.
+
+---
+
+### Business Settings - Ledger Date Range
+
+What works correctly now:
+- The Ledger date range selected in Business Settings now saves properly.
+- When users open a contact ledger, the date range starts with the saved Ledger option.
+- Ledger date range options such as Today, This Year, Current Financial Year, and All Time now open correctly.
+- Branch-based Ledger date range settings are followed when opening the ledger.
+
+How to use or check it:
+- Go to Business Settings > Date Range.
+- Choose the required option for Ledger.
+- Click Update Settings.
+- Open a customer or supplier ledger.
+- Check that the ledger date range opens with the saved Ledger option.
+- Change the ledger date range anytime if you need to view another period.
+
+---
+
+### Business Settings - Stock Transfer
+
+What users can do now:
+- Stock Transfer settings can now be managed separately for each business location.
+- Users can hide Stock Type and Select Category on the Stock Transfer screen when they are not needed for a location.
+- Users can hide Demand Order on the Stock Transfer screen for locations that do not use demand orders.
+- Users can hide Production (Manufacturing) on the Stock Transfer screen for locations that do not load items from production.
+- This helps keep the Stock Transfer screen simpler for each location.
+
+How to use or check it:
+- Go to Business Settings.
+- Open Location-based Settings.
+- Select the required business location.
+- Open the Stock Transfer tab.
+- Tick the options you want to hide for that location.
+- Save the settings.
+- Open Stock Transfer and check that the selected options are hidden.
+
+---
+
+### Stock Transfers - Location Access
+
+What works correctly now:
+- Add Stock Transfer and Edit Stock Transfer now follow the user's allowed locations.
+- If a role is set to Own Location, the user will only see the locations selected for that user.
+- If a role is set to All Locations, the user can select from all business locations.
+- This helps staff transfer stock only between the branches they are allowed to use.
+
+How to use or check it:
+- Go to User Management > Users.
+- Add or edit the user and select the locations this user can access.
+- Go to User Management > Roles.
+- Open the Stock Transfers tab.
+- Choose Own Location if the user should only use their selected locations.
+- Choose All Locations if the user should use every business location.
+- Save the role and open Add Stock Transfer or Edit Stock Transfer with that user.
+- The Location From and Location To lists should show only the locations allowed for that user.
+
+---
+
+### Security Roles - Project Expense Permissions
+
+What works correctly now:
+- Project permissions are easier to review because they are grouped into clear sections.
+- Project expenses now have their own role permissions inside the Project tab.
+- Admins can separately allow Add Expense, Edit Expense, and Delete Expense for project work.
+- Staff can be allowed to manage project expenses without giving them full expense access for all expenses.
+
+How to use or check it:
+- Go to Settings > Security Roles.
+- Open Add Role or Edit Role.
+- Open the Project tab.
+- Find the Expenses section.
+- Tick Add Expense, Edit Expense, or Delete Expense as needed for that role.
+- Save the role.
+- Open a project and check the Expenses tab to confirm the allowed actions are available.
+
+---
+
+### User Management - Security Roles
+
+#### What Users Can See Now
+- Security Roles list now shows which users are assigned to each role.
+- A new Users column appears before the Action column.
+- If more than one user has the same role, their names are shown together, such as USER1, USER2, USER3.
+- This makes it easier to check who is using each role before editing or deleting it.
+
+How to use or check it:
+- Go to User Management > Roles.
+- Check the Users column beside each role.
+- Use this column to see which users are assigned to that role.
+- If the column is empty, no user is currently assigned to that role.
+
+---
+
+### POS Sales - Report Filter
+
+What works correctly now:
+- Business Settings now has a separate date range option for the POS Sales list.
+- The POS Sales report filter follows the POS Index date range selected in Business Settings.
+- Users can still choose another date range when they need to check older POS sales.
+- The Sales list date range now follows the Sales date range selected in Business Settings.
+
+How to use or check it:
+- Go to Business Settings > Date Range.
+- Choose the needed date range for POS Index.
+- Choose the needed date range for Sales.
+- Save the settings.
+- Open POS Sales or Sales.
+- The list should open with the selected date range already applied.
+
+---
+
+### Foodpanda Integration
+
+What works correctly now:
+- Foodpanda Integration is shown only when it is included in the business package.
+- Businesses without Foodpanda Integration in their package will not see the Foodpanda menu or dashboard shortcut.
+- This keeps the dashboard and menu cleaner for businesses that do not use Foodpanda.
+
+How to use or check it:
+- Go to Dashboard.
+- Check the shortcut buttons shown near the top.
+- Open the left menu and check Foodpanda Integration.
+- If the business package includes Foodpanda Integration, the option will be available.
+- If the package does not include Foodpanda Integration, the option will stay hidden.
+
+---
+
+### Subscription Packages - Custom Package Creation
+
+What works correctly now:
+- A package without any extra module will be treated as a Standard Package.
+- A package will be treated as an Advance Package only when an extra module is actually selected.
+- Empty module selections are no longer counted as selected modules.
+- This helps avoid a package showing as Advance when no extra module was chosen.
+
+How to use or check it:
+- Go to the package selection or subscription page.
+- Select only the base software if no extra module is needed.
+- Create the package.
+- The package name should show as Standard Package when no extra module is selected.
+- Select an extra module only when the business should receive that feature.
+
+---
+
+### Subscription Packages - Quantity Selection
+
+What works correctly now:
+- Location, user, workstation, and warehouse quantities can be changed only with the plus and minus buttons.
+- Users cannot type directly inside the quantity box.
+- This helps prevent accidental wrong quantities while creating a package.
+
+How to use or check it:
+- Go to the package selection or subscription page.
+- Use the plus button to increase the quantity.
+- Use the minus button to decrease the quantity.
+- Check the package summary before creating or subscribing to the package.
+
+---
+
+### POS Sales - List View
+
+What works correctly now:
+- The POS Sales list shows correctly for admins and allowed users.
+- The bottom POS Sales list is visible again on the POS Sales page.
+- Recent Transactions on the POS screen now follows the user's POS Sales access.
+- Users with View All POS sell can see all POS sales.
+- Users with View Own POS sell can see only their own POS sales.
+
+How to use or check it:
+- Go to User Management > Roles.
+- Open the POS tab for the required role.
+- Choose either View All POS sell or View Own POS sell.
+- Save the role.
+- Open POS Sales and check the sales list at the bottom of the page.
+- Open the POS screen and check Recent Transactions.
+- The user should only see the sales allowed by the selected role option.
+
+---
+
+### Security Roles - POS Sales Access
+
+What works correctly now:
+- The POS tab in Security Roles now has two clear choices for POS sale viewing.
+- View All POS sell allows the user to see every POS sale.
+- View Own POS sell allows the user to see only POS sales created by that user.
+- Only one of these two choices can be selected at a time.
+- When Select All is used, View All POS sell is selected automatically.
+
+How to use or check it:
+- Go to User Management > Roles.
+- Add a new role or edit an existing role.
+- Open the POS tab.
+- Choose View All POS sell if the user should see all POS sales.
+- Choose View Own POS sell if the user should see only their own POS sales.
+- Save the role.
+
+---
+
+### POS Sales - Ref No
+
+#### What Users Can See Now
+- POS sales are easier to identify from the Ref No column.
+- If a POS sale has no other reference number, the Ref No column shows POS.
+- If a POS sale has a token number or another reference number, it shows with POS first. For example, users will see POS > 55, POS > DR01202600025, or POS > 254.
+- The sale details popup also shows the same POS reference.
+- The sale details popup opens faster and shows the needed sale details.
+
+How to use or check it:
+- Go to POS Sales or Sales.
+- Check the Ref No column.
+- For a POS sale with token number 55, the Ref No should show POS > 55.
+- Look for POS to quickly identify sales created from the POS screen.
+- Open the sale details popup and check the Ref No there too.
+
+---
+
+### Products - Stock Quantity Report Tab
+
+What works correctly now:
+- The Stock Quantity Report tab on the Products page now opens normally. Users can view stock quantities without the page staying on Processing.
+- The report follows the selected product filters more completely. Users can filter stock by product options such as category, sub-category, unit, tax, supplier, brand, gender, procurement source, and product type.
+- The stock report columns now match the enabled product settings. Users only see the product grouping columns that are turned on for the business.
+
+How to use or check it:
+- Go to Products.
+- Open the Stock Quantity Report tab.
+- Select the required filters from Report Filters.
+- Check the stock quantity list after it loads.
+
+---
+
+### Products - Products Card Tab
+
+What works correctly now:
+- Products Card tab is hidden when no variation template is available. Users will only see this tab after at least one variation template has been created.
+- The Products page looks cleaner for businesses that do not use product variations.
+
+How to use or check it:
+- Go to Products.
+- If no variation template exists, only the normal product list and allowed stock report tabs are shown.
+- To use Products Card, first create a variation template from Products > Variations.
+- Return to Products and the Products Card tab will be available.
+
+---
+
+### Products - PCT/HSN Code
+
+What works correctly now:
+- PCT/HSN Code is hidden from the Product list when it is not enabled. If the business has turned off Enable PCT/HSN Code, users will not see the PCT/HSN Code column on the Products page.
+- PCT/HSN Code options are hidden when the feature is off. Users will not see Add PCT/HSN Code or Update PCT/HSN Code in product maintenance when the business does not use this code.
+- The Product list stays cleaner for businesses that do not need PCT/HSN Code.
+
+How to use or check it:
+- Go to Settings > Business Settings > Product.
+- Turn Enable PCT/HSN Code on if the business needs to use PCT/HSN Code.
+- Turn Enable PCT/HSN Code off if the business does not use it.
+- Open Products.
+- When the setting is off, the PCT/HSN Code column should not appear.
+- When the setting is on, the PCT/HSN Code column and related product maintenance options should be available.
+
+---
+
+### Reports - Tax Report
+
+What users can do now:
+- Users can open a sale invoice directly from the Tax Collected tab. Click the invoice number to preview the transaction.
+- Users can open a purchase transaction directly from the Tax Paid tab. Click the transaction number to preview the purchase or purchase return.
+- Tax checking is faster because users do not need to leave the report to confirm invoice details.
+
+How to use or check it:
+- Go to Reports > Tax Report.
+- Open the Tax Collected tab.
+- Click an invoice number to preview the sale transaction.
+- Open the Tax Paid tab.
+- Click a transaction number to preview the purchase transaction.
+- Close the preview to return to the tax report.
+
+---
+
+### Contacts - Login Access
+
+What works correctly now:
+- Customer login fields stay closed until Allow Login is selected.
+- Username and password boxes are only active when login access is allowed for that contact.
+- The Save password message no longer appears when adding or editing a contact. Users can save contact details without Chrome asking to save a password by mistake.
+- This helps users avoid entering login details by mistake when creating or editing contacts.
+
+How to use or check it:
+- Go to Contacts.
+- Create a new contact or edit an existing contact.
+- Tick Allow Login only when the contact should be able to log in.
+- Enter the username and password after the login fields appear.
+- Leave Allow Login unticked if the contact should not have login access.
+- Save the contact.
+- Chrome should no longer show the Save password message after saving the contact.
+
+---
+
+### Invoice Layout - Slim 3
+
+What works correctly now:
+- Inline product tax total label now shows correctly on the printed invoice. If a label is entered in the invoice layout, it appears in the product table and totals area.
+- Subtotal excluding tax label now shows correctly. The subtotal excluding tax option in the layout is now reflected on the printed invoice.
+- FBR Digital Invoicing logo now appears correctly when previewing or printing invoices.
+- Business name, address, and contact information are closer to the logo. The top part of the invoice uses space better and avoids extra blank gaps.
+- FBR logo, QR code, invoice number, and date are placed more neatly on the right side.
+- Invoice No. and Date are easier to read. Their labels now stay close to their values.
+- Customer ID, NTN No., and Contact are shown in a cleaner order. Customer ID and NTN No. appear before the contact number.
+- Product table columns are better aligned. Quantity, price, tax, and total columns fit more neatly on the printout.
+- Tax total labels now use the tax name from Tax Rates. The totals area now matches the tax names shown in the GST Summary.
+
+What users can do now:
+- Tax groups can be shown as separate product tax columns. If a tax group has two or more taxes, each tax can be shown separately in the product table.
+- Tax group totals can also be shown separately. Each tax from the tax group can appear as its own total in the invoice totals area.
+
+How to use or check it:
+- Go to Settings > Invoice Settings > Layout.
+- Open the Slim 3 invoice layout.
+- Set the product tax labels as needed.
+- Turn on Show Tax Group Columns Separately if you want each tax inside a tax group to show in its own column.
+- Save the layout.
+- Print or preview an invoice and check the product table, totals area, GST Summary, customer details, and FBR section.
+
+---
+
+### Sales and POS Sales Lists
+
+What works correctly now:
+- FBR Invoice No. is hidden when the business does not use FBR POS or FBR DI. Sales lists look cleaner for businesses that do not have these features in their package.
+- FBR Invoice No. still appears for businesses that use FBR POS or FBR DI. Users can continue checking FBR invoice numbers from the Sales and POS Sales lists when the feature is available.
+- Sales list columns stay aligned after the FBR Invoice No. column is hidden. Totals and table information remain easy to read.
+
+How to use or check it:
+- Go to Sales > All Sales.
+- Check whether FBR Invoice No. is shown after Invoice No.
+- Go to POS Sales and check the same column.
+- If the business package does not include FBR POS or FBR DI, this column should not appear.
+- If the business package includes FBR POS or FBR DI, this column should remain visible.
+
+---
+
+### POS - Invoice Finalization
+
+What works correctly now:
+- POS invoices with service charges can be finalized correctly. If the bill total and payment total match, the invoice can be saved normally.
+- Invoices using tax and service charges no longer show a false total mismatch warning. This helps cashiers complete the bill without changing the amount again and again.
+- Three-decimal totals are handled more clearly on POS payments. Cashiers can save invoices where the shown payable amount uses three decimal places.
+
+How to use or check it:
+- Open POS and add the sale items.
+- Select the service charge if it applies.
+- Open Multiple Pay or the normal payment option.
+- Enter the payment amount shown in Total Payable.
+- Click Save or Save and print.
+- If the bill total and payment total are the same, the invoice should finalize normally.
+
+---
+
+### POS - PRA Submission
+
+What works correctly now:
+- A saved invoice remains finalized even if PRA is not reachable at that moment. The sale is not cancelled when PRA does not return an invoice number.
+- Cashiers see a clearer PRA pending message. This tells the user that the sale was saved, but PRA submission still needs to be completed.
+- Pending PRA invoices can be submitted again later. Users can retry PRA submission from the existing Sync PRA Sales option.
+
+How to use or check it:
+- Finalize the POS invoice as usual.
+- If a PRA pending message appears, do not create the same invoice again.
+- Open the Sales list when the internet or PRA service is available.
+- Click Sync PRA Sales.
+- Check the invoice again and confirm the PRA invoice number appears.
+
+---
+
+## Version 8.93.5 P1
+
+Release Date: 2026-07-31
+
+### Delivery Notes - Due and Partial Invoice Control
+
+What users can do now:
+- Admins can control whether users may create delivery notes for due or partially paid invoices.
+- A new role permission, Allow Due/Partial Invoice Delivery Note, is available in roles.
+- Users without this permission can create delivery notes only for paid or overpaid invoices.
+- If a user without permission tries to create a delivery note from a due or partial invoice, the system asks for approval.
+- An Admin or a user with the new permission can approve the action and open the delivery note screen.
+- The approval is used only for that selected invoice and is cleared after the delivery note is created.
+
+How to use or check it:
+- Go to User Management > Roles.
+- Open Add Role or Edit Role.
+- Find the Delivery Note permissions.
+- Tick Allow Due/Partial Invoice Delivery Note only for users allowed to deliver unpaid or partially paid invoices.
+- Save the role.
+- Go to Sales and open the Actions menu for a final invoice.
+- For paid invoices, click Create Delivery Note as usual.
+- For due or partially paid invoices, complete the approval popup if the logged-in user does not have direct permission.
+
+---
+
+## Version 8.93.5 P2
+
+Release Date: 2026-07-31
+
+### Invoice Layout - Slim 3 Receipt
+
+#### What Looks Clearer Now
+- FBR, FBR DI, PRA, and invoice QR codes now appear near the top of the Slim 3 receipt.
+- The invoice heading has better spacing and a clearer font size.
+- Customer details and invoice details are arranged side by side.
+- Customer information, customer tax number, customer ID, reward points, and customer note are grouped together on the left side.
+- Invoice number, date, reference number, due date, token number, sales person, workstation, commission agent, repair details, service staff, table, shipping fields, and sale order details are grouped on the right side.
+- The business header aligns better when a logo is used.
+- Footer barcode, footer logo, footer text, and branding still remain at the bottom of the receipt.
+
+How to use or check it:
+- Go to Settings > Invoice Settings > Layout.
+- Open or select the Slim 3 receipt layout.
+- Print or preview a sale invoice.
+- Check that FBR/PRA information and QR codes appear near the top.
+- Check that customer details appear on the left and invoice details appear on the right.
+- Confirm that footer barcode, footer logo, footer text, and branding still show at the bottom when enabled.
+
+---
+
+## Version 8.93.5 - 2026-07-31
+
+### POS - Security Role Permissions
+
+What users can do now:
+- Admins can choose who sees all POS sales and who sees only their own POS sales.
+- The old View POS sell option is now named View All POS sell. Use this when a user should see every POS sale allowed for their location access.
+- A new View Own POS sell option is available. Use this when a user should only see POS sales made by that same user.
+- The POS Sales list follows the selected role permission. Users with own access see only their own POS sales.
+- Recent Transactions on the POS screen also follows the selected role permission. Users with own access see only their own recent POS transactions.
+
+How to use or check it:
+- Go to User Management > Roles.
+- Create a new role or edit an existing role.
+- Open the POS tab.
+- Select View All POS sell if the user should see all POS sales.
+- Select View Own POS sell if the user should see only their own POS sales.
+- Save the role.
+- Log in as that user and open POS Sales or Recent Transactions on POS to confirm the correct sales are shown.
+
+---
+
+### Software Update
+
+What works correctly now:
+- The software update page handles pending update work more reliably. Admins can use the normal update page even when several update steps are waiting.
+- Admins are guided to the update page after login when an update is waiting. This helps them finish the update before opening the dashboard.
+- Admins can finish the waiting update work from the normal update page after uploading new files.
+- The system should open normally after the update finishes. This helps avoid the error page that could appear before the update was completed.
+
+How to use or check it:
+- After uploading new files, log in to the software.
+- If the software asks for an update, open or continue to the software update page.
+- Click I Understand, Update.
+- Wait until the update finishes.
+- Log in again if the software asks you to.
+- Open the main dashboard and check that the software opens normally.
+
+---
+
+### Sales - Invoice Location
+
+What users can do now:
+- Invoice location can be changed from the Sales list. If a business has more than one location, allowed users can change a sale invoice from one location to another.
+- Paid and partially paid invoices can also be moved. Users can choose to move existing payments to the new location when changing the invoice location.
+- Only permitted users can use this option. The option can be enabled or disabled from the security role settings.
+- Location changes are recorded for checking later. Users can review the change in the Activity Log report.
+
+How to use or check it:
+- Go to User Management > Roles.
+- Open the role you want to allow.
+- Tick Change sell location under the sales permissions.
+- Save the role.
+- Go to Sales.
+- Open the Actions menu for the invoice.
+- Click Change sale location.
+- Choose the new location.
+- For paid or partially paid invoices, keep Move existing payments to the new location selected if the payments should follow the invoice.
+- Click Update.
+- Go to Reports > Activity Log and choose Sale location changed from the Action filter to review the change.
+
+---
+
+### Backup - Google Drive
+
+What works correctly now:
+- Create Backup now works from the Google Drive Backup page. Users can create a new backup from Backup > Google Drive without seeing the Method Not Allowed error.
+- Backup creation now works from both backup pages. Users can use either Backup > Create New Backup or Backup > Google Drive > Create Backup.
+
+How to use or check it:
+- Go to Backup > Google Drive.
+- Click Create Backup.
+- Wait for the backup to finish.
+- Check the Backup Files list to confirm the new backup appears.
+- If Google Drive is connected, use the sync option when you want to send the backup to Google Drive.
+
+---
+
+### Products - Image Gallery
+
+What users can do now:
+- Images can be linked to products by SKU. If image names match product SKUs, users can link them to the correct products more quickly.
+- Old single-image names can also be linked. If the product SKU is `3265`, an image named `3265` can be linked as that product's main image.
+- Numbered image names can be linked as main and gallery images. If the product SKU is `3265`, `3265_1` can be linked as the main image and `3265_2` can be linked as a gallery image.
+- Selected images can be linked to one SKU. Users can select images, enter the product SKU, and link those images to that product.
+- Main image and extra gallery images are handled more clearly. The first image can become the main product image, and the next images can be added as gallery images.
+- A result message is shown after linking. Users can see how many images were linked, already linked, skipped, or not matched.
+
+How to use or check it:
+- Go to Products > Image Gallery.
+- Use Link Images By SKU if image filenames already match product SKUs. For example, use this when files are named like `3265`, `3265_1`, or `3265_2`.
+- Use a plain SKU filename for one old image. For example, `3265` can become the main image for product SKU `3265`.
+- Use numbered SKU filenames for more than one image. For example, `3265_1` can become the main image and `3265_2` can become a gallery image.
+- For selected images, tick the images you want to link.
+- Enter the product SKU in the SKU box.
+- Click Link To SKU.
+- Read the result message after the action finishes.
+- Open the product edit page to confirm the main image and gallery images are correct.
+
+---
+
+### Website Home Page
+
+What works correctly now:
+- The website home page opens more safely when content is missing. If the home page title, text, image, or page details have not been set yet, the page can still open.
+- Visitors should see a cleaner fallback instead of a broken page. This helps new or partially configured websites stay viewable.
+
+How to use or check it:
+- Go to the website home page.
+- Check that the page opens normally.
+- If the home page text or image is missing, update it from the CMS page settings.
+- Refresh the website and confirm the updated content appears.
+
+---
+
+### WooCommerce
+
+What works correctly now:
+- WooCommerce setup and updates are smoother. When WooCommerce is enabled but setup is not fully ready yet, the system avoids showing setup-related errors to users.
+- Connected stores continue to work after setup is complete. Users can keep using WooCommerce normally once the store settings are available.
+
+How to use or check it:
+- Go to WooCommerce only after the business setup is complete.
+- Open the WooCommerce connection or settings page.
+- Confirm the store connection details are saved.
+- Use the WooCommerce sync options as usual.
+
+---
+
+## Version 8.93.4 P1
+
+Release Date: 2026-07-30
+
+### Delivery Notes
+
+What users can do now:
+- Delivery Notes can now be managed from the Sales menu when Delivery Notes are enabled in business settings.
+- Users can create delivery notes from final sale invoices.
+- Delivery note numbers can be entered manually or generated automatically with the DN prefix.
+- Customer name and shipping address are filled from the sale/contact when available.
+- Users can enter delivered quantities for each sale item.
+- The system checks delivered quantity against the remaining balance quantity.
+- Delivery notes can be viewed, edited, deleted, and printed based on role permissions.
+- The delivery note print view now shows business details, location details, customer details, shipping details, product lines, delivered quantities, and signature areas.
+
+What works correctly now:
+- Users cannot deliver more quantity than the invoice balance quantity.
+- Pending delivery notes can still have quantities edited.
+- Processed delivery notes cannot be changed back to Pending.
+- Quantities on processed delivery notes are protected from editing.
+- Stock held quantity is reduced when a delivery note is processed and adjusted safely when the note is updated or deleted.
+- The old Shipments menu is hidden when Delivery Notes are enabled, so users have one clear delivery workflow.
+
+How to use or check it:
+- Go to Business Settings and enable Delivery Notes if this option is used by the business.
+- Go to User Management > Roles.
+- Open Add Role or Edit Role.
+- Under Delivery Note, allow Access, Create, Edit, or Delete as needed.
+- Go to Sales > Delivery Notes to see the delivery note list.
+- Click Add or use Create Delivery Note from a sale invoice action menu.
+- Select the invoice, enter delivered quantities, shipping address, delivered-to name, and status.
+- Save the delivery note.
+- Use View to print the delivery note when needed.
+
+---
+
+## Version 8.93.4 - 2026-07-29
+
+### Dashboard
+
+#### What Is Faster Now
+- Dashboard opens faster after login. The main dashboard cards and charts should become ready more quickly.
+- The Processing message should stay for less time. Users can start checking daily sales, revenue, purchases, and business insights sooner.
+- Dashboard information still follows the selected date and location filters. Users can keep using the same filters as before.
+
+How to use or check it:
+- Go to Dashboard.
+- Wait for the dashboard cards and charts to load.
+- Use the date range or location filter if you want to check a specific day, branch, or period.
+- Refresh the page if old loading results were already open before the update.
+
+---
+
+### Sales List
+
+#### What Is Faster Now
+- Sales list opens faster. The Sales page now starts with today's sales, so users do not have to wait for a full year of records to load first.
+- Users can still view older sales when needed. The date range can be changed from today's sales to any required period.
+- Searching and checking recent sales is easier. The page becomes ready sooner for daily work.
+
+How to use or check it:
+- Go to Sales.
+- The list opens with today's sales by default.
+- Change the Date Range if you need to view this month, this year, or any older sales.
+- Use Search or other filters after the list is loaded.
+
+---
+
+### Superadmin - All Businesses
+
+#### What Is Faster Now
+- All Businesses opens faster for Superadmin users.
+- Business date filters respond more quickly. Superadmin can check businesses with or without transaction activity without long waiting.
+- The business list remains easier to use when many records are available.
+
+How to use or check it:
+- Go to Superadmin > All Businesses.
+- Open Report Filters if you want to narrow the list.
+- Use the transaction date filter when you want to find businesses by activity.
+- Review the filtered business list after it refreshes.
+
+---
+
+### Users List
+
+What users can do now:
+- Users List now has Report Filters like other reports. Users can filter the list more easily from the top of the page.
+- Users can filter by business location. The location filter starts with All locations selected.
+- Users can search by username or employee name. This helps find a specific user or employee faster.
+- Users can choose whether to view Users or Employees. This makes the list easier to review when the business has both login users and employees.
+
+How to use or check it:
+- Go to Users.
+- Open Report Filters.
+- Choose a Business Location if you want to see users for one location only.
+- Leave Business Location as All locations if you want to see every location you can access.
+- Enter a username or employee name if you want to find one person.
+- Choose Users or Employees from Type if you want to view only one group.
+
+---
+
+### Register Report
+
+What users can do now:
+- Register Report now has a Business Location filter. Users can view register records for one location or all locations.
+- The location filter starts with All locations selected. Users can keep the full report view unless they want to narrow it down.
+- Location filtering works with the existing report filters. Users can combine location with user, status, and date range.
+
+How to use or check it:
+- Go to Reports > Register Report.
+- Open Report Filters.
+- Choose a Business Location if you want to check one location only.
+- Leave Business Location as All locations if you want to see all locations you can access.
+- Select User, Status, or Date Range if needed.
+- Review the Register Report table after the filters refresh.
+
+---
+
+### POS - Cash Register Details
+
+What works correctly now:
+- Details of products sold now shows the correct products for the current cash register. Cashiers can check the sold item list from the register details window and see the products sold during that register opening.
+- Sold quantities now match the register session more closely. The product quantity list follows the cash register opening time until the current time or closing time.
+- Credit sales are also included in the sold product details. If a sale was saved as due during the register session, its products are still shown in the sold item list.
+- Product variation names are shown clearly. Variable products show their variation details in the sold item list.
+
+How to use or check it:
+- Open the POS screen.
+- Open the Cash Register details window.
+- Go to Details of products sold.
+- Check the products, quantities, and amounts sold during the current register session.
+- For a closed register, open the register details and review the sold product list for that register.
+
+---
+
+### Products - Related Sub Units
+
+What works correctly now:
+- Related Sub Units keep the correct order after Excel export and import. If Pack Size is selected before Base Unit on the product page, the same order stays after downloading and uploading the product Excel sheet.
+- Products that already showed the wrong order can be corrected. Items that changed to Base Unit first after an earlier Excel import can be fixed so Pack Size appears first again.
+- Product unit selection is clearer for daily use. Users can open the product edit page and see the expected Related Sub Units order.
+
+How to use or check it:
+- Go to Products and edit the required product.
+- Check the Related Sub Units field.
+- If Pack Size should be used first, confirm it appears before Base Unit.
+- If the order is wrong on old products, ask the admin to run the correction for affected products.
+- After correction, download and reimport the product Excel sheet only if another product update is needed.
+- Open the product again and confirm the Related Sub Units order is still correct.
+
+---
+
+### Shopify
+
+What works correctly now:
+- Shopify setup now shows the correct application name and title. The Add Shopify Connection page first uses the name and title saved in Application Settings. If those settings are not available, it uses the application name and title saved in the system file.
+
+How to use or check it:
+- Go to Shopify > Connections.
+- Click Add Connection.
+- Check the Simple idea note and setup instructions.
+- Confirm the page shows the correct application name and title.
+- If the name or title is not correct, ask the admin to update it from Superadmin > Settings > Application Settings.
+
+---
+
+### Products - Product Images
+
+What users can do now:
+- Product images are easier to organise. When product images are added or updated, the image names can follow the product SKU, such as `3465_1`, `3465_2`, and `3465_3`.
+- A product can have one main image and extra gallery images. The main image is used as the featured product image, and the extra images appear in the product gallery.
+- Gallery images can be made the main image. On the Edit Product page, users can click Make featured on a gallery image.
+- Deleting a gallery image removes it properly. If a user deletes a gallery image from the Product Image Gallery or from the Edit Product page, the image is removed from the product and from the image folder.
+- Product images stay inside the correct business image area. Images for one business are kept separate from other businesses.
+
+How to use or check it:
+- Go to Products.
+- Add a new product or edit an existing product.
+- Choose a Product image if you want to set the main product image.
+- Choose Product gallery images if you want to add extra images for a single product.
+- Click Save or Update.
+- Open the product view to check the main image and gallery images.
+- On the Edit Product page, click Make featured if one of the gallery images should become the main image.
+- Click the red delete button on a gallery image if you want to remove it.
+
+---
+
+### Products - Image Gallery
+
+What users can do now:
+- Businesses can view product images in one gallery screen. Users can see how many product images are available for the current business.
+- The gallery shows main product images and extra product gallery images.
+- Users can upload images from the gallery screen.
+- Users can select multiple images and delete them together.
+- The search box now searches while typing. Users no longer need to click the search button every time.
+- Image labels show whether an image is linked to a product or is not linked.
+
+How to use or check it:
+- Go to Products > Image Gallery.
+- Type in the Search filename box to find an image.
+- Wait a short moment after typing and the gallery will refresh automatically.
+- Use Upload Images if you want to add image files to the business gallery.
+- Tick one or more images if you want to delete them.
+- Click Delete Selected to remove the selected images.
+- Check the labels under each image to see whether it is linked to a product or not linked.
+
+---
+
+### Superadmin - Maintenance Tools
+
+#### What Superadmin Can Do Now
+- Fix Uploads Folder can move old uploaded files into the correct business folders. This helps keep business files organised.
+- Fix Default Product Image Repeats can correct products that were using repeated or missing default images.
+- Rename Product Images By SKU can rename existing product images using the product SKU style. This helps old images follow the same naming style as new product images.
+- The maintenance tools show a result after running. Superadmin can review how many items were checked, fixed, skipped, or already correct.
+
+How to use or check it:
+- Go to Superadmin > Settings.
+- Open the Maintenance Tools tab.
+- Click Fix Uploads Folder if old uploaded files need to be moved into the correct business folders.
+- Click Fix Default Product Image Repeats if products are showing repeated or missing default images.
+- Click Rename Product Images By SKU if existing product images need SKU-style names.
+- Read the result message after the tool finishes.
+- Test with a few products first before running a large cleanup on live data.
+
+---
+
+## Version 8.93.3 - 2026-07-28
+
+### Shopify
+
+What users can do now:
+- Shopify setup is easier to understand. The Add Shopify Connection page now explains the connection in simple words, so users can see which option to use before connecting a store.
+- Users can choose between Easy Connection and Manual Token Connection. Easy Connection is for stores that can approve access through Shopify. Manual Token Connection is for users who already have manual connection details from Shopify.
+- The connection page now shows simple step-by-step instructions. Users can follow the guide on the page without needing separate help notes.
+- Helpful setup URLs are shown on the page. Users can copy the App URL, Redirect URL, and Webhook URL when Shopify asks for them during setup.
+- Manual token users can test the connection before saving. This helps confirm that the store name and token are correct.
+- Shopify Products, Orders, and Customers pages are now available from the Shopify menu. Users can open these pages to review information imported from Shopify.
+- Shopify order details can be reviewed more clearly. Users can open an order, view its line items, and convert it into a POS sale when the products are matched.
+- Shopify product details can be reviewed more clearly. Users can open a product and check its variants, SKU, price, cost, stock, and barcode.
+- Shopify customer details can be reviewed more clearly. Users can open a customer and check their contact information, order count, and order history.
+- Product mapping is easier to check. Users can see the Shopify product, variant, and inventory item references in one place.
+- Shopify syncing is more reliable for normal store data. Products, orders, and customers with some missing optional details are less likely to stop the sync.
+- Shopify app uninstall is handled more cleanly. If the app is removed from Shopify, the store connection is marked inactive.
+
+How to use or check it:
+- Go to Shopify > Connections.
+- Click Add Connection.
+- Read the Simple idea note at the top of the page.
+- Use Easy Connection if you want Shopify to ask for approval and return you back to the application automatically.
+- Enter your Shopify store address, such as `abc-fashion.myshopify.com`.
+- Click Start Easy Connection.
+- Approve the connection in Shopify when Shopify opens.
+- Use Manual Token Connection only if you already have the required manual connection details from Shopify.
+- For manual connection, enter the store name, paste the connection key, and keep the suggested version selected unless advised otherwise.
+- Click Test Connection before saving a manual token connection.
+- After the store is connected, go to Shopify > Products, Shopify > Orders, or Shopify > Customers to review imported Shopify data.
+- Go to Shopify > Mappings > Products if you need to match POS products with Shopify products before pushing stock or converting orders.
+- Open a Shopify order and use Convert to POS Sale only after the order products are matched with POS products.
+
+---
+
+## Version 8.93.2 - 2026-07-27
+
+### POS - Shipping Charges
+
+What is easier now:
+- Shipping charges can now be entered from the POS footer. When Disable Shipping is unticked in Business Settings, the POS screen shows Shipping with an edit option.
+- Cashiers can click the edit option beside Shipping to add or change shipping charges.
+- The entered shipping charge is included in the POS total.
+- If Disable Shipping is ticked, the shipping option stays hidden from POS as expected.
+
+How to use or check it:
+- Go to Settings > Business Settings.
+- Open the POS tab.
+- Untick Disable Shipping if shipping charges should be used on POS.
+- Save the settings.
+- Open the POS screen.
+- Add products to the bill.
+- In the footer, click the edit option beside Shipping.
+- Enter the shipping charge and update.
+- Check that the Shipping amount and Total are updated on the POS screen.
+
+---
+
+### Dashboard - Add New Contact
+
+What works correctly now:
+- Add a new contact now opens properly from the Dashboard. When users click Add a new contact, the contact window stays clearly in front and can be filled normally.
+- The contact form buttons are easier to use. Save, Close, and other contact form options are no longer hidden behind the page shade.
+
+How to use or check it:
+- Go to Dashboard.
+- Click Add a new contact.
+- Fill in the contact details.
+- Click Save to add the contact, or Close to return to the Dashboard.
+
+---
+
+### Products - Excel Import and Export
+
+What works correctly now:
+- Related Sub Units keep the same order after Excel export and reimport. If Pack Size is selected before Base Unit on the product page, the same order is kept after downloading the product Excel sheet and uploading it again.
+- Product unit selection is easier to trust after reimport. The Related Sub Units field no longer changes the selected order unexpectedly.
+- Already affected products can be corrected. Products that were reimported earlier and now show Base Unit before Pack Size can be repaired so the preferred order appears again.
+
+How to use or check it:
+- Open the product edit page and check Related Sub Units.
+- If Pack Size should be used first, make sure Pack Size appears before Base Unit.
+- Download the product Excel sheet if you need to update products in bulk.
+- Upload the edited Excel sheet again.
+- Open the product again and confirm the Related Sub Units order is still the same.
+- For products already showing the wrong order, ask the system admin to run the repair for affected products.
+
+---
+
+### Units - Number of Products
+
+#### What Users Can See Now
+- Units list now shows Number of products after Allow decimal. Users can quickly see how many products are using each unit.
+- Related Sub Units are also counted. If a product uses a unit in Related Sub Units, that product is included in the unit's product count.
+- The count is easier to check from one place. Users do not need to open each product one by one to confirm which units are being used.
+
+How to use or check it:
+- Go to Units.
+- Check the Number of products column after Allow decimal.
+- Open any product edit page if you want to confirm the product's Unit and Related Sub Units.
+- If a unit is selected in Related Sub Units, that product should be included in the unit's Number of products.
+
+---
+
+## Version 8.93.1 - 2026-07-24
+
+### Accounting - Business Location Payment Options
+
+What works correctly now:
+- Default Account dropdown now shows only the correct Chart of Accounts entries. If only one account is available, such as MEEZAN BANK 1, the Business Location payment options will no longer show an extra old account name.
+- Payment method account selection is now easier to trust. Users can select the default account without seeing duplicate or unwanted account names.
+
+How to use or check it:
+- Go to Business Settings > Business Locations.
+- Edit the required business location.
+- Open Payment Options.
+- Check the Default Account dropdown for each payment method.
+- Select the correct account and save.
+- If an account should not be used, make sure it is not selected in the payment method settings.
+
+---
+
+### Accounting - Transactions and Cash Flow Report
+
+What works correctly now:
+- Cash Flow Report now keeps the correct cash balance after Remap Defaults. When users remap all Accounting Transactions tabs, Cash in Hand no longer changes incorrectly because of the same payment being counted again.
+- Contact Payments now show the correct final cash effect. If a Contact Payment includes amounts that cancel each other, the Cash Flow Report shows the net amount instead of adding both sides.
+- Zero-value Contact Payments now stay zero in Cash Flow. For example, if one line is 200,000.00 and another line is -200,000.00, Cash in Hand shows 0.00 effect.
+- Advance Deposits now follow the correct cash direction. Customer and supplier advance deposit payments now increase or decrease Cash in Hand correctly after remapping.
+- The Accounting Transactions tabs are now arranged in a better remapping order. This helps users remap step by step in the order that is easier to understand.
+- Contact Payments should be remapped at the end. This helps avoid confusion because Contact Payments can be linked with other payment tabs.
+
+How to use or check it:
+- Go to Accounting > Transactions.
+- When remapping all tabs, follow the tabs from left to right.
+- Start with Opening Balance and Opening Stock.
+- Remap Purchases and Purchase Return before Sales and Sale Returns.
+- Remap payment tabs after the main transaction tabs.
+- Remap Contact Payments last.
+- After remapping, go to Accounting > Reports > Cash Flow Report.
+- Select the Cash in Hand account and the required date range.
+- Check that the Closing Balance matches the expected cash balance.
+- For Contact Payments, open the payment preview if needed and compare the final amount with Cash Flow.
+
+---
+
+### Manufacturing - Production
+
+What works correctly now:
+- Ingredient cost is now picked correctly on Production Create. When users select a location and production product, the ingredient total uses the correct available stock cost for that selected location.
+- This applies to all production products and ingredients. If an ingredient has more than one stock cost available, the production page now picks the correct cost in stock order.
+- Production cost now matches the product stock history more closely. Users can compare an ingredient's cost with Product History for the same location and see the expected cost on the production page.
+- Manually added ingredients also follow the same cost rule. Ingredients added from the Select Ingredient field use the correct cost for the selected location.
+
+How to use or check it:
+- Go to Manufacturing > Production > Add.
+- Select the required Location.
+- Select the production Product.
+- Check the Ingredients table.
+- Review the Total Price for each ingredient.
+- If needed, open the ingredient's Product History for the same location and compare the cost.
+- Add any extra ingredient if required. Its cost should also follow the selected location's available stock cost.
+
+---
+
+### Products
+
+What users can do now:
+- PCT/HSN Code can now be added to selected products from Stock Maintenance. Users can select products from the Product list, open Stock Maintenance, choose Add PCT/HSN Code, enter the code, and apply it.
+- Add PCT/HSN Code only fills products where the code is missing. Products that already have a PCT/HSN Code are not changed.
+- Products with PCT/HSN Code saved as 0 are treated as missing. If a selected product only has `0` saved in PCT/HSN Code, Add PCT/HSN Code will replace it with the entered code.
+- PCT/HSN Code can also be updated for all selected products. Users can choose Update PCT/HSN Code when they want the entered code to replace the code on every selected product.
+- Product list now shows PCT/HSN Code after Tax. Users can quickly check each product's PCT/HSN Code directly from the Product list.
+
+How to use or check it:
+- Go to Products.
+- Select the products you want to change.
+- Click Stock Maintenance.
+- Choose Add PCT/HSN Code if you only want to fill missing codes.
+- Enter the PCT/HSN Code and click Apply.
+- Choose Update PCT/HSN Code if you want to replace the code on all selected products.
+- Enter the PCT/HSN Code and click Apply.
+- Check the selected products to confirm the PCT/HSN Code is updated as needed.
+- Review the Product list after Tax to see the PCT/HSN Code for each product.
+
+---
+
+### Stock Quantity Report
+
+What users can do now:
+- Stock Quantity Report now shows product grouping columns based on Business Settings. Users can see Category, Sub-Category, Sub2-Category, Brand, Sub Brand, Gender, Sub Gender, Procurement Source, and Sub Procurement Source when those options are enabled from Business Settings > Product.
+- Only enabled product options are shown in the report. If a product option is turned off in Business Settings, its column is not shown in the Stock Quantity Report.
+- Sub option filters follow the business settings. Sub Brand, Sub Gender, and Sub Procurement Source filters appear only when their matching sub option is enabled.
+- Column Visibility includes the new product grouping columns. Users can hide or show these columns from the report column visibility settings.
+
+How to use or check it:
+- Go to Settings > Business Settings > Product.
+- Turn on the product options the business uses, such as Categories, Sub-Categories, Sub2-Categories, Brands, Sub Brands, Gender, Sub Gender, Procurement Source, and Sub Procurement Source.
+- Save the business settings.
+- Go to Reports > Stock Reports > Stock Quantity Report.
+- Check the Details table. The enabled product grouping columns should be visible.
+- Use the report filters to narrow the stock list by the enabled product options.
+- Go to Column Visibility if you want to hide or show any of these columns for your own view.
+
+---
+
+### Purchase
+
+What users can do now:
+- Scheme Quantity can now have its own tax in Purchase Add and Edit. Users can select tax for Scheme Quantity from the new Tax column shown after Scheme Qty.
+- Scheme Quantity tax is included in the final payable amount. When Scheme Qty is entered, its tax is counted in Scheme Tax, Total After Tax, and Net Total Amount.
+- Purchase totals now show Scheme Quantity separately. Users can see Scheme Quantity below Total Quantity.
+- Purchase totals now show Scheme Tax separately. Users can see Scheme Tax below Total Tax.
+- Product tax is selected automatically when adding products. If tax is selected in the product setup, it is picked automatically when the product is added on purchase and sale screens.
+- Scheme Quantity tax also follows the product's selected tax. When a product is added in purchase, the Scheme Qty Tax is selected automatically from the product setup.
+- Tax can be applied to all Scheme Qty lines at once. Users can click the Scheme Qty Tax heading and choose one tax to apply to all product rows.
+- Scheme Qty Tax follows the Purchase tax setting. The Scheme Qty Tax column appears only when the normal purchase tax columns are enabled from Business Settings > Purchase.
+- Scheme Qty Tax is included in Paid Tax reports. Users can see the Scheme Qty Tax amount counted in Reports > Tax Report > Paid Tax.
+- Scheme Qty Tax is included in Accounting reports. Purchase tax amounts, including Scheme Qty Tax, are counted in Accounting > Trial Balance when purchase tax is mapped in Accounting settings.
+- Purchase product totals are cleaner. Extra currency symbols have been removed from the product totals area.
+
+How to use or check it:
+- Go to Settings > Business Settings > Purchase.
+- Turn on Enable Inline Tax in purchase if purchase tax columns should be shown.
+- Turn on Scheme Quantity if Scheme Qty should be used in purchase.
+- Open Purchase Add or Purchase Edit.
+- Add a product.
+- Check the Tax column after Scheme Qty. It should appear when purchase tax columns are enabled.
+- Enter Scheme Qty and select the required Scheme Qty Tax if needed.
+- Check Total Quantity, Scheme Quantity, Total Tax, Scheme Tax, Total After Tax, and Net Total Amount.
+- Click the Scheme Qty Tax heading if you want to apply the same scheme tax to all product rows.
+- Go to Reports > Tax Report and check Paid Tax. Scheme Qty Tax should be included.
+- Go to Accounting > Trial Balance and check the mapped purchase tax account. Scheme Qty Tax should be included there too.
+- Review the product totals area. Amounts should be easier to read without repeated currency symbols.
+
+---
+
+### Contact Ledger
+
+What users can do now:
+- Column Visibility is now available on all Contact Ledger formats. Users can hide or show ledger columns in Format 1, Format 2, Format 3, Format 4, Format 5, and Format 6.
+- Column choices are remembered separately for each ledger format. Users can keep different visible columns for different ledger formats.
+- The Transaction No heading is now shown as Number. This shorter heading is used in all Contact Ledger formats.
+- The Description column is easier to read. Long description details now stay inside a fixed-width column and wrap onto the next line instead of making the table too wide.
+- Downloaded ledger PDFs are neater. The ledger title, generated date, Total label, and total amounts are aligned to the right side for easier reading.
+- The Hide Account Summary on Ledger checkbox is now available on the other ledger formats that show Account Summary. Users can hide the Account Summary directly from the ledger screen.
+- The Hide Account Summary checkbox follows the saved business setting by default. If the business setting is already enabled, the checkbox is selected and the Account Summary is hidden when the ledger opens.
+- Long invoice and payment numbers are easier to read. Numbers such as `PI012026-000116` and `CP2026/0926` now split onto two lines in the Number column.
+- Brought Forward is easier to read in narrow ledger columns. It now appears on two lines where needed.
+- Contact Ledger PDF now uses the page space better. Ledger rows are less likely to move to the next page while empty space is still available.
+- Portrait and Landscape ledger PDFs are cleaner. Users can download the ledger PDF in either page direction with better row spacing.
+- Ageing totals stay with the ledger when there is room. In Portrait PDF, the ageing totals no longer move to a new page unnecessarily when space is available below the ledger totals.
+- Ledger PDF page numbers are easier to trust. The page number shown in the PDF matches the actual pages in the downloaded file.
+- Each ledger format can now be marked as default. Users can tick Is Default under the format they want to open automatically.
+- Default ledger format is saved separately for customers, suppliers, and barterers. For example, customers can open with Format 2, suppliers with Format 5, and barterers with Format 3.
+- The ledger opens with the correct default format automatically. When a supplier ledger is opened, the supplier default format is selected by itself. Customer and barterer ledgers work the same way.
+
+How to use or check it:
+- Open a contact.
+- Go to the Ledger tab.
+- Choose the required ledger format.
+- Tick Is Default under that format if you want this type of contact to open with the same format next time.
+- Set defaults separately from a customer, supplier, and barterer ledger if each type should use a different format.
+- Reopen the ledger and check that the saved default format opens automatically.
+- Click Column Visibility to hide or show columns for that format.
+- Check the Number column. It should show the shorter Number heading.
+- Review the Description column. Long details should wrap neatly inside the column.
+- Download the ledger PDF and check the heading and total row. They should line up neatly on the right side.
+- Tick Hide Account Summary on Ledger if you do not want to show the Account Summary.
+- Untick Hide Account Summary on Ledger if you want to show it again.
+- Review the Number and Type columns. Long numbers and Brought Forward should now fit more neatly.
+- Click Print A4 and choose Portrait or Landscape as needed.
+- Click PDF from the print preview to download the ledger copy.
+- Check that ledger rows, footer totals, ageing totals, and page numbers appear neatly on the PDF pages.
+
+---
+
+### Invoice Layout - Header Settings
+
+What works correctly now:
+- Logo and Header Text are now shown in Layout Header settings. When users add or edit an invoice layout, the Invoice Logo, Show Logo, and Header Text options are visible under 2 - Layout Header to be shown.
+- Letterhead no longer hides the normal header options. Users can still choose a letterhead, and they can also review or change the logo and header text from the same page.
+- The logo preview is shown in the correct place. When users select an invoice logo, they can see the preview while setting up the layout.
+
+How to use or check it:
+- Go to Settings > Invoice Settings > Invoice Layout.
+- Add a new invoice layout or edit an existing one.
+- Open 2 - Layout Header to be shown.
+- Check that Invoice Logo, Show Logo, and Header Text are visible.
+- Tick Show letter head only if you want to use a full letterhead image.
+- Upload or change the invoice logo if needed.
+- Enter or update the Header Text if needed.
+- Save the invoice layout and print or preview an invoice to check the header.
+
+---
+
+### Software Update - Security Roles
+
+What works correctly now:
+- Staff security roles continue working after a software update. Users who are not Admin should keep their allowed menus and actions after the update is completed.
+- Security Role options stay available for staff access setup. The Users and Security Roles permissions remain available when creating or editing a role.
+- Admins can run the normal update page to repair missing role options. If the role options were missing after a previous update, running the update again restores them without changing the saved role choices.
+- Admin access is unchanged. Admin users can continue opening the system as before.
+
+How to use or check it:
+- Log in as an Admin user.
+- Open the software update page.
+- Click I Understand, Update.
+- Wait until the update finishes.
+- Go to Settings > Security Roles.
+- Open a non-admin role, such as Cashier or another staff role.
+- Check that the needed Users and Security Roles permissions are visible.
+- Save the role only if you want to change that role's access.
+- Ask a staff user to log in and confirm their menus and allowed actions are visible again.
 
 ---
 
@@ -11,7 +3145,7 @@ This guide explains system changes in simple user language. It only includes wha
 
 Important note:
 - Cloud-hosted POS businesses must use an FBR POS ID registered as Cloud based in the FBR portal.
-- Client-server/offline POS IDs are for desktop or local fiscal service software and should not be used for the hosted cloud POS.
+- Desktop or local POS IDs are for desktop/local systems and should not be used for the hosted cloud POS.
 - If a bill prints without the FBR QR code, first check the POS Type in the FBR portal.
 - If FBR returns Code 112, register or select a Cloud based POS ID, then save that new POS ID in Business Location > FBR POS ID.
 - For the normal cloud POS flow, no IMS_URL or FBR token is needed unless your provider has given a special setup.
@@ -3872,8 +7006,8 @@ How to use or check it:
 ### Offline Sync
 
 What is easier now:
-- Local installations stay faster when the internet is off. POS and normal pages no longer keep waiting for the cloud server for a long time.
-- Cashiers can keep using POS during internet problems. The system quickly detects that the cloud server is not reachable and lets local work continue.
+- Local installations stay faster when the internet is off. POS and normal pages no longer wait too long for the online system.
+- Cashiers can keep using POS during internet problems. The system quickly detects that the online connection is not reachable and lets local work continue.
 - The Offline Sync page opens faster when there is no internet.
 - Standalone local installs behave better with weak or missing internet. Users see fewer delays and fewer login or notification problems.
 - The app works better in both browser and desktop app mode. Local pages, styles, redirects and printing behave more reliably.
@@ -6376,3 +9510,4 @@ What is easier now:
 What users can do now:
 - Chart of Account Report added under Accounting > Reports. Lists all accounts organised by type (Asset, Liability, Equity, Income, Expenses) with columns for GL Code, Account Name, Account Sub Type, and Status.
 - "Show Balances" option. Tick the Show Balances checkbox and click Apply Filters to add a live balance column showing the current balance for each account, plus totals grouped by sub-type and account type.
+

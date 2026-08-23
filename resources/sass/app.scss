@@ -58,6 +58,15 @@
   z-index: 12020 !important;
 }
 
+.modal-open>.bootstrap-datetimepicker-widget.dropdown-menu {
+  z-index: 12020 !important;
+}
+
+#attendance_modal .attendance-modal-body,
+#attendance_modal .attendance-table-responsive {
+  overflow: visible !important;
+}
+
 .swal-overlay {
   z-index: 12100 !important;
 }

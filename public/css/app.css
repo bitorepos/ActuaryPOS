@@ -3512,6 +3512,15 @@ html.dark-theme body.lockscreen > .wrapper {
   z-index: 12020 !important;
 }
 
+.modal-open>.bootstrap-datetimepicker-widget.dropdown-menu {
+  z-index: 12020 !important;
+}
+
+#attendance_modal .attendance-modal-body,
+#attendance_modal .attendance-table-responsive {
+  overflow: visible !important;
+}
+
 /* --- SweetAlert (must be above modals) --- */
 .swal-overlay {
   z-index: 12100 !important;
