@@ -4,6 +4,63 @@
 
 ---
 
+### Module: POS / Sale - Sale Return With Negative Quantity
+
+#### What Users Can Do Now
+- **Users who are allowed to make sale returns with negative quantity can now use this option properly.**
+- **Out-of-stock products can be added to POS or Sale screens when the user needs to enter a return quantity.**
+- **The product is added with quantity 0 first, so the user can enter a negative quantity like -1.**
+- **Negative quantity return lines no longer show the normal out-of-stock blocking message.**
+- **The same setting also works better on sale return pages when a negative return quantity is entered.**
+
+#### Guide
+- **Go to Users > User Settings.**
+- **Open the POS tab for the user.**
+- **Tick Allow Sale return with Negative quantity and save.**
+- **Open POS or Add Sale.**
+- **Add the product that is being returned.**
+- **Enter the returned quantity as a negative number, for example -1.**
+- **Save the sale as usual.**
+
+---
+
+### Module: Software Update - Workstation GitHub Button
+
+#### What Users Can Do Now
+- **Offline workstation users can use the GitHub button in the top bar to check for software updates.**
+- **The system remembers the correct update source for this workstation.**
+- **No GitHub login is needed for public read-only updates.**
+- **If the PC cannot connect to GitHub, users now see a clearer message.**
+- **If new software files are received, the UPDATE option appears so the user can finish the update.**
+
+#### Guide
+- **Connect the workstation PC to the internet before checking for software updates.**
+- **Log in as an admin user.**
+- **Click the GitHub button in the top bar.**
+- **Wait for the success or message popup.**
+- **If UPDATE appears, click UPDATE and wait for the update to finish.**
+- **If the message says the PC cannot reach GitHub, check the internet connection and try again.**
+
+---
+
+### Module: Invoice Layout - Pakistan FBR/PRA QR Code Printing
+
+#### What Users Will See
+- **Pakistan FBR/PRA QR Code printing options are now saved correctly in invoice layouts.**
+- **Users can choose whether to show the tax image, tax QR code, tax POS ID, and POS ID date on printed invoices.**
+- **Unticked options will stay hidden when the invoice is printed.**
+- **These choices now work across all invoice and receipt designs that show FBR/PRA information.**
+
+#### Guide
+- **Go to Settings > Invoice Settings > Invoice Layout.**
+- **Add a new layout or edit an existing layout.**
+- **Open 8 - Pakistan FBR/PRA QR Code informative fields to be shown.**
+- **Tick only the FBR/PRA fields you want to print.**
+- **Save the layout.**
+- **Print or preview an invoice and check that only the selected FBR/PRA fields are shown.**
+
+---
+
 ### Module: Home Dashboard
 
 #### What Users Will See
