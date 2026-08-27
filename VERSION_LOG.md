@@ -1,5 +1,34 @@
 # Version Log
 
+## August 25, 2026 - Shared Business Data Safety Review
+
+### What Changed
+
+- Improved screens that can be used by many businesses from the same system.
+- POS tax and warranty lists now stay matched with the correct business.
+- Dashboard totals and sales charts now stay matched with the logged-in business.
+- Cash register open/close status now stays matched with the correct business, branch, and user.
+- Stock quantity sync and stock reindex progress now show the correct progress for the current business.
+- Opening stock report reindex progress now stays separate for each business user.
+- Offline sales sync now avoids showing a sync-in-progress message from another business.
+- Shopify and Xero status checks now stay matched with the correct business setup.
+
+### How Users Check It
+
+1. Open the business on its own domain or subdomain.
+2. Check **Settings > Tax Rates** and **POS** tax selection.
+3. Open and close a cash register.
+4. Check the dashboard totals and sales chart.
+5. Run stock quantity sync or stock reindex if needed.
+6. Confirm that each business only shows its own information.
+
+### Benefits for Customers
+
+- Businesses using the same system see only their own working data.
+- Staff get the correct POS, cash register, dashboard, and stock progress information.
+- This helps prevent confusion when many businesses are hosted from one system.
+- Separate installations continue working the same way.
+
 ## August 24, 2026 - POS Tax Selection Fix
 
 ### What Changed
