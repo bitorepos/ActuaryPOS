@@ -4,6 +4,53 @@
 
 ---
 
+### Module: Delivery Notes - Report Filters
+
+#### What Users Can Do Now
+- **Delivery Notes list now has Report Filters like other reports.** Users can narrow the list without searching through all records.
+- **Users can filter delivery notes by business location, customer, status, and date range.**
+- **The list now also shows the business location for each delivery note.** This makes it easier to check which branch the delivery note belongs to.
+
+#### Guide
+- **Go to Sales > Delivery Notes.**
+- **Open Report Filters.**
+- **Select the business location, customer, status, or date range you want to check.**
+- **The delivery notes list will refresh and show matching records.**
+- **Clear the filters when you want to see all delivery notes again.**
+
+---
+
+### Module: Stock Transfer - Rack Details
+
+#### What Users Will See
+- **Stock Transfer product rows now show rack details for both locations.** Users can see the rack at the From location and the rack at the To location in one line.
+- **The rack path is easier to read while transferring stock.** For example: From - UP050 > To - A053.
+- **This helps users pick and place transferred items more clearly between branches.**
+
+#### Guide
+- **Go to Stock Transfers > Add Stock Transfer.**
+- **Select Location From and Location To.**
+- **Add a product to the transfer.**
+- **Check the product row to see the From rack and To rack shown together.**
+
+---
+
+### Module: Reports - A4 Printing
+
+#### What Looks Better Now
+- **A4 report printouts now use lighter headings.** Report table headings print with black text on a white background.
+- **Dark and blue heading bars have been removed from A4 report prints.** This helps reduce printer ink use while keeping the report easy to read.
+- **Contact Ledger printouts now follow the same lighter style.** The To section, Account Summary, and ledger table headings print without heavy colour bars.
+- **The same lighter heading style is used across common A4 reports.** Sales, purchase, stock, payment, account, profit, activity, and similar report printouts are easier on printer ink.
+
+#### Guide
+- **Open any report that has a Print A4 option.**
+- **Click Print A4 or open the PDF copy.**
+- **Check that the report headings show black text on a white background.**
+- **Print as usual after confirming the preview looks clear.**
+
+---
+
 ### Module: POS / Sale - Sale Return With Negative Quantity
 
 #### What Users Can Do Now

@@ -1,103 +1,683 @@
-# Version Log
+# User Guide Updates
 
-## August 25, 2026 - Shared Business Data Safety Review
+## August 29, 2026 - Sales Can Be Deleted More Reliably
 
-### What Changed
+### What Users Can Do
 
-- Improved screens that can be used by many businesses from the same system.
-- POS tax and warranty lists now stay matched with the correct business.
-- Dashboard totals and sales charts now stay matched with the logged-in business.
-- Cash register open/close status now stays matched with the correct business, branch, and user.
-- Stock quantity sync and stock reindex progress now show the correct progress for the current business.
-- Opening stock report reindex progress now stays separate for each business user.
-- Offline sales sync now avoids showing a sync-in-progress message from another business.
-- Shopify and Xero status checks now stay matched with the correct business setup.
+- Users can delete a sale from the sales list even when the sale was connected to an old sales order.
+- If a sale cannot be deleted for any reason, the screen now shows an error message instead of giving no response.
+- The sale delete process is clearer for staff because it no longer fails silently.
 
-### How Users Check It
+### How To Check
 
-1. Open the business on its own domain or subdomain.
-2. Check **Settings > Tax Rates** and **POS** tax selection.
-3. Open and close a cash register.
-4. Check the dashboard totals and sales chart.
-5. Run stock quantity sync or stock reindex if needed.
-6. Confirm that each business only shows its own information.
+1. Go to **Sell > List Sales**.
+2. Find a sale that needs to be removed.
+3. Click **Delete** from the sale action menu.
+4. Confirm the delete action.
+5. Check that the sale is removed from the list.
+6. If the sale cannot be removed, confirm that a message is shown on the screen.
 
-### Benefits for Customers
+### Why This Helps
 
-- Businesses using the same system see only their own working data.
-- Staff get the correct POS, cash register, dashboard, and stock progress information.
-- This helps prevent confusion when many businesses are hosted from one system.
-- Separate installations continue working the same way.
+- Staff can remove wrong sales more confidently.
+- Users get clear feedback after pressing delete.
+- Sales list cleanup is easier during daily work.
 
-## August 24, 2026 - POS Tax Selection Fix
+## August 29, 2026 - Sale Total Shows Current And Previous Due
 
-### What Changed
+### What Users Can Do
 
-- The tax list on the POS product row now matches the tax rates saved for that business.
-- When a business has its own tax rates, users will see those same tax names on the POS screen.
-- The POS tax dropdown will no longer show tax names from another business.
-- Tax rate changes made in **Settings > Tax Rates** will be reflected on the POS screen.
+- On **Sell > Add Sale**, users can now see the current bill amount as **Total Receivable Current**.
+- After selecting a customer, the customer's previous due is still shown near the customer name.
+- The bottom total area now shows **Total Receivable with Previous**.
+- **Total Receivable with Previous** adds the customer's previous due and the current bill amount together.
+- This helps users quickly know the full amount receivable from the selected customer.
 
-### How Users Check It
+### How To Check
+
+1. Go to **Sell > Add Sale**.
+2. Select a customer who has a previous due amount.
+3. Add products to the sale.
+4. Check the bottom total area.
+5. Confirm **Total Receivable Current** shows the current bill amount.
+6. Confirm **Total Receivable with Previous** shows previous due plus the current bill amount.
+7. Change the products or quantity and confirm the total updates.
+8. Select another customer and confirm the previous due amount changes correctly.
+
+### Why This Helps
+
+- Staff can see the customer's full receivable amount without manual calculation.
+- It is easier to collect both the old due and the current bill amount.
+- The sale screen is clearer for customers who already owe money.
+
+## August 29, 2026 - Change Return Can Be Turned Off For Sales
+
+### What Users Can Do
+
+- Users can turn on **Disable Change Return on Overpay** from **Business Settings > Sales**.
+- When this option is turned on, the payment area does not show **Change Return**.
+- This works on **POS**, **Sell > Add Sale**, and sale edit pages.
+- If staff enter more than the bill amount, the screen stays simple and does not show a separate change return amount.
+
+### How To Check
+
+1. Go to **Settings > Business Settings > Sales**.
+2. Turn on **Disable Change Return on Overpay**.
+3. Save the settings.
+4. Open **POS** or **Sell > Add Sale**.
+5. Add products and open the payment area.
+6. Enter a payment amount higher than the bill amount.
+7. Confirm the **Change Return** section is not shown.
+8. Save the sale normally.
+
+### Why This Helps
+
+- Businesses that do not use change return can keep the payment area simpler.
+- Staff see fewer payment fields while completing a sale.
+- Staff can finish overpaid sales without seeing an extra change return section.
+
+## August 29, 2026 - Sale Discount Labels And Return Discounts Are Easier To Manage
+
+### What Users Can Do
+
+- Users can set their own names for **Invoice Discount** and **Invoice Discount 2** from **Business Settings > Sales**.
+- The chosen discount names are shown on sale create and sale edit pages.
+- The chosen discount names are also shown on sales order create and sales order edit pages.
+- Sale return create and edit pages now show both discount options, including **Invoice Discount** and **Invoice Discount 2**.
+- Sale returns use the selected discount names from business settings.
+- Sale invoices, sale details, sale reports, and discount popups show the same discount names, so the wording stays consistent.
+- The sale edit page discount area is now arranged like the sale create page, making it easier to read and fill.
+
+### How To Check
+
+1. Go to **Settings > Business Settings > Sales**.
+2. Turn on **Enable Total Discount on Sale** and enter the label you want to use.
+3. Turn on **Enable Total Discount 2 on Sale** and enter the second discount label you want to use.
+4. Save the settings.
+5. Go to **Sell > Add Sale** and confirm both discount labels are shown.
+6. Open an existing sale for editing and confirm the discount area is aligned clearly.
+7. Create or edit a **Sales Order** and confirm both discount labels are shown there too.
+8. Create or edit a **Sale Return** and confirm both discount options are available with the same labels.
+9. View or print a sale invoice, or open sale reports, and confirm the same discount names are shown.
+
+### Why This Helps
+
+- Businesses can use discount names that match their own billing style.
+- Staff can understand the first and second discount more easily.
+- Sale, sales order, return, invoice, and report screens now use the same wording.
+- The sale edit screen is easier to use because the discount fields are better aligned.
+
+## August 28, 2026 - Contact List Print A4 And PDF Are Easier To Use
+
+### What Users Can Do
+
+- Users can print the customer, supplier, or barterer list using the new **Print A4** button on the contact list page.
+- The print preview follows the selected contact type, filters, search text, and sorting.
+- Users can export the same contact list to **PDF** or **Excel** from the print preview.
+- Contact list print pages now use page space better, so fewer large blank areas appear.
+- PDF exports now use a larger, easier-to-read text size.
+- The country filter now works correctly with the contact list print option.
+
+### How To Check
+
+1. Go to **Contacts > Customers**, **Suppliers**, or **Barterers**.
+2. Apply any filters you need, such as location, city, state, country, status, payment status, or balance filters.
+3. Search or sort the list if needed.
+4. Click **Print A4**.
+5. Confirm the print preview opens with the same filtered contact list.
+6. Check that the pages are filled properly and do not move rows to the next page too early.
+7. Click **PDF** in the print preview.
+8. Confirm the PDF text is easier to read and the pages do not show extra blank pages between contact rows.
+9. Click **Excel** if a spreadsheet copy is needed.
+
+### Why This Helps
+
+- Users can keep printed contact lists for daily checking, office records, or customer/supplier review.
+- Printed and downloaded copies match the contact list users are viewing.
+- PDF copies are clearer to read.
+- Less paper is wasted because contact rows fit better on each page.
+
+## August 28, 2026 - Label Print Settings Stay Saved
+
+### What Users Can Do
+
+- Users can choose what information should appear on product labels.
+- Label options such as barcode, product name, variation, unit, category, price, discount price, business name, packing date, lot number, and expiry date now stay saved.
+- Font sizes and label font style now stay saved after previewing or printing labels.
+- The selected barcode or label design stays selected the next time users open the label screen.
+- Users can turn any label option on or off without the page resetting everything back to checked.
+- The label product table now shows the total number of products in the footer.
+
+### How To Check
+
+1. Go to **Products > Print Labels**.
+2. Add a product for printing.
+3. Tick only the label details you want to print.
+4. Change one or more font sizes or the label font style.
+5. Choose a barcode setting or label design.
+6. Click **Preview Labels**.
+7. Return to the label screen.
+8. Confirm the same ticked options, sizes, font style, and selected label setting are still shown.
+9. Check the product table footer and confirm the total number of products is shown.
+
+### Why This Helps
+
+- Users do not need to select the same label options again and again.
+- Label printing is faster for repeated daily use.
+- Product labels are more consistent because the chosen layout settings are remembered.
+- Users can quickly see how many products have been added for label printing.
+
+## August 28, 2026 - Stock Transfer Save, Print, And Rack Details Are Easier To Use
+
+### What Users Can Do
+
+- Users can save a new stock transfer without seeing an extra **Leave site?** warning after it has already saved.
+- After saving a stock transfer, users are taken back to the stock transfer list correctly.
+- Users can open the **Update Status** popup clearly from the stock transfer list.
+- Users can use **Save & Print** when creating a completed stock transfer.
+- Users can use **Save & Print** when editing a stock transfer.
+- After printing, users are returned to the stock transfer list more quickly.
+- Stock transfer printouts now show rack movement in one line, such as **From Rack: A053 > To Rack: UP050**.
+- The stock transfer view popup also shows the same **From Rack > To Rack** detail.
+- The printout opened from the stock transfer view popup also shows the **From Rack > To Rack** detail.
+- On the stock transfer edit page, clicking the calendar icon now opens the date picker.
+
+### How To Check
+
+1. Go to **Stock Transfers > Add Stock Transfer**.
+2. Add a product, choose locations, and save the transfer.
+3. Confirm the success message shows and no extra leave warning appears after saving.
+4. Create a completed stock transfer and click **Save & Print**.
+5. Confirm the print preview opens, then confirm the page returns to the stock transfer list.
+6. Open an existing stock transfer, change details if needed, and click **Save & Print**.
+7. Confirm the updated transfer is saved, the print preview opens, and the page returns to the stock transfer list.
+8. On the stock transfer list, click a transfer status and confirm the **Update Status** popup appears in front of the page.
+9. Print or view a stock transfer with rack details and confirm the product line shows **From Rack > To Rack**.
+10. Open the stock transfer edit page and click the calendar icon beside the date field.
+11. Confirm the date picker opens.
+
+### Why This Helps
+
+- Staff get clearer feedback when saving and printing stock transfers.
+- Users do not need to manually return to the stock transfer list after printing.
+- Rack movement is easier to read on screen and on printed copies.
+- The edit page date field is easier to change.
+- The stock transfer workflow feels smoother from entry to printout.
+
+## August 28, 2026 - Cash Register Close And Print Works More Reliably
+
+### What Users Can Do
+
+- Users can close the cash register and print the closing details.
+- After pressing **Close & Print**, the register closing details popup opens more reliably.
+- The **Print** button on the register closing details popup now prints the closing information instead of a blank page.
+- Non-admin users who are allowed to close the register can also see the closing details popup after closing.
+- If the closing details cannot be opened, users now see a message instead of getting no response.
+
+### How To Check
+
+1. Open the POS screen with an open cash register.
+2. Click **Close Register**.
+3. Enter the closing details.
+4. Click **Close & Print**.
+5. Confirm the register is closed.
+6. Confirm the register closing details popup opens.
+7. Click **Print**.
+8. Confirm the print preview shows the register closing information.
+9. Repeat the same check with a non-admin user who has permission to close the register.
+
+### Why This Helps
+
+- Staff can print register closing details without repeating the close process.
+- Cashiers and managers can review closing information immediately after closing the register.
+- Non-admin users have a smoother register closing process.
+- Register closing records are easier to print and keep for daily checking.
+
+## August 28, 2026 - Contact Ledger Printouts Are Easier To Read
+
+### What Users Can Do
+
+- Users can print or download contact ledger reports in all available formats.
+- Ledger tables now fit better on the printed page.
+- Table headings and amounts are easier to read.
+- Format 1, Format 3, and Format 4 print in **Landscape** view.
+- Format 2, Format 5, and Format 6 print in **Portrait** view.
+- The **Hide Account Summary**, ageing, clearing, and footer options can still be used when printing the ledger.
+
+### How To Check
+
+1. Open any customer or supplier.
+2. Go to the **Ledger** tab.
+3. Choose **Format 1** and download or print the PDF.
+4. Confirm the table is readable and prints in **Landscape** view.
+5. Choose **Format 2** and download or print the PDF.
+6. Confirm the table is readable and prints in **Portrait** view.
+7. Repeat the same check for **Format 3**, **Format 4**, **Format 5**, and **Format 6**.
+8. Confirm **Format 5** and **Format 6** also print in **Portrait** view.
+
+### Why This Helps
+
+- Ledger printouts are clearer for staff and customers.
+- Users do not need to adjust the page direction manually for each format.
+- Amounts, dates, and reference numbers are easier to check on printed copies.
+
+## August 28, 2026 - Classic 2 Invoice Details Are Easier To Read
+
+### What Users Can Do
+
+- Users can print sales invoices using the **Classic 2** design.
+- The middle invoice details box now starts its text from the left side.
+- The customer box, invoice details box, and other details box now look more consistent.
+
+### How To Check
+
+1. Go to **Settings > Invoice Settings > Layout**.
+2. Open or select a sale invoice layout that uses **Classic 2** design.
+3. Print or preview a sale invoice.
+4. Check the box that shows **Invoice No.**, **Date**, and **Prepared by**.
+5. Confirm the text starts from the left side like the other boxes.
+
+### Why This Helps
+
+- Printed invoices look neater and more balanced.
+- Invoice details are easier to read at a glance.
+- Staff and customers see a cleaner invoice layout.
+
+## August 28, 2026 - Rack Details Update More Safely In Purchases
+
+### What Users Can Do
+
+- Users can still enter **Rack**, **Row**, and **Position** while making a purchase order.
+- Purchase orders will keep these rack details for that order only.
+- Changing rack details in a purchase order will not change the product's saved rack details.
+- On normal purchases, the product's saved rack details will update only when the purchase status is **Received**.
+- If a normal purchase is not **Received**, the rack details stay on that purchase only.
+
+### How To Check
+
+1. Go to **Purchases > Purchase Order**.
+2. Add or edit a purchase order.
+3. Enter or change **Rack**, **Row**, or **Position** in the product row.
+4. Save the purchase order.
+5. Open the product and confirm its saved rack details did not change.
+6. Go to **Purchases > Add Purchase** or edit a normal purchase.
+7. Change **Rack**, **Row**, or **Position** while the purchase status is not **Received**.
+8. Save and confirm the product's saved rack details did not change.
+9. Change the purchase status to **Received** and save again.
+10. Confirm the product's saved rack details are updated.
+
+### Why This Helps
+
+- Purchase orders can record planned rack details without changing product setup.
+- Product rack details change only after stock is actually received.
+- Staff have less chance of changing product rack details too early by mistake.
+
+## August 28, 2026 - Hide Account Summary Works On Contact Ledger
+
+### What Users Can Do
+
+- Users can now hide **Account Summary** on the contact ledger from **Business Settings > Merchants**.
+- When this setting is turned on, the contact ledger opens with the account summary hidden.
+- Users can still show or hide the account summary from the ledger screen when needed.
+- The same setting works on the available contact ledger formats.
+
+### How To Check
+
+1. Go to **Settings > Business Settings**.
+2. Open the **Merchants** tab.
+3. Turn on **Hide Account Summary on Ledger**.
+4. Save the settings.
+5. Open any customer or supplier.
+6. Go to the **Ledger** tab.
+7. Confirm the **Account Summary** section is hidden.
+8. Untick the hide option on the ledger screen if you want to show the account summary again.
+
+### Why This Helps
+
+- Ledger pages can be kept cleaner for users who do not need the account summary.
+- Staff do not need to hide the account summary manually every time.
+- Contact ledger viewing and printing is easier to control.
+
+## August 28, 2026 - Purchase Status Popup Opens Correctly
+
+### What Users Can Do
+
+- Users can now open the **Update Status** popup from the purchases list without the screen covering it.
+- Users can clearly see the purchase status field.
+- Users can choose the new purchase status and press **Update** normally.
+- Users can close the popup normally when no change is needed.
+
+### How To Check
+
+1. Go to **Purchases > Purchases List**.
+2. Open the **Actions** menu for any purchase.
+3. Click **Update Status**.
+4. Confirm the **Update Status** popup is clear and easy to use.
+5. Change the purchase status if needed.
+6. Click **Update** and confirm the popup closes after saving.
+
+### Why This Helps
+
+- Users can update purchase status without confusion.
+- The popup is easier to read and use.
+- Purchase list work is smoother for staff.
+
+## August 28, 2026 - Sale And Quotation Status Control Per User
+
+### What Users Can Do
+
+- Admin users can now control **Readonly Sale Status** from **User Settings > Sale**.
+- This setting is no longer shown in **Business Settings > Sale**.
+- Each user can have their own sale status permission.
+- On **Add Quotation** and **Edit Quotation**, users can now choose only **Quotation** or **Proforma invoice**.
+- **Quotation** is selected by default when adding a quotation.
+- Admin users can turn on **Readonly Quotation Status** from **User Settings > Sale** to stop a user from changing the quotation status.
+
+### How To Check
+
+1. Go to **Users**.
+2. Open a user's **Settings**.
+3. Go to the **Sale** tab.
+4. Check **Readonly Sale Status** and **Readonly Quotation Status**.
+5. Open **Business Settings > Sale** and confirm **Readonly Sale Status** is no longer shown there.
+6. Go to **Sales > Quotations List**.
+7. Click **Add Quotation**.
+8. Check that the **Status** field shows only **Quotation** and **Proforma invoice**.
+9. Edit a quotation and check that the same two status options are shown.
+
+### Why This Helps
+
+- Admin users can give different sale and quotation controls to different users.
+- Users see fewer status choices when working with quotations.
+- Quotation entry is simpler and less confusing.
+- Important sale or quotation statuses can be protected from accidental changes.
+
+## August 28, 2026 - Customer Note Shown In Sales Lists And Reports
+
+### What Users Can Do
+
+- Users can now see **Customer note** after **Customer name** in the sales list.
+- Users can now see **Customer note** after **Customer name** in the Sale Invoices Report summary.
+- Users can now see **Customer note** after **Customer name** in the Sales Returns Report.
+- Users can now see **Customer note** after the customer column in the Sale Payment Report.
+- Printed and exported report copies also include the customer note where the report shows it.
+
+### How To Check
+
+1. Go to **Sell > List Sales**.
+2. Check that **Customer note** is shown after **Customer name**.
+3. Go to **Reports > Sale Invoices Report** and open the **Summary** tab.
+4. Check that **Customer note** is shown after **Customer name**.
+5. Go to **Reports > Sales Returns Report**.
+6. Check that **Customer note** is shown after **Customer name**.
+7. Go to **Reports > Sale Payment Report**.
+8. Check the customer rows and sale payment detail rows for the **Customer note** column.
+9. Print or export the report if needed and confirm the customer note is included.
+
+### Why This Helps
+
+- Users can review customer instructions or reminders directly from sales and payment reports.
+- Users do not need to open each sale one by one to check the customer note.
+- Sales, return, and payment checking is clearer and faster.
+
+## August 28, 2026 - Invoice Scheme Shown More Clearly
+
+### What Users Can Do
+
+- When users edit a quotation, the **Invoice scheme** field now shows the same scheme that was used when the quotation was created.
+- The invoice scheme no longer changes back to another scheme when opening the edit page.
+- The sale details popup now shows **Invoice Scheme** along with **Layout name**.
+- Users can now check both the invoice layout and invoice scheme from the sale details popup.
+- When users change the business location on sale or quotation pages, the invoice scheme and invoice layout now change to match that location.
+- Sale pages use the selected location's sale invoice settings.
+- Quotation pages use the selected location's quotation invoice settings.
+
+### How To Check
+
+1. Open **Sales > Quotations List**.
+2. Edit a quotation and check the **Invoice scheme** field.
+3. Confirm it shows the scheme saved with that quotation.
+4. Open the quotation or sale details popup.
+5. Confirm **Invoice Scheme** is shown near **Layout name**.
+6. Open an add sale or add quotation page.
+7. Change the business location and confirm the invoice scheme and layout change to match the selected location.
+
+### Why This Helps
+
+- Users can confirm which invoice scheme was used without opening settings.
+- Quotation editing is clearer because the saved invoice scheme is shown correctly.
+- Sale details are easier to review before printing or checking records.
+- Users can switch locations with less manual checking.
+
+## August 27, 2026 - Sales And Quotation Settings Follow Business Location
+
+### What Users Can Do
+
+- The **Show invoice scheme** setting now works the same on add and edit sale pages.
+- If **Show invoice scheme** is turned off, the invoice scheme field stays hidden on both pages.
+- The quotation page now selects the default customer from the sales settings.
+- Sales and quotations now use the invoice scheme and invoice layout selected in the business location settings.
+- Sales use the sale invoice settings from the selected business location.
+- Quotations use the quotation invoice settings from the selected business location.
+- If a customer has their own invoice layout selected, that customer layout is used.
+- If a customer does not have their own invoice layout selected, the business location layout is used.
+
+### How To Check
+
+1. Go to **Business Settings > Sales**.
+2. Turn **Show invoice scheme** off and open add or edit sale pages.
+3. Confirm the invoice scheme field is hidden.
+4. Set a **Default Customer** in the sales settings.
+5. Open **Add Quotation** and confirm the customer is selected automatically.
+6. Go to **Business Locations** and check the sale and quotation invoice settings.
+7. Open a sale or quotation for that location and confirm the matching invoice scheme and layout are selected.
+8. Select another customer and confirm the layout only changes when that customer has its own invoice layout selected.
+
+### Why This Helps
+
+- Users get the same settings behavior on sale and quotation pages.
+- Users do not need to manually select the correct customer, invoice scheme, or invoice layout every time.
+- Business location settings are followed more clearly.
+- Customer-specific invoice layouts still work when needed.
+
+## August 27, 2026 - Current Stock Quantity In Supplier List
+
+### What Users Can Do
+
+- Users can now see a **Current stock Quantity** column in the supplier list.
+- The column appears after **Number of Transactions**.
+- It shows the supplier's current stock quantity from the supplier Stock Quantity Report.
+- The supplier list quantity now matches the **Current Stock Quantity** total shown in the report.
+- Users can also see the current stock quantity total at the bottom of the supplier list.
+
+### How To Check
+
+1. Go to **Contacts > Suppliers**.
+2. Find the **Number of Transactions** column.
+3. Check the **Current stock Quantity** column beside it.
+4. Open a supplier and go to the **Stock Quantity Report** tab.
+5. Confirm the supplier list quantity matches the **Current Stock Quantity** total shown in the report.
+
+### Why This Helps
+
+- Users can quickly see the stock quantity linked with each supplier.
+- Users do not need to open every supplier one by one to check the quantity.
+- The supplier list is easier to review and compare.
+
+## August 27, 2026 - Hide Zero Balance Shows Customers With Due Amount
+
+### What Users Can Do
+
+- The **Hide Zero Balance** filter now keeps customers in the list when they still have a due amount.
+- If a customer has **Total Sale Due**, the customer will still show after ticking **Hide Zero Balance**.
+- Customers with no balance and no due amount will stay hidden.
+
+### How To Check
+
+1. Go to **Contacts > Customers**.
+2. Search for a customer that has a value in **Total Sale Due**.
+3. Tick **Hide Zero Balance**.
+4. Confirm the customer still appears in the list.
+
+### Why This Helps
+
+- Users can find customers who still owe money more easily.
+- The filter no longer hides customers just because other amounts affect the final balance.
+- Customer follow-up is clearer and less confusing.
+
+## August 27, 2026 - Current Stock Value In Supplier List
+
+### What Users Can Do
+
+- Users can now see a **Current Stock Value** column in the supplier list.
+- The column appears after **Number of Transactions**.
+- It shows the supplier's current stock value from the supplier Stock Quantity Report.
+- Users can also see the total current stock value at the bottom of the supplier list.
+
+### How To Check
+
+1. Go to **Contacts > Suppliers**.
+2. Find the **Number of Transactions** column.
+3. Check the **Current Stock Value** column beside it.
+4. Open a supplier and go to the **Stock Quantity Report** tab.
+5. Confirm the supplier list value matches the current stock value total shown in the report.
+
+### Why This Helps
+
+- Users can quickly see the stock value linked with each supplier.
+- Users do not need to open every supplier one by one to check this value.
+- The supplier list is easier to review and compare.
+
+## August 27, 2026 - Last Transaction In Business List
+
+### What Users Can Do
+
+- Superadmin users can now see a **Last Transaction** column in the business list.
+- The column appears after **Registered on**.
+- It shows the latest transaction date and time for each business.
+- If a business has no transactions yet, the column stays empty.
+- The exported business list also includes **Last Transaction**.
+
+### How To Check
+
+1. Go to **Superadmin > Business**.
+2. Find the **Registered on** column.
+3. Check the **Last Transaction** column beside it.
+4. Confirm the latest date and time is shown for businesses with transactions.
+5. Export the business list if needed and check the same column in the file.
+
+### Why This Helps
+
+- Superadmin users can quickly see which businesses are using the system.
+- It is easier to find businesses that have not made recent transactions.
+- Users do not need to open each business one by one to check recent activity.
+- Exported reports are easier to review.
+
+## August 27, 2026 - Delete Sales From Offline Workstation
+
+### What Users Can Do
+
+- Staff can delete a wrong sale from the offline workstation.
+- The deleted sale will no longer appear in the normal sales list.
+- After running sales sync, the same deleted sale will also stop showing in the live system.
+- Users do not need to delete the same sale again from the live system.
+
+### How To Check
+
+1. Open the offline workstation.
+2. Go to **Sell > List POS** or the sales list.
+3. Delete a sale that was already sent to the live system.
+4. Go to **Offline Sync > Sync Sales**.
+5. Open the live system.
+6. Check the sales list and confirm the deleted sale is not showing there.
+
+### Why This Helps
+
+- Staff can fix wrong offline sales more easily.
+- Offline and live sales lists stay matched.
+- Users save time because the sale only needs to be deleted once.
+
+## August 25, 2026 - Correct Business Information
+
+### What Users Can Do
+
+- Each business now sees its own tax list, warranty list, dashboard totals, sales chart, cash register status, and stock progress.
+- Staff will not see working information that belongs to another business.
+- Branch and user information stays matched with the correct business.
+
+### How To Check
+
+1. Open the business from its own domain or subdomain.
+2. Go to **Settings > Tax Rates** and check the tax list.
+3. Open the **POS** screen and check the tax selection.
+4. Open and close a cash register.
+5. Check the dashboard totals and sales chart.
+6. Run stock sync or stock reindex if needed.
+7. Confirm the business only shows its own information.
+
+### Why This Helps
+
+- Business owners and staff see the correct information.
+- Reports, POS, cash register, and stock progress are easier to trust.
+- This reduces confusion when many businesses use the same system.
+
+## August 24, 2026 - Correct Tax List On POS
+
+### What Users Can Do
+
+- The POS product tax dropdown now shows the tax rates saved for that business.
+- Tax names added in **Settings > Tax Rates** will appear on the POS screen.
+- Staff will not see tax names from another business.
+
+### How To Check
 
 1. Go to **Settings > Tax Rates**.
 2. Check the tax names saved for the business.
 3. Open the **POS** screen.
 4. Add a product to the bill.
 5. Open the tax dropdown in the product row.
-6. Confirm that the same tax names are shown.
+6. Confirm the same tax names are shown.
 
 ### Example
 
-For Alaska Bar, the POS product tax dropdown should show:
+For Alaska Bar, the POS tax dropdown should show:
 
 - GST ON CARD
 - GST ON CASH
 
-### Benefits for Customers
+### Why This Helps
 
-- Staff can select the correct tax while making a sale.
-- Each business sees only its own tax rates.
-- Billing becomes clearer and easier to manage.
-- This reduces mistakes when multiple businesses use the same system.
+- Staff can choose the correct tax while making a sale.
+- Billing becomes clearer.
+- Tax mistakes are reduced.
 
-## August 24, 2026 - AiAssistance OpenAI Setup
+## August 24, 2026 - AiAssistance Setup For Each Business
 
-### What Changed
+### What Users Can Do
 
-- AiAssistance is now a business feature instead of a package-only option controlled by the application manager.
-- Each business can connect and use its own OpenAI account.
-- Business owners can open **Settings > AiAssistance (OpenAI)** to set up their OpenAI account.
-- The OpenAI key is saved for that business and is used for AI tools inside the application.
-- The AI Messenger can guide users inside the software and answer common questions about features, workflows, and reports.
-- The OpenAI settings page now includes a simple **How to Connect with OpenAI** guide at the bottom.
+- Each business can connect its own OpenAI account for AiAssistance.
+- Business owners can set this up from **Settings > AiAssistance (OpenAI)**.
+- After setup, staff can use AI tools and the AI Messenger inside the software.
+- The AI Messenger can help users understand features, workflows, and reports.
+- The setup page includes a simple connection guide.
 
-### How Business Owners Use It
+### How To Set Up
 
 1. Go to **Settings**.
 2. Open **AiAssistance (OpenAI)**.
 3. Turn on OpenAI for the business.
-4. Paste the OpenAI API key.
-5. Save and test the connection.
-6. After setup, users can use AI tools and the AI Messenger inside the application.
+4. Paste the connection key from the business OpenAI account.
+5. Save the settings.
+6. Test the connection.
+7. Start using AI tools inside the application.
 
 ### Important Note
 
-This feature uses the OpenAI API account of the business. It does not use a ChatGPT website login. Any OpenAI usage cost belongs to the business account that provides the API key.
+This uses the business owner's own OpenAI account. It does not use a normal ChatGPT website login. Any OpenAI usage cost belongs to the business account that is connected.
 
-### Benefits for Customers
+### Why This Helps
 
-- Customers can use their own OpenAI account.
-- They control their own AI cost and usage.
-- Staff can ask the AI Messenger for help while using the software.
-- New users can learn workflows faster.
-- Business owners can add custom instructions for how the AI should guide their team.
-- AI tools can help with product descriptions, reports, business insights, messages, and document reading.
-
-### Benefits for the Application Manager
-
-- The application manager does not need to pay for every customer’s OpenAI usage.
-- Customers manage their own OpenAI account and billing.
-- Support workload can reduce because the AI Messenger answers common software questions.
-- AiAssistance is easier to offer as a built-in feature.
-- The application becomes more helpful and modern without forcing one shared AI account for everyone.
+- Business owners control their own AI account and usage.
+- Staff can get help inside the software.
+- New users can learn the system faster.
+- AI tools can help with product descriptions, reports, business messages, document reading, and business insights.
