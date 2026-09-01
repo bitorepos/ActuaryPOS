@@ -1,5 +1,115 @@
 # User Guide Updates
 
+## August 29, 2026 - Purchase Discount Labels Are Easier To Manage
+
+### What Users Can Do
+
+- Users can set their own names for **Invoice Discount** and **Invoice Discount 2** from **Business Settings > Purchase**.
+- The chosen discount names are shown on purchase create and purchase edit pages.
+- Purchase order create and edit pages now show both purchase discount options.
+- Purchase return create and edit pages now show both purchase discount options.
+- Purchase returns made from an existing purchase also include both discount amounts.
+- Purchase details, receiving slip details, purchase reports, purchase invoice reports, purchase return reports, and profit/loss details show the same purchase discount names.
+
+### How To Check
+
+1. Go to **Settings > Business Settings > Purchase**.
+2. Turn on **Enable Total Discount on Purchase** and enter the label you want to use.
+3. Turn on **Enable Total Discount 2 on Purchase** and enter the second discount label you want to use.
+4. Save the settings.
+5. Go to **Purchases > Add Purchase** and confirm both discount labels are shown.
+6. Open an existing purchase for editing and confirm both discount labels are shown.
+7. Go to **Purchases > Purchase Order** and create or edit a purchase order.
+8. Confirm both purchase discount labels are shown on the purchase order page.
+9. Create or edit a **Purchase Return** and confirm both purchase discount labels are shown.
+10. View purchase details, purchase reports, and purchase return reports and confirm the same discount names are shown.
+
+### Why This Helps
+
+- Businesses can use purchase discount names that match their own billing style.
+- Staff can understand purchase discounts more easily.
+- Purchase, purchase order, purchase return, and report screens now use the same wording.
+
+## August 29, 2026 - Add Sale Payment Rows Keep The Payment Type Selected
+
+### What Users Can Do
+
+- On **Sell > Add Sale**, users can split one sale payment into more than one payment row.
+- When users click **Add Payment Row**, the new row now keeps the correct payment type selected.
+- The payment type follows the default payment option set for the selected business location.
+- For example, if the customer pays part of the bill first and the remaining amount is added in a second payment row, the second row also shows the correct payment type.
+
+### How To Check
+
+1. Go to **Sell > Add Sale**.
+2. Select the required business location.
+3. Add products to make a sale total.
+4. Enter a partial payment amount in the first payment row.
+5. Confirm the payment type is selected.
+6. Click **Add Payment Row**.
+7. Confirm the new row shows the remaining balance.
+8. Confirm the payment type is also selected in the new row.
+
+### Why This Helps
+
+- Staff do not need to select the payment type again for every new payment row.
+- Split payments are faster and easier to enter.
+- The sale payment area now follows the business location payment settings more clearly.
+
+## August 29, 2026 - POS Opens Without Empty Cart Warning
+
+### What Users Can Do
+
+- Staff can open the **POS** screen without seeing a red warning when no product has been added yet.
+- The POS screen stays ready for normal billing when the cart is empty.
+- Staff will still see a message if they try to complete a sale without adding any product.
+- If products are added quickly, staff should wait until the items appear in the bill before saving or taking payment.
+
+### How To Check
+
+1. Open the **POS** screen.
+2. Confirm no red warning appears just because the bill is empty.
+3. Add a product and confirm it appears in the bill area.
+4. Try to complete a sale without any product and confirm the screen tells the staff to add products first.
+5. Add products normally and complete the sale.
+
+### Why This Helps
+
+- Staff are not distracted by a warning when they first open POS.
+- The empty POS screen feels cleaner and easier to start using.
+- Real mistakes are still shown clearly before a sale is completed.
+- Billing is smoother during busy counter sales.
+
+## August 29, 2026 - Contact Ledger Print And PDF Are Easier To Read
+
+### What Users Can Do
+
+- Users can print customer or supplier ledgers with a cleaner layout.
+- The **Invoices Due Statement** heading is now centered properly.
+- The **To** customer or supplier details are shown on the left side.
+- Extra empty space around the **To** details has been reduced.
+- Ledger table borders are clearer on printed copies.
+- The same cleaner layout is used when users export the ledger to **PDF**.
+- These improvements apply to all ledger formats.
+
+### How To Check
+
+1. Go to a customer or supplier ledger.
+2. Choose any ledger format.
+3. Click the print option.
+4. Confirm the ledger heading is centered.
+5. Confirm the **To** details are shown on the left side.
+6. Confirm there is less empty space before the ledger table.
+7. Confirm the ledger table borders are clear.
+8. Export the ledger to **PDF** and check the same layout there.
+
+### Why This Helps
+
+- Printed ledgers look neater and easier to read.
+- Staff can quickly find the customer or supplier details.
+- PDF copies match the printed layout better.
+- Ledger records are clearer for sharing, filing, and customer follow-up.
+
 ## August 29, 2026 - Sales Can Be Deleted More Reliably
 
 ### What Users Can Do
@@ -113,6 +223,7 @@
 
 - Users can print the customer, supplier, or barterer list using the new **Print A4** button on the contact list page.
 - The print preview follows the selected contact type, filters, search text, and sorting.
+- If users hide columns with **Column visibility**, **Print A4** now prints only the columns currently shown on the contact list.
 - Users can export the same contact list to **PDF** or **Excel** from the print preview.
 - Contact list print pages now use page space better, so fewer large blank areas appear.
 - PDF exports now use a larger, easier-to-read text size.
@@ -123,17 +234,19 @@
 1. Go to **Contacts > Customers**, **Suppliers**, or **Barterers**.
 2. Apply any filters you need, such as location, city, state, country, status, payment status, or balance filters.
 3. Search or sort the list if needed.
-4. Click **Print A4**.
-5. Confirm the print preview opens with the same filtered contact list.
-6. Check that the pages are filled properly and do not move rows to the next page too early.
-7. Click **PDF** in the print preview.
-8. Confirm the PDF text is easier to read and the pages do not show extra blank pages between contact rows.
-9. Click **Excel** if a spreadsheet copy is needed.
+4. Use **Column visibility** to hide any columns that are not needed.
+5. Click **Print A4**.
+6. Confirm the print preview opens with the same filtered contact list and only the visible columns.
+7. Check that the pages are filled properly and do not move rows to the next page too early.
+8. Click **PDF** in the print preview.
+9. Confirm the PDF text is easier to read and the pages do not show extra blank pages between contact rows.
+10. Click **Excel** if a spreadsheet copy is needed.
 
 ### Why This Helps
 
 - Users can keep printed contact lists for daily checking, office records, or customer/supplier review.
 - Printed and downloaded copies match the contact list users are viewing.
+- Users can hide private or unnecessary columns before printing.
 - PDF copies are clearer to read.
 - Less paper is wasted because contact rows fit better on each page.
 
