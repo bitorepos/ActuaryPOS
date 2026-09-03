@@ -343,6 +343,10 @@
     background: linear-gradient(135deg, #ff9966, #ff5e62) !important;
     color: #fff !important;
 }
+.kpi-icon-stock-value {
+    background: linear-gradient(135deg, #0f766e, #14b8a6) !important;
+    color: #fff !important;
+}
 
 /* --- Collapsible Dashboard Sections --- */
 .dashboard-section {

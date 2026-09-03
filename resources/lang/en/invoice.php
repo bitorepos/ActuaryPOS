@@ -80,4 +80,5 @@ return [
     'customer_label_font_size' => 'Customer Label Font Size',
     'total_label_font_size' => 'Total Label Font Size',
     'business_name_font_size' => 'Business Name Font Size',
+    'location_name_font_size' => 'Location Name Font Size',
 ];
