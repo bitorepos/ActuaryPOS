@@ -1,0 +1,119 @@
+.product-index-table {
+    --product-row-bg: #fff;
+    --product-row-hover: #f0f7fa;
+    --product-border: #e5e9ed;
+    --product-muted: #78838f;
+    --product-cell-padding: 12px;
+    --product-name-width: 280px;
+}
+.dark-theme .product-index-table {
+    --product-row-bg: #202938;
+    --product-row-hover: #2c3a4e;
+    --product-border: #3b4655;
+    --product-muted: #a6b1c0;
+}
+.product-index-table[data-density="compact"] { --product-cell-padding: 8px; }
+.product-index-table[data-density="comfortable"] { --product-cell-padding: 18px; }
+.product-table-density { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.product-table-density label { margin: 0; font-weight: 500; }
+.product-table-density select { width: auto; }
+.product-index-table table.table { border-collapse: separate !important; border-spacing: 0; border: 0; }
+.product-index-table table.table > thead > tr > th,
+.product-index-table table.table > tbody > tr > td {
+    text-align: start;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 0;
+    border-bottom: 1px solid var(--product-border);
+}
+.product-index-table table.table > tbody > tr > td {
+    background: var(--product-row-bg) !important;
+    padding: var(--product-cell-padding) 12px !important;
+    line-height: 18px;
+    box-shadow: none;
+}
+.product-index-table table.table > tbody > tr:hover > td,
+.product-index-table table.table > tbody > tr:focus-within > td,
+.product-index-table table.table > tbody > tr.selected > td,
+.product-index-table table.table > tbody > tr:has(.row-select:checked) > td {
+    background: var(--product-row-hover) !important;
+}
+.product-index-table table.table .product-cell-number {
+    text-align: end;
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+}
+.product-index-table .product-cell-content {
+    max-width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.product-index-table .product-cell-content br { display: none; }
+.product-index-table .product-cell-content .label { display: inline; margin-inline-start: 4px; }
+.product-index-table .product-cell-content:focus-visible { outline: 2px solid #3c8dbc; outline-offset: -2px; }
+.product-index-table .product-cell-empty { color: var(--product-muted); }
+.product-index-table table.table > tbody > tr > .product-pin-sku,
+.product-index-table table.table > tbody > tr > .product-pin-name,
+.product-index-table .dataTables_scrollHead table.table > thead > tr > .product-pin-sku,
+.product-index-table .dataTables_scrollHead table.table > thead > tr > .product-pin-name {
+    position: sticky;
+    z-index: 2;
+    background: var(--product-row-bg);
+}
+.product-index-table .product-pin-sku { inset-inline-start: 0; }
+.product-index-table .product-pin-sku .product-cell-content { max-width: 130px; }
+.product-index-table .product-pin-name {
+    inset-inline-start: var(--product-sku-width, 0px);
+    box-shadow: 3px 0 4px -3px #78838f !important;
+}
+.product-index-table .product-pin-name .product-cell-content { max-width: var(--product-name-width); }
+.product-index-table table.table > thead > tr > th.product-pin-sku,
+.product-index-table table.table > thead > tr > th.product-pin-name { z-index: 3; }
+/* DataTables keeps a hidden header in the body to measure column widths.
+   Theme header padding and sorting icons must not make that copy visible. */
+.product-index-table .dataTables_scrollBody table.table > thead > tr > th {
+    position: static;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    height: 0 !important;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+    line-height: 0 !important;
+    box-shadow: none !important;
+}
+.product-index-table .dataTables_scrollBody table.table > thead > tr > th::before,
+.product-index-table .dataTables_scrollBody table.table > thead > tr > th::after { display: none !important; }
+.product-index-table .product-thumbnail-small { width: 24px; height: 24px; object-fit: contain; }
+.product-index-table .product-thumbnail-small:focus-visible { outline: 2px solid #3c8dbc; }
+.product-index-image-preview {
+    position: fixed;
+    z-index: 1080;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #dce2e8;
+    border-radius: 8px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+}
+.product-index-image-preview img {
+    display: block;
+    width: 320px;
+    height: 320px;
+    max-width: calc(100vw - 44px);
+    max-height: calc(100vh - 44px);
+    object-fit: contain;
+}
+@media (max-width: 767px) {
+    .product-index-table { --product-name-width: 160px; }
+    .product-index-table table.table > tbody > tr > .product-pin-sku,
+    .product-index-table .dataTables_scrollHead table.table > thead > tr > .product-pin-sku { position: static; }
+    .product-index-table .product-pin-name { inset-inline-start: 0; }
+}
+@media print {
+    .product-index-image-preview { display: none; }
+    .product-index-table table.table > tbody > tr > .product-pin-sku,
+    .product-index-table table.table > tbody > tr > .product-pin-name,
+    .product-index-table .dataTables_scrollHead table.table > thead > tr > .product-pin-sku,
+    .product-index-table .dataTables_scrollHead table.table > thead > tr > .product-pin-name { position: static; }
+    .product-index-table .product-cell-content { max-width: none; overflow: visible; white-space: normal; }
+}

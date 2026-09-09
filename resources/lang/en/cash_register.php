@@ -34,6 +34,7 @@ return [
     'total_cash' => 'Total Cash',
     'current_register' => 'Current Register',
     'close_register' => 'Close Register',
+    'register_closed' => 'Register Closed',
     'total_card_slips' => 'Total Card Slips',
     'total_cheques' => 'Total cheques',
     'closing_note' => 'Closing Note',

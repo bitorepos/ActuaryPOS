@@ -1,6 +1,9 @@
 <?php
 
 return [
+    'cost_method' => 'Cost Method',
+    'last_cost' => 'Last Cost',
+    'average_cost' => 'Average Cost',
 
     /*
     |--------------------------------------------------------------------------
@@ -34,6 +37,7 @@ return [
     'contact' => 'Contact',
     'stock_report' => 'Stock Quantity Report',
     'stock_value_report' => 'Stock Value Report',
+    'stock_value_report_analysis_comparisons' => 'Stock Value Report (Analysis/Comparisons)',
     'stock_reorder_report' => 'Stock Reorder Report',
     'mismatch_report' => 'Mismatch Quantity Report',
     'products' => 'Products',

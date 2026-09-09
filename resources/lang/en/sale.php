@@ -22,6 +22,7 @@ return [
     'invoice_added' => 'Invoice added successfully',
     'item' => 'Items',
     'total' => 'Total',
+    'page_total' => 'Page Total',
     'column_totals' => 'Column Totals',
     'invoice_totals' => 'Invoice Totals',
     'order_tax' => 'Invoice Tax',

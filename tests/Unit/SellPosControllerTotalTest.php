@@ -486,6 +486,221 @@ class SellPosControllerTotalTest extends TestCase
         $this->assertSame('Draft Autosaved Successfully', $method->invoke($controller, $request));
     }
 
+    public function testFbrDIRateDescriptionNormalizesLocalTaxLabelToPercent(): void
+    {
+        $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();
+        $method = new \ReflectionMethod(SellPosController::class, 'localFbrDIRate');
+        $method->setAccessible(true);
+
+        $line = [
+            'tax_desc' => 'Sales Tax 18%',
+            'tax_percent' => 18,
+        ];
+
+        $this->assertSame('18%', $method->invoke($controller, $line));
+    }
+
+    public function testFbrDIRateDescriptionFallsBackToTaxPercentWhenTaxLabelHasNoPercent(): void
+    {
+        $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();
+        $method = new \ReflectionMethod(SellPosController::class, 'localFbrDIRate');
+        $method->setAccessible(true);
+
+        $line = [
+            'tax_desc' => 'GST',
+            'tax_percent' => 18,
+        ];
+
+        $this->assertSame('18%', $method->invoke($controller, $line));
+    }
+
+    public function testFbrDIRateMatcherUsesFbrDescriptionForMatchingPercent(): void
+    {
+        $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();
+        $method = new \ReflectionMethod(SellPosController::class, 'matchFbrDIRate');
+        $method->setAccessible(true);
+
+        $line = [
+            'tax_percent' => 18,
+        ];
+
+        $allowed_rates = [
+            ['ratE_ID' => 734, 'ratE_DESC' => '18% along with rupees 60 per kilogram', 'ratE_VALUE' => 18],
+            ['ratE_ID' => 280, 'ratE_DESC' => '0%', 'ratE_VALUE' => 0],
+        ];
+
+        $this->assertSame('18% along with rupees 60 per kilogram', $method->invoke($controller, $line, '18%', $allowed_rates));
+    }
+
+    public function testFbrDIRateFallbackUsesFirstFbrAllowedDescription(): void
+    {
+        $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();
+        $method = new \ReflectionMethod(SellPosController::class, 'firstFbrDIRateDescription');
+        $method->setAccessible(true);
+
+        $allowed_rates = [
+            ['ratE_ID' => 280, 'ratE_DESC' => '0%', 'ratE_VALUE' => 0],
+            ['ratE_ID' => 734, 'ratE_DESC' => '18%', 'ratE_VALUE' => 18],
+        ];
+
+        $this->assertSame('0%', $method->invoke($controller, $allowed_rates));
+    }
+
+    public function testFbrDIRateMatcherRejectsMismatchedSaleTypeRate(): void
+    {
+        $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();
+        $method = new \ReflectionMethod(SellPosController::class, 'matchFbrDIRate');
+        $method->setAccessible(true);
+
+        $line = [
+            'tax_percent' => 18,
+        ];
+
+        $allowed_rates = [
+            ['ratE_ID' => 742, 'ratE_DESC' => '25%', 'ratE_VALUE' => 25],
+        ];
+
+        $this->assertNull($method->invoke($controller, $line, '18%', $allowed_rates));
+    }
+
+    public function testFbrDISroIsRequiredForNonStandardRate(): void
+    {
+        $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();
+        $method = new \ReflectionMethod(SellPosController::class, 'shouldResolveFbrDISro');
+        $method->setAccessible(true);
+
+        $this->assertTrue($method->invoke($controller, [
+            'rate' => '25%',
+            'sroScheduleNo' => '',
+            'sroItemSerialNo' => '',
+        ]));
+
+        $this->assertFalse($method->invoke($controller, [
+            'rate' => '18%',
+            'sroScheduleNo' => '',
+            'sroItemSerialNo' => '',
+        ]));
+    }
+
+    public function testFbrDISroScheduleMatcherPrefersSaleTypeTextMatch(): void
+    {
+        $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();
+        $method = new \ReflectionMethod(SellPosController::class, 'matchFbrDISroSchedule');
+        $method->setAccessible(true);
+
+        $schedules = [
+            ['srO_ID' => 1, 'srO_DESC' => 'Other Schedule'],
+            ['srO_ID' => 2, 'srO_DESC' => 'SRO.297(I)/2023'],
+        ];
+
+        $this->assertSame($schedules[1], $method->invoke($controller, 'Goods as per SRO.297(|)/2023', $schedules));
+    }
+
+    public function testFbrDISroItemSerialUsesDescriptionBeforeId(): void
+    {
+        $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();
+        $method = new \ReflectionMethod(SellPosController::class, 'firstFbrDISroItemSerial');
+        $method->setAccessible(true);
+
+        $sro_items = [
+            ['srO_ITEM_ID' => 17853, 'srO_ITEM_DESC' => '50'],
+        ];
+
+        $this->assertSame('50', $method->invoke($controller, $sro_items));
+    }
+
+    public function testFbrDISroItemSerialAcceptsAlternateFbrSerialKeys(): void
+    {
+        $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();
+        $method = new \ReflectionMethod(SellPosController::class, 'firstFbrDISroItemSerial');
+        $method->setAccessible(true);
+
+        $sro_items = [
+            ['sroItemSerialNo' => '12', 'SRO_ITEM_ID' => 44812],
+        ];
+
+        $this->assertSame('12', $method->invoke($controller, $sro_items));
+    }
+
+    public function testFbrDISroItemMatcherPrefersHsCodeMatchedSerial(): void
+    {
+        $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();
+        $method = new \ReflectionMethod(SellPosController::class, 'matchFbrDISroItemSerial');
+        $method->setAccessible(true);
+
+        $sro_items = [
+            ['sroItemSerialNo' => '5', 'hsCode' => '0101.0000'],
+            ['sroItemSerialNo' => '12', 'hsCode' => '6110.1200'],
+        ];
+
+        $this->assertSame('12', $method->invoke($controller, $sro_items, ['hsCode' => '6110.1200']));
+    }
+
+    public function testFbrDIProvinceCodeUsesDocumentedFallbackForPunjabAndSindh(): void
+    {
+        $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();
+        $method = new \ReflectionMethod(SellPosController::class, 'resolveFbrDIProvinceCode');
+        $method->setAccessible(true);
+
+        $this->assertSame(7, $method->invoke($controller, 'Punjab', ''));
+        $this->assertSame(8, $method->invoke($controller, 'Sindh', ''));
+    }
+
+    public function testFbrDIUomMatcherMapsPiecesToFbrNumbersDescription(): void
+    {
+        $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();
+        $method = new \ReflectionMethod(SellPosController::class, 'matchFbrDIUom');
+        $method->setAccessible(true);
+
+        $allowed_uoms = [
+            ['uoM_ID' => 1, 'description' => 'KG'],
+            ['uoM_ID' => 2, 'description' => 'Numbers, pieces, units'],
+        ];
+
+        $this->assertSame('Numbers, pieces, units', $method->invoke($controller, 'Pcs', $allowed_uoms));
+    }
+
+    public function testFbrDIUomFallbackUsesFirstFbrAllowedDescription(): void
+    {
+        $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();
+        $method = new \ReflectionMethod(SellPosController::class, 'firstFbrDIUomDescription');
+        $method->setAccessible(true);
+
+        $allowed_uoms = [
+            ['uoM_ID' => 9, 'description' => 'KG'],
+            ['uoM_ID' => 2, 'description' => 'Numbers, pieces, units'],
+        ];
+
+        $this->assertSame('KG', $method->invoke($controller, $allowed_uoms));
+    }
+
+    public function testFbrDIItemErrorContextIncludesProductHsAndUom(): void
+    {
+        $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();
+        $method = new \ReflectionMethod(SellPosController::class, 'fbrDIItemErrorContext');
+        $method->setAccessible(true);
+
+        $context = $method->invoke($controller, [[
+            'name' => 'Sample Item',
+            'hs_code' => '4805.1900',
+            'rate' => '18%',
+            'sale_type' => 'Goods at standard rate (default)',
+            'sro_schedule_no' => '',
+            'sro_item_serial_no' => '',
+            'local_uom' => 'Pcs',
+            'submitted_uom' => 'Numbers, pieces, units',
+        ]], 1);
+
+        $this->assertStringContainsString('Product: Sample Item', $context);
+        $this->assertStringContainsString('HS: 4805.1900', $context);
+        $this->assertStringContainsString('Rate: 18%', $context);
+        $this->assertStringContainsString('Sale Type: Goods at standard rate (default)', $context);
+        $this->assertStringContainsString('SRO: ', $context);
+        $this->assertStringContainsString('SRO Item: ', $context);
+        $this->assertStringContainsString('UoM: Numbers, pieces, units', $context);
+        $this->assertStringContainsString('Local UoM: Pcs', $context);
+    }
+
     public function testOwnPosSellPermissionTakesPrecedenceForRecentTransactions(): void
     {
         $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();

@@ -1,5 +1,467 @@
 # User Guide Updates
 
+## September 9, 2026 - Complete The Sharifas Online Stock Correction
+
+- Fixed a case where the online update finished but earlier pack-sale quantities stayed incorrect.
+- Run the latest application update, then refresh **Stock History** to check the corrected quantities.
+- For example, selling **2 packs of 10** should show **-20 pieces**, not -200.
+- Sales that are already correct stay unchanged. You do not need to enter the old sales again.
+
+## September 8, 2026 - Closing Product Notes
+
+- In **Add Product Note** and **Edit Product Note**, click **×** or **Close** to close the window without saving your changes.
+- To save your note, click **Save** when adding a note or **Update** when editing one.
+- Refresh the page after updating the application, then open the note window again.
+
+## September 8, 2026 - Clearer Purchase Orders, Ledgers And Printed Reports
+
+### Purchase Order Totals
+
+- The **Total** column in the purchase order list now shows amounts for the affected orders that previously showed zero despite having priced items.
+- Open **Purchase Orders** and refresh the list to see the amounts. You do not need to enter the orders again.
+
+### Contact Ledger - Format 2
+
+- The print preview now separates long statements into pages. Use the previous and next buttons, or enter a page number, to move through the statement.
+- The ageing summary and footer appear once at the end.
+- The **Ref. No.** column in downloaded PDFs adjusts its width to the information shown, leaving more room for the other columns.
+- Your chosen table text size is now included when you download the contact ledger using the red **PDF** button.
+
+### Text Size In Accounting Reports
+
+- Table text-size controls now work in all **14 Accounting A4 print views**: receivable ageing, receivable ageing details, payable ageing, payable ageing details, trial balance, balance sheet, profit and loss, chart of accounts, daily transactions, account ledger, cash flow, journal entries, transfers, and cheque books.
+- Use **A+** to make table text larger, **A-** to make it smaller, and **A** to return to the usual size. Headings, entries, and totals adjust together.
+- Click the red **PDF** button after choosing the text size. The downloaded report uses your chosen adjustment too.
+- The **100%**, **+**, and **-** zoom controls change how large the page looks on screen. Use the **A** controls when you want to change the table text size for printing or downloading.
+
+### Ageing Report Layout
+
+- In receivable and payable ageing summaries, the seven summary boxes stay together in one horizontal row in the downloaded PDF, as they do in the preview.
+- In the receivable ageing report, **Customer name** lines up on the left. **Current**, all overdue amounts, and **Total** line up on the right, including their headings and totals.
+- These columns adjust their widths to fit the information in both the preview and the downloaded PDF.
+- Long receivable ageing PDFs now use the available page space before continuing onto the next page. This avoids nearly empty pages in the middle of a report.
+- PDF page numbers show the actual number of pages. A larger text size may need more pages.
+- Clear space is kept around the edges of every page, with room at the bottom for the page number.
+
+### How To Use
+
+1. Refresh the page with **Ctrl+F5** after updating.
+2. Open the contact ledger or Accounting report and choose the filters you need.
+3. Open **Print** or **Print A4** to view the report.
+4. Choose the table text size using **A+**, **A-**, or **A**.
+5. Click the red **PDF** button to download a fresh copy with your chosen text size.
+6. Open the newly downloaded file. PDFs downloaded earlier keep their old appearance.
+
+## September 8, 2026 - Smoother POS Billing
+
+### Finding Products
+
+- Product search is more responsive when you change what you are typing.
+- If you use **Last Customer Sold Price** in product search, it shows the price from the customer's latest completed sale. Cancelled or deleted sales are not included.
+
+### Finishing A Bill
+
+- Receipt preparation has been improved to help reduce waiting when finishing a bill, especially bills with many items.
+- Continue adding products, taking payment and printing the bill as usual. No new settings are needed.
+
+### After Updating
+
+- Reopen the POS screen or press **Ctrl+F5** after the application update.
+- If billing still takes too long, share the invoice number, shop or branch, and whether the delay happens while finding a product, saving the bill or printing.
+
+## September 8, 2026 - Smoother Login And Clearer Sale Updates
+
+### Login When The POS Screen Is Turned Off
+
+- When **POS** is turned off in **Business Settings > Modules**, signing in no longer sends you back to a previously opened POS page with a **POS screen is disabled** message.
+- This also applies to admin users. Users without POS access are no longer sent to the POS entry page after signing in.
+- Synchronizing cash registers no longer opens the POS screen when it is turned off or you do not have permission to use it.
+
+### Updating A Sale On An Offline Workstation
+
+- After changing a bill, click **Update** or **Update and print** as usual.
+- If the customer credit check cannot finish, a message explains the problem and the buttons become available again. The bill has not been submitted at this point.
+- If your sign-in has expired, a message asks you to sign in again.
+- If information needs correcting, follow the message and check the highlighted fields before trying again. Customer credit limits still apply.
+- If a connection problem prevents confirmation that the bill was saved, open the **Sales List** and check the bill before clicking Update again.
+
+### Getting The Update On Another Computer
+
+- Make sure each offline workstation has the latest application update.
+- After updating, reopen the sale page or press **Ctrl+F5** to load the latest page.
+
+## September 8, 2026 - Correct Stock For Singles And Packs
+
+### Sending Sales To The Online Account
+
+- Sales made on the shop computer now keep the correct stock quantities when sent to the online account using **Sales Sync**.
+- This applies to different products and pack sizes, including invoices with both singles and packs.
+- For example, selling **2 packs of 10** reduces stock by **20 pieces**, not 200. Selling **9 singles** reduces stock by **9 pieces**.
+- Free items are counted once, using their selected pack size or single unit.
+
+### Correcting Earlier Sales In Sharifas
+
+- After the online application update, the affected earlier sales are checked and corrected automatically.
+- The correction covers the identified products and invoices, not just one example sale.
+- Extra stock deductions are corrected, and the product's stock history shows the correct quantity.
+- Affected items entered with a minus quantity are also corrected so they do not add too much stock.
+- Sales that already have the correct quantities stay unchanged. Invoice totals and payments are kept as they are.
+- You do not need to delete or enter the old sales again. Running the update again will not apply the same stock correction twice.
+
+### What To Do After Updating
+
+1. Update the online application and the application on the shop computer.
+2. Wait for the update to finish, then refresh the product's **Stock History** page.
+3. Check a sale made in packs. For example, **2 packs of 10** should show **-20** in stock history.
+4. Check the current stock quantity for the correct shop or branch.
+5. Continue using **Sales Sync** as usual for new sales.
+6. If a quantity still looks wrong, share the invoice number, product name, pack size and shop or branch with support.
+
+## September 8, 2026 - Manage Stock And Correct Ledger Balances
+
+### Products With Manage Stock Unticked
+
+- Products with **Manage stock** unticked no longer appear in the **Stock Quantity Report**, including its printed and downloaded copies.
+- Selling these products no longer reduces the **Stock Inventory** account or adds an inventory cost to **Cost of Sales**. The sale amount and customer balance are still recorded as usual.
+- If an invoice includes products with different Manage stock settings, only the products with the box ticked count towards inventory costs.
+
+### After Turning Off Manage Stock
+
+1. Open the product's edit page, untick **Manage stock**, and save.
+2. Run the product's **Reindex Stock Quantities** option. Choose all locations if you want to update every branch.
+3. To update products together, use **Reindex Stock Quantities** above the Stock Quantity Report. Both the full reindex and the option for quantity differences include this correction.
+4. You can also use **Sync Product Quantities** to apply this correction to products with Manage stock unticked.
+5. Wait for the update to finish, then refresh the stock report and accounting ledger.
+
+- These actions remove the product's old sales-related inventory costs and the matching Cost of Sales amounts. They also correct related sales-return and free-item costs.
+- Other products on the same invoice keep their inventory costs. Sale amounts and customer balances remain unchanged.
+- Running the update again does not deduct the same amount twice.
+- The previously reported **72,000** difference in the Stock Inventory ledger has been corrected.
+
+### Balances For Payments Shown Together
+
+- When several payments appear together on one ledger row, the **Balance** now includes every payment in that row. This applies on screen and in printed reports.
+- For example, a **40,000** payment made up of **37,400 + 2,600** reduces a **90,000** balance to **50,000**. A following **50,000** payment brings the balance to **0**.
+- Refresh the ledger to see the corrected balances. There is no need to enter the payments again.
+
+## September 8, 2026 - Clearer Contact Ledgers And Easier Printing
+
+### All Ledger Formats
+
+- On a contact's **Ledger** tab, columns in **Formats 1 to 6** adjust their widths to fit the information shown.
+- This also applies to the second table when the ledger shows another currency.
+
+### Format 1
+
+- **Date**, **Number**, **Ref. No.**, and **Type** headings and values line up on the left.
+- **Payment Status**, **Payment Method**, **Debit**, **Credit**, and **Balance** headings and values line up on the right.
+- The **Descriptions** heading stays on one line. Long details underneath continue onto another line, making them easier to read.
+- Long text in **Number**, such as a number followed by a description, continues onto another line. The **Number** heading stays on one line.
+- Text saved in a sale's **Custom Field 7** now appears in **Descriptions**, below any existing sale notes. It is also included when printing or downloading Format 1.
+
+### Format 2
+
+- The **Ref. No.** heading stays on one line.
+- Long reference details continue onto another line instead of appearing one letter at a time.
+- The table's dividing lines now match the tables in the other contact tabs.
+
+### Format 4
+
+- **Product Details** use one full-width box beneath the entry, including when extra columns are shown.
+- **Description** and **(Purchase) Description** headings stay on one line. Their data continues onto another line when needed.
+- The **Others** heading stays on one line, with enough room for its details to wrap normally.
+- The extra sentence beginning **Showing all invoices and payments between...** has been removed from above the table on the contact tab and printed copies.
+- The print view now separates the ledger into pages. Each entry stays with its product details when they fit together on a page.
+
+### Format 5
+
+- **Date**, **Number**, and **Party Ref. No.** line up on the left. **Debit**, **Credit**, and **Balance** line up on the right.
+- **Descriptions** has more room for long details.
+- Long text in **Party Ref. No.** continues onto another line instead of stretching across the table.
+- The extra date-range sentence above the table has been removed from the contact tab and printed copies.
+- On the contact tab, choose **25**, **50**, **100**, or **All** entries and use the page controls to move through the ledger.
+- The print view now separates the ledger into pages. Totals appear once at the end, with any ageing and cheque-clearance reports following the ledger.
+
+### Format 6
+
+- Date and number details line up on the left. **Debit**, **Credit**, and **Balance** line up on the right.
+- **Descriptions** uses the remaining space, and long details continue onto another line.
+- The extra date-range sentence above the table has been removed from the contact tab and printed copies.
+- On the contact tab, choose **25**, **50**, **100**, or **All** entries and use the page controls to move through the ledger.
+- The print view now separates the ledger into pages. Totals appear once at the end, with any ageing and cheque-clearance reports following the ledger.
+
+### How To Use
+
+1. Open a customer or supplier, then open the **Ledger** tab.
+2. Choose your date range and ledger format.
+3. In **Format 5** or **Format 6**, choose how many entries to show and use the page controls below the table.
+4. To add sale details to **Format 1**, open the sale's create or edit page, enter the text in **Custom Field 7**, and save the sale. Refresh the ledger to see it under **Descriptions**.
+5. Click **Print** to open the print view. For **Formats 4, 5, and 6**, use the previous and next page buttons, or enter a page number.
+6. In these print views, use **A+** or **A-** to change the text size. The pages adjust to the new size.
+7. If you still see the old layout, press **Ctrl+F5** to refresh the page.
+
+## September 8, 2026 - Test Your Email Settings
+
+- Superadmin can use **Send test email** to check whether the email settings work.
+- Choose the email address where you want to receive the test message.
+- You can test the details entered on the screen before saving them. Testing does not save your changes.
+- A message on the screen tells you whether the test email was sent or whether you need to check your settings.
+
+### How To Use
+
+1. Open **Superadmin > Settings > Email/SMTP Settings**.
+2. Enter or update your email settings.
+3. In **Test email recipient**, enter an email address you can check.
+4. Click **Send test email** and wait for the result.
+5. If the test is successful, check the recipient's inbox and spam folder to confirm the email arrived.
+6. If the test fails, check your email settings with your email provider, correct the details, and try again.
+7. Save your settings when you are happy with the result.
+
+If you run several tests quickly and see a message asking you to wait, wait one minute before trying again.
+
+## September 8, 2026 - View And Print Receipts From Contact Ledger
+
+- Click a **Cash Receipt Voucher (CRV)** or **Bank Receipt Voucher (BRV)** number in the contact ledger to view the receipt.
+- Use **Print** in the receipt window to print a copy.
+- Available in the main contact ledger and ledger formats **5** and **6**.
+
+### How To Use
+
+1. Open the contact's ledger.
+2. Find the receipt you need and click its **CRV** or **BRV** number.
+3. Review the receipt, then click **Print** to print it.
+4. Click **Close** to return to the ledger.
+
+## September 7, 2026 - Choose How Stock Costs Are Shown
+
+### Stock Quantity Report And Stock Value Report
+
+- Both reports now have a **Cost Method** choice in the filters. Select one option at a time:
+  - **FIFO:** selected by default. Keeps the usual stock costing method, where older stock is used first.
+  - **Last Cost:** uses the latest received cost for the product at each location.
+  - **Average Cost:** uses the average received cost, giving more weight to purchases with larger quantities.
+- Changing the choice updates the report's cost values and totals. In Stock Quantity Report, potential profit updates too.
+- The choice also applies when you switch report tabs, print, or download the report.
+- In Stock Value Report, the choice applies to opening stock, stock movements, and current stock values. Opening stock uses receipts before the opening-date cutoff.
+- **Show Sell Price** in Stock Value Report continues to show selling values.
+- These choices help you compare stock values. They do not change your stock quantities or saved product prices.
+
+### How To Use
+
+1. Open **Stock Quantity Report** or **Stock Value Report** from Reports.
+2. Choose your location and other filters as usual.
+3. Under **Cost Method**, select **FIFO**, **Last Cost**, or **Average Cost**. In Stock Value Report, select **Show Cost Price** to compare costs.
+4. The report updates automatically. Check the values and totals, or switch tabs for more detail.
+5. Print or download the report to keep a copy using your selected cost method.
+
+## September 7, 2026 - Clearer Report Totals And Easier Report Controls
+
+### POS Messages
+
+- Messages at the top-right of the POS screen now close when you click **X**. They also disappear automatically after a short time.
+
+### Page Totals And Quantities
+
+- The **Total:** label at the bottom of paged lists now reads **Page Total:**, making it easier to identify the total for the page you are viewing.
+- Quantity totals are shown separately for each unit. For example, **125.5 KG**, **1,356 Pc(s)**, and **500.25 Ltr** appear on separate lines instead of being added together.
+- Unit names follow your product settings. The number of decimal places follows your quantity settings.
+- Negative quantities and zero quantities are included in the totals.
+- This applies to the following reports:
+  - **Stock Value Report:** Summary, Details, Categorized, and Location Details, including group totals and grand totals.
+  - **Stock Quantity Report:** Summary, Details, and Categorized, including group totals and grand totals.
+  - **Stock Reorder Report:** the current-stock total at the bottom of the page.
+  - **Stock Transfer Report:** quantity totals in Totals, Products Summary, and the detailed ledger.
+  - **Combo Items Report:** a quantity subtotal for each combo and a quantity grand total for all displayed combos.
+  - **Product Status Report:** the quantity total for the current page.
+  - **Product Serial Report:** quantity and free-of-charge quantity totals for the current page.
+- Page totals follow the page being viewed. Group totals cover their group, and grand totals cover the report results selected by your filters.
+
+### Report Names And Tabs
+
+- The Stock Value Report heading now reads **Stock Value Report (Analysis/Comparisons)**.
+- In **Stock Quantity Report**, the **Locations** tab is now called **Summary**. The order is **Summary > Details > Categorized**.
+- In **Stock Value Report**, the **Locations** tab is now called **Summary**. The order is **Summary > Details > Categorized > Location Details**.
+- Both reports open on **Summary**, which shows stock grouped by location.
+
+### Report Display Improvements
+
+- In **Stock Quantity Report > Details**, the purchase value, selling value, and potential profit columns after Quantity are shown according to your access and column settings.
+- In **Product Serial Report**, the Date column shows the date and time on separate lines, without unwanted text between them.
+
+### Stock Value Report Summary Controls
+
+- Above the Summary table, use **Export to CSV**, **Export to Excel**, or **Export to PDF** to download a copy. Available choices follow your access settings.
+- Use **Print** to print the table or **Print A4** to open the A4 report.
+- Use **Column visibility** to choose which columns to display.
+- Use **Show entries** to choose how many rows appear on a page, and **Search** to find a location in the table.
+- Downloaded table copies keep quantity totals for different units on separate lines.
+
+### How To Use
+
+1. Open the report you need and choose your filters.
+2. Read each quantity total together with its unit, such as KG, Pc(s), or Ltr.
+3. In Stock Quantity Report or Stock Value Report, start with **Summary**, then select another tab for more detail.
+4. In **Stock Value Report > Summary**, use the buttons above the table to search, choose columns, download, or print.
+5. If you still see the previous appearance, press **Ctrl+F5** to refresh the page.
+
+## September 7, 2026 - Hidden Feature Choices Stay Saved
+
+### What Superadmin Can Do
+
+- Each business keeps its saved **Hide/Disable Features** choices after an application update.
+- Saving **Business Settings** also keeps these choices.
+- Features you selected to hide stay hidden. If you chose to hide no features, that choice stays saved too.
+
+### How To Use
+
+1. Open **Superadmin > Businesses** and view the business you want to manage.
+2. Find **Hide/Disable Features**.
+3. Tick the features you want to hide, then save your choices.
+4. After an application update, your saved choices remain in place. You do not need to select them again.
+5. To show a feature again, untick it in this section and save.
+
+If an earlier update already cleared your choices, select and save them again once.
+
+## September 7, 2026 - Product List Easier To Read
+
+### What Users Can See
+
+- The product list has cleaner rows with light dividing lines. Pointing at a row highlights it, making it easier to follow.
+- Prices and quantities line up on the right, making them easier to compare.
+- **Row density** lets you choose **Compact**, **Default**, or **Comfortable** spacing. Your choice is remembered in the same browser.
+- On larger screens, **SKU** and **Product** stay visible when you scroll sideways. On smaller screens, the product name stays visible.
+- Long names and other long details are shortened to keep rows tidy. Hold the mouse pointer over shortened text to see the full text.
+- Missing details show a dash (**—**). A quantity of **0** still shows as **0**.
+- The **Actions** button is always visible for each product, so you can open its menu without first pointing at the row.
+- Column headings line up with the product details while scrolling, and the extra blank strip below the headings has been removed.
+- Hold the mouse pointer over a product's small picture to see a larger preview of its attached image. Move the pointer away to close the preview.
+
+### How To Use
+
+1. Open **Products > Products List**.
+2. Choose your preferred spacing from **Row density** above the list.
+3. Scroll sideways to view more details while keeping the product name in view.
+4. Hold the mouse pointer over a shortened name or detail to read it in full.
+5. Click **Actions** beside a product to open its available options.
+6. Hold the mouse pointer over a product picture to see it more clearly. Products without an attached image do not show a larger preview.
+7. If the page still shows the old appearance, press **Ctrl+F5** to refresh it.
+
+## September 7, 2026 - Sales Lists And Report Columns Updated
+
+### What Users Can See
+
+- In **Sales & Returns Report**, **TYPE** now appears before **INVOICE NO.**
+- **REF. NO.** now appears after **INVOICE NO.** in **Sales & Returns Report** and the **Summary** tab of **Sale Invoices Report**. It shows the reference in the same way as the sales list.
+- **CUSTOMER NOTE** appears only when **Enable Customer Note** is turned on in Business Settings. This applies to **All Sales**, **Sales & Returns Report**, and the **Summary** tab of **Sale Invoices Report**.
+- Printed and downloaded copies of these reports follow the new column order and Customer Note setting.
+
+### How To Use
+
+1. Open **Sales & Returns Report** to see **TYPE**, **INVOICE NO.**, and **REF. NO.** next to each other.
+2. Open **Sale Invoices Report > Summary** to see **REF. NO.** after **INVOICE NO.**
+3. In **Business Settings**, turn **Enable Customer Note** on to show customer notes, or off to hide them, then save.
+4. Refresh the sales list or report to see the change.
+5. Print or download either report when you need a copy with the same columns.
+
+## September 5, 2026 - Update Warning For All Users Added
+
+### What Superadmin Can Do
+
+- Superadmin can show an update warning to all users before taking the system down.
+- Users get a message with an **OK** button before the update starts.
+- After pressing **OK**, users can still see the remaining countdown time.
+- New users who log in during the countdown also see the warning message first.
+- The warning tells users to save their current work before the update starts.
+- The maintenance page now shows that downtime is approximately **20 minutes**.
+- When the update is complete, the maintenance page refreshes automatically and users can continue using the system.
+
+### How To Check
+
+1. Start the update warning from the server.
+2. Log in as any user and confirm the warning message appears.
+3. Press **OK** and confirm the countdown remains visible.
+4. Log in as another user during the countdown and confirm the warning message appears for that user too.
+5. Wait until the countdown finishes and confirm the update page appears.
+6. Complete the update and bring the system back online.
+7. Confirm the update page refreshes automatically and opens the system again.
+
+### Why This Helps
+
+- Users get time to save their work before an update.
+- Businesses are not surprised by sudden downtime.
+- New users are also informed if they log in during the countdown.
+- Customers see a cleaner update page with expected downtime information.
+
+## September 4, 2026 - FBR DI Invoice Cancellation Marking Added
+
+### What Users Can Do
+
+- Users can mark an FBR Digital Invoicing sale as **Invoice Canceled** after the invoice has already been canceled in IRIS.
+- This option appears only for sales that already have an FBR DI invoice number.
+- Canceled FBR DI invoices are hidden from the normal sales list.
+- Users can tick **Show canceled FBR DI** when they need to review canceled invoices again.
+- Users can click the **Invoice Canceled** label and confirm if they need to remove the canceled status.
+
+### How To Check
+
+1. Go to **Sales > All Sales**.
+2. Open the action menu for a sale that has an FBR DI invoice number.
+3. Click **Invoice Canceled** after confirming the invoice is canceled in IRIS.
+4. Confirm the invoice disappears from the normal sales list.
+5. Tick **Show canceled FBR DI** in the filters to see canceled invoices again.
+6. Click **Invoice Canceled** and press **OK** to remove the canceled status if it was marked by mistake.
+
+### Why This Helps
+
+- Sales lists stay clear after an FBR DI invoice is canceled in IRIS.
+- Users can still review canceled FBR DI invoices when needed.
+- Users can correct a mistaken canceled marking without changing the invoice in FBR.
+- The business keeps a simple record of which invoices were marked as canceled.
+
+## September 4, 2026 - Invoice Layout Customer And HSN Options Improved
+
+### What Users Can Do
+
+- Users can set the **Client ID** label and turn **Show client ID** on or off from the same place.
+- Users can set the **Category or HSN code** label and turn **Show category code or HSN code** on or off from the same place.
+- If the HSN/category code option is turned on with no label, the code can show with the product name.
+- If users enter a label such as **HSN**, the code can show in its own invoice column with that label as the heading.
+
+### How To Check
+
+1. Go to **Settings > Invoice Settings > Invoice Layouts**.
+2. Add a new layout or edit an existing layout.
+3. Check the **Client ID Label** field and its checkbox.
+4. Check the **Category or HSN code label** field and its checkbox.
+5. Save the layout and print or preview an invoice.
+6. Confirm the HSN/category code appears either with the product name or in a separate column, based on the label setting.
+
+### Why This Helps
+
+- Invoice layout settings are easier to understand.
+- Users can control whether the HSN/category code appears with the product name or as a separate column.
+- Printed invoices can be arranged more clearly for customers and business records.
+
+## September 4, 2026 - Delivery Notes Customer Name Improved
+
+### What Users Can See
+
+- Users can now see the customer contact more clearly in the Delivery Notes list.
+- The Customer Name column shows the business name and the customer's first name together.
+- If the customer name was showing as a dot or blank, it now shows useful contact information when available.
+
+### How To Check
+
+1. Go to **Sales > Delivery Notes**.
+2. Check the **Customer Name** column.
+3. Confirm the customer appears like **Business Name - First Name**.
+4. Use the search box to find a delivery note by business name or customer name.
+
+### Why This Helps
+
+- Delivery notes are easier to identify.
+- Users can quickly confirm which customer the delivery note belongs to.
+
 ## September 3, 2026 - Classic v7 Invoice Header Layout Updated
 
 ### What Users Can Do

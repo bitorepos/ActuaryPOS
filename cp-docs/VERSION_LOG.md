@@ -1,3 +1,60 @@
+## Version 8.96.6
+
+**Release Date:** 2026-09-04
+
+---
+
+### Module: FBR Digital Invoicing - Invoice Cancellation Marking
+
+#### What Users Can Do
+- **Users can mark an FBR Digital Invoicing sale as Invoice Canceled after canceling it in IRIS.**
+- **The Invoice Canceled option appears only for sales that already have an FBR DI invoice number.**
+- **Canceled FBR DI invoices are hidden from the normal sales list.**
+- **Users can tick Show canceled FBR DI in filters when they need to review canceled invoices again.**
+- **Users can click Invoice Canceled and confirm if they need to remove the canceled status.**
+
+#### Guide
+- **Go to Sales > All Sales.**
+- **Open the action menu for a sale that has an FBR DI invoice number.**
+- **Click Invoice Canceled only after the invoice has been canceled in IRIS.**
+- **The invoice will no longer appear in the normal sales list.**
+- **Tick Show canceled FBR DI in the filters to view canceled FBR DI invoices again.**
+- **Click Invoice Canceled and press OK to remove the canceled status if it was marked by mistake.**
+
+---
+
+### Module: Sale Invoice - Tax and Subtotal Printing
+
+#### What Users Will See
+- **Sale invoice totals are easier to match now.** The product row Amount and the footer Subtotal show the same value when tax is printed separately.
+- **Sales Tax Payable and Sales Tax Inclusive Value now line up more clearly with the invoice footer.**
+- **Invoices with large quantities and decimal tax values are easier to check.** Users no longer need to manually compare rounded row values with footer totals.
+- **Changing currency decimals from 2 to 3 keeps the invoice amounts consistent on print preview and printed invoices.**
+
+#### Guide
+- **Open Sales or POS Sales.**
+- **Open the invoice you want to check.**
+- **Click Print or Preview.**
+- **Compare the product row Amount with the footer Subtotal.**
+- **Check that the tax amount and final total are shown clearly before printing or sharing the invoice.**
+
+---
+
+### Module: FBR Digital Invoicing - Receipt Printing
+
+#### What Users Will See
+- **FBR Digital Invoicing receipts no longer show an FBR POS ID when no POS ID has been entered for the business location.**
+- **Receipts for FBR Digital Invoicing still show the FBR invoice number, QR code, logo, and date when these options are selected in the invoice layout.**
+- **This keeps FBR Digital Invoicing receipts clearer for businesses that use the FBR DI token instead of a POS ID.**
+
+#### Guide
+- **Go to Business Settings > Business Locations.**
+- **Open the business location used for the sale.**
+- **If only the FBR Digital Invoicing Token is entered, the printed receipt will not show an FBR POS ID.**
+- **Print or preview an FBR Digital Invoicing invoice and check that the receipt shows only the correct FBR Digital Invoicing details.**
+
+---
+
 ## Version 8.95.6
 
 **Release Date:** 2026-08-23

@@ -52,4 +52,18 @@ class TransactionUtilDraftReceiptTotalTest extends TestCase
 
         $this->assertSame(250.0, $method->invoke($util, $transaction, 1170.00, 1));
     }
+
+    public function testInvoiceSchemeSuffixUpperBoundAvoidsUnsignedSubtraction(): void
+    {
+        $util = (new ReflectionClass(TransactionUtil::class))->newInstanceWithoutConstructor();
+        $method = new ReflectionMethod(TransactionUtil::class, 'getInvoiceSchemeSuffixUpperBound');
+        $method->setAccessible(true);
+
+        $scheme = (object) [
+            'start_number' => 287,
+        ];
+
+        $this->assertSame(287, $method->invoke($util, $scheme, 1));
+        $this->assertSame(296, $method->invoke($util, $scheme, 10));
+    }
 }
