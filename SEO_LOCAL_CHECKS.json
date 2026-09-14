@@ -1,0 +1,148 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "h1_count": 1,
+    "description_count": 1,
+    "canonical": [
+      "http://localhost:8765"
+    ],
+    "robots": []
+  },
+  {
+    "path": "/pricing",
+    "status": 200,
+    "h1_count": 1,
+    "description_count": 1,
+    "canonical": [
+      "http://localhost:8765/pricing"
+    ],
+    "robots": []
+  },
+  {
+    "path": "/c/contact-us",
+    "status": 200,
+    "h1_count": 1,
+    "description_count": 1,
+    "canonical": [
+      "http://localhost:8765/c/contact-us"
+    ],
+    "robots": []
+  },
+  {
+    "path": "/c/blogs",
+    "status": 200,
+    "h1_count": 1,
+    "description_count": 1,
+    "canonical": [
+      "http://localhost:8765/c/blogs"
+    ],
+    "robots": [
+      "noindex, follow"
+    ]
+  },
+  {
+    "path": "/docs",
+    "status": 200,
+    "h1_count": 1,
+    "description_count": 1,
+    "canonical": [
+      "http://localhost:8765/docs/getting-started?lang=en"
+    ],
+    "robots": []
+  },
+  {
+    "path": "/docs/sales-pos-guide",
+    "status": 200,
+    "h1_count": 1,
+    "description_count": 1,
+    "canonical": [
+      "http://localhost:8765/docs/sales-pos-guide?lang=en"
+    ],
+    "robots": [],
+    "js_syntax": 0,
+    "article_heading_count": 22
+  },
+  {
+    "path": "/docs/stock-management-guide",
+    "status": 200,
+    "h1_count": 1,
+    "description_count": 1,
+    "canonical": [
+      "http://localhost:8765/docs/stock-management-guide?lang=en"
+    ],
+    "robots": []
+  },
+  {
+    "path": "/docs/module-accounting",
+    "status": 200,
+    "h1_count": 1,
+    "description_count": 1,
+    "canonical": [
+      "http://localhost:8765/docs/module-accounting?lang=en"
+    ],
+    "robots": []
+  },
+  {
+    "path": "/docs/desktop-app-guide",
+    "status": 200,
+    "h1_count": 1,
+    "description_count": 1,
+    "canonical": [
+      "http://localhost:8765/docs/desktop-app-guide?lang=en"
+    ],
+    "robots": []
+  },
+  {
+    "path": "/docs/sales-pos-guide?lang=ur",
+    "status": 200,
+    "h1_count": 1,
+    "description_count": 1,
+    "canonical": [
+      "http://localhost:8765/docs/sales-pos-guide?lang=en"
+    ],
+    "robots": []
+  },
+  {
+    "path": "/docs/sales-pos-guide?q=stock",
+    "status": 200,
+    "h1_count": 1,
+    "description_count": 1,
+    "canonical": [
+      "http://localhost:8765/docs/sales-pos-guide?lang=en"
+    ],
+    "robots": [
+      "noindex, follow"
+    ]
+  },
+  {
+    "path": "/login",
+    "status": 200,
+    "h1_count": 1,
+    "description_count": 0,
+    "canonical": [],
+    "robots": []
+  },
+  {
+    "path": "/docs/seo-audit-missing-page",
+    "status": 404
+  },
+  {
+    "path": "/docs-fetch-page?slug=sales-pos-guide&is_public=1",
+    "status": 200,
+    "valid_json": true
+  },
+  {
+    "path": "/docs-search?q=contact&is_public=1",
+    "status": 200,
+    "private_contact_guide_found": false
+  },
+  {
+    "path": "/docs-switch-lang",
+    "method": "POST",
+    "status": 200,
+    "lang": "ur",
+    "has_content": true,
+    "csrf_checked": true
+  }
+]

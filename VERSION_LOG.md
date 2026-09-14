@@ -1,5 +1,190 @@
 # User Guide Updates
 
+## September 14, 2026 - Product List Report In Stock Reports
+
+- A new **Product List** report is available under **Reports > Stock Reports > Product List**.
+- The report shows product-only information, such as product name, SKU, category, brand, unit, purchase price, selling price, supplier, location, stock quantity, alert quantity, and rack details.
+- Products with a related sub unit can show separate rows, so users can check the product in its base unit and its sub unit.
+- The **Unit** filter can be used to choose a base unit.
+- The **Sub Units** filter appears with the related sub units after a unit is selected.
+- If **Sub Units** is left blank, the report can show both base unit and related sub-unit rows.
+- If a **Sub Unit** is selected, the report shows only rows for that selected sub unit.
+- Purchase price and selling price are shown in the correct unit row, making base unit and sub-unit prices easier to compare.
+
+### How To Use
+
+1. Open **Reports > Stock Reports > Product List**.
+2. Use **Location**, **Category**, **Brand**, **Supplier**, **Unit**, **Sub Units**, and **Status** filters as needed.
+3. Select a **Unit** first if you want to filter by **Sub Units**.
+4. Leave **Sub Units** blank to see all related unit rows, or select one sub unit to see only that unit.
+5. Press **Ctrl+F5** if the report page still shows the old layout after updating.
+
+## September 14, 2026 - Product Sell Report Detailed View Improvements
+
+- In **Product Sell Report > Detailed**, users can now see the **Category** right after the product name.
+- Users can now see the **Payment Method** right after the date.
+- **Quantity** and **Unit** now show in separate columns, making the report easier to read and export.
+- A new last column, **Total Amount**, shows the full invoice amount only once per invoice.
+- If an invoice has one product, the product row shows the invoice total.
+- If an invoice has two or more products, earlier product rows show **0** and the last product row shows the invoice total.
+- The bottom total for **Total Amount** adds each invoice only once, so multi-product invoices are not counted again.
+- Print and Excel output for the detailed report follow the same layout.
+
+### How To Check
+
+1. Open **Reports > Product Sell Report**.
+2. Open the **Detailed** tab.
+3. Check that **Category** appears after **Product**.
+4. Check that **Payment Method** appears after **Date**.
+5. Check that **Quantity** and **Unit** are in separate columns.
+6. Check the last **Total Amount** column to see the full invoice amount only on the last product row of each invoice.
+
+## September 14, 2026 - Superadmin Affiliate Program And Catalogue Hebrew Language Added
+
+- The **Superadmin** module version is now **6.5**.
+- The **Product Catalogue** module version is now **3.2**.
+- Superadmin can now set up and manage an **Affiliate Program**.
+- Users can apply to become affiliates and use their own referral link.
+- Superadmin can review affiliate applications and approve or reject them.
+- Superadmin can see affiliate referrals, commissions, and payout details in one place.
+- Affiliate commission can be created when a referred business buys an approved subscription.
+- Product Catalogue now includes **Hebrew** language support.
+- Superadmin now also includes **Hebrew** language support for the newly added affiliate pages.
+
+### How To Use
+
+1. Open **Install > Modules** and run the update for **Superadmin** and **Product Catalogue** if the update option appears.
+2. Open **Superadmin > Affiliate Settings** and turn on the affiliate program.
+3. Set the commission rules and payout details.
+4. Users can open **Affiliate** from the menu and apply.
+5. After approval, the user can copy their referral link and share it.
+6. Superadmin can open **Superadmin > Affiliates** to check applications, referrals, commissions, and payouts.
+7. To use Hebrew in Product Catalogue, select Hebrew from the available language options.
+
+## September 13, 2026 - Dojo Sales On Cash Register Details
+
+- The **Cash Register Details** popup now shows **Dojo** as its own row under **Payment Method**.
+- The **Close Register** page also shows **Dojo** in the payment method list.
+- Dojo sales are now easier to check separately from card, cash, and bank transfer payments.
+- The GBP pound sign now shows correctly instead of the wrong text symbol.
+
+### How To Check
+
+1. Open the **POS** screen.
+2. Click **Register Details**.
+3. Check the **Payment Method** table.
+4. Confirm **Dojo** appears as a separate row when Dojo sales are available.
+5. Click **Close Register** and check the same payment method list before closing.
+6. If the old wrong pound symbol still appears, refresh the page with **Ctrl+F5**.
+
+## September 12, 2026 - Software Update Handles Missing Optional Modules
+
+- The software update page now continues even if an optional module is listed but not present in the application folder.
+- If a business uses **WooCommerce** or **Shopify**, those modules can stay enabled as usual.
+- If the old **Ecommerce** option is not being used, it does not need to be enabled.
+- Admin users can open **Install > Update** again and run the update without being stopped by a missing optional module message.
+- If a module is not installed, it will simply be skipped during the update.
+
+### How To Use
+
+1. Open **Install > Update**.
+2. Run the update as usual.
+3. If your store uses **WooCommerce** or **Shopify**, keep using those module pages normally.
+4. If you do not use the old **Ecommerce** option, leave it turned off.
+
+## September 12, 2026 - What To Do When The PRA Number Is Pending On POS
+
+- When a POS sale is saved but PRA does not give an invoice number, the cashier now sees a clearer pending message.
+- The sale remains saved. Do not create the same invoice again.
+- The message tells the cashier that the PRA number is still pending and can be tried again later.
+- When the internet or PRA service is working, open the sales list and use **Sync PRA Sales**.
+- After syncing, check the invoice again and confirm that the PRA invoice number appears.
+
+## September 11, 2026 - Container Docs In Truckmate
+
+- Truckmate now has a **Container Docs** option in the menu.
+- Users can open **Truckmate > Vehicles > Container Docs** to keep documents against container numbers.
+- Click **Add Container** to add a new container number and optional container name or notes.
+- From the Container Docs list, use **Action > View** to open the container page.
+- From the Container Docs list, use **Action > Add Document** to upload documents for that container.
+- On the container page, users can see the container details and all documents already uploaded for that container.
+- Users can click **Add Document** on the container page to upload more documents.
+- Uploaded documents can be opened with **View** or saved with **Download Document**.
+- Users can upload common document types, including PDF, Word, Excel, CSV, ZIP, JPG, JPEG, and PNG files.
+- Container documents are kept in a separate **Container** folder inside the business upload folder.
+- On the container page, users can search uploaded documents by name.
+- Users can also filter uploaded documents by uploaded date range.
+- On the Container Docs list, users can search containers by container number, container name, or notes.
+
+### How To Use
+
+1. Open **Truckmate > Vehicles > Container Docs**.
+2. Click **Add Container**.
+3. Enter the container number, add a name or notes if needed, and save.
+4. Open the container from the list using **Action > View**.
+5. Click **Add Document** and upload the required files.
+6. Return to the container page to view or download the uploaded documents.
+7. Use the search box or date range filter when the document list becomes long.
+
+## September 11, 2026 - Business Health Explanation On Dashboard
+
+- On the home dashboard, the **Business Health** box now explains what the score means when the user points to it.
+- The explanation tells users that the score compares today's sales with the last 7 days average sales.
+- It also tells users that old unpaid invoices can reduce the score.
+- Users can now understand the score levels: **Excellent**, **Good**, **Average**, and **Needs Attention**.
+- Open the **Home Dashboard**, go to **Business Analytics & Insights**, and point to the **Business Health** box to read the explanation.
+
+## September 11, 2026 - Cleaner Contact Names After Excel Import
+
+- When importing contacts from Excel, **Business Name** and **Name** now show in their own columns on the contact list.
+- If **Contact Entity** is **business**, leave **First Name**, **Middle Name**, and **Last Name** blank in Excel. The contact list will show the business name under **Business Name** and keep **Name** blank.
+- If an older Excel import put a dot or other extra text in **First Name** for business contacts, remove it from Excel and import the file again. The extra text will be cleared from the contact list.
+- If **Contact Entity** is **individual**, enter the person's name in **First Name** and related name columns as usual.
+- After importing, open **Contacts** and refresh the page to see the corrected columns.
+- On the sales list and printed sales invoices, a business customer name is no longer repeated when the saved name and business name are the same.
+
+## September 9, 2026 - Clearer Product List
+
+- The **Product** column now adjusts its width automatically to suit the names shown.
+- In **Price Group**, each price appears on a separate line. Group names, such as **Wholesale Price** and **Trade Price**, are bold, followed by the currency symbol and amount. The entries are no longer cut short.
+- **Unit Purchase Price** is now called **Last Cost**.
+- **Current Stock Quantity** is now called **On Hand**.
+- **Business Location** is now called **Location**.
+- Open the **Products** list and press **Ctrl+F5** to see the updated display.
+
+## September 9, 2026 - Product Sync Progress And Rack Details
+
+### Watching Stock Quantity Sync
+
+- Click **Sync Product Quantities** and confirm to begin. While it runs, the progress bar shows the product being checked and how many products have been checked.
+- The progress bar is available on **Products**, **Stock Quantity Report**, **Stock Value Report**, **Stock Reorder Report**, **Stock Take Report**, and **Business Settings**.
+- Wait for the success message before starting another sync.
+- If the sync fails, a message now explains that it could not finish. Follow the message, or share it with support. If the server stopped responding, check your quantities before trying again because some products may already have been updated.
+- After updating the application, press **Ctrl+F5** to refresh the page.
+
+### Bringing Rack Details To The Shop Computer
+
+- **Products** sync now brings each product's **Rack**, **Row**, and **Position** from the online account to the shop computer, including products downloaded earlier.
+- Later changes and cleared rack details in the online account are also applied when you sync again.
+- In **Business Settings**, turn on **Enable Racks**, **Enable Row**, and **Enable Position** for the fields you want to see when adding or editing products.
+
+### How To Download Rack Details
+
+1. Make sure the online application and the shop computer both have the latest software update.
+2. Connect the shop computer to the internet and open **Offline Sync > Download Syncronization**.
+3. Download **Business Locations** and **Business Settings** first.
+4. Click **SYNC** beside **Products** and wait for the success message.
+5. Open a product's edit page and check its **Rack**, **Row**, and **Position** for the correct shop or branch.
+6. If a message asks you to download Business Locations, do that first, then run Products sync again. Share any other error message with support.
+
+## September 9, 2026 - Getting Software Updates On The Shop Computer
+
+- On a computer set up for offline use, sign in as **Admin** and connect to the internet before checking for software updates.
+- Refresh the page, then click the **GitHub icon** in the top bar. Wait for the check to finish before clicking again.
+- If new updates are downloaded, click **UPDATE** to finish installing them. If nothing new is available, you will see **No new updates found**.
+- Messages now explain more clearly when you need to sign in again, refresh the page, use an Admin account, or check your connection.
+- If a message says the computer needs setup or local application changes are stopping the update, share that message with support for help.
+
 ## September 9, 2026 - Complete The Sharifas Online Stock Correction
 
 - Fixed a case where the online update finished but earlier pack-sale quantities stayed incorrect.

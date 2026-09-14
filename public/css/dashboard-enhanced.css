@@ -979,6 +979,13 @@
     border-radius: 20px;
     display: inline-block;
 }
+
+.business-health-tooltip .tooltip-inner {
+    max-width: 380px;
+    text-align: left;
+    line-height: 1.5;
+}
+
 .health-excellent { background: rgba(56,239,125,0.2); color: #38ef7d; }
 .health-good { background: rgba(78,205,196,0.2); color: #4ecdc4; }
 .health-average { background: rgba(255,210,63,0.2); color: #ffd23f; }

@@ -296,7 +296,7 @@ Navigate to **CMS > Settings** to configure:
 - Keep answers concise—link to detailed pages for complex topics
 
 ### Statistics / Social Proof Numbers
-- Display impressive numbers on the home page (e.g., "10,000+ Users", "50+ Countries")
+- Display only business statistics supported by current records. Confirm the source and reporting period before publishing customer counts, country coverage or performance figures.
 - Each statistic has an **icon**, **number**, **label**, and **description**
 
 ### Download Buttons

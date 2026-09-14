@@ -296,40 +296,40 @@ body.theme-custom-3 {
 }
 
 body.theme-custom-4 {
-    /* Custom Theme Color 4 - ERP Blue Palette */
-    --bs-primary: #0066E6;
+    /* Custom Theme Color 4 - Blue Technology Palette */
+    --bs-primary: #0B4DFF;
     /* Primary Blue - buttons, links */
-    --bs-primary-rgb: 0, 102, 230;
-    --bs-accent: #35B8FF;
-    /* Cyan-Blue - hover buttons, highlights */
-    --theme-primary-dark: #0047B3;
-    /* Deep Blue - sidebar, navbar */
-    --theme-primary-light: #F5F7FA;
-    /* Cards / page background */
-    --theme-sidebar-bg: #0047B3;
-    /* Deep Blue - sidebar & navbar */
-    --theme-sidebar-text: #ffffff;
-    --theme-sidebar-hover-bg: #35B8FF;
-    /* Cyan-Blue - hover states */
-    --theme-sidebar-active-bg: #0066E6;
+    --bs-primary-rgb: 11, 77, 255;
+    --bs-accent: #00B4FF;
+    /* Secondary / Technology Blue - hover buttons, highlights */
+    --theme-primary-dark: #0F172A;
+    /* Dark Navy - sidebar, navbar */
+    --theme-primary-light: #F8FAFC;
+    /* Clean White - cards / page background */
+    --theme-sidebar-bg: #0F172A;
+    /* Dark Navy - sidebar & navbar */
+    --theme-sidebar-text: #F8FAFC;
+    --theme-sidebar-hover-bg: #00B4FF;
+    /* Secondary / Technology Blue - hover states */
+    --theme-sidebar-active-bg: #0B4DFF;
     /* Primary Blue - active state */
     --theme-sidebar-border: #E5E7EB;
-    /* Light Gray - border accents */
-    --theme-header-bg: #ffffff;
-    --theme-content-bg: #F5F7FA;
-    /* Cards / content background */
-    --theme-accent: #35B8FF;
-    /* Cyan-Blue - CTA, hover */
-    --theme-soft-accent: #0066E6;
-    /* Primary Blue - badges, secondary hover */
-    --theme-neutral: #0047B3;
-    /* Deep Blue - icons, secondary buttons */
-    --theme-growth: #FF7A00;
-    /* Orange - success & growth indicators */
-    --bs-body-color: #2B2B2B;
-    /* Dark body text */
+    /* Soft Background - border accents */
+    --theme-header-bg: #F8FAFC;
+    --theme-content-bg: #E5E7EB;
+    /* Soft Background - content background */
+    --theme-accent: #00B4FF;
+    /* Secondary / Technology Blue - CTA, hover */
+    --theme-soft-accent: #22C55E;
+    /* Accent / Growth Green - badges, secondary hover */
+    --theme-neutral: #0F172A;
+    /* Dark Navy - icons, secondary buttons */
+    --theme-growth: #22C55E;
+    /* Accent / Growth Green - success & growth indicators */
+    --bs-body-color: #0F172A;
+    /* Dark Navy body text */
     --bs-border-color: #E5E7EB;
-    /* Light gray borders */
+    /* Soft Background borders */
 }
 
 /* Theme-aware header accent bar */

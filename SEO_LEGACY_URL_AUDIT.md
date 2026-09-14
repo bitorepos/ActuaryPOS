@@ -1,0 +1,15 @@
+# Preliminary Programmatic Surface legacy URL audit
+
+2026-09-09. This is a public-discovery audit supporting the requested industry compatibility review. Programmatic Surface source, server configuration and database were not available here. No redirects or removals were implemented. Direct requests mostly received HTTP 403 from this client; do not interpret that as proof the pages are missing or blocked for ordinary users/Googlebot. Raw observations: `SEO_PHASE_3_PUBLIC_EVIDENCE.json`.
+
+| Old/current URL | Observed status | Discoverability | Replacement | Recommended action | Reason | Implementation |
+|---|---|---|---|---|---|---|
+| `/?_xi=d3d3LnByb2dyYW1tYXRp.Y3N1cmZhY2UuY29tc2Zq%2A&path=https%3A%2F%2Fwww.programmaticsurface.com%2Fdetail.php%26id%3D29238410.shtml&srd=2799` | Direct client 403; search result shows old agency copy | Found by public search; does not prove current indexing coverage | None verified | INVESTIGATE; 404/410 if permanently obsolete, or clean canonical/redirect only if it is actually a harmless equivalent homepage alias | Old Web Marketing/Creative Layout content remains discoverable. Need server/router evidence before choosing removal vs canonicalization. | Pending source access |
+| `/?r=5551889813502` | Direct client 403; search result shows current homepage content | Found by public search | `/` if equivalence confirmed | Review query handling; normalize only proven content-equivalent parameters | Do not blanket-strip arbitrary parameters used by real features. | Pending source access |
+| `/restaurant-pos-software` | Web retrieval available; direct client 403 | Search and current homepage footer | Existing URL | KEEP / targeted review | Distinct restaurant checkout intent. Avoid duplicate industry POS page. | No changes |
+| `/restaurant-erp-software` | Web retrieval available; direct client 403 | Search and current homepage footer | Existing URL | KEEP / targeted review | Broader restaurant back-office intent. | No changes |
+| `/inventory-management-software` | Search content available; direct client 403 | Search and current footer | Existing URL | KEEP / targeted review | Existing inventory landing page should be assessed before another module page. | No changes |
+
+Search evidence: [legacy query URL](https://programmaticsurface.com/?_xi=d3d3LnByb2dyYW1tYXRp.Y3N1cmZhY2UuY29tc2Zq%2A&path=https%3A%2F%2Fwww.programmaticsurface.com%2Fdetail.php%26id%3D29238410.shtml&srd=2799), [homepage alias](https://programmaticsurface.com/?r=5551889813502), [restaurant POS](https://programmaticsurface.com/restaurant-pos-software), [restaurant ERP](https://programmaticsurface.com/restaurant-erp-software), [inventory](https://programmaticsurface.com/inventory-management-software).
+
+Remaining checks in the company project: route/CMS inventory, WordPress/PHP remnants, obsolete demo services/prices, sitemap entries, server redirects, debug/warning output, current canonical tags and Search Console URL inspection where authorized. The blocked fetches do not support a claim that warning output is absent. Do not redirect all old URLs to the homepage.

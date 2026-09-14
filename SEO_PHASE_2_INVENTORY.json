@@ -1,0 +1,844 @@
+{
+    "scope": "Localhost configuration, read-only current source/DB audit; not production DB verification",
+    "docs": {
+        "getting-started": {
+            "title": "Welcome & First Steps",
+            "file": "GETTING_STARTED.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 6873,
+            "missing": false,
+            "links": []
+        },
+        "installing-application": {
+            "title": "Installing ActuaryPOS Software",
+            "file": "INSTALLING_APPLICATION.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 8501,
+            "missing": false,
+            "links": []
+        },
+        "troubleshooting-invalid-license": {
+            "title": "[Troubleshooting ERROR] Invalid License",
+            "file": "TROUBLESHOOTING_INVALID_LICENSE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 1835,
+            "missing": false,
+            "links": []
+        },
+        "update-guide": {
+            "title": "[UPDATE GUIDE] Updating ActuaryPOS Software",
+            "file": "UPDATE_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 2640,
+            "missing": false,
+            "links": []
+        },
+        "applying-patch": {
+            "title": "Applying Patch",
+            "file": "APPLYING_PATCH.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 1652,
+            "missing": false,
+            "links": []
+        },
+        "enabling-https-ssl": {
+            "title": "Enabling HTTPS or SSL for ActuaryPOS Software",
+            "file": "ENABLING_HTTPS_SSL.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 1763,
+            "missing": false,
+            "links": []
+        },
+        "setup-business-details": {
+            "title": "Setup Your Business Details",
+            "file": "SETUP_BUSINESS_DETAILS.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 1821,
+            "missing": false,
+            "links": []
+        },
+        "disabling-registration": {
+            "title": "Disabling registration in ActuaryPOS Software",
+            "file": "DISABLING_REGISTRATION.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 1806,
+            "missing": false,
+            "links": []
+        },
+        "removing-public-url": {
+            "title": "Removing /public from URL",
+            "file": "REMOVING_PUBLIC_URL.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 1491,
+            "missing": false,
+            "links": []
+        },
+        "migration-guide": {
+            "title": "Transfer Data to new domain & Changing hosting (Migration)",
+            "file": "MIGRATION_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 3174,
+            "missing": false,
+            "links": []
+        },
+        "resetting-data": {
+            "title": "Resetting data, Deleting all data or transactions",
+            "file": "RESETTING_DATA.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 1682,
+            "missing": false,
+            "links": []
+        },
+        "business-settings-guide": {
+            "title": "Set Up Your Business",
+            "file": "BUSINESS_SETTINGS_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 14135,
+            "missing": false,
+            "links": []
+        },
+        "locations-guide": {
+            "title": "Add Your Shops & Branches",
+            "file": "LOCATIONS_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 5919,
+            "missing": false,
+            "links": []
+        },
+        "dashboard-guide": {
+            "title": "Understanding the Dashboard",
+            "file": "DASHBOARD_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 4383,
+            "missing": false,
+            "links": []
+        },
+        "contacts-guide": {
+            "title": "Customers & Suppliers",
+            "file": "CONTACTS_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 8658,
+            "missing": false,
+            "links": []
+        },
+        "discounts-rewards-guide": {
+            "title": "Discounts, Coupons & Rewards",
+            "file": "DISCOUNTS_REWARDS_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 7206,
+            "missing": false,
+            "links": []
+        },
+        "products-guide": {
+            "title": "Adding & Managing Products",
+            "file": "PRODUCTS_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 15700,
+            "missing": false,
+            "links": []
+        },
+        "stock-management-guide": {
+            "title": "Stock, Transfers & Adjustments",
+            "file": "STOCK_MANAGEMENT_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 6229,
+            "missing": false,
+            "links": []
+        },
+        "purchases-guide": {
+            "title": "Recording Purchases",
+            "file": "PURCHASES_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 6380,
+            "missing": false,
+            "links": []
+        },
+        "sales-pos-guide": {
+            "title": "Selling at the Point of Sale",
+            "file": "SALES_POS_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 9400,
+            "missing": false,
+            "links": []
+        },
+        "cash-register-guide": {
+            "title": "Opening & Closing the Cash Register",
+            "file": "CASH_REGISTER_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 5741,
+            "missing": false,
+            "links": []
+        },
+        "desktop-app-guide": {
+            "title": "ActuaryPOS Software Desktop App",
+            "file": "WEB2DESK_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 6435,
+            "missing": false,
+            "links": []
+        },
+        "payment-accounts-guide": {
+            "title": "Payment Accounts & Bank",
+            "file": "PAYMENT_ACCOUNTS_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 4270,
+            "missing": false,
+            "links": []
+        },
+        "expenses-guide": {
+            "title": "Recording Expenses",
+            "file": "EXPENSES_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 4873,
+            "missing": false,
+            "links": []
+        },
+        "tax-invoice-guide": {
+            "title": "Tax Rates, Invoices & Barcodes",
+            "file": "TAX_INVOICE_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 5699,
+            "missing": false,
+            "links": []
+        },
+        "reports-guide": {
+            "title": "Reading Your Reports",
+            "file": "REPORTS_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 7089,
+            "missing": false,
+            "links": []
+        },
+        "users-roles-guide": {
+            "title": "Users, Roles & Permissions",
+            "file": "USERS_ROLES_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 7795,
+            "missing": false,
+            "links": []
+        },
+        "notification-templates-guide": {
+            "title": "Email & SMS Templates",
+            "file": "NOTIFICATION_TEMPLATES_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 6409,
+            "missing": false,
+            "links": []
+        },
+        "backup-guide": {
+            "title": "Backups & Restore",
+            "file": "BACKUP_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 4364,
+            "missing": false,
+            "links": []
+        },
+        "restaurant-guide": {
+            "title": "Tables, Kitchen & Service",
+            "file": "RESTAURANT_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 9120,
+            "missing": false,
+            "links": []
+        },
+        "modules-overview": {
+            "title": "About Add-on Modules",
+            "file": "MODULES_OVERVIEW.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 11037,
+            "missing": false,
+            "links": []
+        },
+        "module-essentials": {
+            "title": "Essentials",
+            "file": "__generated__",
+            "generated": "module_overview",
+            "language": "en",
+            "fallback": false,
+            "bytes": 1632,
+            "missing": false,
+            "links": []
+        },
+        "module-accounting": {
+            "title": "Accounting",
+            "file": "__generated__",
+            "generated": "module_overview",
+            "language": "en",
+            "fallback": false,
+            "bytes": 1632,
+            "missing": false,
+            "links": []
+        },
+        "module-asset-guide": {
+            "title": "Asset Management User Guide",
+            "file": "ASSET_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 19009,
+            "missing": false,
+            "links": []
+        },
+        "module-connector": {
+            "title": "Connector",
+            "file": "__generated__",
+            "generated": "module_overview",
+            "language": "en",
+            "fallback": false,
+            "bytes": 1626,
+            "missing": false,
+            "links": []
+        },
+        "module-crm-guide": {
+            "title": "CRM User Guide",
+            "file": "CRM_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 17233,
+            "missing": false,
+            "links": []
+        },
+        "module-fieldforce-guide": {
+            "title": "Field Force User Guide",
+            "file": "FIELDFORCE_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 12333,
+            "missing": false,
+            "links": []
+        },
+        "module-foodpanda-overview": {
+            "title": "FoodPanda Integration",
+            "file": "FOODPANDA_INDEX.md",
+            "generated": "",
+            "language": "en",
+            "fallback": true,
+            "bytes": 62,
+            "missing": true,
+            "links": []
+        },
+        "module-foodpanda-reference": {
+            "title": "FoodPanda Quick Reference",
+            "file": "FOODPANDA_QUICK_REFERENCE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 3525,
+            "missing": false,
+            "links": []
+        },
+        "module-foodpanda-troubleshoot": {
+            "title": "FoodPanda Troubleshooting",
+            "file": "FOODPANDA_TROUBLESHOOTING.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 3955,
+            "missing": false,
+            "links": []
+        },
+        "module-gym-guide": {
+            "title": "Gym User Guide",
+            "file": "GYM_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 27084,
+            "missing": false,
+            "links": []
+        },
+        "module-hms-guide": {
+            "title": "HMS User Guide",
+            "file": "HMS_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 20802,
+            "missing": false,
+            "links": []
+        },
+        "module-installment-guide": {
+            "title": "Installment User Guide",
+            "file": "INSTALLMENT_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 23715,
+            "missing": false,
+            "links": []
+        },
+        "module-manufacturing": {
+            "title": "Manufacturing User Guide",
+            "file": "MANUFACTURING_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 36103,
+            "missing": false,
+            "links": []
+        },
+        "module-productcatalogue-guide": {
+            "title": "Product Catalogue User Guide",
+            "file": "PRODUCT_CATALOGUE_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 18717,
+            "missing": false,
+            "links": []
+        },
+        "module-project-guide": {
+            "title": "Project User Guide",
+            "file": "PROJECT_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 23617,
+            "missing": false,
+            "links": []
+        },
+        "module-recruitment": {
+            "title": "Recruitment",
+            "file": "__generated__",
+            "generated": "module_overview",
+            "language": "en",
+            "fallback": false,
+            "bytes": 1638,
+            "missing": false,
+            "links": []
+        },
+        "module-repair-guide": {
+            "title": "Repair User Guide",
+            "file": "REPAIR_GUIDE.md",
+            "generated": "",
+            "language": "en",
+            "fallback": false,
+            "bytes": 23524,
+            "missing": false,
+            "links": []
+        },
+        "module-shopify": {
+            "title": "Shopify",
+            "file": "__generated__",
+            "generated": "module_overview",
+            "language": "en",
+            "fallback": false,
+            "bytes": 1614,
+            "missing": false,
+            "links": []
+        },
+        "module-truckmate": {
+            "title": "Truckmate",
+            "file": "__generated__",
+            "generated": "module_overview",
+            "language": "en",
+            "fallback": false,
+            "bytes": 1626,
+            "missing": false,
+            "links": []
+        },
+        "module-woocommerce": {
+            "title": "WooCommerce",
+            "file": "__generated__",
+            "generated": "module_overview",
+            "language": "en",
+            "fallback": false,
+            "bytes": 1638,
+            "missing": false,
+            "links": []
+        },
+        "module-ai-assistance": {
+            "title": "AI Assistance",
+            "file": "__generated__",
+            "generated": "module_overview",
+            "language": "en",
+            "fallback": false,
+            "bytes": 1650,
+            "missing": false,
+            "links": []
+        },
+        "version-history": {
+            "title": "What's New",
+            "file": "VERSION_LOG.md",
+            "generated": "",
+            "language": "en",
+            "fallback": true,
+            "bytes": 586985,
+            "missing": false,
+            "links": []
+        }
+    },
+    "pages": [
+        {
+            "id": 1,
+            "type": "testimonial",
+            "layout": null,
+            "title": "David Parr",
+            "slug": "david-parr",
+            "seo_title": null,
+            "description": null,
+            "canonical": null,
+            "claims": [],
+            "testimonial": "We evaluated three enterprise systems before committing, and the demand-forecasting engine is what won us over. In the first quarter it caught a seasonal surge our planners had under-ordered for \u2014 we stayed fully stocked while competitors sold out, and that single insight covered the annual subscription many times over.Inventory now reconciles across three locations in real time, and the AI morning briefing replaces an hour of manual reporting before we even open. Onboarding the team took a day, not a quarter.",
+            "feature_image": null,
+            "og_image": null
+        },
+        {
+            "id": 2,
+            "type": "testimonial",
+            "layout": null,
+            "title": "Tim Johnson",
+            "slug": "tim-johnson",
+            "seo_title": null,
+            "description": null,
+            "canonical": null,
+            "claims": [],
+            "testimonial": "Our month-end close used to consume three full days of finance time. The platform now compiles the sales narrative, flags expense anomalies for review, and recommends which slow-moving lines to bundle \u2014 closing the books in an afternoon. Smart reorder drafts purchase orders from real sales velocity and supplier lead times, so working capital stops sitting on dead stock. It is, effectively, a full-time analyst we did not have to hire.",
+            "feature_image": null,
+            "og_image": null
+        },
+        {
+            "id": 3,
+            "type": "page",
+            "layout": "home",
+            "title": "One Intelligent Platform to Run, Forecast, and Scale Your Business",
+            "slug": "one-intelligent-platform-to-run,-forecast,-and-scale-your-business",
+            "seo_title": null,
+            "description": "ActuaryPOS Hybrid Solutions \u2014 Online / Offline Syncronization \u2014 an AI-powered cloud POS & ERP with 40+ AI capabilities: demand forecasting, smart pricing, inventory intelligence, CRM, HR and real-time business analytics. Start free.",
+            "canonical": null,
+            "claims": [
+                "40+ built-in AI capabilities \u2014 demand forecasting, dynamic pricing, fraud detection, and natu"
+            ],
+            "testimonial": null,
+            "feature_image": null,
+            "og_image": null
+        },
+        {
+            "id": 4,
+            "type": "page",
+            "layout": "contact",
+            "title": "Talk to a Specialist",
+            "slug": "talk-to-a-specialist",
+            "seo_title": null,
+            "description": null,
+            "canonical": null,
+            "claims": [],
+            "testimonial": null,
+            "feature_image": null,
+            "og_image": null
+        },
+        {
+            "id": 5,
+            "type": "testimonial",
+            "layout": null,
+            "title": "Krishna Watt",
+            "slug": "krishna-watt",
+            "seo_title": null,
+            "description": null,
+            "canonical": null,
+            "claims": [
+                "23% and CAC is down"
+            ],
+            "testimonial": "Nine months in, AI-driven customer segmentation has reshaped our entire marketing motion. It surfaced our true VIPs and flagged high-value accounts about to churn, then triggered personalised follow-ups at exactly the right moment \u2014 repeat-purchase rate is up 23% and CAC is down. I review revenue forecasts from my phone, the warehouse runs on tablet-based restock alerts, and the floor team relies on a POS that never lags at peak. This stopped being software the day it became our competitive edge.",
+            "feature_image": null,
+            "og_image": null
+        }
+    ],
+    "settings": {
+        "statistics": {
+            "tagline": "Measurable Outcomes, Powered by AI",
+            "description": "Operators rely on our AI engine every day to forecast demand, optimise margins, automate reporting, and act on real-time intelligence \u2014 turning operational data into a durable competitive advantage.",
+            "content": [
+                {
+                    "stats": "10,000+",
+                    "title": "BUSINESSES RUNNING ON AI"
+                },
+                {
+                    "stats": "2M+",
+                    "title": "AI PREDICTIONS DELIVERED"
+                },
+                {
+                    "stats": "40+",
+                    "title": "BUILT-IN AI CAPABILITIES"
+                },
+                {
+                    "stats": "99.9%",
+                    "title": "PLATFORM UPTIME SLA"
+                }
+            ]
+        },
+        "faqs": [
+            {
+                "question": "What makes this an \"AI-powered\" POS/ERP?",
+                "answer": "ActuaryPOS Hybrid Solutions ships with a native AI Assistance layer of 40+ capabilities powered by advanced language models. It reaches well beyond transaction processing: the AI forecasts demand, optimises pricing, detects fraud, generates marketing content, captures documents automatically, and delivers daily business-intelligence briefings \u2014 all operating directly on your live ERP data, not a disconnected add-on."
+            },
+            {
+                "question": "How does AI Demand Forecasting work?",
+                "answer": "The AI analyses 90 days of your actual sales data to predict future demand per product. It identifies rising and declining trends, flags items at risk of stock-out, and generates smart reorder suggestions with quantities, costs, and preferred suppliers \u2014 so you never over-order or under-order again."
+            },
+            {
+                "question": "Can AI really help me increase revenue?",
+                "answer": "Yes, in measurable ways. AI Smart Pricing recommends optimal price points based on margins and sales velocity. AI Customer Segmentation identifies your VIPs and at-risk customers for targeted campaigns. Smart Product Bundling discovers cross-sell opportunities. And AI Follow-up automatically re-engages inactive customers. Businesses typically see 15\u201330% improvements within the first quarter."
+            },
+            {
+                "question": "Is the AI content generator useful for my business?",
+                "answer": "Absolutely. It generates professional product descriptions, Google and Facebook ad copy, email campaigns, business proposals, knowledge-base articles, and even product images \u2014 all in 50+ languages. Choose your tone (professional, persuasive, casual) and get publish-ready content in seconds. It replaces the need for a separate copywriting service."
+            },
+            {
+                "question": "How secure is my business data with AI?",
+                "answer": "Your data stays inside your ActuaryPOS Hybrid Solutions environment \u2014 it is never sold, shared, or used to train third-party models. We protect it with 256-bit SSL encryption, automated daily backups, granular role-based access controls, and AI-driven fraud monitoring that watches for anomalies around the clock."
+            },
+            {
+                "question": "Do I need technical knowledge to use the AI features?",
+                "answer": "Not at all. Every AI feature is designed for business users, not data scientists. Ask your ERP questions in plain English, get one-click reports, and let the AI assistant guide you. There's also a built-in AI Messenger that answers your questions about features and troubleshooting instantly."
+            },
+            {
+                "question": "Is there a free plan with AI features?",
+                "answer": "Yes. ActuaryPOS Hybrid Solutions includes a genuinely useful free tier covering core POS, invoicing, and inventory. AI capabilities are available on upgraded plans with a monthly token allowance, and a no-credit-card trial lets you put all 40+ AI features to work on your own data before you commit."
+            },
+            {
+                "question": "What AI features work for multi-location businesses?",
+                "answer": "All of them. AI demand forecasting, staff scheduling, reorder suggestions, and anomaly detection work per-location and across your entire network. The AI Daily Briefing summarises performance across all branches, and AI staff scheduling recommends optimal headcount by analysing hourly sales patterns at each location."
+            }
+        ],
+        "modules": {
+            "tagline": "Advanced Modules That Grow With You",
+            "description": "ActuaryPOS Hybrid Solutions is fully modular \u2014 switch on only what you need today and add powerful capabilities as you scale. Every module shares one database, one login, and the same built-in AI.",
+            "content": [
+                {
+                    "icon": "fas fa-robot",
+                    "tag": "AI",
+                    "title": "AI Assistance",
+                    "description": "40+ AI tools for forecasting, pricing, content, fraud detection, and natural-language reporting \u2014 built into every screen."
+                },
+                {
+                    "icon": "fas fa-industry",
+                    "tag": "Operations",
+                    "title": "Manufacturing",
+                    "description": "Recipe & BOM-based production, multi-level assemblies, ingredient costing, and automatic stock deduction on every build."
+                },
+                {
+                    "icon": "fas fa-people-arrows",
+                    "tag": "Sales",
+                    "title": "CRM",
+                    "description": "Lead pipelines, follow-up scheduling, campaigns, and life-stage tracking that convert prospects into loyal customers."
+                },
+                {
+                    "icon": "fas fa-user-tie",
+                    "tag": "HR",
+                    "title": "HRM & Essentials",
+                    "description": "Attendance, payroll, leave, shifts, and document management to run your entire workforce in one place."
+                },
+                {
+                    "icon": "fas fa-project-diagram",
+                    "tag": "Delivery",
+                    "title": "Project Management",
+                    "description": "Tasks, milestones, time tracking, and team collaboration to deliver projects on time and on budget."
+                },
+                {
+                    "icon": "fas fa-tools",
+                    "tag": "Service",
+                    "title": "Repair",
+                    "description": "Device intake, job sheets, technician assignment, and customer status tracking from drop-off to handover."
+                },
+                {
+                    "icon": "fas fa-balance-scale",
+                    "tag": "Finance",
+                    "title": "Accounting",
+                    "description": "Double-entry ledgers, journal entries, trial balance, and financial statements that stay in sync with every sale."
+                },
+                {
+                    "icon": "fas fa-warehouse",
+                    "tag": "Inventory",
+                    "title": "Warehouse",
+                    "description": "Multi-warehouse stock control, transfers, racks, and pick/pack flows for fast, accurate fulfilment."
+                },
+                {
+                    "icon": "fas fa-shopping-cart",
+                    "tag": "eCommerce",
+                    "title": "WooCommerce & Shopify",
+                    "description": "Two-way sync of products, stock, and orders so your online and in-store channels never fall out of step."
+                },
+                {
+                    "icon": "fas fa-cubes",
+                    "tag": "Assets",
+                    "title": "Asset Management",
+                    "description": "Track, assign, maintain, and depreciate company assets with full history and scheduled maintenance alerts."
+                },
+                {
+                    "icon": "fas fa-truck-loading",
+                    "tag": "Rentals",
+                    "title": "Rental",
+                    "description": "Manage rentable inventory, booking calendars, deposits, and return conditions with automated billing."
+                },
+                {
+                    "icon": "fas fa-plug",
+                    "tag": "Developers",
+                    "title": "API Connector",
+                    "description": "A full REST API to integrate ActuaryPOS Hybrid Solutions with your own apps, marketplaces, and third-party services."
+                }
+            ]
+        }
+    },
+    "custom_meta_tag_count": 0,
+    "home_page_meta": {
+        "industry": {
+            "id": "1",
+            "title": "Industry-Tuned AI, Ready on Day One",
+            "description": "<p>Pre-configured templates, sector-specific data models, and smart workflows that fit how your business actually operates \u2014 from pharmacy expiry control to repair-shop job management. The AI learns your patterns from the first week and compounds in accuracy every day after.</p>",
+            "content": [
+                {
+                    "icon": "fas fa-store-alt",
+                    "title": "Departmental & General Stores",
+                    "description": "AI auto-categorises thousands of SKUs, predicts seasonal demand spikes, and suggests smart product bundles to increase average order value. Loyalty points and combo deals run on autopilot."
+                },
+                {
+                    "icon": "fas fa-store",
+                    "title": "Retail & Wholesale",
+                    "description": "Dual pricing with AI-optimised price points for walk-in and bulk buyers. Smart reorder generates purchase orders before you stock out, and AI credit scoring helps you extend credit safely."
+                },
+                {
+                    "icon": "fas fa-notes-medical",
+                    "title": "Pharmacy & Healthcare",
+                    "description": "AI tracks drug classes, lot numbers, and expiry dates with automatic alerts. Perishable-item predictor schedules markdowns before products expire, reducing waste by up to 40%."
+                },
+                {
+                    "icon": "fas fa-prescription-bottle",
+                    "title": "Liquor & Beverage",
+                    "description": "Sell by bottle, case, or custom measure. AI demand forecasting predicts busy periods and adjusts recommended stock levels. Brand-wise analytics and excise-compliant records built in."
+                },
+                {
+                    "icon": "fas fa-mobile-alt",
+                    "title": "Electronics & Mobile",
+                    "description": "IMEI and serial-number tracking from purchase to sale. AI warranty predictor identifies batch issues before they become costly returns. Integrated repair service management with job-sheet automation."
+                },
+                {
+                    "icon": "fas fa-wrench",
+                    "title": "Repair & Service Shops",
+                    "description": "AI-powered job scheduling assigns technicians based on skillset and workload. Customers get a self-service tracking link. Completed repairs convert to invoices with one click \u2014 no data re-entry."
+                }
+            ]
+        },
+        "feature": {
+            "id": "2",
+            "title": "40+ AI Capabilities, Built Into Every Workflow",
+            "description": "<p>Forecasting, pricing, fraud detection, document capture, and natural-language reporting run natively inside ActuaryPOS Hybrid Solutions \u2014 on your live data, not a bolt-on. One platform replaces the analysts, BI dashboards, and content tools you currently license separately, and starts paying for itself in the first quarter.</p>",
+            "content": [
+                {
+                    "icon": "fas fa-brain",
+                    "title": "AI Business Intelligence",
+                    "description": "Get AI-generated daily briefings, sales insights, and cash-flow predictions. Ask your ERP questions in plain English \u2014 \"What were my top 5 products last month?\" \u2014 and get instant, data-backed answers."
+                },
+                {
+                    "icon": "fas fa-chart-line",
+                    "title": "AI Demand Forecasting",
+                    "description": "Predict future sales per product using 90 days of real transaction data. Identify rising and declining trends, get low-stock alerts, and receive AI-generated reorder recommendations before you run out."
+                },
+                {
+                    "icon": "fas fa-tags",
+                    "title": "AI Smart Pricing",
+                    "description": "Optimise selling prices automatically. The AI analyses margins, sales velocity, discount patterns, and price elasticity to recommend the price point that maximises profit without losing customers."
+                },
+                {
+                    "icon": "fas fa-users",
+                    "title": "AI Customer Segmentation",
+                    "description": "Automatically classify customers as VIP, loyal, at-risk, or new using RFM analysis. Trigger personalised follow-ups, targeted campaigns, and predict lifetime value \u2014 all powered by AI."
+                },
+                {
+                    "icon": "fas fa-robot",
+                    "title": "AI Messenger & Assistant",
+                    "description": "A conversational AI that answers staff questions, provides troubleshooting guidance, recommends modules, and even generates marketing copy, emails, proposals, and social media posts on demand."
+                },
+                {
+                    "icon": "fas fa-file-invoice",
+                    "title": "AI Document Processing",
+                    "description": "Upload invoices, receipts, or expense documents \u2014 AI extracts supplier details, line items, amounts, and auto-fills your forms. Supports smart categorisation and batch processing."
+                },
+                {
+                    "icon": "fas fa-shield-alt",
+                    "title": "AI Fraud Detection",
+                    "description": "Automatically flag excessive voids, unusual discount patterns, refund anomalies, and suspicious employee activity. Real-time anomaly alerts keep your business protected around the clock."
+                },
+                {
+                    "icon": "fas fa-cubes",
+                    "title": "Smart Inventory & Reorder",
+                    "description": "AI-generated purchase orders based on stock levels, sales velocity, supplier lead times, and expiry predictions. Includes perishable-item forecasting and markdown scheduling to reduce waste."
+                },
+                {
+                    "icon": "fas fa-sitemap",
+                    "title": "Multi-Location AI Control",
+                    "description": "Manage stock, pricing, staffing, and analytics across unlimited branches. AI staff scheduling predicts busy hours per location and recommends optimal staffing levels to cut payroll costs."
+                },
+                {
+                    "icon": "fas fa-pen-fancy",
+                    "title": "AI Content & Marketing",
+                    "description": "Generate product descriptions, Google & Facebook ads, professional emails, business proposals, knowledge-base articles, and even product images \u2014 all AI-powered, in 50+ languages."
+                }
+            ]
+        }
+    }
+}

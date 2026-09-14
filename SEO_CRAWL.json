@@ -1,0 +1,847 @@
+[
+  {
+    "url": "https://retailmanerp.com/",
+    "status": 200,
+    "title": [
+      "Home | RetailMan ERP System"
+    ],
+    "headings": [
+      [
+        "1",
+        "One Intelligent Platform to Run, Forecast, and Scale Your Business"
+      ],
+      [
+        "2",
+        "40+ AI Capabilities, Built Into Every Workflow"
+      ],
+      [
+        "3",
+        "AI Business Intelligence"
+      ],
+      [
+        "3",
+        "AI Demand Forecasting"
+      ],
+      [
+        "3",
+        "AI Smart Pricing"
+      ],
+      [
+        "3",
+        "AI Customer Segmentation"
+      ],
+      [
+        "3",
+        "AI Messenger & Assistant"
+      ],
+      [
+        "3",
+        "AI Document Processing"
+      ],
+      [
+        "3",
+        "AI Fraud Detection"
+      ],
+      [
+        "3",
+        "Smart Inventory & Reorder"
+      ],
+      [
+        "3",
+        "Multi-Location AI Control"
+      ],
+      [
+        "3",
+        "AI Content & Marketing"
+      ],
+      [
+        "2",
+        "Industry-Tuned AI, Ready on Day One"
+      ],
+      [
+        "3",
+        "Departmental & General Stores"
+      ],
+      [
+        "3",
+        "Retail & Wholesale"
+      ],
+      [
+        "3",
+        "Pharmacy & Healthcare"
+      ],
+      [
+        "3",
+        "Liquor & Beverage"
+      ],
+      [
+        "3",
+        "Electronics & Mobile"
+      ],
+      [
+        "3",
+        "Repair & Service Shops"
+      ],
+      [
+        "2",
+        "Advanced Modules That Grow With You"
+      ],
+      [
+        "3",
+        "AI Assistance"
+      ],
+      [
+        "3",
+        "Manufacturing"
+      ],
+      [
+        "3",
+        "CRM"
+      ],
+      [
+        "3",
+        "HRM & Essentials"
+      ],
+      [
+        "3",
+        "Project Management"
+      ],
+      [
+        "3",
+        "Repair"
+      ],
+      [
+        "3",
+        "Accounting"
+      ],
+      [
+        "3",
+        "Warehouse"
+      ],
+      [
+        "3",
+        "WooCommerce & Shopify"
+      ],
+      [
+        "3",
+        "Asset Management"
+      ],
+      [
+        "3",
+        "Rental"
+      ],
+      [
+        "3",
+        "API Connector"
+      ],
+      [
+        "2",
+        "Measurable Outcomes, Powered by AI"
+      ],
+      [
+        "2",
+        "Businesses That Switched to AI Never Look Back"
+      ],
+      [
+        "3",
+        "Put RetailMan ERP System's AI to Work on Your Business"
+      ],
+      [
+        "2",
+        "Questions About Our AI-Powered Platform?"
+      ],
+      [
+        "2",
+        "Whatsapp"
+      ],
+      [
+        "2",
+        "Email"
+      ]
+    ],
+    "meta": [
+      "<meta name=\"description\" content=\"RetailMan ERP System — Complete ERP System with Hybrid Solution — an AI-powered cloud POS &amp; ERP with 40+ AI capabilities: demand forecasting, smart pricing, inventory intelligence, CRM, HR and real-time business analytics. Start free.\">"
+    ],
+    "missing_alt": 0,
+    "words": 1779
+  },
+  {
+    "url": "https://retailmanerp.com/c/blogs",
+    "status": 200,
+    "title": [
+      "Blog | RetailMan ERP System"
+    ],
+    "headings": [
+      [
+        "1",
+        "From Our Blog"
+      ],
+      [
+        "3",
+        "Fresh Content Coming Soon"
+      ],
+      [
+        "2",
+        "Whatsapp"
+      ],
+      [
+        "2",
+        "Email"
+      ]
+    ],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 58
+  },
+  {
+    "url": "https://retailmanerp.com/c/contact-us",
+    "status": 200,
+    "title": [
+      "Contact us | RetailMan ERP System"
+    ],
+    "headings": [
+      [
+        "2",
+        "Talk to a Specialist"
+      ],
+      [
+        "2",
+        "Whatsapp"
+      ],
+      [
+        "2",
+        "Email"
+      ]
+    ],
+    "meta": [
+      "<meta name=\"description\" content=\"\">"
+    ],
+    "missing_alt": 0,
+    "words": 100
+  },
+  {
+    "url": "https://retailmanerp.com/docs",
+    "status": 200,
+    "title": [
+      "Welcome &amp; First Steps - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 1488
+  },
+  {
+    "url": "https://retailmanerp.com/docs/applying-patch",
+    "status": 200,
+    "title": [
+      "Applying Patch - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 614
+  },
+  {
+    "url": "https://retailmanerp.com/docs/backup-guide",
+    "status": 200,
+    "title": [
+      "Backups &amp; Restore - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 1063
+  },
+  {
+    "url": "https://retailmanerp.com/docs/business-settings-guide",
+    "status": 200,
+    "title": [
+      "Set Up Your Business - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 2726
+  },
+  {
+    "url": "https://retailmanerp.com/docs/cash-register-guide",
+    "status": 200,
+    "title": [
+      "Opening &amp; Closing the Cash Register - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 1271
+  },
+  {
+    "url": "https://retailmanerp.com/docs/contact-superadmin",
+    "status": 200,
+    "title": [
+      "Documentation - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 310
+  },
+  {
+    "url": "https://retailmanerp.com/docs/contacts-guide",
+    "status": 200,
+    "title": [
+      "Customers &amp; Suppliers - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 1746
+  },
+  {
+    "url": "https://retailmanerp.com/docs/dashboard-guide",
+    "status": 200,
+    "title": [
+      "Understanding the Dashboard - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 1067
+  },
+  {
+    "url": "https://retailmanerp.com/docs/desktop-app-guide",
+    "status": 200,
+    "title": [
+      "RetailMan ERP System Desktop App - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 1411
+  },
+  {
+    "url": "https://retailmanerp.com/docs/disabling-registration",
+    "status": 200,
+    "title": [
+      "Disabling registration in RetailMan ERP System - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 607
+  },
+  {
+    "url": "https://retailmanerp.com/docs/discounts-rewards-guide",
+    "status": 200,
+    "title": [
+      "Discounts, Coupons &amp; Rewards - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 1491
+  },
+  {
+    "url": "https://retailmanerp.com/docs/enabling-https-ssl",
+    "status": 200,
+    "title": [
+      "Enabling HTTPS or SSL for RetailMan ERP System - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 614
+  },
+  {
+    "url": "https://retailmanerp.com/docs/expenses-guide",
+    "status": 200,
+    "title": [
+      "Recording Expenses - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 1109
+  },
+  {
+    "url": "https://retailmanerp.com/docs/getting-started",
+    "status": 200,
+    "title": [
+      "Welcome &amp; First Steps - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 1488
+  },
+  {
+    "url": "https://retailmanerp.com/docs/installing-application",
+    "status": 200,
+    "title": [
+      "Installing RetailMan ERP System - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 1587
+  },
+  {
+    "url": "https://retailmanerp.com/docs/locations-guide",
+    "status": 200,
+    "title": [
+      "Add Your Shops &amp; Branches - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 1267
+  },
+  {
+    "url": "https://retailmanerp.com/docs/migration-guide",
+    "status": 200,
+    "title": [
+      "Transfer Data to new domain &amp; Changing hosting (Migration) - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 831
+  },
+  {
+    "url": "https://retailmanerp.com/docs/module-accounting",
+    "status": 200,
+    "title": [
+      "Accounting - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 600
+  },
+  {
+    "url": "https://retailmanerp.com/docs/module-ai-assistance",
+    "status": 200,
+    "title": [
+      "AI Assistance - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 603
+  },
+  {
+    "url": "https://retailmanerp.com/docs/module-asset-guide",
+    "status": 200,
+    "title": [
+      "Asset Management User Guide - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 3196
+  },
+  {
+    "url": "https://retailmanerp.com/docs/module-connector",
+    "status": 200,
+    "title": [
+      "Connector - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 602
+  },
+  {
+    "url": "https://retailmanerp.com/docs/module-crm-guide",
+    "status": 200,
+    "title": [
+      "CRM User Guide - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 2904
+  },
+  {
+    "url": "https://retailmanerp.com/docs/module-essentials",
+    "status": 200,
+    "title": [
+      "Essentials - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 599
+  },
+  {
+    "url": "https://retailmanerp.com/docs/module-fieldforce-guide",
+    "status": 200,
+    "title": [
+      "Field Force User Guide - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 2397
+  },
+  {
+    "url": "https://retailmanerp.com/docs/module-foodpanda-overview",
+    "status": 200,
+    "title": [
+      "FoodPanda Integration - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 347
+  },
+  {
+    "url": "https://retailmanerp.com/docs/module-foodpanda-reference",
+    "status": 200,
+    "title": [
+      "FoodPanda Quick Reference - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 870
+  },
+  {
+    "url": "https://retailmanerp.com/docs/module-foodpanda-troubleshoot",
+    "status": 200,
+    "title": [
+      "FoodPanda Troubleshooting - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 986
+  },
+  {
+    "url": "https://retailmanerp.com/docs/module-gym-guide",
+    "status": 200,
+    "title": [
+      "Gym User Guide - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 4646
+  },
+  {
+    "url": "https://retailmanerp.com/docs/module-hms-guide",
+    "status": 200,
+    "title": [
+      "HMS User Guide - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 3443
+  },
+  {
+    "url": "https://retailmanerp.com/docs/module-installment-guide",
+    "status": 200,
+    "title": [
+      "Installment User Guide - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 4051
+  },
+  {
+    "url": "https://retailmanerp.com/docs/module-manufacturing",
+    "status": 200,
+    "title": [
+      "Manufacturing User Guide - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 5348
+  },
+  {
+    "url": "https://retailmanerp.com/docs/module-productcatalogue-guide",
+    "status": 200,
+    "title": [
+      "Product Catalogue User Guide - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 3187
+  },
+  {
+    "url": "https://retailmanerp.com/docs/module-project-guide",
+    "status": 200,
+    "title": [
+      "Project User Guide - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 3825
+  },
+  {
+    "url": "https://retailmanerp.com/docs/module-repair-guide",
+    "status": 200,
+    "title": [
+      "Repair User Guide - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 3850
+  },
+  {
+    "url": "https://retailmanerp.com/docs/module-shopify",
+    "status": 200,
+    "title": [
+      "Shopify - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 599
+  },
+  {
+    "url": "https://retailmanerp.com/docs/module-truckmate",
+    "status": 200,
+    "title": [
+      "Truckmate - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 597
+  },
+  {
+    "url": "https://retailmanerp.com/docs/module-woocommerce",
+    "status": 200,
+    "title": [
+      "WooCommerce - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 598
+  },
+  {
+    "url": "https://retailmanerp.com/docs/modules-overview",
+    "status": 200,
+    "title": [
+      "About Add-on Modules - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 1978
+  },
+  {
+    "url": "https://retailmanerp.com/docs/notification-templates-guide",
+    "status": 200,
+    "title": [
+      "Email &amp; SMS Templates - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 1334
+  },
+  {
+    "url": "https://retailmanerp.com/docs/payment-accounts-guide",
+    "status": 200,
+    "title": [
+      "Payment Accounts &amp; Bank - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 1006
+  },
+  {
+    "url": "https://retailmanerp.com/docs/products-guide",
+    "status": 200,
+    "title": [
+      "Adding &amp; Managing Products - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 2885
+  },
+  {
+    "url": "https://retailmanerp.com/docs/purchases-guide",
+    "status": 200,
+    "title": [
+      "Recording Purchases - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 1351
+  },
+  {
+    "url": "https://retailmanerp.com/docs/removing-public-url",
+    "status": 200,
+    "title": [
+      "Removing /public from URL - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 566
+  },
+  {
+    "url": "https://retailmanerp.com/docs/reports-guide",
+    "status": 200,
+    "title": [
+      "Reading Your Reports - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 1445
+  },
+  {
+    "url": "https://retailmanerp.com/docs/resetting-data",
+    "status": 200,
+    "title": [
+      "Resetting data, Deleting all data or transactions - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 616
+  },
+  {
+    "url": "https://retailmanerp.com/docs/restaurant-guide",
+    "status": 200,
+    "title": [
+      "Tables, Kitchen &amp; Service - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 1827
+  },
+  {
+    "url": "https://retailmanerp.com/docs/sales-pos-guide",
+    "status": 200,
+    "title": [
+      "Selling at the Point of Sale - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 1907
+  },
+  {
+    "url": "https://retailmanerp.com/docs/seo-audit-missing-page",
+    "status": 200,
+    "title": [
+      "Documentation - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 336
+  },
+  {
+    "url": "https://retailmanerp.com/docs/setup-business-details",
+    "status": 200,
+    "title": [
+      "Setup Your Business Details - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 620
+  },
+  {
+    "url": "https://retailmanerp.com/docs/stock-management-guide",
+    "status": 200,
+    "title": [
+      "Stock, Transfers &amp; Adjustments - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 1310
+  },
+  {
+    "url": "https://retailmanerp.com/docs/tax-invoice-guide",
+    "status": 200,
+    "title": [
+      "Tax Rates, Invoices &amp; Barcodes - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 1262
+  },
+  {
+    "url": "https://retailmanerp.com/docs/troubleshooting-invalid-license",
+    "status": 200,
+    "title": [
+      "[Troubleshooting ERROR] Invalid License - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 623
+  },
+  {
+    "url": "https://retailmanerp.com/docs/update-guide",
+    "status": 200,
+    "title": [
+      "[UPDATE GUIDE] Updating RetailMan ERP System - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 761
+  },
+  {
+    "url": "https://retailmanerp.com/docs/users-roles-guide",
+    "status": 200,
+    "title": [
+      "Users, Roles &amp; Permissions - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 1597
+  },
+  {
+    "url": "https://retailmanerp.com/docs/version-history",
+    "status": 200,
+    "title": [
+      "What&#039;s New - RetailMan ERP System Documentation"
+    ],
+    "headings": [],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 96608
+  },
+  {
+    "url": "https://retailmanerp.com/pricing",
+    "status": 200,
+    "title": [
+      "Pricing - RetailMan ERP System"
+    ],
+    "headings": [
+      [
+        "1",
+        "RetailMan ERP System"
+      ],
+      [
+        "1",
+        "Build Your Perfect Package"
+      ]
+    ],
+    "meta": [],
+    "missing_alt": 0,
+    "words": 1834
+  }
+]

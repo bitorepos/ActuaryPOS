@@ -1,0 +1,791 @@
+{
+  "sitemap_urls": [
+    "http://localhost:8765",
+    "http://localhost:8765/c/contact-us",
+    "http://localhost:8765/pricing",
+    "http://localhost:8765/docs/getting-started",
+    "http://localhost:8765/docs/installing-application",
+    "http://localhost:8765/docs/troubleshooting-invalid-license",
+    "http://localhost:8765/docs/update-guide",
+    "http://localhost:8765/docs/applying-patch",
+    "http://localhost:8765/docs/enabling-https-ssl",
+    "http://localhost:8765/docs/setup-business-details",
+    "http://localhost:8765/docs/disabling-registration",
+    "http://localhost:8765/docs/removing-public-url",
+    "http://localhost:8765/docs/migration-guide",
+    "http://localhost:8765/docs/resetting-data",
+    "http://localhost:8765/docs/business-settings-guide",
+    "http://localhost:8765/docs/locations-guide",
+    "http://localhost:8765/docs/dashboard-guide",
+    "http://localhost:8765/docs/contacts-guide",
+    "http://localhost:8765/docs/discounts-rewards-guide",
+    "http://localhost:8765/docs/products-guide",
+    "http://localhost:8765/docs/stock-management-guide",
+    "http://localhost:8765/docs/purchases-guide",
+    "http://localhost:8765/docs/sales-pos-guide",
+    "http://localhost:8765/docs/cash-register-guide",
+    "http://localhost:8765/docs/desktop-app-guide",
+    "http://localhost:8765/docs/payment-accounts-guide",
+    "http://localhost:8765/docs/expenses-guide",
+    "http://localhost:8765/docs/tax-invoice-guide",
+    "http://localhost:8765/docs/reports-guide",
+    "http://localhost:8765/docs/users-roles-guide",
+    "http://localhost:8765/docs/notification-templates-guide",
+    "http://localhost:8765/docs/backup-guide",
+    "http://localhost:8765/docs/restaurant-guide",
+    "http://localhost:8765/docs/modules-overview",
+    "http://localhost:8765/docs/module-essentials",
+    "http://localhost:8765/docs/module-accounting",
+    "http://localhost:8765/docs/module-asset-guide",
+    "http://localhost:8765/docs/module-connector",
+    "http://localhost:8765/docs/module-crm-guide",
+    "http://localhost:8765/docs/module-fieldforce-guide",
+    "http://localhost:8765/docs/module-foodpanda-reference",
+    "http://localhost:8765/docs/module-foodpanda-troubleshoot",
+    "http://localhost:8765/docs/module-gym-guide",
+    "http://localhost:8765/docs/module-hms-guide",
+    "http://localhost:8765/docs/module-installment-guide",
+    "http://localhost:8765/docs/module-manufacturing",
+    "http://localhost:8765/docs/module-productcatalogue-guide",
+    "http://localhost:8765/docs/module-project-guide",
+    "http://localhost:8765/docs/module-recruitment",
+    "http://localhost:8765/docs/module-repair-guide",
+    "http://localhost:8765/docs/module-shopify",
+    "http://localhost:8765/docs/module-truckmate",
+    "http://localhost:8765/docs/module-woocommerce",
+    "http://localhost:8765/docs/module-ai-assistance",
+    "http://localhost:8765/docs/version-history"
+  ],
+  "sitemap_has_lastmod": false,
+  "sitemap_unique": true,
+  "routes": [
+    {
+      "path": "/",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/c/blogs",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/c/blogs"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/c/contact-us",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/c/contact-us"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/getting-started"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs-fetch-page?slug=phase2-intentionally-missing",
+      "status": 404,
+      "canonical": [],
+      "title_count": 1,
+      "description_count": 0,
+      "h1_count": 0,
+      "redirect": null
+    },
+    {
+      "path": "/docs/applying-patch",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/applying-patch"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/backup-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/backup-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/business-settings-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/business-settings-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/cash-register-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/cash-register-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/contacts-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/contacts-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/currency-review",
+      "status": 404,
+      "canonical": [],
+      "title_count": 1,
+      "description_count": 0,
+      "h1_count": 0,
+      "redirect": null
+    },
+    {
+      "path": "/docs/dashboard-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/dashboard-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/deployment-checklist",
+      "status": 404,
+      "canonical": [],
+      "title_count": 1,
+      "description_count": 0,
+      "h1_count": 0,
+      "redirect": null
+    },
+    {
+      "path": "/docs/desktop-app-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/desktop-app-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/disabling-registration",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/disabling-registration"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/discounts-rewards-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/discounts-rewards-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/enabling-https-ssl",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/enabling-https-ssl"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/expenses-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/expenses-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/getting-started",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/getting-started"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/installing-application",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/installing-application"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/locations-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/locations-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/migration-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/migration-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/module-accounting",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/module-accounting"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/module-ai-assistance",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/module-ai-assistance"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/module-asset-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/module-asset-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/module-connector",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/module-connector"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/module-crm-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/module-crm-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/module-essentials",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/module-essentials"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/module-fieldforce-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/module-fieldforce-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/module-foodpanda-overview",
+      "status": 404,
+      "canonical": [],
+      "title_count": 1,
+      "description_count": 0,
+      "h1_count": 0,
+      "redirect": null
+    },
+    {
+      "path": "/docs/module-foodpanda-reference",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/module-foodpanda-reference"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/module-foodpanda-troubleshoot",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/module-foodpanda-troubleshoot"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/module-gym-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/module-gym-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/module-hms-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/module-hms-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/module-installment-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/module-installment-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/module-manufacturing",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/module-manufacturing"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/module-productcatalogue-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/module-productcatalogue-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/module-project-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/module-project-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/module-recruitment",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/module-recruitment"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/module-repair-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/module-repair-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/module-shopify",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/module-shopify"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/module-truckmate",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/module-truckmate"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/module-woocommerce",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/module-woocommerce"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/modules-overview",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/modules-overview"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/notification-templates-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/notification-templates-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/payment-accounts-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/payment-accounts-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/phase2-intentionally-missing",
+      "status": 404,
+      "canonical": [],
+      "title_count": 1,
+      "description_count": 0,
+      "h1_count": 0,
+      "redirect": null
+    },
+    {
+      "path": "/docs/products-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/products-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/purchases-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/purchases-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/removing-public-url",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/removing-public-url"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/reports-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/reports-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/resetting-data",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/resetting-data"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/restaurant-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/restaurant-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/sales-pos-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/sales-pos-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/sales-pos-guide?lang=en",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/sales-pos-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/sales-pos-guide?lang=ur",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/sales-pos-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/setup-business-details",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/setup-business-details"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/stock-management-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/stock-management-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/tax-invoice-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/tax-invoice-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/troubleshooting-invalid-license",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/troubleshooting-invalid-license"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/update-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/update-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/users-roles-guide",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/users-roles-guide"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/docs/version-history",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/docs/version-history"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0,
+      "rechecked_after_h1_fix": true
+    },
+    {
+      "path": "/features/pos",
+      "status": 404,
+      "canonical": [],
+      "title_count": 1,
+      "description_count": 0,
+      "h1_count": 0,
+      "redirect": null
+    },
+    {
+      "path": "/industries/retail",
+      "status": 404,
+      "canonical": [],
+      "title_count": 1,
+      "description_count": 0,
+      "h1_count": 0,
+      "redirect": null
+    },
+    {
+      "path": "/pricing",
+      "status": 200,
+      "canonical": [
+        "http://localhost:8765/pricing"
+      ],
+      "title_count": 1,
+      "description_count": 1,
+      "h1_count": 1,
+      "missing_alt": 0
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "canonical": [],
+      "title_count": 0,
+      "description_count": 0,
+      "h1_count": 0,
+      "text": "User-agent: *\nDisallow: /cms/\nDisallow: /docs-cms\nDisallow: /superadmin/\nDisallow: /documentation\nDisallow: /docs-search\nDisallow: /docs-fetch-page\nDisallow: /docs-switch-lang\nSitemap: http://localhost:8765/sitemap.xml\n"
+    }
+  ],
+  "ajax_checks": {
+    "english_session_reset": true,
+    "language_switch": "ur",
+    "rendered_html": true,
+    "js_syntax_exit_code": 0
+  }
+}

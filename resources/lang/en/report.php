@@ -36,6 +36,7 @@ return [
     'contacts.view' => 'View Supplier & Customer Report',
     'contact' => 'Contact',
     'stock_report' => 'Stock Quantity Report',
+    'product_list_report' => 'Product List',
     'stock_value_report' => 'Stock Value Report',
     'stock_value_report_analysis_comparisons' => 'Stock Value Report (Analysis/Comparisons)',
     'stock_reorder_report' => 'Stock Reorder Report',

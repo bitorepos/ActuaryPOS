@@ -3085,5 +3085,10 @@ return [
     'height' => 'Height',
     'controller_options' => 'Controller Options',
 
-    'request_received_reindex_shortly' => 'Request Received - Reindex will begin shortly'
+    'request_received_reindex_shortly' => 'Request Received - Reindex will begin shortly',
+    'download_all_ledgers_pdf' => 'Download All Ledgers PDF',
+    'downloading_ledgers' => 'Downloading Ledgers',
+    'download_complete' => 'Download Complete',
+    'download_cancelled' => 'Download Cancelled',
+    'no_contacts_found_for_download' => 'No contacts found matching current filters.'
 ];

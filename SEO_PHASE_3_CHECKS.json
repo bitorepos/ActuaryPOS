@@ -1,0 +1,109 @@
+{
+    "pages": {
+        "features": {
+            "rendered": true,
+            "canonical": "https://retailmanerp.com/features",
+            "h1": 1,
+            "schema": "valid"
+        },
+        "industries": {
+            "rendered": true,
+            "canonical": "https://retailmanerp.com/industries",
+            "h1": 1,
+            "schema": "valid"
+        },
+        "features/pos-software": {
+            "rendered": true,
+            "canonical": "https://retailmanerp.com/features/pos-software",
+            "h1": 1,
+            "schema": "valid"
+        },
+        "features/inventory-management": {
+            "rendered": true,
+            "canonical": "https://retailmanerp.com/features/inventory-management",
+            "h1": 1,
+            "schema": "valid"
+        },
+        "features/manufacturing": {
+            "rendered": true,
+            "canonical": "https://retailmanerp.com/features/manufacturing",
+            "h1": 1,
+            "schema": "valid"
+        },
+        "features/repair-management": {
+            "rendered": true,
+            "canonical": "https://retailmanerp.com/features/repair-management",
+            "h1": 1,
+            "schema": "valid"
+        },
+        "features/warehouse-management": {
+            "rendered": true,
+            "canonical": "https://retailmanerp.com/features/warehouse-management",
+            "h1": 1,
+            "schema": "valid"
+        },
+        "features/ecommerce-integrations": {
+            "rendered": true,
+            "canonical": "https://retailmanerp.com/features/ecommerce-integrations",
+            "h1": 1,
+            "schema": "valid"
+        },
+        "industries/retail-wholesale": {
+            "rendered": true,
+            "canonical": "https://retailmanerp.com/industries/retail-wholesale",
+            "h1": 1,
+            "schema": "valid"
+        },
+        "industries/pharmacy": {
+            "rendered": true,
+            "canonical": "https://retailmanerp.com/industries/pharmacy",
+            "h1": 1,
+            "schema": "valid"
+        },
+        "industries/electronics-mobile": {
+            "rendered": true,
+            "canonical": "https://retailmanerp.com/industries/electronics-mobile",
+            "h1": 1,
+            "schema": "valid"
+        },
+        "industries/repair-service": {
+            "rendered": true,
+            "canonical": "https://retailmanerp.com/industries/repair-service",
+            "h1": 1,
+            "schema": "valid"
+        },
+        "industries/manufacturing": {
+            "rendered": true,
+            "canonical": "https://retailmanerp.com/industries/manufacturing",
+            "h1": 1,
+            "schema": "valid"
+        },
+        "industries/warehouse-distribution": {
+            "rendered": true,
+            "canonical": "https://retailmanerp.com/industries/warehouse-distribution",
+            "h1": 1,
+            "schema": "valid"
+        },
+        "industries/ecommerce-retail": {
+            "rendered": true,
+            "canonical": "https://retailmanerp.com/industries/ecommerce-retail",
+            "h1": 1,
+            "schema": "valid"
+        },
+        "features/rental-management": {
+            "rendered": true,
+            "canonical": "https://retailmanerp.com/features/rental-management",
+            "h1": 1,
+            "schema": "valid"
+        },
+        "industries/rental": {
+            "rendered": true,
+            "canonical": "https://retailmanerp.com/industries/rental",
+            "h1": 1,
+            "schema": "valid"
+        }
+    },
+    "sitemap": "passed",
+    "unknown_slug": 404,
+    "documentation_links": "passed"
+}

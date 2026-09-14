@@ -151,6 +151,13 @@ img { max-width: 100%; height: auto; }
 .reveal-delay-3 { transition-delay: 0.3s; }
 .reveal-delay-4 { transition-delay: 0.4s; }
 
+@media (min-width: 992px) {
+    [sticky] {
+        position: sticky;
+        top: 30px;
+    }
+}
+
 /* ----------------------------- */
 /* TYPOGRAPHY                    */
 /* ----------------------------- */
