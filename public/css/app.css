@@ -3526,6 +3526,17 @@ html.dark-theme body.lockscreen > .wrapper {
   z-index: 12100 !important;
 }
 
+/* The POS numpad can be opened from a SweetAlert cash skim prompt. */
+#numpad_modal,
+#numpad_modal.show {
+  z-index: 12120 !important;
+}
+
+.modal-backdrop.numpad-modal-backdrop,
+.modal-backdrop.numpad-modal-backdrop.show {
+  z-index: 12110 !important;
+}
+
 /* --- Loader overlays --- */
 .loader,
 .loading {
@@ -3997,7 +4008,7 @@ a {
 .coa-type-group:nth-child(5n+5) > .coa-type-header:hover { box-shadow: 0 4px 14px rgba(194, 39, 74, .28); }
 
 .coa-type-body {
-  overflow: hidden;
+  overflow: visible;
   max-height: 5000px;
   transition: max-height .4s ease;
   padding-left: 12px;
@@ -4007,6 +4018,7 @@ a {
 }
 
 .coa-type-header.collapsed + .coa-type-body {
+  overflow: hidden;
   max-height: 0 !important;
   margin-top: 0;
 }
@@ -4058,7 +4070,7 @@ a {
 }
 
 .coa-subtype-body {
-  overflow: hidden;
+  overflow: visible;
   max-height: 5000px;
   transition: max-height .35s ease;
   margin-top: 6px;
@@ -4066,6 +4078,7 @@ a {
 }
 
 .coa-subtype-header.collapsed + .coa-subtype-body {
+  overflow: hidden;
   max-height: 0 !important;
   margin-top: 0;
 }
@@ -4784,7 +4797,28 @@ a {
 }
 
 #products_search_modal .dataTables_scrollBody {
+  overflow-x: auto !important;
+  overflow-y: auto !important;
   border-top: none !important;
+}
+
+#products_search_modal .dataTables_scrollBody::-webkit-scrollbar {
+  width: 11px;
+  height: 11px;
+}
+
+#products_search_modal .dataTables_scrollBody::-webkit-scrollbar-track {
+  background: #e9ecef;
+}
+
+#products_search_modal .dataTables_scrollBody::-webkit-scrollbar-thumb {
+  background: #9aa4ad;
+  border: 2px solid #e9ecef;
+  border-radius: 6px;
+}
+
+#products_search_modal .dataTables_scrollBody::-webkit-scrollbar-thumb:hover {
+  background: #707b85;
 }
 
 #products_search_modal .ps-table-wrapper table {
@@ -6178,6 +6212,41 @@ select.inline-select {
 #purchase_return_table>tfoot>tr>td {
   padding: 3px 5px !important;
   font-size: 0.85rem;
+}
+
+/* Direct Purchase Return quantity inputs match purchase entry slim rows */
+#purchase_return_product_table>tbody>tr>td .multi-input {
+  flex-wrap: nowrap;
+  min-width: 0;
+}
+
+#purchase_return_product_table>tbody>tr>td .multi-input .form-control,
+#purchase_return_product_table>tbody>tr>td .multi-input select {
+  min-width: 0;
+}
+
+#purchase_return_product_table>tbody>tr>td .input-number {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  max-height: 32px;
+  overflow: hidden;
+}
+
+#purchase_return_product_table>tbody>tr>td .input-number>br,
+#purchase_return_product_table>tbody>tr>td .input-group>br {
+  display: none !important;
+}
+
+#purchase_return_product_table>tbody>tr>td .multi-input .input_quantity,
+#purchase_return_product_table>tbody>tr>td .multi-input .product_quantity,
+#purchase_return_product_table>tbody>tr>td .multi-input .purchase_foc_quantity {
+  min-width: 50px;
+}
+
+#purchase_return_product_table>tbody>tr>td .product_quantity,
+#purchase_return_product_table>tbody>tr>td .purchase_foc_quantity {
+  max-width: 120px;
 }
 
 /* ── DataTable export buttons responsive fix ── */

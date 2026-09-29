@@ -1,0 +1,25 @@
+<?php
+
+return array (
+  'home' => 'Панель управления',
+  'welcome_message' => 'Добро пожаловать :name,',
+  'total_sell' => 'Общий объем продаж',
+  'total_cos' => 'Общая стоимость продажи',
+  'total_purchase' => 'Общая сумма покупки',
+  'invoice_due' => 'Счет к оплате',
+  'purchase_due' => 'Срок покупки',
+  'today' => 'Сегодня',
+  'this_week' => 'На этой неделе',
+  'this_month' => 'В этом месяце',
+  'this_fy' => 'Этот финансовый год',
+  'sells_last_30_days' => 'Продажи за последние 30 дней',
+  'sells_current_fy' => 'Продажи текущего финансового года',
+  'total_sells' => 'Общий объем продаж (:currency)',
+  'product_stock_alert' => 'Оповещение о наличии товара',
+  'payment_dues' => 'Платежные взносы',
+  'due_amount' => 'Сумма к оплате',
+  'stock_expiry_alert' => 'Оповещение об истечении срока действия запасов',
+  'todays_profit' => 'Сегодняшняя прибыль',
+  'sells_by_category' => 'Продажи по категориям',
+  'income_summary' => 'Сводка доходов',
+);

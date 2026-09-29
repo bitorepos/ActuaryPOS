@@ -1,6 +1,7 @@
 /node_modules
 /public/hot
 /public/storage
+/public/downloads
 /storage/*.key
 /storage/
 /vendor
@@ -40,3 +41,7 @@ run_print_server.sh
 .env.before_lerd
 .package-lock.json
 .package.json
+
+# Local AI instructions and generated working artifacts
+/AGENTS.md
+/ai_storage/

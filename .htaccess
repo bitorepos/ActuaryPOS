@@ -1,5 +1,8 @@
 RewriteEngine On
 
+    RewriteCond %{HTTP_HOST} ^www\.bitorepos\.com$ [NC]
+    RewriteRule ^.*$ https://bitorepos.com%{REQUEST_URI} [L,R=301]
+
     RewriteCond %{HTTP_HOST} !^(localhost|127\.0\.0\.1)$ [NC]
     RewriteCond %{HTTPS} !on
     RewriteRule ^.*$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

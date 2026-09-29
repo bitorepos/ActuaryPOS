@@ -1488,6 +1488,34 @@ html.dark-theme .pos-create-page .pos_product_div2 > .table-responsive #pos_tabl
     text-align: right;
     display: block;
 }
+#purchase_return_product_table > tbody > tr > td .multi-input {
+    flex-wrap: nowrap;
+    min-width: 0;
+}
+#purchase_return_product_table > tbody > tr > td .multi-input .form-control,
+#purchase_return_product_table > tbody > tr > td .multi-input select {
+    min-width: 0;
+}
+#purchase_return_product_table > tbody > tr > td .input-number {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    max-height: 32px;
+    overflow: hidden;
+}
+#purchase_return_product_table > tbody > tr > td .input-number > br,
+#purchase_return_product_table > tbody > tr > td .input-group > br {
+    display: none !important;
+}
+#purchase_return_product_table > tbody > tr > td .multi-input .input_quantity,
+#purchase_return_product_table > tbody > tr > td .multi-input .product_quantity,
+#purchase_return_product_table > tbody > tr > td .multi-input .purchase_foc_quantity {
+    min-width: 50px;
+}
+#purchase_return_product_table > tbody > tr > td .product_quantity,
+#purchase_return_product_table > tbody > tr > td .purchase_foc_quantity {
+    max-width: 120px;
+}
 
 /* ===== Compact row height: Sell Return table (BS5 theme) ===== */
 #sell_return_table > thead > tr > th {

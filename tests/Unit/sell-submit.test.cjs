@@ -17,7 +17,12 @@ function setup(options = {}) {
             length: items.length,
             each(fn) { items.forEach(item => fn.call(item)); return this; },
             find(s) { return collection(s, s === '.product_row' ? [{}] : []); },
-            val() { return selector === 'select#status' ? 'final' : 1; },
+            val() {
+                if (selector === 'select#status') return 'final';
+                if (selector === '#customer_id') return options.customerId === undefined ? 1 : options.customerId;
+                if (selector === '#default_customer_id') return options.defaultCustomerId || '';
+                return 1;
+            },
             attr(key) { return key === 'id' ? 'submit-sell' : '/pos/123'; },
             prop(key, value) {
                 if (value === undefined) return items[0]?.[key];
@@ -96,6 +101,27 @@ test('credit limit rejection remains enforced', async () => {
     await state.click();
     assert.equal(state.requests.length, 1);
     assert.equal(state.messages[0], 'Credit limit exceeded');
+    assert.ok(state.buttons.every(button => !button.disabled));
+});
+
+test('missing customer is reported before checking credit limit', async () => {
+    const state = setup({ customerId: '0' });
+    await state.click();
+    assert.equal(state.requests.length, 0);
+    assert.equal(state.messages[0], 'Please select a customer before saving a final sale.');
+    assert.ok(state.buttons.every(button => !button.disabled));
+});
+
+test('credit limit validation error uses server message', async () => {
+    const state = setup({
+        creditError: {
+            status: 422,
+            responseJSON: { errors: { contact_id: ['The selected customer is invalid.'] } },
+        },
+    });
+    await state.click();
+    assert.equal(state.requests.length, 1);
+    assert.equal(state.messages[0], 'The selected customer is invalid.');
     assert.ok(state.buttons.every(button => !button.disabled));
 });
 

@@ -28,7 +28,7 @@ class UnmanagedStockReindexTest extends TestCase
             'variations' => 'id INTEGER PRIMARY KEY, product_id INTEGER, product_variation_id INTEGER, sub_sku TEXT, default_purchase_price REAL, dpp_inc_tax REAL, deleted_at TEXT',
             'transactions' => 'id INTEGER PRIMARY KEY, business_id INTEGER, location_id INTEGER, type TEXT, status TEXT, return_parent_id INTEGER, transaction_date TEXT, created_by INTEGER, deleted_at TEXT',
             'transaction_sell_lines' => 'id INTEGER PRIMARY KEY, transaction_id INTEGER, product_id INTEGER, variation_id INTEGER, quantity REAL, foc_quantity REAL, quantity_returned REAL, cost_price REAL, deleted_at TEXT',
-            'purchase_lines' => 'id INTEGER PRIMARY KEY, transaction_id INTEGER, product_id INTEGER, variation_id INTEGER, purchase_price REAL, quantity REAL, quantity_sold REAL, quantity_adjusted REAL, quantity_returned REAL, mfg_quantity_used REAL, deleted_at TEXT',
+            'purchase_lines' => 'id INTEGER PRIMARY KEY, transaction_id INTEGER, product_id INTEGER, variation_id INTEGER, purchase_price REAL, quantity REAL, foc_quantity REAL, quantity_sold REAL, quantity_adjusted REAL, quantity_returned REAL, mfg_quantity_used REAL, deleted_at TEXT',
             'transaction_sell_lines_purchase_lines' => 'id INTEGER PRIMARY KEY, sell_line_id INTEGER, purchase_line_id INTEGER, quantity REAL, qty_returned REAL, deleted_at TEXT',
             'ledger_discount_lines' => 'id INTEGER PRIMARY KEY, purchase_line_id INTEGER, amount REAL, deleted_at TEXT',
             'variation_location_details' => 'id INTEGER PRIMARY KEY, variation_id INTEGER, location_id INTEGER, qty_available REAL',
@@ -102,6 +102,119 @@ class UnmanagedStockReindexTest extends TestCase
         (new ProductUtil)->reindexVariationQuantityForLocations(1, 1, 1, true);
         $this->assertSame(0.0, $this->amount(3));
         $this->assertSame(0.0, $this->amount(2, 'foc_cos'));
+    }
+
+    public function test_standalone_sale_return_uses_saved_historical_cost(): void
+    {
+        DB::table('purchase_lines')->insert([
+            'id' => 1,
+            'transaction_id' => 99,
+            'product_id' => 1,
+            'variation_id' => 1,
+            'purchase_price' => 90,
+            'quantity' => 10,
+            'quantity_sold' => 0,
+            'quantity_adjusted' => 0,
+            'quantity_returned' => 0,
+            'mfg_quantity_used' => 0,
+        ]);
+        DB::table('transactions')->insert([
+            'id' => 3,
+            'business_id' => 1,
+            'location_id' => 1,
+            'type' => 'sell_return',
+            'status' => 'final',
+            'return_parent_id' => 3,
+            'transaction_date' => '2026-09-02',
+            'created_by' => 1,
+        ]);
+        DB::table('transaction_sell_lines')->insert([
+            'id' => 31,
+            'transaction_id' => 3,
+            'product_id' => 1,
+            'variation_id' => 1,
+            'quantity' => 2,
+            'foc_quantity' => 0,
+            'quantity_returned' => 2,
+            'cost_price' => 25,
+        ]);
+
+        (new AccountingUtil)->saveMap('cos', 3, 1, 1, 20, 10);
+
+        $this->assertSame(50.0, $this->amount(3));
+    }
+
+    public function test_linked_return_keeps_gross_sale_cost_and_uses_original_purchase_cost(): void
+    {
+        DB::table('purchase_lines')->insert([
+            [
+                'id' => 1,
+                'transaction_id' => 90,
+                'product_id' => 1,
+                'variation_id' => 1,
+                'purchase_price' => 25,
+                'quantity' => 10,
+                'quantity_sold' => 2,
+                'quantity_adjusted' => 0,
+                'quantity_returned' => 0,
+                'mfg_quantity_used' => 0,
+            ],
+            [
+                'id' => 2,
+                'transaction_id' => 91,
+                'product_id' => 1,
+                'variation_id' => 1,
+                'purchase_price' => 90,
+                'quantity' => 10,
+                'quantity_sold' => 0,
+                'quantity_adjusted' => 0,
+                'quantity_returned' => 0,
+                'mfg_quantity_used' => 0,
+            ],
+        ]);
+        DB::table('transactions')->insert([
+            'id' => 3,
+            'business_id' => 1,
+            'location_id' => 1,
+            'type' => 'sell',
+            'status' => 'final',
+            'transaction_date' => '2026-09-01',
+            'created_by' => 1,
+        ]);
+        DB::table('transactions')->insert([
+            'id' => 4,
+            'business_id' => 1,
+            'location_id' => 1,
+            'type' => 'sell_return',
+            'status' => 'final',
+            'return_parent_id' => 3,
+            'transaction_date' => '2026-09-02',
+            'created_by' => 1,
+        ]);
+        DB::table('transaction_sell_lines')->insert([
+            'id' => 31,
+            'transaction_id' => 3,
+            'product_id' => 1,
+            'variation_id' => 1,
+            'quantity' => 2,
+            'foc_quantity' => 0,
+            'quantity_returned' => 1,
+            'cost_price' => 0,
+        ]);
+        DB::table('transaction_sell_lines_purchase_lines')->insert([
+            'id' => 1,
+            'sell_line_id' => 31,
+            'purchase_line_id' => 1,
+            'quantity' => 2,
+            'qty_returned' => 1,
+        ]);
+
+        $accounting = new AccountingUtil;
+        $accounting->saveMap('cos', 3, 1, 1, 20, 10);
+        $accounting->saveMap('cos', 4, 1, 1, 20, 10);
+
+        $this->assertSame(50.0, $this->amount(3));
+        $this->assertSame(25.0, $this->amount(4));
     }
 
     /** @dataProvider globalModes */

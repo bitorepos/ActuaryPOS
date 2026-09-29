@@ -73,9 +73,11 @@ class AccountingRemapAllJobTest extends TestCase
             ->getMock();
 
         $callOrder = [];
+        $mappingTypes = [];
         $remapUtil->method('remapType')
-            ->willReturnCallback(function ($type, $business_id, $user_id, $options) use (&$callOrder) {
+            ->willReturnCallback(function ($type, $business_id, $user_id, $options) use (&$callOrder, &$mappingTypes) {
                 $callOrder[] = $type;
+                $mappingTypes[] = $options['mapping_type'] ?? null;
                 return 2; // simulated 2 records remapped per type
             });
 
@@ -98,6 +100,8 @@ class AccountingRemapAllJobTest extends TestCase
         // Opening balance first, Contact payments last
         $this->assertSame('opening_balance', $callOrder[0]);
         $this->assertSame('contact_payment', end($callOrder));
+        $this->assertNotContains('unmapped', $mappingTypes);
+        $this->assertSame(['all'], array_values(array_unique($mappingTypes)));
     }
 
     public function test_remap_all_missing_aborts_early_when_cancellation_requested(): void
@@ -184,7 +188,7 @@ class AccountingRemapAllJobTest extends TestCase
         $data = json_decode($notification->data, true);
         $this->assertSame('completed', $data['status']);
         $this->assertSame(100, $data['percent']);
-        $this->assertStringContainsString('5 unmapped record(s) processed', $data['msg']);
+        $this->assertStringContainsString('5 record(s) processed', $data['msg']);
 
         // Verify lock is released
         $this->assertNull(Cache::get($lockKey));

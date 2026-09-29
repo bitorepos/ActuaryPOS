@@ -4,6 +4,17 @@
 
 ---
 
+### Module: Reports - Sidebar Menu Order
+
+#### What Users Will See
+- **Daily Closing Report now appears directly before Activity Log under Admin Reports.** This makes the report easier to find near the end of the Admin Reports list.
+
+#### Guide
+- **Go to Reports > Admin Reports.**
+- **Open Daily Closing Report directly above Activity Log.**
+
+---
+
 ### Module: FBR Digital Invoicing - Invoice Cancellation Marking
 
 #### What Users Can Do

@@ -1,0 +1,26 @@
+<?php
+
+return array (
+  'stock_adjustment' => 'Корректировка запасов',
+  'stock_adjustments' => 'Корректировки запасов',
+  'list' => 'Список корректировок запасов',
+  'add' => 'Добавить корректировку запасов',
+  'all_stock_adjustments' => 'Все корректировки акций',
+  'search_product' => 'Поиск продуктов для корректировки запасов',
+  'search_product_trasfer' => 'Поиск продуктов для перемещения запасов',
+  'adjustment_type' => 'Тип регулировки',
+  'normal' => 'Нормальный',
+  'abnormal' => 'ненормальный',
+  'total_amount' => 'Общая сумма',
+  'total_amount_recovered' => 'Общая сумма возмещения',
+  'reason_for_stock_adjustment' => 'Причина',
+  'stock_adjustment_added_successfully' => 'Корректировка запасов успешно добавлена',
+  'search_products' => 'Поиск продуктов',
+  'delete_success' => 'Корректировка запаса успешно удалена',
+  'view_details' => 'Просмотр сведений о корректировке запасов',
+  'stock_adjustment_payment' => 'Регулировка запаса (восстановление)',
+  'stock_take' => 'Подведение итогов',
+  'on_hand' => 'В наличии',
+  'counted' => 'Подсчитано',
+  'difference' => 'Разница',
+);

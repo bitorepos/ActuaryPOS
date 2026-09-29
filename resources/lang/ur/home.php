@@ -1,0 +1,25 @@
+<?php
+
+return array (
+  'home' => 'ڈیش بورڈ',
+  'welcome_message' => 'خوش آمدید :name,',
+  'total_sell' => 'کل فروخت',
+  'total_cos' => 'کل فروخت کی لاگت',
+  'total_purchase' => 'کل خریداری',
+  'invoice_due' => 'انویائس واجب الادا',
+  'purchase_due' => 'خریداری واجب الادا',
+  'today' => 'آج',
+  'this_week' => 'اس ہفتے',
+  'this_month' => 'اس مہینے',
+  'this_fy' => 'اس مالی سال',
+  'sells_last_30_days' => 'پچھلے 30 دنوں کی فروخت',
+  'sells_current_fy' => 'موجودہ مالی سال کی فروخت',
+  'total_sells' => 'کل فروخت (:currency)',
+  'product_stock_alert' => 'مصنوعات اسٹاک الرٹ',
+  'payment_dues' => 'ادائیگی کی واجبات',
+  'due_amount' => 'واجب الادا رقم',
+  'stock_expiry_alert' => 'اسٹاک میعاد ختم ہونے کی الرٹ',
+  'todays_profit' => 'آج کا منافع',
+  'sells_by_category' => 'زمرہ وار فروخت',
+  'income_summary' => 'آمدنی کا خلاصہ',
+);

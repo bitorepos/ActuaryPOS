@@ -1,0 +1,26 @@
+<?php
+
+return array (
+  'stock_adjustment' => 'اسٹاک کی ایڈجسٹمنٹ',
+  'stock_adjustments' => 'اسٹاک ایڈجسٹمنٹس',
+  'list' => 'اسٹاک ایڈجسٹمنٹس کی فہرست',
+  'add' => 'اسٹاک ایڈجسٹمنٹ شامل کریں',
+  'all_stock_adjustments' => 'تمام اسٹاک ایڈجسٹمنٹس',
+  'search_product' => 'اسٹاک ایڈجسٹمنٹ کے لیے مصنوعات تلاش کریں',
+  'search_product_trasfer' => 'اسٹاک ٹرانسفر کے لیے مصنوعات تلاش کریں',
+  'adjustment_type' => 'ایڈجسٹمنٹ کی قسم',
+  'normal' => 'نارمل',
+  'abnormal' => 'غیر معمولی',
+  'total_amount' => 'کل رقم',
+  'total_amount_recovered' => 'کل وصول شدہ رقم',
+  'reason_for_stock_adjustment' => 'وجہ',
+  'stock_adjustment_added_successfully' => 'اسٹاک ایڈجسٹمنٹ کامیابی کے ساتھ شامل کی گئی',
+  'search_products' => 'مصنوعات تلاش کریں',
+  'delete_success' => 'اسٹاک ایڈجسٹمنٹ کامیابی کے ساتھ حذف کر دی گئی',
+  'view_details' => 'اسٹاک ایڈجسٹمنٹ کی تفصیلات دیکھیں',
+  'stock_adjustment_payment' => 'اسٹاک ایڈجسٹ (ریکوری)',
+  'stock_take' => 'اسٹاک کا جائزہ',
+  'on_hand' => 'ہاتھ میں',
+  'counted' => 'گن لیا گیا',
+  'difference' => 'فرق',
+);

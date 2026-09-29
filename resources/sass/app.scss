@@ -71,6 +71,17 @@
   z-index: 12100 !important;
 }
 
+// The POS numpad can be opened from a SweetAlert cash skim prompt.
+#numpad_modal,
+#numpad_modal.show {
+  z-index: 12120 !important;
+}
+
+.modal-backdrop.numpad-modal-backdrop,
+.modal-backdrop.numpad-modal-backdrop.show {
+  z-index: 12110 !important;
+}
+
 @media (min-width: 992px) {
   #todays_profit_modal .todays-profit-modal-dialog {
     width: 1300px !important;
