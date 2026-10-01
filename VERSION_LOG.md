@@ -1,5 +1,37 @@
 # Version Log
 
+## 29 September 2026 - Print the Sales Order Report on A4
+
+The **Sales Order Report** can now be printed from both the **Summary** and **Details** tabs.
+
+The printed report follows the filters selected on the screen, including the business location, customer, sales order status, delivery note status, date range, and time range. The preview also provides options to print on A4 paper, save a PDF, or export the report to Excel.
+
+Customer names are now shown only once when the business name and contact name are the same. Report dates and times are also displayed clearly without unwanted formatting text.
+
+To print the report:
+
+1. Open **Reports > Sales Reports > Sales Order Report**.
+2. Select the required filters and date range.
+3. Open the **Summary** or **Details** tab.
+4. Select **Print A4**.
+5. Review the report, then choose **Print A4**, **PDF**, or **Export to Excel**.
+
+## 29 September 2026 - Prevent Changes to Paid Sale Returns
+
+Security roles now include a **Disable Update Sale Return when Paid** permission.
+
+When this permission is selected for a role, users assigned to that role cannot edit a sale return after it has been fully paid. The **Edit** option is no longer shown for the paid sale return. Unpaid and partly paid sale returns can still be edited if the user has the normal sale return editing permission.
+
+Administrators can still update paid sale returns when a correction is required.
+
+To prevent a role from changing paid sale returns:
+
+1. Open **User Management > Security Roles**.
+2. Create a role or edit an existing role.
+3. Open the **Sale Return** permissions section.
+4. Select **Disable Update Sale Return when Paid**.
+5. Save the role.
+
 ## 28 September 2026 - Clearer Purchase Invoice Tax Information
 
 The **Purchase Invoices Report** now gives a clearer tax breakdown in the **Summary** and **Detailed** tabs.
@@ -107,6 +139,20 @@ When the ProSurface POS Hardware Service is connected and a receipt printer is s
 
 If the service or selected printer is unavailable, the normal browser print window remains available as a backup.
 
+### Better use of the page when printing from a browser
+
+When the browser print window is used, Slim receipts now adjust to the width of the paper selected in the browser. Receipt details, product rows, totals, bank details, and terms and conditions are no longer restricted to a narrow strip on the left side of an A4 page.
+
+Direct thermal printing continues to use the compact 80 mm receipt design. This keeps thermal receipts suitable for receipt printers while making browser-printed and PDF copies easier to read on larger paper.
+
+To print from the browser:
+
+1. Complete the sale and wait for the browser print window.
+2. Select the required printer or **Save as PDF**.
+3. Select the required paper size and orientation under the browser print settings.
+4. Check that the preview uses the available page width.
+5. Select **Print** or **Save**.
+
 ### Product-based KOT printers
 
 Kitchen and bar printers are now selected from the **Printers** page and assigned to products. KOT printer choices are no longer entered on the Hardware Setup page.
@@ -149,6 +195,14 @@ When the Hardware Service and label printer are ready, labels are sent directly 
 The printer create and edit pages can show printers detected on the current Windows computer. Select the exact printer name used by Windows to avoid sending a receipt, KOT, or label to the wrong device.
 
 Printer names can still be entered manually when using a shared printer, a network printer, or an existing printing setup that is not listed.
+
+### Printer choices stay with the correct website and workstation
+
+Installing the ProSurface POS Hardware Service makes the printers on that computer available for selection, but it does not select or activate them automatically.
+
+Printer choices from one website or business are not copied into another website when the same computer is used to sign in. A receipt or label printer is used only after it has been selected and saved for that workstation on the current website.
+
+If no Hardware Setup has been saved for the current website and workstation, sales continue to use normal browser printing. Simply signing in or opening the Hardware Setup page does not turn on silent printing.
 
 ## 26 September 2026 - Easier F10 Product Search
 

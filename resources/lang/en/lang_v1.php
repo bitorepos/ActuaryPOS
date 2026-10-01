@@ -2154,6 +2154,7 @@ return [
     'access_all_direct_sell_return' => 'Access all direct sale returns',
     'access_own_direct_sell_return' => 'Access own direct sale returns',
     'edit_sell_return' => 'Edit sale return',
+    'disable_update_sell_return_when_paid' => 'Disable Update Sale Return when Paid',
     'delete_sell_return' => 'Delete sale return',
     'add_sell_return_payment' => 'Add sale return payment (SRP)',
     'edit_sell_return_payment' => 'Edit sale return payment (SRP)',
