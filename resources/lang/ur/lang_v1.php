@@ -875,7 +875,7 @@ return array (
   'collision_duplicates_renumbered' => 'ٹکراؤ کی نقول کو نئے انوائس نمبروں کے ساتھ دوبارہ نمبر دیا گیا',
   'duplicate_invoice_numbers_renumbered' => 'نقل انوائس نمبروں کو فروخت کو حذف کیے بغیر دوبارہ نمبر دیا گیا',
   'no_duplicates_found' => 'کوئی نقول نہیں ملی',
-  'duplicates_skipped' => 'نقل کو چھوڑ دیا گیا (واپسیاں/FBR موجود ہیں)',
+  'duplicates_skipped' => 'نقل کو چھوڑ دیا گیا',
   'modules' => 'ماڈیولز',
   'theme' => 'تھیم',
   'account' => 'ادائیگی کے اکاؤنٹس',

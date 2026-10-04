@@ -33,6 +33,12 @@ Shows your overall business performance — are you making money or losing it?
 
 - **Total Sales** minus **Cost of Goods Sold** = **Gross Profit**
 - **Gross Profit** minus **Expenses** = **Net Profit**
+- When enabled in sales settings, sale-return discount and sale-return discount 2 totals appear in the right-hand summary.
+- Payroll, HMS, and Production Cost totals appear only when the business package includes the corresponding module.
+- Expense, stock adjustment/recovery, transfer shipping, and type-of-service totals appear when their modules are enabled in Business Settings > Modules, or when there is a report-period amount greater than zero.
+- Shipping, additional-expense, invoice-discount, ledger-discount, and reward totals appear when their related Business Settings options are enabled, or when there is a report-period amount greater than zero.
+- Ledger Discount 2 and Ledger Discount 3 totals appear separately for suppliers and customers when enabled, or when the report-period amount is greater than zero, using the labels configured in Contact settings.
+- Total Sell Round Off appears when Amount Rounding Method is enabled, or when the report-period round-off amount is nonzero.
 
 📸 *[Screenshot: The Profit & Loss report showing totals and net profit]*
 

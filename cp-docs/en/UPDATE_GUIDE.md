@@ -37,6 +37,8 @@ Do not continue until these backups are complete.
 9. If required, restore or verify the `public/uploads` folder from your backup.
 10. Test the main workflows before allowing users to continue daily work.
 
+The update process also refreshes Composer's optimized autoloader when Composer is available in the server environment. If Composer is unavailable or the refresh fails, the application logs a warning and continues the Laravel update.
+
 ---
 
 ## If The Update Fails

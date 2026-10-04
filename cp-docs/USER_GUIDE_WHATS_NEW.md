@@ -1,7 +1,24 @@
 # What's New - User Guide
-**Updated:** 2026-08-23
+**Updated:** 2026-09-30
 
 This guide explains system changes in simple user language. It only includes what users can see, do, check, print, export, or manage in the system.
+
+---
+
+## Version 8.98.5 - 2026-09-30
+
+### Barcode Labels - Set Label Quantity for All Products
+
+What users can do now:
+- Users can click the No. of labels column heading to set one label quantity for every product currently in the list.
+- The quantity dialog starts at 1 and the total label count updates after applying the value.
+
+How to use or check it:
+- Go to Products > Print Labels.
+- Add the products to the label list.
+- Click the No. of labels column heading.
+- Enter a whole number of 1 or more, then click Apply.
+- Check the quantity on each product row and the total label count.
 
 ---
 

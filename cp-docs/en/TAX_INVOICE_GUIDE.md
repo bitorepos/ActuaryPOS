@@ -114,6 +114,40 @@ Configure how product barcode labels are printed.
 
 📸 *[Screenshot: The Barcode Settings page with label size options]*
 
+### Barcode Label Printing
+
+#### 1. Module Overview
+Barcode labels show product details and barcodes in the selected label format.
+
+#### 2. Purpose of the Feature
+Print labels for product identification and shelf or package labelling.
+
+#### 3. User Access / Permissions
+Users need access to the Labels screen and permission to view the products being labelled.
+
+#### 4. Step-by-Step Usage Instructions
+1. Open **Products → Print Labels**.
+2. Add the products and choose the barcode format or label design.
+3. Click **Preview Labels**, then click **Print Labels** in the preview window.
+4. If the Hardware Service is unavailable or the printer rejects the job, the browser print dialog opens. Select the label printer and confirm the paper size and scale before printing.
+
+#### 5. Field Descriptions
+| Field | Type | Description |
+|---|---|---|
+| Barcode format or label design | Selection | Determines the label size and product information shown. |
+| Print Labels | Button | Sends labels to the Hardware Service, or opens the browser print dialog when the service is unavailable. |
+| Printer | Browser setting | Select the label printer in the browser dialog when using browser-based printing. |
+
+#### 6. Business Logic / Workflow
+- The Hardware Service's configured label printer is used for direct printing when available; if its job fails, the browser print dialog is available as fallback.
+- Selecting a label printer enables direct printing through the Hardware Service; leaving it as Browser based opens the browser print dialog.
+- Continuous-feed labels calculate their page length from the label rows in the print job.
+- Sticker widths and column gaps must fit within the configured paper width.
+
+#### 7. Notes or Important Considerations
+- Check the label printer, paper size, and scale in the browser dialog before printing.
+- Browser-based printing requires a user to confirm the print dialog.
+
 ---
 
 ## Part 4: Receipt Printers

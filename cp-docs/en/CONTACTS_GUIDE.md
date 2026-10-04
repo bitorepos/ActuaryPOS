@@ -137,7 +137,7 @@ If you have a large list of contacts in a spreadsheet, you can import them all a
 
 📸 *[Screenshot: The import contacts page with the file upload area]*
 
-> ⚠️ **Important:** Make sure your file matches the template format exactly. Extra columns or wrong headers may cause errors.
+> ⚠️ **Important:** Keep contact data in the columns shown in the template. The first 33 columns are imported; any additional columns are ignored. Customer groups named in the **Customer Group** column are created automatically if they do not already exist for your business. New groups start with a 0% discount.
 
 ---
 

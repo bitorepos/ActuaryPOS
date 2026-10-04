@@ -876,7 +876,7 @@ return array (
   'collision_duplicates_renumbered' => 'дубликаты коллизий перенумерованы новыми номерами счетов-фактур',
   'duplicate_invoice_numbers_renumbered' => 'повторяющиеся номера счетов-фактур перенумерованы без удаления продаж',
   'no_duplicates_found' => 'Дубликатов не обнаружено',
-  'duplicates_skipped' => 'дубликаты пропущены (есть возвраты/FBR)',
+  'duplicates_skipped' => 'дубликаты пропущены',
   'modules' => 'Модули',
   'theme' => 'Тема',
   'account' => 'Платежные счета',

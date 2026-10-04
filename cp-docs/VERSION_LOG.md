@@ -1,3 +1,237 @@
+## Version 8.98.8
+
+**Release Date:** 2026-10-04
+
+### Module: POS - Sale Quantity
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Negative product quantities are now rejected when **Allow Sale return with Negative quantity** is turned off.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+## Version 8.98.7
+
+**Release Date:** 2026-10-02
+
+### Module: Software Update
+
+#### New Features
+- None.
+
+#### Improvements
+- The update process refreshes Composer's optimized autoloader when available. If Composer is unavailable or the refresh fails, the updater logs a warning and continues instead of aborting the update.
+
+#### Bug Fixes
+- Software sync now reports permission failures while replacing checkout files as local file-access or locking issues instead of incorrectly reporting GitHub access denial.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: Superadmin - Business Management
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Superadmin business pages now render safely when no business currency is stored in the session, instead of failing on missing currency details.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: POS - Product Search
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- The **New** product form opened from F10 Product Search now appears above the search modal instead of being obscured behind it.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: Contacts - Import
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Contact imports now tolerate spreadsheet rows with extra columns or omitted trailing blanks, using the first 33 template fields.
+- Customer groups named in imported customer rows are now created for the business when they do not already exist.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: Sales - Duplicate Transactions
+
+#### New Features
+- None.
+
+#### Improvements
+- Fix Duplicates now removes later copies only when the sale date and time, customer, location, total, and sale-line products, variations, quantities, and prices match. Different FBR invoice numbers do not prevent exact duplicate cleanup.
+
+#### Bug Fixes
+- Sales with different item details are retained and receive a new invoice number when their invoice number collides.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+## Version 8.98.5
+
+**Release Date:** 2026-09-30
+
+### Module: POS Receipts - FBR/PRA Printing
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- POS receipts across the Classic, Slim, and POS Bill designs print the submitted FBR/PRA invoice number and configured tax QR code at the bottom of finalized invoices.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: POS - Hardware Setup
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- POS receipts printed through the Windows Hardware Service now open the cash drawer when enabled for the workstation, using the configured drawer pin and existing user permission.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: Barcode Labels
+
+#### New Features
+- Clicking the No. of labels column heading opens a bulk editor to set the label quantity for every listed product.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Printer roles left as Browser based no longer fall through to saved or default Windows printers.
+- Continuous-feed barcode labels use a calculated nonzero page height, allowing multi-column roll layouts to print through the Hardware Service.
+- Label printing opens the browser print dialog if the Hardware Service accepts a job but the printer fails it.
+- Label jobs use the Hardware Service's configured label printer before the workstation selection to prevent duplicate feed from queue retries.
+- Silent label jobs now pass their computed page dimensions to WebView2, and barcode profiles cannot save a row wider than the configured paper.
+
+#### UI / UX Changes
+- Hardware setup printer dropdowns now identify the unassigned option as Browser based.
+
+#### Technical Updates
+- None.
+
+### Module: Delivery Notes
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Printed delivery notes now show product units in a separate Unit column before Quantity.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: Dashboard
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- The Total Sale Return dashboard card now shows the full return total instead of the unpaid balance.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: Reports
+
+#### New Features
+- None.
+
+#### Improvements
+- Sale Invoices Summary now shows the total for the Total (exc. tax) column in its footer.
+- Profit & Loss uses the discount labels configured in Business Settings > Sales for sale discounts on the left and sale-return discounts on the right.
+- Profit & Loss shows shipping, additional-expense, invoice-discount, ledger-discount, and reward totals when the related Business Settings option is enabled, or when the report-period amount is greater than zero.
+- Profit & Loss shows expense, stock adjustment/recovery, transfer shipping, and type-of-service totals when their modules are enabled in Business Settings > Modules, or when the report-period amount is greater than zero.
+- Profit & Loss continues to show a related total after its setting or module is disabled when the report-period amount is greater than zero.
+- Profit & Loss shows Total Sell Round Off when Amount Rounding Method is enabled, or when the report-period round-off amount is nonzero.
+
+#### Bug Fixes
+- Product-by-Sales invoice totals now subtract sell returns, matching the net Total Including Tax in Sales & Returns.
+- Product-by-Sales invoice discount totals now subtract linked sales-return discounts, matching the net discount in Sales & Returns.
+- Profit & Loss now shows sale discounts net of sales-return discounts.
+- Standard Profit & Loss now uses the accounting report's ledger-based Sales, Sale Returns, and COGS balances, and shows return COGS separately.
+- Profit & Loss now shows Payroll and HMS totals only when the business package includes the corresponding module.
+- Profit & Loss now shows Total Production Cost only when the business package includes the Manufacturing module.
+- Profit & Loss hides supplier and customer ledger-discount totals when Disable Ledger Discount is enabled and the related report-period amount is zero.
+- Profit & Loss shows separate supplier and customer totals for Ledger Discount 2 and Ledger Discount 3 when enabled, or when a related report-period amount is greater than zero, using each configured label.
+
+#### UI / UX Changes
+- The standard Profit & Loss report shows Total Sale Return directly below Total Cost of Sale in the left-hand summary table.
+- Total Cost of Sale Returns appears in the right-hand summary table, and both return amounts display without a minus sign.
+
+#### Technical Updates
+- None.
+
 ## Version 8.96.6
 
 **Release Date:** 2026-09-04

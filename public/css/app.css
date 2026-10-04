@@ -3425,11 +3425,15 @@ table.table-text-center th {
 
 .modal.modal-stacked,
 .modal.modal-stacked.show {
-  z-index: 12010 !important;
+  z-index: 12020 !important;
 }
 
 .modal-backdrop~.modal-backdrop {
   z-index: 12005 !important;
+}
+
+.modal-backdrop.modal-stacked-backdrop {
+  z-index: 12015 !important;
 }
 
 /* When modal is open, ensure sidebar & header stay behind.
