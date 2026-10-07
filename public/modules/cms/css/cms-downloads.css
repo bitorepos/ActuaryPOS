@@ -1,0 +1,218 @@
+.cms-public-downloads {
+    position: relative;
+    z-index: 1;
+    padding: 3.5rem 0;
+    background: #f7fafc;
+}
+
+.cms-public-downloads__header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.cms-public-downloads__heading-icon {
+    display: inline-flex;
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    border-radius: 0.75rem;
+    background: #e8f5ee;
+    color: #23864d;
+    font-size: 1.25rem;
+}
+
+.cms-public-downloads__header h2 {
+    margin: 0;
+    color: #243247;
+    font-size: clamp(1.35rem, 2vw, 1.75rem);
+    font-weight: 700;
+}
+
+.cms-public-downloads__header p {
+    margin: 0.25rem 0 0;
+    color: #64748b;
+}
+
+.cms-public-downloads__group + .cms-public-downloads__group {
+    margin-top: 2rem;
+}
+
+.cms-public-downloads__group h3 {
+    margin: 0 0 1rem;
+    color: #475569;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.cms-public-downloads__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+    gap: 1rem;
+}
+
+.cms-public-downloads__button {
+    position: relative;
+    display: flex;
+    min-height: 4.5rem;
+    align-items: center;
+    gap: 0.875rem;
+    overflow: hidden;
+    padding: 0.75rem 1rem;
+    border: 2px solid transparent;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.cms-public-downloads__button:hover {
+    transform: translateY(-2px);
+}
+
+.cms-public-downloads__button:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: 3px;
+}
+
+.cms-public-downloads__button-icon {
+    display: inline-flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    border-radius: 0.625rem;
+    font-size: 1.25rem;
+}
+
+.cms-public-downloads__button-text {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    line-height: 1.25;
+}
+
+.cms-public-downloads__eyebrow {
+    font-size: 0.6875rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.cms-public-downloads__label {
+    overflow-wrap: anywhere;
+    font-size: 0.9375rem;
+    font-weight: 700;
+}
+
+.cms-public-downloads__notice {
+    display: flex;
+    grid-column: 1 / -1;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 1rem 1.125rem;
+    border: 1px solid #cbdde8;
+    border-radius: 0.75rem;
+    background: #fff;
+    color: #475569;
+    line-height: 1.6;
+}
+
+.cms-public-downloads__notice i {
+    margin-top: 0.2rem;
+    color: #23864d;
+}
+
+.cms-public-downloads__button--android {
+    background: #2fb96f;
+    box-shadow: 0 3px 12px rgba(47, 185, 111, 0.22);
+    color: #fff;
+}
+
+.cms-public-downloads__button--android .cms-public-downloads__button-icon {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.cms-public-downloads__button--windows {
+    background: #0875c9;
+    box-shadow: 0 3px 12px rgba(8, 117, 201, 0.22);
+    color: #fff;
+}
+
+.cms-public-downloads__button--windows .cms-public-downloads__button-icon {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.cms-public-downloads__button--android-alt {
+    border-color: #2fb96f;
+    background: #fff;
+    color: #23864d;
+}
+
+.cms-public-downloads__button--android-alt .cms-public-downloads__button-icon {
+    background: #e8f5ee;
+}
+
+.cms-public-downloads__button--ios {
+    background: #242424;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.18);
+    color: #fff;
+}
+
+.cms-public-downloads__button--ios .cms-public-downloads__button-icon {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.cms-public-downloads__button--ios-alt {
+    border-color: #343a40;
+    background: #fff;
+    color: #343a40;
+}
+
+.cms-public-downloads__button--ios-alt .cms-public-downloads__button-icon {
+    background: #f1f3f5;
+}
+
+.cms-public-downloads__button--linux {
+    background: #efbb24;
+    box-shadow: 0 3px 12px rgba(239, 187, 36, 0.25);
+    color: #302810;
+}
+
+.cms-public-downloads__button--linux .cms-public-downloads__button-icon {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.cms-public-downloads__button--macos {
+    background: #818b95;
+    box-shadow: 0 3px 12px rgba(100, 116, 139, 0.2);
+    color: #fff;
+}
+
+.cms-public-downloads__button--macos .cms-public-downloads__button-icon {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 575.98px) {
+    .cms-public-downloads {
+        padding: 2.5rem 0;
+    }
+
+    .cms-public-downloads__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cms-public-downloads__button {
+        transition: none;
+    }
+}

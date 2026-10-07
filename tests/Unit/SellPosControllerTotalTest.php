@@ -285,7 +285,7 @@ class SellPosControllerTotalTest extends TestCase
         $this->assertNull($method->invoke($controller, $input, $invoice_total));
     }
 
-    public function testFinalSaleBlocksWhenPaymentPayloadIsMissing(): void
+    public function testFinalSaleAllowsMissingPaymentPayloadWhenCreditLimitIsApproved(): void
     {
         $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();
         $property = new \ReflectionProperty(SellPosController::class, 'transactionUtil');
@@ -317,7 +317,44 @@ class SellPosControllerTotalTest extends TestCase
             'tax' => 0,
         ];
 
-        $result = $method->invoke($controller, $input, $invoice_total);
+        $result = $method->invoke($controller, $input, $invoice_total, true);
+
+        $this->assertNull($result);
+    }
+
+    public function testFinalSaleStillBlocksMissingPaymentWhenCreditLimitWasNotApproved(): void
+    {
+        $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();
+        $property = new \ReflectionProperty(SellPosController::class, 'transactionUtil');
+        $property->setAccessible(true);
+        $property->setValue($controller, new class {
+            public function num_uf($value)
+            {
+                return is_numeric($value) ? $value : str_replace(',', '', (string) $value);
+            }
+        });
+
+        $method = new \ReflectionMethod(SellPosController::class, 'validateFinalSalePaymentPayload');
+        $method->setAccessible(true);
+
+        $input = [
+            'status' => 'final',
+            'final_total' => '620.00',
+            'discount_type' => 'fixed',
+            'discount_amount' => 0,
+            'discount2_type' => null,
+            'discount2_amount' => 0,
+            'tax_rate_id' => null,
+            'round_off_amount' => 0,
+            'payment' => [],
+        ];
+
+        $invoice_total = [
+            'total_before_tax' => 620.00,
+            'tax' => 0,
+        ];
+
+        $result = $method->invoke($controller, $input, $invoice_total, false);
 
         $this->assertSame(0, $result['success']);
         $this->assertSame('Payment information was not received. Sale was not finalized. Please try again.', $result['msg']);

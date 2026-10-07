@@ -74,6 +74,52 @@ Track all payments received from customers:
 
 Compare sales across time periods, products, or locations to spot trends.
 
+### Customer Sale by Categories
+
+#### 1. Module Overview
+
+The Customer Sale by Categories report shows each customer's sales grouped by product category, with one column for each month in the selected date range.
+
+#### 2. Purpose of the Feature
+
+Use the report to compare monthly category sales across customers and identify changes in buying patterns.
+
+#### 3. User Access / Permissions
+
+Users need the **Customer Sale by Categories Report** permission. Users with location restrictions only see sales from their permitted Business Locations.
+
+#### 4. Step-by-Step Usage Instructions
+
+1. Open **Reports** from the left sidebar.
+2. Under **Sales Reports**, select **Customer Sale by Categories**.
+3. Choose a start date and end date. The report creates one column for each month touched by this date range.
+4. Optionally select a Business Location, customer, or product category.
+5. Select **Apply Filters** to view the results.
+
+#### 5. Field Descriptions
+
+| Field | Type | Explanation |
+|---|---|---|
+| Start Date | Date | First date included in the report. |
+| End Date | Date | Last date included in the report. |
+| Business Location | Dropdown | Limits the report to a permitted Business Location. |
+| Customer | Dropdown | Limits the report to one customer. |
+| Category Filter | Dropdown | Limits the report to one product category. |
+| City | Text | City recorded on the customer contact. |
+| Shop Name | Text | Customer business name, or the contact name when no business name is set. |
+| Number | Text | Customer mobile number. |
+| Category | Text | Product category assigned to the sold item. |
+| Month columns | Amount | Net sales value for that category and customer during the month. |
+
+#### 6. Business Logic / Workflow
+
+Sales and linked sale returns are grouped by customer, product category, and transaction month. Sale returns reduce the amount for their month. The report uses the product's category and the customer's saved contact details.
+
+#### 7. Notes or Important Considerations
+
+- A date range that starts or ends partway through a month still displays the full month column, but only transactions inside the selected dates are included.
+- Negative monthly amounts are displayed in parentheses. A dash means there were no net sales for that month.
+
 ### Trending Products
 
 Discover your best-selling products over any time period. Use this to make sure you always have popular items in stock.

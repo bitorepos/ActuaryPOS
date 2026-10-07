@@ -193,6 +193,8 @@ The CMS captures every contact form submission as a **lead** in the database, cr
 2. Use the **status buttons** to update the lead through the pipeline
 3. Add **Admin Notes** to track communication history
 4. The system tracks **who handled** each lead
+5. Use **Previous** and **Next** in the main footer bar to move through leads ordered newest first.
+6. Users with lead-management permission can select **Delete** in the footer bar. After confirmation, the next lead is opened; if none remains, the lead index opens.
 
 ### Exporting Leads
 - Click **Export Leads (CSV)** to download all leads for external CRM import or analysis
@@ -300,8 +302,41 @@ Navigate to **CMS > Settings** to configure:
 - Each statistic has an **icon**, **number**, **label**, and **description**
 
 ### Download Buttons
-- Configure links for Android, iOS, and Desktop app downloads
-- These appear as call-to-action buttons on the home page
+
+#### Module Overview
+Download Buttons are the public links visitors use to install or download the Android, iOS, and desktop applications. The configured buttons appear in a dedicated section below the homepage hero and in the CMS Pages index.
+
+#### Purpose of the Feature
+This feature gives website visitors a clear path to the correct app store listing or installer without requiring them to search for the application.
+
+#### User Access / Permissions
+Users with **Superadmin** access or the **Manage CMS Settings** permission can configure these links. Anyone visiting the public home page can use links that have been configured.
+
+#### Step-by-Step Usage Instructions
+1. In the admin sidebar, open **CMS > Site Details**.
+2. Open the **Download Buttons** tab.
+3. Enter the button text and link for each app you want to offer.
+4. For Google Play, paste the app's public Play Store URL, for example `https://play.google.com/store/apps/details?id=com.example.app`.
+5. Save the settings and open the public home page to verify the button.
+
+#### Field Descriptions
+| Label | Type | Explanation |
+|-------|------|-------------|
+| Button Text | Text | The app store or platform name shown on the button. |
+| Button Link | URL | The public store listing or direct download URL opened when a visitor selects the button. |
+| Android Applications | Group | Holds the Google Play and optional APK buttons. |
+| iOS Applications | Group | Holds the App Store and optional TestFlight buttons. |
+| Desktop Applications | Group | Holds Windows, Windows App2, Linux, and macOS/OSX installer links. |
+
+#### Business Logic / Workflow
+The public home page shows platform downloads once, in the **Download Applications** section below the hero. Google Play, APK Download, App Store, TestFlight, and desktop links are configured in the **Download Buttons** tab; the separate Android Button, Android Button 2, iOS Button, and iOS Button 2 fields are not used there. A button is shown only when both its text and link are configured, and empty categories are hidden. If the APK Download link is blank while its button text is configured, the Android section displays a message explaining how to request the Pro version. The main hero call-to-action and navigation button remain separate.
+
+#### Notes or Important Considerations
+- Use a publicly accessible link. A Play Store URL should open the published app listing; an APK URL should point to a downloadable APK.
+- When the APK Download link is blank, the site displays the Pro-version request message instead of an inactive link.
+- Configure app-store, APK, and desktop downloads in **Download Buttons**; do not use the separate Android Button, Android Button 2, iOS Button, or iOS Button 2 settings.
+- Changes to **Download Buttons** do not replace the separate hero buttons configured in **Buttons**.
+- Verify each destination after saving, especially links to files hosted on your own domain.
 
 ---
 

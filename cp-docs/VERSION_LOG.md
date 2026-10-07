@@ -1,6 +1,295 @@
+## Version 8.98.9
+
+**Release Date:** 2026-10-05
+
+### Module: Barcode Labels
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Removed blank vertical gaps around optional price and date fields in label previews when those fields are not printed.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: Business Settings
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- None.
+
+#### UI / UX Changes
+- Added text search to the **Business** tab time zone dropdown so users can find a time zone by city or name.
+
+#### Technical Updates
+- None.
+
+### Module: CMS - Public App Downloads
+
+#### New Features
+- The public home page now displays configured Android, iOS, and desktop app download buttons.
+
+#### Improvements
+- Download button settings now explain that configured links appear on the public home page and the CMS Pages index.
+- When the Android Pro/APK link is blank, the homepage displays instructions for requesting the Pro version instead of hiding the entry.
+- Moved Windows, Windows App2, Linux, and macOS/OSX download settings from **Buttons** into **Download Buttons**.
+- Removed the duplicate Android Button, Android Button 2, iOS Button, and iOS Button 2 fields from **Buttons**; use the corresponding existing app-download fields in **Download Buttons** instead.
+- Added Previous and Next navigation to the main software footer bar on Contact Lead detail pages.
+- Added a permission-controlled footer Delete action on Contact Lead details; after deletion it opens the next lead, or the lead index when none remains.
+
+#### Bug Fixes
+- None.
+
+#### UI / UX Changes
+- Added a responsive, categorized download section below the homepage hero.
+- The homepage download section now renders above the hero image instead of allowing the image to show through its background.
+- Removed duplicate platform download links from the hero so each configured download appears only in the Download Applications section.
+- Simplified the download section description by removing CMS configuration instructions.
+- Grouped Windows, Windows App2, Linux, and macOS/OSX download fields with the other app download settings.
+- Removed duplicate Android and iOS download controls from the **Buttons** tab.
+- Added footer-bar navigation between Contact Leads, ordered newest first.
+- Added a confirmation-protected Delete button to the Contact Lead footer navigation.
+
+#### Technical Updates
+- Desktop download fields keep their existing saved setting keys when moved, so configured links remain intact.
+- The homepage only displays download links with configured button text and URLs; the Android Pro entry displays its request message when its URL is blank.
+
+### Module: Sell - Payment Modal
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Business contacts no longer show the same company name twice in Add Payment and Edit Payment dialogs.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- Individual contacts continue to show their contact and associated business names separately.
+
+### Module: Cash Register - Cash Skim
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- The manually opened Cash Skim dialog now always shows a Cancel button, including when the warning interval is zero.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: Invoice Layout - Classic V8 Sale Receipt
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Classic V8 sale invoices now show the configured secondary quantity label and each product's secondary quantity with its unit kept on the same line. Secondary quantities are included in **Total Qty**, grouped by unit and shown on a separate line from the main quantity.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- Sale receipt line data now includes the formatted secondary quantity and its unit for invoice rendering.
+
+### Module: Sales Reports
+
+#### New Features
+- Added **Customer Sale by Categories**, showing monthly net sales by customer and product category.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- None.
+
+#### UI / UX Changes
+- Added date, Business Location, customer, and category filters to the new report.
+
+#### Technical Updates
+- Added a dedicated report permission, including per-report access to all Business Locations.
+
 ## Version 8.98.8
 
 **Release Date:** 2026-10-04
+
+### Module: Sell - Credit Sales
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Unpaid sales can now be finalized when the customer's available credit limit covers the balance, including for non-admin users.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- The POS accepts an empty payment payload only after the customer credit-limit check approves the sale.
+
+### Module: Cash Register - Opening
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Cashiers without cash-register detail permissions no longer receive an error when the POS screen opens after opening a register.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- The opening flow only requests the register details modal when the user has the required view permission.
+
+### Module: Sell - Customer Group Filter
+
+#### New Features
+- Sale create and edit forms now offer a customer-group filter for customer search, defaulting to **All** and appearing only when customer groups exist.
+
+#### Improvements
+- Customer groups in the Sell filter are listed alphabetically, with **All** kept at the top.
+
+#### Bug Fixes
+- None.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- Customer search applies the selected customer group while preserving the existing business-location filter.
+
+### Module: Sell - Invoice Discount
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Kept the calculated invoice-discount amount beside its input fields, separate from the product-discount total in the totals summary.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: Sell - Customer Search
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Customer names no longer repeat in Sell search results, the selected label, or the billing address.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: Sell - Product Table
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Product price, discount, and scheme-quantity columns now remain visible when enabled in Sales settings; role permissions control whether those values can be edited.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: Sell - Commission Agent
+
+#### New Features
+- None.
+
+#### Improvements
+- New sales default the first commission agent to the logged-in user; existing sales keep their saved agent, with the logged-in user used only when no agent was previously assigned.
+
+#### Bug Fixes
+- None.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: Business Location - Payment Options
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Payment method enable settings can now be turned off and saved when creating or updating a Business Location.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: Notifications
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- The **Mark all read** action now uses a single request handler instead of sending duplicate notification requests.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
 
 ### Module: POS - Sale Quantity
 
@@ -12,6 +301,94 @@
 
 #### Bug Fixes
 - Negative product quantities are now rejected when **Allow Sale return with Negative quantity** is turned off.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: Offline Sync
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Product sync now succeeds when rack details include cloud products that have not been downloaded to the offline database. Rack details for those products are skipped and the sync result reports how many were skipped.
+- FBR invoice numbers from offline POS sales are now preserved when the sales sync to the cloud.
+- Synced sales now update the workstation payment status from its current payment total, so partially paid sales no longer remain marked as paid.
+- Sales sync now refreshes the workstation's open shared cash register, preserves its cloud ID on matching local registers, and resends affected invoices so payments appear under the correct cloud register.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: Business Settings - Payment
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- An intentionally blank Cash Skim Warning Interval now remains blank after saving instead of reverting to 10 minutes.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: Products - Stock Reindex
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Stock quantity reindex now reports a clear cache-storage setup error when its lock cannot be created, instead of returning an unexplained server error.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: Accounting - Profit and Loss Report
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- The Profit and Loss report card now uses the available content width instead of being restricted to half-width.
+
+#### UI / UX Changes
+- Wide report tables now scroll horizontally when needed instead of clipping their contents.
+
+#### Technical Updates
+- None.
+
+### Module: Contact Ledger - Payments
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- The Payments tab now displays payment method names configured for the Business Location where each payment was recorded.
 
 #### UI / UX Changes
 - None.
@@ -807,16 +1184,21 @@
 
 ### Module: Invoice Layout - Slim 6 Print
 
-#### What Looks Better Now
-- **Slim 6 invoice print no longer shows an extra empty box before the Qty column.**
-- **The product table is cleaner and easier to read on narrow receipt prints.**
-- **Qty, Price, Discount, and Total now start without the unwanted blank column.**
+#### New Features
+- None.
 
-#### Guide
-- **Go to Settings > Invoice Settings > Layout.**
-- **Select a layout that uses Design Slim 6.**
-- **Print or preview an invoice.**
-- **Check the product table and confirm there is no extra blank box before Qty.**
+#### Improvements
+- None.
+
+#### Bug Fixes
+- The **Logged in** label is no longer bold on Slim 6 invoice prints.
+- Removed the extra empty box before the Qty column in the Slim 6 product table.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
 
 ---
 

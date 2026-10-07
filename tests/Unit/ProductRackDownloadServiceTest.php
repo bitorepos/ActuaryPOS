@@ -92,6 +92,18 @@ class ProductRackDownloadServiceTest extends TestCase
         $this->assertSame('Original', DB::table('product_racks')->value('rack'));
     }
 
+    public function test_missing_local_products_are_skipped_without_aborting_other_rack_snapshots(): void
+    {
+        $skippedProducts = (new ProductRackDownloadService())->applyPage(1, [
+            ['id' => 10, 'business_id' => 1, 'rack_details' => [['location_id' => 20, 'rack' => 'A']]],
+            ['id' => 3142, 'business_id' => 1, 'rack_details' => [['location_id' => 20, 'rack' => 'B']]],
+        ]);
+
+        $this->assertSame(1, $skippedProducts);
+        $this->assertSame(1, DB::table('product_racks')->count());
+        $this->assertSame('A', DB::table('product_racks')->value('rack'));
+    }
+
     public function test_other_business_snapshot_is_rejected(): void
     {
         $this->expectException(\RuntimeException::class);

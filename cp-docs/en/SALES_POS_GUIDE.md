@@ -118,6 +118,7 @@ The direct sale form gives you more control for invoices, shipments, and detaile
    - **Business Location** — Which shop/warehouse
    - **Sale Date** — When the sale was made
    - **Invoice Number** — Auto-generated
+   - **Customer Group** — Optionally narrow customer search results by group. **All** is selected by default; this filter is shown only when at least one customer group exists.
 3. Add products by searching or scanning.
 4. For each product, set:
    - **Quantity**
@@ -127,6 +128,8 @@ The direct sale form gives you more control for invoices, shipments, and detaile
 5. Add any **overall discount** or **shipping charges**.
 6. In the **Payment** section, enter payment details.
 7. Click **Save** to record the sale.
+
+The same **Customer Group** filter is available when editing a sale. It only filters customer search results; it does not change the selected customer's group.
 
 📸 *[Screenshot: The direct sale form with customer, products, and payment sections]*
 

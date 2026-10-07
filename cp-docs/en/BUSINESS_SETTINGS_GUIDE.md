@@ -41,7 +41,7 @@ Your core business information.
 | **Transaction Edit Days** | How many days after creation a transaction can be edited |
 | **Date Format** | How dates appear throughout the system (e.g., DD/MM/YYYY) |
 | **Time Format** | 12-hour or 24-hour clock |
-| **Time Zone** | Your business time zone |
+| **Time Zone** | Your business time zone. Search by city or time zone name to find it quickly. |
 | **Currency Precision** | Number of decimal places for money (usually 2) |
 | **Quantity Precision** | Number of decimal places for quantities (usually 2) |
 | **Discount Precision** | Number of decimal places for discounts |
