@@ -32,6 +32,8 @@
 
 📸 *[Screenshot: The Add Discount form with all fields]*
 
+On the **Discounts** list, the **No. of Usage** column shows how many sales entries have used each discount.
+
 ### How to Apply a Discount at POS
 
 There are two ways:

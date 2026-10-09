@@ -115,6 +115,7 @@ Controls how sales work.
 | Setting | What It Does | Default |
 |---|---|---|
 | **Default Sale Status** | Whether new sales start as Final or Draft | Final |
+| **Sell Create Default Date** | Choose **None** to use the current time in the business time zone, or **Tomorrow at the same time**. This affects only the Sell Create page. | None |
 | **Sell Price Tax** | Are your selling prices inclusive or exclusive of tax? | Exclusive |
 | **Sales Item Addition Method** | How products are added to a sale (add row or increase qty) | Add Row |
 | **Allow Currency Change** | Let users make sales in different currencies | Off |

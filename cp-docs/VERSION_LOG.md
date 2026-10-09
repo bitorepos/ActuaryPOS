@@ -1,3 +1,359 @@
+## Version 8.99.2
+
+**Release Date:** 2026-10-07
+
+### Module: Sales & POS - Payment Handling
+
+#### New Features
+- None.
+
+#### Improvements
+- Editing finalized sales through POS or Sell recalculates the sale total and records excess tender as change returned when the setting allows it.
+
+#### Bug Fixes
+- Prevented payment-only edits from creating a new overpaid sale without a corresponding change return.
+- Sales Return refunds can no longer exceed the calculated return total, regardless of the customer's credit limit.
+- Payment edits now require both an amount and a payment method.
+
+#### UI / UX Changes
+- Added clear feedback directing users to edit a sale through POS or Sell when a payment-only change would create an overpayment.
+
+#### Technical Updates
+- Added server-side refund-total validation for invoice and direct Sales Returns.
+
+### Module: Contacts - Ledger
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Transaction numbers for sales in Ledger Format 2 now open the sale details modal when clicked.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: Superadmin - Business Reset Options
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Business hard resets and business deletion now remove associated notification templates and ZATCA settings, preventing orphaned records.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: Reports - Sales Representative Report
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Sales Added and Sales With Commission now include sale returns as negative amounts, consistent with the summary totals. Sales Added and Product Detailed label return rows, and Sales Added shows the return reference when no invoice number is available. Product Detailed keeps the original sale value unchanged and shows direct and invoice-linked sale returns separately with their products. Sales Added, Sales With Commission, Product Summary, and Product Detailed also include transactions throughout the selected end date. Product Summary and Product Detailed now allocate invoice-level discounts across product rows so their totals account for sale and return discounts.
+
+#### UI / UX Changes
+- Added a **Type** column to Product Detailed so sale-return rows are identifiable.
+
+#### Technical Updates
+- Scoped proportional allocation of invoice-level discounts to the Sales Representative Product Summary and Product Detailed queries.
+
+### Module: Sell Returns
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Product search on direct Sell Return forms now respects **Allow sale if no stock**, allowing out-of-stock products to be selected when the setting is enabled.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: POS - Multi-Pay
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Editing an existing POS invoice to reallocate its paid amount across payment methods no longer records the method change as a cash-register return.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: POS - Hardware Setup
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- POS bill finalization now kicks the drawer through the configured POS receipt printer using the Windows Hardware Service, independent of the manual drawer-opening permission, while avoiding a second pulse during receipt printing.
+- Editing a POS bill now preloads workstation printer settings for its location. If the service-reported machine name differs, POS printing can use the only workstation with Hardware Service enabled for that location; it does not guess if multiple eligible workstations exist. POS finalization quietly falls back to browser printing when the Hardware Service is unavailable.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: POS - Sell Returns
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Direct Sale Return now opens the cash drawer after **SAVE** and **SAVE & PRINT** when enabled in Hardware Setup. The drawer request no longer times out after three seconds and runs before silent printing to avoid competing requests to the Windows Hardware Service. **SAVE & PRINT** also uses the configured printer for silent printing, with browser printing as a fallback.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: POS - Invoice Preview
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- None.
+
+#### UI / UX Changes
+- Added a **NEW POS** button after **New Invoice** on the invoice preview page when the business has POS enabled. The button opens the POS create page.
+
+#### Technical Updates
+- None.
+
+## Version 8.99.1
+
+**Release Date:** 2026-10-06
+
+### Module: Sell Returns
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Direct Sell Return now uses the configured tax-inclusive sales price by default, including when loading return products.
+
+#### UI / UX Changes
+- Aligned the Sell Return list headers with their corresponding data columns while horizontally scrolling.
+
+#### Technical Updates
+- None.
+
+### Module: Reports - Sell Payment Report
+
+#### New Features
+- None.
+
+#### Improvements
+- Added a User filter to narrow Sell Payment Report results by the user who created the underlying transaction; **All Users** remains available.
+
+#### Bug Fixes
+- None.
+
+#### UI / UX Changes
+- Added a User dropdown to the report filters, defaulting to **All Users**.
+
+#### Technical Updates
+- Applied the User filter consistently to the Detail, Summary, Customer Summary, and print/export results.
+
+### Module: Reports - Register Report
+
+#### New Features
+- None.
+
+#### Improvements
+- Added a **Cash in Hand** column after User, showing each register's entered opening cash amount.
+- Displayed Business Location payment method labels in the Register Report before the custom payment columns.
+- Added a **Cash Skimmed** column to the Register Report when **Enable Cash Skim Protection** is enabled in Business Settings.
+- Moved the Location column after Total in the Register Report.
+- Show payment method columns only when they are enabled in the selected Business Location's payment options.
+- Moved **Total Advance Payment** to immediately before **Total** in the Register Report.
+- Added a **Net Difference** column after Total, matching the calculation shown in Cash Register details.
+- Changed the Register Report's **Total** to show Net Sales: paid sales plus credit sales minus sales returns.
+
+#### Bug Fixes
+- The **Cash in Hand** amount now remains visible in the Register Report after a register is closed.
+- Custom payment column names now use the names configured in Business Location payment methods.
+- Footer totals now correctly include Cash in Hand, Cash Skimmed, Advance Payments, and Net Difference when report rows contain numeric values.
+
+#### UI / UX Changes
+- Moved the User column after Action in the Register Report.
+- Ordered Register Report payment method columns to match the Business Location payment options list.
+- Renamed the Register Report's **Total** column caption to **Net Sales**.
+- Renamed the **Total Advance Payment** column caption to **Advance Payments**.
+- Added footer totals for Cash in Hand, Cash Skimmed when enabled, and Net Difference.
+
+#### Technical Updates
+- None.
+
+### Module: Cash Register
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Cash Register Details now subtracts sale returns from the **Total No. of Sales** count.
+- Cash Register Details now subtracts the sale return amount from **Net Sales**.
+- Cash Register Details now classifies sales using their recorded creation time, so backdated invoices created during a register session are not listed under **Other Payments**.
+
+#### UI / UX Changes
+- Displayed the register closed status and register reference on the same line in the register details modal.
+- Added the cashier's name before the closed status and register reference in the register details modal.
+- Listed sale invoice and payment transaction numbers with amounts for sales included in **Other Payments**.
+
+#### Technical Updates
+- None.
+
+### Module: POS - Cash Skim
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Automatic Cash Skim warnings no longer open when the Cash Skim Limit or Cash Skim Warning Interval is blank; users can still open the modal manually from the POS menu.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- Invalid or blank Cash Skim limits no longer trigger the automatic cash-limit check.
+
+## Version 8.99.0
+
+**Release Date:** 2026-10-06
+
+### Module: Business Settings - Sales
+
+#### New Features
+- Added a Sell Create default date option: **None** keeps the current business-time-zone date and time, while **Tomorrow at the same time** defaults new sales to the next local calendar day.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- None.
+
+#### UI / UX Changes
+- Added a Sales setting that controls the default date and time only on the Sell Create page.
+
+#### Technical Updates
+- None.
+
+### Module: Products
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Product discounts can now be changed to zero from the product edit form and remain zero after saving.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: Discounts
+
+#### New Features
+- None.
+
+#### Improvements
+- Added a **No. of Usage** column to the Discounts list to show how many sales entries have used each discount.
+
+#### Bug Fixes
+- None.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: Sales Representative Report
+
+#### New Features
+- None.
+
+#### Improvements
+- Added Customer, Customer Group, Commission Agent, and Commission Agent 2 filters to narrow the report's sales and product results.
+
+#### Bug Fixes
+- None.
+
+#### UI / UX Changes
+- Added four filters to the Sales Representative Report filter panel.
+
+#### Technical Updates
+- Applied the new filters to sales totals, sales lists, commission-assigned sales, and product summary/detail results.
+
+### Module: Android POS Printing
+
+#### New Features
+- Added native Android USB printing support for STAR TSP100IIIU receipt printers and cash drawers connected through the printer, with printer use controlled per device.
+
+#### Improvements
+- Added an on-device STAR printer switch in the Android app's Settings so customers can enable USB printing without customer-specific APK rebuilds; Android requests access to the connected USB printer on first use.
+
+#### Bug Fixes
+- Removed the Flutter scrollable parent around the Android WebView so touch gestures scroll the POS page and sidebar instead of being captured by the app wrapper.
+- Included selected-layout receipt HTML alongside legacy printer data so Android STAR printing can print locations configured with the **Printer** receipt type.
+
+#### UI / UX Changes
+- Added **STAR USB POS Printer** to the installed Android app's Settings tab.
+
+#### Technical Updates
+- Included the native StarIO bridge in Android builds and made printer enablement a per-device saved preference; receipt rendering and drawer pulses use DK port 1.
+
 ## Version 8.98.9
 
 **Release Date:** 2026-10-05

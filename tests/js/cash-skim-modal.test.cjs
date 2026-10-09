@@ -5,9 +5,30 @@ const path = require('node:path');
 const vm = require('node:vm');
 
 const source = fs.readFileSync(path.join(__dirname, '../../public/js/pos.js'), 'utf8').replace(/\r\n/g, '\n');
+const protectionStart = source.indexOf('function cash_skim_protection() {');
+const protectionEnd = source.indexOf("\n\n$(document).on('click'", protectionStart);
+const protection = source.slice(protectionStart, protectionEnd);
 const handlerStart = source.indexOf("$(document).on('click', '#open_cash_pull_modal', function () {");
 const handlerEnd = source.indexOf('\n});\n\nfunction load_quick_menu', handlerStart) + 3;
 const handler = source.slice(handlerStart, handlerEnd);
+
+function startCashSkimProtection(limit, warningInterval) {
+    let scheduledTimeout = false;
+    const $ = selector => ({
+        val: () => selector === 'input#cash_pull_limit' ? limit : warningInterval,
+    });
+    const context = {
+        $,
+        setTimeout: () => {
+            scheduledTimeout = true;
+        },
+    };
+    vm.createContext(context);
+    vm.runInContext(protection, context);
+    vm.runInContext('cash_skim_protection();', context);
+
+    return scheduledTimeout;
+}
 
 function openCashSkimModal(warningInterval) {
     let clickHandler;
@@ -47,6 +68,17 @@ function openCashSkimModal(warningInterval) {
 
     return modalOptions;
 }
+
+test('automatic cash skim protection does not start without both settings', () => {
+    assert.equal(startCashSkimProtection('', ''), false);
+    assert.equal(startCashSkimProtection('100', ''), false);
+    assert.equal(startCashSkimProtection('', '5'), false);
+});
+
+test('automatic cash skim protection starts when both settings are configured', () => {
+    assert.equal(startCashSkimProtection('100', '5'), true);
+    assert.equal(startCashSkimProtection('100', '0'), true);
+});
 
 test('manually opened cash skim modal shows Cancel when the warning interval is zero', () => {
     const modal = openCashSkimModal('0');

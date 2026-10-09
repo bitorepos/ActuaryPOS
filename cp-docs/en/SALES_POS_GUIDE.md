@@ -44,6 +44,8 @@ The POS screen is designed for fast, face-to-face sales — like at a shop count
    - The system shows the **Change Due** automatically
    - Add a **Payment Note** if needed
 
+   When **Disable Change Return on Overpay** is turned off in Business Settings, any amount received above the sale total is recorded as change returned, not as customer credit. If you need to correct products, quantities, discounts, payment amount, or payment method, edit the sale through POS or Sell so the sale total and change return are recalculated together. Editing a payment alone cannot create a new overpayment.
+
 8. Click **Finalise** to complete the sale.
 
 9. The **Receipt** appears:
@@ -179,7 +181,8 @@ When a customer returns a product:
 5. Choose how to refund:
    - **Cash** refund
    - **Credit** to the customer's account
-6. Click **Save**.
+6. Make sure the total refund does not exceed the calculated value of the returned items. The system blocks a larger refund.
+7. Click **Save**.
 
 Stock will be restored and the customer's balance will be updated.
 

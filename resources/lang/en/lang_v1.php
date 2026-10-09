@@ -186,6 +186,9 @@ return [
     'hide_stock_performance_report_cost_profit' => 'Hide Cost value & Profit',
     'view_product_reorder_report.view' => 'View Product Reorder Report',
     'none' => 'None',
+    'sell_create_default_date' => 'Sell Create Default Date',
+    'tomorrow_at_same_time' => 'Tomorrow at the same time',
+    'sell_create_default_date_help' => 'Applies only to the Sell Create page. None uses the current date and time in the business time zone.',
     'enable_sr_no' => 'Track Serial Number',
     'enable_serial_number' => 'Enable Serial Number',
     'enable_imei_no' => 'Track IMEI Numbers',
@@ -270,6 +273,9 @@ return [
     'partial' => 'Partial',
     'installmented' => 'Installment',
     'overpaid' => 'Overpaid',
+    'payment_amount_and_method_required' => 'Enter a payment amount and select a payment method before saving.',
+    'edit_sale_to_record_change_return' => 'This payment would overpay the sale. Edit the sale in POS or Sell to record the change return.',
+    'sell_return_payment_exceeds_total' => 'The refund amount cannot exceed the total value of the returned items.',
     'no_of_products' => 'Number of products',
     'select_a_date_range' => 'Select a date range',
     'date_range' => 'Date Range',
@@ -3068,6 +3074,7 @@ return [
     'advance_deposit_balance' => 'Advance Deposit Balance',
     'amount_paid' => 'Amount Paid',
     'records' => 'records',
+    'advance_payments' => 'Advance Payments',
 
     // Summary Income Report
     'sales_summary' => 'Sales Summary',

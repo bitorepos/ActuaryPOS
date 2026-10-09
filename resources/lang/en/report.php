@@ -76,6 +76,7 @@ return [
     'total_abnormal' => 'Total Abnormal',
     'register_report' => 'Register Report',
     'cash_skim_report' => 'Cash Skim Report',
+    'cash_skimmed' => 'Cash Skimmed',
     'summary_income_report' => 'Summary Income Report',
     'open_time' => 'Open Time',
     'close_time' => 'Close Time',
