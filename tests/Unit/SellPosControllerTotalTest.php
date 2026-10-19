@@ -683,6 +683,32 @@ class SellPosControllerTotalTest extends TestCase
         $this->assertSame(8, $method->invoke($controller, 'Sindh', ''));
     }
 
+    public function testFbrDIBuyerProvinceUsesCanonicalIslamabadLabel(): void
+    {
+        $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();
+        $method = new \ReflectionMethod(SellPosController::class, 'normalizeFbrDIBuyerProvince');
+        $method->setAccessible(true);
+
+        $this->assertSame('CAPITAL TERRITORY', $method->invoke($controller, 'ISLAMABAD', ''));
+        $this->assertSame('CAPITAL TERRITORY', $method->invoke($controller, 'Islamabad Capital Territory', ''));
+        $this->assertSame('CAPITAL TERRITORY', $method->invoke($controller, 'CAPITAL TERRITORY', ''));
+        $this->assertSame('Punjab', $method->invoke($controller, 'Punjab', ''));
+    }
+
+    public function testFbrDIBuyerProvincePrefersDescriptionFromFbrReferenceList(): void
+    {
+        $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();
+        $method = new \ReflectionMethod(SellPosController::class, 'matchFbrDIBuyerProvinceDescription');
+        $method->setAccessible(true);
+
+        $provinces = [
+            ['stateProvinceDesc' => 'Punjab'],
+            ['stateProvinceDesc' => 'CAPITAL TERRITORY'],
+        ];
+
+        $this->assertSame('CAPITAL TERRITORY', $method->invoke($controller, 'ISLAMABAD', $provinces));
+    }
+
     public function testFbrDIUomMatcherMapsPiecesToFbrNumbersDescription(): void
     {
         $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();

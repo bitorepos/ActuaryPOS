@@ -1810,6 +1810,15 @@ html.dark-theme .pos-create-page .pos_product_div2 > .table-responsive #pos_tabl
     white-space: nowrap;
     padding: 0.35rem 0.5rem !important;
 }
+#due_invoices_table > thead > tr > th:last-child,
+#due_invoices_table > tbody > tr > td:last-child {
+    min-width: 170px;
+    width: 170px;
+}
+#due_invoices_table .due_invoices {
+    width: 100%;
+    min-width: 120px;
+}
 
 /* DataTables sorting icon contrast */
 .dataTables_wrapper .dataTable thead th.sorting,

@@ -1,6 +1,7 @@
 /node_modules
 /public/hot
 /public/storage
+/public/favicon.ico
 /public/downloads
 /storage/*.key
 /storage/
@@ -12,6 +13,7 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 /public/uploads/business_logos
+/public/uploads/logo.png
 /public/uploads/documents
 /public/uploads/img
 /public/uploads/media

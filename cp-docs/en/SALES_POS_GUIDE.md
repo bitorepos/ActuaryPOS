@@ -195,6 +195,12 @@ Stock will be restored and the customer's balance will be updated.
 ### Per-Item Discount
 - While creating a sale, click the **Discount** field next to any product and enter a percentage or fixed amount.
 
+### Apply a Discount to All Products in Sell
+1. On the Add Sale or Edit Sale page, click the **Discount** column heading above the product list.
+2. Choose **%** to enter a percentage, or choose the currency symbol to enter one total discount amount for the products.
+3. Enter the discount and click **Apply**. A fixed total is converted to one percentage using the combined value of eligible products and their quantities.
+4. Review the product rows and sale total before saving.
+
 ### Overall Discount
 - At the bottom of the sale form, find the **Order Discount** field and enter the overall discount.
 
@@ -262,3 +268,34 @@ A: POS is designed for fast counter sales with a visual interface. Direct Sale i
 - 📌 Use **Quotations** to give customers price estimates before they commit
 - 📌 Set up **keyboard shortcuts** to speed up POS operations
 - 📌 Train your staff on the **POS screen** — it's designed to be quick and easy
+
+---
+
+## Mobile App Sales in Sales Lists
+
+### Module Overview
+The Sales list and POS Sales list can filter sales recorded through the Mobile App.
+
+### Purpose of the Feature
+This filter lets staff review app-created sales separately from other sales, including when the app is installed on multiple devices.
+
+### User Access / Permissions
+Users need permission to view the Sales list or POS Sales list they want to open.
+
+### Step-by-Step Usage Instructions
+1. Open **Sale → Sales** or **POS Sale → List Sells**.
+2. Open **Report Filters**.
+3. In **Sources**, select **Mobile App**.
+4. Review the filtered results. Select **All** to remove the source filter.
+
+### Field Descriptions
+
+| Field | Type | Description |
+|---|---|---|
+| **Sources** | Dropdown | Select **Mobile App** to show API-created sales from all Mobile App installations. |
+
+### Business Logic / Workflow
+The filter groups API-created sales under one Mobile App source; it does not separate sales by device installation.
+
+### Notes or Important Considerations
+This source is intended for sales created through the Mobile App. Other integrations that create API sales should not use the same API-created flag if they need to be excluded from this filter.

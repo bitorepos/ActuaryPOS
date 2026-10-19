@@ -6,7 +6,7 @@ const vm = require('node:vm');
 
 const source = fs.readFileSync(path.join(__dirname, '../../public/js/hardware_service.js'), 'utf8');
 
-function harness(settings, drawerResult = { success: true }) {
+function harness(settings, drawerResult = { success: true }, harnessOptions = {}) {
     const requests = [];
     const timeouts = [];
     const workstation = {
@@ -14,7 +14,7 @@ function harness(settings, drawerResult = { success: true }) {
         settings,
     };
     const context = {
-        window: {APP: {BUSINESS_ID: 99}},
+        window: {APP: {BUSINESS_ID: 99}, ...(harnessOptions.window || {})},
         URLSearchParams,
         AbortController,
         setTimeout: (callback, timeoutMs) => {
@@ -26,6 +26,9 @@ function harness(settings, drawerResult = { success: true }) {
             requests.push({url, options});
             let result = {};
             if (url.endsWith('/health')) {
+                if (harnessOptions.healthUnavailable) {
+                    throw new Error('Connection refused');
+                }
                 result = {service: 'AlUrooj.HardwareService'};
             } else if (url.endsWith('/api/auth/handshake')) {
                 result = {token: 'test-token', deviceName: 'POS-PC'};
@@ -101,4 +104,34 @@ test('reports a failed drawer pulse instead of resolving as success', async () =
         h.context.window.openCashDrawerViaHardwareService(12, '/workstation-settings/for-machine'),
         /Drawer unavailable/
     );
+});
+
+test('suppresses only the missing-service warning in a browser', async () => {
+    const h = harness(configuredSettings(), {success: true}, {healthUnavailable: true});
+
+    await assert.rejects(
+        h.context.window.openCashDrawerViaHardwareService(12, '/workstation-settings/for-machine'),
+        error => {
+            assert.equal(error.message, 'Windows Hardware Service is not connected on this workstation.');
+            assert.equal(error.code, 'HARDWARE_SERVICE_NOT_CONNECTED');
+            assert.equal(h.context.window.shouldNotifyHardwareServiceError(error), false);
+            return true;
+        }
+    );
+});
+
+test('keeps service failure warnings in desktop wrappers and reports other errors in browsers', () => {
+    const browser = harness(configuredSettings());
+    const desktop = harness(configuredSettings(), {success: true}, {
+        window: {electronAPI: {}},
+    });
+    const mobile = harness(configuredSettings(), {success: true}, {
+        window: {AndroidPosPrinterBridge: {}},
+    });
+    const connectionError = {code: 'HARDWARE_SERVICE_NOT_CONNECTED'};
+
+    assert.equal(browser.context.window.shouldNotifyHardwareServiceError(connectionError), false);
+    assert.equal(desktop.context.window.shouldNotifyHardwareServiceError(connectionError), true);
+    assert.equal(mobile.context.window.shouldNotifyHardwareServiceError(connectionError), true);
+    assert.equal(browser.context.window.shouldNotifyHardwareServiceError(new Error('Drawer disabled')), true);
 });

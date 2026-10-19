@@ -1,3 +1,442 @@
+## Version 8.99.6
+
+**Release Date:** 2026-10-18
+
+### Module: Customer Sale by Categories Report
+
+#### New Features
+- None.
+
+#### Improvements
+- Displays all 12 calendar-month columns for the selected year, including months without sales.
+- Replaced the start and end date inputs with a Year selector for viewing one complete calendar year at a time.
+- Added the standard DataTables page-length, search, and permission-controlled export controls above the report.
+- Set the report table to show 25 rows by default, with options for 25, 50, 100, 200, 500, 1,000, or All.
+- Added direct PDF download from the preview toolbar, matching the Customer List Report.
+
+#### Bug Fixes
+- Fixed the Customer Name column so business customers display their business name, with the contact name as a fallback.
+- Fixed the **Print A4** action so it finds and submits the report filters after the button was moved above the table.
+
+#### UI / UX Changes
+- Renamed the customer detail columns to **Address**, **Customer Name**, and **Contact ID** in the report and print preview.
+
+#### Technical Updates
+- The selected year now sets the report query range from January 1 through December 31, and the Year selector lists years with sales plus the current year.
+- The A4 preview applies the DataTables search text as well as the report filters.
+- The table explicitly configures the standard export controls when the user has the required permission.
+- The Address, Customer Name, and Contact ID columns now use the corresponding customer contact record values.
+- Customer Name resolves to the saved business name first for business contacts.
+
+## Version 8.99.5
+
+**Release Date:** 2026-10-14
+
+### Module: Accounting - Journal Entry
+
+#### New Features
+- None.
+
+#### Improvements
+- Journal Entry amount fields and footer totals now display the decimal places configured under Business Settings > Business > Currency decimal.
+
+#### Bug Fixes
+- Fixed the Journal Entry debit and credit footer totals so they recalculate as amounts are typed, including on newly added rows.
+- Fixed saving comma-formatted debit and credit amounts so the full value, rather than only the digits before the comma, is stored.
+- Fixed journal list and detail totals to ignore transaction lines removed by editing a Journal Entry to zero; entries with no remaining lines now show a zero amount.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- Journal Entry amount formatting and footer totals use the configured currency precision across create, edit, and Job Sheet voucher screens.
+- Updated the Journal Entry form and Job Sheet journal voucher to recalculate totals on input and change events, and parse localized amounts before saving.
+- Applied the accounting transaction soft-delete filter to raw Journal Entry list, detail, and print queries.
+
+### Module: Accounting - Chart of Accounts
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Fixed the default Sale Returns account so it appears directly under Income instead of being nested under Sales.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: Sales Representative Report
+
+#### New Features
+- Added a separate **Print A4** action to each report tab, opening a preview with the selected tab's complete filtered results.
+
+#### Improvements
+- Print previews now support A4 page navigation and include actions to print, save as PDF, or export to Excel.
+
+#### Bug Fixes
+- None.
+
+#### UI / UX Changes
+- Added a branded, paginated print preview for Sales, Sales with Commission, Product Summary, Product Detailed, Expenses, and Payments with Commission when available.
+
+#### Technical Updates
+- Print previews retrieve all report rows in pages from the existing report data endpoints and preserve the report's selected filters.
+
+### Module: Register Report
+
+#### New Features
+- Added a **Print A4** preview for the filtered Register Report.
+
+#### Improvements
+- The print preview includes all matching register sessions and the visible payment columns and labels for the selected location.
+
+#### Bug Fixes
+- None.
+
+#### UI / UX Changes
+- Added a branded landscape A4 preview with page navigation and print, PDF, and Excel actions.
+
+#### Technical Updates
+- The preview retrieves all filtered rows from the existing report data endpoint and calculates totals for the printed results.
+
+### Module: Cash Skim Report
+
+#### New Features
+- Added a **Print A4** preview for filtered cash skim records.
+
+#### Improvements
+- The preview includes all matching records and follows the visible report columns.
+
+#### Bug Fixes
+- None.
+
+#### UI / UX Changes
+- Added a branded landscape A4 preview with page navigation and print, PDF, and Excel actions.
+
+#### Technical Updates
+- The preview retrieves all filtered rows from the existing report data endpoint and calculates the cash skim total across pages.
+
+### Module: Summary Income Report
+
+#### New Features
+- Added a branded A4 preview for the filtered Summary Income Report.
+
+#### Improvements
+- The preview presents sales totals, cash details, and available service sales analysis, with print, PDF, and Excel actions.
+
+#### Bug Fixes
+- None.
+
+#### UI / UX Changes
+- Changed **Print A4** to open the report preview while retaining the separate 80mm thermal-print action.
+
+#### Technical Updates
+- The preview reuses the report's calculated values and filters rather than running separate summary calculations.
+
+### Module: Customer Sale by Categories Report
+
+#### New Features
+- Added a **Print A4** preview for the filtered Customer Sale by Categories report.
+
+#### Improvements
+- The preview includes all customer/category rows, monthly values, and monthly totals.
+
+#### Bug Fixes
+- None.
+
+#### UI / UX Changes
+- Added landscape A4 page navigation with print, PDF, and Excel actions.
+
+#### Technical Updates
+- The preview reuses the report's existing monthly aggregation and selected filters.
+
+### Module: Product List Report
+
+#### New Features
+- Added a **Print A4** preview for the filtered Product List Report.
+
+#### Improvements
+- The preview loads every matching product, preserves the table search and filters, and follows existing product-price visibility permissions.
+
+#### Bug Fixes
+- None.
+
+#### UI / UX Changes
+- Added a landscape A4 preview with page navigation and print, PDF, and Excel actions.
+
+#### Technical Updates
+- Preview data is retrieved in pages from the existing server-side report endpoint.
+
+### Module: Held Quantity Report
+
+#### New Features
+- Added a **Print A4** preview for the filtered Held Quantity Report.
+
+#### Improvements
+- The preview includes all matching rows and totals quantity columns across the full result set.
+
+#### Bug Fixes
+- None.
+
+#### UI / UX Changes
+- Added a landscape preview with page navigation and print, PDF, and Excel actions.
+- Matched the filter-panel **Print A4** button placement to the Product List Report.
+
+#### Technical Updates
+- Preview rows are loaded in pages from the existing report endpoint while preserving location, held-status, and table-search filters.
+
+### Module: Stock Value Report
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Made the **Print A4** action available from the report filter panel for every tab.
+
+#### UI / UX Changes
+- Matched the filter-panel **Print A4** button placement to the Product List Report; it previews the currently selected tab.
+
+#### Technical Updates
+- Print actions continue to use the existing tab-specific A4 preview and selected report filters.
+
+### Module: Superadmin - Application Settings
+
+#### New Features
+- Added a **Disable GitHub Update** option to control GitHub software updates.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- None.
+
+#### UI / UX Changes
+- Added an unchecked-by-default **Disable GitHub Update** checkbox to Application Settings.
+
+#### Technical Updates
+- Saving the option writes the inverse value to `SOFTWARE_SYNC_ENABLED` in the environment file.
+
+### Module: Reports - Sales Representative Report
+
+#### New Features
+- None.
+
+#### Improvements
+- Added separate normal and damage sale-return quantity columns to the Product Summary tab and renamed the sales quantity caption to SALES.
+
+#### Bug Fixes
+- None.
+
+#### UI / UX Changes
+- Added a UNIT column before SALES, removed repeated unit labels from quantity values, and right-aligned numeric columns.
+
+#### Technical Updates
+- None.
+
+### Module: Sales & POS - Sale Returns
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Standard browser use no longer shows a Windows Hardware Service connection warning when saving a sale return without a connected desktop hardware service. Existing drawer requests and wrapper-app warnings are preserved.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: Sales & POS - Mobile App Sales
+
+#### New Features
+- None.
+
+#### Improvements
+- Added a **Mobile App** option to the Sources filter on the Sales list and POS Sales list, grouping API-created sales from all app installations.
+
+#### Bug Fixes
+- None.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Module: Superadmin - Mobile App Sales Reset
+
+#### New Features
+- Added a separate **Reset MobileApp Sales** option to a business's Hard Reset Options.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- None.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- The reset permanently deletes API-created sale transactions and their dependent records, then recalculates product stock.
+
+### Module: Products
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Opening the product creation or edit page no longer fails when the Accounting module is not installed. Accounting-specific product options remain available when the module is installed and permitted.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- Accounting product-account operations now run only when the Accounting module is installed.
+
+## Version 8.99.4
+
+**Release Date:** 2026-10-12
+
+### Module: Contacts - Contact Payment
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Increased the Today Pay column width in the contact payment outstanding invoices modal so payment amounts are fully visible and easier to edit without truncation.
+
+#### UI / UX Changes
+- Expanded the payment input column in the contact payment modal for clearer entry and better alignment with the invoice data.
+
+#### Technical Updates
+- None.
+
+### Module: Sell - Product Discounts
+
+#### New Features
+- None.
+
+#### Improvements
+- The bulk product discount dialog on Add Sale and Edit Sale accepts one fixed total amount and converts it to a shared percentage based on the combined value of eligible products.
+
+#### Bug Fixes
+- None.
+
+#### UI / UX Changes
+- Added a unit selector to choose percentage or fixed-amount entry in the bulk product discount dialog.
+
+#### Technical Updates
+- None.
+
+### Module: Purchase
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Fixed the Purchase index Updated At timestamp displaying HTML markup instead of rendering the date/time line break.
+
+#### UI / UX Changes
+- Added a total row to the Purchase Details modal's Payment info table so users can see the sum of all recorded payments.
+- Added an Updated At timestamp column immediately before Created At in the Purchase index.
+
+#### Technical Updates
+- None.
+
+### Module: FBR Digital Invoicing
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Fixed FBR DI buyer province validation by mapping Islamabad aliases to FBR's valid **CAPITAL TERRITORY** province description.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- Increased the default FBR DI API connection and response time limits to accommodate temporary DNS or network delays.
+
+### Module: Sell Payment Report
+
+#### New Features
+- Added separate Customer (Payment) and Customer (Sale No.) columns to the Sell Payment Report detail table so users can compare the customer assigned to a payment with the customer assigned to its sale.
+
+#### Improvements
+- Added a **SHOW ONLY MISMATCH CUSTOMER** filter to the Detail tab to find payment references where the payment and a linked sale have different assigned customers.
+
+#### Bug Fixes
+- None.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+## Version 8.99.3
+
+**Release Date:** 2026-10-09
+
+### Module: CMS - Lead Management
+
+#### New Features
+- Added a direct reply action on the CMS lead detail page so administrators can send an email to the lead without leaving the page.
+
+#### Improvements
+- Lead management now updates the lead status to Contacted automatically after a successful reply is sent.
+
+#### Bug Fixes
+- None.
+
+#### UI / UX Changes
+- Added a message composer and subject field to the lead detail screen for faster follow-up communication.
+
+#### Technical Updates
+- Added a secure email reply endpoint and mail sending flow for CMS leads.
+
+### Module: Cash Register
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Cash register closing now accepts decimal values for card slip and bank transfer amounts.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
 ## Version 8.99.2
 
 **Release Date:** 2026-10-07

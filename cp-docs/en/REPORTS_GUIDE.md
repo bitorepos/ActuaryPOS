@@ -27,6 +27,49 @@ Reports are your window into how your business is performing. {application_name}
 
 ## Business & Profit Reports
 
+### Summary Income Report
+
+#### 1. Module Overview
+
+The Summary Income Report brings sales totals, cash totals, and service sales analysis together for a selected period.
+
+#### 2. Purpose of the Feature
+
+Use this report to review net sales, returns, discounts, tax, service charges, cash received, and the difference between expected and received cash.
+
+#### 3. User Access / Permissions
+
+Users need the **View Summary Income Report** permission. Location-restricted users only see information from their permitted Business Locations.
+
+#### 4. Step-by-Step Usage Instructions
+
+1. Open **Reports** from the left sidebar and select **Summary Income Report**.
+2. Optionally select a Business Location, User, and start and end dates.
+3. Select **Apply Filters** to refresh the summary.
+4. Select **Print A4** to open the report preview. Use its page, print, PDF, or Excel controls as needed.
+5. Select the thermal print action when you need the existing 80mm receipt layout.
+
+#### 5. Field Descriptions
+
+| Field | Type | Explanation |
+|---|---|---|
+| Business Location | Dropdown | Limits the report to a selected location that the user is permitted to access. |
+| User | Dropdown | Limits report transactions and register totals to the selected user. |
+| Start Date | Date | First date included in the report period. |
+| End Date | Date | Last date included in the report period. |
+| Print A4 | Button | Opens an A4 preview for the filtered report, with print, PDF, and Excel actions. |
+| Thermal Print (80mm) | Button | Prints the report using the existing receipt-width layout. |
+
+#### 6. Business Logic / Workflow
+
+Sales Summary shows sales, returns, gross sales, discounts, sales tax, service charges, and net sales. Cash Details shows cash, card and credit sales, opening cash, receivable cash, cash received, and the difference. Service Sales Analysis appears when service breakdown data is available. The A4 preview uses the same calculated report data and selected filters as the on-screen report.
+
+#### 7. Notes or Important Considerations
+
+- The report remains subject to existing report permissions and location restrictions.
+- PDF output uses the browser print dialog; choose **Save as PDF** in the print dialog to save a PDF.
+- The thermal print action remains separate from the A4 preview.
+
 ### Profit & Loss Report
 
 Shows your overall business performance — are you making money or losing it?
@@ -84,7 +127,9 @@ Users need the **View Sell Payment Report** permission. Users with location rest
 2. Select **Sell Payment Report**.
 3. Optionally choose a User, payment location, payment method, customer, transaction location, customer group, or date range. **All Users** is selected by default.
 4. Open **Summary**, **Customer Summary**, or **Detail** to view the results in the format you need.
-5. Use the print button on the active tab to print or export that tab with the same filters.
+5. In the **Detail** tab, review **Customer (Payment)** after **Payment No.** and **Customer (Sale No.)** after **Sale No.** to compare the customer assigned to the payment with the customer assigned to the sale.
+6. Select **SHOW ONLY MISMATCH CUSTOMER** to show payment references where the payment's assigned customer differs from the customer assigned to at least one linked sale.
+7. Use the print button on the active tab to print or export that tab with the same filters.
 
 #### 5. Field Descriptions
 
@@ -97,10 +142,15 @@ Users need the **View Sell Payment Report** permission. Users with location rest
 | Transaction Location | Dropdown | Limits results to transactions from a selected Business Location. |
 | Customer Group | Dropdown | Limits results to customers in a selected group. |
 | Date Range | Date range | Limits results to payments within the selected dates. |
+| Customer (Payment) | Report column | Shows the contact assigned to the payment, immediately after Payment No. in the Detail tab. |
+| Customer (Sale No.) | Report column | Shows the contact assigned to the sale, immediately after Sale No. in the Detail tab. |
+| SHOW ONLY MISMATCH CUSTOMER | Checkbox | Filters the Detail tab to payment references whose assigned payment customer differs from a linked sale's assigned customer. |
 
 #### 6. Business Logic / Workflow
 
 The selected User is matched against the user who created the underlying transaction. The filter is applied consistently to the detail list, both summary tabs, and printed or exported reports. When **All Users** is selected, the report retains its existing unfiltered-by-user behavior.
+The Detail tab shows payment and sale customers separately. The payment customer comes from the payment's assigned contact; the sale customer comes from the sale transaction's assigned contact.
+The mismatch checkbox filters the Detail tab only. A payment reference is included when one of its linked sales has a different customer assigned to its payment and sale.
 
 #### 7. Notes or Important Considerations
 
@@ -115,7 +165,7 @@ Compare sales across time periods, products, or locations to spot trends.
 
 #### 1. Module Overview
 
-The Customer Sale by Categories report shows each customer's sales grouped by product category, with one column for each month in the selected date range.
+The Customer Sale by Categories report shows each customer's sales grouped by product category, with all 12 months for the selected year.
 
 #### 2. Purpose of the Feature
 
@@ -129,22 +179,26 @@ Users need the **Customer Sale by Categories Report** permission. Users with loc
 
 1. Open **Reports** from the left sidebar.
 2. Under **Sales Reports**, select **Customer Sale by Categories**.
-3. Choose a start date and end date. The report creates one column for each month touched by this date range.
+3. Select a year. The report displays January through December for that year.
 4. Optionally select a Business Location, customer, or product category.
 5. Select **Apply Filters** to view the results.
+6. Use the table search and page-size controls as needed. Select **Print A4** above the table to open a paginated preview of the filtered and searched report. In the preview toolbar, select **PDF** to download the report as a PDF, or use **Print A4** to open the browser print dialog.
 
 #### 5. Field Descriptions
 
 | Field | Type | Explanation |
 |---|---|---|
-| Start Date | Date | First date included in the report. |
-| End Date | Date | Last date included in the report. |
+| Year | Dropdown | Shows the 12 monthly columns for the selected year. Available years include years with sales and the current year. |
 | Business Location | Dropdown | Limits the report to a permitted Business Location. |
 | Customer | Dropdown | Limits the report to one customer. |
 | Category Filter | Dropdown | Limits the report to one product category. |
-| City | Text | City recorded on the customer contact. |
-| Shop Name | Text | Customer business name, or the contact name when no business name is set. |
-| Number | Text | Customer mobile number. |
+| Show entries | Dropdown | Starts at 25 rows per page; choose 25, 50, 100, 200, 500, 1,000, or All. |
+| Search | Search field | Narrows the table and the A4 preview to rows matching the search text. |
+| Export controls | Buttons | Export matching table data to available formats or change visible columns. |
+| Print A4 | Button | Above the table; opens a paginated A4 preview with PDF download, Excel export, and browser print actions. |
+| Address | Text | Customer contact address, including available address lines, city, state, country, and postal code. |
+| Customer Name | Text | Business name for business contacts, or the contact name when no business name is set. |
+| Contact ID | Text | Contact ID recorded on the customer record. |
 | Category | Text | Product category assigned to the sold item. |
 | Month columns | Amount | Net sales value for that category and customer during the month. |
 
@@ -154,8 +208,10 @@ Sales and linked sale returns are grouped by customer, product category, and tra
 
 #### 7. Notes or Important Considerations
 
-- A date range that starts or ends partway through a month still displays the full month column, but only transactions inside the selected dates are included.
+- The Year filter defaults to the current year. All 12 months are shown, including months with no sales.
+- Only sales and returns dated within the selected calendar year are included.
 - Negative monthly amounts are displayed in parentheses. A dash means there were no net sales for that month.
+- The preview includes all report rows and a per-month total on its last page.
 
 ### Trending Products
 
@@ -190,9 +246,102 @@ The most important stock report — shows current stock levels for every product
 
 📸 *[Screenshot: The Stock Report with location filter]*
 
+### Product List Report
+
+#### 1. Module Overview
+
+The Product List Report displays product and variation details, categories, brands, units, supplier, stock, rack information, and record dates in a searchable table.
+
+#### 2. Purpose of the Feature
+
+Use this report to review your product catalogue and stock information, filter the list by product attributes, or print and export a complete filtered result.
+
+#### 3. User Access / Permissions
+
+Users need the **View Stock Report** permission. Users with location restrictions only see products associated with their permitted Business Locations. Product price visibility follows the existing stock-report price permission.
+
+#### 4. Step-by-Step Usage Instructions
+
+1. Open **Reports** from the left sidebar and select **Product List Report**.
+2. Optionally filter by Business Location, category, brand, supplier, unit or sub-unit, and product status.
+3. Use the table search to narrow the displayed products if needed.
+4. Select **Print A4** to open a preview of the filtered and searched results.
+5. In the preview, navigate pages and choose print, PDF, or Excel.
+
+#### 5. Field Descriptions
+
+| Field | Type | Explanation |
+|---|---|---|
+| Business Location | Dropdown | Limits the report to products assigned to the selected permitted location. |
+| Category | Dropdown | Limits the report to products in the selected category. |
+| Brand | Dropdown | Limits the report to products assigned to the selected brand. |
+| Supplier | Dropdown | Limits the report to products with the selected default supplier. |
+| Unit | Dropdown | Limits the report to the selected base unit. |
+| Sub-unit | Dropdown | Limits the report to a sub-unit of the selected base unit. |
+| Status | Dropdown | Shows active or inactive products. |
+| Table Search | Search field | Narrows products using the table's searchable product fields. |
+| Print A4 | Button | Opens a paginated preview and provides print, PDF, and Excel actions. |
+
+#### 6. Business Logic / Workflow
+
+The report uses the selected filters and the current table search to load all matching products in pages. The preview includes the available catalogue and stock columns, including variation names, locations, stock and rack details. Purchase and selling price columns are omitted for users whose existing permissions hide stock-report prices.
+
+#### 7. Notes or Important Considerations
+
+- The preview follows the same location access and price visibility rules as the report.
+- The print preview fetches all matching pages, not only the rows currently loaded in the table.
+
+### Held Quantity Report
+
+#### 1. Module Overview
+
+The Held Quantity Report compares held stock recorded at each Business Location with the quantity expected from sales that have not yet been delivered.
+
+#### 2. Purpose of the Feature
+
+Use the report to identify held quantity mismatches, review pending delivery notes and sales orders, and reconcile stored held quantities.
+
+#### 3. User Access / Permissions
+
+Users need the **View Stock Report** permission. Users with location restrictions only see data from their permitted Business Locations. Row-level or bulk synchronization actions continue to require their existing product-update permissions.
+
+#### 4. Step-by-Step Usage Instructions
+
+1. Open **Reports** from the left sidebar and select **Held Quantity Report**.
+2. Optionally choose a Business Location and held status. Use the table search to narrow results further.
+3. Select **Print A4** in the filter panel to open a preview of all matching rows.
+4. Navigate the pages, then choose print, PDF, or Excel in the preview.
+5. To reconcile stored values, use the existing row or bulk sync actions when permitted.
+
+#### 5. Field Descriptions
+
+| Field | Type | Explanation |
+|---|---|---|
+| Business Location | Dropdown | Limits the report to a permitted location. |
+| Held Status | Dropdown | Shows all held or mismatched rows, mismatches only, matched rows with stored held stock, or rows with stored held stock. |
+| Table Search | Search field | Narrows rows by searchable product, SKU, category, or location fields. |
+| SKU | Report column | Variation SKU for the stock row. |
+| Product / Variation | Report columns | Product and, when applicable, its variation name. |
+| Current Stock | Quantity | Available stock at the Business Location. |
+| Sold / Delivered Quantities | Quantities | Final sale quantity, delivered quantity, pending delivery-note quantity, and sales-order quantity. |
+| Expected / Stored Held Quantity | Quantities | Expected held stock and the held quantity currently stored for the location. |
+| Held Difference | Quantity | Stored held quantity minus expected held quantity. |
+| Held Status | Status | Indicates whether the quantities match within the report's tolerance. |
+| Print A4 | Button | Opens a paginated preview with print, PDF, and Excel actions. |
+
+#### 6. Business Logic / Workflow
+
+Expected held quantity is calculated as final sale quantity after returns minus quantities on processed delivery notes, with a lower bound of zero. Pending delivery notes and sales-order quantities are shown separately for reference. A row is marked mismatched when the difference is greater than the report's tolerance. The preview applies the same location, status, and table-search criteria as the report and totals quantity columns across all fetched rows.
+
+#### 7. Notes or Important Considerations
+
+- The preview includes all matching rows, not only the current DataTables page.
+- Synchronizing held quantities changes stored inventory data; use the sync actions only when the expected quantity is correct.
+- Quantity totals combine the displayed numeric values across matching rows, consistent with the on-screen report's total behavior.
+
 ### Stock Value Report
 
-Shows the total financial value of your stock — useful for accounting and insurance.
+Shows stock value and movement across the **Summary**, **Details**, **Categorized**, and **Location Details** tabs. Use **Print A4** in the filter panel to open a preview of the selected tab with the current report filters.
 
 ### Stock Reorder Report
 
@@ -250,6 +399,51 @@ If you're in India with GST enabled:
 
 ## POS Reports
 
+### Cash Skim Report
+
+#### Module Overview
+
+The Cash Skim Report lists cash amounts removed from registers using the cash skim action.
+
+#### Purpose of the Feature
+
+Use the report to review when cash was skimmed, which register and Business Location it came from, and the user responsible.
+
+#### User Access / Permissions
+
+Users need the **Cash Skim Report** permission. Users with location restrictions only see cash skims from their permitted Business Locations.
+
+#### Step-by-Step Usage Instructions
+
+1. Open **Reports** from the left sidebar and select **Cash Skim Report**.
+2. Optionally choose a Business Location, User, or Date Range.
+3. Select **Print A4** to open a preview of all matching cash skim records and the columns currently shown.
+4. Review the preview, then choose **Print A4**, **PDF**, or **Export to Excel**.
+
+#### Field Descriptions
+
+| Field | Type | Description |
+|---|---|---|
+| Business Location | Dropdown | Limits results to one Business Location available to the user. |
+| User | Dropdown | Limits results to registers opened by the selected user. |
+| Date Range | Date range | Limits results to cash skim transactions within the selected dates. |
+| Date | Report column | Date and time when the cash skim was recorded. |
+| Register | Report column | Register reference associated with the cash skim. |
+| Location | Report column | Business Location associated with the register. |
+| User | Report column | User who opened the register. |
+| Open Time / Close Time | Report columns | Opening and closing times for the register session. Close Time is blank while the register is open. |
+| Status | Report column | Whether the associated register is open or closed. |
+| Amount | Report column | Amount of cash removed from the register. |
+
+#### Business Logic / Workflow
+
+The report includes cash register transactions recorded as cash-out using the cash payment method. The total at the bottom of the preview sums the matching cash skim amounts across all pages.
+
+#### Notes or Important Considerations
+
+- The print preview includes all matching records, not only the rows currently loaded on screen.
+- The print preview follows the visible columns after applying the user's report column preferences.
+
 ### Register Report
 
 #### Module Overview
@@ -269,7 +463,9 @@ Users need the **Register Report** permission. Users with location restrictions 
 1. Open **Reports** from the left sidebar and select **Register Report**.
 2. Optionally filter by Business Location, User, register Status, or Date Range.
 3. Review each register session's opening cash and payment totals.
-4. For a closed register with cash denominations recorded, review **Net Difference** immediately after **Total**.
+4. Select **Print A4** to open a preview of the filtered report, including the columns currently shown for the selected location.
+5. Review the preview, then choose **Print A4**, **PDF**, or **Export to Excel**.
+6. For a closed register with cash denominations recorded, review **Net Difference** immediately after **Total**.
 
 #### Field Descriptions
 
@@ -291,6 +487,7 @@ The report displays payment columns in the order configured on the Business Loca
 
 - **Net Difference** is blank until cash denomination counts are recorded for the register.
 - When no single Business Location is selected, payment columns appear if the method is enabled at any location the user can access.
+- The print preview includes all matching register sessions and follows the visible columns and payment labels for the selected location.
 
 ### Sales Representative Report
 
@@ -311,8 +508,10 @@ Users need the **Sales Representative Report** permission. Users with location r
 1. Open **Reports** from the left sidebar and select **Sales Representative Report**.
 2. Optionally choose a Business Location, user, date range, customer, customer group, Commission Agent, or Commission Agent 2.
 3. Optionally narrow the results by the product filters shown for your business.
-4. Review the Sales, Sales with Commission, Product Summary, or Product Detailed tab. The selected customer, group, and commission-agent filters are applied to the sales-related results.
-5. Clear a filter or choose **All** to include all values for that filter.
+4. Review the Sales, Sales with Commission, Product Summary, Product Detailed, or Expenses tab. The Payments with Commission tab is also available when commission is calculated from payments.
+5. Select **Print A4** on the tab you want to print. Each tab opens its own report preview and keeps the selected report filters.
+6. In the preview, review the pages, then choose **Print A4**, **PDF**, or **Export to Excel**.
+7. Clear a filter or choose **All** to include all values for that filter.
 
 #### Field Descriptions
 
@@ -327,15 +526,19 @@ Users need the **Sales Representative Report** permission. Users with location r
 | Commission Agent 2 | Dropdown | Limits results to sales assigned to the Commission Agent 2 field. |
 | Category and related product filters | Dropdowns | When enabled, limits results by product category, brand, gender, or procurement source and their subcategories. |
 | City | Dropdown | Limits results to customers in the selected city. |
+| Product Summary quantities | Report columns | Shows the unit in its own column, followed by SALES quantity and separate return quantities under Returns / Normal and Returns / Damage. |
 
 #### Business Logic / Workflow
 
 Customer and customer-group filters use the customer on each sale. The Commission Agent filter matches the sale's first commission-agent assignment; Commission Agent 2 matches its second assignment. When more than one filter is selected, a sale must satisfy all selected filters. These filters update the sales totals and the Sales, Sales with Commission, Product Summary, and Product Detailed results.
 
+In the Product Summary tab, the UNIT column identifies the product's unit. Quantity columns show numbers only, without repeating the unit, and the Returns / Normal and Returns / Damage columns show returned quantities split by status.
+
 #### Notes or Important Considerations
 
 - The two commission-agent filters are independent; selecting both narrows results to sales matching both assignments.
 - Commission-agent choices include business users so they cover the commission assignment modes configured for the business.
+- Print A4 previews are separate for each report tab and include the complete filtered tab results, not only the rows currently visible on screen.
 - Blank filters do not restrict results.
 
 ### Service Staff Report

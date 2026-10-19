@@ -153,6 +153,36 @@ Click on a business name to open the **Business Detail** page, which shows:
 
 📸 *[Screenshot: Business detail page with tabs]*
 
+### Reset Mobile App Sales
+
+#### Module Overview
+The **Hard Reset Options** on a Business Detail page include a separate reset for Mobile App sales.
+
+#### Purpose of the Feature
+This option lets a Superadmin remove API-created sales without selecting the broader cloud-sales or workstation-sales reset.
+
+#### User Access / Permissions
+Only users with the **Superadmin** permission can use this option.
+
+#### Step-by-Step Usage Instructions
+1. Go to **Superadmin → All Businesses**.
+2. Open the relevant business.
+3. Expand **Hard Reset Options**.
+4. Select **Reset MobileApp Sales**.
+5. Click **Reset Data** and confirm the action.
+
+#### Field Descriptions
+
+| Field | Type | Description |
+|---|---|---|
+| **Reset MobileApp Sales** | Checkbox | Permanently deletes API-created sale transactions for the selected business. |
+
+#### Business Logic / Workflow
+The reset deletes the selected business's API-created sale records and their transaction lines, payments, accounting references, and attached documents. Product stock quantities are recalculated after the reset.
+
+#### Notes or Important Considerations
+This action cannot be undone. It does not delete sell returns or other transaction types. This server-side reset is separate from the Mobile App's device-side hard delete, which only removes locally stored sales and does not delete server records.
+
 ### Add a New Business
 
 1. Click **Add Business** from the dashboard Quick Actions or the business list page.
@@ -409,6 +439,7 @@ Navigate to **Superadmin → Settings** to configure system-wide preferences.
 | **Default Language** | Default language for new businesses |
 | **Allow Registration** | Enable/disable self-registration for new businesses |
 | **Disable Pricing** | Hide the pricing page from public |
+| **Disable GitHub Update** | Stop software updates from GitHub. Leave unchecked to allow updates. |
 | **Enable Terms & Conditions** | Show T&C checkbox during registration |
 
 📸 *[Screenshot: Application settings form]*
