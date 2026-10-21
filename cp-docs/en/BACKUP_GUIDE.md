@@ -122,3 +122,7 @@ A: We recommend **daily backups**. Set up automatic backups so you don't have to
 - 📌 **Connect Google Drive** for automatic cloud backup — two copies are better than one
 - 📌 **Create a manual backup** before major changes (like bulk imports or settings changes)
 - 📌 **Test your backups** periodically to make sure they can be restored
+
+## Troubleshooting Backup Write Errors
+
+If the backup log says it cannot write the ZIP archive to the configured disk, check the destination directory shown in the error details. Confirm that the PHP-FPM service user can write there and that the filesystem has enough free space and quota for the full archive. A generic write failure can be caused by permissions, a full disk, or a hosting quota; do not assume permissions alone are the cause.

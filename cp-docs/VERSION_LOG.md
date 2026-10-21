@@ -2,6 +2,177 @@
 
 **Release Date:** 2026-10-18
 
+### Module: POS - Payment Modal Scanner Protection (2026-10-21)
+
+#### Bug Fixes
+- Made payment amount fields read-only so barcode scanners cannot write values into them; continue to support the on-screen keypad and payment buttons.
+- Reject scanner suffix Enter/Tab in the payment modal so scanning does not finalize the sale, and show a warning when rapid scanner input is detected.
+
+### Module: Offline Sync - Sales (2026-10-21)
+
+#### Bug Fixes
+- Preserved embedded line tax and inclusive unit prices when updating already-synced offline sales, preventing the cloud connector from adding tax a second time.
+- Sent active offline payment rows as explicit payload data for both new sales and updates so split payments can be synchronized with the invoice.
+- Excluded locally soft-deleted payment rows from the outgoing active payment list.
+
+### Module: POS - Cash Register Payment Corrections (2026-10-21)
+
+#### Bug Fixes
+- When an edited finalized sale has an extreme payment outlier in the active register, replace that sale's active register entries with the corrected payment allocation. Keep the old entries soft-deleted for audit history.
+- Normal payment edits retain their existing refund adjustment behavior.
+
+### Module: Reports - Sales Representative Report (2026-10-21)
+
+#### Improvements
+- The Sales Representative report filters now use the custom Sales Commission Agent and Sales Commission Agent 2 labels from Business Settings > Sales.
+- Each agent filter appears only when its corresponding setting is enabled and continues to filter its own agent assignment independently.
+
+### Module: Products - Product List (2026-10-20)
+
+#### Improvements
+- Replaced the unbounded **All** page-size option with bounded page sizes up to 1,000 to prevent product-list requests from exhausting PHP memory. Search and pagination remain available across the full catalogue.
+- Aligned the Row density selector and product-list toolbar actions on one row.
+
+#### UI / UX Changes
+- Removed **Sync Product Quantities** from the Products list toolbar.
+
+### Module: HMS - Booking and Payment Improvements (2026-10-20)
+
+#### New Features
+- Added multiple payment rows to booking creation and editing, with customer advance deposits available as a payment method when a deposit exists.
+- Added **Save & Print** and **Update & Print** actions for booking reports.
+
+#### Improvements
+- Improved alignment of booking forms, settings fields, and HMS index action controls.
+- Defaulted new bookings to depart the day after arrival and added a fourth ID proof field.
+- Made booking totals, paid amounts, and due balances account for all payment rows.
+- Added an overdue customer-balance warning and removed the duplicated customer name from the booking form.
+- Applied booking income and payment activity to the business dashboard's sales figures and transaction information.
+- Added check-in actions for bookings arriving today, including pending bookings.
+- Automatically marked assigned rooms as occupied at check-in and reflected current checked-in stays in Housekeeping.
+- Applied the customer advance availability check to the Sell create page.
+
+#### Bug Fixes
+- Prevented booking saves without a positive total or a selected room or extra, and blocked saves that exceed the customer's credit limit.
+- Fixed booking payment actions, print date formatting, and print-dialog return navigation.
+- Expanded the booking print layout to use more of the A4 page width.
+- Prevented due balances from displaying as negative after overpayment, while retaining the full paid total.
+- Redirected successful booking edits to the booking list after update or after the print preview closes.
+
+#### UI / UX Changes
+- Added a compact **Actions** menu to booking, room, extra, unavailable, and coupon lists.
+- Added clearer customer balance messaging and payment edit/delete actions in booking receipts.
+
+#### Technical Updates
+- None.
+
+### Module: Sales - Sales List and Reprinting (2026-10-20)
+
+#### Improvements
+- Added checkbox selection to the Sales list and ensured selecting a row does not open the sale details modal.
+- Added **Reprint Invoices** for sending all selected invoices to print sequentially in one operation.
+- Rendered each bulk reprint in an isolated frame using the same invoice view as individual printing, preventing receipt styles from affecting one another.
+
+#### Bug Fixes
+- Fixed inconsistent bulk reprint layouts by rendering every selected invoice through the full invoice page, including sales without a public invoice token.
+- Matched each bulk print frame to the usable A4 page height so invoice totals and footer spacing align with individual A4 prints.
+- Made bulk invoice content fit the selected paper width, including A5, without clipping right-side totals.
+
+#### New Features
+- Added **Create Delivery Note** to the Sales list bulk action bar when delivery notes are enabled and the user has create permission. One consolidated delivery note links all selected eligible invoices, shows combined product quantities, and retains source invoice lines for traceability. Existing sales are not modified.
+- Added an HTML Crystal style preview for printing a Delivery Note from its view modal, with zoom, font-size, A4 print, and close controls.
+- Removed duplicate invoice numbers and customer names from the delivery details column, added customer group and address fields, tightened entry spacing, suppressed empty-address placeholders, aligned each delivery detail beside its matching customer, added row numbers to customer/delivery pairs, placed the customer name and invoice details on one line, refined customer/group label typography, added invoice-level commission agents and invoice value, and removed bold styling from product names and delivered quantities.
+- Added a configurable Customer Group label under Business Settings > Merchant, defaulting to **Customer Group**, and applied it to Delivery Note details.
+
+### Module: Dashboard - HMS Sales Activity (2026-10-20)
+
+#### Improvements
+- Included HMS bookings and their payment activity in dashboard sales and payment information so they appear with other sales transactions.
+
+### Module: POS - Product Stock History (2026-10-20)
+
+#### Improvements
+- Loaded the selected product variation's initial stock history in the F10 product search history window.
+- Loaded each additional location's stock history when its tab is selected.
+- Kept stock history requests within the configured application path.
+
+### Module: System - Backups (2026-10-21)
+
+#### Bug Fixes
+- Checked the backup disk's test-write result and logged the configured destination path, writability, and free space when an archive write fails.
+- Clarified generic archive write errors so they direct administrators to check both filesystem permissions and disk quota/space.
+
+### Module: Sales - Commission Agent Filters (2026-10-21)
+
+#### Improvements
+- Used the custom Sales Commission Agent and Sales Commission Agent 2 labels from Business Settings on the Sales list filters.
+- Added an independent second-agent filter and bound each filter to its matching sale transaction field.
+
+### Module: Sales - Commission Agent Permissions
+
+#### New Features
+- Added separate per-user read-only settings for Sales Commission Agent and Sales Commission Agent 2.
+
+#### Improvements
+- Applied the second-agent read-only setting across Direct Sale and POS create/edit forms.
+- Added the missing second Sales Commission Agent field to POS sale editing.
+
+#### Bug Fixes
+- None.
+
+#### UI / UX Changes
+- Clarified the user settings labels to identify both Sales Commission Agent fields.
+
+#### Technical Updates
+- New users default to having both commission-agent fields editable.
+
+### Module: Merchants - Contact ID Auto Generator
+
+#### New Features
+- Added business-specific Contact ID generators with configurable prefixes, number lengths, and starting numbers.
+- Added the Contact ID generator selector to new customer and supplier forms.
+
+#### Improvements
+- Contact ID generation skips IDs already used by contacts and reserves the next available ID when saving.
+- Added a Contact ID Auto Generate management link under the Merchants sidebar menu.
+
+#### Bug Fixes
+- None.
+
+#### UI / UX Changes
+- Added a live Contact ID preview when a generator is selected on the contact form.
+
+#### Technical Updates
+- Added a per-business generator table and business-scoped CRUD and preview routes.
+
+## Version 8.99.6
+
+**Release Date:** 2026-10-18
+
+### Module: Products - Stock History
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Fixed stock history requests failing on installations hosted under a subdirectory by keeping AJAX URLs within the application path.
+- Fixed HTTP 500 errors from memory exhaustion by loading location histories on demand and paginating entries.
+- Fixed the stock-history **Reindex Stock Quantities** button so it targets the application URL when hosted in a subdirectory.
+- Fixed stock-history reindex requests exhausting PHP memory on products with large transaction histories.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- Generated product search and stock history AJAX URLs with Laravel's URL helper so subdirectory installations use the correct application base path.
+- “All” locations now loads each location’s history when its tab is opened, with Older/Newer pagination through the full history while preserving running stock and profit totals.
+- Stock reindexing now remaps transactions in bounded batches and uses aggregate stock calculations instead of loading the full history into memory.
+- Stock history request errors now include the HTTP status code when the server returns one.
+- Extended the stock history request timeout to five minutes to match the configured PHP execution limit.
+
 ### Module: Customer Sale by Categories Report
 
 #### New Features
@@ -11723,3 +11894,13 @@
 #### What Users Can Do Now
 - **Chart of Account Report added under Accounting > Reports.** Lists all accounts organised by type (Asset, Liability, Equity, Income, Expenses) with columns for GL Code, Account Name, Account Sub Type, and Status.
 - **"Show Balances" option.** Tick the Show Balances checkbox and click Apply Filters to add a live balance column showing the current balance for each account, plus totals grouped by sub-type and account type.
+
+---
+
+### Module: Home Dashboard - HMS Booking Income
+
+#### What Users Can Do Now
+- **Active HMS bookings are included in Home Dashboard sales totals and charts.** Pending and confirmed bookings count as sales; cancelled bookings are excluded.
+- **Booking payments are included in sales payment method totals and the Income Summary.** Active bookings also appear in recent transactions, user sales totals, and outstanding sales payments.
+- **Existing bookings with a missing transaction date use their creation date for dashboard reporting.** New bookings receive a transaction date when saved.
+- **Date and location filters apply to HMS booking totals.** Dashboard sales can be reviewed consistently across selected periods and locations.

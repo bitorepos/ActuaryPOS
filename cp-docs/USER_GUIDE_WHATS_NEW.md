@@ -1,7 +1,91 @@
 # What's New - User Guide
-**Updated:** 2026-09-30
+**Updated:** 2026-10-21
 
 This guide explains system changes in simple user language. It only includes what users can see, do, check, print, export, or manage in the system.
+
+---
+
+## POS - Payment Modal Scanner Protection - 2026-10-21
+
+What users can expect now:
+- Barcode scanners cannot enter values into payment amount fields in the POS payment modal.
+- A rapid scan and its trailing Enter or Tab are rejected with a warning; the sale is not finalized.
+- Payment amounts are entered with the on-screen keypad and payment buttons.
+
+How to use or check it:
+- Open the POS payment modal and scan a product barcode while a payment amount field is focused. The scan is rejected and the modal stays open.
+- Enter the intended amount with the on-screen keypad or payment buttons, then save when ready.
+
+---
+
+## Offline Sync - Inclusive Tax and Split Payments - 2026-10-21
+
+What users can expect now:
+- Editing and uploading an already-synced tax-inclusive sale keeps the saved inclusive line values instead of recalculating tax on top of them.
+- Active split payment rows are included when offline sales are uploaded or updated.
+
+How to use or check it:
+- On an offline workstation, edit a finalized sale with inclusive tax and multiple payments, then open **Offline Sync → Upload Sync → Sales**.
+- After synchronization, confirm the cloud invoice keeps the workstation total and shows its active payment rows.
+
+---
+
+## POS - Cash Register Payment Correction - 2026-10-21
+
+What users can expect now:
+- If an invoice was updated to correct an extreme accidental payment entry, the open cash register replaces that invoice's outlier entries with its corrected payment allocation.
+- Earlier entries remain soft-deleted in the register history.
+
+How to use or check it:
+- Open the affected finalized sale and save the corrected payment details again while its cash register is open.
+- Reopen the cash register summary and confirm the invoice no longer contributes the extreme amount.
+
+---
+
+## Home Dashboard - HMS Booking Income - 2026-10-20
+
+What users can do now:
+- See active HMS bookings included in Home Dashboard sales totals and sales charts.
+- See booking payments included in the sales payment method chart and income summary, and active bookings in recent transactions, user sales totals, and outstanding sales payments.
+- Review older bookings using their creation date if their transaction date was missing.
+- Use the dashboard date and location filters to review bookings alongside sales. Cancelled bookings are excluded.
+
+How to use or check it:
+- Open **Home / Dashboard**.
+- Select a date range and business location, then review the Sales Summary, payment method chart, sales charts, and recent transactions.
+
+---
+
+## HMS - Booking and Payment Improvements - 2026-10-20
+
+What users can do now:
+- Create and edit bookings with multiple payment rows, including an available customer advance deposit.
+- Use four ID proof fields and see the departure date default to the day after arrival.
+- Print booking reports from create and edit forms and return to the booking list after closing the print dialog.
+- Use consistent action menus on booking, room, extra, unavailable, and coupon lists.
+- Check in bookings arriving today, including bookings still marked Pending.
+- See checked-in rooms marked as Occupied automatically in Housekeeping, including stays checked in before this update.
+- See booking saves blocked when the total is zero, no room or extra is selected, or the customer's credit limit would be exceeded.
+- Use the advance payment method on the Sell create page only when the selected customer has an available deposit.
+
+How to use or check it:
+- Go to **HMS → Bookings** and select **Add** or open a booking's **Actions → Edit Booking**.
+- Add payment rows as needed, then select **Save**, **Save & Print**, **Update**, or **Update & Print**.
+- Open **HMS → Settings → Booking** to review the four ID proof labels and required-field options.
+- Use the **Actions** menu on HMS lists to open each record's available actions.
+
+---
+
+## POS - Product Stock History - 2026-10-20
+
+What users can do now:
+- Open **F10** product search, select a product variation, and click **History** to view its stock history.
+- Switch location tabs to load history for each location.
+
+How to use or check it:
+- Open product search with **F10**.
+- Select one product variation and click **History**.
+- Select a location tab to view its stock records.
 
 ---
 

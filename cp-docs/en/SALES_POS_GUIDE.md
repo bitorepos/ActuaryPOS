@@ -299,3 +299,21 @@ The filter groups API-created sales under one Mobile App source; it does not sep
 
 ### Notes or Important Considerations
 This source is intended for sales created through the Mobile App. Other integrations that create API sales should not use the same API-created flag if they need to be excluded from this filter.
+
+## Select and reprint invoices
+
+On the Sales index, use the row checkboxes to select the invoices you want to print. Selection does not open the sale details modal. Click **Reprint Invoices** in the bottom action area to send the selected invoices to the printer one by one in a single operation. Each invoice uses the same saved layout and invoice page styling as individual invoice printing, including sales without a public invoice link. Bulk invoices adapt to the selected paper width (including A5) so right-side totals remain visible.
+
+## Create delivery notes for selected invoices
+
+When **Enable Delivery Notes** is on and the user has the **Create Delivery Note** permission, select final sales in the Sales list and click **Create Delivery Note** in the bottom action area. The system creates **one consolidated delivery note for the entire selection**, including invoices for different customers. It lists every source invoice and customer, and combines matching products into summed quantities on the printed note while retaining each invoice's delivery lines for traceability. All selected invoices must be eligible and have undelivered quantities; due or partially paid invoices require the existing approval or permission. The operation is atomic, so an invalid selection creates no note. Sale transaction records are not edited; held stock is updated using each source invoice's location.
+
+From **Sales → Delivery Notes**, open a note using its **View** action and select **Print** to open the HTML Crystal style preview. Use the preview toolbar to zoom or adjust text, then print the delivery note on A4. Each customer/delivery pair has a row number and appears on the same row; the right column shows delivery/address details without repeating the customer name or invoice number. Customer Info keeps the customer name and invoice number on one line and lists each invoice's assigned commission agents (using the configured labels) and value. Both columns use compact spacing, customer names match the invoice text size, the Customer Group label is regular weight, and empty-address placeholders are omitted.
+
+The label used for Customer Group in Delivery Note details is configurable in **Business Settings → Merchant**. It defaults to **Customer Group**. Product names and delivered quantities print in regular weight while table headers remain emphasized.
+
+## Filter sales by commission agents
+
+The Sales list Report Filters use the custom labels configured in **Business Settings → Sales** for **Sales Commission Agent** and **Sales Commission Agent 2**. When each agent field is enabled, its filter appears separately and matches only that corresponding agent assignment on the sale.
+
+The **Sales Representative Report** uses the same custom labels and enabled settings in its Report Filters. Its two agent filters remain independent, so selecting an agent in one filter does not substitute for the other.

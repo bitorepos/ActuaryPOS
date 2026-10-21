@@ -14,9 +14,15 @@
 }
 .product-index-table[data-density="compact"] { --product-cell-padding: 8px; }
 .product-index-table[data-density="comfortable"] { --product-cell-padding: 18px; }
-.product-table-density { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.product-index-toolbar { min-height: 42px; }
+.product-index-toolbar-density { flex: 0 0 auto; }
+.product-index-toolbar-actions { flex: 1 1 auto; }
+.product-table-density { display: flex; align-items: center; gap: 10px; margin: 0; }
 .product-table-density label { margin: 0; font-weight: 500; }
 .product-table-density select { width: auto; }
+@media (max-width: 767px) {
+    .product-index-toolbar-actions { justify-content: flex-start !important; }
+}
 .product-index-table table.table { border-collapse: separate !important; border-spacing: 0; border: 0; }
 .product-index-table table.table > thead > tr > th,
 .product-index-table table.table > tbody > tr > td {

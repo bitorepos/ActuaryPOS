@@ -27,6 +27,8 @@ At the top of your Dashboard, you'll see your sales totals:
 | **Invoice Due** | Money your customers still owe you |
 | **Purchase Due** | Money you still owe your suppliers |
 
+HMS bookings with **Pending** or **Confirmed** status are included in the Home Dashboard's sales totals. Their payments are included in the sales payment method chart and Income Summary. Active bookings also appear in recent transactions, user sales totals, and the outstanding sales payment list. Cancelled bookings are excluded. The selected date and location filters apply to booking totals as they do to sales. Older bookings without a transaction date are reported using their creation date.
+
 📸 *[Screenshot: The four summary cards at the top of the Dashboard]*
 
 > 💡 **Tip:** Click on any card to jump straight to the detailed report for that category.
@@ -134,3 +136,7 @@ A: The numbers update every time you load the page. For real-time updates, refre
 - 📌 Review the **Stock Alerts** section daily to avoid stockouts
 - 📌 Follow up on overdue payments shown in the **Payment Due** sections
 - 📌 Use the **This Month** view at month-end for a quick performance check
+
+## HMS bookings in sales activity
+
+HMS booking totals and booking payments are included in Dashboard sales and payment information alongside regular sales. Use the Dashboard date range and transaction details to review the booking activity for the period.

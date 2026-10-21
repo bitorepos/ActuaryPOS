@@ -103,6 +103,10 @@ If you have many products to add, importing from a spreadsheet is much faster:
 
 ---
 
+## Browsing the product list
+
+The Products list is paginated so large catalogues can be browsed without loading every product into one request. Choose a page size up to 1,000, then use the search box, report filters, and page controls to find products throughout the catalogue. The Row density selector changes the spacing of product rows. Product-list actions and export buttons appear alongside the density selector when space allows.
+
 ## How to Edit a Product
 
 1. Go to **Products → List Products**.
@@ -112,6 +116,16 @@ If you have many products to add, importing from a spreadsheet is much faster:
 5. Make your changes and click **Update**.
 
 📸 *[Screenshot: The product list with the Actions dropdown showing Edit option]*
+
+## Review product stock history from product search
+
+1. Open product search with **F10**.
+2. Select one product variation.
+3. Click **History** to open the stock history window. The first location's history loads automatically.
+4. Select another location tab to load its history.
+5. Use **Type** to filter the history by transaction type.
+
+Your role must allow you to view product stock history.
 
 ---
 

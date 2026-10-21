@@ -179,6 +179,44 @@ Each user can adjust their own settings:
 
 ---
 
+## Module Overview
+
+Sales Commission Agent field permissions control whether an assigned user can change either commission agent while creating or editing sales.
+
+## Purpose of the Feature
+
+Use these settings to keep commission assignments consistent when a user may enter sales but should not be able to change the assigned agent.
+
+## User Access / Permissions
+
+Users with permission to update users can configure these options from **User Management → Users → Actions → User Settings → Sale**. The setting applies to the selected user in Direct Sale and POS sale forms.
+
+## Step-by-Step Usage Instructions
+
+1. Open **User Management → Users**.
+2. Find the user and open **Actions → User Settings**.
+3. Select the **Sale** tab.
+4. Enable **Readonly Sales Commission Agent**, **Readonly Sales Commission Agent 2**, or both.
+5. Save the user settings.
+6. When either Commission Agent option is enabled in **Settings → Business Settings → Sale**, the corresponding field is shown as read-only for that user.
+
+## Field Descriptions
+
+| Label | Type | Explanation |
+|---|---|---|
+| **Readonly Sales Commission Agent** | Checkbox | Prevents the user from changing the first Sales Commission Agent field. |
+| **Readonly Sales Commission Agent 2** | Checkbox | Prevents the user from changing the second Sales Commission Agent field. |
+
+## Business Logic / Workflow
+
+Each checkbox controls its corresponding Commission Agent field independently. The permission applies only when the related Commission Agent option is enabled in Business Settings; it does not change the saved agent assignment or commission calculation.
+
+## Notes or Important Considerations
+
+Changing either permission affects Direct Sale and POS sale forms for that user. Users with both settings disabled can select agents normally when the corresponding business options are enabled.
+
+---
+
 ## Sign In As Another User
 
 Administrators can temporarily log in as another user to troubleshoot issues:

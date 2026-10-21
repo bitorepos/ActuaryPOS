@@ -1,5 +1,23 @@
 # Version Log
 
+## 20 October 2026 - Include HMS Bookings in Home Dashboard Sales
+
+Active HMS bookings with **Pending** or **Confirmed** status now count toward the Home Dashboard's sales totals, revenue, recent transactions, sales charts, sales counts, income summary, user sales summary, and outstanding sales payment list. Booking payments appear in the sales payment method chart and income summary. Existing bookings with a missing transaction date use their creation date for dashboard reporting, and new bookings receive a transaction date. The selected date and location filters apply; cancelled bookings are excluded.
+
+## 20 October 2026 - HMS Booking and Payment Improvements
+
+Booking forms now use a clearer two-column layout, default the departure date to the next day, and provide four ID proof fields. Booking creation checks for a room or extra, a positive total, and customer credit-limit availability before saving.
+
+You can record a booking with multiple payment rows, including an available customer advance deposit. The advance option is hidden when no deposit is available. Booking totals and balances now include all payment rows, and payment actions are available from the booking list and receipt.
+
+The bookings list and other HMS indexes use compact row action menus. Check-in is available for bookings arriving today, including pending bookings. Booking reports can be printed from create and edit forms; closing the print dialog returns to the bookings list. The print layout uses more of the page width.
+
+Housekeeping now marks assigned rooms as **Occupied** when a guest checks in and reflects existing active check-ins in its room list and status totals.
+
+The same advance-payment availability behavior is available on the **Sell** create page.
+
+Product stock history opened from **F10** product search now loads the selected variation's first location and loads each additional location when its tab is selected. The request URL follows the application's configured path.
+
 ## 29 September 2026 - Print the Sales Order Report on A4
 
 The **Sales Order Report** can now be printed from both the **Summary** and **Details** tabs.

@@ -154,7 +154,7 @@ You can set different prices based on the number of guests:
    - **Customer** — Select or create a customer. Optionally assign a customer group.
    - **Status** — Pending, Confirmed, or Cancelled.
    - **Arrival Date & Time** — When the guest arrives.
-   - **Departure Date & Time** — When the guest departs.
+   - **Departure Date & Time** — When the guest departs. The departure date defaults to the following day.
    - **Booking Source** — How the booking was made (Walk-In, Phone, Email, Online, Travel Agent, Other).
    - **Guest Notes** — Internal notes about the guest.
    - **Special Requests** — Guest's special requirements.
@@ -166,9 +166,22 @@ You can set different prices based on the number of guests:
    - Add multiple rooms for group bookings.
 5. **Add Extras** — Optionally add extras (breakfast, parking, etc.) with automatic price calculation.
 6. **Apply Coupon** — Enter a coupon code (if available) for discounts.
-7. **Payment** — Add payment details (amount, method, account).
-8. **ID Proof** — Upload guest identification documents (up to 3 customizable ID fields).
-9. Click **Save**.
+7. **Payment** — Add one or more payment rows with an amount, method, and account. Selecting **Advance** fills the available customer deposit. The option is available only when the customer has an advance deposit.
+8. **ID Proof** — Upload guest identification documents in up to four fields. You can configure the field labels in HMS settings.
+9. Click **Save** or **Save & Print**. The print option opens the booking report; after closing the print dialog, you return to the bookings list.
+
+The form places the billing address beside the booking status, and each date beside its time field. A booking cannot be saved without a room or extra and a total amount greater than zero. If the booking would exceed the customer's credit limit, the system blocks the save and displays a warning.
+
+### Taking multiple payments
+1. In the booking form, enter the first payment's **Amount**, **Payment Method**, and **Payment Account**.
+2. Click **Add Payment Row** to add another payment.
+3. Enter each payment amount and method. For **Advance**, the amount is limited to the customer's available deposit.
+4. Check the displayed balance, then save the booking.
+
+The booking total paid and due balance include every payment row. You can also add, edit, or delete payments from the booking's action menu and payment receipt.
+
+### Editing a booking
+Open the booking's **Actions** menu and select **Edit Booking**. Update the booking or its payment rows, then select **Update** or **Update & Print**. **Update** returns to the bookings list. After printing, close the print dialog to return there as well.
 
 ### Booking List
 The bookings table displays:
@@ -184,15 +197,17 @@ The bookings table displays:
 - **Created At** — When the booking was made.
 
 ### Booking Actions
-Each booking row has action buttons:
-- **Edit** — Modify booking details (requires `hms.edit_booking` permission).
-- **Check-In** — Mark guest as arrived (only for confirmed, not-yet-checked-in bookings).
+Each booking row has an **Actions** menu with the available options:
+- **Edit** — Modify booking details (when your role allows editing).
+- **Check-In** — Mark the guest as arrived on or after the arrival date. Pending bookings can be checked in as well.
 - **Check-Out** — Mark guest as departed (only for checked-in guests).
 - **View** — View full booking details in a modal.
 - **Print** — Generate PDF invoice for the booking.
-- **Delete** — Remove the booking entirely (requires `hms.delete_booking` permission).
+- **Delete** — Remove the booking (when your role allows deletion).
 - **Add Payment** — Record a payment (shown when balance is due).
 - **View Payments** — See all payment transactions for this booking.
+
+The **Rooms**, **Extras**, **Unavailables**, and **Coupons** lists use the same compact action menu to access their available row actions.
 
 ### Filters
 Use the filter bar to narrow results:
@@ -228,7 +243,7 @@ The calendar provides a visual, drag-friendly overview of all bookings.
 2. Click the **Check-In** button (green button with door icon).
 3. A modal will appear for confirmation with the current date/time.
 4. Confirm to record the check-in timestamp.
-5. The room status can then be updated to "Occupied" in Housekeeping.
+5. The assigned room is marked **Occupied** automatically in Housekeeping. Existing active check-ins are also reflected there.
 
 ### Check-Out
 1. From the bookings list, find a checked-in booking.
@@ -237,7 +252,7 @@ The calendar provides a visual, drag-friendly overview of all bookings.
 4. Confirm to record the check-out timestamp.
 5. After check-out, update the room status to "Cleaning" in Housekeeping.
 
-> **Note:** Check-in is only available for confirmed bookings. Check-out is only available for checked-in bookings.
+> **Note:** Check-in is available for pending or confirmed bookings arriving today or earlier. Check-out is available for checked-in bookings.
 
 ---
 
@@ -432,7 +447,7 @@ The HMS module can send automated email notifications to customers when bookings
 4. Click **Save**.
 
 ### Printing a Booking
-From the bookings list, click the **Print** button on any booking to generate a PDF with:
+From a booking, choose **Print** or **Save & Print** to open the A4 booking report. It uses the available page width and includes:
 - Hotel branding (logo, address, contact info)
 - Booking details (reference, dates, status)
 - Room details (type, room numbers, occupancy)
@@ -442,6 +457,8 @@ From the bookings list, click the **Print** button on any booking to generate a 
 - Guest ID proof details
 - Custom footer text
 
+Dates and times are formatted for readability in the report.
+
 ---
 
 ## Settings
@@ -450,10 +467,11 @@ From the bookings list, click the **Print** button on any booking to generate a 
 1. Navigate to **HMS → Settings**.
 2. In the **Booking** tab:
    - **Booking Prefix** — Set the prefix for booking reference numbers (e.g., "BK-" results in BK-0001, BK-0002).
-   - **ID Proof Labels** — Customize the labels for up to 3 ID proof fields:
+   - **ID Proof Labels** — Customize the labels for up to 4 ID proof fields:
      - Label 1 (e.g., "Passport Number")
      - Label 2 (e.g., "Driver's License")
      - Label 3 (e.g., "National ID")
+     - Label 4 (e.g., "Visa")
 3. Click **Save**.
 
 ---
@@ -501,3 +519,11 @@ Yes, use the Permissions system. Assign specific HMS permissions to user roles t
 
 ### How does the coupon system work?
 Create coupons with codes, validity dates, and discount amounts. Guests (or staff) enter the coupon code during booking to apply the discount. Coupons can be limited by room type, usage count, and minimum stay nights.
+
+## Booking payment and print workflow
+
+Booking create and edit forms support multiple payment rows. The **Advance** method is available when the selected customer has an advance deposit, and selecting it fills the amount from the available deposit. New bookings default to departure the day after arrival and provide four ID proof uploads. A customer balance warning appears when the customer is overdue; the customer's name is shown once in the billing details.
+
+Use **Save & Print** when creating a booking or **Update & Print** when editing one. A room and positive booking total are required. The print view includes the booking details, rooms, extras, all payments, and the calculated total, paid amount, and non-negative due amount. After the print preview closes, the app returns to the booking list. The standard **Update** action also returns to the list after a successful edit.
+
+Bookings arriving today can be checked in from the booking actions. Check-in marks their assigned rooms occupied, and the Housekeeping overview reflects the current stay. The Dashboard includes booking income and payment activity in its sales figures and transaction information.

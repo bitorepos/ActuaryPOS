@@ -65,6 +65,43 @@
 
 ---
 
+## Contact ID Auto Generator
+
+### 1. Module Overview
+The Contact ID Auto Generator creates sequential IDs with a configured prefix for new customers and suppliers.
+
+### 2. Purpose of the Feature
+It gives each new contact a consistent, recognizable ID and avoids manually tracking the next number.
+
+### 3. User Access / Permissions
+Users with **Create Customer** or **Create Supplier** permission can manage generators from **Merchants → Contact ID Auto Generate**. The selector is available on the contact creation form when at least one generator exists.
+
+### 4. Step-by-Step Usage Instructions
+1. Open **Merchants → Contact ID Auto Generate**.
+2. Click **Add** and enter a prefix, number length, and starting number, then save.
+3. Open **Merchants → Customers**, **Suppliers**, or **Barterer**, and choose **Add**.
+4. Select the desired **Contact ID Auto Generator**. The Contact ID field displays the next available value.
+5. Complete the remaining contact details and save. The selected ID is reserved for the saved contact.
+
+### 5. Field Descriptions
+
+| Field | Type | Description |
+|---|---|---|
+| Prefix | Text | Letters, numbers, hyphens, or underscores prepended to every generated ID. |
+| Number Length | Number (1–12) | Number of digits reserved for the sequence; shorter values are padded with leading zeroes. |
+| Next Number | Number | The next sequence number to use. It must fit within the configured number length. |
+| Contact ID Auto Generator | Dropdown | Select a saved generator when creating a contact. Leave it unselected to enter an ID manually or use the existing default auto-generation. |
+
+### 6. Business Logic / Workflow
+Generators are scoped to the business. Prefixes must be unique within that business. When a generator is selected, the system checks existing Contact IDs, skips IDs already in use, and reserves the next available number when saving the contact.
+
+### 7. Notes or Important Considerations
+- The displayed Contact ID is a preview; the sequence is reserved when the contact is saved.
+- If the sequence reaches its configured maximum, increase the number length or update its next number.
+- Existing manual IDs and default Contact ID generation continue to work when no generator is selected.
+
+---
+
 ## How to View and Edit Contacts
 
 1. Go to **Contacts → Customers** (or **Suppliers**).
@@ -181,7 +218,8 @@ If your contacts have addresses, you can view them on a map:
 
 | Setting | What It Does | Where to Find It |
 |---|---|---|
-| **Contact ID Prefix** | Sets a prefix for auto-generated contact IDs (e.g., "CU" → CU0001) | **Settings → Business Settings → Prefixes** |
+| **Default Contact ID Prefix** | Sets a prefix for the existing default auto-generated Contact ID | **Settings → Business Settings → Prefixes** |
+| **Contact ID Generator Prefix** | Sets a prefix for IDs from a saved Contact ID Auto Generator | **Merchants → Contact ID Auto Generate** |
 | **Credit Limit** | Maximum amount a customer can owe you before the system warns you | Set per contact when editing |
 | **Pay Terms** | Default payment terms for new contacts | Set per contact or in Business Settings |
 | **Custom Fields** | Extra fields to track additional information | **Settings → Business Settings → Custom Labels** |
