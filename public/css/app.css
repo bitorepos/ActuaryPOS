@@ -3516,6 +3516,11 @@ html.dark-theme body.lockscreen > .wrapper {
   z-index: 12020 !important;
 }
 
+/* Date range pickers are appended to body, outside their triggering modal. */
+.modal-open .daterangepicker {
+  z-index: 12020 !important;
+}
+
 .modal-open>.bootstrap-datetimepicker-widget.dropdown-menu {
   z-index: 12020 !important;
 }

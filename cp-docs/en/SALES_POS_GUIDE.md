@@ -133,6 +133,102 @@ The direct sale form gives you more control for invoices, shipments, and detaile
 
 The same **Customer Group** filter is available when editing a sale. It only filters customer search results; it does not change the selected customer's group.
 
+### Update selected invoices
+
+#### Module Overview
+Invoice Maintenance updates the transaction date or commission agent on multiple selected sales invoices from the Sell list.
+
+#### Purpose of the Feature
+It lets authorized users correct invoice dates or reassign commission agents in one operation rather than opening and editing invoices one at a time.
+
+#### User Access / Permissions
+Users need **Sell Update** or **Direct Sell Update** permission. The operation also respects the user's permitted Business Locations and the normal invoice edit restrictions.
+
+#### Step-by-Step Usage Instructions
+1. Go to **Sell → Sells** and select the invoices to update.
+2. Select **Invoice Maintenance** at the bottom of the list.
+3. Choose **Update Transaction Date**, **Update Commission Agent**, or **Update Commission Agent 2**.
+4. Enter the new transaction date or choose the commission agent to assign. Choose **None** to clear an agent assignment.
+5. Select **Apply** and confirm the number of selected invoices.
+
+#### Field Descriptions
+| Field | Type | Description |
+|---|---|---|
+| Maintenance type | Dropdown | Select which invoice information to update. |
+| Date | Date picker | The new transaction date to apply to every eligible selected invoice. |
+| Commission Agent | Dropdown | Agent to assign to each eligible invoice, or **None** to clear the assignment. Available when commission agent tracking is configured. |
+| Commission Agent 2 | Dropdown | Second agent to assign to each eligible invoice, or **None** to clear the assignment. Available when second commission agent tracking is configured. |
+
+#### Business Logic / Workflow
+The operation checks the entire selection for access and permission before making changes. Eligible final sale invoices are updated while preserving each invoice's existing time of day when the transaction date is changed. Commission agent choices are limited to the business's configured agent type. Invoices blocked by integration or tax-authority restrictions, paid-invoice permissions, edit-period limits, or an existing return are skipped and reported; other eligible invoices in the selection are still updated. Each changed invoice appears in the **Activity Log** report with the maintenance action and selected value.
+
+#### Notes or Important Considerations
+Invoices issued through integrations or with tax-authority invoice numbers, paid invoices restricted by the user's permissions, invoices with returns, and invoices outside the allowed edit period are skipped. The result reports which invoices were skipped. Sales orders, drafts, and quotations are not eligible. Updating an invoice's transaction date does not change payment dates.
+
+### Save Direct Sale header defaults
+
+#### Module Overview
+The Direct Sale header contains customer, payment-term, sale-status, and other information used when creating a sale.
+
+#### Purpose of the Feature
+Saved defaults reduce repeat entry by restoring commonly used header choices on the next Direct Sale.
+
+#### User Access / Permissions
+Users who can create Direct Sales or Sales Orders can save and reset their own defaults.
+
+#### Step-by-Step Usage Instructions
+1. Open **Sale → Add Sale** and choose the header values you want to reuse.
+2. Select **Set Default**. The choices are saved for your user account and used on later Direct Sale forms.
+3. Select **Reset** to clear your saved choices and return to the normal business and customer defaults.
+
+#### Field Descriptions
+| Field | Type | Description |
+|---|---|---|
+| Customer Group | Dropdown | Restores the customer search filter selection. |
+| Selling Price Group | Dropdown | Restores the selected selling price group, when available. |
+| Type of Service | Dropdown | Restores the selected service, when enabled. |
+| Pay Term | Number and dropdown | Restores the payment-term number and whether it is measured in days or months. |
+| Is Tax Inclusive? | Checkbox | Restores whether sale prices include tax. |
+| Status | Dropdown | Restores the selected sale status on forms where the status can be chosen. |
+| Sub-Status | Dropdown | Restores the selected sub-status when the feature is enabled. |
+| Agent 1 and Agent 2 | Dropdowns | Restore the selected sales agents when available. |
+
+#### Business Logic / Workflow
+Defaults are saved per user and applied when a new Direct Sale form is loaded. The Customer field is intentionally excluded so each sale can use the customer selected for that transaction. An agent choice that is no longer available is ignored by the form. The active register and Business Location continue to control the sale location.
+
+#### Notes or Important Considerations
+Sale Date, Invoice No., Ref. No., and attached files are transaction-specific and are not saved as defaults. Resetting clears saved preferences but does not change the values on the form that is already open.
+
+### Quick-add a customer with the selected group
+
+#### Module Overview
+The customer quick-add form lets you create a customer without leaving the sale.
+
+#### Purpose of the Feature
+It saves time and keeps a newly added customer in the group currently selected on the sale.
+
+#### User Access / Permissions
+You need permission to create customers to use the **Add new customer** option.
+
+#### Step-by-Step Usage Instructions
+1. Select a **Customer Group** on the sale.
+2. Search for the customer. If no match appears, choose **Add as new customer**.
+3. Complete the contact details and confirm the same **Customer Group** is selected.
+4. Save the contact to return to the sale.
+
+#### Field Descriptions
+| Field | Type | Description |
+|---|---|---|
+| Customer search | Search | Finds existing customers or starts quick-add when no match is found. |
+| Customer Group filter | Dropdown | Filters customer search and supplies the initial group for quick-add. |
+| Customer Group | Dropdown | The group assigned to the new customer; initially matches the sale filter. |
+
+#### Business Logic / Workflow
+The selected sale group is copied into the new contact form when quick-add opens. Saving the contact assigns that group to the customer.
+
+#### Notes or Important Considerations
+Changing the group in the contact form affects the new customer only. The sale filter continues to control customer search results.
+
 📸 *[Screenshot: The direct sale form with customer, products, and payment sections]*
 
 ---
@@ -302,11 +398,11 @@ This source is intended for sales created through the Mobile App. Other integrat
 
 ## Select and reprint invoices
 
-On the Sales index, use the row checkboxes to select the invoices you want to print. Selection does not open the sale details modal. Click **Reprint Invoices** in the bottom action area to send the selected invoices to the printer one by one in a single operation. Each invoice uses the same saved layout and invoice page styling as individual invoice printing, including sales without a public invoice link. Bulk invoices adapt to the selected paper width (including A5) so right-side totals remain visible.
+On the Sales index, use the row checkboxes to select the invoices you want to print. Selection does not open the sale details modal. Click **Reprint Invoices** in the bottom action area to send the selected invoices to the printer one by one in a single operation. Each invoice uses the same saved layout and invoice page styling as individual invoice printing, including sales without a public invoice link. Bulk invoices adapt to the selected paper width (including A5) so right-side totals remain visible. Successful reprint requests are recorded per invoice in the **Activity Log** report.
 
 ## Create delivery notes for selected invoices
 
-When **Enable Delivery Notes** is on and the user has the **Create Delivery Note** permission, select final sales in the Sales list and click **Create Delivery Note** in the bottom action area. The system creates **one consolidated delivery note for the entire selection**, including invoices for different customers. It lists every source invoice and customer, and combines matching products into summed quantities on the printed note while retaining each invoice's delivery lines for traceability. All selected invoices must be eligible and have undelivered quantities; due or partially paid invoices require the existing approval or permission. The operation is atomic, so an invalid selection creates no note. Sale transaction records are not edited; held stock is updated using each source invoice's location.
+When **Enable Delivery Notes** is on and the user has the **Create Delivery Note** permission, select final sales in the Sales list and click **Create Delivery Note** in the bottom action area. The system creates **one consolidated delivery note for the entire selection**, including invoices for different customers. It lists every source invoice and customer, and combines matching products into summed quantities on the printed note while retaining each invoice's delivery lines for traceability. All selected invoices must be eligible and have undelivered quantities; due or partially paid invoices require the existing approval or permission. The operation is atomic, so an invalid selection creates no note. Sale transaction records are not edited; held stock is updated using each source invoice's location. Successful note creation is recorded against each source invoice in the **Activity Log** report.
 
 From **Sales → Delivery Notes**, open a note using its **View** action and select **Print** to open the HTML Crystal style preview. Use the preview toolbar to zoom or adjust text, then print the delivery note on A4. Each customer/delivery pair has a row number and appears on the same row; the right column shows delivery/address details without repeating the customer name or invoice number. Customer Info keeps the customer name and invoice number on one line and lists each invoice's assigned commission agents (using the configured labels) and value. Both columns use compact spacing, customer names match the invoice text size, the Customer Group label is regular weight, and empty-address placeholders are omitted.
 

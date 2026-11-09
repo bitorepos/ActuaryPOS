@@ -106,18 +106,148 @@ class CashRegisterPaymentMethodEditTest extends TestCase
         $this->assertPaymentMethodAllocationIsReconciled(3);
     }
 
+    public function test_admin_edits_the_cashiers_open_register_instead_of_the_admins_register(): void
+    {
+        DB::table('cash_registers')->where('id', 1)->update(['user_id' => 8]);
+        DB::table('cash_registers')->insert([
+            'id' => 2,
+            'user_id' => 7,
+            'status' => 'open',
+            'is_offline' => false,
+        ]);
+
+        $this->updateSalePaymentMethods();
+
+        $active_payments = CashRegisterTransaction::where('cash_register_id', 1)
+            ->whereNull('deleted_at')
+            ->get();
+        $this->assertSame(2, $active_payments->count());
+        $this->assertEquals(1500, $active_payments->where('pay_method', 'cash')->sum('amount'));
+        $this->assertEquals(501, $active_payments->where('pay_method', 'bank_transfer')->sum('amount'));
+        $this->assertSame(
+            0,
+            CashRegisterTransaction::where('cash_register_id', 2)->whereNull('deleted_at')->count()
+        );
+
+        $cash_register_util = new CashRegisterUtil();
+        $cash_register_util->deleteSellPayment(
+            (object) ['transaction_id' => 42, 'method' => 'cash', 'amount' => 1500]
+        );
+        $cash_register_util->deleteTransactionPayments($this->saleTransaction());
+        $this->assertSame(
+            0,
+            CashRegisterTransaction::where('cash_register_id', 1)->whereNull('deleted_at')->count()
+        );
+    }
+
+    public function test_admin_can_edit_a_payment_in_the_cashiers_open_register(): void
+    {
+        DB::table('cash_registers')->where('id', 1)->update(['user_id' => 8]);
+
+        (new CashRegisterUtil())->updatePayment(
+            (object) ['transaction_id' => 42, 'method' => 'cash', 'amount' => 2001],
+            (object) ['method' => 'bank_transfer', 'sub_method' => null, 'amount' => 1800]
+        );
+
+        $payment = CashRegisterTransaction::where('cash_register_id', 1)->first();
+        $this->assertSame('bank_transfer', $payment->pay_method);
+        $this->assertEquals(1800, $payment->amount);
+    }
+
+    public function test_restoring_a_payment_does_not_change_a_register_after_it_is_closed(): void
+    {
+        $cash_register_util = new CashRegisterUtil();
+        $cash_register_util->deleteTransactionPayments($this->saleTransaction());
+        DB::table('cash_registers')->where('id', 1)->update(['status' => 'close']);
+
+        $cash_register_util->restoreTransactionPayments($this->saleTransaction());
+
+        $this->assertSame(
+            0,
+            CashRegisterTransaction::where('cash_register_id', 1)->whereNull('deleted_at')->count()
+        );
+        $this->assertSame(
+            1,
+            CashRegisterTransaction::withTrashed()
+                ->where('cash_register_id', 1)
+                ->whereNotNull('deleted_at')
+                ->count()
+        );
+    }
+
+    public function test_closed_register_summary_uses_values_captured_at_close(): void
+    {
+        $cash_register_util = new CashRegisterUtil();
+        $register_details = (object) [
+            'status' => 'close',
+            'total_sale' => 17238,
+            'no_of_sales' => 13,
+        ];
+        $details = [
+            'transaction_details' => (object) [
+                'total_sales' => 17238,
+                'total_sales_return' => 0,
+                'total_discount' => 20,
+            ],
+            'total_tax_collected' => 2511.65,
+            'total_product_discount' => 0,
+            'types_of_service_details' => collect([
+                (object) ['types_of_service_name' => 'Dine-in', 'no_of_transactions' => 2],
+            ]),
+            'expense_details' => collect([
+                (object) ['ref_no' => 'EXP-1', 'final_total' => 400],
+            ]),
+        ];
+        $snapshot = $cash_register_util->captureRegisterSummarySnapshot($register_details, $details);
+
+        $register_details->total_sale = 15237;
+        $register_details->no_of_sales = 12;
+        $details['transaction_details']->total_sales = 15237;
+        $details['transaction_details']->total_discount = 0;
+        $details['total_tax_collected'] = 2206.55;
+        $details['types_of_service_details'] = collect();
+        $details['expense_details'] = collect();
+
+        $details = $cash_register_util->applyRegisterSummarySnapshot($register_details, $details, $snapshot);
+
+        $this->assertSame(17238, $register_details->total_sale);
+        $this->assertSame(13, $register_details->no_of_sales);
+        $this->assertSame(17238, $details['transaction_details']->total_sales);
+        $this->assertSame(20, $details['transaction_details']->total_discount);
+        $this->assertSame(2511.65, $details['total_tax_collected']);
+        $this->assertSame('Dine-in', $details['types_of_service_details']->first()->types_of_service_name);
+        $this->assertSame('EXP-1', $details['expense_details']->first()->ref_no);
+    }
+
+    public function test_editing_or_deleting_a_sale_does_not_change_closed_registers(): void
+    {
+        DB::table('cash_registers')->where('id', 1)->update(['status' => 'close', 'user_id' => 8]);
+        DB::table('cash_registers')->insert([
+            'id' => 2,
+            'user_id' => 7,
+            'status' => 'open',
+            'is_offline' => false,
+        ]);
+
+        $this->updateSalePaymentMethods();
+        (new CashRegisterUtil())->deleteSellPayment(
+            (object) ['transaction_id' => 42, 'method' => 'cash', 'amount' => 2001]
+        );
+        (new CashRegisterUtil())->deleteTransactionPayments($this->saleTransaction());
+
+        $this->assertSame(
+            1,
+            CashRegisterTransaction::where('cash_register_id', 1)->whereNull('deleted_at')->count()
+        );
+        $this->assertSame(
+            0,
+            CashRegisterTransaction::where('cash_register_id', 2)->whereNull('deleted_at')->count()
+        );
+    }
+
     private function assertPaymentMethodAllocationIsReconciled(int $expectedDeletedRows): void
     {
-        $transaction = new Transaction();
-        $transaction->id = 42;
-        $transaction->location_id = 2;
-        $transaction->type = 'sell';
-        $transaction->status = 'final';
-
-        (new CashRegisterUtil())->updateSellPayments('final', $transaction, [
-            ['method' => 'cash', 'amount' => 1500, 'is_return' => 0],
-            ['method' => 'bank_transfer', 'amount' => 501, 'is_return' => 0],
-        ]);
+        $this->updateSalePaymentMethods();
 
         $active_payments = CashRegisterTransaction::where('cash_register_id', 1)
             ->where('transaction_id', 42)
@@ -135,5 +265,24 @@ class CashRegisterPaymentMethodEditTest extends TestCase
                 ->whereNotNull('deleted_at')
                 ->count()
         );
+    }
+
+    private function updateSalePaymentMethods(): void
+    {
+        (new CashRegisterUtil())->updateSellPayments('final', $this->saleTransaction(), [
+            ['method' => 'cash', 'amount' => 1500, 'is_return' => 0],
+            ['method' => 'bank_transfer', 'amount' => 501, 'is_return' => 0],
+        ]);
+    }
+
+    private function saleTransaction(): Transaction
+    {
+        $transaction = new Transaction();
+        $transaction->id = 42;
+        $transaction->location_id = 2;
+        $transaction->type = 'sell';
+        $transaction->status = 'final';
+
+        return $transaction;
     }
 }

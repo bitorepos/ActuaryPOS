@@ -315,7 +315,7 @@ Users with **Superadmin** access or the **Manage CMS Settings** permission can c
 #### Step-by-Step Usage Instructions
 1. In the admin sidebar, open **CMS > Site Details**.
 2. Open the **Download Buttons** tab.
-3. Enter the button text and link for each app you want to offer.
+3. Enter the button text and link for each app you want to offer. Use a full URL for an external store, or enter only the file name (for example, `ActuaryPOS-Pro.apk`) for a file in a `public/downloads` folder.
 4. For Google Play, paste the app's public Play Store URL, for example `https://play.google.com/store/apps/details?id=com.example.app`.
 5. Save the settings and open the public home page to verify the button.
 
@@ -323,7 +323,7 @@ Users with **Superadmin** access or the **Manage CMS Settings** permission can c
 | Label | Type | Explanation |
 |-------|------|-------------|
 | Button Text | Text | The app store or platform name shown on the button. |
-| Button Link | URL | The public store listing or direct download URL opened when a visitor selects the button. |
+| Button Link | Text | Enter an external URL or a file name. File names resolve from the active installation's `public/downloads` folder when present; otherwise they resolve from the primary domain configured in the root `.env` `APP_URL`. |
 | Android Applications | Group | Holds the Google Play and optional APK buttons. |
 | iOS Applications | Group | Holds the App Store and optional TestFlight buttons. |
 | Desktop Applications | Group | Holds Windows, Windows App2, Linux, and macOS/OSX installer links. |
@@ -337,6 +337,8 @@ The public home page shows platform downloads once, in the **Download Applicatio
 - Configure app-store, APK, and desktop downloads in **Download Buttons**; do not use the separate Android Button, Android Button 2, iOS Button, or iOS Button 2 settings.
 - Changes to **Download Buttons** do not replace the separate hero buttons configured in **Buttons**.
 - Verify each destination after saving, especially links to files hosted on your own domain.
+- For a file name, use the current site's `public/downloads` folder for a site-specific download. If that folder is absent, the primary domain's `public/downloads` folder is used so subdomains can share files.
+- The Hardware Setup installer download uses the same local-folder-first fallback. The primary domain is configured per installation, so behavior does not depend on a hardcoded product domain or hosting-panel path.
 
 ---
 

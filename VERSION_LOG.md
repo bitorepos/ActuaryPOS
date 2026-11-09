@@ -1,5 +1,225 @@
 # Version Log
 
+## 9 November 2026 - Domain-Aware Public Downloads
+
+CMS Download Buttons now accept either an external URL or a file name such as `ActuaryPOS-Pro.apk`. File names resolve from the active installation's `public/downloads` folder when it exists; otherwise they resolve from the primary domain configured by the root `.env` `APP_URL`. The Hardware Setup installer button follows the same fallback. This supports separate domains and subdomains without hardcoding a product domain or hosting-panel directory.
+
+## 8 November 2026 - Location-Specific Dojo Accounts
+
+Dojo API keys are saved per business location through Business Settings > Sales. Payment creation, status polling, refunds, cancellations, and terminal lookup now use the selected transaction or location's key. The terminal picker is scoped to the location being edited. Legacy business-wide keys continue to apply to the primary location only and are not inherited by other locations.
+
+## 8 November 2026 - Held & Delivery History Transaction Links
+
+Added clickable sale invoice and delivery note numbers to the product's Held & Delivery History report. Each reference opens its existing transaction detail modal, including the sale invoice linked beneath a delivery note. Fixed a Blade namespace syntax error that caused the history page to return a 500 error.
+
+## 6 November 2026 - Selling Price Group Percentage Rules
+
+Selling price groups can now use a fixed price, an increase percentage, or a decrease percentage. Percentage prices are derived from each product variation's default selling price including tax, and are calculated wherever group prices are used, including product views, POS, and purchase entry. Percentage-based prices are calculated dynamically; fixed group prices remain editable. The decrease percentage must be below 100%.
+
+## 6 November 2026 - Purchase Entry Group Price Support
+
+Purchase create and edit product rows now display configured selling-price group values, including dynamically calculated percentage groups. Dynamically calculated values are not saved over the product's stored fixed group prices when a purchase is edited.
+
+## 6 November 2026 - Recent Workflow Updates
+
+- **Purchase Returns:** The edit form restores the transaction number, matches the create form's product-table alignment, centers the Submit/Update actions, and supports the inline tax selector and expiry-date picker.
+- **Expenses:** Expense status uses **Approved** in place of **Final**, includes **Rejected**, and create/edit forms provide a second expense note field.
+- **Delivery Notes:** Create/edit forms support transaction-date selection. User Sales settings control whether staff may set a delivery-note transaction date and transaction number; the transaction-date permission is enabled by default for newly registered businesses.
+- **Purchase Group Prices:** Purchase create/edit product tables can show configured group prices, and the Unit Cost heading opens a group selector to apply matching group prices to eligible rows.
+- **Public Quotations:** Public pricing-page quotations show Home, Pricing, and Demo links for the deployed site, while authenticated quotation views do not show those public navigation links. Quotation numbering uses the location prefix, with **QU** as the default for new businesses and an existing-business migration available.
+- **POS Product Tiles:** Product images are displayed on the POS type-button and suggestion-product views when an image is configured.
+- **Payment Forms:** Payroll payment forms use the business location's default payment account. Contact is excluded as a payment method for supplier and purchase payments and remains available for contact-to-contact payments.
+
+FBR Digital Invoicing sales-return behavior discussed for investigation is not recorded here as an implemented feature.
+
+## Version 8.99.9
+
+**Release Date:** 2026-10-27
+
+### Module: Contact Ledger
+
+#### New Features
+- None
+
+#### Improvements
+- None
+
+#### Bug Fixes
+- Fixed ledger account-summaries so the carried-forward balance is included once when calculating the current balance, preventing all-time contact ledger totals from inflating far beyond the current customer balance when the date range is widened.
+
+#### UI / UX Changes
+- None
+
+#### Technical Updates
+- Normalized ledger balance calculations across ledger formats to keep summary totals aligned with the running balance rows.
+
+## 31 October 2026 - Customer Zero Balance Filter and Row Colors
+
+The customer list's **Hide Zero Balance** filter now evaluates the final net balance at the business currency precision, including balances that offset one another. Customers whose displayed balance rounds to zero are hidden, and zero balances are no longer colored as debit or credit due to a fractional remainder.
+
+## 31 October 2026 - Contact Ledger Duplicate Payment References
+
+Prevented payment entries from different transactions or return directions from merging just because their reference numbers match. The all-time customer ledger running balance now stays consistent with the customer index and ledger totals.
+
+## 31 October 2026 - Monthly Delivery Report Alternating Date Pair Colors
+
+Apply the same pale green to both columns for odd-numbered dates and the same pale blue to both columns for even-numbered dates, including headers, data rows, and totals.
+
+## 31 October 2026 - Monthly Delivery Report Row-Level Stock Tooltips
+
+Daily stock-balance cells now show the row's On Hand, Held Quantity, and Balance values in their tooltip.
+
+## 31 October 2026 - Monthly Delivery Report Column Colors
+
+Colored daily **Delivery Qty** columns and date stock-balance columns differently, consistently across headings, data, and totals.
+
+## 31 October 2026 - Monthly Delivery Report Stock Formula Tooltip
+
+Added a tooltip to each daily stock heading explaining that its value is On Hand + Held Quantity = Balance.
+
+## 31 October 2026 - Monthly Delivery Report Date Attribution
+
+Use a delivery note's creation date consistently for its daily Delivery Qty and held-stock reduction. Status updates made later no longer shift the delivery to a later report day.
+
+## 29 October 2026 - Keep Open Register Totals in Sync with Sale Payment Changes
+
+Reconcile finalized sale payments with saved entries whenever an open register is viewed, so stale sale/change-return rows are repaired automatically. Payment edits rebuild the sale's entries, and deleting a change-return matches its signed negative amount. Closed registers are not modified.
+
+## 29 October 2026 - Register Report 404
+
+Removed an accidental dependency on the Delivery Notes setting from Register Report. Users with the Register Report permission can now open the report regardless of whether delivery notes are enabled.
+
+## 29 October 2026 - ZATCA Invoices DataTable Controls
+
+Added page-length selection (including **All**), search, and CSV, Excel, Print, column-visibility, and PDF controls to the ZATCA Invoices list. Adjusted the table container spacing so the controls and data table have consistent margins.
+
+## 29 October 2026 - Project Expense Status Modal Layering
+
+Fixed the Update Status dialog on Project Expenses so it displays above the page backdrop and remains readable and interactive.
+
+## 27 October 2026 - Show Zero Sales Filter
+
+Added an unchecked **Show 0 Sales** filter to the Monthly Sales V/S Stock Closing Report. With the option off, products without sales in the selected month are hidden; enabling it includes them.
+
+## 27 October 2026 - Show Zero Delivery Filter
+
+Added an unchecked **Show 0 Delivery** filter to the Monthly Deliveries V/S Stock Closing Report. With the option off, products without delivery quantity in the selected month are hidden; enabling it includes them.
+
+## 27 October 2026 - Monthly Deliveries V/S Stock Closing Report
+
+Added a Stock Reports report using delivery notes, with the same month/location/category filters as the monthly sales report. Each date shows Delivery Qty and On Hand + Held = Balance; the report is available when Enable Delivery Notes is enabled.
+
+
+## 27 October 2026 - Rename Monthly Sales V/S Stock Closing Report
+
+Renamed the report, moved its sidebar entry under **Reports → Sales Reports**, updated its link to `/reports/monthly-sales-v-s-stock-closing-report`, and kept the former URL redirecting to the new link.
+
+## 24 October 2026 - Product Index Group Selling Price Filter
+
+Added a Group Selling Price dropdown to Product Index filters. Selecting an authorized selling price group limits products to those with a configured price in that group across the product list, variable product view, and stock tab.
+
+## 24 October 2026 - Installment Plan Edit Button Caption
+
+Changed the Edit Installment Plan modal's submit button caption from Save to Update.
+
+## 24 October 2026 - Installment Plan Save Feedback
+
+Show validation or request errors when saving an installment plan fails, and re-enable Save so the user can correct the form and submit again.
+
+## 24 October 2026 - Installment Interest Rate Default
+
+Set the Interest Rate field to default to 0 when adding an installment plan and display 0 for existing plans with no saved rate.
+
+## 24 October 2026 - Installment Plan Modal Scrolling
+
+Widened Add/Edit Installment Plan dialogs and constrained scrolling to the body so the header and action footer remain visible. The body can scroll horizontally and vertically when its content needs more room.
+
+## 24 October 2026 - Installment Plan Modal Layering
+
+Removed the installment page's lower inline modal z-index so the plan dialog renders above the shared backdrop layer and remains readable and interactive.
+
+## 24 October 2026 - Gate Warehouse Transfers in Product History
+
+Hide Warehouse Transfer in/out summary rows, history rows, and Type filter options unless the Warehouse module is installed and the business subscription includes `warehouse_module`.
+
+## 24 October 2026 - Restore FIFO Costing in Stock History
+
+Removed the override that replaced FIFO-linked sale and return costs with the product's current default purchase price. Stock history profit now uses each transaction's linked FIFO purchase cost, normalized exclusive of GST, with the existing fallback only when no transaction cost is available.
+
+## 24 October 2026 - Booking Reminder Button Caption
+
+Changed the booking reminder's **Close** button caption to **Completed**.
+
+## 24 October 2026 - Preserve Blank Booking End Time
+
+Booking End Time now remains blank when omitted and is stored as nullable. In-app reminders for bookings without an end time become due at the start time and remain available until dismissed or the booking status changes. Recurring bookings without an end time also trigger reminders from their scheduled start.
+
+## 24 October 2026 - Booking Recurrence and In-App Alarms
+
+Added repeat and in-app alarm controls to booking create/edit forms. Repeating bookings support daily, weekly, day-of-month, monthly, and yearly schedules and appear as occurrences on the bookings calendar; alarms include recurring occurrences and can be disabled per booking.
+
+## 24 October 2026 - Slim Invoice Zero Balance Rows
+
+Updated the Slim invoice receipt to hide the Previous Balance and Total Due rows when their values round to zero at the business currency precision. This applies to invoices using layouts configured through both create and edit.
+
+## 24 October 2026 - Purchase Invoices Report
+
+Added **Purchase Order** as a Type filter option in the Purchase Invoices Report. Selecting it filters the report's totals, summary, detailed rows, and print output to purchase-order transactions.
+
+## 24 October 2026 - Past Period Reorder Report
+
+Added **Past Period Reorder Report** under Stock Reports with location, supplier, category, brand, SKU range, date range, and days-of-cover filters. It displays SKU, product, rack information, current stock, net quantity sold, period length, average demand for the selected cover period, outstanding purchase-order quantity, and suggested reorder quantity. Days of cover defaults to 7; suggested reorder quantity is cover-period demand less open order quantity, with a minimum of zero.
+
+The **No of Days** column and the average-demand column reflect the selected Days of Cover value; the average column heading updates to match the selected number of days.
+
+Added an unchecked **Show Zero Sold Qty** filter; zero-sales products are hidden until it is selected.
+
+All quantity columns in the report now follow the business's configured Quantity decimal precision.
+
+Changed the date filters to a single date-range picker with the standard preset ranges and custom range selection.
+
+Loaded the shared report date-picker script and set its default selection to **Last 30 Days**, fixing the blank date field.
+
+Right-aligned the report's numeric quantity columns.
+
+Fixed DataTable text search by excluding the calculated Qty Sold field from searchable columns.
+
+The suggested Reorder Qty is rounded to the nearest whole unit after subtracting on-order quantity. On-hand stock remains visible for reference and does not reduce this value.
+
+Fixed a Blade namespace escaping error that caused the report page to return a server error.
+
+## 24 October 2026 - Delivery Note Quantity Footer
+
+Fixed the Delivery Note products table footer so quantity totals are formatted and displayed as values with their units, rather than showing the formatter expression.
+
+The Delivery Note products table now shows SKU in its own column before Product Name.
+
+## 22 October 2026 - Dashboard Account Balances
+
+Added a Payment Accounts section to the home dashboard for users with account access. The table shows each active account's name and balance, with a footer total and a link to the Accounts page.
+
+The Accounts dashboard card now occupies the WooCommerce Orders card's former position beside Income Summary. WooCommerce Orders is placed where Accounts appeared before and remains limited to businesses whose package or subscription includes `woocommerce_module`.
+
+Fixed the dashboard card heading to use the existing Payment Accounts language caption.
+
+## 22 October 2026 - POS Multi-Payment Keyboard Entry
+
+The POS multi-payment dialog now accepts keyboard input in the focused payment amount field, including after opening it with Shift+P. The field is focused and selected when the dialog opens, and the on-screen keypad remains available.
+
+## 22 October 2026 - Monthly Sales V/S Stock Closing Report
+
+Added a stock report with month, business location, category, subcategory, and subcategory 2 filters. It shows each product's SKU, name, category, unit, and **Opening Stock** (the previous month's closing quantity), followed by a **Sale Qty** column alongside each daily stock column; the final stock column remains labeled **Closing Stock**. A footer totals the numeric columns, and the table includes search, page-size, export, print, and column visibility controls.
+
+## 22 October 2026 - Rental Agreement Workflow and Reporting Corrections
+
+Rental agreements now use the signed-in user's default business location when available. The customer field supports searching contacts and opening the contact form in a modal. The agreement form shows the rental duration calculated from its selected start and end dates, and uses that duration for item lines. Editing an agreement now restores its saved location, dates, item names, rates, deposits, and totals. Saving a draft or updating an agreement returns to the Agreements list after success. The Agreements table keeps its action controls visible on narrow screens and places the Action column first.
+
+Rental settings now include booking-style settings tabs and the Damage Report Prefix is set to **RD**. Rental invoice tax choices are sourced from the configured tax rates.
+
+Profit figures in **Profit & Loss**, **Product Sell Report**, and **Product Stock History** use tax-exclusive selling values and tax-exclusive product costs. The Profit & Loss **Profit by** section, every Product Sell Report tab, and Product Stock History use the product's configured **Default Purchase Price (Exc. tax)** for sale and return costs. The Product Sell Report includes a separate Tax column across its tabs; Stock History shows sale tax separately and reverses it for sale returns. The Summary and Summary (Combo) tax cells now render as formatted values instead of displaying HTML markup.
+
+The Sales Analysis page no longer fails when the hourly view has no submitted weekday filters; all weekdays are used by default.
+
 ## 20 October 2026 - Include HMS Bookings in Home Dashboard Sales
 
 Active HMS bookings with **Pending** or **Confirmed** status now count toward the Home Dashboard's sales totals, revenue, recent transactions, sales charts, sales counts, income summary, user sales summary, and outstanding sales payment list. Booking payments appear in the sales payment method chart and income summary. Existing bookings with a missing transaction date use their creation date for dashboard reporting, and new bookings receive a transaction date. The selected date and location filters apply; cancelled bookings are excluded.

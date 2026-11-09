@@ -38,6 +38,8 @@ Purchases track everything you buy from your suppliers. When you record a purcha
    - **Tax** — Tax rate for this item
 5. Repeat for all products in this purchase.
 
+If your business uses Selling Price Groups, the purchase product table can also show those configured prices. Select a group from the **Unit Cost** column heading and apply it to populate matching product rows. Percentage-based group prices are calculated from each product's default selling price including tax.
+
 ### Payment
 6. Scroll down to the **Add Payment** section:
    - **Amount** — Enter the payment amount (can be partial)

@@ -27,6 +27,20 @@ Reports are your window into how your business is performing. {application_name}
 
 ## Business & Profit Reports
 
+### Monthly Sales V/S Stock Closing Report
+
+Use this report to compare each stock-enabled product's daily sale quantity with its end-of-day stock quantity for every date in a selected month.
+
+Filter by month, business location, product category, subcategory, and subcategory 2. The table includes SKU, product name, category, unit, **Opening Stock** carried forward from the previous month, and the existing daily stock columns with an adjacent **Sale Qty** column for each date. A footer totals the numeric columns. Search, page-size, export, print, and column visibility controls are available above the table. The final stock column remains labeled **Closing Stock**. The report is available under **Reports → Sales Reports**.
+
+The **Show 0 Sales** checkbox is off by default, so products without sales in the selected month are hidden. Turn it on to include those products.
+
+### Monthly Deliveries V/S Stock Closing Report
+
+Use this report to review delivered quantities and the on-hand, held, and combined stock balance for each day in a selected month. It has the same month, location, category, subcategory, and subcategory 2 filters as the monthly sales report. Daily stock is shown as **On Hand + Held = Balance**. The report appears under **Reports → Stock Reports** when **Enable Delivery Notes** is enabled in Business Settings.
+
+The **Show 0 Delivery** checkbox is off by default, so products without delivery quantity in the selected month are hidden. Turn it on to include those products.
+
 ### Summary Income Report
 
 #### 1. Module Overview
@@ -83,6 +97,8 @@ Shows your overall business performance — are you making money or losing it?
 - Ledger Discount 2 and Ledger Discount 3 totals appear separately for suppliers and customers when enabled, or when the report-period amount is greater than zero, using the labels configured in Contact settings.
 - Total Sell Round Off appears when Amount Rounding Method is enabled, or when the report-period round-off amount is nonzero.
 
+Product-level profit uses the tax-exclusive selling value minus the product's configured **Default Purchase Price (Exc. tax)** across Product Sell Report tabs, the Profit & Loss **Profit by** section, and Product Stock History. Tax is reported separately and is not included in product profit.
+
 📸 *[Screenshot: The Profit & Loss report showing totals and net profit]*
 
 > 💡 **Tip:** Run this report monthly to track your business health over time.
@@ -106,6 +122,10 @@ A list of every sale with:
 See which products are selling and how much:
 - Product name, quantity sold, total revenue
 - Filter by product, category, brand, or date range
+- Review tax separately from the tax-exclusive sales subtotal across the report tabs.
+- Product profit compares tax-exclusive sales and cost values; transactions without tax retain their existing amounts.
+
+The Product Stock History report also shows sale tax separately. Sale returns reverse the related sale tax, and realized profit is calculated from tax-exclusive sale and cost values.
 
 ### Sell Payment Report
 
@@ -338,6 +358,14 @@ Expected held quantity is calculated as final sale quantity after returns minus 
 - The preview includes all matching rows, not only the current DataTables page.
 - Synchronizing held quantities changes stored inventory data; use the sync actions only when the expected quantity is correct.
 - Quantity totals combine the displayed numeric values across matching rows, consistent with the on-screen report's total behavior.
+
+### Held & Delivery History
+
+Open a product's event history from the Held Quantity Report's **Product stock history** action, or from the Products list action menu. The report lists held sale quantities and completed delivery quantities for the selected location, with the running held balance.
+
+Use **Sale Invoice No.** or **Delivery Note No.** to find matching events. When filtering by either reference, related held or delivery rows remain visible. Click a sale invoice number to open the sale details modal. Click a delivery note number to open its delivery details modal; the sale invoice number shown below it also opens the sale details modal.
+
+Access requires **View Stock Report**, **View Product**, and **View Product Stock History** permissions, plus access to the selected Business Location.
 
 ### Stock Value Report
 

@@ -27,7 +27,9 @@ Every business has costs beyond buying stock — rent, utilities, salaries, tran
    - **Payment Method** — Cash, Card, Bank Transfer, etc.
    - **Payment Account** — Which bank or cash account the payment came from
    - **Note** — Any additional details
+   - **Expense note 2** — An additional note when more detail is needed
    - **Attach Document** — Upload a receipt or invoice image
+   - **Expense status** — Choose **Draft**, **Approved**, or **Rejected** as appropriate
 3. Choose whether this is a **recurring expense** (optional):
    - If yes, set the repeat interval (daily, weekly, monthly, yearly)
 4. Click **Save**.

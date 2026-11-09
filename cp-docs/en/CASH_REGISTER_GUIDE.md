@@ -79,6 +79,10 @@ At the end of a shift or day:
 
 > ⚠️ **Important:** Always investigate any shortage before closing the register. Talk to the cashier to understand the discrepancy.
 
+## Administrator Changes to Sales
+
+When an administrator edits, deletes, or restores a sale or its payment, the change is reflected in the register that recorded it only while that register is open. Closing a register saves the complete register details and report lists, so later changes to invoices do not alter the closed register's totals, payment breakdown, or supporting details.
+
 ---
 
 ## Cash Denomination Counting

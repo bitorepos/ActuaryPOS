@@ -1,7 +1,499 @@
 # What's New - User Guide
-**Updated:** 2026-10-21
+**Updated:** 2026-11-09
+
+## Download App Files Across Domains - 2026-11-09
+
+What users can expect now:
+- In CMS **Site Details > Download Buttons**, enter either a full URL or just the download file name, for example `ActuaryPOS-Pro.apk`.
+- File names download from the current site's `public/downloads` folder when it exists. If a subdomain has no downloads folder, the link uses the primary domain configured for that installation.
+- The **Hardware Setup > Download installer** button follows the same rule.
+- The behavior works across configured domains and subdomains without relying on a hosting panel's filesystem path.
+
+How to use or check it:
+- Put the file in `public/downloads` for a site-specific download, or in the primary domain's `public/downloads` folder for shared downloads.
+- Enter only the filename in the CMS **Button Link** field for a file download. Continue using full URLs for app stores and other external destinations.
+
+## Selling Price Groups - Percentage Pricing - 2026-11-06
+
+What users can expect now:
+- A selling price group can use a fixed price, increase the default selling price by a percentage, or decrease it by a percentage.
+- Percentage adjustments are calculated from the product variation's default selling price including tax. The resulting price is reflected in product views, POS, and purchase entry wherever group prices are shown.
+- A decrease must be less than 100%. Fixed group prices continue to work as before.
+
+How to use it:
+- Open **Selling Price Groups**, add or edit a group, choose the pricing rule, and enter the percentage when the rule is an increase or decrease.
+
+## Purchase Entry - Apply a Selling Price Group to Unit Cost - 2026-11-06
+
+What users can expect now:
+- Purchase create/edit product rows can show the selling-price group values configured for products.
+- Select a group from the **Unit Cost** column heading to copy available group prices into the purchase rows.
+
+How to use or check it:
+- Open a purchase for create or edit, choose a group from the Unit Cost heading, and apply it to the product rows.
+
+## Recent Form and POS Updates - 2026-11-06
+
+What users can expect now:
+- Purchase Return edit shows its transaction number and has product columns aligned with create. Inline tax selection and expiry-date picking are available, and the Submit/Update buttons are centered.
+- Expense status options include **Approved**, **Draft**, and **Rejected**. Create/edit also includes a second expense note field.
+- Delivery Note create/edit supports a transaction date. User Sales settings can allow transaction-date and transaction-number edits; the date setting is on by default for newly registered businesses.
+- POS product tiles and suggestion results show configured product images.
+- Public quotations created from the pricing page show Home, Pricing, and Demo navigation for the deployed site. Signed-in quotation views omit those links. New businesses use **QU** as the quotation prefix by default.
+- Payroll payment forms use the location's configured default payment account. Contact is not offered for supplier/purchase payments, but remains available for contact-to-contact payments.
+
+How to use or check it:
+- Open the related Purchase Returns, Expenses, Delivery Notes, POS, Quotations, Payroll, or Contact Payment screen and review the fields and options described above.
+
+## Customer List - Hide Zero Balance - 2026-10-31
+
+What users can expect now:
+- **Hide Zero Balance** checks the final net balance using the business currency precision. Customers whose displayed balance is zero are hidden, and tiny fractions no longer mark a zero balance as debit or credit.
+
+How to use it:
+- On the customer list, open **Report Filters** and select **Hide Zero Balance**.
+
+## Customer Ledger - Duplicate Payment References - 2026-10-31
+
+What users can expect now:
+- Ledger payment rows stay separate when the same reference number is used by different transactions or opposite return directions. This keeps the running balance aligned with the customer index and ledger totals.
+
+How to check it:
+- Open a customer ledger, select **All time**, and compare the final running balance with the customer index balance.
+
+## Monthly Deliveries V/S Stock Closing - Alternating Date Pair Colors - 2026-10-31
+
+What users can expect now:
+- Both columns for odd-numbered dates share a light green tint; both columns for even-numbered dates share a light blue tint. This alternation continues through the month and also colors the totals row.
+
+How to use or check it:
+- Open **Reports → Stock Reports → Monthly Deliveries V/S Stock Closing Report** and compare the date pairs across the table.
+
+## Monthly Deliveries V/S Stock Closing - Row-Level Stock Details - 2026-10-31
+
+What users can expect now:
+- Hover over a date's stock-balance value to see that product's On Hand, Held Quantity, and Balance quantities.
+
+How to use or check it:
+- Open **Reports → Stock Reports → Monthly Deliveries V/S Stock Closing Report** and hover over a daily stock-balance cell.
+
+## Monthly Deliveries V/S Stock Closing - Distinct Daily Column Colors - 2026-10-31
+
+What users can expect now:
+- Daily **Delivery Qty** columns and the adjacent date stock-balance columns use different colors, making each pair easier to scan. The color treatment also applies to the totals row.
+
+How to use or check it:
+- Open **Reports → Stock Reports → Monthly Deliveries V/S Stock Closing Report** and compare any day's Delivery Qty column with its date column.
+
+## Monthly Deliveries V/S Stock Closing - Stock Formula Tooltip - 2026-10-31
+
+What users can expect now:
+- Hover over a date's stock column heading to see that the displayed value is **On Hand + Held Quantity = Balance**.
+
+How to use or check it:
+- Open **Reports → Stock Reports → Monthly Deliveries V/S Stock Closing Report** and hover over any daily stock heading.
+
+## Monthly Deliveries V/S Stock Closing - Delivery Date - 2026-10-31
+
+What users can expect now:
+- Daily Delivery Qty and its held-stock reduction use the delivery note's creation date. Updating a note's status later does not move that delivery to another day in the report.
+
+How to use or check it:
+- Open **Reports → Stock Reports → Monthly Deliveries V/S Stock Closing Report** and review the delivery date column for the selected month.
+
+## Cash Register - Sale Payment Corrections - 2026-10-29
+
+What users can expect now:
+- Editing a finalized sale payment updates that sale's payment entries in its associated open register.
+- Opening the details for an open register reconciles sale entries against current active payments and repairs stale payment or change-return rows.
+- Deleting a change-return payment removes its matching register entry, including its negative amount.
+- Closed registers are not changed by later payment edits or deletions.
+
+How to use or check it:
+- Open or refresh the affected open register's details to recalculate sale payment totals from the current active payment rows.
+
+## Reports - Register Report Availability - 2026-10-29
+
+What users can expect now:
+- Register Report no longer depends on the Enable Delivery Notes setting. Users with the report permission can open it whether delivery notes are enabled or disabled.
+
+How to use or check it:
+- Open **Reports → Register Report**. If it is not visible, ask an administrator to check your **Register Report** permission.
+
+## ZATCA Invoices - Search, Page Size, and Exports - 2026-10-29
+
+What users can expect now:
+- The ZATCA Invoices list has a search field and a page-size selector, including **All**.
+- The list can be exported to CSV, Excel, or PDF, printed, and adjusted with Column visibility.
+- The list controls and table now have consistent spacing within the page.
+
+How to use or check it:
+- Open **ZATCA Invoices**, search for an invoice or change the number of displayed entries, then use the export or print controls above the table.
+
+## Projects - Expense Status Dialog - 2026-10-29
+
+What users can expect now:
+- The Update Status dialog on a project's Expenses tab displays clearly above the page overlay and can be used normally.
+
+How to use or check it:
+- Open a project, choose **Project Expenses**, and use an expense's status action.
+
+## Reports - Monthly Deliveries V/S Stock Closing - 2026-10-27
+
+What users can expect now:
+- When **Enable Delivery Notes** is on, **Reports → Stock Reports** includes **Monthly Deliveries V/S Stock Closing Report**.
+- The report uses the month, location, category, subcategory, and subcategory 2 filters. Each date includes **Delivery Qty** and a stock value shown as **On Hand + Held = Balance**.
+- The **Show 0 Delivery** checkbox is off by default. Select it to include products with no delivery quantity for the month.
+
+How to use or check it:
+- Open **Reports → Stock Reports → Monthly Deliveries V/S Stock Closing Report** and select a month and any needed filters.
+
+## Reports - Show Zero Sales Filter - 2026-10-27
+
+What users can expect now:
+- The Monthly Sales V/S Stock Closing Report has an unchecked **Show 0 Sales** checkbox. Products without sales for the selected month are hidden until the checkbox is selected.
+
+How to use or check it:
+- Open **Reports → Sales Reports → Monthly Sales V/S Stock Closing Report**, then select **Show 0 Sales** to include products with no sales.
+
 
 This guide explains system changes in simple user language. It only includes what users can see, do, check, print, export, or manage in the system.
+
+---
+
+## Reports - Monthly Sales V/S Stock Closing Name and Link - 2026-10-27
+
+What users can expect now:
+- The report appears under **Reports → Sales Reports**, is named **Monthly Sales V/S Stock Closing Report**, and opens at `/reports/monthly-sales-v-s-stock-closing-report`.
+- The previous report link redirects to the updated link.
+
+How to use or check it:
+- Open **Reports → Sales Reports → Monthly Sales V/S Stock Closing Report**.
+
+## Products - Group Selling Price Filter - 2026-10-24
+
+What users can expect now:
+- Product Index filters include a **Group Selling Price** dropdown with the selling price groups available to the user.
+- Choosing a group shows products that have a price configured for that group.
+
+How to use or check it:
+- Open **Products**, expand **Report Filters**, choose a **Group Selling Price**, and review the product list or stock tab.
+
+## Installment Plans - Edit Button Caption - 2026-10-24
+
+What users can expect now:
+- The Edit Installment Plan dialog uses **Update** on its submit button.
+
+How to use or check it:
+- Open an installment plan for editing.
+
+## Installment Plans - Save Error Feedback - 2026-10-24
+
+What users can expect now:
+- If a plan cannot be saved, the dialog shows the validation or request error and lets the user try again after correcting the form.
+
+How to use or check it:
+- Open **Installment Plans**, enter plan details, and select **Save**. Correct any message shown and save again.
+
+## Installment Plans - Interest Rate Default - 2026-10-24
+
+What users can expect now:
+- The Interest Rate field starts at **0** for new plans and displays **0** for plans without a saved rate.
+
+How to use or check it:
+- Open **Installment Plans** and add or edit a plan.
+
+## Installment Plans - Add/Edit Dialog Layout - 2026-10-24
+
+What users can expect now:
+- The Add/Edit Installment Plan dialog is wider. Its title and Save/Close buttons stay visible while the form content scrolls vertically or horizontally.
+
+How to use or check it:
+- Open an installment plan for adding or editing and scroll within the form when needed.
+
+## Installment Plans - Modal Display - 2026-10-24
+
+What users can expect now:
+- The Add/Edit Installment Plan dialog displays above its dark backdrop and remains readable.
+
+How to use or check it:
+- Open **Installment Plans** and select **Add** or **Edit**.
+
+## Products - Warehouse Transfers in Stock History - 2026-10-24
+
+What users can expect now:
+- Warehouse Transfer in/out options and rows appear in product stock history only when the business package includes the Warehouse module.
+
+How to use or check it:
+- Open a product's stock history. Businesses without Warehouse access will not see Warehouse Transfer entries in the Type filter, movement list, or quantity summary.
+
+## Products - FIFO Cost in Stock History - 2026-10-24
+
+What users can expect now:
+- Sale and return profit in stock history follows the purchase cost linked to each transaction under FIFO, excluding GST. Editing the product's current purchase price no longer replaces historical transaction costs.
+
+How to use or check it:
+- Open a product's stock history and review the Cost Price and Profit columns for each sale.
+
+## Bookings - Reminder Button Caption - 2026-10-24
+
+What users can expect now:
+- The booking reminder's **Close** button is labeled **Completed**.
+
+## Bookings - Blank End Time and Reminders - 2026-10-24
+
+What users can expect now:
+- A booking saved without an end time keeps that field blank when edited. If its in-app alarm is enabled, its reminder appears when the start time is reached and remains available until dismissed or the booking status changes.
+
+How to use or check it:
+- Leave **End time** blank, keep **Set in-app alarm** enabled, and save the booking. The reminder is due at its start time.
+
+## Bookings - Repeat Schedule and In-App Alarm - 2026-10-24
+
+What users can expect now:
+- Booking forms include a **Repeat booking** checkbox. When enabled, choose daily, weekly, day-of-month, monthly, or yearly repeats; occurrences continue until the repeat setting is turned off and appear on the calendar without creating duplicate booking records.
+- **Set in-app alarm** controls whether the booking appears in the app's due-booking reminder.
+
+How to use or check it:
+- Open **Bookings**, create or edit a booking, enable **Repeat booking**, and choose a period. Enable **Set in-app alarm** if you want an in-app reminder when the appointment is underway.
+
+## Sales - Slim Invoice Layout - 2026-10-24
+
+What users can expect now:
+- The Slim receipt hides Previous Balance and Total Due rows when their displayed amount is zero.
+
+How to use or check it:
+- Print a sale with the Slim invoice design and zero balances; those balance rows are omitted.
+
+## Reports - Purchase Invoices Report - 2026-10-24
+
+What users can expect now:
+- The Type filter includes **Purchase Order**. Selecting it shows purchase-order transactions in the report and its print output.
+
+How to use or check it:
+- Open **Reports → Purchase Invoices Report**, choose **Purchase Order** under **Type**, then apply or refresh the report.
+
+## Reports - Past Period Reorder Report - 2026-10-24
+
+What users can expect now:
+- Stock Reports includes **Past Period Reorder Report** with filters for location, supplier, category, brand, SKU range, date range, and days of cover. Days of cover defaults to 7.
+- The report shows rack information, current stock, net sales during the selected period, period days, 30-day average sales, open purchase-order quantity, and a suggested reorder quantity.
+- The **No of Days** column shows the selected **Days of Cover** value.
+- The average-demand column heading and value also update to the selected number of cover days.
+- Products with zero net sales are hidden by default; select **Show Zero Sold Qty** to include them.
+- Choose a preset period or custom dates from the single **Date Range** picker.
+- The picker opens with **Last 30 Days** selected.
+- Quantity values follow the business's configured **Quantity decimal** precision.
+- Numeric quantity values are right-aligned in the table.
+- Table text search continues to work without getting stuck on the calculated Qty Sold column.
+- Suggested reorder quantities are rounded to the nearest whole unit.
+- Suggested reorder quantity uses demand for the selected cover period and subtracts quantity already on order. On-hand stock is shown for reference and does not reduce the suggested amount. The result never goes below zero.
+- The report page also received a rendering fix for its initial server error.
+
+How to use or check it:
+- Open **Reports → Stock Reports → Past Period Reorder Report**, choose the filters and dates, set days of cover if needed, then select **Apply Filters**.
+
+---
+
+## Dashboard - Payment Accounts - 2026-10-22
+
+What users can expect now:
+- The home dashboard has a Payment Accounts section with account names, balances, and a total balance footer.
+- Its section heading displays the translated **Payment Accounts** caption.
+- A link opens the full Accounts page.
+- The Accounts card appears beside Income Summary in the dashboard reports area. WooCommerce Orders appears in the Accounts card's former position only when the business package or subscription includes the WooCommerce module.
+
+How to use or check it:
+- Open **Home** and scroll to **Payment Accounts**. Select the Accounts link to open the full list.
+
+---
+
+## POS - Multi-Payment Keyboard Entry - 2026-10-22
+
+What users can expect now:
+- The first payment amount field receives focus when the multi-payment dialog opens with the POS payment shortcut.
+- Payment amounts accept keyboard input. The on-screen keypad remains available.
+
+How to use or check it:
+- On the POS screen, press **Shift+P** to open the multi-payment dialog, then type the payment amount.
+
+---
+
+## Reports - Monthly Sales V/S Stock Closing - 2026-10-22
+
+What users can expect now:
+- A new **Monthly Sales V/S Stock Closing Report** is available under **Reports → Sales Reports**.
+- Filter by month, business location, category, subcategory, and subcategory 2.
+- Review a **Sale Qty** column beside each existing daily stock column; the final stock column remains **Closing Stock**.
+- Review **Opening Stock** after Unit; it carries forward the previous month's closing quantity.
+- Review footer totals for Opening Stock, daily Sale Qty, and daily stock columns.
+- Search the report, change the number of visible entries, export, print, or choose visible columns using the table controls.
+
+How to use or check it:
+- Open **Reports → Sales Reports → Monthly Sales V/S Stock Closing Report**.
+- Select the month and any optional location or product category filters, then select **Filter**.
+
+---
+
+## Rental - Agreement Form and Editing - 2026-10-22
+
+What users can expect now:
+- The agreement form starts with the signed-in user's default business location when one is configured.
+- Customers can be searched or added from a contact modal without leaving the agreement form.
+- Rental duration is shown after selecting the start and end dates and is applied to the agreement's rental items.
+- Saved agreement details and rental lines appear when an agreement is edited.
+- Successful draft saves and updates return to the Agreements list. The Action column is first and remains accessible on smaller screens.
+- Invoice tax choices follow the configured tax rates. Rental settings include tabs, and the Damage Report Prefix is **RD**.
+
+How to use or check it:
+- Open **Rental → Rental Agreements → Add**, select a customer and location, and choose the rental dates. Check the displayed duration and item duration before saving.
+- Edit an existing agreement to review its saved details. After saving, the Agreements list opens.
+- Open **Rental → Settings** to review rental settings and the Damage Report Prefix.
+
+---
+
+## Reports - GST-exclusive Product Profit - 2026-10-22
+
+What users can expect now:
+- Product profit in **Profit & Loss**, **Product Sell Report**, and **Product Stock History** uses selling and cost values excluding tax.
+- Every Product Sell Report tab, Profit & Loss **Profit by**, and Product Stock History use tax-exclusive selling values and the product's **Default Purchase Price (Exc. tax)** for sale and return costs.
+- Tax is shown separately in the Product Sell Report tabs and Stock History. Sale returns reverse the related sale tax in Stock History.
+- Transactions without tax keep their existing amounts.
+- Tax totals in the Product Sell Report Summary tables display as formatted amounts.
+
+How to use or check it:
+- Open **Reports → Profit & Loss** or **Reports → Product Sell Report** to review product profit.
+- Open a product's **Stock History** to review the sale price, tax, and profit for each sale and return.
+
+---
+
+## Reports - Sales Analysis Hourly View - 2026-10-22
+
+What users can expect now:
+- Sales Analysis opens without an error when the hourly view has no weekday selection in the request.
+- All weekdays are included by default; explicitly selected weekdays continue to apply.
+
+How to use or check it:
+- Open **Reports → Sales Analysis** and choose an hourly period. The report loads with all weekdays unless specific days are selected.
+
+---
+
+## Rental - Category Status Editing - 2026-10-21
+
+What users can expect now:
+- Category status can be changed between Active and Inactive while editing the category.
+
+How to use or check it:
+- Open **Rental → Settings**, click the category edit button, choose a status, then save.
+
+---
+
+## Rental - Rental SKU Uniqueness - 2026-10-21
+
+What users can expect now:
+- A Rental SKU cannot be assigned to multiple rental items in the same business.
+- If a duplicate is entered, the form shows an error and keeps the entered SKU.
+
+How to use or check it:
+- Enter an existing Rental SKU when adding or editing an item; saving is rejected with a validation message.
+
+---
+
+## Rental - Agreement Date Filter - 2026-10-21
+
+What users can expect now:
+- The Agreements list date range filters by rental start date.
+- Newly created agreements save the entered rental start and expected end dates.
+
+How to use or check it:
+- Open **Rental → Agreements**, choose a date range, and the table will reload.
+
+---
+
+## Rental - Agreement Line Totals - 2026-10-21
+
+What users can expect now:
+- Line totals, subtotal, discount, tax, total amount, and deposit update as agreement lines are edited.
+- Agreement lines submit using the fields processed by the save action.
+
+How to use or check it:
+- Add an item to a new agreement and change quantity, rate, duration, deposit, discount, or tax; the summary recalculates.
+
+---
+
+## Rental - Returns Filters - 2026-10-21
+
+What users can expect now:
+- The Returns page filters by business location, return date, and return condition.
+
+How to use or check it:
+- Open **Rental → Returns**, choose the desired filters, and the table will reload.
+
+---
+
+## Rental - Payments Date Filter - 2026-10-21
+
+What users can expect now:
+- The Payments date range filters records by payment date.
+- Clearing the date range shows payments from all dates.
+
+How to use or check it:
+- Open **Rental → Payments**, choose a date range, and the table will reload.
+
+---
+
+## Rental - Damage Reports Date Filter - 2026-10-21
+
+What users can expect now:
+- The Damage Reports date range filters the list by report date.
+- Clearing the date range shows reports from all dates.
+
+How to use or check it:
+- Open **Rental → Damage Reports**, choose a date range, and the table will reload.
+
+---
+
+## Rental - Maintenance Vendor Selection - 2026-10-21
+
+What users can expect now:
+- The Vendor field on maintenance forms is a dropdown of the business's supplier contacts.
+
+How to use or check it:
+- Open **Rental → Maintenance → Add**, then choose a supplier in the Vendor field.
+
+---
+
+## Rental - Reports Filters - 2026-10-21
+
+What users can expect now:
+- The Rental Reports location selector lists business locations.
+- Generate Report applies the selected location and date range to the report.
+
+How to use or check it:
+- Open **Rental → Reports**, choose a report type, location, and date range, then click **Generate Report**.
+
+---
+
+## Rental - Agreement Creation - 2026-10-21
+
+What users can expect now:
+- Business locations appear in the new rental agreement form.
+- Typing a rental item name, SKU, serial number, or linked product name returns available matching items.
+
+How to use or check it:
+- Open **Rental → Rental Agreements → Add**, select a business location, then search for a rental item.
+
+---
+
+## Rental - Rental Items List - 2026-10-21
+
+What users can expect now:
+- Newly saved rental items appear at the top of the Rental Items list.
+- Old saved list searches and page positions no longer hide the new item.
+- The All filters keep all rental items visible.
+
+How to use or check it:
+- Save a rental item and return to **Rental → Items**. The new item should be the first row.
 
 ---
 
