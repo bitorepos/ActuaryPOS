@@ -53,6 +53,21 @@ class TransactionUtilDraftReceiptTotalTest extends TestCase
         $this->assertSame(250.0, $method->invoke($util, $transaction, 1170.00, 1));
     }
 
+    public function testPaidSellLineSubtotalExcludesSchemeQuantity(): void
+    {
+        $util = (new ReflectionClass(TransactionUtil::class))->newInstanceWithoutConstructor();
+        $method = new ReflectionMethod(TransactionUtil::class, 'calculatePaidSellLineSubtotal');
+        $method->setAccessible(true);
+
+        $sell_lines = [
+            (object) ['quantity' => 1, 'foc_quantity' => 1, 'unit_price_inc_tax' => 2000],
+            (object) ['quantity' => 3, 'foc_quantity' => 1, 'unit_price_inc_tax' => 100],
+            (object) ['quantity' => 1, 'foc_quantity' => 2, 'unit_price_inc_tax' => 200],
+        ];
+
+        $this->assertSame(200.0, $method->invoke($util, $sell_lines));
+    }
+
     public function testInvoiceSchemeSuffixUpperBoundAvoidsUnsignedSubtraction(): void
     {
         $util = (new ReflectionClass(TransactionUtil::class))->newInstanceWithoutConstructor();

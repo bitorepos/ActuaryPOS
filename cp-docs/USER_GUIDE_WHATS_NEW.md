@@ -1,5 +1,64 @@
 # What's New - User Guide
-**Updated:** 2026-11-09
+**Updated:** 2026-11-11
+
+## Offline Workstation Token Setup - 2026-11-11
+
+When connecting an offline installation to its cloud account, the generated client secret and access token are saved to the environment file selected for that host. For a LAN installation using `subdomains/.env.192.168.100.39`, credentials are saved in that file and the root `.env` remains untouched. Workstation authorization also supports Passport setups that store client secrets as hashes.
+
+## Offline User List Download - 2026-11-11
+
+Downloading **User List** from **Synchronization > Download Synchronization** now imports cloud users that are missing locally, even if the offline installation has a lower user quota. It also brings over each user's role and permitted locations.
+
+The result message reports how many users were added or updated. If a record cannot be applied, the page reports a partial sync and gives the affected user ID and reason so the issue can be corrected before retrying.
+
+## Users List Reliability - 2026-11-11
+
+The Users page now keeps loading when a user's bank details are blank or contain old/invalid data. Valid bank details still appear in the list. Essentials department filters also use the correct department fields.
+
+## Rack Details and PCT/HSN on Purchase Forms - 2026-11-10
+
+What users can expect now:
+- If **Enable Rack Details** is enabled in **Business Settings > Purchase**, purchase create/edit rows show the Rack, Row, and Position fields allowed by the product settings. The values are specific to the purchase location.
+- If **Enable PCT/HSN Code** is enabled in **Business Settings > Product**, purchase create/edit rows show the product's PCT/HSN code.
+- Saving a purchase updates the product's rack details for that location and saves any PCT/HSN code change to the product record.
+
+How to use it:
+- Enable the relevant options in Business Settings.
+- Add or edit a purchase, then update the rack fields or PCT/HSN code in the product row.
+- Save the purchase. The updated values are available on the product record.
+
+## Purchase from Sales Invoices - 2026-11-10
+
+What users can expect now:
+- A business can enable **Load Products from Sales Invoice** in **Business Settings > Purchase**.
+- When enabled, the purchase create/edit form can load product lines from finalized sales invoices, including invoices created at another business location.
+
+How to use it:
+- Enable the option in Business Settings > Purchase.
+- Create or edit a purchase, choose its destination location, then select one or more sales invoices in **Load from Sales Invoices**.
+- The selected invoice product lines are added to the purchase form for review.
+
+## Contact Order Request Product Suggestions - 2026-11-10
+
+What users can expect now:
+- Suggested product prices in the contact order portal follow the contact's customer-group percentage or selling-price-group setting.
+- Product cards have an **Add to Cart** button. Clicking an available product image opens its gallery in a next/previous image viewer.
+
+## Sale Form Profit Visibility and POS Quick Menu - 2026-11-10
+
+What users can expect now:
+- Gross Profit % and Gross Profit are both shown on sale create/edit only when the user's **Show Total Profit** setting is enabled. The profit amount includes the business currency symbol.
+- Find **Show Total Profit** under user POS settings when the POS module is enabled; otherwise find it under user Sales settings.
+- POS quick-menu tiles hide default placeholder images. Tiles without a real image expand the available space for the product text.
+
+## Product Catalogue - Customer Details in My Orders - 2026-11-09
+
+What users can expect now:
+- The public Product Catalogue's **My Orders** modal shows the customer's name and contact number above the order list.
+- The modal uses customer details saved with the order, then falls back to the browser's saved customer information when needed.
+
+How to use or check it:
+- Enter customer name and phone when placing an order, then open **My Orders** to see those details above the order cards.
 
 ## Download App Files Across Domains - 2026-11-09
 

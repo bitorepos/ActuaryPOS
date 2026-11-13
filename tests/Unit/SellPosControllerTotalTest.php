@@ -244,6 +244,83 @@ class SellPosControllerTotalTest extends TestCase
         $this->assertSame(104485.20, $input['final_total']);
     }
 
+    public function testFinalSchemeOnlySaleKeepsZeroTotalWhenUpdated(): void
+    {
+        $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();
+        $property = new \ReflectionProperty(SellPosController::class, 'transactionUtil');
+        $property->setAccessible(true);
+        $property->setValue($controller, new class {
+            public function num_uf($value)
+            {
+                return is_numeric($value) ? $value : str_replace(',', '', (string) $value);
+            }
+        });
+
+        $method = new \ReflectionMethod(SellPosController::class, 'normalizeSchemeOnlyInvoiceTotal');
+        $method->setAccessible(true);
+
+        $input = [
+            'status' => 'final',
+            'final_total' => '0.00',
+            'products' => [
+                ['quantity' => '0.00', 'foc_quantity' => '1.00'],
+                ['quantity' => '0.00', 'foc_quantity' => '1.00'],
+            ],
+        ];
+        $invoice_total = [
+            'total_before_tax' => 20000,
+            'tax' => 0,
+            'discount' => 0,
+            'discount2' => 0,
+            'final_total' => 20000,
+        ];
+
+        $set_total_method = new \ReflectionMethod(SellPosController::class, 'setCalculatedFinalTotal');
+        $set_total_method->setAccessible(true);
+        $set_total_method->invokeArgs($controller, [&$input, $invoice_total]);
+        $method->invokeArgs($controller, [&$input, &$invoice_total]);
+
+        $this->assertSame(0, $input['final_total']);
+        $this->assertSame(0, $invoice_total['total_before_tax']);
+        $this->assertSame(0, $invoice_total['final_total']);
+    }
+
+    public function testFinalSaleWithPaidAndSchemeQuantityKeepsCalculatedTotal(): void
+    {
+        $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();
+        $property = new \ReflectionProperty(SellPosController::class, 'transactionUtil');
+        $property->setAccessible(true);
+        $property->setValue($controller, new class {
+            public function num_uf($value)
+            {
+                return is_numeric($value) ? $value : str_replace(',', '', (string) $value);
+            }
+        });
+
+        $method = new \ReflectionMethod(SellPosController::class, 'normalizeSchemeOnlyInvoiceTotal');
+        $method->setAccessible(true);
+
+        $input = [
+            'status' => 'final',
+            'final_total' => '2000.00',
+            'products' => [
+                ['quantity' => '1.00', 'foc_quantity' => '1.00'],
+            ],
+        ];
+        $invoice_total = [
+            'total_before_tax' => 2000,
+            'tax' => 0,
+            'discount' => 0,
+            'discount2' => 0,
+            'final_total' => 2000,
+        ];
+
+        $method->invokeArgs($controller, [&$input, &$invoice_total]);
+
+        $this->assertSame('2000.00', $input['final_total']);
+        $this->assertSame(2000, $invoice_total['total_before_tax']);
+    }
+
     public function testFinalSaleAllowsZeroAmountPaymentRowForUnpaidInvoice(): void
     {
         $controller = (new ReflectionClass(SellPosController::class))->newInstanceWithoutConstructor();

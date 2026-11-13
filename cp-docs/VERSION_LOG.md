@@ -1,3 +1,65 @@
+## Version 9.00.2
+
+**Release Date:** 2026-11-09
+
+### Module: Reports
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Profit / Loss product totals now use the recorded purchase-lot cost, including purchase ledger discounts, so the product breakdown reconciles with the report's gross profit.
+- Product Stock History profit now excludes scheme quantities from sales revenue and tax while retaining their inventory cost, so free units correctly reduce profit.
+- Finalized zero-total sales, including scheme-only sales, no longer show an incorrectly reconstructed due amount in the Sell List or Sale Details.
+- Held Qty in Sale Details now includes scheme quantities, excludes pending delivery notes, and cannot display a negative balance.
+
+#### UI / UX Changes
+- Scheme quantities are marked with an asterisk in the Product Stock History Quantity Change column.
+
+#### Technical Updates
+- None.
+
+### Module: Sales / POS
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Zero-total updates now calculate the fallback from paid quantity only, excluding scheme quantity so scheme-only sales remain at zero.
+
+#### UI / UX Changes
+- None.
+
+#### Technical Updates
+- None.
+
+### Version 8.99.9 - Purchase, Order Request, POS, and Sales Form Updates (2026-11-10)
+
+#### Purchase Entry
+- When **Enable Rack Details** is on, purchase create/edit product rows display the product's rack, row, and position for the selected location. Changes saved on a purchase update that product's location rack information.
+- When **Enable PCT/HSN Code** is on, purchase create/edit product rows display the code and save edits back to the product record.
+- Added **Enable Load Products from Sales Invoice** under Business Settings > Purchase. When enabled, purchase create/edit can select finalized sales invoices from any business location and import their product lines.
+
+#### Contact Order Requests
+- Suggested-product prices use the logged-in contact's customer-group percentage or selling-price-group rule.
+- Product cards include **Add to Cart** and open configured gallery images in a navigable viewer.
+
+#### Sales Forms and POS
+- Sale create/edit only shows Gross Profit % and Gross Profit when the user's **Show Total Profit** setting is enabled; the Gross Profit amount includes the currency symbol.
+- The setting appears under POS when the POS module is enabled, or under Sales when POS is disabled.
+- POS quick-menu tiles omit default placeholder product images and use the tile for text when no real image is configured.
+
+## Product Catalogue - My Orders Customer Details (2026-11-09)
+
+- The public **My Orders** modal displays the customer's name and phone number above the order list.
+- Saved order details are preferred; browser-saved customer information is used if order details are unavailable.
+
 ## Domain-Aware Public Downloads (2026-11-09)
 
 - CMS Download Buttons accept full external URLs or a plain file name.

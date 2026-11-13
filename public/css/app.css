@@ -2296,6 +2296,24 @@ html.semi-dark .pos-create-page.pos-interface-suggestion .suggestion-summary-gra
   filter: brightness(1.12);
 }
 
+/* Image-free quick buttons use the full tile for readable item details. */
+.pos-create-page.pos-interface-quick .quick_menu .tab-content .qm-item-box.qm-item-text-only {
+  height: auto !important;
+  min-height: 70px;
+  align-content: center;
+  padding: 6px 4px !important;
+  line-height: 1.2;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.pos-create-page.pos-interface-quick .quick_menu .tab-content .qm-item-box.qm-item-text-only > span {
+  width: 100% !important;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
 .pos-create-page.pos-interface-quick .quick_menu .tab-content .qm-item-box > .edit_quick_menu_btn {
   position: absolute !important;
   top: 6px !important;

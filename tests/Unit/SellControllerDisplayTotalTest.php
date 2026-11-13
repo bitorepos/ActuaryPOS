@@ -8,7 +8,7 @@ use ReflectionClass;
 
 class SellControllerDisplayTotalTest extends TestCase
 {
-    public function testFinalSaleZeroSavedTotalDisplaysCalculatedReceivableAndDueStatus(): void
+    public function testFinalSaleZeroTotalRemainsZeroAndIsNotMarkedDue(): void
     {
         $controller = (new ReflectionClass(SellController::class))->newInstanceWithoutConstructor();
 
@@ -42,7 +42,33 @@ class SellControllerDisplayTotalTest extends TestCase
         $status_method->setAccessible(true);
         $display_status = $status_method->invoke($controller, $transaction, $display_total, 0.0);
 
-        $this->assertSame(104485.20, $display_total);
-        $this->assertSame('due', $display_status);
+        $this->assertSame(0.0, $display_total);
+        $this->assertSame('paid', $display_status);
+    }
+
+    public function testDraftSaleZeroTotalStillUsesCalculatedDisplayTotal(): void
+    {
+        $controller = (new ReflectionClass(SellController::class))->newInstanceWithoutConstructor();
+        $transaction = (object) [
+            'type' => 'sell',
+            'status' => 'draft',
+            'final_total' => 0,
+            'total_before_tax' => 104485.20,
+            'discount_type' => null,
+            'discount_amount' => 0,
+            'discount2_type' => null,
+            'discount2_amount' => 0,
+            'tax_amount' => 0,
+            'shipping_charges' => 0,
+            'packing_charge' => 0,
+            'packing_charge_type' => null,
+            'rp_redeemed_amount' => 0,
+            'round_off_amount' => 0,
+        ];
+
+        $total_method = new \ReflectionMethod(SellController::class, 'getSaleDisplayFinalTotal');
+        $total_method->setAccessible(true);
+
+        $this->assertSame(104485.20, $total_method->invoke($controller, $transaction));
     }
 }

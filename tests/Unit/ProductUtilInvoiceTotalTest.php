@@ -40,4 +40,27 @@ class ProductUtilInvoiceTotalTest extends TestCase
         $this->assertEqualsWithDelta(15, $total['discount2'], 0.00001);
         $this->assertEqualsWithDelta(165, $total['final_total'], 0.00001);
     }
+
+    public function testStockHistoryProfitExcludesSchemeRevenueButKeepsItsCost(): void
+    {
+        $util = new ProductUtil();
+        $method = new \ReflectionMethod(ProductUtil::class, 'calculateSellHistoryAmounts');
+        $method->setAccessible(true);
+
+        $scheme_only = $method->invoke($util, 1, 1, 2000, 0, 500);
+        $this->assertSame(0.0, $scheme_only['sell_total']);
+        $this->assertSame(500.0, $scheme_only['cost_total']);
+        $this->assertTrue($scheme_only['is_scheme_quantity']);
+        $this->assertSame(-500.0, $scheme_only['sell_total'] - $scheme_only['cost_total']);
+
+        $paid_and_scheme = $method->invoke($util, 3, 1, 100, 10, 60);
+        $this->assertSame(200.0, $paid_and_scheme['sell_total']);
+        $this->assertSame(180.0, $paid_and_scheme['cost_total']);
+        $this->assertSame(20.0, $paid_and_scheme['tax_total']);
+        $this->assertTrue($paid_and_scheme['is_scheme_quantity']);
+        $this->assertSame(20.0, $paid_and_scheme['sell_total'] - $paid_and_scheme['cost_total']);
+
+        $paid_only = $method->invoke($util, 1, 0, 100, 10, 60);
+        $this->assertFalse($paid_only['is_scheme_quantity']);
+    }
 }

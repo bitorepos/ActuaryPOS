@@ -1,5 +1,33 @@
 # Version Log
 
+## 11 November 2026 - Offline Workstation Token Setup
+
+- Offline Sync now reads and writes its workstation client secret and access token in the active host-specific environment file (for example `subdomains/.env.192.168.100.39`) when one is configured, instead of changing the root `.env` file.
+- Workstation authorization now accepts Passport client secrets stored either as plain text or as a supported password hash, while still rejecting revoked clients.
+
+## 11 November 2026 - Offline User List Download Sync
+
+- Fixed cloud user downloads so users missing from an offline installation can be created even when that local installation has a smaller user quota. Cloud usernames are preserved as provided.
+- Mapped the connector API's permitted-location and contact-number fields into the local user format, and kept role and location permissions with each imported user.
+- User-list download now reports added, updated, and failed counts. It reports partial failures instead of showing a false success message.
+
+## 11 November 2026 - Users List Processing Error
+
+- Fixed the users DataTable crashing when a user's bank details are empty, malformed JSON, or stored as a non-object value. Valid bank fields continue to display safely.
+- Corrected the Essentials department, sub-department, and designation join column references used by the users list.
+
+## 10 November 2026 - Purchase, Order Request, POS, and Sales Form Updates
+
+- **Purchase product details:** When enabled in Business Settings, purchase create/edit product rows let users review or update each location's Rack, Row, and Position details, and edit the product's PCT/HSN Code. Saved rack details are reflected on the product record for that purchase location; saved PCT/HSN changes update the product.
+- **Purchase from Sales Invoices:** Business Settings > Purchase now has an option to load products from sales invoices. When enabled, purchase create/edit can select finalized sales invoices from any business location and add their lines to the purchase.
+- **Contact Order Requests:** The contact portal's suggested-product cards show the contact's customer-group percentage or selling-group price. Each card has an **Add to Cart** button, and configured product gallery images open in a navigable image viewer.
+- **Gross Profit visibility:** Both Gross Profit % and Gross Profit amount on sale create/edit are controlled by the user's **Show Total Profit** setting. When the POS module is enabled, that option is in POS settings; when POS is disabled, it is available under Sales settings. The amount includes the business currency symbol.
+- **POS Quick Menu:** Default placeholder product images are omitted from quick-menu tiles. Tiles without a real image use the space for readable product text.
+
+## 9 November 2026 - Catalogue My Orders Customer Details
+
+The public Product Catalogue's **My Orders** modal now displays the order customer's name and contact number above the order list. Details saved with the order are used first, with the browser's saved customer details as a fallback.
+
 ## 9 November 2026 - Domain-Aware Public Downloads
 
 CMS Download Buttons now accept either an external URL or a file name such as `ActuaryPOS-Pro.apk`. File names resolve from the active installation's `public/downloads` folder when it exists; otherwise they resolve from the primary domain configured by the root `.env` `APP_URL`. The Hardware Setup installer button follows the same fallback. This supports separate domains and subdomains without hardcoding a product domain or hosting-panel directory.
