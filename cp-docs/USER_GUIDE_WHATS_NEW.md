@@ -1,9 +1,24 @@
 # What's New - User Guide
-**Updated:** 2026-11-11
+**Updated:** 2026-11-16
+
+## Host-Specific Environment Files - 2026-11-16
+
+What users can expect now:
+
+- The application works with the normal `.env` file in the main application folder. A `subdomains` folder is not required.
+- To use different settings for a specific host, create a file in that same folder named `.env.<host>`. For example, for a LAN address of `192.168.100.39`, use `.env.192.168.100.39`.
+- When the application is opened through that host, it uses the matching host-specific file. Hosts without a matching file continue to use the main `.env`.
+- Offline Sync saves its workstation credentials in the matching host-specific file, so it does not overwrite the main `.env`.
+
+How to use it:
+
+1. Keep the normal `.env` in the application root as the default configuration.
+2. Only when a host needs separate settings, copy the required values into `.env.<host>` in the same folder.
+3. Use lowercase host names and do not include `http://`, `https://`, a port, or a path in the filename.
 
 ## Offline Workstation Token Setup - 2026-11-11
 
-When connecting an offline installation to its cloud account, the generated client secret and access token are saved to the environment file selected for that host. For a LAN installation using `subdomains/.env.192.168.100.39`, credentials are saved in that file and the root `.env` remains untouched. Workstation authorization also supports Passport setups that store client secrets as hashes.
+When connecting an offline installation to its cloud account, the generated client secret and access token are saved to the environment file selected for that host. For a LAN installation using `.env.192.168.100.39`, credentials are saved in that file and the root `.env` remains untouched. Workstation authorization also supports Passport setups that store client secrets as hashes.
 
 ## Offline User List Download - 2026-11-11
 

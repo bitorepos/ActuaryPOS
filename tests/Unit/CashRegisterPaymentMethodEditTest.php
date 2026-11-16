@@ -219,6 +219,42 @@ class CashRegisterPaymentMethodEditTest extends TestCase
         $this->assertSame('EXP-1', $details['expense_details']->first()->ref_no);
     }
 
+    public function test_closed_register_summary_preserves_fields_saved_when_register_closes(): void
+    {
+        $cash_register_util = new CashRegisterUtil();
+        $register_details = (object) [
+            'status' => 'open',
+            'closed_at' => null,
+            'closing_details' => null,
+            'closing_note' => null,
+            'denominations' => null,
+            'extra_details' => [],
+            'stock_details' => null,
+            'total_sale' => 100,
+        ];
+        $snapshot = $cash_register_util->captureRegisterSummarySnapshot($register_details, []);
+
+        $register_details->status = 'close';
+        $register_details->closed_at = '2026-11-15 12:00:00';
+        $register_details->closing_details = ['saved' => true];
+        $register_details->closing_note = 'Cash counted';
+        $register_details->denominations = [500 => 1, 1000 => 6];
+        $register_details->extra_details = ['card_slips' => 2];
+        $register_details->stock_details = ['checked' => true];
+        $register_details->total_sale = 200;
+
+        $cash_register_util->applyRegisterSummarySnapshot($register_details, [], $snapshot);
+
+        $this->assertSame('close', $register_details->status);
+        $this->assertSame('2026-11-15 12:00:00', $register_details->closed_at);
+        $this->assertSame(['saved' => true], $register_details->closing_details);
+        $this->assertSame('Cash counted', $register_details->closing_note);
+        $this->assertSame([500 => 1, 1000 => 6], $register_details->denominations);
+        $this->assertSame(['card_slips' => 2], $register_details->extra_details);
+        $this->assertSame(['checked' => true], $register_details->stock_details);
+        $this->assertSame(100, $register_details->total_sale);
+    }
+
     public function test_editing_or_deleting_a_sale_does_not_change_closed_registers(): void
     {
         DB::table('cash_registers')->where('id', 1)->update(['status' => 'close', 'user_id' => 8]);

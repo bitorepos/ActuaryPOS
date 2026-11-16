@@ -1,3 +1,32 @@
+## Version 9.00.3
+
+**Release Date:** 2026-11-13
+
+### Module: POS / Cash Register
+
+#### New Features
+- None.
+
+#### Improvements
+- None.
+
+#### Bug Fixes
+- Removed currency symbols from payment method amounts in the POS cash register details modal.
+- Closing-register summary snapshots now preserve cash denomination counts and other values entered at close for register details and printouts.
+- Close and Print now loads the cash register report using the configured application base URL, including subdirectory installations.
+- Cash register printing now uses the local printer service's configured default when no workstation-specific printer is saved, and reports service failures instead of silently opening browser print.
+- A repeated Close and Print submission no longer queues a second receipt.
+
+#### UI / UX Changes
+- The cash register details heading now displays the opening and closing times on separate lines in a smaller font.
+- Cash register receipts now print with larger, more readable text.
+- The opening-register modal shows “Register Open” as the main heading, with the register number and opening and closing times in smaller text.
+- Closing-register printouts now fit the 80 mm paper width, with readable text and aligned payment columns.
+- “Cash in Hand” can wrap within the receipt table while payment amounts stay on one line.
+
+#### Technical Updates
+- None.
+
 ## Version 9.00.2
 
 **Release Date:** 2026-11-09

@@ -1,8 +1,14 @@
 # Version Log
 
+## 16 November 2026 - Root-Level Host Environment Files
+
+- A single-codebase installation no longer requires a `subdomains` folder. By default, every host uses the main project `.env` file.
+- To give one host its own configuration, create a host-specific file directly in the application root, for example `.env.192.168.100.39`. Requests for that host load the host-specific file; all other hosts continue to use `.env`.
+- Offline Sync credential storage, scheduled tenant jobs, and tenant cron detection recognize root-level host-specific environment files.
+
 ## 11 November 2026 - Offline Workstation Token Setup
 
-- Offline Sync now reads and writes its workstation client secret and access token in the active host-specific environment file (for example `subdomains/.env.192.168.100.39`) when one is configured, instead of changing the root `.env` file.
+- Offline Sync now reads and writes its workstation client secret and access token in the active host-specific environment file (for example `.env.192.168.100.39`) when one is configured, instead of changing the root `.env` file.
 - Workstation authorization now accepts Passport client secrets stored either as plain text or as a supported password hash, while still rejecting revoked clients.
 
 ## 11 November 2026 - Offline User List Download Sync
