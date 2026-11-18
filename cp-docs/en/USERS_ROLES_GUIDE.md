@@ -76,6 +76,38 @@ Think of it this way:
 
 ---
 
+## Mobile POS Client for a Cashier
+
+Each Android cashier should use an individual application user and an individual Mobile App Client. This keeps table orders, location access, roles, and audit records attributable to the correct cashier.
+
+1. Go to **User Management → Users** and edit the cashier.
+2. Confirm **Allow login** is enabled, choose the correct role, and give the cashier access to the required location or locations.
+3. Select **Generate Mobile App Client**. Record the displayed **Client ID** and **Client ID Secret** in a secure password manager.
+4. Configure one Android device with the server URL, Client ID, and Client Secret, then sign in with that cashier's normal username and password.
+
+### When credentials change
+
+- Regenerating the Mobile App Client Secret invalidates the previous secret for that mobile client.
+- A device configured with an old or wrong secret displays: **"YOUR CLIENT ID SECRET DOES NOT MATCH. PLEASE RECONFIGURE."**
+- Select **Reconfigure** on the device and enter the new Client Secret. The secret is intentionally not shown again after it has been saved.
+- Never send a Client Secret by chat, email, screenshot, or printed document. If it is exposed, regenerate it at once.
+
+### Offline workstation setup
+
+For an offline workstation, use the same cashier's Client Secret in **Synchronization → Offline Sync** and choose **Generate & Save Access Token**. Download the required master data and users before using the mobile devices. The token belongs in the active workstation environment for that LAN host; it is not a password to distribute to Android users.
+
+### Mobile-related role checks
+
+The mobile app follows the cashier's user, role, and permitted-location access. In particular, set the following only when the cashier needs them:
+
+- POS payment-button permissions, such as Cash, Card, Credit Sale, Draft, Quotation, Suspend, Multipay, and Takeaway.
+- Restaurant permissions: **Access tables**, **Allow Table Order Delete**, **Disable Table Order Checkout**, **Disable Table Order Move**, and **Disable Table KOT Reprint**.
+- POS location permissions, so the device sees only locations the cashier is entitled to use.
+
+Changing a role or a user's locations requires the workstation/mobile data to be synchronized before an offline device can use the new access.
+
+---
+
 ## How to Create a Role
 
 Roles define what each type of user is allowed to do.

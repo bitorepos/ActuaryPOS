@@ -118,6 +118,8 @@ If you have many products to add, importing from a spreadsheet is much faster:
 
 The Products list is paginated so large catalogues can be browsed without loading every product into one request. Choose a page size up to 1,000, then use the search box, report filters, and page controls to find products throughout the catalogue. The Row density selector changes the spacing of product rows. Product-list actions and export buttons appear alongside the density selector when space allows.
 
+Use the **Supplier** report filter to show products assigned to that supplier as their default supplier. Selecting a supplier reloads the list from the first page and updates the filtered result count.
+
 ## How to Edit a Product
 
 1. Go to **Products → List Products**.

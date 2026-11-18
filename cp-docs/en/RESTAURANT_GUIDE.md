@@ -214,6 +214,38 @@ The Quick Menu displays your most popular items as easy-to-tap buttons on the PO
 
 ---
 
+## Mobile Table Orders and Offline Use
+
+Android cashiers with **Access tables** can create and work with table orders from Mobile POS. The mobile table list shows only the orders owned by the signed-in cashier.
+
+### Table order status and order
+
+The table-order list groups work in this practical order:
+
+1. **Running** — an order has been placed and remains open.
+2. **Bill Printed** — a browser POS user printed the table bill.
+3. **Checkout** — the table has been settled.
+
+Each table line shows its table name and outstanding total. Sale-history entries for a table draft also identify the table, so cashiers can distinguish a normal draft from a table order.
+
+### Offline use
+
+Before a device goes offline, run the relevant synchronization while it can reach the workstation. The device keeps its downloaded products, permitted locations, tables, and eligible table orders locally. It can continue to select products, create cart lines, and place table orders while Wi-Fi or the workstation is temporarily unavailable.
+
+When connectivity returns, use the app's sync action. Pending sales and print jobs are uploaded/processed according to the workstation and print-queue configuration. Do not clear app data or uninstall the app while it has unsynchronized work.
+
+### Restaurant security on Mobile POS
+
+- **Access tables** controls whether the table-order entry points and table list are shown.
+- **Allow Table Order Delete** controls deletion of eligible orders.
+- **Disable Table Order Checkout** prevents final checkout from Mobile POS.
+- **Disable Table Order Move** prevents moving an order to another table.
+- **Disable Table KOT Reprint** prevents KOT reprint actions.
+
+These controls are assigned in **User Management → Roles → Restaurant**. Synchronize role changes before testing an offline cashier device.
+
+---
+
 ## Settings & Options
 
 | Setting | What It Does | Where to Find It |

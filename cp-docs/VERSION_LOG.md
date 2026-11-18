@@ -1,3 +1,32 @@
+## Version 9.00.4
+
+**Release Date:** 2026-11-18
+
+### Module: Mobile POS / Offline Workstation
+
+#### New Features
+
+- Mobile POS detects rejected OAuth credentials and presents a clear reconfiguration message: **"YOUR CLIENT ID SECRET DOES NOT MATCH. PLEASE RECONFIGURE."**
+- Offline Sync saves the workstation authorization token in the active host environment file and confirms when it can be used for synchronization.
+- A deployment-wide `CONNECTOR_REQUIRE_SUBSCRIPTION=false` option permits Mobile POS and Offline Sync access without assigning every business package a separate Connector Module entitlement.
+
+#### Improvements
+
+- RegisterFlow writes the Connector entitlement option into newly provisioned tenant environments.
+- Existing server URL and Client ID can be restored for mobile reconfiguration without exposing the saved Client Secret.
+- Android workstation printing guidance now covers LAN pairing, offline job queuing, and multi-floor access-point layouts.
+
+#### Bug Fixes
+
+- Table-order **Print Bill** now submits the receipt-print instruction to the configured Hardware Service instead of saving the order without a browser receipt-print request.
+- Offline sale synchronization reconciles payments for new and existing invoices through a dedicated endpoint, confirms the cloud payment status, and reports failed invoice updates in the sync result.
+- Offline sale synchronization retries unsynced payment rows against an existing cloud invoice after its sale update succeeds, recovering sales created as **Due** by an earlier incomplete sync.
+
+#### Security Notes
+
+- The option removes the package entitlement check only. The Connector module must be installed, the user must be active, and valid Client ID/Client Secret credentials are still required.
+- Do not share Client Secrets in screenshots, chat messages, or public documentation. Regenerate a secret immediately if it is exposed.
+
 ## Version 9.00.3
 
 **Release Date:** 2026-11-13

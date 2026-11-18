@@ -1,5 +1,35 @@
 # What's New - User Guide
-**Updated:** 2026-11-16
+**Updated:** 2026-11-18
+
+## Mobile POS, Offline Workstation, and Restaurant Printing - 2026-11-18
+
+What users can expect now:
+
+- Mobile POS detects an invalid or replaced Client Secret and shows **"YOUR CLIENT ID SECRET DOES NOT MATCH. PLEASE RECONFIGURE."** instead of a generic login error.
+- The same check works with a cloud URL and an offline workstation URL.
+- Offline Sync can save the access token obtained with a cashier's Mobile App Client Secret in the host-specific workstation environment file.
+- Offline sale synchronization reconciles payments for new and existing invoices through a dedicated endpoint and checks the cloud payment status before marking local rows synced. Run sale synchronization again to repair a previously **Due** invoice after its payment rows were missed.
+- Browser POS table-order **Print Bill** sends a receipt job to the selected Hardware Service receipt printer.
+
+How to use it:
+
+1. Generate the Mobile App Client from **User Management > Users > Edit** for the individual cashier.
+2. On the workstation, open **Synchronization / Offline Sync**, paste the Client Secret, and select **Generate & Save Access Token**. Then run the required download synchronization.
+3. Configure the mobile device with the cloud URL or workstation URL, its Client ID, and Client Secret. Keep the secret private.
+4. If the secret is regenerated or the app shows the mismatch message, select **Reconfigure** and enter the new secret. The app retains safe non-secret setup values where available.
+5. For browser table bills, select the table order and use **Print Bill** after the location's Hardware Setup has a receipt printer assigned.
+
+For the full deployment, role, offline, and printing procedures, see **Android POS Printing**, **Users & Roles**, and **Restaurant Features** in this guide collection.
+
+### Connector access policy for administrators
+
+When Connector is installed platform-wide and Mobile POS/Offline Sync should be available to every active business without adding the Connector Module to each package, set this in the deployment's active `.env` file:
+
+```env
+CONNECTOR_REQUIRE_SUBSCRIPTION=false
+```
+
+Then run `php artisan optimize:clear` in that deployment. On separate subdomain deployments, apply the setting in each deployment/tenant environment that should receive the policy. New tenants provisioned through RegisterFlow receive the setting automatically. This setting does not install Connector, activate disabled users, or bypass Client ID/Client Secret validation.
 
 ## Host-Specific Environment Files - 2026-11-16
 

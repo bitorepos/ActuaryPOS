@@ -188,10 +188,14 @@ Customer groups let you organise customers into categories (e.g., "Wholesale", "
 2. Click **Add** at the top right.
 3. Enter:
    - **Group Name** — e.g., "Wholesale Buyers"
-   - **Calculation Percentage** — A discount percentage for this group (e.g., 10% off for wholesale)
+   - **Price Calculation Type** — Choose a percentage or a selling price group.
+   - **Calculation Percentage** — The percentage adjustment when **Percentage** is selected.
+   - **Selling Price Group** — Choose a normal group price, or choose **Last Cost** to sell at the latest purchase cost before sales tax.
 4. Click **Save**.
 
 📸 *[Screenshot: The Add Customer Group form]*
+
+When a customer assigned to a **Last Cost** group is selected on a sale, each product uses its most recent purchase unit cost before sales tax. The product's configured sale tax is applied normally. If there is no purchase history for a variation, its default purchase cost is used.
 
 ### How to Assign a Customer to a Group
 

@@ -1,5 +1,35 @@
 # Version Log
 
+## 18 November 2026 - Mobile POS, Offline Workstation, and Restaurant Printing
+
+- **Mobile App client credentials:** A cashier's Mobile App Client ID and secret are treated as device configuration credentials. If the cloud or workstation rejects credentials after a secret is changed, Mobile POS displays **"YOUR CLIENT ID SECRET DOES NOT MATCH. PLEASE RECONFIGURE."** and directs the cashier to secure configuration. The secret is never displayed again on the device.
+- **Offline Workstation authorization:** Offline Sync accepts the Mobile App Client Secret generated from **User Management > Users > Edit User**, saves its access token to the active host environment file, and confirms when synchronization can continue.
+- **Connector entitlement option:** Installations can set `CONNECTOR_REQUIRE_SUBSCRIPTION=false` to allow active businesses to use the installed Connector API for Mobile App and Offline Sync without assigning Connector Module to every business package. The Connector code must still be installed and enabled; inactive users and invalid credentials remain blocked.
+- **New-business provisioning:** RegisterFlow writes the Connector entitlement setting for new tenant environments. Businesses created from Superadmin use the active deployment setting.
+- **Table-order receipt printing:** Browser POS **Print Bill** now submits the table-order receipt job to the configured Hardware Service, so a selected receipt printer can print table bills.
+- **Restaurant mobile workflow:** Mobile table orders, table-order lists, cached offline data, offline print queuing, table status display, and role-based controls are available for workstation deployments.
+- **LAN KOT printing:** Android devices can pair with a workstation Hardware Service on the same LAN, including multi-floor networks that use access points rather than separate routers.
+
+## 18 November 2026 - Sales, POS, and Offline Sync Improvements
+
+- **Direct Sale pricing:** The location's configured Default Selling Price Group is now supplied to the sale form's default-price fallback, so added products use location group prices even when the group selector is not available. Changing the sale location updates the selected default group.
+- **POS recent transactions:** Added a permission-aware **View** action that opens the sale details modal for the selected transaction.
+- **Offline sale payment recovery:** New and existing sale payments are reconciled through a dedicated invoice endpoint after sale upload, and the cloud payment status is checked before local rows are marked synced. Failed invoice updates now appear in the sync result instead of being reported as successful.
+- **Sale return customer selection:** Customer search results now use the contact's full name, with the contact ID appended when configured, and search matches individual name fields.
+
+## 18 November 2026 - Customer Group Last-Cost Pricing
+
+- Added **Last Cost** to the Selling Price Group choices in customer groups. Customers assigned to that group are charged the product variation's latest purchase cost before sales tax; the product's configured sales tax is then applied. If the product has no purchase history, its default purchase price is used.
+
+## 18 November 2026 - Product Supplier Filter
+
+- The Products list's Supplier report filter is included in the final DataTable request and reloads the list at its first page. The server filters products by their configured default supplier.
+
+## 18 November 2026 - Canonical Main-Domain Installer Downloads
+
+- The Hardware Setup installer link always uses the canonical main-domain download URL instead of switching to a subdomain's local `public/downloads` folder.
+- Configure `MAIN_DOMAIN_URL` in the active environment (for example, `https://actuarypos.com`) when the root `APP_URL` belongs to a tenant subdomain. If it is omitted on a `testing.` host, the helper falls back to that host's parent domain. Changes to this setting invalidate the custom Laravel config cache.
+
 ## 16 November 2026 - Root-Level Host Environment Files
 
 - A single-codebase installation no longer requires a `subdomains` folder. By default, every host uses the main project `.env` file.
@@ -36,7 +66,7 @@ The public Product Catalogue's **My Orders** modal now displays the order custom
 
 ## 9 November 2026 - Domain-Aware Public Downloads
 
-CMS Download Buttons now accept either an external URL or a file name such as `ActuaryPOS-Pro.apk`. File names resolve from the active installation's `public/downloads` folder when it exists; otherwise they resolve from the primary domain configured by the root `.env` `APP_URL`. The Hardware Setup installer button follows the same fallback. This supports separate domains and subdomains without hardcoding a product domain or hosting-panel directory.
+CMS Download Buttons accept either an external URL or a file name such as `ActuaryPOS-Pro.apk`. File names resolve from the active installation's `public/downloads` folder when it exists; otherwise they resolve from the primary domain configured by the root `.env` `APP_URL`. The Hardware Setup installer now always uses the canonical main-domain download host, configured by `MAIN_DOMAIN_URL` when tenant subdomains have their own root `APP_URL`.
 
 ## 8 November 2026 - Location-Specific Dojo Accounts
 

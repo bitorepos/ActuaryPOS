@@ -90,6 +90,16 @@ If a customer needs to step away:
 
 ---
 
+### View a recent sale from the POS screen
+
+1. Open **Recent Transactions** on the POS screen.
+2. Select the sale you want to inspect.
+3. Click **View** to open the sale details modal. Available actions depend on your sales permissions.
+
+The details modal shows the invoice, customer, products, totals, and payment status. Use its print buttons when you need a final invoice or packing slip.
+
+---
+
 ### How to Open and Close the Cash Register
 
 **Opening the Register:**
@@ -121,6 +131,7 @@ The direct sale form gives you more control for invoices, shipments, and detaile
    - **Sale Date** — When the sale was made
    - **Invoice Number** — Auto-generated
    - **Customer Group** — Optionally narrow customer search results by group. **All** is selected by default; this filter is shown only when at least one customer group exists.
+   - **Selling Price Group** — The selected location's **Default Selling Price Group** is applied to new product rows. Choose another group from the dropdown when you need a different price list.
 3. Add products by searching or scanning.
 4. For each product, set:
    - **Quantity**
@@ -132,6 +143,8 @@ The direct sale form gives you more control for invoices, shipments, and detaile
 7. Click **Save** to record the sale.
 
 The same **Customer Group** filter is available when editing a sale. It only filters customer search results; it does not change the selected customer's group.
+
+When you change the Business Location before adding products, the sale form updates its default selling price group to match that location. If the location has no default group, product default prices are used unless you select another group.
 
 ### Update selected invoices
 
@@ -282,7 +295,19 @@ When a customer returns a product:
 
 Stock will be restored and the customer's balance will be updated.
 
+When choosing a customer on a return form, search results display the customer's saved name; the contact ID may appear alongside it when contact IDs are shown in search results.
+
 📸 *[Screenshot: The sell return form showing items being returned]*
+
+---
+
+## Offline Sales Synchronization
+
+1. From the offline workstation, open **Synchronization** and choose **Upload Synchronization**.
+2. Run the available sale synchronization action and wait for its result.
+3. On the cloud application, open the Sales list and confirm the invoice and its payment status.
+
+Sale payments are uploaded with their sale so a locally paid invoice can remain **Paid** in the cloud. After sale synchronization, new and existing invoice payments are reconciled against the cloud invoice and the cloud status is checked before local rows are marked synced. Confirm the status in the cloud Sales list after synchronization completes. If it remains **Due**, check the sync result for the failed invoice.
 
 ---
 

@@ -58,6 +58,14 @@ Each location can have its own:
 | **Tax Rates** | Location-specific tax rules |
 | **Product Prices** | Each product can have different prices at different locations |
 
+### Set a location's default selling price group
+
+1. Open **Business Locations** and edit the location.
+2. Choose a **Default Selling Price Group** and save.
+3. On **Sale → Add Sale**, choose that location. The group is selected for the sale and its configured prices are used when products are added.
+
+If the sale user has access to the selling-price-group selector, they can choose another group for that sale. A location without a default group uses the product's normal selling price unless a group is selected manually.
+
 ---
 
 ## Stock Management Across Locations
