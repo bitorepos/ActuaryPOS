@@ -55,6 +55,16 @@ class SoftwareSyncControllerTest extends TestCase
         $this->assertStringContainsString('GitHub access was denied', $message);
     }
 
+    public function test_dependency_installation_failure_is_reported_without_blamming_github(): void
+    {
+        $message = $this->syncFailureMessage(
+            new \RuntimeException('Software sync could not install the updated PHP dependencies. The previous release has been restored.')
+        );
+
+        $this->assertStringContainsString('previous release has been restored', $message);
+        $this->assertStringNotContainsString('GitHub access was denied', $message);
+    }
+
     private function shouldFetchAnonymouslyFirst(string $repositoryUrl): bool
     {
         $method = new ReflectionMethod(SoftwareSyncController::class, 'shouldFetchAnonymouslyFirst');

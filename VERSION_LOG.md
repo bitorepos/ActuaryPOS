@@ -1,5 +1,14 @@
 # Version Log
 
+## 21 November 2026 - HRM User Form Entitlements
+
+- **User edit form:** The Essentials Payroll and HRM Details sections now follow the target business's Essentials Module entitlement, including when the form is viewed by a superadmin. Saving users for businesses without the module no longer overwrites Essentials employee and payroll fields.
+- **Optional annual tax adjustment:** The income adjustment remains optional and no longer triggers a browser step validation message for existing decimal values.
+
+## 20 November 2026 - Deployment-Wide Connector Access
+
+- **Connector access migration:** During a live update, add `CONNECTOR_REQUIRE_SUBSCRIPTION=false` to the root `.env` and discovered host-specific `.env.<domain>` files only when the setting is not already defined. Existing explicit values are preserved, and the deployment config cache is cleared when files change. Separate codebases must each run their live update.
+
 ## 18 November 2026 - Mobile POS, Offline Workstation, and Restaurant Printing
 
 - **Mobile App client credentials:** A cashier's Mobile App Client ID and secret are treated as device configuration credentials. If the cloud or workstation rejects credentials after a secret is changed, Mobile POS displays **"YOUR CLIENT ID SECRET DOES NOT MATCH. PLEASE RECONFIGURE."** and directs the cashier to secure configuration. The secret is never displayed again on the device.
@@ -28,7 +37,7 @@
 ## 18 November 2026 - Canonical Main-Domain Installer Downloads
 
 - The Hardware Setup installer link always uses the canonical main-domain download URL instead of switching to a subdomain's local `public/downloads` folder.
-- Configure `MAIN_DOMAIN_URL` in the active environment (for example, `https://actuarypos.com`) when the root `APP_URL` belongs to a tenant subdomain. If it is omitted on a `testing.` host, the helper falls back to that host's parent domain. Changes to this setting invalidate the custom Laravel config cache.
+- Configure `MAIN_DOMAIN_URL` in the active environment (for example, `https://actuarypos.com`) when automatic parent-domain detection is unsuitable. Otherwise the helper derives the main host from the current request's parent domain before falling back to root `APP_URL`, avoiding unrelated root `APP_URL` values on tenant installations.
 
 ## 16 November 2026 - Root-Level Host Environment Files
 

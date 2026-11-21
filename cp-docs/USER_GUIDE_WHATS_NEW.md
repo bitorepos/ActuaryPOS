@@ -1,5 +1,10 @@
 # What's New - User Guide
-**Updated:** 2026-11-18
+**Updated:** 2026-11-21
+
+## User Edit Form and HRM Access - 2026-11-21
+
+- The Payroll and HRM Details sections appear on a user's form only when that business has the Essentials (HRM) Module in its active package.
+- Annual taxable income adjustment is optional. Leave it at zero or enter an adjustment when applicable.
 
 ## Mobile POS, Offline Workstation, and Restaurant Printing - 2026-11-18
 
@@ -23,13 +28,13 @@ For the full deployment, role, offline, and printing procedures, see **Android P
 
 ### Connector access policy for administrators
 
-When Connector is installed platform-wide and Mobile POS/Offline Sync should be available to every active business without adding the Connector Module to each package, set this in the deployment's active `.env` file:
+When Connector is installed platform-wide and Mobile POS/Offline Sync should be available to every active business without adding the Connector Module to each package, the live update migration adds this setting to the root `.env` and discovered host-specific `.env.<domain>` files when the setting is absent:
 
 ```env
 CONNECTOR_REQUIRE_SUBSCRIPTION=false
 ```
 
-Then run `php artisan optimize:clear` in that deployment. On separate subdomain deployments, apply the setting in each deployment/tenant environment that should receive the policy. New tenants provisioned through RegisterFlow receive the setting automatically. This setting does not install Connector, activate disabled users, or bypass Client ID/Client Secret validation.
+Existing explicit values are preserved. The migration clears the deployment's cached configuration when it changes an environment file. If domains use separate application codebases, run the live update on each codebase. New tenants provisioned through RegisterFlow receive the setting automatically. This setting does not install Connector, activate disabled users, or bypass Client ID/Client Secret validation.
 
 ## Host-Specific Environment Files - 2026-11-16
 

@@ -2593,6 +2593,7 @@ return [
     'hide_footer_total_format1' => 'Hide Footer Total on Format 1',
     'require_customer_always' => 'Force Enter Customer on Each Sale',
     'enable_purchase_rack_details' => 'Enable Rack Details',
+    'enable_delivery_notes_tooltip' => 'Tracks quantities sold but not yet delivered as Held Quantity. Quantity on Hand is stock remaining after sales. Total Quantity is Quantity on Hand plus Held Quantity, showing stock including items reserved for delivery.',
     'payment_terms' => 'Payment Terms',
     'delete_duplicate_sales' => 'Fix Sync Duplicates',
     'show_sync_duplicates' => 'Show Sync Duplicates',

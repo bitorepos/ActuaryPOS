@@ -338,7 +338,7 @@ The public home page shows platform downloads once, in the **Download Applicatio
 - Changes to **Download Buttons** do not replace the separate hero buttons configured in **Buttons**.
 - Verify each destination after saving, especially links to files hosted on your own domain.
 - For a file name, use the current site's `public/downloads` folder for a site-specific download. If that folder is absent, the primary domain's `public/downloads` folder is used so subdomains can share files.
-- The Hardware Setup installer download always uses the configured canonical main-domain downloads folder, including when Hardware Setup is opened on a tenant subdomain. Configure `MAIN_DOMAIN_URL` when the root `APP_URL` points to a subdomain.
+- The Hardware Setup installer download uses the main domain's `public/downloads` folder, including when Hardware Setup is opened on a tenant subdomain. The app derives the parent host from the request; set `MAIN_DOMAIN_URL` in the root environment to override that choice for custom domain layouts.
 
 ---
 
