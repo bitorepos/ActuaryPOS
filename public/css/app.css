@@ -6496,6 +6496,14 @@ html.dark-theme .calculator-dropdown #calculator .screen {
   white-space: nowrap;
 }
 
+/* Make negative-quantity sale lines immediately identifiable. */
+#pos_table tbody tr.negative-quantity-row > td,
+#pos_table tbody tr.negative-quantity-row input,
+#pos_table tbody tr.negative-quantity-row textarea,
+#pos_table tbody tr.negative-quantity-row select {
+  font-weight: 700 !important;
+}
+
 .modal-open .datepicker,
 .modal-open .datepicker-dropdown {
   z-index: 2147483647 !important;
