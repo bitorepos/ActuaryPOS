@@ -17,6 +17,18 @@ If your business serves food or beverages, {application_name} includes a full se
 
 ---
 
+## Mobile Take Away checkout and workstation printing
+
+1. In **User Security → Security Roles**, edit the cashier's role. Under **POS → Payment Buttons**, tick **Hide Cash Button**, **Hide Card Button**, **Hide Multipay Button**, and **Hide Credit Sale Button**. Leave **Hide Takeaway Button** unticked and enable Take Away for the POS location.
+2. On the updated mobile app, sign in as the cashier. At checkout, choose a payment method in the dropdown and tap **Take Away**. **Finalize and Share** and **Finalize and Print** are hidden for this role.
+3. For workstation printing, pair the app with the Windows Hardware Service and configure the receipt and kitchen printer destinations. With bill and KOT printing enabled, a Take Away sale sends both jobs. Placing an order on a table sends the KOT.
+4. On the workstation, open **Offline Sync → Download → Invoice Settings** to download the invoice layout and its logo, footer logo, and letterhead. When the app can reach the workstation invoice, the bill uses its configured receipt design and font. If the invoice is unavailable, the app can use its local receipt template. The KOT uses the kitchen ticket layout.
+
+### Workstation synchronization
+
+- To download the table catalog, open **Offline Sync → Download → Tables**. If the cloud returns **403**, verify **Access tables** and Connector API access for the cloud account used by the workstation's sync token. The download includes occupied tables in that account's permitted locations.
+- On the workstation, leave the offline **POS** page open for automatic sales uploads every **10 minutes** and settings downloads every **30 minutes**. Use **Offline Sync** to run a manual sync when needed.
+
 ## 1. Table Management
 
 Tables help you organise your dine-in orders. Each table can be linked to a sale.

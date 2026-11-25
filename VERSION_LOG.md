@@ -1,5 +1,17 @@
 # Version Log
 
+## 25 November 2026 - Stock Transfer Product Search
+
+- Fixed Add Stock Transfer so choosing **Location (From)** closes the dropdown and immediately enables **Product Search**. Product availability is based on the source location.
+- The shared Expense filter now registers its reload handler only when the Expense table is available, preventing a JavaScript error on the Stock Transfer form.
+
+## 25 November 2026 - Mobile Take Away and Workstation Sync
+
+- **Mobile checkout:** Take Away-only roles retain the Payment Method dropdown and see only the enabled Take Away actions. Finalize and Share and Finalize and Print are hidden.
+- **Mobile printing:** Take Away submits the bill and KOT when configured. The bill uses the workstation's print-only invoice layout when reachable, including its configured font and synced logo, without the invoice webpage's spacer or border. The mobile kitchen ticket identifies Take Away orders.
+- **Offline Sync:** Invoice Settings downloads invoice logos, footer logos, and letterheads. Tables downloads the catalog for permitted locations, including occupied tables. The cloud sync user needs **Access tables**.
+- **Automatic sync:** The open offline POS page runs sales uploads every 10 minutes and settings downloads every 30 minutes using the workstation's installation URL.
+
 ## 21 November 2026 - HRM User Form Entitlements
 
 - **User edit form:** The Essentials Payroll and HRM Details sections now follow the target business's Essentials Module entitlement, including when the form is viewed by a superadmin. Saving users for businesses without the module no longer overwrites Essentials employee and payroll fields.

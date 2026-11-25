@@ -29,6 +29,9 @@ client-license.txt
 .scribe
 .sguard
 .env
+# Per-machine environment files, e.g. .env.192.168.1.101.
+.env.*
+!.env.example
 .shift
 .prettierrc
 readme.pdf

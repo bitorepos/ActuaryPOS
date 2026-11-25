@@ -1,4 +1,26 @@
+## Version 9.00.5
+
+**Release Date:** 2026-11-25
+
+### Module: Stock Transfers
+
+#### Bug Fixes
+
+- Fixed the **Location (From)** dropdown staying open and the **Product Search** field remaining disabled on Add Stock Transfer.
+
+#### Guide
+
+- Open **Stock Transfers → Add Stock Transfer** and choose **Location (From)**. The dropdown closes automatically and **Product Search** becomes available.
+- Search by product name or SKU. Availability is based on the source location. Choose a different **Location (To)** before saving.
+
 ## Version 9.00.4
+
+### 25 November 2026 - Mobile Take Away and Workstation Sync
+
+- Take Away-only roles see the Payment Method dropdown and enabled Take Away actions. Checkout hides **Finalize and Share** and **Finalize and Print** for these roles.
+- Mobile Take Away uses the workstation's print-only bill layout when reachable. Invoice Settings sync downloads the layout's logo and other images. The mobile KOT identifies the order as **Take Away**.
+- Tables sync includes occupied tables in permitted locations and requires **Access tables** on the cloud sync user.
+- While the offline POS page is open, automatic sales upload runs every 10 minutes and settings download every 30 minutes.
 
 **Release Date:** 2026-11-18
 

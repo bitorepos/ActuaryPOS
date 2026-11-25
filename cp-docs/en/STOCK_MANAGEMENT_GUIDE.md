@@ -60,15 +60,15 @@ If you have multiple business locations, you can transfer stock from one to anot
 
 1. Go to **Stock Transfers → Add Stock Transfer** from the left sidebar.
 2. Fill in:
-   - **From Location** — Where the stock is coming from
-   - **To Location** — Where the stock is going to
+   - **Location (From)** — Where the stock is coming from. The dropdown closes after you select a location, and **Product Search** becomes available.
+   - **Location (To)** — The destination. Choose a location different from the source before saving.
    - **Transfer Date** — When the transfer happens
    - **Reference Number** — Auto-generated or enter your own
    - **Status**:
      - **In Transit** — Products are on the way
      - **Completed** — Products have arrived
      - **Pending** — Transfer is planned but not started
-3. Search for products and add them.
+3. In **Search Products**, type at least two characters of a product name or SKU, then add the product. The form checks availability at **Location (From)**. If you change the source location, the product list clears so you can select products for the new source.
 4. Enter the **Quantity** for each product.
 5. Click **Save**.
 
